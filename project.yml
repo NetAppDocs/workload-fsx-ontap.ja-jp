@@ -1,0 +1,167 @@
+---
+settings:
+  name: Amazon FSx for NetApp ONTAP
+  platform: cloud
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Amazon FSx for NetApp ONTAP のドキュメント
+    url: "/index.html"
+  - title: リリースノート
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+    - title: 既知の制限事項
+      url: "/known-limitations.html"
+  - title: はじめに
+    entries:
+    - title: Amazon FSx for NetApp ONTAP の詳細をご確認ください
+      url: "/learn-fsx-ontap.html"
+    - title: クイックスタート
+      url: "/quick-start.html"
+    - title: FSx for ONTAPファイルシステムの作成
+      url: "/create-file-system.html"
+  - title: Amazon FSx for NetApp ONTAP を使用します
+    entries:
+    - title: コスト削減の詳細
+      url: "/explore-savings.html"
+    - title: リンクを使用
+      entries:
+      - title: リンクの概要
+        url: "/links-overview.html"
+      - title: リンクの作成
+        url: "/create-link.html"
+      - title: リンクの管理
+        url: "/manage-links.html"
+    - title: ボリュームの管理
+      entries:
+      - title: ボリュームの作成
+        url: "/create-volume.html"
+      - title: データへのアクセス
+        url: access-data.html
+    - title: Storage VM を作成
+      url: "/create-storage-vm.html"
+    - title: データを保護
+      entries:
+      - title: データ保護の概要
+        url: "/data-protection-overview.html"
+      - title: Snapshotの管理
+        entries:
+        - title: Snapshot を作成します
+          url: "/create-snapshot.html"
+        - title: Snapshot ポリシーを作成します
+          url: "/create-snapshot-policy.html"
+        - title: Snapshotからボリュームをリストアする
+          url: "/restore-volume-from-snapshot.html"
+        - title: Snapshotから新しいボリュームを作成する
+          url: "/create-volume-from-snapshot.html"
+      - title: オブジェクトストレージへのバックアップの管理
+        entries:
+        - title: 手動バックアップの作成
+          url: "/create-backup.html"
+        - title: バックアップからボリュームをリストアする
+          url: "/restore-from-backup.html"
+      - title: レプリケーションの管理
+        entries:
+        - title: レプリケーション関係を作成する
+          url: "/create-replication.html"
+        - title: レプリケーション関係を初期化する
+          url: "/initialize-replication.html"
+      - title: ボリュームのクローニング
+        url: clone-volume.html
+  - title: 管理と監視
+    entries:
+    - title: ボリューム管理
+      entries:
+      - title: ボリュームの自動拡張の編集
+        url: "/edit-volume-autogrow.html"
+      - title: ボリューム容量を拡張
+        url: "/increase-volume-capacity.html"
+      - title: ボリュームタグを編集
+        url: "/edit-volume-tags.html"
+      - title: ボリューム容量のリバランシング
+        url: "/rebalance-volume.html"
+      - title: 階層化ポリシーを変更します
+        url: "/change-tiering-policy.html"
+      - title: NFSエクスポートポリシーの変更
+        url: "/change-nfs-export-policy.html"
+      - title: CIFS共有の変更
+        url: "/change-cifs-share.html"
+      - title: クローンボリュームをスプリットする
+        url: split-cloned-volume.html
+      - title: ボリュームを削除する
+        url: "/delete-volume.html"
+    - title: ファイルシステム管理
+      entries:
+      - title: ファイルシステムの容量の拡張
+        url: "/increase-file-system-capacity.html"
+      - title: 容量の自動管理を有効にする
+        url: "/enable-auto-capacity-management.html"
+      - title: fsxadminパスワードのリセット
+        url: "/reset-fsxadmin-password.html"
+      - title: ファイルシステムを削除する
+        url: "/delete-file-system.html"
+    - title: Storage VM 管理
+      entries:
+      - title: Storage VMを別のファイルシステムにレプリケートする
+        url: "/replicate-svm-to-file-system.html"
+      - title: Storage VMのActive Directoryの設定と更新
+        url: "/configure-active-directory.html"
+      - title: Storage VMタグの編集
+        url: "/edit-svm-tags.html"
+      - title: Storage VMのパスワードのリセット
+        url: reset-svm-password.html
+      - title: Storage VMを削除します
+        url: "/delete-svm.html"
+    - title: データ保護管理
+      entries:
+      - title: ボリュームのSnapshotポリシーの変更
+        url: change-snapshot-policy.html
+      - title: FSx for ONTAPのバックアップスケジュールを更新
+        url: "/update-backup-schedule.html"
+      - title: 長期保持のためのスナップショットの有効化と編集
+        url: "/enable-snapshots-long-term.html"
+      - title: レプリケーション関係の反転
+        url: "/reverse-replication.html"
+      - title: ソースボリュームのレプリケーションスケジュールの変更
+        url: "/change-replication-schedule.html"
+      - title: レプリケーション関係の最大転送速度を制限する
+        url: "/limit-transfer-rate.html"
+      - title: レプリケーション関係のSnapshotデータの手動更新
+        url: "/update-snapshot-replication.html"
+      - title: レプリケーション関係を停止する
+        url: "/stop-replication.html"
+      - title: レプリケーション関係を削除する
+        url: "/delete-replication.html"
+    - title: パフォーマンス管理
+      entries:
+      - title: ファイルシステムのIOPSのプロビジョニング
+        url: "/provision-iops.html"
+      - title: ファイルシステムのスループット容量の更新
+        url: "/update-throughput-capacity.html"
+  - title: 参考文献
+    entries:
+    - title: FSx for ONTAPのパフォーマンス
+      url: "/performance-reference.html"
+    - title: FSx for ONTAPのセキュリティ
+      url: "/security-reference.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録します
+      url: "/support-registration.html"
+    - title: ヘルプを表示します
+      url: "/get-help.html"
+    - title: トラブルシューティング
+      url: "/troubleshooting.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

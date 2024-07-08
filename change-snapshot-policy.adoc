@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: change-snapshot-policy.html 
+keywords: snapshot policy, snapshot schedule, modify snapshot policy, edit snapshot policy, change snapshot policy 
+summary: ボリュームのSnapshotポリシーはいつでも更新できます。 
+---
+= ボリュームのSnapshotポリシーの変更
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ボリュームのSnapshotポリシーはいつでも更新できます。
+
+.タスクの内容
+この処理は、ボリュームに対してSnapshotを作成する頻度を更新するか、自動Snapshotを無効にします。
+
+.開始する前に
+既存のSnapshotポリシーを表示するにはリンクが必要です。リンクを関連付けるには、*[アカウント名]*の*[リンクの関連付け]*をクリックします。その後、この操作に戻ります。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. [ボリューム]*タブを選択します。
+. [ボリューム]*タブで、Snapshotポリシーを変更するボリュームの3つのドットメニューを選択します。
+. [データ保護操作]*、*[スナップショット]*の順に選択し、*[スナップショットポリシーの管理]*を選択します。
+. Snapshotポリシーの管理ページで、*[既存のSnapshotポリシーの変更]*を選択します。
+. [Snapshotポリシー名]*フィールドで、このボリュームに別のSnapshotポリシーを選択します。
++
+自動Snapshotを無効にするには、を選択します `none`。
+
++
+他のSnapshotポリシーがない場合は、 link:create-snapshot-policy.html["このボリュームの新しいSnapshotポリシーを作成する"]を参照してください。
+
+. [ 適用（ Apply ） ] をクリックします。
+

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: delete-volume.html 
+keywords: delete volume, volume deletion 
+summary: FSx for ONTAPファイルシステム内のボリュームはいつでも削除できます。この処理は元に戻すことはできません。 
+---
+= ボリュームを削除する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+FSx for ONTAPファイルシステム内のボリュームはいつでも削除できます。この処理は元に戻すことはできません。
+
+.開始する前に
+ボリュームを削除する前に、次の点を考慮してください。
+
+* ローカルスナップショット：このFSx for ONTAPファイルシステムに関連付けられているすべてのスナップショットが完全に削除されます。
+* FSx for ONTAPバックアップ：FSx for ONTAPのバックアップコピーは残り、引き続き使用できます。
+* レプリケーション関係：解除された関係が残らないように、ボリュームを削除する前にこのボリュームについて確認することを推奨します link:delete-replication.html["既存のレプリケーション関係を削除する"] 。
+
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、削除するボリュームを含むファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. [Volumes]タブで、削除するボリュームの3つのドットメニューを選択します。
+. [基本的な操作]*を選択し、*[ボリュームの削除]*を選択します。
+. [Delete volume]ダイアログで、「delete」と入力してボリュームを削除します。
+. [ 削除（ Delete ） ] をクリックします。
+

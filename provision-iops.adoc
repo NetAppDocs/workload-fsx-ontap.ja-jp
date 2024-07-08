@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: provision-iops.html 
+keywords: iops, SSD, provision, allocate 
+summary: FSx for ONTAPファイルシステムのSSD IOPSを自動でプロビジョニングまたは手動でプロビジョニング 
+---
+= FSx for ONTAPファイルシステム用SSD IOPSのプロビジョニング
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+FSx for ONTAPファイルシステムのSSD IOPSを自動でプロビジョニングまたは手動でプロビジョニング
+
+.タスクの内容
+FSxファイルシステムに対してSSD IOPSの自動プロビジョニングを有効にすることも、IOPSを手動でプロビジョニングすることもできます。
+
+自動プロビジョニングIOPSは、GiBあたり3 IOPSとして計算されます。
+
+IOPSを手動でプロビジョニングする場合は、事前にIOPSを引き上げなければならないことがあり link:increase-file-system-capacity.html["ファイルシステムの容量の拡張"]ます。
+
+IOPSの制限については、AWS FSx for NetApp ONTAPドキュメントのを参照して link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["クォータ"^] ください。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [ストレージ]で、*[ストレージインベントリに移動]*をクリックします。
+. [FSx for ONTAP *]タブで、IOPSをプロビジョニングするファイルシステムの3つのドットメニューをクリックし、*[Manage]*を選択します。
+. [Information]で、*[IOPS allocation]*の横にある鉛筆アイコンをクリックします。[IOPS allocation]*行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。
+. [Provisioned IOPS]ダイアログで、*[Automatic]*または*[User Provisioned]*を選択します。
+. [ユーザプロビジョニング]*を選択した場合は、* IOPS値*を入力します。
+. [ 適用（ Apply ） ] をクリックします。
+

@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: manage-links.html 
+keywords: links, accounts, lambda, creating, associating, disassociating, deleting, editing 
+summary: リンクを作成および管理して、ワークロードファクトリアカウントと1つ以上のFSx for ONTAPファイルシステム間の信頼関係と接続を確立できます。これにより、AWS FSx for ONTAP APIでは使用できない特定の機能をONTAPファイルシステムから直接監視および管理できます。 
+---
+= リンクの管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factoryアカウントに関連付けられたリンクを管理します。
+
+link:links-overview.html["リンクの詳細"] または link:create-link.html["リンクの作成"]。
+
+
+
+== アカウントに関連付けられているリンクを表示する
+
+現在アカウントに関連付けられているリンクを表示できます。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. [アカウント]メニューから*[リンク]*を選択します。
++
+image:screenshot-links-button.png["リンクページを開く方法を示すスクリーンショット。"]
+
+. リンクがある場合は、概要ページに情報が表示されます。
+. リンクに関連付けられているFSx for ONTAPファイルシステムを表示するには、[関連リソース]セクションで*[表示]*ボタンを選択します。
++
+image:screenshot-view-link-details.png["特定のリンクを使用しているFSx for ONTAPファイルシステムを示す画面。"]
+
+. リンクにAmazon Resource Name（ARN）が必要な場合は、ARNフィールドの横にある_COPY_ICONを選択します。
+
+
+
+
+== FSx for ONTAPファイルシステムへのリンクの関連付け
+
+作成したリンクをFSx for ONTAPファイルシステムに関連付けることができます。各ファイルシステムは、1つのNetAppアカウント内の1つのリンクにのみ関連付けることができますが、1つのリンクを複数のファイルシステムに関連付けることができます。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、リンクを関連付けるファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。
+. ファイルシステムの概要で、*[リンクの関連付け]*を選択します。
+. [リンクの関連付け（Associate link）]ページで*[既存のリンクの関連付け（Associate an existing link）]*を選択し、リンクを選択して*[適用（Apply）]*を選択します。
+
+
+.結果
+リンクはFSx for ONTAPファイルシステムに関連付けられており、高度なONTAP操作を実行できます。
+
+
+
+== リンクの編集
+
+Workload Factoryインターフェイスからリンクを編集することはできません。リンクに変更を加える必要がある場合は、新しいリンクを作成し、そのリンクをファイルシステムに関連付ける必要があります。
+
+
+NOTE: AWSコンソールを使用してLambdaネットワーク構成（VPC、サブネット、セキュリティグループなど）を編集すると、変更がリンク管理UIに反映されますが、これらの変更によってLambdaとONTAP間の接続の問題が発生する可能性があるため、推奨されません。
+
+
+
+== リンクの削除
+
+環境で使用しなくなったリンクを削除できます。リンクを使用していたFSx for ONTAPファイルシステムやその他のリソースは、リンクを削除すると特定の機能を使用できなくなります。
+
+このリンクはWorkload Factoryからのみ削除され、AWS環境からは削除されません。Workload Factoryでリンクを削除した後、AWSアカウントからLambda関数を削除する必要があります。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. [アカウント]メニューから*[リンク]*を選択します。
+. [リンク]ページで、メニューボタンを選択して*[削除]*を選択します。
++
+image:screenshot-remove-link.png["Workload Factoryからリンクを削除する方法を示すスクリーンショット。"]
+
+. 確認する場合は、*[削除]*をもう一度選択します。
+
+
+AWSのドキュメントを参照してください link:https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-awscli.html#with-userapp-walkthrough-custom-events-delete-function["Lambda関数の削除"]。

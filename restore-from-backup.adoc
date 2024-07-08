@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: restore-from-backup.html 
+keywords: restore backup, new volume, volume restoration, backup 
+summary: バックアップからAWSアカウント内の任意のFSx for ONTAPファイルシステムにボリュームをリストアできます。 
+---
+= バックアップからボリュームをリストアする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+バックアップからAWSアカウント内の任意のFSx for ONTAPファイルシステムにボリュームをリストアできます。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3つのドットメニューをクリックし、* Manage *を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. [Volumes]*タブで、バックアップからリストアするボリュームの3つのドットメニューをクリックします。
+. *データ保護アクション*、* FSx for ONTAPバックアップ*、*バックアップからのリストア*の順に選択します。
+. [Restore from a backup]ダイアログで、次の情報を指定します。
++
+.. *ターゲットファイルシステム*:ドロップダウンメニューからターゲットファイルシステムを選択します。
+.. *ターゲットStorage VM *：ドロップダウンメニューからターゲットStorage VMを選択します。
+.. *バックアップ名*：ドロップダウンメニューからバックアップ名を選択します。
+.. *リストアされたボリューム名*：リストアされたボリュームの名前を入力します。
+
+
+. [* リストア ] をクリックします。
+

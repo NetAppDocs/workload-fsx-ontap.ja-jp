@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: initialize-replication.html 
+keywords: initialize replication, begin replication, start replication 
+summary: ソースボリュームとターゲットボリューム間のレプリケーション関係を初期化します。 
+---
+= レプリケーション関係を初期化する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ソースボリュームとターゲットボリューム間のレプリケーション関係を初期化します。
+
+.タスクの内容
+初期化では、_baseline_transferが実行されます。ソースボリュームのSnapshotが作成され、そのSnapshotおよびSnapshotが参照するすべてのデータブロックがターゲットボリュームに転送されます。
+
+.開始する前に
+この処理をいつ完了するかを検討してください。初期化には時間がかかる場合があります。ベースライン転送はオフピークの時間帯に実行することを推奨します。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
+. ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。
+. [Replication relationships]タブで、初期化するレプリケーション関係の3つのドットメニューをクリックします。
+. [初期化]*を選択します。
+. [関係の初期化]ダイアログで、*[初期化]*をクリックします。
+

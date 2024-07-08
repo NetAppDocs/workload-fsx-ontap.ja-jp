@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: change-replication-schedule.html 
+keywords: change replication schedule, update replication schedule, edit replication schedule 
+summary: レプリケーション関係にあるソースボリュームのレプリケーションスケジュールを変更します。 
+---
+= ソースボリュームのレプリケーションスケジュールの変更
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+レプリケーション関係にあるソースボリュームのレプリケーションスケジュールを変更します。
+
+ソースボリュームからレプリケートされたボリュームにSnapshotを転送する頻度を、目的のRPO（目標復旧時点）に合わせて選択します。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
+. ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。
+. [Replication relationships]タブで、変更するレプリケーション関係スケジュールの3つのドットメニューをクリックします。
+. [レプリケーション間隔の編集]*を選択します。
+. [レプリケーション間隔の編集]ダイアログで、ソースボリュームからSnapshot転送を実行する頻度を選択します。次の周波数のいずれかを選択できます。
++
+** 5分ごと
+** 毎時
+** 8時間ごと
+** 毎日
+** 毎週
+
+
+. [ 適用（ Apply ） ] をクリックします。
+

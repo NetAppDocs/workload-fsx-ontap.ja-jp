@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: increase-file-system-capacity.html 
+keywords: increase capacity, increase file system capacity, increase FSx capacity 
+summary: SSDストレージの使用容量が指定したしきい値を超えた場合は、FSx for ONTAPファイルシステムのSSDストレージ容量を手動で拡張します。 
+---
+= ファイルシステムの容量の拡張
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SSDストレージの使用容量が指定したしきい値を超えた場合は、FSx for ONTAPファイルシステムのSSDストレージ容量を手動で拡張します。
+
+または、Workload Factoryがファイルシステムの容量を管理できるようにすることもできます link:enable-auto-capacity-management.html["容量の自動管理機能を有効にする"] 。
+
+.タスクの内容
+ファイルシステムの容量を増やすと、FSx for ONTAPファイルシステムのIOPSに影響します。
+
+ファイルシステムの場合、 link:provision-iops.html["IOPSのプロビジョニング"] SSDの容量が1GiB増えるごとにIOPSが3 IOPS増加します。たとえば、100TiB（102、400GiB）のSSD容量をプロビジョニングすると、IOPSは300TiB（307、200GiB）増加します。
+
+手動で行う場合は link:provision-iops.html["IOPSのプロビジョニング"] 、ファイルシステムの容量の増加に対応するためにIOPSの割り当てを増やす必要があります。
+
+SSDのストレージ容量の制限については、AWS FSx for NetApp ONTAPドキュメントのを参照して link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["クォータ"^] ください。
+
+.開始する前に
+ファイルシステムの容量を増やすには、最初に行う必要があります link:enable-auto-capacity-management.html["容量の自動管理を無効にする"]。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [ストレージ]で、*[ストレージインベントリに移動]*をクリックします。
+. FSx for ONTAP *タブで、ファイルシステムの3つの点のメニューをクリックして容量を増やします。
+. 「 * Manage * 」を選択します。
+. [Information]で、*[Capacity Distribution]*の横にある鉛筆のアイコンをクリックします。[Capacity Distribution]*行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。
+. [SSDストレージサイズ]ダイアログで、*プロビジョニング済み容量*の数値を入力します。
+. プロビジョニング済み容量の単位を選択します。
+. [ 適用（ Apply ） ] をクリックします。
+

@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: update-snapshot-replication.html 
+keywords: update snapshot data, replication 
+summary: レプリケーション関係にあるソースボリュームとターゲットボリューム間で転送されたSnapshotデータは、いつでも手動で更新します。 
+---
+= レプリケーション関係のSnapshotデータの更新
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+レプリケーション関係にはレプリケーションスケジュールが設定されていますが、ソースボリュームとターゲットボリューム間で転送されたSnapshotデータは必要に応じて手動で更新できます。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
+. ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。
+. [Replication relationships]タブで、更新するレプリケーション関係の3つのドットメニューをクリックします。
+. [今すぐ更新]*を選択します。
+. [更新]ダイアログで、*[今すぐ更新]*をクリックします。
+

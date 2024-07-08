@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: delete-svm.html 
+keywords: delete storage vm, delete svm, remove svm 
+summary: 不要になったStorage VM（SVM）をFSx for ONTAPファイルシステム構成から削除する。 
+---
+= Storage VMを削除します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+不要になったStorage VM（SVM）をFSx for ONTAPファイルシステム構成から削除する。
+
+.開始する前に
+Storage VMを削除する前に、次の点を確認してください。
+
+* SVM内のデータにアプリケーションがアクセスしていないことを確認します。
+* SVMに接続されているルート以外のボリュームをすべて削除します。
+
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
+. ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
+. [Storage VM]タブで、Active Directoryを設定するStorage VMの3つのドットメニューを選択します。
+. [Storage VMの削除]*を選択します。
+. [Delete Storage VM]ダイアログで、「delete」と入力してStorage VMを削除します。
+. [ 削除（ Delete ） ] をクリックします。
+

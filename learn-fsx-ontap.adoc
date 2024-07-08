@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: learn-fsx-ontap.html 
+keywords: Amazon FSx for NetApp ONTAP, FSx, storage, aws 
+summary: Amazon FSx for NetApp ONTAPはフルマネージドサービスで、お客様はワークロードファクトリー内でワークロードのストレージバックエンドとしてファイルシステムを起動して実行できます。 
+---
+= Amazon FSx for NetApp ONTAP向けワークロードファクトリーの詳細
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Amazon FSx for NetApp ONTAPは、高度なデータ管理機能と拡張性に優れたパフォーマンスを提供する、フルマネージドのクラウドベースデータストレージサービスです。FSx for ONTAPを使用すると、BlueXPワークロードファクトリー内で、すべてのワークロードのストレージバックエンドとしてファイルシステムを作成、管理できます。
+
+FSX for ONTAP は、ネットアップのお客様が現在オンプレミスで使用しているのと同じ機能、パフォーマンス、管理機能を、ネイティブの AWS サービスの簡易性、即応性、セキュリティ、拡張性で提供します。
+
+FSx for ONTAPは、ワークロードファクトリの_Storage_componentです。
+
+
+
+== 特徴
+
+FSx for ONTAPには次のような特長があります。
+
+* *フルマネージドサービス*：Workload Factoryコンソールと統合されたフルマネージドサービスを提供します。
+* *高可用性*：各FSx for ONTAPファイルシステムに高可用性を提供し、単一および複数のアベイラビリティゾーンの導入をサポートします。
+* *自動スナップショット*：自動化された効率的なスナップショットを使用してデータを保護します。スナップショットは、ファイルシステムまたはボリュームのスペース効率に優れた、読み取り専用のポイントインタイムコピーです。
+* *ボリュームレプリケーション*：Amazon Web Services間のリージョン間レプリケーションにより、ディザスタリカバリを実現します。
+* *効率的なバックアップ*：別の地域にあるデータのコピーを使用して、後で追加の保護機能を提供します。これにより、緊急時の保護が強化されます。
+* *高速クローニング*：高速クローニングによってアプリケーション開発を高速化します。
+* *マルチプロトコルのサポート*：Network File System（NFS）、Server Message Block（SMB）、Internet Small Computer Systems Interface（iSCSI）の各プロトコルをサポートします。
+* *高スループット*：高スループットパフォーマンスを提供し、FSx for ONTAPファイルシステム上で実行されるワークロードのレイテンシを低く抑えます。
+* *インメモリキャッシュとNVMeキャッシュ*：独自のインメモリキャッシュとNVMeキャッシュが組み込まれているため、アクセス頻度の高いデータのパフォーマンスがさらに向上します。
+* *数十万IOPS *：SSDディスクで数十万IOPSを提供し、ストレージとワークロードにタイムリーな結果を提供します。
+* *シンプロビジョニング*：容量を事前にプロビジョニングできるため、追加の容量が必要になるまでコストを削減できます。
+* *データの重複排除と圧縮*：重複するデータブロックを排除してデータブロックを圧縮することで、FSx for ONTAPファイルシステムに必要な物理ストレージの量を削減し、コストを削減します。
+* *データ階層化*：アクセス頻度の低いデータをハイパフォーマンスのプライマリSSDストレージ階層からセカンダリ容量プールストレージ階層に移動することで、ストレージコストを削減できます。
+
+
+
+
+== Workload Factoryの追加機能
+
+* *ストレージコスト比較計算ツール*：Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for WindowsファイルサーバのストレージコストをFSx for ONTAPと比較します。FSx for ONTAPストレージ構成で実現可能な削減効果を確認し、FSx for ONTAPストレージへの移行を計画できます。
+* * Workload Factoryユーザーインターフェイス*：_Quick create_and_Advanced create_deploymentモードオプションを提供します。クイック作成には、ストレージ構成に適したAWS、NetApp、および業界標準のベストプラクティスが含まれます。
+* * Codebox *：FSx for ONTAP操作用のコードビューア、コピーとダウンロード用のコードテンプレート、コードの再利用用の自動カタログを開発者に提供します。
+
+
+
+
+== コスト
+
+FSx for ONTAPアカウントは、Workload FactoryではなくAWSによって管理されます。を参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html#pricing-for-fsx-ontap["Amazon FSx for NetApp ONTAPの価格設定"^]。
+
+
+
+== サポートされている地域
+
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["サポート対象の Amazon リージョンを表示します。"^]
+
+
+
+== サポートを受ける
+
+Amazon FSx for NetApp ONTAP は、AWSファーストパーティの解決策 です。FSx for ONTAPファイルシステム、インフラ、または本サービスを使用する解決策に関する質問やテクニカルサポートの問題については、AWS管理コンソールのサポートセンターを使用してAWSに対するサポートケースをオープンしてください。「 FSX for ONTAP 」サービスと該当するカテゴリを選択します。AWS サポートケースの作成に必要な残りの情報を指定します。
+
+Workload FactoryまたはWorkload Factoryのアプリケーションとサービスに関する一般的な質問については、を参照してください link:get-help.html["FSx for ONTAP for Workload Factoryのヘルプを表示"]。

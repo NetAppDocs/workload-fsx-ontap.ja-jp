@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: create-storage-vm.html 
+keywords: create storage VM, create svm 
+summary: FSx for ONTAP Storage VM（SVM）を作成して、ワークロードファクトリでワークロードにストレージとデータサービスを提供できます。 
+---
+= FSx for ONTAPファイルシステム用Storage VMの作成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+FSx for ONTAPファイルシステム用のStorage VM（SVM）を作成して、ワークロード向けに仮想的にストレージとデータサービスにアクセスできるようにします。
+
+.タスクの内容
+Storage VMは分離されたファイルサーバで、Workload Factory Storageの各ワークロードのデータにアクセスできます。各SVMには、データを管理およびアクセスするための独自の管理クレデンシャルとエンドポイントがあります。
+
+SVMを使用している場合、FSx for ONTAPのデータにアクセスすると、SVMのエンドポイント（IPアドレス）を使用して、SVMによってホストされているボリューム、CIFS / SMB共有、またはiSCSI LUNがクライアントやワークステーションにマウントされます。
+
+.開始する前に
+ファイルシステムあたりのサポートされるStorage VM数を確認します。ファイルシステムあたりのSVMの最大数については、AWSのドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html#max-svms["FSx for ONTAP Storage Virtual Machineの管理"^] 。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. [FSx for ONTAP ]タブで、ファイルシステムの3つの点のメニューをクリックしてStorage VMを作成し、*[管理]*を選択します。
+. ファイルシステムの概要で、* Storage VMの作成*を選択します。
+. [Storage VM]ページの[Storage VMの設定]で、次の情報を指定します。
++
+.. *名前*：Storage VMの名前を入力します。
+.. * Storage VMクレデンシャル*：このStorage VMのユーザのパスワードを指定する `vsadmin` か、ファイルシステムのユーザクレデンシャルを使用して `fsxadmin` ください。
+.. *ルートボリュームのセキュリティ形式*：データにアクセスするクライアントのタイプ（UNIX（Linuxクライアント）、NTFS（Windowsクライアント）、Mixed）に応じて、ルートボリュームのセキュリティ形式を選択します。
+.. *タグ*:オプションで、最大50個のタグを追加できます。
+
+
+. [ 作成（ Create ） ] をクリックします。
+

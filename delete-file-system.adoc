@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: delete-file-system.html 
+keywords: file system, delete file system, file system deletion 
+summary: ファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。 
+---
+= ファイルシステムを削除する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、削除するFSx for ONTAPファイルシステムの3つの点のメニューをクリックします。
+. 「 * Manage * 」を選択します。
+. [Overview]*タブで、3つのドットメニューをクリックします。
+. [ 削除（ Delete ） ] をクリックします。
+. [Delete FSx for ONTAP file system]ダイアログで、削除するFSx for ONTAPファイルシステムの名前を入力します。
+. [ 削除（ Delete ） ] をクリックします。
+

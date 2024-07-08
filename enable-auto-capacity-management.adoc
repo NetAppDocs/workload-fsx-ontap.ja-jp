@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: enable-auto-capacity-management.html 
+keywords: auto capacity, automatic capacity management, file system capacity 
+summary: この機能を有効にすると、容量のニーズの変化に合わせて、Workload FactoryがFSx for ONTAPファイルシステムに自動的にストレージを追加できるようになります。 
+---
+= ファイルシステムの容量の自動管理を有効にする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+この機能を有効にすると、容量のニーズの変化に合わせて、Workload FactoryがFSx for ONTAPファイルシステムに自動的にストレージを追加できるようになります。
+
+.タスクの内容
+この機能を管理できるアカウントは1つだけです。
+
+すべてのFSx for ONTAPファイルシステムでSSDストレージの最大容量は524、288GiBです。クォータの引き上げをリクエストするには、AWS FSx for NetApp ONTAPのドキュメントを参照して link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["クォータ"^] ください。
+
+.開始する前に
+このタスクを完了するには、Workload Factoryで_automate_permissionsを持つクレデンシャルが必要です。
+
+.手順
+. Workload Factoryコンソールにログインします。
+. [ストレージ]で、*[ストレージインベントリに移動]*を選択します。
+. FSx for ONTAP *タブで、ファイルシステムの3つの点のメニューをクリックして、の容量の自動管理を有効にします。
+. 「 * Manage * 」を選択します。
+. [Information]で、*[Automatic capacity management]*の横にある鉛筆のアイコンをクリックします。[Automatic capacity management]行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。
+. [Automatic capacity management]ダイアログで、次の情報を指定します。
++
+.. *クレデンシャル*：ドロップダウンメニューから、_automate_permissionsを指定してクレデンシャルを選択します。
+.. [有効化]ボタンをクリックして*[自動容量管理を有効にする]*を選択します。
++
+または、この機能を無効にします。ファイルシステムの容量を増やす必要がある場合は、先に容量の自動管理を無効にする必要があります。
+
+.. *容量のしきい値*：FSx for ONTAPファイルシステムの最大サイズを入力します。
+.. * Capacity Increments *：容量を段階的に拡張する割合を入力します。
+
+
+. [ 適用（ Apply ） ] をクリックします。
+
