@@ -16,7 +16,7 @@ summary: ボリュームの詳細、分散、消費、アクセス、保護を�
 ボリュームの詳細は、ファイルシステムにボリュームが作成されたあとに表示されます。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [Volumes]タブで、変更するボリュームの3つのドットメニューを選択します。
 . [基本的な操作]*を選択し、*[ボリュームの詳細を表示]*を選択します。

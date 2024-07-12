@@ -36,7 +36,7 @@ FSx for ONTAPに組み込まれている3つのスナップショットポリシ
 
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [ストレージ]*で、*[ストレージインベントリに移動]*を選択します。
 . FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3つのドットメニューをクリックし、* Manage *を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。

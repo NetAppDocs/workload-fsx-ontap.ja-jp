@@ -34,7 +34,7 @@ summary: 予期しない災害が発生した場合のデータ損失を回避�
 .単一のボリュームをレプリケート
 --
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、レプリケートするボリュームを含むファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。
 . [Volumes]タブで、レプリケートするボリュームの3つのドットメニューを選択します。
@@ -80,7 +80,7 @@ _Auto_は、Workload Factory FSx for ONTAPユーザインターフェイスを�
 .ファイルシステム内のすべてのボリュームをレプリケート
 --
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [FSx for ONTAP ]タブで、ボリュームのあるファイルシステムの3つの点のメニューをクリックし、*[管理]*を選択します。
 . ファイルシステムの概要で、*レプリケーションの作成*を選択します。

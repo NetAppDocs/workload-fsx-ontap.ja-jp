@@ -14,7 +14,7 @@ summary: Storage VMのStorage VMタグをいつでも追加、更新、削除で
 タグは、リソースを分類するのに役立ちます。Storage VMのタグはいつでも追加、編集、削除できます。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、更新するStorage VMがあるファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、*[Storage VMs]*タブを選択します。

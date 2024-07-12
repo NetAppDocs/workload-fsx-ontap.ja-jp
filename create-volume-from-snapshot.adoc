@@ -24,7 +24,7 @@ Snapshotからボリュームを作成する前に、次の制限事項を考慮
 
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、ボリュームSnapshotが含まれているファイルシステムの3つの点のメニューをクリックし、*[管理]*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。

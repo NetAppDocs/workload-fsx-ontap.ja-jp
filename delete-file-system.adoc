@@ -14,7 +14,7 @@ summary: ファイルシステムを削除するには、まずファイルシ�
 ファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、削除するFSx for ONTAPファイルシステムの3つの点のメニューをクリックします。
 . 「 * Manage * 」を選択します。

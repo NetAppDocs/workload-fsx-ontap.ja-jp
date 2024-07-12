@@ -65,7 +65,7 @@ FSx for ONTAPファイルシステムを定義する際に、アカウントに�
 
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、リンクを関連付けるファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。
 . ファイルシステムの概要で、*[リンクの関連付け]*を選択します。

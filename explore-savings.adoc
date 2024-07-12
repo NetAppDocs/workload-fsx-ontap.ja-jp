@@ -50,7 +50,7 @@ Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）�
 .Amazon Elastic Block Store（EBS）
 --
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Explore savings]*を選択し、*[Amazon Elastic Block Store（EBS）]*を選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +
@@ -71,7 +71,7 @@ Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）�
 .Amazon FSx for Windowsファイルサーバ
 --
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . ストレージで、*コスト削減の詳細*を選択し、* Amazon FSx for Windows File Server *を選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +
@@ -93,7 +93,7 @@ Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）�
 .Amazon Elastic File System（EFS）
 --
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、[Explore savings]*、[Amazon Elastic File System（EFS）]*の順に選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +

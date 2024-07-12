@@ -14,7 +14,7 @@ summary: タグは、リソースを分類するのに役立ちます。FSx for 
 タグは、リソースを分類するのに役立ちます。FSx for ONTAPボリュームのボリュームタグは、いつでも追加、編集、削除できます。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。

@@ -22,7 +22,7 @@ summary: レプリケーション関係の最大転送速度を制限します�
 レプリケーションに割り当てる帯域幅を検討します。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
 . ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。

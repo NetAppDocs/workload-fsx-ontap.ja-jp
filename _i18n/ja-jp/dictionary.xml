@@ -22,7 +22,6 @@
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始する前に</block>
   <block id="30780a2d5d1315bb3798040fb45df6f0" category="paragraph">アクセスを許可するユーザまたはグループと、許可するアクセスのタイプを決定します。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
-  <block id="80cda6d0b485a6d7ad08bec0e4e1e512" category="list-text">Workload Factoryコンソールにログインします。</block>
   <block id="7f855d340cfe6607ed51975896dd19da" category="list-text">[Storage]で、*[Go to storage inventory]*を選択します。</block>
   <block id="80ad238f0c32ccf7b3f91d0b7b0ea76b" category="list-text">FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="f76864e1c2588ae3d6373b6ab95e2209" category="list-text">ファイルシステムの概要で、*[ボリューム]*タブを選択します。</block>
@@ -640,7 +639,6 @@
   <block id="e916aa8237833ef72c75def81e289920" category="paragraph">または、Workload Factoryがファイルシステムの容量を管理できるようにすることもできます <block ref="2bbbc5acd5fd256837600f63916b0e57" category="inline-link-macro-rx"></block> 。</block>
   <block id="bdccdc17ac819f178e84be61503a0de2" category="paragraph">ファイルシステムの容量を増やすと、FSx for ONTAPファイルシステムのIOPSに影響します。</block>
   <block id="11df76043d9d8bb3a76f1f7e71096a92" category="inline-link-macro">IOPSのプロビジョニング</block>
-  <block id="b677ee098503d5853f180332f5658aa6" category="paragraph">ファイルシステムの場合、 <block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block> SSDの容量が1GiB増えるごとにIOPSが3 IOPS増加します。たとえば、100TiB（102、400GiB）のSSD容量をプロビジョニングすると、IOPSは300TiB（307、200GiB）増加します。</block>
   <block id="e7317a971e575aecebe43b18f10a7503" category="paragraph">手動で行う場合は <block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block> 、ファイルシステムの容量の増加に対応するためにIOPSの割り当てを増やす必要があります。</block>
   <block id="ffc888e5ff626bf410d67b62a9e8a9a8" category="paragraph">SSDのストレージ容量の制限については、AWS FSx for NetApp ONTAPドキュメントのを参照して <block ref="5e5311b04805e422cc2fabe002034628" category="inline-link-macro-rx"></block> ください。</block>
   <block id="3fa4dafc00a14f08641efa3389891289" category="inline-link-macro">容量の自動管理を無効にする</block>
@@ -1090,4 +1088,6 @@
   <block id="ef045d17e80274aec5be009d1f13f5a2" category="sidebar">ファイルシステムのIOPSのプロビジョニング</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考文献</block>
   <block id="231cf4c70d866b616c21baddaeed0696" category="sidebar">トラブルシューティング</block>
+  <block id="1feb39b44e4fcef3d4be063a2f0c0c2c" category="list-text">にログインします。 <block ref="372504cb6bb48559009ff8f8cdb9a245" category="inline-link-macro-rx"></block></block>
+  <block id="b39f472a8f42e6a145c20b290f2c0f7b" category="paragraph">ファイルシステムの場合、 <block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block> SSDの容量が1GiB増えるごとにIOPSが3 IOPS増加します。</block>
 </blocks>

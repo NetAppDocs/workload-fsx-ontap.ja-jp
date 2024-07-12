@@ -14,7 +14,7 @@ summary: バックアップからAWSアカウント内の任意のFSx for ONTAP�
 バックアップからAWSアカウント内の任意のFSx for ONTAPファイルシステムにボリュームをリストアできます。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3つのドットメニューをクリックし、* Manage *を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。

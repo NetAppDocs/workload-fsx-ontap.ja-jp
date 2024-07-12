@@ -21,7 +21,7 @@ Storage VMを削除する前に、次の点を確認してください。
 
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
 . ファイルシステムの概要で、*[Storage VMs]*タブを選択します。

@@ -18,7 +18,7 @@ SSDストレージの使用容量が指定したしきい値を超えた場合�
 .タスクの内容
 ファイルシステムの容量を増やすと、FSx for ONTAPファイルシステムのIOPSに影響します。
 
-ファイルシステムの場合、 link:provision-iops.html["IOPSのプロビジョニング"] SSDの容量が1GiB増えるごとにIOPSが3 IOPS増加します。たとえば、100TiB（102、400GiB）のSSD容量をプロビジョニングすると、IOPSは300TiB（307、200GiB）増加します。
+ファイルシステムの場合、 link:provision-iops.html["IOPSのプロビジョニング"] SSDの容量が1GiB増えるごとにIOPSが3 IOPS増加します。
 
 手動で行う場合は link:provision-iops.html["IOPSのプロビジョニング"] 、ファイルシステムの容量の増加に対応するためにIOPSの割り当てを増やす必要があります。
 

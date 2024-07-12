@@ -20,7 +20,7 @@ summary: ボリュームのSnapshotポリシーはいつでも更新できます
 既存のSnapshotポリシーを表示するにはリンクが必要です。リンクを関連付けるには、*[アカウント名]*の*[リンクの関連付け]*をクリックします。その後、この操作に戻ります。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [ボリューム]*タブを選択します。
 . [ボリューム]*タブで、Snapshotポリシーを変更するボリュームの3つのドットメニューを選択します。

@@ -22,7 +22,7 @@ link:links-overview.html["リンクの詳細"] または link:create-link.html["
 現在アカウントに関連付けられているリンクを表示できます。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [アカウント]メニューから*[リンク]*を選択します。
 +
@@ -43,7 +43,7 @@ image:screenshot-view-link-details.png["特定のリンクを使用しているF
 作成したリンクをFSx for ONTAPファイルシステムに関連付けることができます。各ファイルシステムは、1つのNetAppアカウント内の1つのリンクにのみ関連付けることができますが、1つのリンクを複数のファイルシステムに関連付けることができます。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、リンクを関連付けるファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。
 . ファイルシステムの概要で、*[リンクの関連付け]*を選択します。
@@ -71,7 +71,7 @@ NOTE: AWSコンソールを使用してLambdaネットワーク構成（VPC、�
 このリンクはWorkload Factoryからのみ削除され、AWS環境からは削除されません。Workload Factoryでリンクを削除した後、AWSアカウントからLambda関数を削除する必要があります。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [アカウント]メニューから*[リンク]*を選択します。
 . [リンク]ページで、メニューボタンを選択して*[削除]*を選択します。

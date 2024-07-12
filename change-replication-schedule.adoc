@@ -16,7 +16,7 @@ summary: レプリケーション関係にあるソースボリュームのレ�
 ソースボリュームからレプリケートされたボリュームにSnapshotを転送する頻度を、目的のRPO（目標復旧時点）に合わせて選択します。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
 . ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。

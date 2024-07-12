@@ -16,7 +16,7 @@ summary: 必要に応じてレプリケーション関係を削除します。
 レプリケーション関係を削除すると、FSx for ONTAPはソースボリュームとターゲットボリュームの共通のレプリケーションスナップショットも削除します。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
 . ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。

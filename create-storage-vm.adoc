@@ -22,7 +22,7 @@ SVMを使用している場合、FSx for ONTAPのデータにアクセスする�
 ファイルシステムあたりのサポートされるStorage VM数を確認します。ファイルシステムあたりのSVMの最大数については、AWSのドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html#max-svms["FSx for ONTAP Storage Virtual Machineの管理"^] 。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [FSx for ONTAP ]タブで、ファイルシステムの3つの点のメニューをクリックしてStorage VMを作成し、*[管理]*を選択します。
 . ファイルシステムの概要で、* Storage VMの作成*を選択します。

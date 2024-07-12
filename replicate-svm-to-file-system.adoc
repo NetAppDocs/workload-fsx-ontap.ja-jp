@@ -17,7 +17,7 @@ summary: ストレージVMを別のFSx for ONTAPファイルシステムにレ�
 Storage VMを別のFSx for ONTAPファイルシステムにレプリケートするには、次の作業が必要です link:manage-links.html["リンクの関連付け"]。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*の*[リンクの関連付け]*をクリックします。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、レプリケートするStorage VMがあるファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、*[Storage VMs]*タブを選択します。

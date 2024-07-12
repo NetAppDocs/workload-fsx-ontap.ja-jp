@@ -37,7 +37,7 @@ FSx for ONTAPボリュームは、データのグループ化、データの保�
 
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . FSx for ONTAP *タブで、ボリュームを作成するファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。
 . [概要]*タブで、*[ボリュームの作成]*をクリックします。

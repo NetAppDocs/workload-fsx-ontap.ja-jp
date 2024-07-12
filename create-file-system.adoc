@@ -36,7 +36,7 @@ FSx for ONTAPファイルシステムは、_Quick create_or_Advanced create_を 
 クイック作成を使用すると、推奨されるベストプラクティス構成を使用できます。ほとんどの設定は、FSx for ONTAPファイルシステムの作成後に変更できます。
 
 .手順
-. Workload Factoryコンソールにログインします。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . ストレージで、* Create FSx for ONTAP *を選択します。
 . [FSx for ONTAPの作成]ページで、*[クイック作成]*を選択します。
 +
