@@ -27,7 +27,10 @@ FSx for ONTAPファイルシステムを作成する前に、以下が必要に�
 
 == FSx for ONTAPファイルシステムの作成
 
-FSx for ONTAPファイルシステムは、_Quick create_or_Advanced create_を 使用して作成できます。
+FSx for ONTAPファイルシステムは、_Quick create_or_Advanced create_を 使用して作成できます。Codeboxで利用可能なREST API、CloudFormation、Terraformの各ツールを使用することもできます。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["Codeboxを使用して自動化する方法"^]です。
+
+
+NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロードしたコードが非表示になり、パスワードが表示され `fsxadmin` `vsadmin` ます。コードを実行するときは、パスワードを再入力する必要があります。
 
 [role="tabbed-block"]
 ====
@@ -106,7 +109,7 @@ AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Admin
 Advanced createでは、可用性、セキュリティ、バックアップ、メンテナンスなど、すべての構成オプションを設定できます。
 
 .手順
-. Workload Factoryコンソールに移動します。
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . ストレージで、* Create FSx for ONTAP *を選択します。
 . [FSx for ONTAPの作成]ページで、*[Advanced create]*を選択します。
 +

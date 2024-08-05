@@ -151,7 +151,6 @@
   <block id="bf2ef084e923ce6ebc4b57db27892de8" category="inline-link-macro">AWSアカウントに権限を付与する方法を確認する</block>
   <block id="3dea7c5f73758b891c81f43eb58f840c" category="list-text">FSx for ONTAPファイルシステムの作成に必要な権限をWorkload Factoryに付与するIAMロールのARN。<block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block>です。</block>
   <block id="aba4a700f63e9801b4211989fc2b559f" category="list-text">ONTAP インスタンスの FSX を作成する場所のリージョンおよび VPC 情報。</block>
-  <block id="2b0fb6a4abeeba5cfeb6d787e562ecf6" category="paragraph">FSx for ONTAPファイルシステムは、_Quick create_or_Advanced create_を 使用して作成できます。</block>
   <block id="956eaa6186169471a13345860cad0757" category="open-title">クイック作成</block>
   <block id="8fae2064aa1f6e3d97040aa274445281" category="paragraph">クイック作成を使用すると、推奨されるベストプラクティス構成を使用できます。ほとんどの設定は、FSx for ONTAPファイルシステムの作成後に変更できます。</block>
   <block id="b168baf285ba580ab175e14956248425" category="list-text">ストレージで、* Create FSx for ONTAP *を選択します。</block>
@@ -185,7 +184,6 @@
   <block id="aaeafa132246393a2d26d406e5a7a87b" category="paragraph">ファイルシステムを作成した場合は、*インベントリ*ページでFSx for ONTAPファイルシステムを確認できるようになりました。</block>
   <block id="28cdc97b1969c0c544a77fde4457a7e5" category="open-title">高度な作成</block>
   <block id="6805fd9faa6a9d49c19e9f0869323fd8" category="paragraph">Advanced createでは、可用性、セキュリティ、バックアップ、メンテナンスなど、すべての構成オプションを設定できます。</block>
-  <block id="fb0ebb9bace9dbf879ba2d83c580b1ab" category="list-text">Workload Factoryコンソールに移動します。</block>
   <block id="05d67c5923f1020ef47b7e3fb35cba6e" category="list-text">[FSx for ONTAPの作成]ページで、*[Advanced create]*を選択します。</block>
   <block id="16babb73337008dc5c8f7dfa9f1a09b2" category="list-text">[ネットワークとセキュリティ]で、次の情報を入力します。</block>
   <block id="38ee1102173e9d9f4d6871edf96fc7fb" category="list-text">*リージョンとVPC *：ファイルシステムのリージョンとVPCを選択します。</block>
@@ -387,7 +385,6 @@
   <block id="bbcc4e18576e310acdd3a82682875a7f" category="list-text">このポリシーはポリシーと同様に機能し<block ref="c21f969b5f03d33d43e04f8f136e7682" prefix=" " category="inline-code"></block> ますが、週次スケジュールのSnapshotが1つだけ保持されます。</block>
   <block id="e3944f065f8a736803ad0b4de4b49f84" category="list-text">このポリシーではスナップショットは作成されません。このポリシーをボリュームに割り当てると、自動Snapshotが作成されないようにすることができます。</block>
   <block id="b206a5f8985f80349f02e0144a4a341d" category="list-text">*階層化ポリシー*：ボリュームに格納されているデータの階層化ポリシーを選択します。</block>
-  <block id="9d9cbc75dd5189b39aa0b396d3861992" category="paragraph">自動は、Workload Factory FSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> 。</block>
   <block id="057899be9192508684a0a7c0ddce247b" category="list-text">[Advance configuration]で、次の情報を指定します。</block>
   <block id="31bc68ca566d500bf92a8cab85ec5ae3" category="list-text">*ジャンクションパス*：ボリュームをマウントするStorage VMのネームスペース内の場所を入力します。デフォルトのジャンクションパスはです<block ref="efef91582c9b0099c391a47d56e741d2" prefix=" " category="inline-code"></block>。</block>
   <block id="a481fc89f2e7d4e062f18bfa2b0d4c70" category="list-text">*アグリゲートリスト*：FlexGroupボリュームのみ。アグリゲートを追加または削除します。アグリゲートの最小数は1です。</block>
@@ -449,7 +446,6 @@
   <block id="524193967bbe3f8da7683435e0a28ea4" category="list-text">FSx for ONTAP *タブで、削除するボリュームを含むファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="b0498e030069e9d348b276238c375c45" category="list-text">[Volumes]タブで、削除するボリュームの3つのドットメニューを選択します。</block>
   <block id="c54ab0793e326deff351b944ad70d29c" category="list-text">[基本的な操作]*を選択し、*[ボリュームの削除]*を選択します。</block>
-  <block id="5d0a77c40657ab0e4ae965d1cce24e97" category="list-text">[Delete volume]ダイアログで、「delete」と入力してボリュームを削除します。</block>
   <block id="321fbbd6f40d9b084f632750d5190dc8" category="summary">Storage VMのStorage VMタグをいつでも追加、更新、削除できます。</block>
   <block id="3628bd405a4cbc203f36176e9e1c0969" category="doc">Storage VMタグの編集</block>
   <block id="9b1137e2c037a2cb220c382a83325048" category="paragraph">タグは、リソースを分類するのに役立ちます。Storage VMのタグはいつでも追加、編集、削除できます。</block>
@@ -512,11 +508,9 @@
   <block id="c8add51a412bd14b1fa8548ea7d4cc9c" category="paragraph">Workload FactoryアカウントにAWSクレデンシャルを追加して_automate_mode ()を有効にした場合<block ref="3ac12273abf0be5e05b49ceaac600ad4" category="inline-link-macro-rx"></block>、Workload FactoryはAWSアカウントで使用可能なすべてのストレージシステムを特定し、それらのシステム上のボリュームの特性を[Storage inventory]ページに表示できます。検索されるAWSアカウントは、Workload Factoryアカウントで定義したクレデンシャルに基づいています。</block>
   <block id="0281a53baaa49bd24211566406a670bd" category="paragraph">この図は、AWSアカウントで検出されたFSx for Windowsファイルサーバシステム上のボリュームを示しています。</block>
   <block id="5d607e96f80f5e0c54fe4550ff3646df" category="inline-image-macro">FSx for Windowsファイルサーバ上のボリュームの現在のインベントリを示すストレージインベントリページ。</block>
-  <block id="1b6b615e774f37106845ba90d2603b7c" category="paragraph"><block ref="1b6b615e774f37106845ba90d2603b7c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="16203b7e08e16041d0c8fdff61a3a4f3" category="paragraph">Workload FactoryアカウントをAWSアカウント（_basic_mode）にリンクするためのクレデンシャルを追加していない場合は、導入予定のストレージシステムに必要な特性を手動で入力すると、コストに基づいてストレージ計算ツールが最適なファイルシステムを判断します。この方法を使用すると、_automate_modeを使用しながら、新しいFSx for ONTAPファイルシステムの範囲を決定することもできます。</block>
   <block id="358b1837aae1be80f9df6667968fb7dd" category="paragraph">この図は、ストレージ計算ツールのページでFSx for ONTAPとEBSストレージを比較したものです。</block>
   <block id="770b3813731da1b92ad91e1b7d040019" category="inline-image-macro">FSx for ONTAPとElastic Block Storeのストレージの比較が記載されたストレージ計算ツールのページです。</block>
-  <block id="0804cd2e6d379bedf0c48b78b009bac3" category="paragraph"><block ref="0804cd2e6d379bedf0c48b78b009bac3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed8b2920ddc5b14cb6c0ba24c4b6c3af" category="inline-link-macro">権限の付与</block>
   <block id="87d163ac7ed334c52282a95bd5a124d9" category="paragraph">Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windows File Serverのストレージ環境を検出するには、 <block ref="d9270f60c282b5496f17a4b48a6da305" category="inline-link-macro-rx"></block> AWSアカウントに登録してください。</block>
   <block id="cf48d7891f28d92c4308fb5debb574b0" category="section-title">コスト削減の詳細</block>
@@ -670,8 +664,6 @@
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">このリリースの製品でサポートされていない、または正しく相互運用できないプラットフォーム、デバイス、または機能については、既知の制限事項が記載されています。これらの制限事項をよく確認してください。</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">既知の制限事項</block>
   <block id="e0b6f78e01f9a479e1f512c03bb3d4fa" category="paragraph">このリリースのWorkload Factoryでは、このリリースの製品でサポートされていない、または正しく相互運用できないプラットフォーム、デバイス、または機能については、既知の制限事項が記載されています。これらの制限事項をよく確認してください。</block>
-  <block id="3b39e22b0ceb822bf56d19eb7ec14f7f" category="section-title">動作モード</block>
-  <block id="04ea39659b8293c396417d41c90f0112" category="paragraph">_Read_modeは現在使用できません。</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="section-title">リンク</block>
   <block id="091b1e7473941991566e0020e4b31a0d" category="paragraph">Workload Factoryユーザーインターフェイスでレプリケーションなどの一部の操作を完了するには、リンクが必要です。</block>
   <block id="fd18465573ec21a6218982055981f6b1" category="section-title">Storage Efficiency</block>
@@ -810,8 +802,6 @@
   <block id="f3636be9e3c5c98f7985af1fe293ad19" category="paragraph"><block ref="f3636be9e3c5c98f7985af1fe293ad19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6ece838c4df65278bd8c3281de96ff5" category="list-text">リンクがある場合は、概要ページに情報が表示されます。</block>
   <block id="c1197fb19ed4c969880f963d9b6df11f" category="list-text">リンクに関連付けられているFSx for ONTAPファイルシステムを表示するには、[関連リソース]セクションで*[表示]*ボタンを選択します。</block>
-  <block id="c3aeb4fd111efbf3853b974f544de317" category="inline-image-macro">特定のリンクを使用しているFSx for ONTAPファイルシステムを示す画面。</block>
-  <block id="5af12f2c23f0cd4b9ce4c693ea2d920c" category="paragraph"><block ref="5af12f2c23f0cd4b9ce4c693ea2d920c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="65ded7963c0209145c9b1f65dff784c8" category="list-text">リンクにAmazon Resource Name（ARN）が必要な場合は、ARNフィールドの横にある_COPY_ICONを選択します。</block>
   <block id="f064e98f22242b4e367a92a4c8074692" category="section-title">FSx for ONTAPファイルシステムへのリンクの関連付け</block>
   <block id="a1b577d6c7996f2c9b8010f9149a836f" category="paragraph">作成したリンクをFSx for ONTAPファイルシステムに関連付けることができます。各ファイルシステムは、1つのNetAppアカウント内の1つのリンクにのみ関連付けることができますが、1つのリンクを複数のファイルシステムに関連付けることができます。</block>
@@ -825,7 +815,6 @@
   <block id="03fc743c74b7e7511aa1eeb9bf490f14" category="paragraph">このリンクはWorkload Factoryからのみ削除され、AWS環境からは削除されません。Workload Factoryでリンクを削除した後、AWSアカウントからLambda関数を削除する必要があります。</block>
   <block id="1b2e63262991497e4aba5a1a22e4e55d" category="list-text">[リンク]ページで、メニューボタンを選択して*[削除]*を選択します。</block>
   <block id="f1ce091ae1a5a535ceceb1b8895c7620" category="inline-image-macro">Workload Factoryからリンクを削除する方法を示すスクリーンショット。</block>
-  <block id="6e948316181888568ead053008b0536c" category="paragraph"><block ref="6e948316181888568ead053008b0536c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="39d7d9e85c32f2e7a66207533ef4a3a9" category="list-text">確認する場合は、*[削除]*をもう一度選択します。</block>
   <block id="0978bfc9ea0b38f88360973d41319547" category="inline-link-macro">Lambda関数の削除</block>
   <block id="0cfc72f205d571b960431be39a5d413e" category="paragraph">AWSのドキュメントを参照してください <block ref="00813965c876b66bf6a0f1cc3b46a3b0" category="inline-link-macro-rx"></block>。</block>
@@ -860,7 +849,6 @@
   <block id="f7598943d19e0d869abf49ffa1bf32a4" category="paragraph">_basic_and_automate_を選択 <block ref="a1a436caedec06006ef5b76c82a83b04" category="inline-link-macro-rx"></block></block>
   <block id="fad2f7a49be756f98f3e7a34ef811e09" category="paragraph">_basic_modeで操作することを選択した場合は、これ以上操作する必要はありません。Workload Factory for FSx for ONTAPを使用して、部分的に完了したコードサンプルをコピーできます。</block>
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link-macro">アカウントへのクレデンシャルの手動追加</block>
-  <block id="8d978025b56e8eaec9aef9b2bfa2332d" category="paragraph">_automate_modeで操作する場合は、データベースやAIなどのワークロード機能を選択し、_automate_modeで操作するための適切な権限を確実に持つためにIAMポリシーを作成する必要があり <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> ます。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
   <block id="8c163240a45cebe17c44b7359252c96a" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> ファイルシステムの作成</block>
   <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link-macro">Workload Factoryコンソール</block>
@@ -891,8 +879,6 @@
   <block id="ec88e771c940eedbefed6c00bb8e1f84" category="paragraph">必要に応じてfsxadminパスワードをリセットします。</block>
   <block id="b5e97b863d5bcb1ef930fb33fb04b071" category="list-text">FSx for ONTAP *タブで、ファイルシステムの3つのドットメニューをクリックしてfsxadminパスワードをリセットし、* Manage *を選択します。</block>
   <block id="6cd3d3b0b9a988575f764ddd5a8e9bee" category="list-text">ファイルシステムの概要で、3つのドットメニューをクリックします。</block>
-  <block id="ecf290d89b3f8701b6b2f051be3341b9" category="inline-image-macro">ファイルシステムの[Overview]タブにある3つのドットメニューのスクリーンショット</block>
-  <block id="3a16c62a2a0a1a7a116661e5e75484cd" category="paragraph"><block ref="3a16c62a2a0a1a7a116661e5e75484cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff40dc19143c531bc7b8a932c148a848" category="list-text">[Reset fsxadmin password]*を選択します。</block>
   <block id="edacd360980e63a5f2e01df2fa59b050" category="list-text">[Reset fsxadmin password]ダイアログで、新しいfsxadminパスワードを入力し、確認のためにもう一度入力します。</block>
   <block id="279e520d9175d8e5591ed2ca3fc5acab" category="summary">必要に応じてStorage VMのパスワードをリセットしてください。</block>
@@ -1090,4 +1076,38 @@
   <block id="231cf4c70d866b616c21baddaeed0696" category="sidebar">トラブルシューティング</block>
   <block id="1feb39b44e4fcef3d4be063a2f0c0c2c" category="list-text">にログインします。 <block ref="372504cb6bb48559009ff8f8cdb9a245" category="inline-link-macro-rx"></block></block>
   <block id="b39f472a8f42e6a145c20b290f2c0f7b" category="paragraph">ファイルシステムの場合、 <block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block> SSDの容量が1GiB増えるごとにIOPSが3 IOPS増加します。</block>
+  <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">Codeboxを使用して自動化する方法</block>
+  <block id="672d0efbe9223ef23c5fd7d2c7cd4a95" category="paragraph">FSx for ONTAPファイルシステムは、_Quick create_or_Advanced create_を 使用して作成できます。Codeboxで利用可能なREST API、CloudFormation、Terraformの各ツールを使用することもできます。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>です。</block>
+  <block id="11e2fb5025fdb2cb91fd04c343163328" category="admonition">CodeboxからTerraformを使用すると、コピーまたはダウンロードしたコードが非表示になり、パスワードが表示され<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block><block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> ます。コードを実行するときは、パスワードを再入力する必要があります。</block>
+  <block id="176a501864ff4c70a2c1b132289ccad0" category="paragraph">Storage VMはWorkload Factoryコンソールから作成できます。Codeboxで利用可能なREST API、CloudFormation、Terraformの各ツールを使用することもできます。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>です。</block>
+  <block id="b3028e0c6912bbb0c93b59dff7fa9ba5" category="paragraph">自動は、ユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9376aafc358c7dd83094603f26235eb3" category="paragraph">ボリュームの作成が開始されます。作成された新しいボリュームは[Volumes]タブに表示されます。</block>
+  <block id="21e6ab9737790ab1abc18e49091d3c18" category="paragraph">次の図は、Snapshot、リージョン間のレプリケーション、オブジェクトストレージへのバックアップを使用したFSx for ONTAPストレージのデータ保護を視覚的に表したものです。</block>
+  <block id="90388f794d575e628df271470a4b766e" category="inline-image-macro">Snapshot、リージョン間レプリケーション、オブジェクトストレージへのバックアップを使用したFSx for ONTAPストレージのデータ保護のスクリーンショットを示しています。</block>
+  <block id="29bed1477f8a04f4f702564c7e6bb224" category="paragraph"><block ref="29bed1477f8a04f4f702564c7e6bb224" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9c70344ba40b88fdb8c4d8e5b34884e" category="list-text">[Delete volume]ダイアログで、「delete」と入力してボリュームを削除します。</block>
+  <block id="afc55fe26a4a4d38cb013803df05c70e" category="paragraph"><block ref="afc55fe26a4a4d38cb013803df05c70e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c45c1ca6034a192f20806fbb0fc110d9" category="paragraph"><block ref="c45c1ca6034a192f20806fbb0fc110d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d9b99cb00c934d1cd88332ae901fc26" category="section-title">Workload Factoryを使用するツール</block>
+  <block id="76737aecf42a629e0422271332fcc5a3" category="paragraph">BlueXP Workload Factoryは次のツールで使用できます。</block>
+  <block id="0fc51b33bbeafc6425a9bd19ec449966" category="list-text">* Workload Factoryコンソール*: Workload Factoryコンソールは、アプリケーションとプロジェクトの全体的なビューを提供するビジュアルインターフェイスを提供します。</block>
+  <block id="3c4460cb8836c21a60d304d5640b4ea7" category="list-text">* REST API *：Workload Factory REST APIを使用すると、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理できます。</block>
+  <block id="fb2bf23fd8d69c944827de16f09d3bb7" category="list-text">* CloudFormation *：AWS CloudFormationコードを使用すると、Workload Factoryコンソールで定義したアクションを実行して、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティのリソースをモデル化、プロビジョニング、管理できます。</block>
+  <block id="887582b3338810bdcfbc9b5a8ff6b6d7" category="list-text">* Terraform BlueXPワークロードファクトリプロバイダ*：Terraformを使用すると、ワークロードファクトリコンソールで生成されるインフラワークフローを構築、管理できます。</block>
+  <block id="d527a24e3cd3e2df59c9ec57fb8383de" category="inline-image-macro">特定のリンクを使用しているFSx for ONTAPファイルシステムを示すスクリーンショット。</block>
+  <block id="8153258b50418b6ebcd06d64da06a5bc" category="paragraph"><block ref="8153258b50418b6ebcd06d64da06a5bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8d0a9b10b0feb1fbeb54874e4db30c45" category="paragraph"><block ref="8d0a9b10b0feb1fbeb54874e4db30c45" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6b6bb5bfce611b62621235836da5c8a9" category="paragraph">_automate_modeで操作する場合は、データベースやAIなどのワークロード機能を選択し、_automate_modeで操作するための適切な権限を確実に持つためにIAMポリシーを作成する必要があり <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> ます。</block>
+  <block id="e5a41f95a3cb9b200664e28fdab1a637" category="inline-image-macro">ファイルシステムの[Overview]タブにある3つのドットメニューのスクリーンショット。</block>
+  <block id="b32bfe90ed6acc2544026bb974e2ffc9" category="paragraph"><block ref="b32bfe90ed6acc2544026bb974e2ffc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b9e7249a649dc92913cae3cb18a805ea" category="section-title">8月4日</block>
+  <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraformのサポート</block>
+  <block id="7f67d234b28766a76903424b29245652" category="paragraph">CodeboxのTerraformを使用して、ファイルシステムとStorage VMを導入および管理できるようになりました。</block>
+  <block id="75086276ae6b7e370f36c7fc49383216" category="inline-link-macro">ファイルシステムの作成</block>
+  <block id="9e0421bb729ebed0fb12b88c1fc5b0e9" category="list-text"><block ref="9e0421bb729ebed0fb12b88c1fc5b0e9" category="inline-link-macro-rx"></block></block>
+  <block id="70fd00aea099407eb4046da5efc04198" category="list-text"><block ref="70fd00aea099407eb4046da5efc04198" category="inline-link-macro-rx"></block></block>
+  <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">コードボックスからTerraformを使用</block>
+  <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
+  <block id="a0d5836b9915a7e404d529a2ee0d2af5" category="section-title">Storage Calculatorに推奨されるスループットとIOPS</block>
+  <block id="b48a7422f4f1f71c3ef03d7a8291f43f" category="paragraph">ストレージ計算ツールは、AWSのベストプラクティスに基づいて、FSx for ONTAPファイルシステム構成のスループットとIOPSに関する推奨事項を提示し、選択に対する最適なガイダンスを提供します。</block>
 </blocks>

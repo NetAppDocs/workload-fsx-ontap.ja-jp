@@ -133,7 +133,7 @@ NOTE: Snapshotの時間はファイルシステムのタイムゾーンに基づ
 
 .. *階層化ポリシー*：ボリュームに格納されているデータの階層化ポリシーを選択します。
 +
-自動は、Workload Factory FSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] 。
+自動は、ユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] 。
 
 
 
@@ -146,3 +146,6 @@ NOTE: Snapshotの時間はファイルシステムのタイムゾーンに基づ
 
 . [ 作成（ Create ） ] をクリックします。
 
+
+.結果
+ボリュームの作成が開始されます。作成された新しいボリュームは[Volumes]タブに表示されます。

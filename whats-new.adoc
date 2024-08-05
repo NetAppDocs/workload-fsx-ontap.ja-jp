@@ -15,6 +15,27 @@ Amazon FSx for NetApp ONTAPの最新情報をご確認ください。
 
 
 
+== 8月4日
+
+
+
+=== Terraformのサポート
+
+CodeboxのTerraformを使用して、ファイルシステムとStorage VMを導入および管理できるようになりました。
+
+* link:create-file-system.html["ファイルシステムの作成"]
+* link:create-storage-vm.html["Storage VM を作成"]
+* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["コードボックスからTerraformを使用"^]
+
+
+
+
+=== Storage Calculatorに推奨されるスループットとIOPS
+
+ストレージ計算ツールは、AWSのベストプラクティスに基づいて、FSx for ONTAPファイルシステム構成のスループットとIOPSに関する推奨事項を提示し、選択に対する最適なガイダンスを提供します。
+
+
+
 == 7月7日
 
 Amazon FSx for NetApp ONTAPは、BlueXPワークロードファクトリーで一般提供されるようになりました。
