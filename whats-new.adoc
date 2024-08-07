@@ -15,7 +15,7 @@ Amazon FSx for NetApp ONTAPの最新情報をご確認ください。
 
 
 
-== 8月4日
+== 2024 年 8 月 4 日
 
 
 
@@ -36,8 +36,10 @@ CodeboxのTerraformを使用して、ファイルシステムとStorage VMを導
 
 
 
-== 7月7日
+== 2024年7月7日
 
-Amazon FSx for NetApp ONTAPは、BlueXPワークロードファクトリーで一般提供されるようになりました。
 
-link:learn-fsx-ontap.html["Amazon FSx for NetApp ONTAP向けBlueXPワークロードファクトリーの詳細"]です。
+
+=== Workload Factory for Databasesの初版リリース
+
+初期リリースには、データベースワークロードのストレージ環境としてAmazon FSx for NetApp ONTAPを使用した場合のコスト削減の検討、Microsoft SQL Serverの検出、管理、導入、データベースの導入とクローニング、Workload Factory内でのジョブの監視が含まれています。

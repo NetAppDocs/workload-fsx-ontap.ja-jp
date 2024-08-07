@@ -13,35 +13,23 @@ summary: Amazon Elastic Block Store（EBS）ストレージ、Elastic File Syste
 [role="lead"]
 Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windowsファイルサーバを使用し、FSx for NetApp ONTAPを使用するストレージワークロードの削減効果をご確認ください。
 
-.タスクの内容
-Workload Factoryにはストレージ計算ツールが用意されており、FSx for ONTAPファイルシステムのストレージコストを、Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windowsファイルサーバのストレージと比較できます。ストレージ要件によっては、FSx for ONTAPファイルシステムが最も対費用効果が高いことがわかります。
+Workload Factoryにはストレージ節約計算ツールが組み込まれているため、Amazonのストレージ環境をFSx for ONTAPと比較できます。AWSクレデンシャルを指定するかどうかに関係なく、削減効果を確認したり、ストレージ環境の構成設定をカスタマイズしたりできます。AWSのクレデンシャルを指定すると、たとえばAmazon Elastic Block Storeのインスタンスを1つ以上選択し、Workload Factoryで自動的に比較を行うことができます。この計算ツールは、手動か自動かにかかわらず、ストレージニーズに対してコストが最も低いストレージサービスを特定します。
 
-Storage Calculatorを使用して、特定のストレージシステムまたは特定のボリュームでの削減量を確認できます。Storage Calculatorには、FSx for ONTAPファイルシステムを使用した場合に、これらのストレージシステム上のワークロード用ストレージのコストを削減できるかどうかが表示されます。
-
-これらのワークロードをFSx for ONTAPファイルシステムで実行することでコストを削減できるとWorkload Factoryが判断した場合は、Workload Factoryから直接計算ツールを使用してファイルシステムを導入できます。Workload Factoryでは、現在使用しているストレージ容量やワークロードのパフォーマンス特性に基づいて、複数のファイルシステムを導入することを推奨する場合があります。
+最も対費用効果の高いストレージがFSx for ONTAPであるとストレージ計算ツールが判断した場合は、FSx for ONTAP構成を作成または保存し、Workload Factoryに付与した権限に関係なく、コードボックスを使用してInfrastructure as Codeテンプレートを生成できます。
 
 
 
-== システム要件の入力
+== 電卓オプション
 
-Workload FactoryアカウントにAWSクレデンシャルを追加して_automate_mode ()を有効にした場合link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["モードの詳細"]、Workload FactoryはAWSアカウントで使用可能なすべてのストレージシステムを特定し、それらのシステム上のボリュームの特性を[Storage inventory]ページに表示できます。検索されるAWSアカウントは、Workload Factoryアカウントで定義したクレデンシャルに基づいています。
+お客様のシステムとFSx for ONTAPのコストを比較するために、Amazonストレージ環境のカスタマイズと自動検出という2つの計算ツールオプションが用意されています。
 
-この図は、AWSアカウントで検出されたFSx for Windowsファイルサーバシステム上のボリュームを示しています。
+カスタマイズによる削減効果の詳細：ストレージ環境の構成設定（ユースケース、リージョン、ボリュームまたはファイルシステムの数、ストレージ容量、Snapshotの頻度、Snapshotあたりの変更量、プロビジョニングされたIOPS、スループットなど）を指定できます。
 
-image:screenshot-storage-inventory.png["FSx for Windowsファイルサーバ上のボリュームの現在のインベントリを示すストレージインベントリページ。"]
-
-Workload FactoryアカウントをAWSアカウント（_basic_mode）にリンクするためのクレデンシャルを追加していない場合は、導入予定のストレージシステムに必要な特性を手動で入力すると、コストに基づいてストレージ計算ツールが最適なファイルシステムを判断します。この方法を使用すると、_automate_modeを使用しながら、新しいFSx for ONTAPファイルシステムの範囲を決定することもできます。
-
-この図は、ストレージ計算ツールのページでFSx for ONTAPとEBSストレージを比較したものです。
-
-image:screenshot-ebs-calculator.png["FSx for ONTAPとElastic Block Storeのストレージの比較が記載されたストレージ計算ツールのページです。"]
-
-.開始する前に
-Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windows File Serverのストレージ環境を検出するには、 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["権限の付与"^] AWSアカウントに登録してください。
+検出されたストレージ環境の削減効果を確認する：Workload Factoryは既存のAWSストレージ環境にリンクし、詳細を計算ツールに入力して自動比較します。自動モードを使用するには、自動化権限を付与する必要があります。ユースケースは変更できますが、その他の詳細はすべて計算で自動的に決定されます。
 
 
 
-== コスト削減の詳細
+== カスタマイズによるコスト削減の詳細
 
 タブに表示されるストレージの選択手順に従います。
 
@@ -54,15 +42,15 @@ Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）�
 . [Storage]で、*[Explore savings]*を選択し、*[Amazon Elastic Block Store（EBS）]*を選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +
-.. *ユースケース*:ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
-.. *リージョン*:ドロップダウンメニューからEBS設定のリージョンを選択します。
-.. * EBSボリュームタイプを選択*：構成に使用するEBSボリュームタイプを選択します。
-.. *ボリューム数*：EBS構成のボリューム数を入力します。
-.. *ボリュームあたりのストレージ容量（TiB）*：ボリュームあたりのストレージ容量をTiB単位で入力します。
-.. * Snapshot frequency *：EBS構成のSnapshot frequencyを選択します。
-.. * Snapshotあたりの変更量（GiB）*：Snapshotストレージのみ。Snapshotあたりの変更量をGiB単位で入力します。
-.. *ボリュームあたりのプロビジョニングIOPS *：gp3、io1、およびio2のボリュームボリュームあたりのプロビジョニングIOPSを入力します。
-.. *スループット（MiB/秒）*：gp3ボリュームのみ。ボリュームあたりのスループット（MiB/秒）を入力します。
+.. *ユースケース*：必須。ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
+.. *リージョン*：オプション。ドロップダウンメニューからEBS設定のリージョンを選択します。
+.. * EBSボリュームタイプを選択*：オプション。構成に使用するEBSボリュームタイプを選択します。
+.. *ボリューム数*：オプション。EBS構成内のボリューム数を入力します。
+.. *ボリュームあたりのストレージ容量（TiB）*：オプション。ボリュームあたりのストレージ容量をTiB単位で入力します。
+.. * Snapshotの頻度*：オプション。EBS構成のスナップショット頻度を選択します。
+.. * Snapshotあたりの変更量（GiB）*：オプション。Snapshotストレージの場合のみ。Snapshotあたりの変更量をGiB単位で入力します。
+.. *ボリュームあたりのプロビジョニングIOPS *：オプション。gp3、io1、およびio2ボリュームの場合。ボリュームあたりのプロビジョニングIOPSを入力します。
+.. *スループット（MiB/秒）*：オプション。gp3ボリュームの場合のみ。ボリュームあたりのスループット（MiB/秒）を入力します。
 
 
 
@@ -75,16 +63,16 @@ Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）�
 . ストレージで、*コスト削減の詳細*を選択し、* Amazon FSx for Windows File Server *を選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +
-.. *ユースケース*:ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
-.. *リージョン*:ドロップダウンメニューからFSx for Windowsファイルサーバ構成のリージョンを選択します。
-.. *導入タイプ*：[単一のアベイラビリティゾーン]*または*[複数のアベイラビリティゾーン]*を選択します。
+.. *ユースケース*：必須。ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
+.. *リージョン*：オプション。FSx for Windowsファイルサーバ構成のリージョンをドロップダウンメニューから選択します。
+.. *導入タイプ*：オプション。[単一のアベイラビリティゾーン]*または*[複数のアベイラビリティゾーン]*を選択します。
 .. *ストレージタイプ*：SSDストレージタイプがデフォルトで選択されています。
-.. *ストレージ容量（TiB）*：構成用のストレージ容量を入力します。
-.. *重複排除による削減（%）*：重複排除によって予想される容量削減の割合を入力します。
-.. *スナップショットの頻度*：構成に応じたスナップショットの頻度を選択します。
-.. * Snapshotあたりの変更量（GiB）*：Snapshotストレージのみ。Snapshotあたりの変更量をGiB単位で入力します。
-.. *プロビジョニングされたSSD IOPS *：プロビジョニングされたSSDのIOPSを入力します。
-.. *スループット（MiB/秒）*：スループットをMiB/秒で入力します。
+.. *ストレージ容量（TiB）*：オプション。構成のストレージ容量を入力します。
+.. *重複排除による削減量（%）*：オプション。重複排除によって削減できる容量の割合を入力します。
+.. * Snapshotの頻度*：オプション。構成に応じたスナップショットの頻度を選択します。
+.. * Snapshotあたりの変更量（GiB）*：オプション。Snapshotストレージの場合のみ。Snapshotあたりの変更量をGiB単位で入力します。
+.. *プロビジョニングされたSSD IOPS *：オプション。[Provisioned SSD IOPS]を入力します。
+.. *スループット（MiB/秒）*：オプション。スループットをMiB/秒単位で入力します。
 
 
 
@@ -97,13 +85,92 @@ Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）�
 . [Storage]で、[Explore savings]*、[Amazon Elastic File System（EFS）]*の順に選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +
-.. *ユースケース*:ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
-.. *リージョン*:ドロップダウンメニューからFSx for Windowsファイルサーバ構成のリージョンを選択します。
-.. *ファイルシステムタイプ*：*地域*または* 1ゾーン*を選択します。
-.. *ストレージ容量（TiB）*：EFS構成のストレージ容量を入力します。
-.. *アクセス頻度の高いデータ（%）*：アクセス頻度の高いデータの割合を入力します。
-.. *スループットモード*：*[Provisioned Throughput]*または*[Elastic Throughput]*を選択します。
-.. *スループット（MiB/秒）*：スループットをMiB/秒で入力します。
+.. *ユースケース*：必須。ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
+.. *リージョン*：オプション。FSx for Windowsファイルサーバ構成のリージョンをドロップダウンメニューから選択します。
+.. *ファイルシステムタイプ*：オプション。地域*または* 1ゾーン*を選択します。
+.. *ストレージ容量（TiB）*：オプション。EFS構成のストレージ容量を入力します。
+.. *アクセス頻度の高いデータ（%）*：オプション。アクセス頻度の高いデータの割合を入力します。
+.. *スループットモード*：オプション。[プロビジョニングされたスループット]*または*[弾性スループット]*を選択します。
+.. *スループット（MiB/秒）*：オプション。スループットをMiB/秒単位で入力します。
+
+
+
+
+--
+====
+ストレージシステム構成の詳細を指定したら、ページに表示される計算方法と推奨事項を確認します。
+
+さらに、ページの一番下までスクロールして* PDFのエクスポート*または*計算の表示*を表示します。
+
+FSx for ONTAPに切り替えるには、の手順に従います <<FSx for ONTAPファイルシステムの導入,FSx for ONTAPファイルシステムの導入>>。
+
+
+
+== 検出されたストレージ環境の削減効果を確認する
+
+.開始する前に
+Workload FactoryでAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windows File Serverのストレージ環境を検出するには、 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["権限の付与"^] AWSアカウントに登録してください。
+
+
+NOTE: この計算ツールオプションでは、EBSスナップショットとFSx for Windows File Serverシャドウコピーの計算はサポートされていません。カスタマイズによるコスト削減を検討する場合は、EBSとFSx for Windows File Serverスナップショットの詳細を提供できます。
+
+タブに表示されるストレージの選択手順に従います。
+
+[role="tabbed-block"]
+====
+.Amazon Elastic Block Store（EBS）
+--
+.手順
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. ストレージインベントリで、* Elastic Block Store（EBS）*タブを選択します。
+. FSx for ONTAPと比較するインスタンスを選択し、*コスト削減について確認*をクリックします。
+. Storage Savings Calculatorが表示されます。選択したインスタンスに基づいて、ストレージシステムの次の特性が事前に入力されています。
++
+.. *ユースケース*：構成のユースケース。必要に応じてユースケースを変更できます。
+.. *選択したボリューム*：EBS構成内のボリュームの数
+.. *合計ストレージ容量（TiB）*：ボリュームあたりのストレージ容量（TiB）
+.. *合計プロビジョニングIOPS *：gp3、io1、およびio2のボリューム
+.. *合計スループット（MiB/秒）*：gp3ボリュームのみ
+
+
+
+
+--
+.Amazon FSx for Windowsファイルサーバ
+--
+.手順
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. ストレージインベントリで、* FSx for Windows File Server *タブを選択します。
+. FSx for ONTAPと比較するインスタンスを選択し、*コスト削減について確認*をクリックします。
+. Storage Savings Calculatorが表示されます。選択したインスタンスの導入タイプに基づいて、ストレージシステムの次の特性があらかじめ設定されています。
++
+.. *ユースケース*：構成のユースケース。必要に応じてユースケースを変更できます。
+.. *選択したファイルシステム
+.. *合計ストレージ容量（TiB）*
+.. *プロビジョニングされたSSD IOPS *
+.. *スループット（MiB/秒）*
+
+
+
+
+--
+.Amazon Elastic File System（EFS）
+--
+.手順
+. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. ストレージインベントリで、* Elastic File System（EFS）*タブを選択します。
+. FSx for ONTAPと比較するインスタンスを選択し、*コスト削減について確認*をクリックします。
+. Storage Savings Calculatorが表示されます。選択したインスタンスに基づいて、ストレージシステムの次の特性が事前に入力されています。
++
+.. *ユースケース*：構成のユースケース。必要に応じてユースケースを変更できます。
+.. *ファイル・システムの総数*
+.. *合計ストレージ容量（TiB）*
+.. *合計プロビジョニングスループット（MiB/秒）*
+.. *弾性スループットの合計-読み取り（GiB）*
+.. *合計柔軟性に優れたスループット–書き込み（GiB）*
 
 
 
