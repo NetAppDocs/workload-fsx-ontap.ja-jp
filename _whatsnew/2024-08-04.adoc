@@ -1,21 +1,6 @@
----
-sidebar: sidebar 
-permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, workload factory, amazon fsx' 
-summary: Amazon FSx for NetApp ONTAPの最新情報をご確認ください。 
----
-= 新機能
+= Terraformのサポート
 :allow-uri-read: 
-:icons: font
-:imagesdir: ./media/
 
-
-[role="lead"]
-Amazon FSx for NetApp ONTAPの最新情報をご確認ください。
-
-
-
-== 2024 年 8 月 4 日
 
 
 
@@ -33,13 +18,3 @@ CodeboxのTerraformを使用して、ファイルシステムとStorage VMを導
 === Storage Calculatorに推奨されるスループットとIOPS
 
 ストレージ計算ツールは、AWSのベストプラクティスに基づいて、FSx for ONTAPファイルシステム構成のスループットとIOPSに関する推奨事項を提示し、選択に対する最適なガイダンスを提供します。
-
-
-
-== 2024年7月7日
-
-
-
-=== Amazon FSx for NetApp ONTAP向けWorkload Factoryの初版リリース
-
-Amazon FSx for NetApp ONTAPがWorkload Factoryで一般提供されるようになりました。
