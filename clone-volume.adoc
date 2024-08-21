@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: clone-volume.html 
-keywords: clone volume 
+keywords: clone volume, clone, clone data 
 summary: テスト用に元のボリュームの読み取り/書き込みボリュームを作成するには、ボリュームをクローニングします。 
 ---
 = ボリュームのクローニング
