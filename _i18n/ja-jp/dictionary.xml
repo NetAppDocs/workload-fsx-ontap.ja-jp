@@ -130,7 +130,6 @@
   <block id="e9198457278be1c95b85e05535cb9f65" category="list-text">*組織単位（OU）*：組織単位を入力します。</block>
   <block id="7a2e6aa7ec8c0baa05c10c56e0f96e77" category="paragraph">OUは、ファイルシステムに参加する組織単位の識別パス名です。</block>
   <block id="ef13ae21eedaa1ecccd02fb7ddd30bb1" category="list-text">*委任された管理者グループ*：必要に応じて、委任されたファイルシステム管理者グループを入力します。</block>
-  <block id="e78e0461224b8a8fb358504cea15161d" category="paragraph">Deleted Administratorsグループは、ファイルシステムを管理できるActive Directory内のグループの名前です。</block>
   <block id="85912990c5413ea32362225e50fc2629" category="paragraph">AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Administrators、AWS Delegated Administratorsなどのグループ、またはOUに権限を委譲されたカスタムグループを指定する必要があります。</block>
   <block id="3fd21f2222285241b7bbfebc4759ab56" category="paragraph">自己管理型ADに参加する場合は、AD内のグループ名を使用します。デフォルトのグループはです<block ref="746c2ea920930b61350130daa63e23e5" prefix=" " category="inline-code"></block>。</block>
   <block id="feee2b77515a5dc7c8021b28aff315e8" category="summary">定期的にスケジュールされたバックアップ以外で、ボリュームの手動バックアップを作成します。</block>
@@ -224,8 +223,6 @@
   <block id="89a62ddcc9759060d903ef8b7aee42c3" category="list-text">*リンク名*：このリンクに使用する名前を入力します。名前はアカウント内で一意である必要があります。</block>
   <block id="68d5729d2a63e62a04de68bac212b9ab" category="list-text">*タグ*:必要に応じて、リソースをより簡単に分類できるように、このリンクに関連付けるタグを追加します。たとえば、FSx for ONTAPファイルシステムでこのリンクが使用されていることを示すタグを追加できます。</block>
   <block id="c54e90f3916f294bec1f9be7d938fba1" category="paragraph">AWSアカウントと、アカウント、場所、セキュリティグループの追加情報は、FSx for ONTAPファイルシステムに基づいて自動的に取得されます。</block>
-  <block id="96e4942093191178179c76019581eee0" category="list-text">[Redirect to CloudFormation]*を選択します。</block>
-  <block id="d1b173de03b05ec6a5b1a04a0c72d5d0" category="paragraph">AWS CloudFormationサービスからリンクを作成する方法を説明するダイアログが表示されます。</block>
   <block id="c602cdf8533ce956e9f326890f6d8723" category="list-text">[続行]*を選択してAWS管理コンソールを開き、このFSx for ONTAPファイルシステムのAWSアカウントにログインします。</block>
   <block id="ab44f988398acb833af7b9b2bc6c26b9" category="list-text">[Quick create stack]ページの[Capabilities]で、*[I acknowledge that AWS CloudFormation might create IAM resources]*を選択します。</block>
   <block id="687e9c397e4fb6b561e735147b5af100" category="paragraph">CloudFormationテンプレートを起動すると、Lambdaに3つの権限が付与されます。Workload Factoryは、リンクを使用する際にこれらの権限を使用</block>
@@ -1121,8 +1118,6 @@
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024年7月7日</block>
   <block id="b18d7ec0ad964d10af97254ea8b0612d" category="doc">Amazon FSx for NetApp ONTAP向けWorkload Factoryの初版リリース</block>
-  <block id="03b2cfc949418819e16b1dc5fa3660ae" category="list-text"><block ref="03b2cfc949418819e16b1dc5fa3660ae" category="inline-link-macro-rx"></block></block>
-  <block id="3b915cd68add8a6cdac4cd1adeb5f100" category="list-text"><block ref="3b915cd68add8a6cdac4cd1adeb5f100" category="inline-link-macro-rx"></block></block>
   <block id="bbccc2f370efe6824018b613b1dd5839" category="paragraph">Amazon FSx for NetApp ONTAPがWorkload Factoryで一般提供されるようになりました。</block>
   <block id="0fd886acd6700c343d655429665d7e6a" category="paragraph">CodeboxのTerraformを使用してファイルシステムとStorage VMを導入できるようになりました。</block>
   <block id="f0881d896f399a09e86122a09c00b74d" category="doc">ストレージ管理用の読み取りモードのサポート</block>
@@ -1138,4 +1133,28 @@
   <block id="26983a904e0717c520032a2178795368" category="list-text">[* Continue （続行） ] をクリックします</block>
   <block id="b1bb1fd299d4d0d5a0bcf89deacb85de" category="list-text">「delete」と入力してボリュームを削除します。</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
+  <block id="a384088a79fca35da6b697720f2ddd66" category="list-text"><block ref="a384088a79fca35da6b697720f2ddd66" category="inline-link-macro-rx"></block></block>
+  <block id="a9803c91b8fa40d3fdc106b005fdb16c" category="list-text"><block ref="a9803c91b8fa40d3fdc106b005fdb16c" category="inline-link-macro-rx"></block></block>
+  <block id="cd1df627bd8e5b96916530ffbf4664f6" category="doc">リンク作成の更新</block>
+  <block id="15f127e6d8c5111ce85f47eff68232a7" category="list-text">Codeboxビューア: Codeboxがリンク作成プロセスに統合されました。操作を実行するためにAWSにリダイレクトする前に、Workload FactoryのCodeboxからCloudFormationテンプレートを表示およびコピーできます。</block>
+  <block id="8efc4e00ac03374d3e1dc5d19c40016b" category="list-text">必要な権限: AWS CloudFormationでリンク作成を実行するために必要な権限が、Workload FactoryのCreate Linkウィザードで表示およびコピーできるようになりました。</block>
+  <block id="3721bd571f4111dad2c363436de34c51" category="list-text">手動リンク作成のサポート:この機能を使用すると、AWS CloudFormationでリンクARNを手動で登録してスタンドアロンで作成できます。これは、セキュリティチームまたはDevOpsチームがリンク作成プロセスを支援する場合に役立ちます。</block>
+  <block id="27f80dd01569e18971f783f257cc7294" category="paragraph"><block ref="27f80dd01569e18971f783f257cc7294" category="inline-link-macro-rx"></block></block>
+  <block id="652227e30bf6d77e12a5c024de7bc6d6" category="list-text">[FSx for ONTAP *]タブで、更新するStorage VMがあるファイルシステムの3ドットメニューをクリックし、*[管理]*を選択します。</block>
+  <block id="37bb8b5cad0754acdd2d9ed1e9d36928" category="paragraph">委任管理者グループは、ファイルシステムを管理できるActive Directory内のグループの名前です。</block>
+  <block id="1ffab80b063e5f05f25ab6681156237d" category="paragraph">自己管理型ADに接続する場合は、AD内のグループ名を使用します。デフォルトのグループはです<block ref="746c2ea920930b61350130daa63e23e5" prefix=" " category="inline-code"></block>。</block>
+  <block id="e359c45e41079948637e3625aa645ee6" category="paragraph">リンクを作成するには、自動または手動の2つのオプションがあります。</block>
+  <block id="5f430c8ea369f8788a9d32bc5ddef4f4" category="list-text">Automatically：Workload Factoryを介して自動登録のリンクを作成します。自動的に作成されたリンクには、Workload Factoryの自動化のためのトークンが必要であり、CloudFormationコードは短命です。最大6時間しか使用できません。</block>
+  <block id="f35d0bfc59b397e2ee196c7e6b0d33d7" category="list-text">手動（Manually）：手動登録によるリンクを作成します。CloudFormationコードは、操作を完了するためのより多くの時間を与えます。これは、リンク作成を完了するために必要な権限を最初に付与する必要がある可能性があるセキュリティやDevOpsなどのさまざまなチームで作業する場合に便利です。</block>
+  <block id="758ce486f132a2978be7ecfbcd518afa" category="list-text">どのリンク作成オプションを使用するかを検討する必要があります。</block>
+  <block id="6903e2b3a86228f4d258e423fb6b913a" category="open-title">自動作成</block>
+  <block id="e07190df7367fb116bdd913bfce43fbe" category="paragraph">CloudFormationを使用して、Workload Factory内にリンクを自動的に作成して登録します。</block>
+  <block id="6a97c44fefe95ac9ca6fe05e50d1729f" category="paragraph">[Redirect to CloudFormation]ダイアログが表示され、AWS CloudFormationサービスからリンクを作成する方法が説明されます。</block>
+  <block id="a85b3f8e5456d47e8056e0372aeccb2a" category="open-title">手動で作成</block>
+  <block id="6f19769f7ee87f4c55c249bc3849c48a" category="paragraph">このオプションでは、AWS CloudFormationからリンクのARNを抽出し、ここにレポートします。Workload Factoryは手動でリンクを登録します。</block>
+  <block id="9f7d5c71d756492e276c5460cc778424" category="list-text">*リンク登録*:ドロップダウン矢印をクリックして、AWS CloudFormationサービスからリンクを登録する手順を展開します。指示に従ってください。</block>
+  <block id="c3b24be1571207cf6200f2d8b54ee7c0" category="paragraph">スタックが正常に作成されたら、テキストボックスにLambda ARNを貼り付けます。</block>
+  <block id="80cda6d0b485a6d7ad08bec0e4e1e512" category="list-text">Workload Factoryコンソールにログインします。</block>
+  <block id="c7f0e7c4e7e9f76582f27e34058deaa6" category="paragraph">クローンFlexVol volumeを親ボリュームからスプリットして、通常の読み書き可能FlexVol volumeにします。</block>
+  <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
 </blocks>

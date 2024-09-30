@@ -19,7 +19,7 @@ Storage VMのActive Directoryの設定と更新も同じ手順です。
 .手順
 . にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するStorage VMがあるファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。
+. [FSx for ONTAP *]タブで、更新するStorage VMがあるファイルシステムの3ドットメニューをクリックし、*[管理]*を選択します。
 . ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
 . [Storage VM]タブで、Active Directoryを設定するStorage VMの3つのドットメニューを選択します。
 . [AD構成の管理]*を選択します。
@@ -39,13 +39,13 @@ OUは、ファイルシステムに参加する組織単位の識別パス名で
 
 .. *委任された管理者グループ*：必要に応じて、委任されたファイルシステム管理者グループを入力します。
 +
-Deleted Administratorsグループは、ファイルシステムを管理できるActive Directory内のグループの名前です。
+委任管理者グループは、ファイルシステムを管理できるActive Directory内のグループの名前です。
 
 +
 AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Administrators、AWS Delegated Administratorsなどのグループ、またはOUに権限を委譲されたカスタムグループを指定する必要があります。
 
 +
-自己管理型ADに参加する場合は、AD内のグループ名を使用します。デフォルトのグループはです `Domain Admins`。
+自己管理型ADに接続する場合は、AD内のグループ名を使用します。デフォルトのグループはです `Domain Admins`。
 
 
 
