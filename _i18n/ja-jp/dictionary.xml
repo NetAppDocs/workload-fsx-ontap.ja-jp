@@ -647,7 +647,6 @@
   <block id="b1c8cb58e124bead4ca2e09fa1c20c9b" category="paragraph">ファイルシステムあたりのSVMの最大数については、AWSのドキュメントのを参照してください <block ref="17ef0d7491a925205e8443311f7ef122" category="inline-link-macro-rx"></block> 。</block>
   <block id="3a448e496404b548627a97fc00da8e23" category="section-title">iSCSIプロトコルのサポート</block>
   <block id="33060a985f3ea357dedca3b638c9dedc" category="list-text">iSCSIプロトコルはスケールアップ環境でのみサポートされます。^1 ^</block>
-  <block id="37ea650652be756727cc05f929ac982b" category="list-text">iSCSIプロトコルは、FlexGroupボリュームに対してのみ使用できます。^1 ^</block>
   <block id="53c858a11ae23c19aee107fb913f096a" category="list-text">1つのボリュームに設定できるLUNは1つだけです。</block>
   <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">リージョンのサポート</block>
   <block id="1bf3a4f06c8408a2ff436e0b847ca3a3" category="list-text">カナダ西部(カルガリー)地域は現在サポートされていません。</block>
@@ -1157,4 +1156,5 @@
   <block id="80cda6d0b485a6d7ad08bec0e4e1e512" category="list-text">Workload Factoryコンソールにログインします。</block>
   <block id="c7f0e7c4e7e9f76582f27e34058deaa6" category="paragraph">クローンFlexVol volumeを親ボリュームからスプリットして、通常の読み書き可能FlexVol volumeにします。</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
+  <block id="50fa5062b83d0f575448ba449245fa17" category="list-text">iSCSIプロトコルは、FlexVolボリュームに対してのみ使用できます。^1 ^</block>
 </blocks>
