@@ -438,8 +438,6 @@
   <block id="c4037415f2f0cfbaf2d8633bef548eca" category="paragraph">ボリュームを削除する前に、次の点を考慮してください。</block>
   <block id="7ba3b681b508a24c70a973831af6f1ad" category="list-text">ローカルスナップショット：このFSx for ONTAPファイルシステムに関連付けられているすべてのスナップショットが完全に削除されます。</block>
   <block id="4d07a6e16a1c8ad6e621cc84eb969e7e" category="list-text">FSx for ONTAPバックアップ：FSx for ONTAPのバックアップコピーは残り、引き続き使用できます。</block>
-  <block id="257f4990e0b233436c87d843d19bde86" category="inline-link-macro">既存のレプリケーション関係を削除する</block>
-  <block id="dc3d3cc2dd8fe8ca34129b7367abba17" category="list-text">レプリケーション関係：解除された関係が残らないように、ボリュームを削除する前にこのボリュームについて確認することを推奨します <block ref="507a7d95f37121fd7920ef201528352a" category="inline-link-macro-rx"></block> 。</block>
   <block id="524193967bbe3f8da7683435e0a28ea4" category="list-text">FSx for ONTAP *タブで、削除するボリュームを含むファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="b0498e030069e9d348b276238c375c45" category="list-text">[Volumes]タブで、削除するボリュームの3つのドットメニューを選択します。</block>
   <block id="c54ab0793e326deff351b944ad70d29c" category="list-text">[基本的な操作]*を選択し、*[ボリュームの削除]*を選択します。</block>
@@ -1157,4 +1155,6 @@
   <block id="c7f0e7c4e7e9f76582f27e34058deaa6" category="paragraph">クローンFlexVol volumeを親ボリュームからスプリットして、通常の読み書き可能FlexVol volumeにします。</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024年9月29日</block>
   <block id="50fa5062b83d0f575448ba449245fa17" category="list-text">iSCSIプロトコルは、FlexVolボリュームに対してのみ使用できます。^1 ^</block>
+  <block id="e6816f159adf84ca7c085ce0702311af" category="inline-link-macro">既存のレプリケーション関係をすべて削除する</block>
+  <block id="da13b22f351bd4b981038bd55ca5d3ab" category="list-text">レプリケーション関係：解除された関係が残っていないように、ボリュームを削除する前にこのボリュームに対して設定する必要があります<block ref="fa9c4758a74309c74eff4644a0675063" category="inline-link-macro-rx"></block>。</block>
 </blocks>
