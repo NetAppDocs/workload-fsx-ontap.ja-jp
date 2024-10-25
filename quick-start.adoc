@@ -23,13 +23,13 @@ Workload Factoryを使用してファイルシステムの作成、リソース�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] クレデンシャルと権限の追加
 [role="quick-margin-para"]
-_basic_and_automate_を選択 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]
+_basic_、_read_、および_automate_を選択します。 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]
 
 [role="quick-margin-para"]
 _basic_modeで操作することを選択した場合は、これ以上操作する必要はありません。Workload Factory for FSx for ONTAPを使用して、部分的に完了したコードサンプルをコピーできます。
 
 [role="quick-margin-para"]
-_automate_modeで操作する場合は、データベースやAIなどのワークロード機能を選択し、_automate_modeで操作するための適切な権限を確実に持つためにIAMポリシーを作成する必要があり link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["アカウントへのクレデンシャルの手動追加"^] ます。
+_read_or_automate_modeで操作する場合は、データベースやAIなどのワークロード機能の選択や、_read_or_automate_modeで操作するための適切な権限があることを確認するためのIAMポリシーの作成が必要 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["アカウントへのクレデンシャルの手動追加"^] です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ファイルシステムの作成
 [role="quick-margin-para"]
