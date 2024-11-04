@@ -68,7 +68,6 @@
   <block id="6c25e6a6da95b3d583c6ec4c3f82ed4d" category="list-text">毎週</block>
   <block id="d8977131f7da0505ccdd8e33f901bb75" category="summary">ボリュームのSnapshotポリシーはいつでも更新できます。</block>
   <block id="340f8dee912ac16b4fb008726d3ee88f" category="doc">ボリュームのSnapshotポリシーの変更</block>
-  <block id="98a71d4244a8d2bc70cdcddc5cb64af6" category="paragraph">この処理は、ボリュームに対してSnapshotを作成する頻度を更新するか、自動Snapshotを無効にします。</block>
   <block id="53e6e67988f9acb9f1aab8ccad2c0340" category="paragraph">既存のSnapshotポリシーを表示するにはリンクが必要です。リンクを関連付けるには、*[アカウント名]*の*[リンクの関連付け]*をクリックします。その後、この操作に戻ります。</block>
   <block id="6e1473c0de5b054e5e9236bbe796cc32" category="list-text">[ボリューム]*タブを選択します。</block>
   <block id="b7896e81066533818c46cd2b875eb7bf" category="list-text">[ボリューム]*タブで、Snapshotポリシーを変更するボリュームの3つのドットメニューを選択します。</block>
@@ -844,7 +843,6 @@
   <block id="edacd360980e63a5f2e01df2fa59b050" category="list-text">[Reset fsxadmin password]ダイアログで、新しいfsxadminパスワードを入力し、確認のためにもう一度入力します。</block>
   <block id="279e520d9175d8e5591ed2ca3fc5acab" category="summary">必要に応じてStorage VMのパスワードをリセットしてください。</block>
   <block id="217c9f6fe263e655130a845fd58ccebe" category="doc">Storage VMのパスワードをリセットする</block>
-  <block id="eda74f1b1bef1d5fd22f162e31e3f4c5" category="list-text">[Storage VMs]*タブを選択します。</block>
   <block id="a22a424f6f09fb9aab17350b24d152ce" category="list-text">[Storage VM]タブで、パスワードをリセットするStorage VMの3つのドットメニューを選択します。</block>
   <block id="3930015dcc2810869591e35a2b5d714b" category="list-text">「 * パスワードのリセット * 」を選択します。</block>
   <block id="0828ddc896996b7d41cc9ceb1e453764" category="list-text">[パスワードのリセット]ダイアログで、次の情報を入力します。</block>
@@ -1091,7 +1089,6 @@
   <block id="c0c6f43c72d4131a3142969ee1f93961" category="paragraph">FSx for ONTAPに切り替えるには、の手順に従います <block ref="d4d3e2c1446af85f31cda9e1ddaf30d7" category="inline-xref-macro-rx"></block>。</block>
   <block id="b531032648e600a642b682616d2a0bdd" category="section-title">検出されたストレージ環境の削減効果を確認する</block>
   <block id="cb10bf47866edd2ac9fb6586867bd1f6" category="admonition">この計算ツールオプションでは、EBSスナップショットとFSx for Windows File Serverシャドウコピーの計算はサポートされていません。カスタマイズによるコスト削減を検討する場合は、EBSとFSx for Windows File Serverスナップショットの詳細を提供できます。</block>
-  <block id="9f9100c91adcf9dad4883f822e09cda9" category="list-text">ストレージインベントリで、* Elastic Block Store（EBS）*タブを選択します。</block>
   <block id="4e6bb917970bfdc851c5092e11272217" category="list-text">FSx for ONTAPと比較するインスタンスを選択し、*コスト削減について確認*をクリックします。</block>
   <block id="f59ef66ff04b00cacb36ef4c77c51958" category="list-text">Storage Savings Calculatorが表示されます。選択したインスタンスに基づいて、ストレージシステムの次の特性が事前に入力されています。</block>
   <block id="bca9e850c916e20118ab9da7a15e1ab7" category="list-text">*ユースケース*：構成のユースケース。必要に応じてユースケースを変更できます。</block>
@@ -1099,13 +1096,11 @@
   <block id="6c52ebf14450d045b355a868931e1164" category="list-text">*合計ストレージ容量（TiB）*：ボリュームあたりのストレージ容量（TiB）</block>
   <block id="304b6d4108ca48d891db9c471488358b" category="list-text">*合計プロビジョニングIOPS *：gp3、io1、およびio2のボリューム</block>
   <block id="8f5e9660dd3425492cf59bc6e12606d8" category="list-text">*合計スループット（MiB/秒）*：gp3ボリュームのみ</block>
-  <block id="2da38d4eab31e419f29bebc00eb3d264" category="list-text">ストレージインベントリで、* FSx for Windows File Server *タブを選択します。</block>
   <block id="15fc70bd68494b595c2e5441312916e5" category="list-text">Storage Savings Calculatorが表示されます。選択したインスタンスの導入タイプに基づいて、ストレージシステムの次の特性があらかじめ設定されています。</block>
   <block id="a32ffe6360aa9a89cb9696c19f828d91" category="list-text">*選択したファイルシステム</block>
   <block id="148f511d9c35e6ff4cb92ebc25a1c9cf" category="list-text">*合計ストレージ容量（TiB）*</block>
   <block id="9dbb3393e470b57796b7ec491b66bdea" category="list-text">*プロビジョニングされたSSD IOPS *</block>
   <block id="22706a4c75c6b61679dc073e45ec6e08" category="list-text">*スループット（MiB/秒）*</block>
-  <block id="ff878267bfd97975ad2ec503878325c1" category="list-text">ストレージインベントリで、* Elastic File System（EFS）*タブを選択します。</block>
   <block id="a765aa8369baa37d4241f37483d8954c" category="list-text">*ファイル・システムの総数*</block>
   <block id="9285022230e927d788a11d636f2a52c4" category="list-text">*合計プロビジョニングスループット（MiB/秒）*</block>
   <block id="6aae74300e54ee6bdcfadde9a88345f6" category="list-text">*弾性スループットの合計-読み取り（GiB）*</block>
@@ -1157,4 +1152,21 @@
   <block id="da13b22f351bd4b981038bd55ca5d3ab" category="list-text">レプリケーション関係：解除された関係が残っていないように、ボリュームを削除する前にこのボリュームに対して設定する必要があります<block ref="fa9c4758a74309c74eff4644a0675063" category="inline-link-macro-rx"></block>。</block>
   <block id="f14fbd72eb1c8ba39f23e290779d3ac7" category="paragraph">_basic_、_read_、および_automate_を選択します。 <block ref="a1a436caedec06006ef5b76c82a83b04" category="inline-link-macro-rx"></block></block>
   <block id="9b0784be448bb1dc8f08485434f9a91a" category="paragraph">_read_or_automate_modeで操作する場合は、データベースやAIなどのワークロード機能の選択や、_read_or_automate_modeで操作するための適切な権限があることを確認するためのIAMポリシーの作成が必要 <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> です。</block>
+  <block id="31139fb3d548620b7d82f880e4660606" category="doc">ストレージインベントリのタブビュー</block>
+  <block id="d4aa654cea4681dd5ca03650594006c6" category="paragraph">ストレージインベントリが2つのタブで構成されるように更新されました。</block>
+  <block id="71083868a2ec5abfee9a2647a74612c0" category="list-text">FSx for ONTAPタブ：現在お使いのFSx for ONTAPファイルシステムが表示されます。</block>
+  <block id="1113c9108b3e58789456954d1c2ea9c2" category="list-text">コスト削減を確認するタブ：Elastic Block Store、FSx for Windows File Server、Elastic File Systemsの各ストレージシステムが表示されます。そこから、FSx for ONTAPと比較して、これらのシステムのコスト削減効果を確認できます。</block>
+  <block id="62cf721f97d39a9aaf1ac7786071551c" category="paragraph">ボリュームに対してSnapshotを作成する頻度をいつでも更新するか、または自動Snapshotを無効にします。</block>
+  <block id="110f1585246a580402f0c6b34d42e65a" category="list-text">FSx for ONTAP *タブで、更新するSnapshotポリシーが設定されたボリュームが含まれているFSx for ONTAPファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。</block>
+  <block id="fa8dc6e67f45bcde58853510e56ce6a1" category="list-text">ファイルシステムの[概要]タブで、*[ボリューム]*タブを選択します。</block>
+  <block id="74e854d4ac135e193bafa7dfdf343efe" category="list-text">[Storage]で、*[Go to storage inventory]*を選択します。</block>
+  <block id="9df0f8cc7fbb70153a71c3d1657c3d81" category="list-text">FSx for ONTAP *タブで、クローンを作成するボリュームを含むFSx for ONTAPファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。</block>
+  <block id="80ad1fda17ca981880509b63f91591c9" category="list-text">ストレージインベントリで、*[削減効果の確認]*タブを選択します。</block>
+  <block id="a1e5470290e2e47a8295d8ae0b1e78af" category="list-text">[Elastic Block Store（EBS）]*タブで、FSx for ONTAPと比較するインスタンスを選択し、*[削減効果を確認]*をクリックします。</block>
+  <block id="69664318bb60fdf05cfe25fa2b5a7242" category="list-text">FSx for Windows File Server *タブを選択します。</block>
+  <block id="5e172a101429002f6723f0f156cbd608" category="list-text">[Elastic File System（EFS）]*タブを選択します。</block>
+  <block id="78745d22af85f4409daf48ce5059c4c0" category="list-text">FSx for ONTAP *タブで、更新するStorage VMがあるFSx for ONTAPファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。</block>
+  <block id="8c9880429b2df2018a366dbb14193026" category="list-text">ファイルシステムの[概要]タブで、*[Storage VMs]*タブを選択します。</block>
+  <block id="ca677da26b1ef83b53f1decf3bf448d0" category="list-text">FSx for ONTAP *タブで、スプリットするクローンボリュームを含むFSx for ONTAPファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
 </blocks>

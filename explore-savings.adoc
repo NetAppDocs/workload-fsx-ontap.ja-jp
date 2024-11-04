@@ -123,8 +123,8 @@ NOTE: この計算ツールオプションでは、EBSスナップショット�
 .手順
 . にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. ストレージインベントリで、* Elastic Block Store（EBS）*タブを選択します。
-. FSx for ONTAPと比較するインスタンスを選択し、*コスト削減について確認*をクリックします。
+. ストレージインベントリで、*[削減効果の確認]*タブを選択します。
+. [Elastic Block Store（EBS）]*タブで、FSx for ONTAPと比較するインスタンスを選択し、*[削減効果を確認]*をクリックします。
 . Storage Savings Calculatorが表示されます。選択したインスタンスに基づいて、ストレージシステムの次の特性が事前に入力されています。
 +
 .. *ユースケース*：構成のユースケース。必要に応じてユースケースを変更できます。
@@ -142,7 +142,8 @@ NOTE: この計算ツールオプションでは、EBSスナップショット�
 .手順
 . にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. ストレージインベントリで、* FSx for Windows File Server *タブを選択します。
+. ストレージインベントリで、*[削減効果の確認]*タブを選択します。
+. FSx for Windows File Server *タブを選択します。
 . FSx for ONTAPと比較するインスタンスを選択し、*コスト削減について確認*をクリックします。
 . Storage Savings Calculatorが表示されます。選択したインスタンスの導入タイプに基づいて、ストレージシステムの次の特性があらかじめ設定されています。
 +
@@ -161,7 +162,8 @@ NOTE: この計算ツールオプションでは、EBSスナップショット�
 .手順
 . にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. ストレージインベントリで、* Elastic File System（EFS）*タブを選択します。
+. ストレージインベントリで、*[削減効果の確認]*タブを選択します。
+. [Elastic File System（EFS）]*タブを選択します。
 . FSx for ONTAPと比較するインスタンスを選択し、*コスト削減について確認*をクリックします。
 . Storage Savings Calculatorが表示されます。選択したインスタンスに基づいて、ストレージシステムの次の特性が事前に入力されています。
 +

@@ -15,6 +15,20 @@ Amazon FSx for NetApp ONTAPの最新情報をご確認ください。
 
 
 
+== 2024年11月3日
+
+
+
+=== ストレージインベントリのタブビュー
+
+ストレージインベントリが2つのタブで構成されるように更新されました。
+
+* FSx for ONTAPタブ：現在お使いのFSx for ONTAPファイルシステムが表示されます。
+* コスト削減を確認するタブ：Elastic Block Store、FSx for Windows File Server、Elastic File Systemsの各ストレージシステムが表示されます。そこから、FSx for ONTAPと比較して、これらのシステムのコスト削減効果を確認できます。
+
+
+
+
 == 2024年9月29日
 
 
