@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, workload factory, amazon fsx for netapp ontap, fsx for ontap' 
 summary: Amazon FSx for NetApp ONTAPの最新情報をご確認ください。 
 ---
-= 新機能
+= Amazon FSx for NetApp ONTAP の最新情報
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -35,12 +35,12 @@ Amazon FSx for NetApp ONTAPの最新情報をご確認ください。
 
 === リンク作成の更新
 
-* Codeboxビューア: Codeboxがリンク作成プロセスに統合されました。操作を実行するためにAWSにリダイレクトする前に、Workload FactoryのCodeboxからCloudFormationテンプレートを表示およびコピーできます。
-* 必要な権限: AWS CloudFormationでリンク作成を実行するために必要な権限が、Workload FactoryのCreate Linkウィザードで表示およびコピーできるようになりました。
+* Codeboxビューア: Codeboxがリンク作成プロセスに統合されました。操作を実行するためにAWSにリダイレクトする前に、ワークロードファクトリのCodeboxからCloudFormationテンプレートを表示およびコピーできます。
+* 必要な権限: AWS CloudFormationでリンク作成を実行するために必要な権限が、ワークロードファクトリのCreate Linkウィザードで表示およびコピーできるようになりました。
 * 手動リンク作成のサポート:この機能を使用すると、AWS CloudFormationでリンクARNを手動で登録してスタンドアロンで作成できます。これは、セキュリティチームまたはDevOpsチームがリンク作成プロセスを支援する場合に役立ちます。
 
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクの作成"^]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクの作成"]
 
 
 
@@ -50,9 +50,9 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リン�
 
 === ストレージ管理用の読み取りモードのサポート
 
-読み取りモードはWorkload Factoryでストレージ管理に使用できます。読み取りモードでは、コードとしてのインフラストラクチャテンプレートに特定の変数が入力されるように、読み取り専用権限を追加することで、基本モードのエクスペリエンスが向上します。コードとしてのインフラストラクチャテンプレートは、Workload Factoryに変更権限を与えることなく、AWSアカウントから直接実行できます。
+読み取りモードはワークロード工場でのストレージ管理に使用できます。読み取りモードでは、コードとしてのインフラストラクチャテンプレートに特定の変数が入力されるように、読み取り専用権限を追加することで、基本モードのエクスペリエンスが向上します。コードとしてのインフラストラクチャテンプレートは、ワークロードファクトリに変更権限を与えることなく、AWSアカウントから直接実行できます。
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["読み取りモードの詳細"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["読み取りモードの詳細"]
 
 
 
@@ -60,7 +60,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["
 
 ボリュームを削除する前にバックアップできるようになりました。バックアップは削除されるまでファイルシステムに残ります。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/delete-volume.html["ボリュームを削除する"^]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/delete-volume.html["ボリュームを削除する"]
 
 
 
@@ -72,9 +72,9 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/delete-volume.html["ボリ
 
 CodeboxのTerraformを使用してファイルシステムとStorage VMを導入できるようになりました。
 
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["ファイルシステムの作成"^]
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-storage-vm.html["Storage VM を作成"^]
-* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["コードボックスからTerraformを使用"^]
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["ファイルシステムの作成"]
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-storage-vm.html["Storage VM を作成"]
+* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["コードボックスからTerraformを使用"]
 
 
 
@@ -89,6 +89,6 @@ CodeboxのTerraformを使用してファイルシステムとStorage VMを導入
 
 
 
-=== Amazon FSx for NetApp ONTAP向けWorkload Factoryの初版リリース
+=== Amazon FSx for NetApp ONTAP向けワークロードファクトリーの初版リリース
 
-Amazon FSx for NetApp ONTAPがWorkload Factoryで一般提供されるようになりました。
+Amazon FSx for NetApp ONTAPは現在、BlueXP  ワークロード工場で一般提供されています。

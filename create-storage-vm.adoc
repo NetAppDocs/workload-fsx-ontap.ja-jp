@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-storage-vm.html 
 keywords: create storage VM, create svm 
-summary: FSx for ONTAP Storage VM（SVM）を作成して、ワークロードファクトリでワークロードにストレージとデータサービスを提供できます。 
+summary: FSx for ONTAP Storage VM（SVM）を作成して、BlueXP  ワークロード工場でワークロードにストレージとデータサービスを提供できます。 
 ---
 = FSx for ONTAPファイルシステム用Storage VMの作成
 :allow-uri-read: 
@@ -11,10 +11,10 @@ summary: FSx for ONTAP Storage VM（SVM）を作成して、ワークロード�
 
 
 [role="lead"]
-FSx for ONTAPファイルシステム用のStorage VM（SVM）を作成して、ワークロード向けに仮想的にストレージとデータサービスにアクセスできるようにします。
+FSx for ONTAPファイルシステム用のStorage VM（SVM）を作成して、BlueXP  ワークロード工場のワークロード向けに仮想的にストレージとデータサービスにアクセスします。
 
 .タスクの内容
-Storage VMは分離されたファイルサーバで、Workload Factory Storageの各ワークロードのデータにアクセスできます。各SVMには、データを管理およびアクセスするための独自の管理クレデンシャルとエンドポイントがあります。
+Storage VMは分離されたファイルサーバで、ワークロードファクトリストレージの各ワークロードのデータにアクセスできます。各SVMには、データを管理およびアクセスするための独自の管理クレデンシャルとエンドポイントがあります。
 
 SVMを使用している場合、FSx for ONTAPのデータにアクセスすると、SVMのエンドポイント（IPアドレス）を使用して、SVMによってホストされているボリューム、CIFS / SMB共有、またはiSCSI LUNがクライアントやワークステーションにマウントされます。
 
@@ -25,15 +25,15 @@ SVMを使用している場合、FSx for ONTAPのデータにアクセスする�
 
 == Storage VM を作成
 
-Storage VMはWorkload Factoryコンソールから作成できます。Codeboxで利用可能なREST API、CloudFormation、Terraformの各ツールを使用することもできます。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["Codeboxを使用して自動化する方法"^]です。
+Storage VMはワークロードの工場出荷時のコンソールから作成できます。Codeboxで利用可能なREST API、CloudFormation、Terraformの各ツールを使用することもできます。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["Codeboxを使用して自動化する方法"^]です。
 
 
 NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロードしたコードが非表示になり、パスワードが表示され `fsxadmin` `vsadmin` ます。コードを実行するときは、パスワードを再入力する必要があります。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. [FSx for ONTAP ]タブで、ファイルシステムの3つの点のメニューをクリックしてStorage VMを作成し、*[管理]*を選択します。
+. [FSx for ONTAP ]タブで、Storage VMを作成するファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、* Storage VMの作成*を選択します。
 . [Storage VM]ページの[Storage VMの設定]で、次の情報を指定します。
 +
@@ -43,5 +43,5 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 .. *タグ*:オプションで、最大50個のタグを追加できます。
 
 
-. [ 作成（ Create ） ] をクリックします。
+. 「 * Create * 」を選択します。
 

@@ -2,27 +2,27 @@
 sidebar: sidebar 
 permalink: change-snapshot-policy.html 
 keywords: snapshot policy, snapshot schedule, modify snapshot policy, edit snapshot policy, change snapshot policy 
-summary: ボリュームのSnapshotポリシーはいつでも更新できます。 
+summary: BlueXP  ワークロード工場では、ボリュームのSnapshotポリシーをいつでも更新できます。 
 ---
-= ボリュームのSnapshotポリシーの変更
+= BlueXP  ワークロードファクトリでのボリュームのSnapshotポリシーの変更
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ボリュームに対してSnapshotを作成する頻度をいつでも更新するか、または自動Snapshotを無効にします。
+BlueXP  ワークロードファクトリでは、ボリュームに対して作成されるスナップショットの頻度を更新するか、または自動スナップショットを無効にします。
 
 .開始する前に
-既存のSnapshotポリシーを表示するにはリンクが必要です。リンクを関連付けるには、*[アカウント名]*の*[リンクの関連付け]*をクリックします。その後、この操作に戻ります。
+既存のSnapshotポリシーを表示するには、リンクを関連付ける必要があります。リンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。その後、この操作に戻ります。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するSnapshotポリシーが設定されたボリュームが含まれているFSx for ONTAPファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。
+. FSx for ONTAP *タブで、更新するSnapshotポリシーが設定されたボリュームが含まれているFSx for ONTAPファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの[概要]タブで、*[ボリューム]*タブを選択します。
 . [ボリューム]*タブを選択します。
-. [ボリューム]*タブで、Snapshotポリシーを変更するボリュームの3つのドットメニューを選択します。
+. [ボリューム]*タブで、Snapshotポリシーを変更するボリュームの3ドットのメニューを選択します。
 . [データ保護操作]*、*[スナップショット]*の順に選択し、*[スナップショットポリシーの管理]*を選択します。
 . Snapshotポリシーの管理ページで、*[既存のSnapshotポリシーの変更]*を選択します。
 . [Snapshotポリシー名]*フィールドで、このボリュームに別のSnapshotポリシーを選択します。
@@ -32,5 +32,5 @@ summary: ボリュームのSnapshotポリシーはいつでも更新できます
 +
 他のSnapshotポリシーがない場合は、 link:create-snapshot-policy.html["このボリュームの新しいSnapshotポリシーを作成する"]を参照してください。
 
-. [ 適用（ Apply ） ] をクリックします。
+. [適用]*を選択して変更を保存します。
 

@@ -4,21 +4,21 @@ permalink: restore-from-backup.html
 keywords: restore backup, new volume, volume restoration, backup 
 summary: バックアップからAWSアカウント内の任意のFSx for ONTAPファイルシステムにボリュームをリストアできます。 
 ---
-= バックアップからボリュームをリストアする
+= BlueXP  ワークロード工場内のバックアップからボリュームをリストアする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-バックアップからAWSアカウント内の任意のFSx for ONTAPファイルシステムにボリュームをリストアできます。
+BlueXP  ワークロード工場では、バックアップからAWSアカウント内の任意のFSx for ONTAPファイルシステムにボリュームをリストアできます。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3つのドットメニューをクリックし、* Manage *を選択します。
+. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]*タブで、バックアップからリストアするボリュームの3つのドットメニューをクリックします。
+. [ボリューム]*タブで、バックアップからリストアするボリュームの3ドットのメニューを選択します。
 . *データ保護アクション*、* FSx for ONTAPバックアップ*、*バックアップからのリストア*の順に選択します。
 . [Restore from a backup]ダイアログで、次の情報を指定します。
 +
@@ -28,5 +28,5 @@ summary: バックアップからAWSアカウント内の任意のFSx for ONTAP�
 .. *リストアされたボリューム名*：リストアされたボリュームの名前を入力します。
 
 
-. [* リストア ] をクリックします。
+. [* Restore] を選択します。
 

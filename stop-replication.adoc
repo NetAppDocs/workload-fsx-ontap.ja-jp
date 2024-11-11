@@ -2,25 +2,26 @@
 sidebar: sidebar 
 permalink: stop-replication.html 
 keywords: stop replication, break replication 
-summary: ソースボリュームとターゲットボリューム間のレプリケーション関係を停止します。 
+summary: BlueXP  ワークロード工場内のソースボリュームとターゲットボリューム間のレプリケーション関係を停止します。 
 ---
-= レプリケーション関係を停止する
+= BlueXP  ワークロードファクトリでのレプリケーション関係の停止
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-レプリケーションを停止すると、ソースボリュームからターゲットボリュームへのスケジュールされたレプリケーションの更新が一時停止します。ターゲットボリュームは読み取り専用から読み書き可能に移行します。
+BlueXP  ワークロードファクトリでレプリケーション関係を停止します。レプリケーション関係を停止すると、ソースボリュームからターゲットボリュームへのスケジュールされたレプリケーションの更新が一時停止します。ターゲットボリュームは読み取り専用から読み書き可能に移行します。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
+. FSx for ONTAP *タブで、更新するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
 . ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。
-. [Replication relationships]タブで、停止するレプリケーション関係の3つのドットメニューをクリックします。
+. [Replication relationships]タブで、停止するレプリケーション関係の3ドットのメニューを選択します。
 . [Break]*を選択します。
 . [Break replication]ダイアログで、*[Break]*を選択します。
 
 
+.結果
 ボリュームのレプリケーションステータスが「* broken *」に変わります。ターゲットボリュームが書き込み可能になります。

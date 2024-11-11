@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: configure-active-directory.html 
 keywords: configure AD, configure active directory, update ad, edit active directory 
-summary:  
+summary: BlueXP  ワークロード工場のFSx for ONTAPファイルシステムで、Storage VMのActive Directoryを設定および更新します。 
 ---
 = Storage VMのActive Directoryの設定と更新
 :allow-uri-read: 
@@ -11,17 +11,17 @@ summary:
 
 
 [role="lead"]
-FSx for ONTAPファイルシステムでStorage VMのActive Directoryを設定および更新します。
+BlueXP  ワークロード工場のFSx for ONTAPファイルシステムで、Storage VMのActive Directoryを設定および更新します。
 
 .タスクの内容
 Storage VMのActive Directoryの設定と更新も同じ手順です。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. [FSx for ONTAP *]タブで、更新するStorage VMがあるファイルシステムの3ドットメニューをクリックし、*[管理]*を選択します。
+. FSx for ONTAP *タブで、更新するStorage VMがあるファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
-. [Storage VM]タブで、Active Directoryを設定するStorage VMの3つのドットメニューを選択します。
+. [Storage VM]タブで、Active Directoryを設定するStorage VMの3ドットメニューを選択します。
 . [AD構成の管理]*を選択します。
 . [Manage AD configuration]ページで、次の情報を指定します。
 +
@@ -49,5 +49,5 @@ AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Admin
 
 
 
-. [ 適用（ Apply ） ] をクリックします。
+. * 適用 * を選択します。
 

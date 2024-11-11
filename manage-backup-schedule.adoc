@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: manage-backup-schedule.html 
+keywords: backup schedule, backup policy, update backups, update backup schedule, FSx for ONTAP backup 
+summary: BlueXP  ワークロード工場でFSx for ONTAPファイルシステムのバックアップスケジュールを必要に応じて管理 
+---
+= FSx for ONTAPファイルシステムのバックアップスケジュールの管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  ワークロード工場でFSx for ONTAPファイルシステムのバックアップスケジュールを管理
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [ストレージ]で、*[ストレージインベントリに移動]*を選択します。
+. FSx for ONTAP *タブで、バックアップスケジュールを更新するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. [Information]で、[FSx for ONTAP backup]*の横にある鉛筆のアイコンを選択します。FSx for ONTAP backup *行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。
+. FSx for ONTAP backup *ダイアログで、以下を指定します。
++
+.. *毎日の自動バックアップ*：この機能を有効または無効にします。この機能を無効にする場合は、*適用*を選択します。この機能を有効にする場合は、次の手順を実行します。
+.. *自動バックアップ保持期間*：自動バックアップを保持する日数を入力します。
+.. *日次自動バックアップウィンドウ*：*設定なし*（日次バックアップの開始時間を選択）または*日次バックアップの開始時間を選択*のいずれかを選択し、開始時間を指定します。
+.. *週次メンテナンス時間*：*設定なし*（週次メンテナンス時間の開始時間を選択）または*週次メンテナンス時間30分の開始時間を選択*のいずれかを選択し、開始時間を指定します。
+
+
+. * 適用 * を選択します。
+

@@ -1,8 +1,8 @@
 ---
 indexpage:
-  title: Amazon FSX for NetApp ONTAP のドキュメント
-  lead: Amazon FSX for NetApp ONTAP は、 ONTAP の全機能を AWS のネイティブマネージドサービスに提供し、一貫したハイブリッドクラウドエクスペリエンスを実現します。このドキュメントでは、BlueXPワークロードファクトリを使用してFSx
-    for ONTAPを管理する方法について説明します。
+  title: Amazon FSx for NetApp ONTAP for BlueXP  ワークロードの工場出荷時のドキュメント
+  lead: Amazon FSX for NetApp ONTAP は、 ONTAP の全機能を AWS のネイティブマネージドサービスに提供し、一貫したハイブリッドクラウドエクスペリエンスを実現します。このドキュメントでは、BlueXP 
+    ワークロードファクトリを使用してFSx for ONTAPを管理する方法について説明します。
   tiles:
   - title: はじめに
     links:

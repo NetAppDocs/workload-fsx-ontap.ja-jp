@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: create-volume.html 
 keywords: create volume, FSx for ONTAP volume 
-summary: FSx for ONTAPファイルシステムのセットアップが完了したら、FSx for ONTAPボリュームを作成できます。 
+summary: BlueXP  ワークロード工場でFSx for ONTAPファイルシステムをセットアップしたら、FSx for ONTAPボリュームを作成できます。 
 ---
-= FSx for ONTAPボリュームの作成
+= BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-FSx for ONTAPファイルシステムのセットアップが完了したら、FSx for ONTAPボリュームを作成できます。
+FSx for ONTAPファイルシステムのセットアップが完了したら、BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成できます。
 
 .タスクの内容
 FSx for ONTAPボリュームは、データのグループ化、データの保存方法の決定、データへのアクセスタイプの決定に使用される仮想リソースです。ボリュームはファイルシステムのストレージ容量を消費しません。ボリュームに格納されたデータは、主にSSDストレージを消費します。ボリュームの階層化ポリシーによっては、データが容量プールのストレージを消費する場合もあります。ボリュームのサイズは作成時に設定します。あとで変更することもできます。
@@ -26,21 +26,21 @@ FSx for ONTAPボリュームは、データのグループ化、データの保�
 .開始する前に
 ボリュームを作成する前に、次の前提条件を確認してください。
 
-* Workload FactoryにFSx for ONTAPファイルシステムが必要です。
+* ワークロード工場にFSx for ONTAPファイルシステムが必要です。
 * Storage VMが必要です。
 * プロトコルアクセスの場合は、次の手順を実行します。
 +
-** ボリュームへのアクセスを設定するには、が必要です link:manage-links.html["リンクの関連付け"]。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*の*[リンクの関連付け]*をクリックします。リンクが関連付けられたら、この操作に戻ります。
+** ボリュームへのアクセスを設定するには、が必要です link:manage-links.html["リンクの関連付け"]。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
 ** 選択したプロトコル（CIFS、NFS、またはiSCSI）へのアクセスを設定する必要があります。
 
 
 
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、ボリュームを作成するファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。
-. [概要]*タブで、*[ボリュームの作成]*をクリックします。
+. FSx for ONTAP *タブで、ボリュームを作成するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. [概要]*タブで、*[ボリュームの作成]*を選択します。
 . [Create volume]ページの[General details]で、次の詳細を指定します。
 +
 .. *ボリューム名*：ボリュームの名前を入力します。
@@ -144,7 +144,7 @@ NOTE: Snapshotの時間はファイルシステムのタイムゾーンに基づ
 .. *コンスティチュエントの数*：FlexGroupボリュームの場合のみ。アグリゲートあたりのコンスティチュエントの数を入力します。コンスティチュエントあたり100GiBが必要です。
 
 
-. [ 作成（ Create ） ] をクリックします。
+. 「 * Create * 」を選択します。
 
 
 .結果

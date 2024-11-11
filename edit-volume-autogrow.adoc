@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: edit-volume-autogrow.html 
 keywords: volume autogrow, increase volume capacity, enable autogrow 
-summary: ボリュームの自動拡張を有効にして、Workload Factoryでボリュームの容量を管理できるようにします。いつでも無効にすることができます。 
+summary: ボリュームの自動拡張を有効にして、BlueXP  ワークロード工場でボリュームの容量を管理できるようにします。いつでも無効にすることができます。 
 ---
-= ボリュームの自動拡張を有効にする
+= BlueXP  ワークロードファクトリでボリュームの自動拡張を有効にする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ボリュームの自動拡張を有効にして、Workload Factoryでボリュームの容量を管理できるようにします。いつでも無効にすることができます。
+ボリュームの自動拡張を有効にして、BlueXP  ワークロード工場でボリュームの容量を管理できるようにします。いつでも無効にすることができます。
 
 必要に応じて、を使用していつでもボリュームのボリューム容量を手動で拡張できます link:increase-volume-capacity.html["ボリューム容量の拡張機能"]。
 
@@ -19,15 +19,15 @@ summary: ボリュームの自動拡張を有効にして、Workload Factoryで�
 NOTE: ボリュームの自動拡張はiSCSIボリュームではサポートされません。
 
 .開始する前に
-ボリュームの自動拡張を有効にするには、が必要です link:manage-links.html["リンクの関連付け"]。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*の*[リンクの関連付け]*をクリックします。リンクが関連付けられたら、この操作に戻ります。
+ボリュームの自動拡張を有効にするには、が必要です link:manage-links.html["リンクの関連付け"]。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. [FSx for ONTAP ]タブで、更新するボリュームを含むファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。
+. [FSx for ONTAP ]タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、変更するボリュームの3つのドットメニューを選択します。
+. [Volumes]タブで、変更するボリュームの3ドットのメニューを選択します。
 . [基本的な操作]*を選択し、*[ボリュームの自動拡張の編集]*を選択します。
 . [自動拡張の編集]ダイアログで、ボリュームの自動拡張を有効にします。
-. [ 適用（ Apply ） ] をクリックします。
+. * 適用 * を選択します。
 

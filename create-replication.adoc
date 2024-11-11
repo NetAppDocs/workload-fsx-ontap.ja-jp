@@ -4,14 +4,14 @@ permalink: create-replication.html
 keywords: replication, replicate 
 summary: 予期しない災害が発生した場合のデータ損失を回避するために、FSx for ONTAPファイルシステムのレプリケーション関係を作成します。 
 ---
-= レプリケーション関係を作成する
+= BlueXP  ワークロードファクトリでレプリケーション関係を作成
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-予期しない災害が発生した場合のデータ損失を回避するために、FSx for ONTAPファイルシステムのレプリケーション関係を作成します。
+予期しない災害が発生した場合のデータ損失を回避するために、BlueXP  ワークロード工場でFSx for ONTAPファイルシステムのレプリケーション関係を作成します。
 
 .タスクの内容
 レプリケーションはデータ保護の追加レイヤであり、データが格納されているリージョンで災害が発生した場合に不可欠です。リージョン間レプリケーションを使用する場合は、データ損失を回避できます。
@@ -24,7 +24,7 @@ summary: 予期しない災害が発生した場合のデータ損失を回避�
 作業を開始する前に、次の前提条件を満たしていることを確認してください。
 
 * レプリケーション関係を作成するには、ストレージインベントリに2つの使用可能なファイルシステムが必要です。
-* レプリケーション関係に使用する2つのファイルシステムには、リンクが関連付けられている必要があります。ファイルシステムに既存のリンクがない場合は、 link:create-link.html["最初にリンクを作成します"]を参照してください。ファイルシステムで link:manage-links.html["リンクの関連付け"] 、*[アカウント名]*の*[関連付け]リンク*をクリックします。リンクが両方のファイルシステムに関連付けられたら、この操作に戻ります。
+* レプリケーション関係に使用する2つのファイルシステムには、リンクが関連付けられている必要があります。ファイルシステムに既存のリンクがない場合は、 link:create-link.html["最初にリンクを作成します"]を参照してください。ファイルシステムでlink:manage-links.html["リンクの関連付け"]、*[アカウント名]*の*[リンクの関連付け]*を選択します。リンクが両方のファイルシステムに関連付けられたら、この操作に戻ります。
 
 
 単一のボリュームをレプリケートするか、ファイルシステム内のすべてのボリュームをレプリケートするには、次の手順を実行します。
@@ -34,10 +34,10 @@ summary: 予期しない災害が発生した場合のデータ損失を回避�
 .単一のボリュームをレプリケート
 --
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、レプリケートするボリュームを含むファイルシステムの3つのドットメニューを選択し、* Manage *を選択します。
-. [Volumes]タブで、レプリケートするボリュームの3つのドットメニューを選択します。
+. FSx for ONTAP *タブで、レプリケートするボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. [Volumes]タブで、レプリケートするボリュームの3ドットメニューを選択します。
 . [データ保護操作]*を選択し、*[ボリュームデータのレプリケート]*を選択します。
 . [Create replication]ページの[Replication target]で、次の情報を指定します。
 +
@@ -46,7 +46,7 @@ summary: 予期しない災害が発生した場合のデータ損失を回避�
 .. *ボリューム名*：ターゲットボリューム名は次の形式で自動的に生成されます `{OriginalVolumeName}_copy`。自動生成されたボリューム名を使用するか、別のボリューム名を入力できます。
 .. *階層化ポリシー*：ターゲットボリュームに格納されているデータの階層化ポリシーを選択します。
 +
-_Auto_は、Workload Factory FSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]。
+_Auto_は、工場出荷時のFSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]。
 
 .. *最大転送速度*：* Limited *を選択し、最大転送速度をMB/秒単位で入力します。または、*無制限*を選択します。
 +
@@ -73,16 +73,16 @@ _Auto_は、Workload Factory FSx for ONTAPユーザインターフェイスを�
 
 
 
-. [ 作成（ Create ） ] をクリックします。
+. 「 * Create * 」を選択します。
 
 
 --
 .ファイルシステム内のすべてのボリュームをレプリケート
 --
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. [FSx for ONTAP ]タブで、ボリュームのあるファイルシステムの3つの点のメニューをクリックし、*[管理]*を選択します。
+. [FSx for ONTAP ]タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、*レプリケーションの作成*を選択します。
 . [Create replication]ページの[Replication target]で、次の情報を指定します。
 +
@@ -91,7 +91,7 @@ _Auto_は、Workload Factory FSx for ONTAPユーザインターフェイスを�
 .. *ボリューム名*：ターゲットボリューム名は次の形式で自動的に生成されます `{OriginalVolumeName}_copy`。
 .. *階層化ポリシー*：ターゲットボリュームに格納されているデータの階層化ポリシーを選択します。
 +
-_Auto_は、Workload Factory FSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]。
+_Auto_は、工場出荷時のFSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]。
 
 .. *最大転送速度*：* Limited *を選択し、最大転送速度をMB/秒単位で入力します。または、*無制限*を選択します。
 +
@@ -118,7 +118,7 @@ _Auto_は、Workload Factory FSx for ONTAPユーザインターフェイスを�
 
 
 
-. [ 作成（ Create ） ] をクリックします。
+. 「 * Create * 」を選択します。
 
 
 --

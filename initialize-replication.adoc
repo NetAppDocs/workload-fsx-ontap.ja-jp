@@ -4,14 +4,14 @@ permalink: initialize-replication.html
 keywords: initialize replication, begin replication, start replication 
 summary: ソースボリュームとターゲットボリューム間のレプリケーション関係を初期化します。 
 ---
-= レプリケーション関係を初期化する
+= BlueXP  ワークロードファクトリでのレプリケーション関係の初期化
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ソースボリュームとターゲットボリューム間のレプリケーション関係を初期化します。
+BlueXP  ワークロード工場でソースボリュームとターゲットボリューム間のレプリケーション関係を初期化します。
 
 .タスクの内容
 初期化では、_baseline_transferが実行されます。ソースボリュームのSnapshotが作成され、そのSnapshotおよびSnapshotが参照するすべてのデータブロックがターゲットボリュームに転送されます。
@@ -20,11 +20,11 @@ summary: ソースボリュームとターゲットボリューム間のレプ�
 この処理をいつ完了するかを検討してください。初期化には時間がかかる場合があります。ベースライン転送はオフピークの時間帯に実行することを推奨します。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. [FSx for ONTAP *]タブで、更新するファイルシステムの3つのドットメニューをクリックし、*[管理]*を選択します。
+. FSx for ONTAP *タブで、更新するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
 . ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。
-. [Replication relationships]タブで、初期化するレプリケーション関係の3つのドットメニューをクリックします。
+. [Replication relationships]タブで、初期化するレプリケーション関係の3ドットのメニューを選択します。
 . [初期化]*を選択します。
-. [関係の初期化]ダイアログで、*[初期化]*をクリックします。
+. [Initialize relationship]ダイアログで、*[Initialize]*を選択します。
 

@@ -2,18 +2,18 @@
 sidebar: sidebar 
 permalink: links-overview.html 
 keywords: links, accounts, lambda 
-summary: ワークロードファクトリリンクは、ワークロードファクトリアカウントと1つ以上のFSx for ONTAPファイルシステム間の信頼関係と接続を作成します。これにより、Amazon FSx for ONTAP APIでは利用できない特定のファイルシステム機能を、ONTAP REST APIから直接監視および管理できます。 
+summary: ワークロードファクトリリンクは、ワークロードファクトリアカウントと1つ以上のFSx for ONTAPファイルシステム間の信頼関係と接続を作成します。 
 ---
-= Workload Factoryのリンクについて
+= BlueXP  ワークロードファクトリリンクの詳細
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ワークロードファクトリリンクは、ワークロードファクトリアカウントと1つ以上のFSx for ONTAPファイルシステム間の信頼関係と接続を作成します。これにより、Amazon FSx for ONTAP APIでは使用できないONTAP REST API呼び出しから、特定のファイルシステム機能を直接監視および管理できます。
+BlueXP  ワークロードファクトリリンクは、ワークロードファクトリアカウントと1つ以上のFSx for ONTAPファイルシステム間の信頼関係と接続を作成します。これにより、Amazon FSx for ONTAP APIでは使用できないONTAP REST API呼び出しから、特定のファイルシステム機能を直接監視および管理できます。
 
-Workload Factoryを開始するためのリンクは必要ありませんが、場合によっては、Workload Factoryのすべての機能とワークロード機能をロック解除するためのリンクを作成する必要があります。
+ワークロードファクトリを開始するためのリンクは必要ありませんが、場合によっては、ワークロードファクトリのすべての機能とワークロード機能をロック解除するためのリンクを作成する必要があります。
 
 
 
@@ -23,13 +23,13 @@ Workload Factoryを開始するためのリンクは必要ありませんが、�
 
 リンクを作成したら、1つまたは複数のFSx for ONTAPファイルシステムに関連付けることができます。各ファイルシステムは、同じNetAppアカウント内の1つのリンクにのみ関連付けることができます。複数のNetAppアカウントがある場合は、1つのファイルシステムを別 々 のNetAppアカウントの下にある追加のリンクに関連付けることができます。
 
-リンクは、Workload FactoryのFSx for ONTAPファイルシステムページから作成します。link:create-link.html["リンクの作成方法"] を参照してください。
+リンクは、ワークロード工場のFSx for ONTAPファイルシステムページから作成します。link:create-link.html["リンクの作成方法"] を参照してください。
 
 
 
 == コスト
 
-Lambdaが実行する各トランザクションには課金が発生します。Lambdaは2つのシステム間のプロキシとして機能するため、Lambdaがファイルシステム上のONTAP REST APIにリクエストを送信し、応答をWorkload Factoryに返送すると料金が発生します。
+Lambdaが実行する各トランザクションには課金が発生します。Lambdaは2つのシステム間のプロキシとして機能するため、Lambdaがファイルシステム上のONTAP REST APIにリクエストを送信したとき、およびワークロードファクトリにレスポンスを送信したときに料金が発生します。
 
 link:https://aws.amazon.com/lambda/pricing/["AWS Lambdaの使用に関連するコストの詳細を確認する"^]
 
@@ -37,7 +37,7 @@ link:https://aws.amazon.com/lambda/pricing/["AWS Lambdaの使用に関連する�
 
 == リンクが必要な場合
 
-Workload Factoryには、いくつかの情報を表示し、いくつかのタスクを実行するためのリンクが必要です。リンクを必要とする処理を実行しようとしたときに、FSx for ONTAPファイルシステムにリンクが関連付けられていないと、その処理にリンクが必要であるというメッセージが表示されます。その時点で新しいリンクを追加したり、FSx for ONTAPファイルシステムを既存のリンクに関連付けて操作を実行したりできます。
+Workload Factoryには、情報を表示してタスクを実行するためのリンクが必要です。リンクを必要とする処理を実行しようとしたときに、FSx for ONTAPファイルシステムにリンクが関連付けられていないと、その処理にリンクが必要であるというメッセージが表示されます。その時点で新しいリンクを追加したり、FSx for ONTAPファイルシステムを既存のリンクに関連付けて操作を実行したりできます。
 
 リンクが必要な機能は次のとおりです。
 

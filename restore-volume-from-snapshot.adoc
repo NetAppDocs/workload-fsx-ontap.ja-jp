@@ -4,14 +4,14 @@ permalink: restore-volume-from-snapshot.html
 keywords: restore volume, snapshot 
 summary: 削除または破損したファイルがボリュームに含まれている場合は、スナップショットからFSx for ONTAPボリュームをリストアします。 
 ---
-= Snapshotからボリュームをリストアする
+= BlueXP  ワークロード工場内のSnapshotからボリュームをリストアする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-削除または破損したファイルがボリュームに含まれている場合は、スナップショットからFSx for ONTAPボリュームをリストアします。
+BlueXP  ワークロードファクトリでは、削除または破損したファイルがボリュームに含まれている場合に、スナップショットからFSx for ONTAPボリュームをリストアできます。
 
 .タスクの内容
 この処理は、Snapshotから新しいボリュームにデータをリストアします。
@@ -22,13 +22,13 @@ Snapshotからボリュームをリストアできるのは、ボリュームの
 この処理を完了するための十分な容量があることを確認してください。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [ストレージ]*で、*[ストレージインベントリに移動]*を選択します。
-. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3つのドットメニューをクリックし、* Manage *を選択します。
+. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [ボリューム]*タブで、Snapshotからリストアするボリュームの3つのドットメニューを選択します。
+. [ボリューム]*タブで、Snapshotからリストアするボリュームの3ドットのメニューを選択します。
 . [データ保護操作]*、*[ Snapshot ]*を選択し、*[ Snapshotからボリュームをリストアする]*を選択します。
 . [Snapshotからボリュームをリストアする]ダイアログの*[Snapshot名]*フィールドで、ドロップダウンメニューからリストアするSnapshotを選択します。
 . [リストアされたボリューム名]*フィールドに、リストアするボリュームの一意の名前を入力します。
-. [* リストア ] をクリックします。
+. [* Restore] を選択します。
 

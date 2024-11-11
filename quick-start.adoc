@@ -2,38 +2,38 @@
 sidebar: sidebar 
 permalink: quick-start.html 
 keywords: Amazon FSx for NetApp ONTAP, fsx, netapp, quick, get started, install, deploy, setup, launch, requirements, prerequisites, credentials, permissions, policy 
-summary: FSX for ONTAP は、ほんの数ステップで開始できます。 
+summary: FSx for ONTAPは、わずか数ステップでBlueXP  ワークロード工場で利用を開始できます。 
 ---
-= Amazon FSx for NetApp ONTAPのワークロードファクトリーのクイックスタート
+= BlueXP  ワークロード工場でのAmazon FSx for NetApp ONTAPのクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory for Amazon FSx for NetApp ONTAPでは、_basic_modeですぐに作業を開始できます。
+BlueXP  ワークロード工場でAmazon FSx for NetApp ONTAPを使用すると、_basic_modeですぐに作業を開始できます。
 
-Workload Factoryを使用してファイルシステムの作成、リソースの管理などを行う場合は、いくつかの手順で作業を開始できます。この場合、開始するにはAWSアカウントが必要です。
+ワークロードファクトリを使用してファイルシステムの作成、リソースの管理などを行いたい場合は、いくつかの手順で作業を開始できます。この場合、開始するにはAWSアカウントとクレデンシャルが必要です。
 
 開始するには、次の手順を実行します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] Workload Factoryへのログイン
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
 [role="quick-margin-para"]
-必要なのは link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^] link:https://console.workloads.netapp.com["ログイン"^]
+必要なのは link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^] link:https://console.workloads.netapp.com["ログイン"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] クレデンシャルと権限の追加
 [role="quick-margin-para"]
 _basic_、_read_、および_automate_を選択します。 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]
 
 [role="quick-margin-para"]
-_basic_modeで操作することを選択した場合は、これ以上操作する必要はありません。Workload Factory for FSx for ONTAPを使用して、部分的に完了したコードサンプルをコピーできます。
+_basic_modeで操作することを選択した場合は、これ以上操作する必要はありません。FSx for ONTAPでWorkload Factoryを使用して、部分的に完了したコードサンプルをコピーできます。
 
 [role="quick-margin-para"]
 _read_or_automate_modeで操作する場合は、データベースやAIなどのワークロード機能の選択や、_read_or_automate_modeで操作するための適切な権限があることを確認するためのIAMポリシーの作成が必要 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["アカウントへのクレデンシャルの手動追加"^] です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ファイルシステムの作成
 [role="quick-margin-para"]
-FSxファイルシステムを作成して、ワークロードファクトリーでストレージとFSx for ONTAPリソースの管理を開始します。の link:https://console.workloads.netapp.com["Workload Factoryコンソール"^][ストレージ]で、*[ファイルシステムの作成]*をクリックします。link:create-file-system.html["ファイルシステムの作成方法"]です。
+FSxファイルシステムを作成して、ワークロード工場でストレージとFSx for ONTAPリソースの管理を開始します。のlink:https://console.workloads.netapp.com["ワークロードファクトリコンソール"^][ストレージ]で、*[ファイルシステムの作成]*を選択します。link:create-file-system.html["ファイルシステムの作成方法"]です。
 
 [role="quick-margin-para"]
 また、ストレージ削減試算ツールから始めて、Amazon Elastic Block Store、Elastic File System、FSx for Windowsファイルサーバのストレージ環境のコストを、FSx for ONTAPのストレージ環境のコストと比較することもできます。 link:explore-savings.html["Storage Savings Calculatorでコスト削減効果を確認できます。"]

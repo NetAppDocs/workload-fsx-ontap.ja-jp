@@ -2,24 +2,24 @@
 sidebar: sidebar 
 permalink: delete-file-system.html 
 keywords: file system, delete file system, file system deletion 
-summary: ファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。 
+summary: BlueXP  ワークロード工場でファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。 
 ---
-= ファイルシステムを削除する
+= BlueXP  ワークロードファクトリでのファイルシステムの削除
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。
+BlueXP  ワークロード工場でファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、削除するFSx for ONTAPファイルシステムの3つの点のメニューをクリックします。
+. FSx for ONTAP *タブで、削除するFSx for ONTAPファイルシステムの3ドットメニューを選択します。
 . 「 * Manage * 」を選択します。
-. [Overview]*タブで、3つのドットメニューをクリックします。
-. [ 削除（ Delete ） ] をクリックします。
+. [Overview]*タブで、3ドットメニューを選択します。
+. 「 * 削除」を選択します。
 . [Delete FSx for ONTAP file system]ダイアログで、削除するFSx for ONTAPファイルシステムの名前を入力します。
-. [ 削除（ Delete ） ] をクリックします。
+. 「 * 削除」を選択します。
 

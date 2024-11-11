@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: data-protection-overview.html 
 keywords: overview 
-summary:  
+summary: FSx for ONTAPは、BlueXP  ワークロード工場でスナップショット、ボリュームバックアップ、ボリュームレプリケーションをサポートしています。 
 ---
-= データ保護の概要
+= BlueXP  ワークロード工場でのデータ保護
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

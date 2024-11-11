@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-volume-from-snapshot.html 
 keywords: create volume from snapshot, new volume 
-summary: FSx for ONTAPボリュームの手動スナップショットを作成します。スナップショットは、ボリュームのコンテンツのポイントインタイムバージョンです。 
+summary: BlueXP  ワークロード工場でFSx for ONTAPボリュームの手動スナップショットを作成スナップショットは、ボリュームのコンテンツのポイントインタイムバージョンです。 
 ---
 = スナップショットから新しいFSx for ONTAPボリュームを作成
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: FSx for ONTAPボリュームの手動スナップショットを作成�
 
 
 [role="lead"]
-スナップショットから新しいFSx for ONTAPボリュームを作成し、ポイントインタイムリカバリを可能にします。
+BlueXP  ワークロード工場のスナップショットから新しいFSx for ONTAPボリュームを作成し、ポイントインタイムリカバリを可能にします。
 
 .タスクの内容
 Snapshotは、ある時点で作成されたFSx for ONTAPボリュームの読み取り専用イメージです。Snapshotから新しいボリュームを作成すると、ボリュームサイズに関係なく、ボリューム全体のコピーが数秒以内に作成されます。新しく作成されたコピーは新しいボリュームを表します。
@@ -24,12 +24,12 @@ Snapshotからボリュームを作成する前に、次の制限事項を考慮
 
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、ボリュームSnapshotが含まれているファイルシステムの3つの点のメニューをクリックし、*[管理]*を選択します。
+. FSx for ONTAP *タブで、ボリュームSnapshotを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、ボリュームを作成するSnapshotがあるボリュームの3つのドットメニューをクリックします。
+. [Volumes]タブで、ボリュームを作成するSnapshotがあるボリュームの3ドットのメニューを選択します。
 . [データ保護操作]*、*[ Snapshot ]*を選択し、*[ Snapshotからのボリュームの作成]*を選択します。
 . [Create volume from a snapshot]ダイアログで、Snapshot名を入力します。
-. [ 作成（ Create ） ] をクリックします。
+. 「 * Create * 」を選択します。
 

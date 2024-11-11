@@ -11,17 +11,17 @@ summary: ストレージVMを別のFSx for ONTAPファイルシステムにレ�
 
 
 [role="lead"]
-ストレージVMを別のFSx for ONTAPファイルシステムにレプリケートすることで、データ損失時のデータアクセスを保護することができます。この処理では、あるStorage VM内のすべてのボリュームが別のFSx for ONTAPファイルシステムにレプリケートされます。
+BlueXP  ワークロード工場内の別のFSx for ONTAPファイルシステムにストレージVMをレプリケートすることで、データ損失が発生した場合にデータアクセスを保護することができます。この処理では、あるStorage VM内のすべてのボリュームが別のFSx for ONTAPファイルシステムにレプリケートされます。
 
 .開始する前に
-Storage VMを別のFSx for ONTAPファイルシステムにレプリケートするには、次の作業が必要です link:manage-links.html["リンクの関連付け"]。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*の*[リンクの関連付け]*をクリックします。リンクが関連付けられたら、この操作に戻ります。
+Storage VMを別のFSx for ONTAPファイルシステムにレプリケートするには、次の作業が必要です link:manage-links.html["リンクの関連付け"]。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
-. にログインします。 link:https://console.workloads.netapp.com/["Workload Factoryコンソール"^]
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、レプリケートするStorage VMがあるファイルシステムの3つのドットメニューを選択し、*[管理]*を選択します。
+. FSx for ONTAP *タブで、レプリケートするStorage VMを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
 . ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
-. [Storage VM]タブで、SVMをレプリケートするStorage VMの3つのドットメニューを選択します。
+. [Storage VM]タブで、SVMをレプリケートするStorage VMの3ドットメニューを選択します。
 . [Storage VMのレプリケート]*を選択します。
 . [Create replication]ページの[Replication target]で、次の情報を指定します。
 +
@@ -30,7 +30,7 @@ Storage VMを別のFSx for ONTAPファイルシステムにレプリケートす
 .. *ボリューム名*：ターゲットボリューム名は次の形式で自動的に生成されます `{OriginalVolumeName}_copy`。
 .. *階層化ポリシー*：ターゲットボリュームに格納されているデータの階層化ポリシーを選択します。
 +
-_Auto_は、Workload Factory FSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]。
+_Auto_は、工場出荷時のFSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]。
 
 .. *最大転送速度*：* Limited *を選択し、最大転送速度をMB/秒単位で入力します。または、*無制限*を選択します。
 +
@@ -57,7 +57,7 @@ _Auto_は、Workload Factory FSx for ONTAPユーザインターフェイスを�
 
 
 
-. [ 作成（ Create ） ] をクリックします。
+. 「 * Create * 」を選択します。
 
 
 .結果

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: manage-cifs-share.html 
+keywords: cifs, CIFS, cifs share, change cifs share, update cifs share, modify cifs share 
+summary: BlueXP  ワークロードファクトリでSMB / CIFSプロトコルタイプを使用するボリュームのCIFS共有を変更します。 
+---
+= BlueXP  ワークロードファクトリ内のボリュームのCIFS共有を管理します。
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  ワークロードファクトリでボリュームのCIFS共有を管理するには、アクセスを許可するユーザとグループ、およびそれらに許可するアクセスのタイプを決定する必要があります。
+
+.開始する前に
+アクセスを許可するユーザまたはグループと、許可するアクセスのタイプを決定します。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. [Volumes]タブで、SMB共有を変更するボリュームの3ドットのメニューを選択します。
+. [高度な操作]*を選択し、*[CIFS共有の編集]*を選択します。
+. [CIFS共有の編集]ページで、次の情報を指定します。
++
+.. *ユーザーまたはグループ*：有効なユーザーおよびグループを入力します。各エントリはセミコロンで区切ります。
+.. *権限*：*フルコントロール*、*読み取り/書き込み*、*読み取り*、または*アクセスなし*を選択します。
+
+
+. * 適用 * を選択します。
+
