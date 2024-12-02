@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: update-storage-efficiency.html 
+keywords: storage efficiency change, update storage efficiency 
+summary: BlueXP  ワークロードファクトリでは、ボリュームの作成後にStorage Efficiencyの設定を更新できます。 
+---
+= ボリュームのStorage Efficiency設定を更新します。
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  ワークロードファクトリでは、ボリュームの作成後にStorage Efficiencyの設定を更新できます。
+
+.タスクの内容
+Storage Efficiency機能には、重複排除、データ圧縮、データコンパクションが含まれており、FlexVol volumeで最適なスペース削減を実現します。重複排除は、重複するデータブロックを排除します。データ圧縮は、データブロックを圧縮して、必要な物理ストレージの量を削減します。データコンパクションでは、より少ないスペースにより多くのデータが格納され、ストレージ効率が向上します。
+
+ボリュームの作成時にStorage Efficiencyを有効にしなかった場合は、スペースとコストを削減できる可能性がある設定をいつでも有効にすることができます。
+
+Storage Efficiencyを有効または無効にするかにかかわらず、ボリュームはシンプロビジョニングを使用します。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. [ボリューム]タブで、階層化ポリシーを変更するボリュームの3ドットメニューを選択します。
+. [詳細な操作]*を選択し、*[Storage Efficiency]*を選択します。
+. ボリュームのStorage Efficiencyを有効または無効にするかを選択します。
+. [適用]*を選択して変更を保存します。
+

@@ -11,7 +11,7 @@ settings:
   rss_page: whats-new.html
   release_notes_autogen:
     release_notes_repo: workload-relnotes
-  langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+  langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
   - title: Amazon FSx for NetApp ONTAP のドキュメント
@@ -78,6 +78,8 @@ sidebar:
           url: "/initialize-replication.html"
       - title: ボリュームのクローニング
         url: clone-volume.html
+      - title: オンプレミスのONTAPデータを使用
+        url: "/use-onprem-data.html"
   - title: 管理と監視
     entries:
     - title: ボリューム管理
@@ -92,6 +94,8 @@ sidebar:
         url: "/rebalance-volume.html"
       - title: 階層化ポリシーを変更します
         url: "/change-tiering-policy.html"
+      - title: Storage Efficiencyの更新
+        url: "/update-storage-efficiency.html"
       - title: NFSエクスポートポリシーを管理します。
         url: "/manage-nfs-export-policy.html"
       - title: CIFS共有を管理します。

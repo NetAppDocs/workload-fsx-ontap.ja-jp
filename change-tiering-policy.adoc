@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: change-tiering-policy.html 
-keywords:  
+keywords: tiering policy, change tier, change tiers, tier policy update 
 summary: BlueXP  ワークロード工場で階層化ポリシーを変更し、ハイパフォーマンスのプライマリストレージ階層からセカンダリの大容量プールストレージ階層にデータを再割り当てします。 
 ---
 = BlueXP  ワークロードの工場出荷時にボリュームの階層化ポリシーを変更する

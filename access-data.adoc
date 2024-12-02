@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: access-data.html 
-keywords: access data, mount clients, on-premises 
+keywords: access data, mount point, mount volumes, mount clients, on-premises 
 summary: NASクライアントのボリュームをマウントし、SANクライアントのiSCSI LUNをマウントすることで、FSx for ONTAPファイルシステムにオンプレミスからアクセスできます。 
 ---
 = FSx for ONTAPのファイルシステムデータへのアクセス
@@ -14,6 +14,24 @@ summary: NASクライアントのボリュームをマウントし、SANクラ�
 NASクライアントのボリュームをマウントし、SANクライアントのiSCSI LUNをマウントすることで、FSx for ONTAPファイルシステムにオンプレミスからアクセスできます。
 
 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html["データへのアクセス"^] Amazon FSx for NetApp ONTAPのドキュメントには、参照用にデータにアクセスする方法に関するトピックが記載されています。
+
+BlueXP  ワークロード工場でボリュームのマウントポイントを取得することもできます。
+
+
+
+== BlueXP  ワークロード工場でボリュームのマウントポイントを取得
+
+CIFS共有またはNFSクライアントに共有をマウントするボリュームのマウントポイントを取得します。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. [Volumes]タブで、ボリュームの3ドットメニューを選択し、*[Basic actions]*、*[View mount command]*の順に選択します。
+. [コマンドのマウント]ダイアログで、*[コピー]*を選択してコマンドをコピーします。コピーしたコマンドを端末に入力します。
+. [ 閉じる（ Close ） ] を選択します。
+
 
 
 
