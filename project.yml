@@ -47,7 +47,7 @@ sidebar:
       - title: ボリュームの作成
         url: "/create-volume.html"
       - title: データへのアクセス
-        url: access-data.html
+        url: "/access-data.html"
     - title: Storage VM を作成
       url: "/create-storage-vm.html"
     - title: データを保護
@@ -77,7 +77,7 @@ sidebar:
         - title: レプリケーション関係を初期化する
           url: "/initialize-replication.html"
       - title: ボリュームのクローニング
-        url: clone-volume.html
+        url: "/clone-volume.html"
       - title: オンプレミスのONTAPデータを使用
         url: "/use-onprem-data.html"
   - title: 管理と監視
@@ -92,16 +92,16 @@ sidebar:
         url: "/manage-volume-tags.html"
       - title: ボリューム容量のリバランシング
         url: "/rebalance-volume.html"
-      - title: 階層化ポリシーを変更します
+      - title: 階層化ポリシーを変更する
         url: "/change-tiering-policy.html"
       - title: Storage Efficiencyの更新
         url: "/update-storage-efficiency.html"
-      - title: NFSエクスポートポリシーを管理します。
+      - title: NFS エクスポートポリシーを管理します
         url: "/manage-nfs-export-policy.html"
       - title: CIFS共有を管理します。
         url: "/manage-cifs-share.html"
       - title: クローンボリュームをスプリットする
-        url: split-cloned-volume.html
+        url: "/split-cloned-volume.html"
       - title: ボリュームを削除する
         url: "/delete-volume.html"
     - title: ファイルシステム管理
@@ -123,13 +123,13 @@ sidebar:
       - title: Storage VMタグを管理します。
         url: "/manage-svm-tags.html"
       - title: Storage VMのパスワードのリセット
-        url: reset-svm-password.html
+        url: "/reset-svm-password.html"
       - title: Storage VMを削除します
         url: "/delete-svm.html"
     - title: データ保護管理
       entries:
       - title: ボリュームのSnapshotポリシーの変更
-        url: change-snapshot-policy.html
+        url: "/change-snapshot-policy.html"
       - title: FSx for ONTAPのバックアップスケジュールを管理
         url: "/manage-backup-schedule.html"
       - title: 長期保持のためのスナップショットの有効化と編集
