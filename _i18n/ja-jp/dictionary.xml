@@ -937,10 +937,6 @@
   <block id="26aa14a56cb65f177e49de0f78d28f50" category="summary">BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnapshotポリシーを作成Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。</block>
   <block id="845e00b5325a1fed5014a20ed341a698" category="paragraph">BlueXP  ワークロード工場でFSx for ONTAPボリューム用のカスタムSnapshotポリシーを作成Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。</block>
   <block id="9b5cb8f49e83e342d48c95385ebf43e7" category="list-text">カスタムのSnapshotポリシーを作成するには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
-  <block id="bde64956326818fe8b0667c56ca96cb2" category="paragraph">いずれかを使用してログインし<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>ます。です。[ストレージ]*で、*[ストレージインベントリに移動]*を選択します。です。FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。です。ファイルシステムの概要で、*[ボリューム]*タブを選択します。です。[ボリューム]*タブで、スケジュールされたSnapshotで保護するボリュームの3ドットメニューを選択します。です。[データ保護操作]*、*[スナップショット]*の順に選択し、*[スナップショットポリシーの管理]*を選択します。です。Snapshotポリシーの管理ページで、*[新しいSnapshotポリシーの作成]*を選択します。です。Snapshotポリシー名*フィールドに、Snapshotポリシーの名前を入力します。です。オプション：[説明]*フィールドに、Snapshotポリシーの説明を入力します。です。[スケジュール]*で、Snapshotを作成するタイミングを選択します。たとえば、毎分、毎時などです。</block>
-  <block id="fc44d0b301d97eb155695e7e98d13195" category="paragraph">+複数の周波数を選択できます。です。[コピー数]*で、保持するコピー数を入力します。</block>
-  <block id="e30313f4b4ec8d88a97bc809eb25a275" category="paragraph">+コピーの最大数は1、023です。です。オプション：[命名規則]*で、ポリシーの*プレフィックス*を入力します。です。*保持ラベル*は自動的に入力されます。</block>
-  <block id="404cc58e2d73e238e13299d652231d3e" category="paragraph">+このラベルは、ソースからターゲットファイルシステムへのレプリケーション用に指定されたスナップショットのみを選択するために使用されるSnapMirror（レプリケーションラベル）を示します。です。* 適用 * を選択します。</block>
   <block id="475db696847724a8e496eba7476bc2ce" category="summary">BlueXP  ワークロード工場でFSx for ONTAPボリュームの手動スナップショットを作成スナップショットは、ボリュームのコンテンツのポイントインタイムバージョンです。</block>
   <block id="512defc52682eb6b6d9585f8d5494603" category="paragraph">スナップショットを作成する必要があり <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block> ます。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="8e835d5a49d273fb898a556146f8b52c" category="list-text">[ボリューム]*タブで、保護するボリュームの3ドットメニューを選択します。</block>
@@ -1320,4 +1316,15 @@
   <block id="07b434b23f63ca6490df33b213599320" category="sidebar">NFS エクスポートポリシーを管理します</block>
   <block id="6026d035efbb2d0fc978d9ab5bb5b084" category="paragraph">BlueXP  ワークロードファクトリでのボリュームのCIFS共有の管理には、CIFS共有の作成、アクセスを許可するユーザとグループ、許可する権限のレベルの決定、およびCIFS共有の削除が含まれます。</block>
   <block id="34e81b46b7f1e5e087ae28a3b95e81fb" category="list-text">アクセスを許可するユーザまたはグループと、許可する権限のレベルを決定します。</block>
+  <block id="3b3e8444b249018f7cabe035d36fb53b" category="list-text">[ボリューム]*タブで、スケジュールされたSnapshotで保護するボリュームの3ドットメニューを選択します。</block>
+  <block id="d67e779675002ae52bb96db205e592f8" category="list-text">Snapshotポリシーの管理ページで、*[新しいSnapshotポリシーの作成]*を選択します。</block>
+  <block id="8197cd59767b0d487d39d4530835d10e" category="list-text">Snapshotポリシー名*フィールドに、Snapshotポリシーの名前を入力します。</block>
+  <block id="443886f68921b4853b3d9661df7a7c0f" category="list-text">オプション：[説明]*フィールドに、Snapshotポリシーの説明を入力します。</block>
+  <block id="7881dae15f35ca3fa5220cbe11bdefe2" category="list-text">[スケジュール]*で、Snapshotを作成するタイミングを選択します。たとえば、毎分、毎時などです。</block>
+  <block id="ed8034815557020cf5cb39ef2e1c8cea" category="paragraph">複数の周波数を選択できます。</block>
+  <block id="f2361db09e678cda3613419cc1de72f2" category="list-text">[コピー数]*で、保持するコピー数を入力します。</block>
+  <block id="c610ec69c40639be95a74d6a4551c7eb" category="paragraph">コピーの最大数は1、023です。</block>
+  <block id="b6576df8ae387ace84c72b1d00479bc0" category="list-text">オプション：[命名規則]*で、ポリシーの*プレフィックス*を入力します。</block>
+  <block id="78c10834148d83801a4f716235d19c09" category="list-text">*保持ラベル*は自動的に入力されます。</block>
+  <block id="8a2e9f9173bc33c79f9448e05bf8e7c0" category="paragraph">このラベルは、SnapMirror（レプリケーションラベル）を参照します。ソースファイルシステムからターゲットファイルシステムへのレプリケーション用に、指定したSnapshotのみを選択するために使用されます。</block>
 </blocks>
