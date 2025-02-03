@@ -196,7 +196,6 @@
   <block id="4820ffe2fe615fd37fb7932b296c86f1" category="inline-link-macro">リンクの関連付け</block>
   <block id="06c8b7e08cdd0ff26018bb7b51851a9f" category="paragraph">単一のボリュームをレプリケートするか、ファイルシステム内のすべてのボリュームをレプリケートするには、次の手順を実行します。</block>
   <block id="4f6c910e41c00f71304d3d06714c1c38" category="open-title">単一のボリュームをレプリケート</block>
-  <block id="e0498c311fd63d398b51f62c2bf97e3b" category="list-text">[データ保護操作]*を選択し、*[ボリュームデータのレプリケート]*を選択します。</block>
   <block id="b9a2f47b5bc4bd7fcc8d23d6721ec4c2" category="list-text">[Create replication]ページの[Replication target]で、次の情報を指定します。</block>
   <block id="837278414ab16e2a74dfc1b2102bcd54" category="list-text">* FSx for ONTAPファイルシステム*：対象となるFSx for ONTAPファイルシステムのクレデンシャル、リージョン、FSx for ONTAPファイルシステム名を選択します。</block>
   <block id="c8ad1bd40ad1f2f7011877a43d0904aa" category="list-text">* Storage VM名*：ドロップダウンメニューからStorage VMを選択します。</block>
@@ -238,7 +237,6 @@
   <block id="bc7303a544a54859ef646aaae48578a5" category="paragraph">SVMを使用している場合、FSx for ONTAPのデータにアクセスすると、SVMのエンドポイント（IPアドレス）を使用して、SVMによってホストされているボリューム、CIFS / SMB共有、またはiSCSI LUNがクライアントやワークステーションにマウントされます。</block>
   <block id="0be7879371b03da9f3e439c5431f1db2" category="inline-link-macro">FSx for ONTAP Storage Virtual Machineの管理</block>
   <block id="cbddd6713cb3317df938ea4a6fd2cd84" category="paragraph">ファイルシステムあたりのサポートされるStorage VM数を確認します。ファイルシステムあたりのSVMの最大数については、AWSのドキュメントのを参照してください <block ref="17ef0d7491a925205e8443311f7ef122" category="inline-link-macro-rx"></block> 。</block>
-  <block id="e65cbc1f8e84ec0a33192b999f9e9cc4" category="list-text">ファイルシステムの概要で、* Storage VMの作成*を選択します。</block>
   <block id="cdbc38b99c6a38c90c6623e1ac73a0fd" category="list-text">[Storage VM]ページの[Storage VMの設定]で、次の情報を指定します。</block>
   <block id="c9f265881e56f4c52918525bdcb9205d" category="list-text">*名前*：Storage VMの名前を入力します。</block>
   <block id="42a49281a2c075c2004f1e73852b27e3" category="list-text">* Storage VMクレデンシャル*：このStorage VMのユーザのパスワードを指定する<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> か、ファイルシステムのユーザクレデンシャルを使用して<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> ください。</block>
@@ -930,8 +928,6 @@
   <block id="7607cf6a75040d1b9bf8fde1cfaecf12" category="doc">BlueXP  ワークロードファクトリでレプリケーション関係を作成</block>
   <block id="161fc7b1d67184a50e10e19fb2489263" category="paragraph">予期しない災害が発生した場合のデータ損失を回避するために、BlueXP  ワークロード工場でFSx for ONTAPファイルシステムのレプリケーション関係を作成します。</block>
   <block id="cf2d4a66ab67f86354f74f9c2cd68326" category="list-text">レプリケーション関係に使用する2つのファイルシステムには、リンクが関連付けられている必要があります。ファイルシステムに既存のリンクがない場合は、 <block ref="1bb172d13e94db502d24bfc1c5a4fc0a" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムで<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>、*[アカウント名]*の*[リンクの関連付け]*を選択します。リンクが両方のファイルシステムに関連付けられたら、この操作に戻ります。</block>
-  <block id="d3c14843d08cf463d9ea9a6b94804262" category="list-text">FSx for ONTAP *タブで、レプリケートするボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。</block>
-  <block id="089bd3378d1656ee1710bccf951f8421" category="list-text">[Volumes]タブで、レプリケートするボリュームの3ドットメニューを選択します。</block>
   <block id="215ff1ada74bcc801bd4be406a4760b9" category="paragraph">_Auto_は、工場出荷時のFSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block>。</block>
   <block id="1d1c040daca4e036fc6766de8bee1a0d" category="list-text">[FSx for ONTAP ]タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="26aa14a56cb65f177e49de0f78d28f50" category="summary">BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnapshotポリシーを作成Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。</block>
@@ -944,7 +940,6 @@
   <block id="4da97157b6693eaf9968b187d7b8259c" category="paragraph">FSx for ONTAPファイルシステム用のStorage VM（SVM）を作成して、BlueXP  ワークロード工場のワークロード向けに仮想的にストレージとデータサービスにアクセスします。</block>
   <block id="54f16768a20bbfb09d736f2fa0a731aa" category="paragraph">Storage VMは分離されたファイルサーバで、ワークロードファクトリストレージの各ワークロードのデータにアクセスできます。各SVMには、データを管理およびアクセスするための独自の管理クレデンシャルとエンドポイントがあります。</block>
   <block id="08e2fd9fd4dc9adfe3d5f817b3499842" category="paragraph">Storage VMはワークロードの工場出荷時のコンソールから作成できます。Codeboxで利用可能なREST API、CloudFormation、Terraformの各ツールを使用することもできます。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>です。</block>
-  <block id="76e3f0d82963df25a63cb0c98b73397d" category="list-text">[FSx for ONTAP ]タブで、Storage VMを作成するファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="55a23b72fe4aee5e2f0024c790d7eaba" category="paragraph">BlueXP  ワークロード工場のスナップショットから新しいFSx for ONTAPボリュームを作成し、ポイントインタイムリカバリを可能にします。</block>
   <block id="8d34a33f34659b0ea11833ac0b8fac52" category="list-text">FSx for ONTAP *タブで、ボリュームSnapshotを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="3ce528a1818baf0bbf2f6b362b1f7d58" category="list-text">[Volumes]タブで、ボリュームを作成するSnapshotがあるボリュームの3ドットのメニューを選択します。</block>
@@ -953,8 +948,6 @@
   <block id="70e17a61e26a90f517dba1b053b0c09e" category="paragraph">FSx for ONTAPファイルシステムのセットアップが完了したら、BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成できます。</block>
   <block id="d5d682292e122fa36db263f49a714cc7" category="list-text">ワークロード工場にFSx for ONTAPファイルシステムが必要です。</block>
   <block id="60911d8c5f41bf949378c3bec9fe03b7" category="list-text">ボリュームへのアクセスを設定するには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
-  <block id="27403aa4066ffea03bd15fd0fd4e5e67" category="list-text">FSx for ONTAP *タブで、ボリュームを作成するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。</block>
-  <block id="892eff425e1d1bcf86736ccfc7447322" category="list-text">[概要]*タブで、*[ボリュームの作成]*を選択します。</block>
   <block id="72ce63a6bef6ec13ef74a7eab0012469" category="summary">FSx for ONTAPは、BlueXP  ワークロード工場でスナップショット、ボリュームバックアップ、ボリュームレプリケーションをサポートしています。</block>
   <block id="d041ab32e01d968ecc286a807158f8b3" category="doc">BlueXP  ワークロード工場でのデータ保護</block>
   <block id="96a5899d90dd9b81319f168f67bcb5ae" category="summary">BlueXP  ワークロード工場でファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。</block>
@@ -1327,4 +1320,131 @@
   <block id="b6576df8ae387ace84c72b1d00479bc0" category="list-text">オプション：[命名規則]*で、ポリシーの*プレフィックス*を入力します。</block>
   <block id="78c10834148d83801a4f716235d19c09" category="list-text">*保持ラベル*は自動的に入力されます。</block>
   <block id="8a2e9f9173bc33c79f9448e05bf8e7c0" category="paragraph">このラベルは、SnapMirror（レプリケーションラベル）を参照します。ソースファイルシステムからターゲットファイルシステムへのレプリケーション用に、指定したSnapshotのみを選択するために使用されます。</block>
+  <block id="ed2a329d6f9bf2181ff23014cff23ba5" category="doc">BlueXP  ワークロードファクトリコンソールのCloudShell</block>
+  <block id="5eaddd0f57f7eaddd8610d939876ec8d" category="paragraph">CloudShellは、BlueXP  Workload Factory for Storage内で利用できる組み込みのCLI機能です。CloudShellを使用すると、ワークロードファクトリコンソール内から、シェルのような環境の複数のセッションからONTAPまたはAWS CLIコマンドを作成、共有、実行できます。</block>
+  <block id="09a780ee2763ed81ce7dcd3480b57fe4" category="inline-link-macro">BlueXP  Workload FactoryでのCloudShellの詳細</block>
+  <block id="feff74472562237513e0ca0c55cd4e38" category="paragraph"><block ref="feff74472562237513e0ca0c55cd4e38" category="inline-link-macro-rx"></block></block>
+  <block id="9be163b55bb1cb61b0ccee4ea40ae6ee" category="section-title">インベントリデータのダウンロード</block>
+  <block id="e61fb273c97526db97c128ce9bfc04a9" category="paragraph">FSx for ONTAPのインベントリデータをBlueXP  ワークロード工場のストレージからMicrosoft ExcelまたはCSVファイルにダウンロードできるようになりました。</block>
+  <block id="1d242bf1e7b71fd8602570478aa1bdc8" category="inline-image-macro">BlueXP  ワークロード工場のストレージのスクリーンショット。FSx for ONTAPファイルシステムのインベントリデータをダウンロードするための新しいダウンロードボタンが表示されています。</block>
+  <block id="b8040f0b8b5eff64bb15c9fc0fbc96d6" category="paragraph"><block ref="b8040f0b8b5eff64bb15c9fc0fbc96d6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eae91301e6256990d5311778eafea0e5" category="section-title">FSx for ONTAPファイルシステムのその他のメニューオプション</block>
+  <block id="0ad83f6b2d6e8bf103be3683c0c87ef9" category="paragraph">FSx for ONTAPファイルシステムについては、ストレージのFSx for ONTAPタブで以下の操作が簡単になりました。</block>
+  <block id="8221d5fcbb1b8ef8a3fa535553679b44" category="list-text">ボリュームデータのレプリケート</block>
+  <block id="bb8210b8fea9fd35bf14070e9b9f7cf9" category="inline-image-macro">[Storage]の[FSx for ONTAP ]タブのスクリーンショット。[create storage VM]、[create volume]、[replicate]の新しいメニューオプションが表示されています。</block>
+  <block id="2a10a5b76871c42edb3807a0dec574ae" category="paragraph"><block ref="2a10a5b76871c42edb3807a0dec574ae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f72c2c06d295d3f5420254934ac77b1" category="section-title">Terraformによるボリューム作成のサポート</block>
+  <block id="7f28d622584eb6b05ee5ce1609e2de38" category="paragraph">CodeboxのTerraformを使用してボリュームを作成できるようになりました。</block>
+  <block id="d3156376048c94102c97709d5ff05e75" category="paragraph"><block ref="d3156376048c94102c97709d5ff05e75" category="inline-link-macro-rx"></block></block>
+  <block id="eb139dd9cb815e502d04047858e7c930" category="section-title">不変ファイル機能によるファイルロック</block>
+  <block id="849a110e76510a6394e4b27714d0bc20" category="paragraph">FSx for ONTAPファイルシステムのボリュームを作成するときに、変更不可のファイル機能を使用してファイルをロックできるようになりました。ファイルロックは、あなたや他の人が指定された期間にわたって誤ってまたは意図的にファイルを削除するのを防ぐのに役立ちます。</block>
+  <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="section-title">運用の監視と追跡に使用可能なトラッカー</block>
+  <block id="c016252819aa3f6ede2b315b76b5c5b2" category="paragraph">Trackerを使用すると、ストレージに新しい監視機能が追加されます。Trackerを使用して、クレデンシャル、ストレージ、およびリンク処理の進捗状況とステータスの監視と追跡、処理タスクとサブタスクの詳細の確認、問題や障害の診断、失敗した処理のパラメータの編集、失敗した処理の再試行を行うことができます。</block>
+  <block id="7512718e82771ab0f98e51652a2e97c6" category="inline-link-macro">Trackerを使用して運用を監視および追跡する方法をご確認ください</block>
+  <block id="30babb51ab17a107228fe65a4e65418b" category="paragraph"><block ref="30babb51ab17a107228fe65a4e65418b" category="inline-link-macro-rx"></block></block>
+  <block id="c1c23b72df9b53434f3c5ef6963cd2c1" category="section-title">第2世代のAmazon FSx for NetApp ONTAPファイルシステムをサポート</block>
+  <block id="327da4942931ea47a06f556d15726878" category="paragraph">BlueXP  ワークロード工場でAmazon FSx for NetApp ONTAPの第2世代ファイルシステムを使用できるようになりました。FSx for ONTAPの第2世代シングルAZファイルシステムには、最大12個のHAペアが搭載されており、最大72GB/秒のスループット容量と2,400,000 SSD IOPSを実現します。FSx for ONTAPの第2世代マルチAZファイルシステムは、1つのHAペアを基盤とし、6GBpsのスループット容量と20万SSD IOPSを提供します。</block>
+  <block id="a22d0116b85624117006e75d98d659db" category="inline-link-macro">ハイアベイラビリティペアを追加する</block>
+  <block id="8a34eb45ca4cf03ce0d5e71fbfafb73a" category="list-text"><block ref="8a34eb45ca4cf03ce0d5e71fbfafb73a" category="inline-link-macro-rx"></block></block>
+  <block id="eeb5242f698ac9fda34591a326f4c0a3" category="inline-link-macro">Amazon FSx for NetApp ONTAPのクォータと制限</block>
+  <block id="94f917accd36ed25f8a73175e8d4cdfb" category="list-text"><block ref="94f917accd36ed25f8a73175e8d4cdfb" category="inline-link-macro-rx"></block></block>
+  <block id="872fb30847d0e2ca8bac3e52054013c7" category="summary">BlueXP  ワークロード工場内のファイルシステムにハイアベイラビリティペアを追加して、ファイルシステムをスケールアウトします。</block>
+  <block id="310011ba5387c43c841355394cd8cb9a" category="doc">BlueXP  ワークロード工場内のファイルシステムにHAペアを追加</block>
+  <block id="304724e8759230c609bf9c333dfd2870" category="paragraph">ハイアベイラビリティ（HA）ペアを追加して、BlueXP  ワークロード工場にFSx for ONTAPの第2世代シングルAZファイルシステムをスケールアウトすることで、パフォーマンスと容量を向上できます。この拡張により、第1世代のファイルシステムに比べてパフォーマンスの拡張性と柔軟性が向上します。</block>
+  <block id="a9a9a7c9ee5a38cb1e35ca4b8cce7276" category="paragraph">新しいHAペアは、HAペアごとに同じSKUと同じ容量を使用して追加されます。</block>
+  <block id="c34a6e94bb77f8d46f8d1f9ca5d1c2b9" category="paragraph">HAペアの追加は、次の項目ではサポートされません。</block>
+  <block id="78d560615a8adc2f32fa3ecd80e33fd1" category="list-text">複数のAZのHA環境または第1世代のFSx for ONTAPファイルシステム</block>
+  <block id="d1360a44b7e5113c71c2bccc4ade5ce8" category="list-text">5台以上のStorage VMで構成されるFSx for ONTAPファイルシステム</block>
+  <block id="943393d8598620d656ed3221b72683cf" category="list-text">iSCSI LUNを使用するFSx for ONTAPファイルシステム</block>
+  <block id="7d37b0d4d8c2c037db887ba2ef4befd8" category="list-text">SSDの最大容量または最大容量に近い構成、またはIO割り当て制限に達した構成</block>
+  <block id="d87c9129ec2537bcf3c1a19ef369663c" category="paragraph">HAペアの追加については、次の点を考慮してください。</block>
+  <block id="bee7f2516cfc11bd1d783c9a0abddcfc" category="list-text">HAペアの削除：ファイルシステムに追加したHAペアを削除することはできません。</block>
+  <block id="3bb5813303893f4fbd1a3c16e489c6b2" category="list-text">処理時間と制限事項：HAペアの追加には約30分かかることがあります。HAペアの追加は、メンテナンス時間中やアクティビティが少ない時間帯に検討してください。また、HAペアを追加すると、HAペアの追加、IOPSのプロビジョニング、SSD容量の拡張、スループット容量の更新など、その他の処理も制限されます。</block>
+  <block id="ea59a490db5f0dbf4a08a12fc8ad506b" category="list-text">IO割り当て：自動IO割り当ては、ストレージ容量の合計によって異なります。ユーザ設定のIO割り当てにHAペアの追加容量を掛けます。</block>
+  <block id="7e1da5f0b87a5f6fa454d36b488af717" category="list-text">NVMeキャッシュ：HAペアを追加する場合、NVMeキャッシュはデフォルトで有効になります。負荷の高いワークロードの場合はNVMeキャッシュをオフにすることを推奨します。</block>
+  <block id="ad8dcf096cb2afb4a235df61b29f9698" category="list-text">HAペアの数：ファイルシステムを偶数個のHAペアに拡張して、HAペア間でバランスのとれたデータ分散を実現することを推奨します。</block>
+  <block id="a918312e36a786ad734780ce0938389b" category="list-text">LUNの作成：第2世代のシングルAZファイルシステムでは、HAペアの追加時にファイルシステムにLUNが存在していない場合にのみLUNを作成できます。LUNの作成は、HAペアが6つ以下のファイルシステムでのみサポートされます。</block>
+  <block id="df909e03d10a14950b92a8e5633d9123" category="paragraph">ファイルシステムにHAペアを追加する前に、次の手順を実行します。</block>
+  <block id="4173fb9932d53246098b25db51af2252" category="list-text">すべてのiSCSI LUNを削除して、ファイルシステムをスケールアウトします。</block>
+  <block id="fefe421f31fcb913ee3602de627b2aad" category="list-text">ファイルシステムに含まれるStorage VMが5個以下であることを確認してください。</block>
+  <block id="f4f11e4d478a467a240d18f498921150" category="list-text">[FSx for ONTAP *]タブの*[Information]*で、*[HA Pairs]*の横にある鉛筆アイコンを選択します。</block>
+  <block id="9d8f80ba2bc026694d1d454d46507e1a" category="list-text">[HAペアの追加]*ダイアログで、ファイルシステムに追加するHAペアの数を選択します。</block>
+  <block id="03d260b6edf74eab2f53976254758a17" category="list-text">[追加]*を選択して、HAペアの追加を確定します。</block>
+  <block id="379ea21065ee4862014742fa5a258e93" category="paragraph">ワークロードファクトリによって、ファイルシステムにHAペアを追加するプロセスが開始されます。HAペアが追加されるまで、ファイルシステムはボリューム作成などの他の処理に使用できません。処理の進行状況は* Tracker *タブで監視できます。</block>
+  <block id="d290c400d30f537f28b8084fbc091982" category="list-text">FSx for ONTAP *タブで、レプリケートするボリュームを含むファイルシステムの3ドットメニューを選択し、*ボリュームデータのレプリケート*を選択します。</block>
+  <block id="9c02b82df4be281c41318d376be29cf9" category="list-text">[FSx for ONTAP ]タブで、Storage VMを作成するファイルシステムの3ドットメニューを選択し、*[Storage VMを作成する]*を選択します。</block>
+  <block id="70975b8c8f6b12169d193367442b573d" category="paragraph">Codeboxで使用可能なREST API、CloudFormation、Terraformの各ツールを使用してボリュームを作成できます。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>です。</block>
+  <block id="7bedae719019136090a7c4c373312767" category="list-text">FSx for ONTAP *タブで、ボリュームを作成するファイルシステムの3ドットメニューを選択し、* Create volume *を選択します。</block>
+  <block id="5cc952f284466929d6b64c6a769f954d" category="inline-link-macro">SnapLockの仕組み</block>
+  <block id="4f607bc8b085931c8b1fac489fd24290" category="list-text">*変更不可ファイル*:この機能はSnapLockとも呼ばれ、デフォルトでは無効になっています。変更不可のファイルを有効にすると、指定した期間にわたってデータが削除または上書きされるのを防ぐことができます。この機能は、ボリュームの作成時にのみ有効にできます。一度有効にすると、この機能を無効にすることはできません。これは追加料金が発生するFSx for ONTAPのプレミアム機能です。詳細については、Amazon FSx for NetApp ONTAPドキュメントのを参照して<block ref="e334cd66539db07681f218968c17aeb4" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="f348514dc345ce9c1d9ad82ae7129779" category="paragraph">書き換え不能ファイル機能を有効にすると、このボリューム内のファイルが書き換え不能WORM（Write-Once-Read-Many）状態に永続的にコミットされます。</block>
+  <block id="d1004c5cd3614165a3675cc9bcefd0ff" category="list-text">保持モード</block>
+  <block id="bf037d2be2988cb003e5473abb7458ad" category="list-text">2つの保持モード（_Enterprise_or_Compliance_）から選択できます。</block>
+  <block id="2c7186fdcb22214f6a80f0c4bf830b01" category="list-text">_ENTERPRISE_MODEでは、管理者は変更不可のファイル（SnapLock）を保持期間中にファイルを削除できます。</block>
+  <block id="056049eeec9d03d44ee8b82656eddd56" category="list-text">_Compliance_modeでは、WORMファイルは保持期間が終了するまで削除できません。同様に、変更不可のボリュームは、ボリューム内のすべてのファイルの保持期間が終了するまで削除できません。</block>
+  <block id="2dee9b3212ded01b0c388d81a6f5aec3" category="list-text">保持期間</block>
+  <block id="103d1ff0c19e1c2f05d0e9237137a1dd" category="list-text">保持期間には、_retention policy_and_retention periods_という2つの設定があります。保持ポリシー：書き換え不可のWORM状態でファイルを保持する期間を定義します。独自の保持ポリシーを指定することも、デフォルトの保持ポリシー（未指定）（30年）を使用することもできます。最小保持期間と最大保持期間_は、ファイルのロックに許可される期間を定義します。</block>
+  <block id="10de4bc81f754b19b0d27246a0589c05" category="list-text">注</block>
+  <block id="1e6fe3169d6df99dc6e4d89c3f0ca701" category="list-text">保持期間が経過したあともWORMファイルを変更することはできません。削除するか、新しい保持期間を設定してWORM保護を再度有効にすることしかできません。</block>
+  <block id="00c161f0779702fcc736833a90e1c117" category="list-text">自動コミット</block>
+  <block id="0710e9c5903cc398ef1a22a38cbb4666" category="list-text">自動コミット機能を有効にするオプションがあります。自動コミット期間内にファイルに変更がなかった場合、自動コミット機能によってSnapLockボリューム上でファイルがWORM状態にコミットされます。自動コミット機能は、デフォルトでは無効になっています。自動コミットするファイルがSnapLockボリューム上に存在している必要があります。</block>
+  <block id="f84002cfa8aafdd6963aef9819f03cbe" category="list-text">ボリュームアペンドモード</block>
+  <block id="73085bf5d4b4c2626026794741768c09" category="inline-link-macro">ボリュームアペンドモードに関する詳細情報</block>
+  <block id="f70318a7f623a49e77262fc2b382b062" category="list-text">WORMで保護されたファイル内の既存のデータを変更することはできません。ただし、変更不可のファイルを使用すると、追記可能WORMファイルを使用して既存データを保護できます。たとえば、ログファイルを生成したり、オーディオまたはビデオストリーミングデータを保持しながら、データを段階的に書き込むことができます。<block ref="d363aab3c17dd7b08ef55d9ecb5c0afa" category="inline-link-macro-rx"></block>を参照してNetApp ONTAPください。</block>
+  <block id="dfb689231a842f04569410625d60363d" category="list-title">不変ファイルの手順</block>
+  <block id="44ba7526f1340d677cb6220be4b1b823" category="list-text">選択すると、* SnapLockを使用した変更不可ファイル*が有効になります。</block>
+  <block id="4f7680fa283bf52aaa8ee2edfd564db8" category="list-text">同意して続行するには、ボックスをクリックしてください。</block>
+  <block id="909d8cdc7c100d1834d4de10094f43ca" category="list-text">[*Enable*] をクリックします。</block>
+  <block id="088bb2d18ad8fbec398c29306e127221" category="list-text">*保持モード*：*エンタープライズ*または*コンプライアンス*モードを選択します。</block>
+  <block id="77b42ba4805daabc49114b9ab89a4177" category="list-text">*保持期間*：</block>
+  <block id="f35564204209083a652f147df603888c" category="list-text">保持ポリシーを選択します。</block>
+  <block id="504152708cd9de44bb9cb86c2f924f58" category="list-text">*未指定*：保持ポリシーを30年に設定します。</block>
+  <block id="d52522aeac6c98a12810dc096d055647" category="list-text">*期間の指定*：独自の保持ポリシーを設定する秒数、分数、時間数、日数、月数、または年数を入力します。</block>
+  <block id="6c174e94dd8ddcd5d81962e78326f53a" category="list-text">最小保持期間と最大保持期間を選択します。</block>
+  <block id="16358ae23c4e09a6d211bde0bb1d5944" category="list-text">*最小*：最小保持期間を設定する秒数、分数、時間数、日数、月数、または年数を入力します。</block>
+  <block id="0e5cb121a1c7b4c59daf6285123d8e75" category="list-text">*最大*：最大保持期間を設定する秒数、分数、時間数、日数、月数、または年数を入力します。</block>
+  <block id="9ddc08dbc82d9bea34f1dc4c5b59e6e7" category="list-text">* autocommit *：自動コミットを無効または有効にします。自動コミットを有効にする場合は、自動コミット期間を設定します。</block>
+  <block id="f8688d8b01dc38763ec2b1f2b373aacc" category="list-text">*ボリュームアペンドモード*：無効または有効にします。WORMファイルに新しいコンテンツを追加できます。</block>
+  <block id="4d039a03e23e55926708d85c8977d521" category="list-text">変更不可のファイル：SnapLockで稼働している変更不可のファイルを含むボリュームは、保持期間が終了するまで削除できません。</block>
+  <block id="d39be15ae050d8e613043b0ac15e302b" category="section-title">HAペアの追加に関する制限事項</block>
+  <block id="5efa36685932e62e6fc20327cd980750" category="list-text">この処理が完了するまでに約30分かかることがあります。</block>
+  <block id="a51a5c7e9ccc4724703a6ad204303926" category="list-text">HAペアを追加すると、HAペアの追加、IOPSのプロビジョニング、SSD容量の拡張、スループット容量の更新といった処理が制限されます。</block>
+  <block id="0499cc2d877c04e04bec267579a95697" category="summary">BlueXP  Workload Factory for Storageで、FSx for ONTAP、クレデンシャル、リンク操作を追跡し、ジョブの進捗状況を監視します。</block>
+  <block id="dc58214807820bc923ac22555f97fd7a" category="doc">BlueXP  ワークロード工場でTrackerを使用してストレージの運用を監視</block>
+  <block id="a1351d61b85cd866d5c412c6e3220b98" category="paragraph">BlueXP  ワークロードファクトリのTrackerを使用して、FSx for ONTAPの実行、クレデンシャル、リンク操作の監視と追跡を行い、タスクの進捗状況を監視します。</block>
+  <block id="d57581d19f1047da33c24e46abd88cd4" category="paragraph">Workload FactoryにはTrackerという監視機能が用意されており、FSx for ONTAPの進捗状況とステータス、クレデンシャル、リンク処理の監視と追跡、処理タスクとサブタスクの詳細の確認、問題や失敗の診断、失敗した処理のパラメータの編集、失敗した処理の再試行を行うことができます。タイプとステータスでジョブをフィルタリングしたり、検索機能を使用してジョブを検索したり、ジョブテーブルをダウンロードしたりできます。</block>
+  <block id="5cc85b66adf3d2a6e3eb745a827cf4e0" category="paragraph">トラッカーは、操作に応じて最大3レベルの監視をサポートします。ファイルシステムの導入などの各タスクには、タスクの説明、ステータス、開始時間、タスク期間、ユーザー、地域、プロキシリソース、タスクID、および関連するすべてのサブタスクが表示されます。</block>
+  <block id="5cdbeb1c4cc65e8f551e161828701113" category="list-text">Trackerタスクレベルと例</block>
+  <block id="6db8f73f40a9c238922a375a008fda96" category="list-text">レベル1（親ジョブ）：ファイルシステムの展開を追跡します。</block>
+  <block id="4848a390cc9141e051b33cd55dc40d06" category="list-text">レベル2（サブジョブ）：ファイルシステムの展開に関連するサブジョブを追跡します。</block>
+  <block id="df942ff3756f5cbd24f42b521acc64f8" category="list-text">レベル3（タスク）：各リソースに対して実行された一連のアクションを一覧表示します。</block>
+  <block id="88ebc1f479e6de47fd711c4be81c4d26" category="list-text">処理のステータス</block>
+  <block id="afcc9733e2e2e0ce70f1ecee29c8f008" category="list-text">Trackerの動作ステータスは、_進行中_、_成功_、_失敗_です。</block>
+  <block id="de32977622108a1960ab0fcf45adaf80" category="list-text">動作周波数</block>
+  <block id="a9853b6069302c4152781f48222c3541" category="list-text">処理の頻度は、ジョブタイプとジョブスケジュールに基づいて決まります。</block>
+  <block id="01b0a4fcc33bdafd6e65537f24f463de" category="list-text">イヘントホシ</block>
+  <block id="b3c382e94f4b4abcc049ce95e85dc998" category="list-text">イベントはユーザインターフェイスに30日間保持されます。</block>
+  <block id="cfd98e00a6e308c04ab9f76a854b6989" category="section-title">運用の追跡と監視</block>
+  <block id="c82c26735f08b789c8bf574ab4962fcc" category="paragraph">Trackerを使用してBlueXP  で操作を追跡および監視します。</block>
+  <block id="48acd3e9d69adfbf7f5941961e95f6de" category="list-text">ストレージインベントリからアカウント設定メニューを選択し、*トラッカー*を選択します。</block>
+  <block id="1c575ed3e5dce0a1d77706830609b278" category="inline-image-macro">[Tracker]オプションが強調表示されたアカウント設定メニューのスクリーンショット。</block>
+  <block id="7478b5abe2869b21138fe88cbd4d66da" category="paragraph"><block ref="7478b5abe2869b21138fe88cbd4d66da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e443a93c9da9763cd15656814a7e0c2e" category="list-text">[トラッカー]タブで、フィルタまたは検索を使用してジョブの結果を絞り込みます。ジョブレポートをダウンロードすることもできます。</block>
+  <block id="aa2a2cd452f8a71b2f2dcdae68114732" category="section-title">View APIヨウキユウ</block>
+  <block id="68538d555ae12c680ea428aaa850d90f" category="paragraph">TrackerのタスクのコードボックスでAPIリクエストを表示します。</block>
+  <block id="968877018213bf42962084001c210472" category="list-text">トラッカーでタスクを選択します。</block>
+  <block id="2e6179b36329b65c38a5ca113ba0c81c" category="list-text">3ドットのメニューを選択し、*[API要求の表示]*を選択します。</block>
+  <block id="1448fba076a066622a9f93a25ab170a2" category="section-title">失敗した処理を再試行する</block>
+  <block id="89f1070b2ef1ba678a8cb4823fa74cb2" category="paragraph">Trackerで失敗した操作を再試行します。失敗した処理のエラーメッセージをコピーすることもできます。</block>
+  <block id="2d7556f00012ad460e93441b51cce6ea" category="admonition">失敗した処理に対して許可される再試行回数はx回だけです。</block>
+  <block id="b866b632b7f32ded2a0a0907100641bf" category="list-text">トラッカーで、失敗した操作を選択します。</block>
+  <block id="5d0eaa0ad00baabb57cbc22969070918" category="list-text">3ドットメニューを選択し、*[再試行]*を選択します。</block>
+  <block id="121145d60db2324903b129ae74d6c0a9" category="paragraph">処理が再開されます。</block>
+  <block id="bde5076ae2a993de9042a7e1dd4dc445" category="section-title">失敗した処理を編集して再試行してください</block>
+  <block id="2ae5a8ae85adca2aebf16aa81130c9c5" category="paragraph">失敗した操作のパラメータを編集し、Trackerの外部で操作を再試行してください。</block>
+  <block id="524ab960a72817bd7f9f107dc357d1bd" category="list-text">3ドットのメニューを選択し、*[編集して再試行]*を選択します。</block>
+  <block id="a071e4310b0dbc18ec326c217f47692f" category="paragraph">処理ページにリダイレクトされ、パラメータを編集して処理を再試行できます。</block>
+  <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">処理が再開されます。[Tracker]に移動して処理のステータスを確認します。</block>
+  <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025年2月2日</block>
+  <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">Trackerを使用した操作の監視</block>
 </blocks>

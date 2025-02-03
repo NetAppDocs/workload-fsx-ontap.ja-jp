@@ -82,6 +82,8 @@ sidebar:
         url: "/use-onprem-data.html"
   - title: 管理と監視
     entries:
+    - title: Trackerを使用した操作の監視
+      url: "/monitor-operations.html"
     - title: ボリューム管理
       entries:
       - title: ボリュームの自動拡張の編集
