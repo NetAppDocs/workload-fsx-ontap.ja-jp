@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-volume.html 
 keywords: create volume, FSx for ONTAP volume 
-summary: BlueXP  ワークロード工場でFSx for ONTAPファイルシステムをセットアップしたら、FSx for ONTAPボリュームを作成できます。 
+summary: FSx for ONTAPファイルシステムのセットアップが完了したら、BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成します。 
 ---
 = BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: BlueXP  ワークロード工場でFSx for ONTAPファイルシステ�
 
 
 [role="lead"]
-FSx for ONTAPファイルシステムのセットアップが完了したら、BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成できます。
+FSx for ONTAPファイルシステムのセットアップが完了したら、BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成します。
 
 .タスクの内容
 FSx for ONTAPボリュームは、データのグループ化、データの保存方法の決定、データへのアクセスタイプの決定に使用される仮想リソースです。ボリュームはファイルシステムのストレージ容量を消費しません。ボリュームに格納されたデータは、主にSSDストレージを消費します。ボリュームの階層化ポリシーによっては、データが容量プールのストレージを消費する場合もあります。ボリュームのサイズは作成時に設定します。あとで変更することもできます。

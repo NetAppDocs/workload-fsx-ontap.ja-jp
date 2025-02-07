@@ -301,7 +301,6 @@
   <block id="a481fc89f2e7d4e062f18bfa2b0d4c70" category="list-text">*アグリゲートリスト*：FlexGroupボリュームのみ。アグリゲートを追加または削除します。アグリゲートの最小数は1です。</block>
   <block id="688711a00683b1f80450615a64ae5765" category="list-text">*コンスティチュエントの数*：FlexGroupボリュームの場合のみ。アグリゲートあたりのコンスティチュエントの数を入力します。コンスティチュエントあたり100GiBが必要です。</block>
   <block id="39827364402eb7a6398af8c1194aa72d" category="doc">データ保護の概要</block>
-  <block id="35eb62f4f63e90889d34bd74cbe2ab3c" category="paragraph">FSx for ONTAPでは、ボリュームの読み取り専用のポイントインタイムイメージを作成するためのスナップショット、ボリュームを長期間保持してオフラインバックアップを作成するためのボリュームバックアップ、異なるリージョンにボリュームの非同期ミラーを作成するためのボリュームレプリケーションがサポートされています。</block>
   <block id="ba396d6d8a54df8d845ef7c6817efc3c" category="section-title">データホゴノシュルイ</block>
   <block id="c964369b092ed7e6fb64df0283dd7a2b" category="paragraph">ワークロードのデータ保護は、データ損失からいつでもリカバリできるようにします。使用する機能を選択する前に、データ保護の種類について説明します。</block>
   <block id="9147e5e61a7b9260dec09f3a6eb3e5be" category="paragraph-title">スナップショット</block>
@@ -512,14 +511,11 @@
   <block id="1252aae786a3ef33141ff6f61e500bd3" category="list-text">*高可用性*：各FSx for ONTAPファイルシステムに高可用性を提供し、単一および複数のアベイラビリティゾーンの導入をサポートします。</block>
   <block id="8b4170a08fe233d3f1ab1a7f2b813fe7" category="list-text">*自動スナップショット*：自動化された効率的なスナップショットを使用してデータを保護します。スナップショットは、ファイルシステムまたはボリュームのスペース効率に優れた、読み取り専用のポイントインタイムコピーです。</block>
   <block id="ee3721a037ae0201585fa0f3d8524835" category="list-text">*ボリュームレプリケーション*：Amazon Web Services間のリージョン間レプリケーションにより、ディザスタリカバリを実現します。</block>
-  <block id="48e2b64d68a2c2feb299e73854cb2fd9" category="list-text">*効率的なバックアップ*：別の地域にあるデータのコピーを使用して、後で追加の保護機能を提供します。これにより、緊急時の保護が強化されます。</block>
   <block id="d4ea6120d445184b4e6aeb2e9a91b4f7" category="list-text">*高速クローニング*：高速クローニングによってアプリケーション開発を高速化します。</block>
   <block id="8634654a2dc1e4d5fd5259271ca403cc" category="list-text">*マルチプロトコルのサポート*：Network File System（NFS）、Server Message Block（SMB）、Internet Small Computer Systems Interface（iSCSI）の各プロトコルをサポートします。</block>
   <block id="e38815d408b5081ee472d1082f1ec96d" category="list-text">*高スループット*：高スループットパフォーマンスを提供し、FSx for ONTAPファイルシステム上で実行されるワークロードのレイテンシを低く抑えます。</block>
-  <block id="2268df68a18ecb74f8cbbca6ec310482" category="list-text">*インメモリキャッシュとNVMeキャッシュ*：独自のインメモリキャッシュとNVMeキャッシュが組み込まれているため、アクセス頻度の高いデータのパフォーマンスがさらに向上します。</block>
   <block id="7a9e397cb5993968200649ca78b17a6d" category="list-text">*数十万IOPS *：SSDディスクで数十万IOPSを提供し、ストレージとワークロードにタイムリーな結果を提供します。</block>
   <block id="c0bfa18f4d4b53df41758502c7ed279b" category="list-text">*シンプロビジョニング*：容量を事前にプロビジョニングできるため、追加の容量が必要になるまでコストを削減できます。</block>
-  <block id="dacc1efce8073cac35b2ee5a9ae52c4c" category="list-text">*データの重複排除と圧縮*：重複するデータブロックを排除してデータブロックを圧縮することで、FSx for ONTAPファイルシステムに必要な物理ストレージの量を削減し、コストを削減します。</block>
   <block id="4db5604b0bc72aea1fe7399b332f28cb" category="list-text">*データ階層化*：アクセス頻度の低いデータをハイパフォーマンスのプライマリSSDストレージ階層からセカンダリ容量プールストレージ階層に移動することで、ストレージコストを削減できます。</block>
   <block id="a5a980f3518b6bdf573ccca8b4570aaa" category="list-text">* Codebox *：FSx for ONTAP操作用のコードビューア、コピーとダウンロード用のコードテンプレート、コードの再利用用の自動カタログを開発者に提供します。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
@@ -943,13 +939,10 @@
   <block id="55a23b72fe4aee5e2f0024c790d7eaba" category="paragraph">BlueXP  ワークロード工場のスナップショットから新しいFSx for ONTAPボリュームを作成し、ポイントインタイムリカバリを可能にします。</block>
   <block id="8d34a33f34659b0ea11833ac0b8fac52" category="list-text">FSx for ONTAP *タブで、ボリュームSnapshotを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="3ce528a1818baf0bbf2f6b362b1f7d58" category="list-text">[Volumes]タブで、ボリュームを作成するSnapshotがあるボリュームの3ドットのメニューを選択します。</block>
-  <block id="949524c655289917241748aa79f7ac90" category="summary">BlueXP  ワークロード工場でFSx for ONTAPファイルシステムをセットアップしたら、FSx for ONTAPボリュームを作成できます。</block>
   <block id="3f069fcb238357ca598d1a4d611a62de" category="doc">BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成</block>
-  <block id="70e17a61e26a90f517dba1b053b0c09e" category="paragraph">FSx for ONTAPファイルシステムのセットアップが完了したら、BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成できます。</block>
   <block id="d5d682292e122fa36db263f49a714cc7" category="list-text">ワークロード工場にFSx for ONTAPファイルシステムが必要です。</block>
   <block id="60911d8c5f41bf949378c3bec9fe03b7" category="list-text">ボリュームへのアクセスを設定するには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="72ce63a6bef6ec13ef74a7eab0012469" category="summary">FSx for ONTAPは、BlueXP  ワークロード工場でスナップショット、ボリュームバックアップ、ボリュームレプリケーションをサポートしています。</block>
-  <block id="d041ab32e01d968ecc286a807158f8b3" category="doc">BlueXP  ワークロード工場でのデータ保護</block>
   <block id="96a5899d90dd9b81319f168f67bcb5ae" category="summary">BlueXP  ワークロード工場でファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。</block>
   <block id="378213b58b31bfb9d173e8b2ad3c0968" category="doc">BlueXP  ワークロードファクトリでのファイルシステムの削除</block>
   <block id="a3101c3638d17143df93e5cfcc3c3a0a" category="list-text">FSx for ONTAP *タブで、削除するFSx for ONTAPファイルシステムの3ドットメニューを選択します。</block>
@@ -984,7 +977,6 @@
   <block id="8107582f3eb31967f7b5b6bdc4826ea0" category="list-text">長期保持のためのSnapshotを無効にすることを選択した場合は、*[適用]*を選択してこの処理を完了します。</block>
   <block id="66ca66124b69024cef94c671dc4b97bf" category="list-text">既存のポリシーを使用するには、ドロップダウンメニューからポリシーを選択します。</block>
   <block id="dd0818ef84ecf338be3c795b4a57e5c4" category="doc">BlueXP  ワークロード工場でのFSx for ONTAPによるコスト削減についてご確認ください</block>
-  <block id="9ce81c8939619bb16315ccf3c3c9f052" category="paragraph">Workload Factoryにはストレージ削減試算ツールが組み込まれているので、Amazonのストレージ環境をFSx for ONTAPと比較できます。AWSクレデンシャルを指定するかどうかに関係なく、削減効果を確認したり、ストレージ環境の構成設定をカスタマイズしたりできます。AWSクレデンシャルを指定すると、たとえばAmazon Elastic Block Storeのインスタンスを1つ以上選択し、ワークロードファクトリで自動的に比較を行うことができます。この計算ツールは、手動か自動かにかかわらず、ストレージニーズに対してコストが最も低いストレージサービスを特定します。</block>
   <block id="26852699cf6fe74856b51ba453d4c0ac" category="paragraph">最も対費用効果の高いストレージがFSx for ONTAPであるとストレージ計算ツールが判断した場合は、FSx for ONTAP構成を作成または保存し、ワークロードファクトリに付与した権限に関係なく、Codeboxを使用してInfrastructure as Codeテンプレートを生成できます。</block>
   <block id="798944cb742e35be45b885ba05ab898c" category="paragraph">検出されたストレージ環境の削減効果を確認：ワークロードファクトリは既存のAWSストレージ環境にリンクし、詳細を計算ツールに入力して自動で比較します。自動モードを使用するには、自動化権限を付与する必要があります。ユースケースは変更できますが、その他の詳細はすべて計算で自動的に決定されます。</block>
   <block id="b86c5bb2dd8e6c760c8bbfff2ddf0923" category="paragraph">ワークロードファクトリでAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windows File Serverのストレージ環境を検出する場合は、<block ref="d9270f60c282b5496f17a4b48a6da305" category="inline-link-macro-rx"></block>AWSアカウントに登録してください。</block>
@@ -1031,7 +1023,6 @@
   <block id="a3ee2d6d4606b21bc131c4389e63413b" category="list-text">* REST API *：ワークロードファクトリREST APIを使用して、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理できます。</block>
   <block id="35507c73673fd91f2b540f5ac22435e2" category="list-text">* CloudFormation *：AWS CloudFormationコードを使用すると、ワークロードファクトリコンソールで定義したアクションを実行して、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理できます。</block>
   <block id="2b796a233d6b48fb3e49b8c71a2addb1" category="list-text">* Terraform BlueXP  ワークロードファクトリプロバイダ*：Terraformを使用すると、ワークロードファクトリコンソールで生成されたインフラワークフローを構築および管理できます。</block>
-  <block id="8c643102fad13c593e1b977fbd4541d0" category="paragraph">お客様のFSx for ONTAPアカウントは、ワークロードファクトリではなくAWSによって管理されます。を参照してください <block ref="d466c04e3dc9277f23f307f5afe7df62" category="inline-link-macro-rx"></block>。</block>
   <block id="652598e6fd9da9bdc98db0ef4a093ddd" category="paragraph">ワークロードファクトリまたはワークロードファクトリのアプリケーションとサービスに関する一般的な質問については、を参照してください<block ref="b4c96257ecccde997612582bfecaef76" category="inline-link-macro-rx"></block>。</block>
   <block id="1dde4a08beb94964c3432a2fc7fdc3fc" category="doc">BlueXP  ワークロードファクトリに関する法的通知</block>
   <block id="ac09047fc1cd6bf09a117141110f48d7" category="summary">BlueXP  ワークロードファクトリでは、レプリケーション関係の最大転送速度を制限します。</block>
@@ -1055,7 +1046,6 @@
   <block id="3d158aba7d5d233ad247917999b7f8f9" category="list-text">[Volumes]タブで、SMB共有を変更するボリュームの3ドットのメニューを選択します。</block>
   <block id="20ce09b74b6e0e3f084a81d605cc8f77" category="summary">BlueXP  ワークロードファクトリでは、アカウントに関連付けられているリンクの表示、リンクの関連付け、リンクの削除を行うことができます。</block>
   <block id="2083481ef56023982330c4d1cbedcd07" category="doc">BlueXP  ワークロードファクトリリンクの管理</block>
-  <block id="239ad8ad0a1e3c62675449c7c312ff33" category="paragraph">BlueXP  ワークロードファクトリアカウントに関連付けられたリンクを管理します。</block>
   <block id="3e0b9b190a3e069bed44756ddb118289" category="list-text">ホームページで、メニューから*リンク*を選択します。</block>
   <block id="cc26ff728c1b9844af11d5c6831287a6" category="paragraph"><block ref="cc26ff728c1b9844af11d5c6831287a6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a91b1be003fc8ddd1b9b9c2667168d69" category="paragraph">ワークロードファクトリインターフェイスからリンクを編集することはできません。リンクに変更を加える必要がある場合は、新しいリンクを作成し、そのリンクをファイルシステムに関連付ける必要があります。</block>
@@ -1447,4 +1437,13 @@
   <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">処理が再開されます。[Tracker]に移動して処理のステータスを確認します。</block>
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025年2月2日</block>
   <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">Trackerを使用した操作の監視</block>
+  <block id="b1fe1919850819316de56e436737f1d9" category="summary">FSx for ONTAPファイルシステムのセットアップが完了したら、BlueXP  ワークロード工場でFSx for ONTAPボリュームを作成します。</block>
+  <block id="62e770531a6a6f3e80ca57b3b83bb3db" category="doc">BlueXP  ワークロードファクトリにおけるデータ保護の種類</block>
+  <block id="9da70164a8dd044e50707cfb202de218" category="paragraph">FSx for ONTAPは、スナップショット、バックアップ、レプリケーションをサポートしてデータを保護します。不可避の事態に備え、データを保護するために、複数のデータ保護タイプを組み合わせて使用することをお勧めします。</block>
+  <block id="fa7cdd584b5bc6a975df18dc4ebe5895" category="paragraph">BlueXP  ワークロードファクトリには、Amazonのストレージ環境をFSx for ONTAPと比較するためのストレージ節約計算ツールが含まれています。AWSクレデンシャルを指定するかどうかに関係なく、削減効果を確認したり、ストレージ環境の構成設定をカスタマイズしたりできます。AWSクレデンシャルを指定すると、たとえばAmazon Elastic Block Storeのインスタンスを1つ以上選択し、ワークロードファクトリで自動的に比較を行うことができます。この計算ツールは、手動か自動かにかかわらず、ストレージニーズに対してコストが最も低いストレージサービスを特定します。</block>
+  <block id="de62d09e228b6d55e899456a13b153dd" category="list-text">*効率的なバックアップ*：緊急時に別の地域にデータのコピーを保存することで、保護機能を強化します。</block>
+  <block id="669fb0eb9744dc9a4caa9500aa2efdd0" category="list-text">*インメモリキャッシュとNVMeキャッシュ*：独自のインメモリキャッシュとNVMeキャッシュを搭載しているため、頻繁にアクセスするデータのパフォーマンスが向上します。</block>
+  <block id="8e011e1c010d6b411d584ecf79e79304" category="list-text">*データの重複排除と圧縮*：重複データを削除してデータを圧縮することで、FSx for ONTAPファイルシステムに必要な物理ストレージの量を削減し、コストを削減します。</block>
+  <block id="acf29f0fa117accd6f0be38d23e9b566" category="paragraph">AWSは、ワークロードファクトリではなく、お客様のFSx for ONTAPアカウントを管理します。を参照してください <block ref="d466c04e3dc9277f23f307f5afe7df62" category="inline-link-macro-rx"></block>。</block>
+  <block id="4baeabf837f67f70aeb93e0dfea60d36" category="paragraph">BlueXP  ワークロードファクトリアカウントに関連付けられたリンクを管理します。FSx for ONTAPファイルシステムに関連付けられているリンクの表示、FSx for ONTAPファイルシステムへのリンクの関連付け、リンクの編集、リンクの削除を行うことができます。</block>
 </blocks>

@@ -11,7 +11,7 @@ summary: BlueXP  ワークロードファクトリでは、アカウントに�
 
 
 [role="lead"]
-BlueXP  ワークロードファクトリアカウントに関連付けられたリンクを管理します。
+BlueXP  ワークロードファクトリアカウントに関連付けられたリンクを管理します。FSx for ONTAPファイルシステムに関連付けられているリンクの表示、FSx for ONTAPファイルシステムへのリンクの関連付け、リンクの編集、リンクの削除を行うことができます。
 
 link:links-overview.html["リンクの詳細"] または link:create-link.html["リンクの作成"]。
 
