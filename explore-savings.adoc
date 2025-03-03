@@ -11,7 +11,7 @@ summary: Amazon Elastic Block Store（EBS）ストレージ、Elastic File Syste
 
 
 [role="lead"]
-Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windowsファイルサーバを使用し、FSx for NetApp ONTAPを使用するストレージワークロードの削減効果をご確認ください。
+Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windowsファイルサーバを使用するストレージワークロードとFSx for NetApp ONTAPを使用するストレージワークロードの削減効果をご確認ください。
 
 BlueXP  ワークロードファクトリには、Amazonのストレージ環境をFSx for ONTAPと比較するためのストレージ節約計算ツールが含まれています。AWSクレデンシャルを指定するかどうかに関係なく、削減効果を確認したり、ストレージ環境の構成設定をカスタマイズしたりできます。AWSクレデンシャルを指定すると、たとえばAmazon Elastic Block Storeのインスタンスを1つ以上選択し、ワークロードファクトリで自動的に比較を行うことができます。この計算ツールは、手動か自動かにかかわらず、ストレージニーズに対してコストが最も低いストレージサービスを特定します。
 

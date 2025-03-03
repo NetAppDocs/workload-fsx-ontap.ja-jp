@@ -90,6 +90,8 @@ sidebar:
         url: "/edit-volume-autogrow.html"
       - title: ボリューム容量を拡張
         url: "/increase-volume-capacity.html"
+      - title: 変更不可ファイルの管理
+        url: "/manage-immutable-files.html"
       - title: ボリュームタグを管理します
         url: "/manage-volume-tags.html"
       - title: ボリューム容量のリバランシング
@@ -130,24 +132,34 @@ sidebar:
         url: "/delete-svm.html"
     - title: データ保護管理
       entries:
-      - title: ボリュームのSnapshotポリシーの変更
-        url: "/change-snapshot-policy.html"
-      - title: FSx for ONTAPのバックアップスケジュールを管理
-        url: "/manage-backup-schedule.html"
-      - title: 長期保持のためのスナップショットの有効化と編集
-        url: "/enable-snapshots-long-term.html"
-      - title: レプリケーション関係の反転
-        url: "/reverse-replication.html"
-      - title: ソースボリュームのレプリケーションスケジュールの変更
-        url: "/change-replication-schedule.html"
-      - title: レプリケーション関係の最大転送速度を制限する
-        url: "/limit-transfer-rate.html"
-      - title: レプリケーション関係のSnapshotデータの手動更新
-        url: "/update-snapshot-replication.html"
-      - title: レプリケーション関係を停止する
-        url: "/stop-replication.html"
-      - title: レプリケーション関係を削除する
-        url: "/delete-replication.html"
+      - title: スナップショット
+        entries:
+        - title: Snapshotポリシーを管理します。
+          url: "/manage-snapshot-policy.html"
+        - title: 長期保持のためのスナップショットの有効化と編集
+          url: "/enable-snapshots-long-term.html"
+      - title: バックアップ
+        entries:
+        - title: FSx for ONTAPのバックアップスケジュールを管理
+          url: "/manage-backup-schedule.html"
+      - title: レプリケーション
+        entries:
+        - title: レプリケーション関係の反転
+          url: "/reverse-replication.html"
+        - title: ソースボリュームのレプリケーションスケジュールの変更
+          url: "/change-replication-schedule.html"
+        - title: レプリケーション関係の最大転送速度を制限する
+          url: "/limit-transfer-rate.html"
+        - title: レプリケーション関係のSnapshotデータの手動更新
+          url: "/update-snapshot-replication.html"
+        - title: データ保護ボリュームをレプリケートする
+          url: "/cascade-replication.html"
+        - title: レプリケーション関係の一時停止と再開
+          url: "/pause-resume-replication.html"
+        - title: レプリケーション関係を停止する
+          url: "/stop-replication.html"
+        - title: レプリケーション関係を削除する
+          url: "/delete-replication.html"
     - title: パフォーマンス管理
       entries:
       - title: ファイルシステムのIOPSのプロビジョニング

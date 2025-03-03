@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: split-cloned-volume.html 
 keywords: split clone volume, FlexVol volume 
-summary: クローンFlexVolを親ボリュームからスプリットして、クローンを通常の読み書き可能FlexVolボリュームにします。 
+summary: クローンFlexVol volumeを親ボリュームからスプリットして、通常の読み取り/書き込みFlexVol volumeにします。 
 ---
 = BlueXP  ワークロード工場でクローンボリュームをスプリットする
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: クローンFlexVolを親ボリュームからスプリットして、�
 
 
 [role="lead"]
-BlueXP  ワークロード工場で、クローンFlexVol volumeを親ボリュームからスプリットして、通常の読み書き可能FlexVol volumeにします。
+クローンFlexVol volumeを親ボリュームからスプリットして、BlueXP  ワークロード工場で通常の読み取り/書き込みFlexVol volumeにします。
 
 スプリット中は、クローンおよび親のデータにアクセスできます。スプリットプロセスではメタデータのみが更新され、IOは最小限に抑えられます。データブロックはコピーされません。
 

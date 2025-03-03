@@ -20,7 +20,7 @@ SSDストレージの使用容量が指定したしきい値を超えた場合�
 
 ファイルシステムの場合、 link:provision-iops.html["IOPSのプロビジョニング"] SSDの容量が1GiB増えるごとにIOPSが3 IOPS増加します。
 
-手動で行う場合は link:provision-iops.html["IOPSのプロビジョニング"] 、ファイルシステムの容量の増加に対応するためにIOPSの割り当てを増やす必要があります。
+手動で実行する場合link:provision-iops.html["IOPSのプロビジョニング"]は、ファイルシステムの容量の増加に対応するためにIOPSの割り当てを増やす必要があります。
 
 SSDのストレージ容量の制限については、AWS FSx for NetApp ONTAPドキュメントのを参照して link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["クォータ"^] ください。
 

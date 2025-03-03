@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: manage-snapshot-policy.html 
+keywords: manage snapshot policy, change snapshot policy, snapshot policies, snapshot schedule, update 
+summary: BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnapshotポリシーを管理Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。 
+---
+= Snapshotポリシーを管理します。
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnapshotポリシーを管理Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。
+
+.タスクの内容
+FSx for ONTAPファイルシステムでは、ボリュームのSnapshotポリシーの割り当て、変更、削除などのSnapshot管理操作は、Storage VMレベルで管理されます。Snapshotポリシーは、1つのStorage VMまたはすべてのStorage VMで共有できます。
+
+一部の管理タスクでは、FSx for ONTAPファイルシステムへの接続が必要になりlink:manage-links.html["リンクの関連付け"]ます。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。
+
+デフォルトでは、すべてのボリュームがファイルシステムのSnapshotポリシーに関連付けられ `default` ています。ほとんどのワークロードでこのポリシーを使用することを推奨します。
+
+
+
+== Snapshotポリシーの変更
+
+Snapshotポリシーの名前、スケジュール、保持するコピーの数を変更したり、変更不可のSnapshotを有効または無効にしたりできます。Storage VM間でのポリシー共有を有効または無効にすることはできません。このオプションは、Snapshotポリシーの作成時にのみ使用できます。
+
+.開始する前に
+既存のSnapshotポリシーを表示するには、リンクを関連付ける必要があります。リンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。その後、この操作に戻ります。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [ストレージ]*で、*[ストレージインベントリに移動]*を選択します。
+. FSx for ONTAP *タブで、ファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
+. [Storage VMs]タブで、スケジュールされたSnapshotで保護するボリュームを含むStorage VMの3ドットメニューを選択し、*[詳細な操作]*、*[ Snapshotポリシーの管理]*の順に選択します。
+. Snapshotポリシーの管理ページで、変更するSnapshotポリシーの3ドットのメニューを選択し、*[編集]*を選択します。
+. [Edit snapshot policy]ダイアログで、Snapshotポリシーに必要な変更を加えます。
+. * 適用 * を選択します。
+
+
+.結果
+Snapshotポリシーが更新されます。
+
+
+
+== ボリュームへのSnapshotポリシーの割り当て
+
+1つのボリュームにSnapshotポリシーを割り当てて、ボリュームのスケジュールされたSnapshotを作成できます。
+
+.開始する前に
+Snapshotポリシーを割り当てる必要がありlink:manage-links.html["リンクの関連付け"]ます。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [ストレージ]*で、*[ストレージインベントリに移動]*を選択します。
+. FSx for ONTAP *タブで、Snapshotポリシーを割り当てるボリュームが含まれているファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
+. [Storage VMs]タブで、スケジュールされたSnapshotで保護するボリュームを含むStorage VMの3ドットメニューを選択し、*[詳細な操作]*、*[ Snapshotポリシーの管理]*の順に選択します。
+. [Snapshotポリシーの管理]ページで、Snapshotポリシーの3ドットのメニューを選択し、*[ポリシーをボリュームに割り当て]*を選択します。
+. [Snapshotポリシーの割り当て]ダイアログで、ボリュームに割り当てるSnapshotポリシーを選択し、ポリシースケジュールを確認します。
++
+ポリシーに変更不可のスナップショットが含まれており、それを使用する場合は、ステートメントを受け入れます。
+
+. [割り当て]*を選択します。
+
+
+.結果
+Snapshotポリシーがボリュームに割り当てられます。
+
+
+
+== 書き換え不可のSnapshotを有効にする
+
+Snapshotをロックして、保持期間中に削除されないようにします。
+
+.開始する前に
+変更不可のSnapshotを有効にする必要がありlink:manage-links.html["リンクの関連付け"]ます。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [ストレージ]*で、*[ストレージインベントリに移動]*を選択します。
+. FSx for ONTAP *タブで、スナップショットをロックするボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. [ボリューム]*タブで、保護するボリュームの3ドットメニューを選択します。
+. [データ保護操作]*、*[ Snapshot ]*を選択し、*[ Snapshotを変更不可にする]*を選択します。
+. [Make a snapshot immutable]ダイアログで、次の手順を実行します。
++
+.. *スナップショット名*：ロックするスナップショットを選択します。
+.. [Retention Period]*を時間、日、月、または年数で設定します。
+.. ステートメントを受け入れます。
+
+
+. * 適用 * を選択します。
+
+
+.結果
+ボリュームSnapshotがロックされました。
+
+
+
+== Snapshotポリシーを削除します
+
+不要になったSnapshotポリシーを削除します。
+
+複数のボリュームに割り当てられているSnapshotポリシーは削除できません。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [ストレージ]*で、*[ストレージインベントリに移動]*を選択します。
+. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
+. [Storage VMs]タブで、削除するSnapshotポリシーが設定されているStorage VMの3ドットメニューを選択し、*[詳細な操作]*、*[ Snapshotポリシーの管理]*の順に選択します。
+. Snapshotポリシーの管理ページで、削除するSnapshotポリシーの3ドットのメニューを選択し、*[削除]*を選択します。
+. [削除]ダイアログで、*[削除]*を選択してポリシーを削除します。
+
+
+.結果
+Snapshotポリシーが削除されます。

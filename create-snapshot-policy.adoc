@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: create-snapshot-policy.html 
 keywords: create 
-summary: BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnapshotポリシーを作成Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。 
+summary: BlueXP  ワークロード工場でStorage VM用のカスタムSnapshotポリシーを作成 
 ---
-= FSx for ONTAPボリュームのSnapshotポリシーの作成
+= BlueXP  ワークロード工場でのStorage VMのSnapshotポリシーの作成
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  ワークロード工場でFSx for ONTAPボリューム用のカスタムSnapshotポリシーを作成Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。
+BlueXP  ワークロード工場でStorage VM用のカスタムSnapshotポリシーを作成Snapshotポリシーは、Storage VMのSnapshotの作成方法を定義します。FSx for ONTAPファイルシステムでは、Storage VMのSnapshotポリシーを作成できます。また、複数のStorage VMでポリシーを共有することもできます。
 
 .タスクの内容
 FSx for ONTAPに組み込まれている3つのスナップショットポリシーとは異なるカスタムスナップショットポリシーを作成できます。
@@ -39,13 +39,12 @@ FSx for ONTAPに組み込まれている3つのスナップショットポリシ
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [ストレージ]*で、*[ストレージインベントリに移動]*を選択します。
 . FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
-. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [ボリューム]*タブで、スケジュールされたSnapshotで保護するボリュームの3ドットメニューを選択します。
-. [データ保護操作]*、*[スナップショット]*の順に選択し、*[スナップショットポリシーの管理]*を選択します。
-. Snapshotポリシーの管理ページで、*[新しいSnapshotポリシーの作成]*を選択します。
+. ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
+. [Storage VMs]タブで、スケジュールされたSnapshotで保護するボリュームの3ドットメニューを選択し、*[詳細な操作]*、*[ Snapshotポリシーの管理]*の順に選択します。
+. Snapshotポリシーの管理ページで、* Snapshotポリシーの作成*を選択します。
 . Snapshotポリシー名*フィールドに、Snapshotポリシーの名前を入力します。
-. オプション：[説明]*フィールドに、Snapshotポリシーの説明を入力します。
-. [スケジュール]*で、Snapshotを作成するタイミングを選択します。たとえば、毎分、毎時などです。
+. 必要に応じて、Snapshotポリシーの説明を入力します。
+. [ポリシーのスケジュールとコピー]*で、Snapshotを作成するタイミングを選択します。たとえば、毎分、毎時などです。
 +
 複数の周波数を選択できます。
 
@@ -56,7 +55,15 @@ FSx for ONTAPに組み込まれている3つのスナップショットポリシ
 . オプション：[命名規則]*で、ポリシーの*プレフィックス*を入力します。
 . *保持ラベル*は自動的に入力されます。
 +
-このラベルは、SnapMirror（レプリケーションラベル）を参照します。ソースファイルシステムからターゲットファイルシステムへのレプリケーション用に、指定したSnapshotのみを選択するために使用されます。
+このラベルは、ソースファイルシステムからターゲットファイルシステムへのレプリケーション用に指定されたSnapshotのみを選択するために使用されるSnapMirror（レプリケーションラベル）を示します。
 
-. * 適用 * を選択します。
+. オプション：必要なスケジュールについて*変更不可のスナップショット*を有効にするには、スケジュールごとに*保持期間*を設定し、このステートメントを受け入れて続行します。
++
+変更不可のSnapshotを有効にすると、このSnapshotポリシー内のすべてのSnapshotがロックされ、保持期間中にSnapshotが削除されないようになります。
 
+. * Storage VM間で共有*：デフォルトで有効になっています。有効にすると、Snapshotポリシーがファイルシステム内のすべてのStorage VMで共有されます。単一のStorage VMのSnapshotポリシーを作成する場合は無効にしてください。
+. 「 * Create * 」を選択します。
+
+
+.結果
+Snapshotポリシーが作成されます。

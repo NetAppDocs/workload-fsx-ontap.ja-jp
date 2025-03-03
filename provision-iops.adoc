@@ -16,9 +16,9 @@ BlueXP  ワークロード工場でFSx for ONTAPファイルシステムに対�
 .タスクの内容
 FSxファイルシステムに対してSSD IOPSの自動プロビジョニングを有効にすることも、IOPSを手動でプロビジョニングすることもできます。
 
-自動プロビジョニングされるIOPSは、GiBあたり3 IOPSとして計算されます。
+自動プロビジョニングされるIOPSは、GiBあたり3つのIOPSとして計算されます。
 
-IOPSを手動でプロビジョニングした場合は、前にIOPSを上げなければならないことがありlink:increase-file-system-capacity.html["ファイルシステム容量の拡張"]ます。
+IOPSを手動でプロビジョニングした場合は、前にIOPSを増やしなければならないことがありlink:increase-file-system-capacity.html["ファイルシステム容量の拡張"]ます。
 
 IOPSの制限については、AWS FSx for NetApp ONTAPドキュメントのを参照してlink:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["クォータ"^]ください。
 
