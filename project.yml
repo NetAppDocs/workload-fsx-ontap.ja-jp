@@ -152,8 +152,6 @@ sidebar:
           url: "/limit-transfer-rate.html"
         - title: レプリケーション関係のSnapshotデータの手動更新
           url: "/update-snapshot-replication.html"
-        - title: データ保護ボリュームをレプリケートする
-          url: "/cascade-replication.html"
         - title: レプリケーション関係の一時停止と再開
           url: "/pause-resume-replication.html"
         - title: レプリケーション関係を停止する
