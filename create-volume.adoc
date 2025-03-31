@@ -198,7 +198,7 @@ NOTE: Snapshotの時間はファイルシステムのタイムゾーンに基づ
 
 .. *階層化ポリシー*：ボリュームに格納されているデータの階層化ポリシーを選択します。
 +
-自動は、ユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] 。
+_Balanced（Auto）_は、ワークロード工場出荷時のコンソールを使用してボリュームを作成する際のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] 。ワークロードファクトリでは、階層化ポリシーにワークロードファクトリコンソールのユースケースベースの名前が使用され、かっこ内にFSx for ONTAP階層化ポリシー名が含まれていることに注意してください。
 
 
 
