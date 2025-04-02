@@ -14,7 +14,7 @@ summary: BlueXP  ワークロードファクトリを使用すると、FSx for 
 BlueXP  ワークロードファクトリを使用すると、FSx for ONTAPファイルシステムを作成して、ボリュームと追加データサービスを追加および管理できます。
 
 .タスクの内容
-Storage VMはファイルシステムを作成すると作成されます。
+Storage VMとセキュリティグループは、ファイルシステムの作成時に作成されます。
 
 .開始する前に
 FSx for ONTAPファイルシステムを作成する前に、以下が必要になります。
@@ -150,6 +150,9 @@ Advanced createでは、可用性、セキュリティ、バックアップ、�
 +
 .. *リージョンとVPC *：ファイルシステムのリージョンとVPCを選択します。
 .. *セキュリティグループ*：既存のセキュリティグループを作成または使用します。
++
+新しいセキュリティグループの場合、セキュリティグループのプロトコル、ポート、およびロールの説明については、を参照してください<<セキュリティグループの詳細,セキュリティグループの詳細>>。
+
 .. *アベイラビリティゾーン*：アベイラビリティゾーンとサブネットを選択します。
 +
 *** クラスタ構成ノード1：アベイラビリティゾーンとサブネットを選択します。
@@ -207,6 +210,119 @@ AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Admin
 ファイルシステムを作成した場合は、*インベントリ*ページでFSx for ONTAPファイルシステムを確認できるようになりました。
 
 --
+====
+
+
+== セキュリティグループの詳細
+
+次の表に、セキュリティグループの詳細（プロトコル、ポート、ロールなど）を示します。
+
+[]
+====
+[cols="2,2,4a"]
+|===
+| プロトコル | ポート | ロール 
+
+
+| SSH | 22  a| 
+クラスタ管理 LIF またはノード管理 LIF の IP アドレスへの SSH アクセス
+
+
+
+| TCP | 80  a| 
+クラスタ管理LIFのIPアドレスへのWebページアクセス
+
+
+
+| TCP / UDP | 111  a| 
+NFS のリモートプロシージャコール
+
+
+
+| TCP / UDP | 135  a| 
+CIFS のリモートプロシージャコール
+
+
+
+| UDP | 137  a| 
+CIFSノNetBIOSメイカイケツ
+
+
+
+| TCP / UDP | 139  a| 
+CIFS の NetBIOS サービスセッション
+
+
+
+| TCP | 443  a| 
+クラスタ管理LIFまたはSVM管理LIFのIPアドレスへのONTAP REST APIアクセス
+
+
+
+| TCP | 445  a| 
+NetBIOS フレーム同期を使用した Microsoft SMB over TCP
+
+
+
+| TCP / UDP | 635  a| 
+NFSマウント
+
+
+
+| TCP | 749  a| 
+Kerberos
+
+
+
+| TCP / UDP | 2049  a| 
+NFSサーバデーモン
+
+
+
+| TCP | 3260  a| 
+iSCSI データ LIF を介した iSCSI アクセス
+
+
+
+| TCP / UDP | 4045  a| 
+NFSロックデーモン
+
+
+
+| TCP / UDP | 4046  a| 
+NFS のネットワークステータスモニタ
+
+
+
+| UDP | 4049  a| 
+NFSクォータプロトコル
+
+
+
+| TCP | 10000  a| 
+Network Data Management Protocol（NDMP；ネットワークデータ管理プロトコル）とNetApp SnapMirrorのクラスタ間通信
+
+
+
+| TCP | 11104  a| 
+NetApp SnapMirrorのクラスタ間通信の管理
+
+
+
+| TCP | 11105  a| 
+クラスタ間 LIF を使用した SnapMirror データ転送
+
+
+
+| TCP / UDP | 161-162  a| 
+Simple Network Management Protocol（SNMP；簡易ネットワーク管理プロトコル）
+
+
+
+| すべての ICMP | すべて  a| 
+インスタンスの ping を実行します
+
+|===
 ====
 .次のステップ
 ストレージインベントリにファイルシステムを格納することで、FSx for ONTAPファイルシステムの管理やリソースのセットアップを行うことができます link:create-volume.html["ボリュームの作成"] link:data-protection-overview.html["データ保護"] 。
