@@ -1669,4 +1669,9 @@
   <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="paragraph">インスタンスの ping を実行します</block>
   <block id="70b2c09de9e176a879c840cb014b8c20" category="inline-link-macro">grant_read_permissions</block>
   <block id="e395c91c5c84949d52ffb229805b2f5f" category="paragraph">ワークロードファクトリでAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windows File Serverのストレージ環境を検出する場合は、<block ref="aa999e6a1b84a9d79249d89f4acbbea1" category="inline-link-macro-rx"></block>AWSアカウントに登録してください。</block>
+  <block id="c09b5be4c2da04f4040eef1878f258aa" category="inline-link-macro">ONTAP 9 のドキュメント</block>
+  <block id="3611f3afb9bd4ea20ff757fe165aa678" category="paragraph">さらに、ユースケースの選択によって、レプリケーションポリシー（SnapMirrorポリシー（ONTAP））も決まります。レプリケーションポリシーを説明するために使用される用語は、から来て<block ref="20dfa0e16eac8597602ade67a04436fd" category="inline-link-macro-rx"></block>います。</block>
+  <block id="b5b213ff8da55d939d5b26b2acad4e23" category="list-text">移行などの場合、レプリケーションポリシーは_MirrorAllSnapshots_です。_MirrorAllSnapshots_は、すべてのSnapshotと最新のアクティブファイルシステムをミラーリングする非同期ポリシーです。</block>
+  <block id="5fc1e1e4cb63004511e44d8fbb5b04a2" category="list-text">ホット、コールド、またはアーカイブのディザスタリカバリの場合、レプリケーションポリシーは_MirrorAndVault_と呼ばれます。_MirrorAndVault_は、最新のアクティブファイルシステムと日単位および週単位のSnapshotをミラーリングするための非同期バックアップポリシーです。</block>
+  <block id="a1eefe5e0a806535abe58cb68a54c9d1" category="paragraph">すべてのユースケースで、Snapshotの長期保持を有効にすると、デフォルトのレプリケーションポリシーは_MirrorAndVault_です。</block>
 </blocks>
