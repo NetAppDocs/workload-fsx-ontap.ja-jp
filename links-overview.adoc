@@ -25,6 +25,8 @@ BlueXP  ワークロードファクトリリンクは、ワークロードフ�
 
 リンクは、ワークロード工場のFSx for ONTAPファイルシステムページから作成します。link:create-link.html["リンクの作成方法"] を参照してください。
 
+Workload Factoryのクレデンシャルサービスに保存されているクレデンシャル、またはAWS Secrets Managerに保存されているクレデンシャルを使用して、リンクを認証できます。Workload Factoryは認証モードの変更をサポートしていません。
+
 
 
 == コスト

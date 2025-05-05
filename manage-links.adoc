@@ -37,29 +37,58 @@ image:screenshot-view-link-details.png["特定のリンクを使用しているF
 
 
 
-== FSx for ONTAPファイルシステムへのリンクの関連付け
-
-作成したリンクをFSx for ONTAPファイルシステムに関連付けることができます。各ファイルシステムは、1つのNetAppアカウント内の1つのリンクにのみ関連付けることができますが、1つのリンクを複数のファイルシステムに関連付けることができます。
-
-.手順
-. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、リンクを関連付けるファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
-. ファイルシステムの概要で、*[リンクの関連付け]*を選択します。
-. [リンクの関連付け（Associate link）]ページで*[既存のリンクの関連付け（Associate an existing link）]*を選択し、リンクを選択して*[適用（Apply）]*を選択します。
-
-
-.結果
-リンクはFSx for ONTAPファイルシステムに関連付けられており、高度なONTAP操作を実行できます。
-
-
-
 == リンクの編集
 
 ワークロードファクトリインターフェイスからリンクを編集することはできません。リンクに変更を加える必要がある場合は、新しいリンクを作成し、そのリンクをファイルシステムに関連付ける必要があります。
 
 
 NOTE: AWSコンソールを使用してLambdaネットワーク構成（VPC、サブネット、セキュリティグループなど）を編集すると、変更がリンク管理UIに反映されますが、これらの変更によってLambdaとONTAP間の接続の問題が発生する可能性があるため、推奨されません。
+
+
+
+== リンクの認証
+
+ワークロードファクトリのクレデンシャル用の管理ユーザパスワード、またはFSx for ONTAPファイルシステムへのリンクを接続するためのAWS Secrets ManagerシークレットARNを入力します。
+
+コネクタを使用する場合、AWS Secrets Managerはサポートされません。
+
+
+NOTE: 1つのリンクでサポートされる認証方式は1つだけです。たとえば、[Link authentication with AWS Secrets Manager]を選択した場合、あとで認証方法を変更することはできません。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、リンクを関連付けるファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ファイルシステムの概要で、*[リンクの認証]*を選択します。
+. [Authenticate]リンクページで、認証モードを選択します。
++
+** Workload Factory：パスワードを2回入力します。
+** AWS Secrets Manager：シークレットARNを入力します。
+
+
+. * 適用 * を選択します。
+
+
+.結果
+リンクが認証され、高度なONTAP処理を実行できます。
+
+
+
+== リンク認証用のパスワードを更新する
+
+管理パスワードが無効な場合は、パスワードを更新してFSx for ONTAPファイルシステムへのリンクを接続します。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. [Storage]で、*[Go to storage inventory]*を選択します。
+. FSx for ONTAP *タブで、リンクを関連付けるファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ファイルシステムの概要で、*[パスワードの更新]*を選択します。
+. [Authenticate]リンクページで、新しいパスワードを2回入力します。
+. * 適用 * を選択します。
+
+
+.結果
+パスワードが更新され、FSx for ONTAPファイルシステムにリンクが接続されました。
 
 
 

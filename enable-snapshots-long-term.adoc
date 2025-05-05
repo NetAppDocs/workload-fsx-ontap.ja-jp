@@ -17,6 +17,8 @@ BlueXP  ワークロードファクトリでは、長期保持のためにス�
 
 長期保持のためにスナップショットを有効にして編集する場合も、同じ手順が適用されます。
 
+オンプレミスのONTAPクラスタがレプリケーション関係のターゲットである場合、長期保持用にSnapshotを変更することはできません。
+
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。

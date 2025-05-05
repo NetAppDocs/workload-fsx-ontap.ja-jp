@@ -15,6 +15,8 @@ BlueXP  ワークロードファクトリで、レプリケーション関係�
 
 ソースボリュームからレプリケートされたボリュームにSnapshotを転送する頻度を、目的のRPO（目標復旧時点）に合わせて選択します。
 
+オンプレミスのONTAPクラスタがレプリケーション関係のターゲットである場合、レプリケーションスケジュールの変更はサポートされていません。
+
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。

@@ -106,6 +106,12 @@ Storage VMの数はSKUごとに制限されます。制限を超えたStorage VM
 
 System Managerでは、FSx for ONTAP接続のリンクはサポートされません。
 
+
+
+== AWS Secrets Managerのサポート
+
+コネクタを使用する場合、AWS Secrets Managerはサポートされません。
+
 注：
 
 . Amazon FSx for NetApp ONTAPに適用
