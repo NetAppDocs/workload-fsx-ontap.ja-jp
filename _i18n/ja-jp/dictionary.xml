@@ -944,11 +944,6 @@
   <block id="f6858e5eadd0ed940450d85121838545" category="list-text">* Workload Factoryユーザーインターフェイス*：_Quick create_and_Advanced create_deploymentモードオプションを提供します。クイック作成には、ストレージ構成に適したAWS、NetApp、および業界標準のベストプラクティスが含まれます。</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">ワークロードファクトリを使用するためのツール</block>
   <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">BlueXP  ワークロード工場では、次のツールを使用できます。</block>
-  <block id="d5688c5bf16d0126d5b27759385bd41e" category="list-text">*ワークロードファクトリコンソール*:ワークロードファクトリコンソールは、アプリケーションとプロジェクトの全体的なビューを提供するビジュアルインターフェイスを提供します。</block>
-  <block id="38f4e563ea70a0c42a140783a152e82f" category="list-text">* BlueXP  コンソール*：BlueXP  コンソールはハイブリッドインターフェイスを提供するため、BlueXP  ワークロードファクトリを他のBlueXP  サービスと一緒に使用できます。</block>
-  <block id="a3ee2d6d4606b21bc131c4389e63413b" category="list-text">* REST API *：ワークロードファクトリREST APIを使用して、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理できます。</block>
-  <block id="35507c73673fd91f2b540f5ac22435e2" category="list-text">* CloudFormation *：AWS CloudFormationコードを使用すると、ワークロードファクトリコンソールで定義したアクションを実行して、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理できます。</block>
-  <block id="2b796a233d6b48fb3e49b8c71a2addb1" category="list-text">* Terraform BlueXP  ワークロードファクトリプロバイダ*：Terraformを使用すると、ワークロードファクトリコンソールで生成されたインフラワークフローを構築および管理できます。</block>
   <block id="652598e6fd9da9bdc98db0ef4a093ddd" category="paragraph">ワークロードファクトリまたはワークロードファクトリのアプリケーションとサービスに関する一般的な質問については、を参照してください<block ref="b4c96257ecccde997612582bfecaef76" category="inline-link-macro-rx"></block>。</block>
   <block id="1dde4a08beb94964c3432a2fc7fdc3fc" category="doc">BlueXP  ワークロードファクトリに関する法的通知</block>
   <block id="ac09047fc1cd6bf09a117141110f48d7" category="summary">BlueXP  ワークロードファクトリでは、レプリケーション関係の最大転送速度を制限します。</block>
@@ -1904,4 +1899,11 @@
   <block id="897bea1a5ca479178427004f773ee72e" category="list-text">必要に応じて、リバランシングする前にボリューム移動のリストをダウンロードします。</block>
   <block id="703547df715082455f8920d78fe90a30" category="list-text">[リバランス]*を選択します。</block>
   <block id="dc3d2b1db09a8cee9576c2df34eba7b1" category="paragraph">FlexGroupに追加されるFlexGroupメンバーボリュームの数に応じて、FlexGroupボリュームメンバー移動処理は一度に1つずつ実行されます。処理が完了すると、ファイルシステムは元の値に調整されます。</block>
+  <block id="4b50901597179fa075617d96ccf51901" category="list-text">*ワークロードファクトリコンソール*:ワークロードファクトリコンソールは、アプリケーションとプロジェクトの視覚的で包括的なビューを提供します。</block>
+  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  コンソール*：BlueXP  コンソールはハイブリッドインターフェイスを提供するため、BlueXP  ワークロードファクトリを他のBlueXP  サービスと一緒に使用できます。</block>
+  <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">*確認*：AIアシスタント「Ask me」を使用すると、Workload FactoryのWeb UIから離れることなく、Workload Factoryについて質問したり、詳細を確認したりできます。[Workload Factory Help]メニューから[Ask me]にアクセスします。</block>
+  <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CLI *：ワークロードファクトリには、1つのブラウザベースのCLIからアカウント間でAWSおよびNetApp環境を管理および運用するためのCloudShell CLIが含まれています。Workload FactoryコンソールのトップバーからCloudShellにアクセスします。</block>
+  <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API *：ワークロードファクトリREST APIを使用して、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理します。</block>
+  <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudFormation *：AWS CloudFormationコードを使用して、ワークロードファクトリコンソールで定義したアクションを実行し、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理します。</block>
+  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  ワークロードファクトリプロバイダ*：Terraformを使用して、ワークロードファクトリコンソールで生成されるインフラワークフローを構築および管理します。</block>
 </blocks>
