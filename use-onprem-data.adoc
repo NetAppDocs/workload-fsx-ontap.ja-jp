@@ -19,7 +19,7 @@ summary: オンプレミスのONTAPデータをBlueXP  ワークロード工場
 ユースケース:: 生成AIワークロードの主なユースケースは、この一連のタスクの焦点です。
 +
 --
-* *生成AIワークロード*：オンプレミスのONTAPボリュームのデータをFSx for ONTAPファイルシステムにレプリケートして、データを使用できるようにしlink:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html["AIナレッジベースの充実"^]ます。
+* *生成AIワークロード*：オンプレミスのONTAPボリュームのデータをFSx for ONTAPファイルシステムにレプリケートして、データを使用できるようにしlink:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["AIナレッジベースの充実"^]ます。
 * *クラウドへのバックアップと移行*：オンプレミスのONTAPボリュームデータをFSx for ONTAPファイルシステムにレプリケートし、クラウド内のバックアップとして使用できます。
 * *データ階層化*：レプリケーション後、アクセス頻度の低いオンプレミスのONTAPボリュームデータを、SSDストレージ階層から容量プールストレージ階層に階層化できます。
 

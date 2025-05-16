@@ -51,4 +51,4 @@ BlueXP  ワークロードファクトリは、Amazon FSx for NetApp ONTAPの�
 link:create-link.html["リンクを作成する方法について説明します。"]
 
 .次のステップ
-link:improve-configurations.html["FSx for ONTAP環境の構成を改善"]
+link:improve-configurations.html["適切に設計されたファイルシステム構成の実装"]
