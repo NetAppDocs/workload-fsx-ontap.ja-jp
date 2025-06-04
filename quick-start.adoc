@@ -23,13 +23,13 @@ BlueXP  ワークロード工場でAmazon FSx for NetApp ONTAPを使用する�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] クレデンシャルと権限の追加
 [role="quick-margin-para"]
-_basic_、_read_、および_automate_を選択します。 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]
+_基本_、_読み取り専用_、_読み取り/書き込み_から選択しますlink:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]
 
 [role="quick-margin-para"]
 _basic_modeで操作することを選択した場合は、これ以上操作する必要はありません。FSx for ONTAPでWorkload Factoryを使用して、部分的に完了したコードサンプルをコピーできます。
 
 [role="quick-margin-para"]
-_read_or_automate_modeで操作する場合は、データベースやAIなどのワークロード機能の選択や、_read_or_automate_modeで操作するための適切な権限があることを確認するためのIAMポリシーの作成などが必要ですlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["アカウントへのクレデンシャルの手動追加"^]。
+_読み取り専用_または_読み取り/書き込み_モードで操作する場合は、 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["アカウントへのクレデンシャルの手動追加"^]これには、データベースや AI などのワークロード機能の選択や、_読み取り専用_ モードまたは _読み取り/書き込み_ モードで操作するための適切な権限があることを確認するための IAM ポリシーの作成が含まれます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ファイルシステムの作成
 [role="quick-margin-para"]

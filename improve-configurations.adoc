@@ -33,7 +33,7 @@ BlueXP  は、Amazon FSx for NetApp ONTAPのファイルシステム導入構�
 
 
 .開始する前に
-* 読み取り専用または読み取り/書き込み権限を持つクレデンシャルが必要です。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSアカウントで権限を付与する方法を確認する"^]です。
+* _読み取り専用_または_読み取り/書き込み_権限を持つ資格情報が必要です。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSアカウントで権限を付与する方法を確認する"^]です。
 * 設定または構成の修正を選択する前に、各推奨事項をよく確認してください。
 
 
