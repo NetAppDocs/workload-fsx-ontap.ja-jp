@@ -1917,7 +1917,6 @@
   <block id="58107709be0f763204df69a361ef7fe0" category="list-text">自動容量管理が有効になっている場合、ボリュームの inode がストレージ容量に応じて増加するようにリンクが必要です。</block>
   <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">*Terraform BlueXP  ワークロードファクトリプロバイダ*: Terraformを使用して、ワークロードファクトリコンソールで生成されるインフラワークフローを構築および管理します。</block>
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025年6月3日</block>
-  <block id="3f704fe76e8b9e4bf51184f82c064656" category="paragraph"><block ref="03b2cfc949418819e16b1dc5fa3660ae" category="inline-link-macro-rx"></block> == 2025年3月2日</block>
   <block id="0592779b8245b0df30d4f675dd276086" category="list-text">レプリケーションの一時停止と再開：ソースボリュームからデスティネーションボリュームへのスケジュールされたレプリケーション更新を一時停止（休止）し、準備ができたらレプリケーションスケジュールを再開できます。一時停止中、ソース ボリュームと宛先ボリュームは独立し、宛先ボリュームは読み取り専用から読み取り/書き込みに移行します。</block>
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。</block>
   <block id="bf1eae05016a3b136059039ae18136f1" category="summary">BlueXP ワークロード ファクトリーでボリュームを複製し、テスト用に元のボリュームの読み取り/書き込みボリュームを作成します。</block>
@@ -1929,4 +1928,12 @@
   <block id="30e57761ad37a97249e7a0876abdd7cc" category="paragraph">レプリケーションを再開すると、ターゲットボリュームに対するすべての変更が取り消され、BlueXP  ワークロードの工場出荷時の設定でレプリケーションが再度有効になります。ターゲット ボリュームは読み取り/書き込みから読み取り専用に移行し、スケジュールされたレプリケーション間隔でソース ボリュームからの更新を再度受信します。レプリケーション関係を再開すると、ターゲットボリュームは最新の最初のレプリケーションSnapshotに戻り、その時点でボリュームレプリケーションプロセスが開始されます。</block>
   <block id="b91aff97cc4dadbca9539fae72dedecc" category="paragraph">_基本_、_読み取り専用_、_読み取り/書き込み_から選択します<block ref="a1a436caedec06006ef5b76c82a83b04" category="inline-link-macro-rx"></block></block>
   <block id="b31987b3ffb35fe02be38fe9d8e701f1" category="paragraph">_読み取り専用_または_読み取り/書き込み_モードで操作する場合は、 <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>これには、データベースや AI などのワークロード機能の選択や、_読み取り専用_ モードまたは _読み取り/書き込み_ モードで操作するための適切な権限があることを確認するための IAM ポリシーの作成が含まれます。</block>
+  <block id="2423cc9c7b9124d70e9fba7ab98b53df" category="doc">問題解決のための新しい優れた分析とサポート</block>
+  <block id="b03b65ae167fa7999b9020739117ae19" category="paragraph">FSx for ONTAP ファイルシステムの自動容量管理が、Well-Architected ステータス ダッシュボードの構成分析として含まれるようになりました。</block>
+  <block id="5a5b21f778da0dbaf4794873b0deb067" category="paragraph">さらに、ワークロード ファクトリーでは、次の構成の問題の修正がサポートされるようになりました。</block>
+  <block id="f2be69b635c39988351f6636a52c66bd" category="list-text">自動容量管理</block>
+  <block id="6745decee5065276cebd3695be1fb7bd" category="inline-link-macro">構成の問題を修正する</block>
+  <block id="347dbce3139b58110904a187913fc7e1" category="paragraph"><block ref="347dbce3139b58110904a187913fc7e1" category="inline-link-macro-rx"></block></block>
+  <block id="5a7cf4155ebaa9aec1f33318c7c4cf82" category="section-title">2025年6月8日</block>
+  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
 </blocks>

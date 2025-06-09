@@ -15,6 +15,29 @@ Amazon FSx for NetApp ONTAPの最新情報をご確認ください。
 
 
 
+== 2025年6月8日
+
+
+
+=== 問題解決のための新しい優れた分析とサポート
+
+FSx for ONTAP ファイルシステムの自動容量管理が、Well-Architected ステータス ダッシュボードの構成分析として含まれるようになりました。
+
+さらに、ワークロード ファクトリーでは、次の構成の問題の修正がサポートされるようになりました。
+
+* SSD容量しきい値
+* データの階層化
+* スケジュールされたローカルSnapshot
+* FSx for ONTAP バックアップ
+* リモートデータレプリケーション
+* ストレージの効率化
+* 自動容量管理
+
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.html["構成の問題を修正する"]
+
+
+
 == 2025年6月3日
 
 
@@ -230,7 +253,11 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["�
 
 セキュリティグループは、FSx for ONTAPファイルシステムの作成プロセスの一環として作成されます。セキュリティグループの詳細（プロトコル、ポート、ロールなど）を確認できるようになりました。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["ファイルシステムの作成"] == 2025年3月2日
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["ファイルシステムの作成"]
+
+
+
+== 2025年3月2日
 
 
 
