@@ -21,7 +21,7 @@ FSx for ONTAPボリュームではジャストインタイムのcopy-on-writeが
 NOTE: スナップショットはデータのコピーではありません。データのコピーを作成する場合は、FSx for ONTAPのバックアップ機能やボリュームレプリケーション機能の使用を検討してください。
 
 .開始する前に
-スナップショットを作成する必要があり link:manage-links.html["リンクの関連付け"] ます。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
+ボリュームの手動スナップショットを作成するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。

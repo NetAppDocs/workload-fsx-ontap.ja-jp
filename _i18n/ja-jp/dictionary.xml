@@ -169,7 +169,6 @@
   <block id="e9cb9ef1f5a746f51fcf4a92869ed58c" category="paragraph">この処理では、FSx for ONTAPファイルシステム内の1つまたはすべてのソースボリュームに対してレプリケーション関係を作成します。</block>
   <block id="584e3ee876c862f377d3d9b7080d32d9" category="paragraph">作業を開始する前に、次の前提条件を満たしていることを確認してください。</block>
   <block id="3188210715ec1f36a4acbadb45350bad" category="list-text">レプリケーション関係を作成するには、ストレージインベントリに2つの使用可能なファイルシステムが必要です。</block>
-  <block id="33429c6ab13a995d68ffda0c4dc39c19" category="inline-link-macro">最初にリンクを作成します</block>
   <block id="4820ffe2fe615fd37fb7932b296c86f1" category="inline-link-macro">リンクの関連付け</block>
   <block id="b9a2f47b5bc4bd7fcc8d23d6721ec4c2" category="list-text">[Create replication]ページの[Replication target]で、次の情報を指定します。</block>
   <block id="837278414ab16e2a74dfc1b2102bcd54" category="list-text">* FSx for ONTAPファイルシステム*：対象となるFSx for ONTAPファイルシステムのクレデンシャル、リージョン、FSx for ONTAPファイルシステム名を選択します。</block>
@@ -197,7 +196,6 @@
   <block id="dbdb6569199d0b92d1e8203557e17927" category="list-text">Snapshotを使用する前に、Snapshotの容量について次の点を考慮してください。</block>
   <block id="93500ef3c4b6b914f591d40fa8709533" category="list-text">ほとんどのデータセットでは、20%の容量を追加すれば、Snapshotを最大4週間保持できます。データが古くなるにつれて、リストアに使用される可能性は低くなります。</block>
   <block id="e6b293eb079603bb103c925cf228700c" category="list-text">Snapshot内のすべてのデータを上書きすると、ボリューム容量が大量に消費されます。これは、ボリューム容量のプロビジョニングに影響します。</block>
-  <block id="0691d778f09d713a755463d05ab1033d" category="inline-link-macro">リンクの作成</block>
   <block id="b8613e46a68d4b177aeb2fe1cdab9b07" category="list-text">[ストレージ]*で、*[ストレージインベントリに移動]*を選択します。</block>
   <block id="736ef7205c037a078bc461f368c6a21f" category="doc">FSx for ONTAPボリュームの手動スナップショットの作成</block>
   <block id="5b10cd7d19a8a16358cb05922f38a69e" category="paragraph">Snapshotはボリュームのリソースであり、変更されたデータのためだけにスペースを消費するデータを瞬時にキャプチャします。データは時間の経過とともに変化するため、Snapshotは通常、古くなるにつれてより多くのスペースを消費します。</block>
@@ -253,7 +251,6 @@
   <block id="8cc48e7c3f902d1b7dd7d0ecb40ade52" category="list-text">[Efficiency and protection]で、次の詳細を指定します。</block>
   <block id="4f16f68a6d9522c0d097a900978f6f0d" category="paragraph">ストレージ効率化は、ONTAPの重複排除機能と圧縮機能を利用することで実現されます。重複排除は、重複するデータブロックを排除します。データ圧縮は、データブロックを圧縮して、必要な物理ストレージの量を削減します。</block>
   <block id="f03207e238654d36cb2c88950bf22d84" category="list-text">* Snapshotポリシー*：Snapshotポリシーを選択して、Snapshotの頻度と保持を指定します。</block>
-  <block id="84e947d0a820262a46013852b1928efd" category="paragraph">AWSのデフォルトポリシーは次のとおりです。カスタムのSnapshotポリシーの場合は、リンクを関連付ける必要があります。</block>
   <block id="20d2ce456e91b2afd45084ee06baab95" category="list-text">このポリシーでは、次のスケジュールでSnapshotが自動的に作成され、新しいコピー用のスペースを確保するために最も古いSnapshotコピーが削除されます。</block>
   <block id="4cd6a004e8e70008213c7c1917f36c49" category="list-text">最大6つの時間単位のスナップショットが毎時5分に作成されます。</block>
   <block id="17ed200290d04c66b0c31c18233bd5c1" category="list-text">最大2つの日次スナップショットが月曜日から土曜日の午前0時10分に作成されます。</block>
@@ -517,7 +514,6 @@
   <block id="8cd69d367e2dbdfca9ec0b55ba13baec" category="section-title">リンクが必要な場合</block>
   <block id="c0653b3ad30a51a0fe3228ad2877ac9d" category="paragraph">リンクが必要な機能は次のとおりです。</block>
   <block id="fa1a08e2a749c9f330c9a8e60cac9cc3" category="doc">リンクの管理</block>
-  <block id="a4fcf9229a590e13a5a514e19c4c398e" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block> または <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>。</block>
   <block id="e32918056c538c64f6e229f2ca257e25" category="section-title">アカウントに関連付けられているリンクを表示する</block>
   <block id="a8fa4cf9dc4a62f0a1665e1500bbff0a" category="paragraph">現在アカウントに関連付けられているリンクを表示できます。</block>
   <block id="d1c0fce8fad9bbea3f4af6e7b074017a" category="inline-image-macro">リンクページを開く方法を示すスクリーンショット。</block>
@@ -602,7 +598,6 @@
   <block id="5ad71ca0af84be16f0eb4a7ae3fe9ac0" category="list-text">スプリットの実行後、親FlexVolボリュームとクローンの両方で、それぞれのボリュームギャランティに基づいたスペースの完全な割り当てが必要になります。</block>
   <block id="8dd061e99d373c92767f86fe7281ad2b" category="list-text">FlexCloneボリュームを親ボリュームからスプリットしたあとは、この2つを再び結合することはできません。</block>
   <block id="107cbfcddbd40cae35b91dda5e5e061c" category="paragraph">クローンボリュームをスプリットする前に、次の点を考慮してください。</block>
-  <block id="b77db7f524ccde6f40472118970bf6e7" category="list-text">クラスタ管理者である必要があります。</block>
   <block id="7591989c8ce2c1b3bcc16916ee9457ef" category="list-text">FlexCloneボリュームは、スプリット処理の開始時にオンラインになっている必要があります。</block>
   <block id="102403f0f3d778ceafbe074fd8219d2f" category="list-text">スプリットが成功するには、親ボリュームがオンラインである必要があります。</block>
   <block id="ee58955cf84a9682824159e8019bdbef" category="list-text">[データ保護操作]*を選択し、*[クローンボリュームのスプリット]*を選択します。</block>
@@ -816,7 +811,6 @@
   <block id="c2a714b67167aae1661b248d570b356d" category="list-text">FSx for ONTAP *タブで、更新するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。</block>
   <block id="6d257e829bd979b1905ac4edd5b4a469" category="list-text">[Replication relationships]タブで、変更するレプリケーション関係スケジュールの3ドットのメニューを選択します。</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">* 適用 * を選択します。</block>
-  <block id="f2a6898f5e2a659b0a4e936d2179af7b" category="paragraph">既存のSnapshotポリシーを表示するには、リンクを関連付ける必要があります。リンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。その後、この操作に戻ります。</block>
   <block id="af215976e40a730a67c8637d4caae8f6" category="list-text">[適用]*を選択して変更を保存します。</block>
   <block id="8cb5ce6df0f7a83b17c0640431645fbe" category="summary">BlueXP  ワークロード工場で階層化ポリシーを変更し、ハイパフォーマンスのプライマリストレージ階層からセカンダリの大容量プールストレージ階層にデータを再割り当てします。</block>
   <block id="6e342a0f88f597871307e39e9b4d00f4" category="doc">BlueXP  ワークロードの工場出荷時にボリュームの階層化ポリシーを変更する</block>
@@ -850,11 +844,8 @@
   <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">このオプションでは、AWS CloudFormationからリンクのARNを抽出し、ここにレポートします。Workload Factoryは手動でリンクを登録します。</block>
   <block id="7607cf6a75040d1b9bf8fde1cfaecf12" category="doc">BlueXP  ワークロードファクトリでレプリケーション関係を作成</block>
   <block id="161fc7b1d67184a50e10e19fb2489263" category="paragraph">予期しない災害が発生した場合のデータ損失を回避するために、BlueXP  ワークロード工場でFSx for ONTAPファイルシステムのレプリケーション関係を作成します。</block>
-  <block id="cf2d4a66ab67f86354f74f9c2cd68326" category="list-text">レプリケーション関係に使用する2つのファイルシステムには、リンクが関連付けられている必要があります。ファイルシステムに既存のリンクがない場合は、 <block ref="1bb172d13e94db502d24bfc1c5a4fc0a" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムで<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>、*[アカウント名]*の*[リンクの関連付け]*を選択します。リンクが両方のファイルシステムに関連付けられたら、この操作に戻ります。</block>
   <block id="215ff1ada74bcc801bd4be406a4760b9" category="paragraph">_Auto_は、工場出荷時のFSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block>。</block>
-  <block id="9b5cb8f49e83e342d48c95385ebf43e7" category="list-text">カスタムのSnapshotポリシーを作成するには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="475db696847724a8e496eba7476bc2ce" category="summary">BlueXP  ワークロード工場でFSx for ONTAPボリュームの手動スナップショットを作成スナップショットは、ボリュームのコンテンツのポイントインタイムバージョンです。</block>
-  <block id="512defc52682eb6b6d9585f8d5494603" category="paragraph">スナップショットを作成する必要があり <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block> ます。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="8e835d5a49d273fb898a556146f8b52c" category="list-text">[ボリューム]*タブで、保護するボリュームの3ドットメニューを選択します。</block>
   <block id="d0b0eb066206fa50f3ebee39a541bb7c" category="summary">FSx for ONTAP Storage VM（SVM）を作成して、BlueXP  ワークロード工場でワークロードにストレージとデータサービスを提供できます。</block>
   <block id="4da97157b6693eaf9968b187d7b8259c" category="paragraph">FSx for ONTAPファイルシステム用のStorage VM（SVM）を作成して、BlueXP  ワークロード工場のワークロード向けに仮想的にストレージとデータサービスにアクセスします。</block>
@@ -950,8 +941,6 @@
   <block id="1b7732fda3ed237c994a5ac55fb150ea" category="list-text">*日次自動バックアップウィンドウ*：*設定なし*（日次バックアップの開始時間を選択）または*日次バックアップの開始時間を選択*のいずれかを選択し、開始時間を指定します。</block>
   <block id="5bdcc5d3e4e631055e0153df468f21d6" category="doc">BlueXP  ワークロードファクトリ内のボリュームのCIFS共有を管理します。</block>
   <block id="3d158aba7d5d233ad247917999b7f8f9" category="list-text">[Volumes]タブで、SMB共有を変更するボリュームの3ドットのメニューを選択します。</block>
-  <block id="20ce09b74b6e0e3f084a81d605cc8f77" category="summary">BlueXP  ワークロードファクトリでは、アカウントに関連付けられているリンクの表示、リンクの関連付け、リンクの削除を行うことができます。</block>
-  <block id="2083481ef56023982330c4d1cbedcd07" category="doc">BlueXP  ワークロードファクトリリンクの管理</block>
   <block id="3e0b9b190a3e069bed44756ddb118289" category="list-text">ホームページで、メニューから*リンク*を選択します。</block>
   <block id="cc26ff728c1b9844af11d5c6831287a6" category="paragraph"><block ref="cc26ff728c1b9844af11d5c6831287a6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a91b1be003fc8ddd1b9b9c2667168d69" category="paragraph">ワークロードファクトリインターフェイスからリンクを編集することはできません。リンクに変更を加える必要がある場合は、新しいリンクを作成し、そのリンクをファイルシステムに関連付ける必要があります。</block>
@@ -1113,7 +1102,6 @@
   <block id="f4a663f98fdbf7294b4d7065fe81028d" category="section-title">オンプレミスのONTAPクラスタからボリュームデータをレプリケート</block>
   <block id="a979d07ec6790355c195ac942aac0f7a" category="list-text">ボリュームデータをレプリケートするには、オンプレミスのONTAPクラスタを検出する必要があります。</block>
   <block id="bbaf3e2bb6ee0562252678dc510975b4" category="list-text">レプリケーションのターゲットとして使用できるFSx for ONTAPファイルシステムが必要です。</block>
-  <block id="5fc398b3211d605127c144291f3eda23" category="list-text">レプリケーション関係に使用するオンプレミスのONTAPクラスタとFSx for ONTAPファイルシステムの両方に、リンクが関連付けられている必要があります。一方または両方のオンプレミスクラスタとFSx for ONTAPクラスタに既存のリンクがない場合は、を<block ref="1bb172d13e94db502d24bfc1c5a4fc0a" category="inline-link-macro-rx"></block>参照してください。ファイルシステムで<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>、*[アカウント名]*の*[リンクの関連付け]*を選択します。リンクがオンプレミスのONTAPクラスタとFSx for ONTAPファイルシステムに関連付けられたら、この処理に戻ります。</block>
   <block id="aea1c4ebf571d37a1b92fbbf08a1d97c" category="list-text">Storage VMでボリュームを検索するには、ドロップダウンから*[Storage VMの選択]*を選択します。</block>
   <block id="e03b6f62981f4a86c7a1c627e22e63e8" category="list-text">レプリケートするボリュームを1つ以上選択し、*[レプリケート]*を選択します。</block>
   <block id="72106a023ea21862c78ae92b6102ff34" category="list-text">*データの階層化*：ターゲットボリュームに格納されているデータの階層化ポリシーを選択します。</block>
@@ -1312,7 +1300,6 @@
   <block id="669fb0eb9744dc9a4caa9500aa2efdd0" category="list-text">*インメモリキャッシュとNVMeキャッシュ*：独自のインメモリキャッシュとNVMeキャッシュを搭載しているため、頻繁にアクセスするデータのパフォーマンスが向上します。</block>
   <block id="8e011e1c010d6b411d584ecf79e79304" category="list-text">*データの重複排除と圧縮*：重複データを削除してデータを圧縮することで、FSx for ONTAPファイルシステムに必要な物理ストレージの量を削減し、コストを削減します。</block>
   <block id="acf29f0fa117accd6f0be38d23e9b566" category="paragraph">AWSは、ワークロードファクトリではなく、お客様のFSx for ONTAPアカウントを管理します。を参照してください <block ref="d466c04e3dc9277f23f307f5afe7df62" category="inline-link-macro-rx"></block>。</block>
-  <block id="4baeabf837f67f70aeb93e0dfea60d36" category="paragraph">BlueXP  ワークロードファクトリアカウントに関連付けられたリンクを管理します。FSx for ONTAPファイルシステムに関連付けられているリンクの表示、FSx for ONTAPファイルシステムへのリンクの関連付け、リンクの編集、リンクの削除を行うことができます。</block>
   <block id="4a922c367b35639ecb9d911b81fdb458" category="doc">容量管理の自動化の強化</block>
   <block id="5868fd5ebf39f0f3dce9bd4ba23dcb6f" category="paragraph">容量の自動管理を有効にすると、BlueXP  ワークロードファクトリでは、ファイルシステムが容量のしきい値に達したかどうかが2時間ごとではなく30分ごとにチェックされるようになりました。</block>
   <block id="410d677b6db33c7f47c30b3d219c4846" category="paragraph">容量のしきい値に達しても、プロビジョニングIOPSの設定は影響を受けなくなりました。</block>
@@ -1361,7 +1348,6 @@
   <block id="6612ee3812a7ecc1b61dc6f585b1c26f" category="list-text">変更不可のスナップショットに関するステートメントを受け入れます。</block>
   <block id="a07e25b28678b53fe808a082369fda80" category="paragraph">ボリュームにSnapshotコピーがあります。</block>
   <block id="86ee35c0029c920dce9ef56d88935e8e" category="paragraph">ボリュームには次のプロトコルが使用されます。</block>
-  <block id="f9c23d0688e853bcefd0a1c9f4247f62" category="list-text">ボリュームへのアクセスを設定するには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="8feb9be2f7d30e723f1c8aa899250dae" category="list-text">*ブロックアクセス*：重要なビジネスアプリケーションを実行しているホストがiSCSIプロトコルを使用してボリュームにアクセスできるようにします。ブロックアクセスは、ファイルシステムのスケールアウト構成のHAペアが6つ以下の場合にのみ使用できます。</block>
   <block id="ad5ae1649d193a804147218da52fd8ad" category="list-text">*変更不可ファイル*:この機能はSnapLockとも呼ばれ、デフォルトでは無効になっています。変更不可のファイルを有効にすると、指定した期間にわたってデータが削除または上書きされるのを防ぐことができます。この機能は、ボリュームの作成時にのみ有効にできます。この機能は、一度有効にすると無効にすることはできません。これは追加料金が発生するFSx for ONTAPのプレミアム機能です。詳細については、Amazon FSx for NetApp ONTAPドキュメントのを参照して<block ref="e334cd66539db07681f218968c17aeb4" category="inline-link-macro-rx"></block>ください。</block>
   <block id="f122287653386d74229199bd670f4990" category="list-text">保持期間には、_retention policy_and_retention periods_という2つの設定があります。保持ポリシー：書き換え不可のWORM状態でファイルを保持する期間を定義します。独自の保持ポリシーを指定するか、デフォルトの保持ポリシー（未指定）（30年）を使用できます。最小保持期間と最大保持期間_は、ファイルのロックに許可される期間を定義します。</block>
@@ -1369,18 +1355,14 @@
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">[ 有効 ] を選択します。</block>
   <block id="427c298c7e18f9930012cc8fc9c01fcd" category="summary">FSx for ONTAPファイルシステムで不要になったボリュームを削除し、スペースを解放します。この処理は元に戻すことはできません。</block>
   <block id="c6e676032b22d8e639d8347f2bfe87d5" category="list-text">変更不可のファイルとスナップショット：変更不可のファイルとスナップショットを含むボリュームは、保持期間が終了するまで削除できません。</block>
-  <block id="857724ecf757b1bcd8495bdca7e9031a" category="paragraph">ボリュームの自動拡張を有効にするには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="c8b905c92d0173f2a57027886d96ccda" category="paragraph">FSx for ONTAPファイルシステムのスキャンは30分ごとに実行され、増分ストレージを追加する必要があるかどうか、使用可能なボリュームinode、またはボリューム内のファイルやフォルダの最大数を確認します。これにより、設定された容量の自動管理のしきい値に従って数が増加します。</block>
-  <block id="063db47ee02fdc9a25f24c45a2f07d88" category="paragraph">ボリュームのinodeをストレージ容量に合わせて拡張するには、を実行する必要があります<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="c19ec77905390b48637066dbfe338f41" category="paragraph">ファイルシステムスキャンは30分ごとに実行され、ファイルシステムに追加の容量が必要かどうかが判断されます。</block>
   <block id="db95f08d46f6135faf16036ec8d0bee1" category="paragraph">Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windowsファイルサーバを使用するストレージワークロードとFSx for NetApp ONTAPを使用するストレージワークロードの削減効果をご確認ください。</block>
   <block id="40042d0ee93698f3f63a7f8a3f2c9c1f" category="paragraph">手動で実行する場合<block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block>は、ファイルシステムの容量の増加に対応するためにIOPSの割り当てを増やす必要があります。</block>
-  <block id="58d1dabb2d9059ce86ad3732b8fdce6d" category="paragraph">ボリューム容量を拡張するには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="4a2b234996b70a9f17edaef6ad63c683" category="paragraph">ソースボリュームとターゲットボリューム間のレプリケーション関係を初期化して、BlueXP  ワークロード工場内のSnapshotとすべてのデータブロックを転送します。</block>
   <block id="d2a2f0e04d26b7123eb9c705ec13e758" category="list-text">この処理の完了には約30分かかることがあります。</block>
   <block id="1e0df4591e77aee403bcdd8f97b71ee5" category="paragraph">最大転送速度の制限はオプションですが、推奨されます。制限がないと、ネットワークとアプリケーションのパフォーマンスが低下する可能性があります。</block>
   <block id="def5ef91837644047b00e3f35f6d9fde" category="paragraph">Lambdaが実行する各トランザクションには課金が発生します。Lambdaは2つのシステム間のプロキシとして機能するため、Lambdaがファイルシステム上のONTAP REST APIにリクエストを送信したとき、およびワークロードファクトリにレスポンスを送信したときに料金が発生します。</block>
-  <block id="40d8be3de1697aeb13e210a5a2adc870" category="list-text">CIFS共有を管理するには、が必要です<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="427e6edb85323a6bc01bcb3b7cc04394" category="paragraph">変更を行うと、現在のユーザまたはグループがCIFS共有にアクセスできなくなる可能性があります。</block>
   <block id="8deecf84343cc455d4c3c3eea19e99e4" category="summary">この機能が有効になっている場合は、特定の変更不可ファイル設定を更新できます。</block>
   <block id="b7461c37ab24fcaeffe8427333f04775" category="doc">BlueXP  ワークロード工場でボリュームの書き換え不可のファイルを管理</block>
@@ -1400,10 +1382,8 @@
   <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">[ 適用（ Apply ） ] をクリックします。</block>
   <block id="0040dd329c12b8e069f111ec942d89fd" category="paragraph">これで、ボリュームに更新が適用されます。</block>
   <block id="750bccba0d1370cdcf80e381531ccf20" category="paragraph">ボリュームのエクスポートポリシーの管理では、クライアント仕様、アクセス制御、スーパーユーザアクセス、およびNFSのバージョンを詳細に記述したエクスポートポリシールールを追加します。複数のエクスポートポリシーを追加して優先順位を付けることができます。</block>
-  <block id="ce9febcc7ffbadd58aed913f41d83102" category="summary">BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnapshotポリシーを管理Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。</block>
   <block id="4867c217eac62c97b182966f57c83e8f" category="doc">Snapshotポリシーを管理します。</block>
   <block id="491d37c735073b9ba15b69c580439021" category="paragraph">FSx for ONTAPファイルシステムでは、ボリュームのSnapshotポリシーの割り当て、変更、削除などのSnapshot管理操作は、Storage VMレベルで管理されます。Snapshotポリシーは、1つのStorage VMまたはすべてのStorage VMで共有できます。</block>
-  <block id="dfcdbd589e3208b5fc1db45a90025691" category="paragraph">一部の管理タスクでは、FSx for ONTAPファイルシステムへの接続が必要になり<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>ます。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="67366ad19b5e2e9e027ed804f4af5cd5" category="section-title">Snapshotポリシーの変更</block>
   <block id="497d50d3f3c01373e9ac618dc8d7762e" category="paragraph">Snapshotポリシーの名前、スケジュール、保持するコピーの数を変更したり、変更不可のSnapshotを有効または無効にしたりできます。Storage VM間でのポリシー共有を有効または無効にすることはできません。このオプションは、Snapshotポリシーの作成時にのみ使用できます。</block>
   <block id="9ea7c3b914bc2e35b22018cf6a394157" category="list-text">FSx for ONTAP *タブで、ファイルシステムの3ドットメニューを選択し、* Manage *を選択します。</block>
@@ -1413,7 +1393,6 @@
   <block id="14f87882e6a43eb538fc1c6aa4ea44de" category="paragraph">Snapshotポリシーが更新されます。</block>
   <block id="6e1d84f2f9e9a9941b445952f6b20cf9" category="section-title">ボリュームへのSnapshotポリシーの割り当て</block>
   <block id="d88e3ecb2bebd33ebfaa42eb01224df4" category="paragraph">1つのボリュームにSnapshotポリシーを割り当てて、ボリュームのスケジュールされたSnapshotを作成できます。</block>
-  <block id="ca3948c35bce5a01ff818d8165bc9432" category="paragraph">Snapshotポリシーを割り当てる必要があり<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>ます。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="4eec9d8605d9286e4625ff2e2cf81a8e" category="list-text">FSx for ONTAP *タブで、Snapshotポリシーを割り当てるボリュームが含まれているファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="2e0f47563683dde9235309ef305c18bd" category="list-text">[Snapshotポリシーの管理]ページで、Snapshotポリシーの3ドットのメニューを選択し、*[ポリシーをボリュームに割り当て]*を選択します。</block>
   <block id="f6a4c9bb30fd5cd61b4fb4f8ab626585" category="list-text">[Snapshotポリシーの割り当て]ダイアログで、ボリュームに割り当てるSnapshotポリシーを選択し、ポリシースケジュールを確認します。</block>
@@ -1422,7 +1401,6 @@
   <block id="3a7afc12c5189a91a9f3ff461538baee" category="paragraph">Snapshotポリシーがボリュームに割り当てられます。</block>
   <block id="cd7d7ecbb8f81d67254037fc1073255b" category="section-title">書き換え不可のSnapshotを有効にする</block>
   <block id="e299611a9963740ce6eae50818e11e01" category="paragraph">Snapshotをロックして、保持期間中に削除されないようにします。</block>
-  <block id="48b71084b80ec0f51cf2f98eb22f3529" category="paragraph">変更不可のSnapshotを有効にする必要があり<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>ます。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="c86b5e8cb1615df74bbfa38f4ad243e7" category="list-text">FSx for ONTAP *タブで、スナップショットをロックするボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。</block>
   <block id="8950e37ceffb542d0cd61122c2d8200b" category="list-text">[データ保護操作]*、*[ Snapshot ]*を選択し、*[ Snapshotを変更不可にする]*を選択します。</block>
   <block id="600034d3e50968f487a1ad55349b4df4" category="list-text">[Make a snapshot immutable]ダイアログで、次の手順を実行します。</block>
@@ -1461,19 +1439,15 @@
   <block id="1cc1dda63f89374c05c8b8f5c8126341" category="paragraph">アクティブなFlexGroupボリュームのバランスを確認します。</block>
   <block id="eeaecacdda76be13c8594ef17a7c395c" category="list-text">FlexGroupボリュームのバランスは、2つ以上のHAペアで構成されたスケールアウト環境を使用するFSx for ONTAPファイルシステムでのみ使用できます。</block>
   <block id="480a98de796f5eb054e749dedf2dbce3" category="list-text">ボリュームの形式はFlexGroupである必要があります。</block>
-  <block id="4c61a2a51509658d891bb7416dad5238" category="list-text">FlexGroupボリュームのバランスを確認するには、が必要です<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="a0c24c81835ca446fe958b4abdb6c08c" category="list-text">[Volumes]タブで、テーブルの上部にある*[Check FlexGroup balance]*を選択します。</block>
   <block id="8b7b54e191e5f6ab54dc9475259af500" category="list-text">FlexGroup balanceウィンドウで、FSx for ONTAPファイルシステム内のすべてのFlexGroupボリュームのバランスステータスを確認します。</block>
   <block id="1997a93792e2a8be597c246f39ee9fd5" category="inline-xref">リバランシング</block>
   <block id="6b59c2a4df281550186d4d3fc75ba6d5" category="paragraph">FlexGroupボリュームがアンバランスな場合は、を検討してください<block ref="59031c1bf074b0ee450445a716c796e8" category="inline-xref-macro-rx"></block>。</block>
   <block id="1fd02848e48f953c62155cbb42dd331b" category="section-title">FlexGroupボリュームのリバランシング</block>
   <block id="64de3f9223f666126336ac4c9a3aa94d" category="paragraph"><block ref="1f11182db84cfb1742cc746fa76f8fe6" category="inline-xref-macro-rx"></block>ボリュームのリバランシング前</block>
-  <block id="af7202b99122b0c2ef1b703335afeef9" category="paragraph">ボリュームをリバランシングするには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
-  <block id="9c633958a5d66a1547197d5b123c8c3c" category="paragraph">Storage VMを別のFSx for ONTAPファイルシステムにレプリケートするには、次の作業が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="ceb833d216db0e056b9ab7d22ba4f023" category="paragraph">制限がないと、ネットワークとアプリケーションのパフォーマンスが低下する可能性があります。また、FSx for ONTAPファイルシステムは、主にディザスタリカバリに使用されるワークロードなど、重要なワークロードには無制限の転送速度を推奨します。</block>
   <block id="c4ee13228c56b3c8a94bcef6d8d6d357" category="summary">クローンFlexVol volumeを親ボリュームからスプリットして、通常の読み取り/書き込みFlexVol volumeにします。</block>
   <block id="c04185e8791b4a9dde9952d191aff02c" category="paragraph">クローンFlexVol volumeを親ボリュームからスプリットして、BlueXP  ワークロード工場で通常の読み取り/書き込みFlexVol volumeにします。</block>
-  <block id="7a40cb07bf6252b24e9c2d81b57fca8d" category="list-text">クローンボリュームをスプリットするには、次の手順を実行する必要があり <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>ます。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="652949a64c85ee3404c2f8c9537d8046" category="paragraph">BlueXP  ワークロードファクトリでレプリケーション関係を停止します。レプリケーション関係を停止すると、ソースボリュームからターゲットボリュームへのスケジュールされたレプリケーションの更新が一時停止します。ターゲットボリュームは読み取り専用から読み取り/書き込みに移行します。</block>
   <block id="c24db838f46fefcbb09e7501c8ce667f" category="doc">BlueXP  ワークロード工場でオンプレミスのONTAPクラスタデータを使用</block>
   <block id="db4ad8d47d4bcafdb0edef9931836b31" category="paragraph">BlueXP  ワークロード工場でオンプレミスのONTAPクラスタを検出して、データをAmazon FSx for NetApp ONTAPファイルシステムにレプリケートできるようにします。</block>
@@ -1501,7 +1475,6 @@
   <block id="19b8f390095f155d76eaa34c5d8f5d20" category="section-title">ボリュームからSnapshotポリシーを削除する</block>
   <block id="29708169ed62ce48a3c9b4614e316be4" category="inline-xref">Snapshotポリシーを削除します。</block>
   <block id="fce714b45eae0b2db843a127811c7dfa" category="paragraph">ボリュームのSnapshotが不要になった場合、または複数のボリュームに割り当てられているSnapshotポリシーを削除する場合は、ボリュームからSnapshotポリシーを削除します。が複数のボリュームに割り当てられている場合は<block ref="fe803bef0fbadbb3c4f9d940b9fdfdb7" category="inline-xref-macro-rx"></block>、すべてのボリュームからそのボリュームを手動で削除する必要があります。</block>
-  <block id="41a5b9bb16fef0a6d96c008d7a310dc7" category="paragraph">Snapshotポリシーを削除する必要があり<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>ます。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="5b37f5e2e1d22ef188736327699e7d83" category="list-text">[Snapshotポリシーの割り当て]ダイアログで、*[なし]*を選択してSnapshotポリシーを削除します。</block>
   <block id="a7f4573e8d9f9cb2323d7ca62fa2b33e" category="paragraph">Snapshotポリシーがボリュームから削除されます。</block>
   <block id="c767b489e8017a2255cc2520d048debc" category="inline-xref">削除</block>
@@ -1693,8 +1666,6 @@
   <block id="49c47aadfeff1e01313108c157d381b4" category="list-text">_パフォーマンス効率_：リソースを効率的に使用してシステム要件を満たし、需要の変化に応じて最適なパフォーマンスを維持することに重点を置いています。</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析要件</block>
   <block id="8f1eb02f728d9f5ee9934382b0494f93" category="paragraph">ファイルシステムを完全に分析するには、リンクを関連付ける必要があります。リンク接続により、ワークロード工場はデータ保護やパフォーマンスなどのすべてのファイルシステム構成を分析できます。</block>
-  <block id="fcc3e7348faefdb90df77848c11a3cd2" category="inline-link-macro">リンクを作成する方法について説明します。</block>
-  <block id="d1d2547b7ef1924a459a05adb0445929" category="paragraph"><block ref="d1d2547b7ef1924a459a05adb0445929" category="inline-link-macro-rx"></block></block>
   <block id="02f2e108af721f7fc825883d8811e77a" category="list-text">* ONTAPクレデンシャル*：オプション。ONTAPのユーザ名とパスワードを入力します。パスワードはすぐに設定することも、あとで設定することもできます。</block>
   <block id="824994853534784eb4495b892e13b1c6" category="paragraph">指定したユーザがfsxadminユーザではなく、あとでfsxadminパスワードをリセットする必要がある場合は、AWSコンソールからこれを行うことができます。</block>
   <block id="dd34b811cd079417f985f8f56a4f1dca" category="list-text">* Storage VMクレデンシャル*：オプション。ユーザ名を入力します。このファイルシステムに固有のパスワードを指定することも、ONTAPクレデンシャルに入力したパスワードと同じパスワードを使用することもできます。パスワードはすぐに設定することも、あとで設定することもできます。</block>
@@ -1815,7 +1786,6 @@
   <block id="2db718f1067d6b6b7d7127f5fc9e8961" category="section-title">ファイルシステムに対して自律型ランサムウェア対策を有効にする</block>
   <block id="49c0eb2938f477a73ea61ab289f6cb49" category="paragraph">ファイルシステムのARPを有効にすると、既存のすべてのNASおよび新しく作成されたNASボリュームに対する保護が自動的に追加されます。</block>
   <block id="8464fc56103a4fee1df5080fdac69d95" category="paragraph">ARPを有効にした後、攻撃が発生し、攻撃が実際であることが判明した場合、BlueXP  Workload Factoryは、4時間ごとに最大6つのスナップショットを作成するスナップショットポリシーを自動的に設定します。各スナップショットは2~5日間ロックされます。</block>
-  <block id="838e01c36b2564848649c61e5353e23a" category="paragraph">ファイルシステムのARPを有効にするには、次<block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>の手順を実行する必要があります。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="39980722ce96f89bf4e3f86789582133" category="list-text">FSx for ONTAP *タブで、ARPを有効にするファイルシステムの3ドットメニューを選択し、* Manage *を選択します。</block>
   <block id="79ebb9debc31f904c653eeee675e0311" category="list-text">[Information]で、*[Autonomous Ransomware Protection]*の横にある鉛筆アイコンを選択します。[Autonomous Ransomware Protection]行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。</block>
   <block id="45b371382285a51683a79f111c8ba635" category="list-text">[Autonomous Ransomware Protection]ダイアログで、この機能を有効または無効にします。</block>
@@ -1936,4 +1906,36 @@
   <block id="347dbce3139b58110904a187913fc7e1" category="paragraph"><block ref="347dbce3139b58110904a187913fc7e1" category="inline-link-macro-rx"></block></block>
   <block id="5a7cf4155ebaa9aec1f33318c7c4cf82" category="section-title">2025年6月8日</block>
   <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
+  <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます</block>
+  <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。</block>
+  <block id="d7a33a9350fbc2bb6f775eabf85866de" category="list-text">リンク接続のために、FSx for ONTAP ファイル システムに関連付けられたセキュリティ グループで次のポートが開いている必要があります。</block>
+  <block id="7c27ef4b070814b5ad00a89f2114b712" category="list-text">ワークロードファクトリーコンソールの場合: ポート 443 (HTTPS)</block>
+  <block id="90ead46e5d824c4081637d976f92fc96" category="list-text">CloudShellの場合: ポート22(SSH)</block>
+  <block id="b1882f9c170c4d334f1f12e72456f0c6" category="list-text">レプリケーション関係に使用する2つのファイルシステムには、リンクが関連付けられている必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="3cb1fda07c1d6b96bda1c65f1996fc1f" category="list-text">カスタム スナップショット ポリシーを作成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="d49502975428f953533ab14ab9c02a5b" category="paragraph">ボリュームの手動スナップショットを作成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="6234e99ad9e8c051d4afaa47c5d4ff82" category="list-text">ボリュームへのアクセスを構成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="0152fea6b73cbe86540a93515bf61029" category="paragraph">AWSのデフォルトポリシーは次のとおりです。カスタムスナップショットポリシーの場合は、 <block ref="6ac03ad394740d642419d1159fa121ff" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2b34fc0bead4dcf64099078fdaf86d69" category="paragraph">ボリュームの自動拡張を有効にするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="f8e03e36604030c79d6107b800f61804" category="list-text">ボリュームの inode がストレージ容量に応じて増加するようにするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="837d97ffb35ee510b7ad737132bf4645" category="paragraph">ボリューム容量を増やすには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="516d1f2096bea0b3e53975d694dd15b4" category="list-text">CIFS 共有を管理するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="67147bded21b5d35cd1c472eb37c2b10" category="summary">アカウントに関連付けられたリンクを表示したり、リンク認証のパスワードを更新したり、BlueXP ワークロード ファクトリーでリンクを削除したりできます。</block>
+  <block id="173477cd8f978bba4e49c820cc9340cf" category="doc">ワークロードファクトリーリンクを管理する</block>
+  <block id="bb886f585ca35b437be939f27b5ed296" category="paragraph">ワークロードファクトリーアカウントに関連付けたリンクを管理します。FSxfor ONTAP ファイルシステムに関連付けられたリンクを表示したり、リンク認証に使用するパスワードを指定したり、ワークロードファクトリーコンソールからリンクを削除したりできます。</block>
+  <block id="2c793b5b15ea565983390f5625f7b85b" category="inline-link-macro">リンクを作成して関連付ける</block>
+  <block id="d2daf1f2c560c48cb1e86e38214b4f9f" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block> または <block ref="cd9ae14bef62d063a73930ad8837c0cf" category="inline-link-macro-rx"></block>。</block>
+  <block id="79fd533382080d6fa0f2c0bb9a4a7c87" category="summary">ワークロード ファクトリーで FSx for ONTAP ボリュームのスナップショット ポリシーを管理します。Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。</block>
+  <block id="d7d6498d8a28cd2a003b0cb80a404f25" category="inline-link-macro">ワークロードファクトリーリンクについて学ぶ</block>
+  <block id="40dae9a6d648fd84a17ba1763d5aadc5" category="paragraph">一部の管理タスクでは、FSx for ONTAP ファイル システムにリンクを関連付ける必要があります。<block ref="680b8873085fb75628dcdd179c5039ae" category="inline-link-macro-rx"></block>です。</block>
+  <block id="facdbacecd0a382dee80b9b865bb8503" category="paragraph">既存のスナップショット ポリシーを表示するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="934b00a26e238802a369f0478947166f" category="paragraph">不変のスナップショットを有効にするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="00c1c06957f8f476507e7c8eab416ca3" category="paragraph">スナップショット ポリシーを割り当てるには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="f25575fb26d63d8bebf4c5a568518443" category="paragraph">スナップショット ポリシーを削除するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="aef6ece6593a117983fcd0b9e27b2a94" category="paragraph">ファイル システムで ARP を有効にするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="1f217123f7d99348330184951007bc1c" category="list-text">FlexGroup ボリュームの残高を確認するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="44b1a8a590c7561bdb240a720d2d9aaa" category="list-text">ボリュームのバランスを再調整するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="2ccb6b87f6c03ced811ff29d2a5f5ede" category="paragraph">ストレージ VM を別の FSx for ONTAP ファイル システムに複製するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="99ae6104ba82455197d215357b50f2f1" category="list-text">クローンボリュームを分割するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="21bd8c562c1d6ae4caf8a36f6d06c516" category="list-text">レプリケーション関係に使用するオンプレミスのONTAPクラスタとFSx for ONTAPファイルシステムの両方に、リンクが関連付けられている必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
 </blocks>

@@ -2,18 +2,18 @@
 sidebar: sidebar 
 permalink: manage-links.html 
 keywords: links, accounts, lambda, creating, associating, disassociating, deleting, editing 
-summary: BlueXP  ワークロードファクトリでは、アカウントに関連付けられているリンクの表示、リンクの関連付け、リンクの削除を行うことができます。 
+summary: アカウントに関連付けられたリンクを表示したり、リンク認証のパスワードを更新したり、BlueXP ワークロード ファクトリーでリンクを削除したりできます。 
 ---
-= BlueXP  ワークロードファクトリリンクの管理
+= ワークロードファクトリーリンクを管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  ワークロードファクトリアカウントに関連付けられたリンクを管理します。FSx for ONTAPファイルシステムに関連付けられているリンクの表示、FSx for ONTAPファイルシステムへのリンクの関連付け、リンクの編集、リンクの削除を行うことができます。
+ワークロードファクトリーアカウントに関連付けたリンクを管理します。FSxfor ONTAP ファイルシステムに関連付けられたリンクを表示したり、リンク認証に使用するパスワードを指定したり、ワークロードファクトリーコンソールからリンクを削除したりできます。
 
-link:links-overview.html["リンクの詳細"] または link:create-link.html["リンクの作成"]。
+link:links-overview.html["リンクの詳細"] または link:create-link.html["リンクを作成して関連付ける"]。
 
 
 

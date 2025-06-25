@@ -14,7 +14,7 @@ summary: ストレージVMを別のFSx for ONTAPファイルシステムにレ�
 BlueXP  ワークロード工場内の別のFSx for ONTAPファイルシステムにストレージVMをレプリケートすることで、データ損失が発生した場合にデータアクセスを保護することができます。この処理では、あるStorage VM内のすべてのボリュームが別のFSx for ONTAPファイルシステムにレプリケートされます。
 
 .開始する前に
-Storage VMを別のFSx for ONTAPファイルシステムにレプリケートするには、次の作業が必要です link:manage-links.html["リンクの関連付け"]。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
+ストレージ VM を別の FSx for ONTAP ファイル システムに複製するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。

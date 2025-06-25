@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-snapshot-policy.html 
 keywords: manage snapshot policy, change snapshot policy, snapshot policies, snapshot schedule, update 
-summary: BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnapshotポリシーを管理Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。 
+summary: ワークロード ファクトリーで FSx for ONTAP ボリュームのスナップショット ポリシーを管理します。Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。 
 ---
 = Snapshotポリシーを管理します。
 :allow-uri-read: 
@@ -11,12 +11,12 @@ summary: BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnap
 
 
 [role="lead"]
-BlueXP  ワークロード工場でFSx for ONTAPボリュームのSnapshotポリシーを管理Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。
+ワークロード ファクトリーで FSx for ONTAP ボリュームのスナップショット ポリシーを管理します。Snapshotポリシーは、ボリュームのSnapshotの作成方法を定義します。
 
 .タスクの内容
 FSx for ONTAPファイルシステムでは、ボリュームのSnapshotポリシーの割り当て、変更、削除などのSnapshot管理操作は、Storage VMレベルで管理されます。Snapshotポリシーは、1つのStorage VMまたはすべてのStorage VMで共有できます。
 
-一部の管理タスクでは、FSx for ONTAPファイルシステムへの接続が必要になりlink:manage-links.html["リンクの関連付け"]ます。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。
+一部の管理タスクでは、FSx for ONTAP ファイル システムにリンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["ワークロードファクトリーリンクについて学ぶ"]です。
 
 デフォルトでは、すべてのボリュームがファイルシステムのSnapshotポリシーに関連付けられ `default` ています。ほとんどのワークロードでこのポリシーを使用することを推奨します。
 
@@ -27,7 +27,7 @@ FSx for ONTAPファイルシステムでは、ボリュームのSnapshotポリ�
 Snapshotポリシーの名前、スケジュール、保持するコピーの数を変更したり、変更不可のSnapshotを有効または無効にしたりできます。Storage VM間でのポリシー共有を有効または無効にすることはできません。このオプションは、Snapshotポリシーの作成時にのみ使用できます。
 
 .開始する前に
-既存のSnapshotポリシーを表示するには、リンクを関連付ける必要があります。リンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。その後、この操作に戻ります。
+既存のスナップショット ポリシーを表示するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
@@ -50,7 +50,7 @@ Snapshotポリシーが更新されます。
 Snapshotをロックして、保持期間中に削除されないようにします。
 
 .開始する前に
-変更不可のSnapshotを有効にする必要がありlink:manage-links.html["リンクの関連付け"]ます。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
+不変のスナップショットを有効にするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
@@ -79,7 +79,7 @@ Snapshotをロックして、保持期間中に削除されないようにしま
 1つのボリュームにSnapshotポリシーを割り当てて、ボリュームのスケジュールされたSnapshotを作成できます。
 
 .開始する前に
-Snapshotポリシーを割り当てる必要がありlink:manage-links.html["リンクの関連付け"]ます。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
+スナップショット ポリシーを割り当てるには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
@@ -105,7 +105,7 @@ Snapshotポリシーがボリュームに割り当てられます。
 ボリュームのSnapshotが不要になった場合、または複数のボリュームに割り当てられているSnapshotポリシーを削除する場合は、ボリュームからSnapshotポリシーを削除します。が複数のボリュームに割り当てられている場合は<<Snapshotポリシーを削除します,Snapshotポリシーを削除します。>>、すべてのボリュームからそのボリュームを手動で削除する必要があります。
 
 .開始する前に
-Snapshotポリシーを削除する必要がありlink:manage-links.html["リンクの関連付け"]ます。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
+スナップショット ポリシーを削除するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。

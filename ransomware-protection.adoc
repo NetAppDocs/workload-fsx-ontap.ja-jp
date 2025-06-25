@@ -61,7 +61,7 @@ ARP機能は、Amazon FSx for NetApp ONTAPが実行するONTAPのバージョン
 ARPを有効にした後、攻撃が発生し、攻撃が実際であることが判明した場合、BlueXP  Workload Factoryは、4時間ごとに最大6つのスナップショットを作成するスナップショットポリシーを自動的に設定します。各スナップショットは2~5日間ロックされます。
 
 .開始する前に
-ファイルシステムのARPを有効にするには、次link:manage-links.html["リンクの関連付け"]の手順を実行する必要があります。既存のリンクがない場合は、 link:create-link.html["リンクの作成"]を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。
+ファイル システムで ARP を有効にするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
