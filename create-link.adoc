@@ -212,7 +212,7 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 
 +
 *** filesystemID = fsx_filesystem_id
-*** ユーザ= FSX_USER
+*** ユーザー名 = FSx_user
 *** password = user_password
 
 
@@ -248,7 +248,7 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 シークレットには、次のキー有効なペアが含まれている必要があります。
 
 * filesystemID = fsx_filesystem_id
-* ユーザ= FSX_USER
+* ユーザー名 = FSx_user
 * password = user_password
 
 

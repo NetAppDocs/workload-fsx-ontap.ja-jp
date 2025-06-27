@@ -1694,7 +1694,6 @@
   <block id="b9000423f3d632810a4d8c3550eb4119" category="list-text">AWS Secrets Manager：シークレットARNを入力します。</block>
   <block id="0481a079b29497027474b2f22074dd5a" category="paragraph">シークレットARNには、次のキー有効なペアを含める必要があります。</block>
   <block id="91a73bc4f293d9fc4712c2770316ae08" category="list-text">filesystemID = fsx_filesystem_id</block>
-  <block id="508e0beab9fc0c907eb4adcaa7a736f7" category="list-text">ユーザ= FSX_USER</block>
   <block id="db1e2f706f83d7a3a9a03793db05422a" category="list-text">password = user_password</block>
   <block id="3179fc8078925ef0503270fd907af44c" category="paragraph">リンクはFSx for ONTAPファイルシステムに関連付けられています。高度なONTAP処理を実行できます。</block>
   <block id="db9a0ca8d6bb6376ddaad7f254b049aa" category="section-title">AWS Secrets Managerのリンク認証に関する問題のトラブルシューティング</block>
@@ -1938,4 +1937,5 @@
   <block id="2ccb6b87f6c03ced811ff29d2a5f5ede" category="paragraph">ストレージ VM を別の FSx for ONTAP ファイル システムに複製するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="99ae6104ba82455197d215357b50f2f1" category="list-text">クローンボリュームを分割するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="21bd8c562c1d6ae4caf8a36f6d06c516" category="list-text">レプリケーション関係に使用するオンプレミスのONTAPクラスタとFSx for ONTAPファイルシステムの両方に、リンクが関連付けられている必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="316509fcb5a8d1b5e1280f3f64c594f2" category="list-text">ユーザー名 = FSx_user</block>
 </blocks>
