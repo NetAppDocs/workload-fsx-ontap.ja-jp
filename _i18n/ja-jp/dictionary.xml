@@ -104,16 +104,8 @@
   <block id="f33ee1d7e309154be1fc329fad0ad653" category="paragraph">保存されている設定をロードすることもできます。</block>
   <block id="7c6859274ee77ca082be3dcb424a440e" category="list-text">[File system general configuration]で、次の情報を指定します。</block>
   <block id="73834661f85b42765d73b7cd61d1475c" category="list-text">*ファイルシステム名*：ファイルシステムの名前を入力します。</block>
-  <block id="27db8fcb1cb750024f80a00d143ee777" category="list-text">*導入トポロジ*:導入トポロジを選択します。</block>
-  <block id="e1db87892ddda8bfd0cc92dbf2aa8f28" category="list-text">スケールアップトポロジでは、1つのファイルシステムをデータ分散に使用し、データの増大に合わせてサイズを拡張できます。</block>
-  <block id="8dc86ca9377774615a191074143b0f0f" category="list-text">スケールアウトトポロジでは、データ分散に複数のファイルシステムが使用されます。</block>
-  <block id="a27de2368abb354633f8d50b9ea7e0a2" category="list-text">* HAペア*：HAペアの数を入力します。</block>
-  <block id="6aad0d457607a641d63a0daca3a0529a" category="list-text">スケールアップ環境ではHAペアを1つだけ作成できます。</block>
-  <block id="56dcdb97483e2b91ea46d0e3aed1e819" category="list-text">スケールアウト環境では、2~12個のHAペアを設定できます。</block>
   <block id="f22c148b111a19f2c93bf5b1c1cbb2a6" category="list-text">*導入タイプ*：導入タイプを選択します。</block>
-  <block id="8860331ce66022dce5b0f67e6c8398ab" category="list-text">複数のアベイラビリティゾーン（マルチAZ）の導入：アベイラビリティゾーンが使用できない場合でも、データの継続的可用性を提供します。マルチAZファイルシステムは、シングルAZファイルシステムの可用性と耐久性のすべての機能をサポートしています。Multi-AZファイルシステムは、共有ONTAPファイルデータの高可用性を必要とし、複数のアベイラビリティゾーンにわたるレプリケーション機能を備えたストレージを必要とする、ビジネスクリティカルな本番ワークロード向けに設計されています。</block>
   <block id="a578dfdba57cca5b9cde80a5e42544c6" category="list-text">*タグ*:オプションで、最大50個のタグを追加できます。</block>
-  <block id="2d65a0ce899e5ca708d5a1002a8d0a1d" category="list-text">[ネットワークとセキュリティ]*の*[リージョンとVPC]*フィールドで、ファイルシステムのリージョンとVPCを選択します。</block>
   <block id="fced9e440363d93f4173eeec105848ba" category="list-text">[ファイルシステムの詳細]*で、次の情報を入力します。</block>
   <block id="6157c9c13988e3cea6397632d4ceff7e" category="list-text">* SSDストレージ容量*：ストレージ容量を入力し、ストレージ容量の単位を選択します。</block>
   <block id="7966c6503cb79e36fabb3ff4e34bd3b0" category="list-text">* SMB / CIFSのセットアップ*：オプション。SMB / CIFSプロトコルを使用してボリュームにアクセスする場合は、ファイルシステムの作成時にStorage VMのActive Directoryを設定する必要があります。このファイルシステム用に作成されるStorage VMに関する以下の詳細を指定してください。</block>
@@ -138,8 +130,6 @@
   <block id="b98009df13b6a9c0bd5b540c1d2df378" category="list-text">*エンドポイントIPアドレス範囲*：*[Floating IP address range outside your VPC]*または*[Enter an IP address range]*を選択し、IPアドレス範囲を入力します。</block>
   <block id="adf3b9421185cf4dc6b3d80fb9c26d9b" category="list-text">*暗号化*：ドロップダウンから暗号化キー名を選択します。</block>
   <block id="909443f15178d32af4981d109af80748" category="list-text">[File system details]で、次の情報を入力します。</block>
-  <block id="7af916ceff85ab2f29ca490366228701" category="list-text">*[Provisioned IOPS]*：*[Automatic]*または*[User-Provisioned]*を選択します。</block>
-  <block id="67d537df4a9c97aa749f6724139522f5" category="list-text">* HAペアあたりのスループット容量*：HAペアあたりのスループット容量を選択します。</block>
   <block id="31846199ab330eacea22764e7bc1ab7a" category="list-text">[Backup and maintenance]で、次の情報を入力します。</block>
   <block id="5a7b83bad76b38a063667e0b80bd78d6" category="list-text">* FSx for ONTAPバックアップ*：毎日の自動バックアップはデフォルトで有効になっています。必要に応じて無効にします。</block>
   <block id="f009614070b8aab7ff6edcea9473b3dc" category="list-text">*自動バックアップ保持期間*：自動バックアップを保持する日数を入力します。</block>
@@ -229,7 +219,6 @@
   <block id="b2e658eb3f11776899234dd87caf3823" category="list-text">* Storage VM名*：必要に応じて、Storage VM名を入力します。</block>
   <block id="71a8fe56183b62227c11ca4ce811f166" category="list-text">*ボリュームスタイル*：* FlexVol *または* FlexGroup * volumeを選択します。</block>
   <block id="cb69a576eebf4d27436ae39122a9562c" category="paragraph">FlexVolボリュームの形式はデフォルトで選択されています。</block>
-  <block id="266af8c58e652263ed6f4ef9fc36cbbd" category="paragraph">FlexGroupボリュームのサイズはコンスティチュエントの数によって異なります。コンスティチュエントあたり100GiBが必要です。</block>
   <block id="ffe3253d848af0e44a26ba39fba69329" category="list-text">*ボリュームサイズ*：ボリュームサイズと単位を入力します。</block>
   <block id="b46ad6f5a61764c118c979f2583ab630" category="paragraph">必要に応じて、ボリュームの自動拡張を有効にします。このオプションは、ボリュームアクセスタイプとして*ファイルアクセス*を選択した場合に使用できます。</block>
   <block id="53ebc36ae845935202fde349f39b2e17" category="list-text">[Access]（リンクが関連付けられているファイルシステムの場合のみ）で、次の詳細を指定します。</block>
@@ -249,7 +238,6 @@
   <block id="d7452a3655b7342c92f5b56d0b8526ed" category="list-text">新しいイニシエータグループの*イニシエータグループ名*を入力します。</block>
   <block id="9b990db2de543eb2fd38454ae899ab11" category="list-text">[Host Initiators]で、1つ以上のiSCSI Qualified Name（IQN）ホストイニシエータを追加します。</block>
   <block id="8cc48e7c3f902d1b7dd7d0ecb40ade52" category="list-text">[Efficiency and protection]で、次の詳細を指定します。</block>
-  <block id="4f16f68a6d9522c0d097a900978f6f0d" category="paragraph">ストレージ効率化は、ONTAPの重複排除機能と圧縮機能を利用することで実現されます。重複排除は、重複するデータブロックを排除します。データ圧縮は、データブロックを圧縮して、必要な物理ストレージの量を削減します。</block>
   <block id="f03207e238654d36cb2c88950bf22d84" category="list-text">* Snapshotポリシー*：Snapshotポリシーを選択して、Snapshotの頻度と保持を指定します。</block>
   <block id="20d2ce456e91b2afd45084ee06baab95" category="list-text">このポリシーでは、次のスケジュールでSnapshotが自動的に作成され、新しいコピー用のスペースを確保するために最も古いSnapshotコピーが削除されます。</block>
   <block id="4cd6a004e8e70008213c7c1917f36c49" category="list-text">最大6つの時間単位のスナップショットが毎時5分に作成されます。</block>
@@ -706,7 +694,6 @@
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">Codeboxを使用して自動化する方法</block>
   <block id="672d0efbe9223ef23c5fd7d2c7cd4a95" category="paragraph">FSx for ONTAPファイルシステムは、_Quick create_or_Advanced create_を 使用して作成できます。Codeboxで利用可能なREST API、CloudFormation、Terraformの各ツールを使用することもできます。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>です。</block>
   <block id="11e2fb5025fdb2cb91fd04c343163328" category="admonition">CodeboxからTerraformを使用すると、コピーまたはダウンロードしたコードが非表示になり、パスワードが表示され<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block><block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> ます。コードを実行するときは、パスワードを再入力する必要があります。</block>
-  <block id="9376aafc358c7dd83094603f26235eb3" category="paragraph">ボリュームの作成が開始されます。作成された新しいボリュームは[Volumes]タブに表示されます。</block>
   <block id="21e6ab9737790ab1abc18e49091d3c18" category="paragraph">次の図は、Snapshot、リージョン間のレプリケーション、オブジェクトストレージへのバックアップを使用したFSx for ONTAPストレージのデータ保護を視覚的に表したものです。</block>
   <block id="90388f794d575e628df271470a4b766e" category="inline-image-macro">Snapshot、リージョン間レプリケーション、オブジェクトストレージへのバックアップを使用したFSx for ONTAPストレージのデータ保護のスクリーンショットを示しています。</block>
   <block id="29bed1477f8a04f4f702564c7e6bb224" category="paragraph"><block ref="29bed1477f8a04f4f702564c7e6bb224" category="inline-image-macro-rx" type="image"></block></block>
@@ -841,7 +828,6 @@
   <block id="8c5d091eb8bf13bd59184903f020f95c" category="paragraph">CloudFormationテンプレートを起動すると、Lambdaに3つの権限が付与されます。Workload Factoryでは、リンクの使用時にこれらの権限が使用さ</block>
   <block id="4d4e41a17abafe417449016add2ee0bd" category="list-text">[スタックの作成]*を選択し、*[続行]*を選択します。</block>
   <block id="e5942758c1bbae9768e2935841e7ca7a" category="list-text">ワークロードファクトリのインターフェイスに戻ると、リンクがFSx for ONTAPファイルシステムに関連付けられていることがわかります。</block>
-  <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">このオプションでは、AWS CloudFormationからリンクのARNを抽出し、ここにレポートします。Workload Factoryは手動でリンクを登録します。</block>
   <block id="7607cf6a75040d1b9bf8fde1cfaecf12" category="doc">BlueXP  ワークロードファクトリでレプリケーション関係を作成</block>
   <block id="161fc7b1d67184a50e10e19fb2489263" category="paragraph">予期しない災害が発生した場合のデータ損失を回避するために、BlueXP  ワークロード工場でFSx for ONTAPファイルシステムのレプリケーション関係を作成します。</block>
   <block id="215ff1ada74bcc801bd4be406a4760b9" category="paragraph">_Auto_は、工場出荷時のFSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block>。</block>
@@ -854,7 +840,6 @@
   <block id="55a23b72fe4aee5e2f0024c790d7eaba" category="paragraph">BlueXP  ワークロード工場のスナップショットから新しいFSx for ONTAPボリュームを作成し、ポイントインタイムリカバリを可能にします。</block>
   <block id="8d34a33f34659b0ea11833ac0b8fac52" category="list-text">FSx for ONTAP *タブで、ボリュームSnapshotを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。</block>
   <block id="3ce528a1818baf0bbf2f6b362b1f7d58" category="list-text">[Volumes]タブで、ボリュームを作成するSnapshotがあるボリュームの3ドットのメニューを選択します。</block>
-  <block id="d5d682292e122fa36db263f49a714cc7" category="list-text">ワークロード工場にFSx for ONTAPファイルシステムが必要です。</block>
   <block id="72ce63a6bef6ec13ef74a7eab0012469" category="summary">FSx for ONTAPは、BlueXP  ワークロード工場でスナップショット、ボリュームバックアップ、ボリュームレプリケーションをサポートしています。</block>
   <block id="96a5899d90dd9b81319f168f67bcb5ae" category="summary">BlueXP  ワークロード工場でファイルシステムを削除するには、まずファイルシステムに関連付けられているボリューム、Storage VM、またはレプリケーション関係をすべて削除する必要があります。</block>
   <block id="378213b58b31bfb9d173e8b2ad3c0968" category="doc">BlueXP  ワークロードファクトリでのファイルシステムの削除</block>
@@ -1048,7 +1033,6 @@
   <block id="06e52dae2c3e09e69a906c2fba89ed66" category="paragraph">CIFS共有またはNFSクライアントに共有をマウントするボリュームのマウントポイントを取得します。</block>
   <block id="4a6574ab96645d28cf548ed8372c655c" category="list-text">[Volumes]タブで、ボリュームの3ドットメニューを選択し、*[Basic actions]*、*[View mount command]*の順に選択します。</block>
   <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">[ 閉じる（ Close ） ] を選択します。</block>
-  <block id="0206587910cd5147f80c048ba00193af" category="paragraph">ファイルシステムにiSCSIブロックボリュームをプロビジョニングする場合は、HAペアを6つまで選択してください。</block>
   <block id="f3b270238d8c3f46a0b10d724c916e7d" category="list-text">*最大転送速度*：* Limited *を選択し、最大転送速度をMiB/秒で入力します。または、*無制限*を選択します。</block>
   <block id="5ef8b0a1c66a4b2210971848d2ce9752" category="paragraph">レプリケーション関係は、ターゲットのFSx for ONTAPファイルシステムの*レプリケーション関係*タブに表示されます。</block>
   <block id="c866bd28f46aae4b063d835d59832e65" category="list-text">* CIFS共有*：次の情報を指定します。</block>
@@ -1242,7 +1226,6 @@
   <block id="10de4bc81f754b19b0d27246a0589c05" category="list-text">注</block>
   <block id="1e6fe3169d6df99dc6e4d89c3f0ca701" category="list-text">保持期間が経過したあともWORMファイルを変更することはできません。削除するか、新しい保持期間を設定してWORM保護を再度有効にすることしかできません。</block>
   <block id="00c161f0779702fcc736833a90e1c117" category="list-text">自動コミット</block>
-  <block id="0710e9c5903cc398ef1a22a38cbb4666" category="list-text">自動コミット機能を有効にするオプションがあります。自動コミット期間内にファイルに変更がなかった場合、自動コミット機能によってSnapLockボリューム上でファイルがWORM状態にコミットされます。自動コミット機能は、デフォルトでは無効になっています。自動コミットするファイルがSnapLockボリューム上に存在している必要があります。</block>
   <block id="f84002cfa8aafdd6963aef9819f03cbe" category="list-text">ボリュームアペンドモード</block>
   <block id="73085bf5d4b4c2626026794741768c09" category="inline-link-macro">ボリュームアペンドモードに関する詳細情報</block>
   <block id="f70318a7f623a49e77262fc2b382b062" category="list-text">WORMで保護されたファイル内の既存のデータを変更することはできません。ただし、変更不可のファイルを使用すると、追記可能WORMファイルを使用して既存データを保護できます。たとえば、ログファイルを生成したり、オーディオまたはビデオストリーミングデータを保持しながら、データを段階的に書き込むことができます。<block ref="d363aab3c17dd7b08ef55d9ecb5c0afa" category="inline-link-macro-rx"></block>を参照してNetApp ONTAPください。</block>
@@ -1314,10 +1297,8 @@
   <block id="fc81b1e4233a48b719520033e56b4194" category="paragraph"><block ref="fc81b1e4233a48b719520033e56b4194" category="inline-link-macro-rx"></block></block>
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">TrackerのCloudShellイベント</block>
   <block id="e7a6197673267c30b5dc86e0d5f6c536" category="paragraph">これで、TrackerでCloudShellイベントを追跡できるようになりました。</block>
-  <block id="8b6bca394ded2ad4bd57d5b7e1b13873" category="paragraph">ファイルシステムにiSCSIブロックボリュームをプロビジョニングする場合は、HAペアを6つまで選択してください。</block>
   <block id="cf5df8345ca5f203e0f805460b558155" category="list-text">単一アベイラビリティゾーン（単一アベイラビリティゾーン）の導入：ハードウェア障害を監視し、障害発生時にインフラコンポーネントを自動的に交換することで可用性を提供します。アベイラビリティゾーン内にデータを自動的にレプリケートし、コンポーネント障害からデータを保護することで、高い耐久性を実現します。</block>
   <block id="65122529e27ab1e34a08fc55d0f38a93" category="list-text">Automatically：Workload Factory経由で自動登録されたリンクを作成します。自動的に作成されたリンクには、ワークロードファクトリオートメーション用のトークンが必要であり、CloudFormationコードは短命です。最大6時間しか使用できません。</block>
-  <block id="b1a94bb6f0b93b26134ff88823a75e78" category="list-text">手動（Manually）：手動登録によるリンクを作成します。CloudFormationコードは、操作を完了するためのより多くの時間を与えます。これは、リンク作成を完了するために必要な権限を最初に付与する必要があるセキュリティやDevOpsなど、さまざまなチームと連携する場合に便利です。</block>
   <block id="99f375ee1d56d1983309c071fe9cb69a" category="paragraph">ターゲットファイルシステム内のレプリケートされたボリュームは、データ保護（DP）ボリュームであり、命名形式はです。<block ref="4b5beb37da0fa6444b7f9f92238aadb1" prefix=" " category="inline-code"></block></block>
   <block id="df4c98f43132ebd68d92a0c9822984df" category="list-text">[Replicate data]ページの[Replication target]で、次の情報を指定します。</block>
   <block id="0cbe076a4ce5208b10cdb81c9e175006" category="list-text">*既存のポリシーを選択*：ドロップダウンメニューから既存のポリシーを選択します。</block>
@@ -1349,7 +1330,6 @@
   <block id="a07e25b28678b53fe808a082369fda80" category="paragraph">ボリュームにSnapshotコピーがあります。</block>
   <block id="86ee35c0029c920dce9ef56d88935e8e" category="paragraph">ボリュームには次のプロトコルが使用されます。</block>
   <block id="8feb9be2f7d30e723f1c8aa899250dae" category="list-text">*ブロックアクセス*：重要なビジネスアプリケーションを実行しているホストがiSCSIプロトコルを使用してボリュームにアクセスできるようにします。ブロックアクセスは、ファイルシステムのスケールアウト構成のHAペアが6つ以下の場合にのみ使用できます。</block>
-  <block id="ad5ae1649d193a804147218da52fd8ad" category="list-text">*変更不可ファイル*:この機能はSnapLockとも呼ばれ、デフォルトでは無効になっています。変更不可のファイルを有効にすると、指定した期間にわたってデータが削除または上書きされるのを防ぐことができます。この機能は、ボリュームの作成時にのみ有効にできます。この機能は、一度有効にすると無効にすることはできません。これは追加料金が発生するFSx for ONTAPのプレミアム機能です。詳細については、Amazon FSx for NetApp ONTAPドキュメントのを参照して<block ref="e334cd66539db07681f218968c17aeb4" category="inline-link-macro-rx"></block>ください。</block>
   <block id="f122287653386d74229199bd670f4990" category="list-text">保持期間には、_retention policy_and_retention periods_という2つの設定があります。保持ポリシー：書き換え不可のWORM状態でファイルを保持する期間を定義します。独自の保持ポリシーを指定するか、デフォルトの保持ポリシー（未指定）（30年）を使用できます。最小保持期間と最大保持期間_は、ファイルのロックに許可される期間を定義します。</block>
   <block id="35728d1f4ec13c002da573ba8e7069f7" category="list-text">同意して続行するには、ボックスを選択してください。</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">[ 有効 ] を選択します。</block>
@@ -1432,19 +1412,10 @@
   <block id="924b3daa7ecef370ff9a603b3208772b" category="paragraph">IOPSを手動でプロビジョニングした場合は、前にIOPSを増やしなければならないことがあり<block ref="94a3285243f3705d6ad038b61125cb2f" category="inline-link-macro-rx"></block>ます。</block>
   <block id="3a3c8188eae554af0e7f07bfef2e124b" category="summary">ボリュームの容量をチェックしてリバランシングし、時間の経過とともに不均衡が生じないようにします。</block>
   <block id="8083bd6761abe4735ad26f9c18899032" category="doc">ボリュームの容量のチェックとリバランシング</block>
-  <block id="270753bb6aea2d40b94194b021e500ae" category="paragraph">FlexGroupボリュームの容量のバランスを確認し、ボリュームの容量をリバランシングしてすべてのコンスティチュエントにファイルを均等に分散し、すべてのノードが1つのFlex Groupボリュームのワークロードに参加するようにします。</block>
-  <block id="8d52048ef57a4217559a7ca3e0deeefa" category="paragraph">FlexGroupボリュームの容量は、2つ以上のハイアベイラビリティ（HA）ペアを使用したスケールアウトFSx for ONTAPファイルシステムで複数のコンスティチュエントに分散されます。各コンスティチュエントは、単一のファイルの最大サイズを決定するコンテナです。FSx for ONTAPでは、ファイルがすべてのコンスティチュエントに均等に分散されるため、すべてのノードが1つのFlexGroupボリュームのワークロードに参加します。</block>
   <block id="04533b4edf31c61772ef483585fb29cf" category="paragraph">FlexGroupボリュームの容量のバランスの確認には、コンスティチュエントの現在のレイアウトの評価も含まれます。ボリュームの容量をリバランシングすると、BlueXP  ワークロードの工場では、偶数のコンスティチュエントで構成される新しいコンスティチュエントレイアウトが設計され、すべてのHAペアにデータが均等に分散されます。サービスは再バランス計画を実行し、それによって読み取りと書き込みの処理が改善されます。</block>
-  <block id="d394f348c0b6fbd4e88b415bafdbea68" category="section-title">FlexGroupボリュームのバランスを確認する</block>
-  <block id="1cc1dda63f89374c05c8b8f5c8126341" category="paragraph">アクティブなFlexGroupボリュームのバランスを確認します。</block>
   <block id="eeaecacdda76be13c8594ef17a7c395c" category="list-text">FlexGroupボリュームのバランスは、2つ以上のHAペアで構成されたスケールアウト環境を使用するFSx for ONTAPファイルシステムでのみ使用できます。</block>
-  <block id="480a98de796f5eb054e749dedf2dbce3" category="list-text">ボリュームの形式はFlexGroupである必要があります。</block>
   <block id="a0c24c81835ca446fe958b4abdb6c08c" category="list-text">[Volumes]タブで、テーブルの上部にある*[Check FlexGroup balance]*を選択します。</block>
-  <block id="8b7b54e191e5f6ab54dc9475259af500" category="list-text">FlexGroup balanceウィンドウで、FSx for ONTAPファイルシステム内のすべてのFlexGroupボリュームのバランスステータスを確認します。</block>
   <block id="1997a93792e2a8be597c246f39ee9fd5" category="inline-xref">リバランシング</block>
-  <block id="6b59c2a4df281550186d4d3fc75ba6d5" category="paragraph">FlexGroupボリュームがアンバランスな場合は、を検討してください<block ref="59031c1bf074b0ee450445a716c796e8" category="inline-xref-macro-rx"></block>。</block>
-  <block id="1fd02848e48f953c62155cbb42dd331b" category="section-title">FlexGroupボリュームのリバランシング</block>
-  <block id="64de3f9223f666126336ac4c9a3aa94d" category="paragraph"><block ref="1f11182db84cfb1742cc746fa76f8fe6" category="inline-xref-macro-rx"></block>ボリュームのリバランシング前</block>
   <block id="ceb833d216db0e056b9ab7d22ba4f023" category="paragraph">制限がないと、ネットワークとアプリケーションのパフォーマンスが低下する可能性があります。また、FSx for ONTAPファイルシステムは、主にディザスタリカバリに使用されるワークロードなど、重要なワークロードには無制限の転送速度を推奨します。</block>
   <block id="c4ee13228c56b3c8a94bcef6d8d6d357" category="summary">クローンFlexVol volumeを親ボリュームからスプリットして、通常の読み取り/書き込みFlexVol volumeにします。</block>
   <block id="c04185e8791b4a9dde9952d191aff02c" category="paragraph">クローンFlexVol volumeを親ボリュームからスプリットして、BlueXP  ワークロード工場で通常の読み取り/書き込みFlexVol volumeにします。</block>
@@ -1676,14 +1647,12 @@
   <block id="3909315ab3cc8353eec0cd02ce0845da" category="admonition">コネクタを使用する場合、AWS Secrets Managerはサポートされません。</block>
   <block id="2c1b9e7969c6e96f38bd871fc9f26ae1" category="section-title">新しいリンクの関連付け</block>
   <block id="05a2e668e80fd3ace12e9585ebc06578" category="paragraph">新しいリンクの関連付けには、リンクの作成と関連付けが含まれます。</block>
-  <block id="ec19cf5bb597b8c81392ce26e30276fe" category="paragraph">リンクを作成するには、自動または手動の2つのオプションがあります。リンクを作成するには、AWSアカウントでAWS CloudFormationスタックを起動する必要があります。</block>
   <block id="695199449ad50832d8cff3be92e812b3" category="inline-link-macro">ワークロードファクトリにクレデンシャルを追加</block>
   <block id="2f1cd483ab7b6144b733f5155b2026c6" category="list-text">[FSx for ONTAP *]タブで、リンクを関連付けるファイルシステムの3ドットメニューを選択し、*[Associate link]*を選択します。</block>
   <block id="29abae1dabc3d83e30cbe456ae214256" category="list-text">* AWS Secrets Manager *：オプション。Workload FactoryがAWS Secrets ManagerからFSx for ONTAPアクセスクレデンシャルを取得できるようにします。</block>
   <block id="13ecd4f9bb62f6c0730c8f136a58fb36" category="paragraph">リンク配置スタックは、次のデフォルトのシークレットマネージャARN正規表現をLambda権限ポリシーに追加します。<block ref="218d5bbe44642244cc57db37477be310" prefix=" " category="inline-code"></block></block>
   <block id="de786693aed7955f1cb538f51e25f7d6" category="paragraph">デフォルトの権限に合わせてシークレットを作成するか、リンクポリシーにカスタムの権限を割り当てることができます。</block>
   <block id="49af4dcead2678507453b9bff6c332f1" category="paragraph">* VPCプライベートエンドポイントをAWS Secrets Managerに設定*はデフォルトで無効になっています。このオプションを選択すると、シークレットはローカルではなくVPCプライベートエンドポイントを使用して格納されます。</block>
-  <block id="c1123c7a8501a00beea0820a4f4b2f90" category="list-text">*リンク登録*：ドロップダウン矢印を選択して、AWS CloudFormationサービスからリンクを登録する手順を展開します。指示に従ってください。</block>
   <block id="c3b24be1571207cf6200f2d8b54ee7c0" category="paragraph">スタックが正常に作成されたら、テキストボックスにLambda ARNを貼り付けます。</block>
   <block id="91744aea42b1e1eb3b5b0f486498fe3c" category="paragraph">作成したリンクはFSx for ONTAPファイルシステムに関連付けられます。高度なONTAP処理を実行できます。</block>
   <block id="48457d7f94975228307244f863f96fee" category="section-title">既存のリンクをFSx for ONTAPファイルシステムに関連付ける</block>
@@ -1820,10 +1789,6 @@
   <block id="ce812f613f07996b313f45414329b88e" category="sidebar">ファイルシステムのベストプラクティスの実装</block>
   <block id="e6dcf40c0e3ce889fc9c5c061867f960" category="sidebar">FSx for ONTAPの構成分析</block>
   <block id="77aaaafa70c293a92472a80015bece8b" category="paragraph">コンスティチュエントがすべてのノードに均等に分散されていないと、FlexGroupボリュームのパフォーマンスが低下します。</block>
-  <block id="ae622e3b9df5d2fe3f644c0dba928e66" category="paragraph">ボリュームのリバランシングでは、新しいファイルの追加やファイルの増加によって不均衡が長期的に生じた場合に容量が再配分されます。リバランシング処理を手動で開始したら、ファイルを選択し、システムを停止せずに自動的に移動します。ボリューム転送処理はファイルシステムのリソースを消費します。</block>
-  <block id="8a348b83eb54b8869c9afef29caffc5e" category="admonition">リバランシングはFlexGroupボリュームでのみサポートされ、iSCSIまたはNVMe FlexGroupボリュームではサポートされません。</block>
-  <block id="dea985c157083fcf289f38e7ab4aede0" category="paragraph">負荷が分散されていない1つ以上のボリュームをリバランシングします。メンバーボリューム間でデータが再配分され、FlexGroupボリュームのリバランシングが行われます。リバランシング処理では、使用するデータ分散レイアウトによってFlexGroupメンバーボリュームが追加され、プロビジョニングされたボリュームのサイズが大きくなることがあります。</block>
-  <block id="6a0d7c16b4c559c5dc9c875e37641a9c" category="admonition">ワークロードファクトリ管理者は、処理中にリバランシングを停止できます。</block>
   <block id="5fdec390c6be629fa932553e2fe5cb25" category="list-text">リバランシングするボリューム上の既存のSnapshotは部分的になり、ボリュームデータのリストアには使用できませんが、リバランシング後に作成された新しいSnapshotを使用してボリュームデータをリストアできます。</block>
   <block id="930dade8556383009e0018f93aeb74bc" category="list-text">1つ以上のアンバランスボリュームをリバランシングするには、FlexGroup balanceウィンドウで* Rebalance *を選択します。</block>
   <block id="48d59fcf4b8606ffc1ea7c49fae9c2b9" category="list-text">再バランスウィザードで、必要なデータ分散レイアウトを選択します。</block>
@@ -1837,7 +1802,6 @@
   <block id="5ad2de3bf91266caa9759e836ce832b5" category="list-text">FSx for ONTAPのレイアウトの比較</block>
   <block id="897bea1a5ca479178427004f773ee72e" category="list-text">必要に応じて、リバランシングする前にボリューム移動のリストをダウンロードします。</block>
   <block id="703547df715082455f8920d78fe90a30" category="list-text">[リバランス]*を選択します。</block>
-  <block id="dc3d2b1db09a8cee9576c2df34eba7b1" category="paragraph">FlexGroupに追加されるFlexGroupメンバーボリュームの数に応じて、FlexGroupボリュームメンバー移動処理は一度に1つずつ実行されます。処理が完了すると、ファイルシステムは元の値に調整されます。</block>
   <block id="4b50901597179fa075617d96ccf51901" category="list-text">*ワークロードファクトリコンソール*:ワークロードファクトリコンソールは、アプリケーションとプロジェクトの視覚的で包括的なビューを提供します。</block>
   <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  コンソール*：BlueXP  コンソールはハイブリッドインターフェイスを提供するため、BlueXP  ワークロードファクトリを他のBlueXP  サービスと一緒に使用できます。</block>
   <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">*確認*：AIアシスタント「Ask me」を使用すると、Workload FactoryのWeb UIから離れることなく、Workload Factoryについて質問したり、詳細を確認したりできます。[Workload Factory Help]メニューから[Ask me]にアクセスします。</block>
@@ -1932,10 +1896,130 @@
   <block id="00c1c06957f8f476507e7c8eab416ca3" category="paragraph">スナップショット ポリシーを割り当てるには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="f25575fb26d63d8bebf4c5a568518443" category="paragraph">スナップショット ポリシーを削除するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="aef6ece6593a117983fcd0b9e27b2a94" category="paragraph">ファイル システムで ARP を有効にするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
-  <block id="1f217123f7d99348330184951007bc1c" category="list-text">FlexGroup ボリュームの残高を確認するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
-  <block id="44b1a8a590c7561bdb240a720d2d9aaa" category="list-text">ボリュームのバランスを再調整するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="2ccb6b87f6c03ced811ff29d2a5f5ede" category="paragraph">ストレージ VM を別の FSx for ONTAP ファイル システムに複製するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="99ae6104ba82455197d215357b50f2f1" category="list-text">クローンボリュームを分割するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="21bd8c562c1d6ae4caf8a36f6d06c516" category="list-text">レプリケーション関係に使用するオンプレミスのONTAPクラスタとFSx for ONTAPファイルシステムの両方に、リンクが関連付けられている必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="316509fcb5a8d1b5e1280f3f64c594f2" category="list-text">ユーザー名 = FSx_user</block>
+  <block id="562c87a680d962135f8e44bc0d159259" category="list-text">* Storage VM名*：ドロップダウンメニューからStorage VMを選択します。選択したストレージ VM は、このレプリケーション関係で選択されたすべてのボリュームのターゲットになります。</block>
+  <block id="11f24c2a8c13499208f4d69098436bd2" category="paragraph">制限がないと、ネットワークとアプリケーションのパフォーマンスが低下する可能性があります。また、FSx for ONTAPファイルシステムは、主にディザスタリカバリに使用されるワークロードなど、重要なワークロードには無制限の転送速度を推奨します。。[Replication settings]で、次の情報を指定します。</block>
+  <block id="fca40712560cec2d2b7a47110cfecda1" category="list-text">*新しいポリシーを作成*：*ポリシー名*を入力します。</block>
+  <block id="0546ab198c101c424e412d1355272bcd" category="list-text">*不変のスナップショット*: オプション。このポリシーで作成されたSnapshotが保持期間中に削除されないようにするには、[変更不可のSnapshotを有効にする]*を選択します。</block>
+  <block id="64c17706e0528a5c44c7beee628cc101" category="doc">BlueXPワークロードファクトリー通知サービスのサポート</block>
+  <block id="c0ae6f0ec7cb1322a1c6b72f77e783f2" category="paragraph">BlueXP ワークロードファクトリー通知サービスを使用すると、ワークロードファクトリーは BlueXP アラートサービスまたは Amazon SNS トピックに通知を送信できます。BlueXPアラートに送信された通知は、BlueXP アラートパネルに表示されます。ワークロードファクトリーが Amazon SNS トピックに通知を発行すると、トピックのサブスクライバー（ユーザーや他のアプリケーションなど）は、トピックに設定されたエンドポイント（E メールや SMS メッセージなど）で通知を受け取ります。</block>
+  <block id="76490568879e4523bb6bd6d8263472a9" category="inline-link-macro">BlueXPワークロードファクトリー通知を構成する</block>
+  <block id="a10c281531128badfefa7086b353ead0" category="paragraph"><block ref="a10c281531128badfefa7086b353ead0" category="inline-link-macro-rx"></block></block>
+  <block id="16608889ffd4210e3527b28d2cabeee1" category="paragraph">ワークロードファクトリーコンソールのストレージダッシュボードに、コスト削減の機会を示す新しいカードが追加されました。ダッシュボード上部のカードには、Amazon Elastic Block Store (EBS)、Amazon FSx for Windows File Server、Amazon Elastic File Systems (EFS) で実行されているストレージ環境におけるコスト削減の機会の数が表示されます。ダッシュボード下部には、Amazon ストレージサービス (EBS、FSx for Windows File Server、EFS) ごとのコスト削減の機会を示す 3 つの新しいカードが追加されました。すべてのカードから、コスト削減の機会をより詳細に確認できます。</block>
+  <block id="e2fc557edefb4b2854999f60dbd0d379" category="paragraph">FSx for ONTAP の保護範囲カードとレプリケーション関係の健全性カードから、FSx for ONTAP ファイルシステム内に部分的に保護されているボリュームがあるかどうか、またレプリケーション関係に関する問題を調査できます。どちらの場合も、問題を解決するためのアクションを実行できます。</block>
+  <block id="34ccfe489231e34890602e4f0419b843" category="section-title">音量タブの機能強化</block>
+  <block id="f659fbcb502240d4138a6337d4da17d5" category="paragraph">ワークロードファクトリーコンソールの「ボリューム」タブが強化され、FSx for ONTAPファイルシステムのより包括的なビューが提供されるようになりました。強化された機能には、SSD容量、容量プール、NetApp Autonomous Ransomware Protection with AI（ARP/AI）の新しいカードが含まれます。これらのカードには、ファイルシステム内のすべてのボリュームの容量使用率とARP/AI保護の概要が表示されます。</block>
+  <block id="7efd44dd06c377a68f3fc78abf7d91fb" category="paragraph">ワークロードファクトリーは、第2世代Amazon FSx for NetApp ONTAPファイルシステムのサポートを開始しました。ワークロードファクトリーコンソールで、第2世代ファイルシステムの作成、管理、モニタリングが可能です。すべての新しい商用リージョンがサポートされています。</block>
+  <block id="cd0ce691a9b616ae8983f22db2fb8a6d" category="inline-link-macro">ワークロードファクトリーで第2世代のファイルシステムを作成する</block>
+  <block id="f784f74601a71805db546f7b6842f0e5" category="paragraph"><block ref="f784f74601a71805db546f7b6842f0e5" category="inline-link-macro-rx"></block></block>
+  <block id="094caa4bbbbdba779d6ef8c57b995856" category="section-title">ボリューム容量の再バランス調整のためのFlexVolボリュームのサポート</block>
+  <block id="ab0d60978b39ce0cb886ec1fbf91bad8" category="paragraph">FlexVolは、ワークロードファクトリーコンソール内で検出できます。FlexVolのバランスを確認し、新規ファイルの追加やファイルの増加によって時間の経過とともに不均衡が生じた場合は、FlexVolをリバランスして容量を再配分できます。</block>
+  <block id="226bb141f0b474b8b8d4e55bfe659a94" category="inline-link-macro">FlexVolボリュームの容量を再調整する</block>
+  <block id="7f11a5de29d58c93cc212be8cf51b761" category="paragraph"><block ref="7f11a5de29d58c93cc212be8cf51b761" category="inline-link-macro-rx"></block></block>
+  <block id="d7581ee541e7cfa51fd2f75f93b7e64e" category="section-title">用語の更新</block>
+  <block id="6e0c2d8cb551de024f6700ca0407257e" category="paragraph">ワークロード ファクトリー コンソールで、「Autonomous Ransomware Protection」(ARP) という用語が「NetApp Autonomous Ransomware Protection with AI」(ARP/AI) に更新されました。</block>
+  <block id="d474538a7c98b462c08197d24f7c1c60" category="section-title">新しいボリュームでは ARP/AI がデフォルトで有効になっています</block>
+  <block id="6a3bf8c141dbbeed37af8236f412b19a" category="paragraph">ワークロードファクトリーコンソールで新しいボリュームを作成すると、ファイルシステムにARP/AIポリシーが設定されている場合、NetApp Autonomous Ransomware Protection with AI（ARP/AI）がデフォルトで有効化されます。つまり、ボリュームはAIを活用した検出・対応機能によってランサムウェア攻撃から自動的に保護されます。</block>
+  <block id="7e0b28b27ce3985a4a8d693330a04cb7" category="inline-link-macro">ワークロードファクトリーでボリュームを作成する</block>
+  <block id="3bf76f3556904b928c43201c04108364" category="paragraph"><block ref="3bf76f3556904b928c43201c04108364" category="inline-link-macro-rx"></block></block>
+  <block id="442d07125b5c2363eae9c33039172225" category="section-title">不変ファイルのレプリケーションサポート</block>
+  <block id="6250cd311debe5758acc69f81921ab78" category="paragraph">ワークロードファクトリーは、FSx for ONTAP システム間で不変ボリュームを複製し、重要なデータを誤削除やランサムウェアなどの悪意のある攻撃から保護します。複製先のボリュームとそのホストファイルシステムは不変（ロック）状態となり、保持期間が終了するまで、複製先のファイルシステム内のデータは変更または削除できません。</block>
+  <block id="b6fc33d7434bb860ad528753113881b1" category="inline-link-macro">レプリケーション関係を作成する方法を学ぶ</block>
+  <block id="d3dbddfb353eaaa957947efb04ca7013" category="paragraph"><block ref="d3dbddfb353eaaa957947efb04ca7013" category="inline-link-macro-rx"></block></block>
+  <block id="d836bf4f72557e9399ce062e72ef15f6" category="section-title">リンク作成の機能強化</block>
+  <block id="1f8ca754f0193efb8fdc1c63a4d96672" category="paragraph">ワークロード ファクトリ コンソールのリンク作成プロセスに次の機能強化が加えられました。</block>
+  <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
+  <block id="5c44c7d986372ccb1d679985b5416b64" category="section-title">リンク作成中にIAM実行ロールと権限を管理する</block>
+  <block id="43f8bec3c8d83ff27c8f5d629cd49d4d" category="paragraph">ワークロードファクトリーコンソールでリンクを作成する際に、IAM 実行ロールとそれに紐付けられた権限ポリシーを管理できるようになりました。リンクは、ワークロードファクトリーアカウントと 1 つ以上の FSx for ONTAP ファイルシステム間の接続を確立します。IAM実行ロールとリンク権限の割り当てには、自動割り当てとユーザー指定の 2 つのオプションがあります。ワークロードファクトリーで実行ロールとそれに紐付けられた権限ポリシーを管理することで、サードパーティ製のコードを使用する必要がなくなります。</block>
+  <block id="f83708b425052a7f19c02dfd5c3d0688" category="section-title">リンク作成のための Terraform サポート</block>
+  <block id="d993aa63b5e96ec8db4090bd87d5c850" category="paragraph">Codebox から Terraform を使用して、FSx for ONTAP ファイルシステムに関連付けるリンクを作成できるようになりました。この機能は、リンクを手動で作成するユーザー向けです。</block>
+  <block id="2cb3ea55d484ee81bd75e230c32b7fcd" category="paragraph">第2世代のFSx for ONTAPファイルシステムがデフォルトのデプロイメントタイプです。リージョンが第2世代のFSx for ONTAPファイルシステムをサポートしていない場合、デプロイメントタイプは第1世代に切り替わります。</block>
+  <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">この構成は、高パフォーマンスのワークロード、またはワークロードが小さく開始して 72 GB/秒のスループットと 240 万 IOPS まで段階的にスケールアウトする場合に推奨されます。</block>
+  <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">複数のアベイラビリティゾーン（マルチAZ）の導入：アベイラビリティゾーンが使用できない場合でも、データの継続的可用性を提供します。Multi-AZファイルシステムは、共有ONTAPファイルデータの高可用性を必要とし、複数のアベイラビリティゾーンにわたるレプリケーション機能を備えたストレージを必要とする、ビジネスクリティカルな本番ワークロード向けに設計されています。</block>
+  <block id="fc22ff32bfac4486f50da9af2033830e" category="paragraph">この単一の HA ペア構成は、最大 6 GB/秒のスループットまたは 200,000 IOPS を必要とするワークロードに推奨されます。</block>
+  <block id="87839b96284704d104c8e445d0cfb887" category="list-text">第 1 世代の展開では、ファイル システムの作成後に容量を減らすことはできません。</block>
+  <block id="8d4ad9a0aaca41b1aa7122cb909588a7" category="list-text">第 2 世代の展開では、ファイル システムの作成後に容量を増やすことができます。</block>
+  <block id="a2841b4c7bc0c058832e81b45f756892" category="list-text">*展開タイプ*: 展開タイプとファイル システムの世代を選択します。</block>
+  <block id="d790be978976d563ba38a969cce78e04" category="paragraph">*ファイルシステム世代*: 次のいずれかを選択します。** *第 2 世代*: この構成は、高パフォーマンスのワークロード、またはワークロードを小規模から開始して段階的に 72 GB/秒のスループットと 240 万 IOPS までスケールアウトする場合に推奨されます。** *第 1 世代*: この構成は、最大 4 GB/秒または 160,000 IOPS を必要とするワークロードに最適です。第 1 世代のファイルシステムでは、容量の増加のみが可能です。</block>
+  <block id="0db3110a95d1dfd82b55d5dde656871c" category="paragraph">+ 第2世代ファイルシステムの利用可能性は、選択したリージョンによって異なります。選択したリージョンで第2世代FSx for ONTAPファイルシステムがサポートされていない場合、デプロイメントタイプは第1世代に切り替わります。</block>
+  <block id="5ee057335585da70af1caca368e4e422" category="list-text">*第2世代*：この単一HAペア構成は、最大6GB/秒のスループットまたは200,000IOPSを必要とするワークロードに推奨されます。マルチAZおよび第2世代ファイルシステムでは、ワークロードの需要に合わせて容量を増減できます。</block>
+  <block id="272021095e67d1fdf73f94aa211e4e56" category="list-text">*第一世代*：この構成は、最大4GB/秒または160,000IOPSを必要とするワークロードに最適です。第一世代のファイルシステムでは、容量の増加のみが可能です。</block>
+  <block id="912e83b52cf2a4421217bf96185e618a" category="paragraph">第2世代ファイルシステムの利用可能性は、選択したリージョンによって異なります。選択したリージョンで第2世代FSx for ONTAPファイルシステムがサポートされていない場合、デプロイメントタイプは第1世代に切り替わります。</block>
+  <block id="7ef603b4e7f8efb6252e42ef0745f9cc" category="list-text">第 2 世代の展開では、容量を調整できます。</block>
+  <block id="6eb76be6a5409fb6f547e3cf3944cfe6" category="list-text">*HAペアあたりのスループット容量*：HAペアの数あたりのスループット容量を選択します。第一世代のファイルシステムは、1つのHAペアのみをサポートします。</block>
+  <block id="ee6e43b0904c4672da5651009001b259" category="list-text">*プロビジョニングされた IOPS*: 次のいずれかのオプションを選択します。</block>
+  <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*自動*: 自動の場合、作成された GiB ごとに 3 IOPS が追加されます。</block>
+  <block id="080138c9fde9abc63b7003839106198b" category="list-text">*ユーザープロビジョニング*: ユーザープロビジョニングの場合は、IOPS 値を入力します。</block>
+  <block id="7392fd7ce1aac825ec2bdccdf93b5ad8" category="paragraph">このワークフローでリンクを作成するには、自動または手動の 2 つのオプションがあります。リンクを作成するには、AWSアカウントでAWS CloudFormationスタックを起動する必要があります。</block>
+  <block id="228b634c3bcbb5ddb0e529d6144522f7" category="list-text">手動：Codebox の CloudFormation または Terraform を使用して手動で登録し、リンクを作成します。コードは保持されるため、操作を完了するまでの時間が長くなります。これは、リンク作成を完了するために必要な権限を最初に付与する必要があるセキュリティやDevOpsなど、さまざまなチームと連携する場合に便利です。</block>
+  <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*リンクの権限*: リンクの権限について、次のいずれかのオプションを選択します。</block>
+  <block id="4c0e4494d278c08e2a1d6707604575a3" category="list-text">*自動*: このオプションを選択すると、AWS CloudFormation または Terraform コードによって Lambda アクセス許可ポリシーと実行ロールが自動的に作成されます。</block>
+  <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*ユーザー指定*: 指定したLambda実行ロールとそれに紐付けられたポリシーをLambdaリンクに割り当てるには、このオプションを選択します。Lambdaには以下の権限が必要です。<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager を有効にした場合にのみ、権限が必要です。</block>
+  <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">テキストボックスに Lambda 実行ロール ARN を入力します。</block>
+  <block id="cc5c21be990be307574e5fa4cb773c44" category="paragraph">このオプションでは、リンクのARNを抽出し、ここで報告します。CodeboxWorkload Factoryは手動でリンクを登録します。の2つのInfrastructure-as-Code（IaC）ツール（CloudFormationまたはTerraform）を使用してリンクを作成できます。</block>
+  <block id="e151c7c26f691694d417720f8986d3fa" category="list-text">*リンク登録*: ドロップダウン矢印を選択して、AWS CloudFormation サービスから、または Terraform を使用してリンクを登録する方法の手順を展開します。指示に従ってください。</block>
+  <block id="38adbad92c37166c4ce64da1eb51513b" category="inline-link-macro">ボリュームを作成する</block>
+  <block id="32c902b48618ff09c74311dc0eadacf8" category="paragraph">不変ファイルを含むソースボリュームを複製する場合、ターゲットボリュームとファイルシステムは、ソースボリューム内の不変ファイルの保存期間が終了するまでロックされます。不変ファイル機能は、 <block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block> FSx for ONTAP ファイルシステム用。</block>
+  <block id="5001625507c3b9f08fdabbe789030cf8" category="list-text">ワークロード ファクトリー コンソールに FSx for ONTAP ファイル システムが必要です。</block>
+  <block id="1626bc194a1c6fb76d8a47eba39add09" category="paragraph">FlexGroup ボリュームのサイズは構成要素の数によって異なり、構成要素ごとに 100 GiB が必要です。</block>
+  <block id="f80d67f0a6951b3f6c1185e7c7f39c30" category="paragraph">ボリュームの最大拡張サイズと単位を指定します。最大拡張サイズを現在のボリュームサイズより小さく設定することはできません</block>
+  <block id="d932719afe063ca8fcfe0eb63f1b6ec9" category="paragraph">ONTAPは、重複排除機能と圧縮機能を活用してストレージ効率を実現します。重複排除機能は重複するデータブロックを排除し、データ圧縮機能はデータブロックを圧縮することで、必要な物理ストレージ容量を削減します。</block>
+  <block id="6952a6e9eef7bbc8ef4fe836a4a3851a" category="list-text">*変更不可ファイル*:この機能はSnapLockとも呼ばれ、デフォルトでは無効になっています。不変ファイルを有効にすると、一定期間データの削除や上書きが防止されます。この機能は、ボリュームの作成時にのみ有効にできます。この機能は、一度有効にすると無効にすることはできません。これは追加料金が発生するFSx for ONTAPのプレミアム機能です。詳細については、Amazon FSx for NetApp ONTAPドキュメントのを参照して<block ref="e334cd66539db07681f218968c17aeb4" category="inline-link-macro-rx"></block>ください。</block>
+  <block id="7d10dca5001535e91f75cecae3291907" category="list-text">自動コミット機能を有効にするオプションがあります。自動コミット期間内にファイルに変更がなかった場合、自動コミット機能によってSnapLockボリューム上でファイルがWORM状態にコミットされます。自動コミット機能は、デフォルトでは無効になっています。自動コミットするファイルが SnapLock ボリューム上に存在することを確認する必要があります。</block>
+  <block id="9d083d8cac2f7524236aec0400de23bf" category="inline-link-macro">ARP/AIについて詳しくはこちら</block>
+  <block id="cb0b32de8b019bb1df747d59de75707b" category="list-text">*ARP/AI*: リンクがファイル システムに関連付けられている場合、NetApp Autonomous Ransomware Protection with AI (ARP/AI) はデフォルトで有効になります。<block ref="c4c4beca7d4846b88f49bf491b5261f6" category="inline-link-macro-rx"></block>です。続行するには、ステートメントを受け入れます。</block>
+  <block id="f6f1c3f8f0f62507f18da1fcf460ade4" category="paragraph">機能が利用できない場合は、次のいずれかの理由が考えられます。</block>
+  <block id="9e46846308a6940deed12bb97a4f8290" category="list-text">リンクはファイル システムに関連付けられていません。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="7c3e31cda0e937f8fa1edeeb89e9fe70" category="list-text">不変のファイルを含むボリューム、および iSCSI および NVMe プロトコルを含むボリュームは、ARP/AI ではサポートされません。</block>
+  <block id="df1195db43983cb33962d0fe23f28da4" category="list-text">ファイル システムには既に ARP/AI ポリシーがあります。</block>
+  <block id="0bce1227be581635db9bb209f22cf4e6" category="paragraph">ワークロードファクトリーがボリュームの作成を開始します。ボリュームが作成されると、システムは「ボリューム」タブに新しいボリュームを表示します。</block>
+  <block id="817a91472106a30911a7a081b0284ff7" category="paragraph">FlexVol または FlexGroup ボリューム容量のバランスを確認し、ボリューム容量のバランスを再調整して、ファイルをノード内のすべての FlexVol ボリューム間またはすべての構成要素間に均等に分散し、すべてのノードが単一の FlexGroup ボリュームのワークロードに参加するようにします。</block>
+  <block id="46119f30376fd007e4806359f116810d" category="paragraph">ボリューム容量の再バランス調整は、FlexVol ボリュームと FlexGroup ボリュームでサポートされています。ボリュームのリバランシングでは、新しいファイルの追加やファイルの増加によって不均衡が長期的に生じた場合に容量が再配分されます。リバランシング処理を手動で開始したら、ファイルを選択し、システムを停止せずに自動的に移動します。ボリューム転送処理はファイルシステムのリソースを消費します。</block>
+  <block id="bbf6fdac51a56da72339e09ef6a7537c" category="paragraph">各ボリュームタイプと再バランス操作は次のように異なります。</block>
+  <block id="7d98517078b732298ebd050c16b0fdc2" category="list-text">FlexVolボリューム</block>
+  <block id="31af9ccdfe896bb37c979ba564b11fea" category="list-text">FlexVolボリュームは、データの管理に柔軟性を提供し、拡張、縮小、移動、効率的なコピーを可能にする論理コンテナです。NASおよびSAN環境で使用できます。</block>
+  <block id="0a29aedc128f13168b556b842596de7a" category="paragraph">FSx for ONTAPファイルシステム内の同一ノード内のFlexVolは、他のFlexVolと比較してバランス調整が可能です。ファイルシステムにFlexVolが1つしかない場合、リバランスは実行できません。ファイルシステムにノードごとに複数のFlexVolがあり、1つのFlexVolが選択されている場合、そのFlexVolはすべてのFlexVolと比較してバランス調整されますが、移動できるのは選択されたボリュームのみです。</block>
+  <block id="ee1ef6cf0f3971b44eb2abcac958fb8d" category="list-text">FlexGroupボリューム</block>
+  <block id="86b9c6b8527a6bfd7d511bcbb627ca68" category="list-text">一方、FlexGroupボリュームは、高パフォーマンスと自動負荷分散を実現するように設計されたスケーラブルなNASコンテナです。複数のメンバーボリューム（構成要素）で構成され、トラフィックを透過的に共有します。FlexGroupボリュームは、FlexVolの制限を超える大容量を提供し、最大60PBの容量と4,000億ファイルに対応します。単一の名前空間コンテナを提供することで、管理を簡素化します。</block>
+  <block id="a1d763e9c6395bb77325bcad5657ce9e" category="paragraph">容量は、2 つ以上の高可用性 (HA) ペアを持つスケールアウト FSx for ONTAP ファイル システム内の複数の構成要素に分散されます。各コンスティチュエントは、単一のファイルの最大サイズを決定するコンテナです。FSx for ONTAPでは、ファイルがすべてのコンスティチュエントに均等に分散されるため、すべてのノードが1つのFlexGroupボリュームのワークロードに参加します。</block>
+  <block id="d3ba2e7d0644f59c9834f36ad9a37bd9" category="admonition">iSCSI や NVMe などの SAN ボリュームでは再バランスはサポートされていません。</block>
+  <block id="287fd51e17b8ed83911f0acd39496c50" category="section-title">ボリュームのバランスを確認する</block>
+  <block id="7e42e168316583c933d50f5311ce6477" category="paragraph">FSx for ONTAP ファイル システム内の FlexVol または FlexGroup ボリュームのバランスを確認します。</block>
+  <block id="0691d778f09d713a755463d05ab1033d" category="inline-link-macro">リンクの作成</block>
+  <block id="53e6259fd019f47a663995e674152f8b" category="list-text">ボリュームの残高を確認するには、 <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block> 。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="45e5ba6ed73eebcebdfec708c137cf22" category="list-text">*FSx for ONTAP* タブで、再バランス調整するボリュームを含むファイルシステムの 3 つのドット メニューを選択し、*管理* を選択します。</block>
+  <block id="267c95738d47a09a9b509ffdd48c24b0" category="list-text">[ボリューム] タブで、表の上部にある [ボリューム バランスを確認] を選択します。</block>
+  <block id="c9784b38284a9b2506bc92daf5caada4" category="list-text">ボリューム残高ウィンドウで、次の残高ステータスを確認します。</block>
+  <block id="9a3d2d6c726db403f30b520ca6d8d906" category="paragraph">ボリュームのバランスが崩れた場合は、 <block ref="25db360314c219183817d2ed1029436b" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="ba51913935bc9e57b04a0e373c7e87f1" category="section-title">ボリューム容量の再調整</block>
+  <block id="81ac132d7a72ac8930eac72f996dc39f" category="paragraph">負荷が分散されていない1つ以上のボリュームをリバランシングします。</block>
+  <block id="3df496910d7ade34c46b7c3c46f516a9" category="inline-xref">リバランスを停止する</block>
+  <block id="f47b90b03a7f25fd35e2825621faa855" category="admonition">ワークロードファクトリー管理者は<block ref="6089e6bc679073f1388a01bc136ad00e" category="inline-xref-macro-rx"></block>手術中。</block>
+  <block id="6884c9c0713962c7d0a4fabd1cf49a6d" category="inline-xref">ボリュームのバランスを確認する</block>
+  <block id="63acfaf1d07db652bff37bddaa4ba8bc" category="list-text"><block ref="65ac8887e886c8e0446817b3710e8cbe" category="inline-xref-macro-rx"></block>ボリュームのリバランシング前</block>
+  <block id="af7202b99122b0c2ef1b703335afeef9" category="list-text">ボリュームをリバランシングするには、が必要です <block ref="02bfea9ec9af8a75e921abb4371bb623" category="inline-link-macro-rx"></block>。既存のリンクがない場合は、 <block ref="4a4cf61bbc0937b0bea7aa35d3b9fb8e" category="inline-link-macro-rx"></block>を参照してください。ファイルシステムにリンクを関連付けるには、*[アカウント名]*で*[リンクの関連付け]*を選択します。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="dfaf4c319f7d24ec55b76a7ae4393e62" category="list-text">FlexVol ボリュームは、すべてのボリュームリソースを均等にバランス調整するために、まとめて再バランス調整するのが最適です。選択解除されたボリュームは、バランス調整プロセスに積極的に関与しません。</block>
+  <block id="934baa9ec98e8fc4a616d393737537e5" category="open-title">FlexVolボリューム</block>
+  <block id="8b101e32193fcbdd503f49081b4a7e4b" category="paragraph">FSx for ONTAPファイルシステムでは、同一ノード内のFlexVolを他のFlexVolと比較してバランス調整できます。ファイルシステムにノードごとに複数のFlexVolがあり、1つのFlexVolを選択した場合、そのFlexVolはすべてのFlexVolと比較してバランス調整されますが、移動できるのは選択されたボリュームのみです。</block>
+  <block id="6f661bbcda098033b451092f4a6ad605" category="list-text">ボリューム バランス ウィンドウで、オプションとして FlexVol バランス サマリーの *データ分散* を選択して、アグリゲートごとの使用容量を表示します。</block>
+  <block id="9388053fc7637e1b4eeafe0e5f530ed9" category="list-text">1 つ以上の不均衡なボリュームを再バランスするには、「再バランス」を選択します。</block>
+  <block id="55a113edd3b1fddca38ad33867469ee2" category="list-text">再バランスウィザードで、手順に従います。</block>
+  <block id="1b6fa01b1905bacdf0b0c88ed8c711a5" category="list-text">*最大転送速度*: オプション。デフォルトでは無効です。ファイルシステム上のボリューム移動の帯域幅を制限し、送信ボリュームのレプリケーショントラフィックを遅くするには、スロットルを有効にします。</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="paragraph">「 * 次へ * 」を選択します。</block>
+  <block id="914a13175eb38a00a409b234495d1ead" category="list-text">すべての FlexVol ボリュームの現在のレイアウトと提案されたレイアウトを確認し、[次へ] を選択します。</block>
+  <block id="33b8c7e1b045d53ac3c40b2eb179b423" category="list-text">リバランス操作を開始する前に、何が起こるかと注意事項を慎重に確認してください。</block>
+  <block id="42562a733c7eca9d2d470234bf796a63" category="paragraph">FlexVol ボリュームのバランスが再調整されます。処理が完了すると、ファイルシステムは元の値に調整されます。</block>
+  <block id="e9db3004828d9514fafc57881dfbdbd2" category="open-title">FlexGroupボリューム</block>
+  <block id="5b1fc9c914ecf6dbfaba061abccfa814" category="paragraph">メンバーボリューム間でデータが再配分され、FlexGroupボリュームのリバランシングが行われます。選択したレイアウトに基づいて、再バランス操作によって FlexGroup メンバー ボリュームが追加され、プロビジョニングされたボリュームのサイズが増加する可能性があります。</block>
+  <block id="e0bdf1ac64eadae8c51a5f7d28c4ec5e" category="paragraph">FlexGroup メンバー ボリュームは、再バランス調整中に一度に 1 つずつ移動されます。処理が完了すると、ファイルシステムは元の値に調整されます。</block>
+  <block id="394c3cbc7af42de2232348150c226506" category="section-title">ボリュームの再バランス操作を停止する</block>
+  <block id="c371881847612e2caaaab71efa80ae17" category="paragraph">リバランス操作はいつでも停止できます。操作は中断されません。操作を停止すると、アクティブなボリュームの移動が中止されます。</block>
+  <block id="8ad4014ece1ab12d9aff2e57b1c1f323" category="paragraph">後で別の再バランス操作を開始できます。</block>
+  <block id="9e37c13416b5ae00943c0a3e0a5515e1" category="list-text">再バランス操作を開始した後、ボリューム バランス ページで [*再バランスの停止*] を選択します。</block>
+  <block id="e1c8bb61c19d6ae0db6ae5e69616299c" category="list-text">再バランスの停止ダイアログで、「停止」を選択します。</block>
+  <block id="dacae3a3d22c24a7e5e2a28664e1043d" category="paragraph">ボリュームの再バランス操作が停止し、アクティブなボリュームの移動が中止されます。</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
 </blocks>
