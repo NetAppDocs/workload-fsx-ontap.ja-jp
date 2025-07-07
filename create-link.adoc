@@ -112,7 +112,7 @@ CloudFormationを使用して、ワークロードファクトリ内のリンク
 
 .. *リンクの権限*: リンクの権限について、次のいずれかのオプションを選択します。
 +
-*** *自動*: このオプションを選択すると、AWS CloudFormation または Terraform コードによって Lambda アクセス許可ポリシーと実行ロールが自動的に作成されます。
+*** *自動*: このオプションを選択すると、AWS CloudFormation コードによって Lambda アクセス許可ポリシーと実行ロールが自動的に作成されます。
 *** *ユーザー指定*: 指定したLambda実行ロールとそれに紐付けられたポリシーをLambdaリンクに割り当てるには、このオプションを選択します。Lambdaには以下の権限が必要です。 `secretsmanager:GetSecretValue` AWS Secrets Manager を有効にした場合にのみ、権限が必要です。
 +
 [source, json]

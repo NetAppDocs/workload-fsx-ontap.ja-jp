@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rebalance-volume.html 
 keywords: rebalance capacity, volume capacity, redistribute capacity 
-summary: ボリュームの容量をチェックしてリバランシングし、時間の経過とともに不均衡が生じないようにします。 
+summary: 時間の経過とともに不均衡が生じるのを避けるために、ボリューム容量をチェックして再調整します。 
 ---
-= ボリュームの容量のチェックとリバランシング
+= ボリューム容量の確認と再調整
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

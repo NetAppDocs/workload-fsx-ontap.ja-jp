@@ -677,7 +677,6 @@
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理と監視</block>
   <block id="8cf9dbe17cb44a10f0622b63961c131d" category="sidebar">ボリューム管理</block>
   <block id="56994f1db86bfe709cbe47f96bde566f" category="sidebar">ボリュームの自動拡張の編集</block>
-  <block id="be6125857b11bdb69d1f89bf69787f48" category="sidebar">ボリューム容量のリバランシング</block>
   <block id="28b0bfb965f113c41530116951bfce50" category="sidebar">ファイルシステム管理</block>
   <block id="ff117b5e42f4a60dd5b7859999c4f2bd" category="sidebar">容量の自動管理を有効にする</block>
   <block id="c7ad4dd9b2ecb508f1366110b020e001" category="sidebar">fsxadminパスワードのリセット</block>
@@ -1410,8 +1409,6 @@
   <block id="a79cee1f678331ce4a5e786550999b02" category="paragraph">関係が再開され、ステータスが「Replicated」と表示されます。</block>
   <block id="26da52f61184b82e14aa7b1fa701a979" category="paragraph">自動プロビジョニングされるIOPSは、GiBあたり3つのIOPSとして計算されます。</block>
   <block id="924b3daa7ecef370ff9a603b3208772b" category="paragraph">IOPSを手動でプロビジョニングした場合は、前にIOPSを増やしなければならないことがあり<block ref="94a3285243f3705d6ad038b61125cb2f" category="inline-link-macro-rx"></block>ます。</block>
-  <block id="3a3c8188eae554af0e7f07bfef2e124b" category="summary">ボリュームの容量をチェックしてリバランシングし、時間の経過とともに不均衡が生じないようにします。</block>
-  <block id="8083bd6761abe4735ad26f9c18899032" category="doc">ボリュームの容量のチェックとリバランシング</block>
   <block id="04533b4edf31c61772ef483585fb29cf" category="paragraph">FlexGroupボリュームの容量のバランスの確認には、コンスティチュエントの現在のレイアウトの評価も含まれます。ボリュームの容量をリバランシングすると、BlueXP  ワークロードの工場では、偶数のコンスティチュエントで構成される新しいコンスティチュエントレイアウトが設計され、すべてのHAペアにデータが均等に分散されます。サービスは再バランス計画を実行し、それによって読み取りと書き込みの処理が改善されます。</block>
   <block id="eeaecacdda76be13c8594ef17a7c395c" category="list-text">FlexGroupボリュームのバランスは、2つ以上のHAペアで構成されたスケールアウト環境を使用するFSx for ONTAPファイルシステムでのみ使用できます。</block>
   <block id="a0c24c81835ca446fe958b4abdb6c08c" category="list-text">[Volumes]タブで、テーブルの上部にある*[Check FlexGroup balance]*を選択します。</block>
@@ -1932,18 +1929,13 @@
   <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
   <block id="5c44c7d986372ccb1d679985b5416b64" category="section-title">リンク作成中にIAM実行ロールと権限を管理する</block>
   <block id="43f8bec3c8d83ff27c8f5d629cd49d4d" category="paragraph">ワークロードファクトリーコンソールでリンクを作成する際に、IAM 実行ロールとそれに紐付けられた権限ポリシーを管理できるようになりました。リンクは、ワークロードファクトリーアカウントと 1 つ以上の FSx for ONTAP ファイルシステム間の接続を確立します。IAM実行ロールとリンク権限の割り当てには、自動割り当てとユーザー指定の 2 つのオプションがあります。ワークロードファクトリーで実行ロールとそれに紐付けられた権限ポリシーを管理することで、サードパーティ製のコードを使用する必要がなくなります。</block>
-  <block id="2cb3ea55d484ee81bd75e230c32b7fcd" category="paragraph">第2世代のFSx for ONTAPファイルシステムがデフォルトのデプロイメントタイプです。リージョンが第2世代のFSx for ONTAPファイルシステムをサポートしていない場合、デプロイメントタイプは第1世代に切り替わります。</block>
   <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">この構成は、高パフォーマンスのワークロード、またはワークロードが小さく開始して 72 GB/秒のスループットと 240 万 IOPS まで段階的にスケールアウトする場合に推奨されます。</block>
   <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">複数のアベイラビリティゾーン（マルチAZ）の導入：アベイラビリティゾーンが使用できない場合でも、データの継続的可用性を提供します。Multi-AZファイルシステムは、共有ONTAPファイルデータの高可用性を必要とし、複数のアベイラビリティゾーンにわたるレプリケーション機能を備えたストレージを必要とする、ビジネスクリティカルな本番ワークロード向けに設計されています。</block>
   <block id="fc22ff32bfac4486f50da9af2033830e" category="paragraph">この単一の HA ペア構成は、最大 6 GB/秒のスループットまたは 200,000 IOPS を必要とするワークロードに推奨されます。</block>
   <block id="87839b96284704d104c8e445d0cfb887" category="list-text">第 1 世代の展開では、ファイル システムの作成後に容量を減らすことはできません。</block>
   <block id="8d4ad9a0aaca41b1aa7122cb909588a7" category="list-text">第 2 世代の展開では、ファイル システムの作成後に容量を増やすことができます。</block>
-  <block id="a2841b4c7bc0c058832e81b45f756892" category="list-text">*展開タイプ*: 展開タイプとファイル システムの世代を選択します。</block>
-  <block id="d790be978976d563ba38a969cce78e04" category="paragraph">*ファイルシステム世代*: 次のいずれかを選択します。** *第 2 世代*: この構成は、高パフォーマンスのワークロード、またはワークロードを小規模から開始して段階的に 72 GB/秒のスループットと 240 万 IOPS までスケールアウトする場合に推奨されます。** *第 1 世代*: この構成は、最大 4 GB/秒または 160,000 IOPS を必要とするワークロードに最適です。第 1 世代のファイルシステムでは、容量の増加のみが可能です。</block>
-  <block id="0db3110a95d1dfd82b55d5dde656871c" category="paragraph">+ 第2世代ファイルシステムの利用可能性は、選択したリージョンによって異なります。選択したリージョンで第2世代FSx for ONTAPファイルシステムがサポートされていない場合、デプロイメントタイプは第1世代に切り替わります。</block>
   <block id="5ee057335585da70af1caca368e4e422" category="list-text">*第2世代*：この単一HAペア構成は、最大6GB/秒のスループットまたは200,000IOPSを必要とするワークロードに推奨されます。マルチAZおよび第2世代ファイルシステムでは、ワークロードの需要に合わせて容量を増減できます。</block>
   <block id="272021095e67d1fdf73f94aa211e4e56" category="list-text">*第一世代*：この構成は、最大4GB/秒または160,000IOPSを必要とするワークロードに最適です。第一世代のファイルシステムでは、容量の増加のみが可能です。</block>
-  <block id="912e83b52cf2a4421217bf96185e618a" category="paragraph">第2世代ファイルシステムの利用可能性は、選択したリージョンによって異なります。選択したリージョンで第2世代FSx for ONTAPファイルシステムがサポートされていない場合、デプロイメントタイプは第1世代に切り替わります。</block>
   <block id="7ef603b4e7f8efb6252e42ef0745f9cc" category="list-text">第 2 世代の展開では、容量を調整できます。</block>
   <block id="6eb76be6a5409fb6f547e3cf3944cfe6" category="list-text">*HAペアあたりのスループット容量*：HAペアの数あたりのスループット容量を選択します。第一世代のファイルシステムは、1つのHAペアのみをサポートします。</block>
   <block id="ee6e43b0904c4672da5651009001b259" category="list-text">*プロビジョニングされた IOPS*: 次のいずれかのオプションを選択します。</block>
@@ -1951,7 +1943,6 @@
   <block id="080138c9fde9abc63b7003839106198b" category="list-text">*ユーザープロビジョニング*: ユーザープロビジョニングの場合は、IOPS 値を入力します。</block>
   <block id="7392fd7ce1aac825ec2bdccdf93b5ad8" category="paragraph">このワークフローでリンクを作成するには、自動または手動の 2 つのオプションがあります。リンクを作成するには、AWSアカウントでAWS CloudFormationスタックを起動する必要があります。</block>
   <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*リンクの権限*: リンクの権限について、次のいずれかのオプションを選択します。</block>
-  <block id="4c0e4494d278c08e2a1d6707604575a3" category="list-text">*自動*: このオプションを選択すると、AWS CloudFormation または Terraform コードによって Lambda アクセス許可ポリシーと実行ロールが自動的に作成されます。</block>
   <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*ユーザー指定*: 指定したLambda実行ロールとそれに紐付けられたポリシーをLambdaリンクに割り当てるには、このオプションを選択します。Lambdaには以下の権限が必要です。<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager を有効にした場合にのみ、権限が必要です。</block>
   <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">テキストボックスに Lambda 実行ロール ARN を入力します。</block>
   <block id="e151c7c26f691694d417720f8986d3fa" category="list-text">*リンク登録*: ドロップダウン矢印を選択して、AWS CloudFormation サービスから、または Terraform を使用してリンクを登録する方法の手順を展開します。指示に従ってください。</block>
@@ -2019,4 +2010,11 @@
   <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">このオプションでは、AWS CloudFormationからリンクのARNを抽出し、ここにレポートします。Workload Factoryは手動でリンクを登録します。</block>
   <block id="80b014e5654af87ea5edcdf6ec223a6d" category="list-text">*自動*: このオプションを選択すると、AWS CloudFormation コードによって Lambda アクセス許可ポリシーと実行ロールが自動的に作成されます。</block>
   <block id="ff1dfe8b36206663d4bf870113dc19d6" category="paragraph">ボリュームのバランスが崩れた場合は、 <block ref="ef2b4a1f9f61a730aafc8bb66fd04b9b" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="1abe6434c0a72292080ce57490bb16d1" category="paragraph">BlueXP ワークロード ファクトリーを使用すると、第 1 世代および第 2 世代の FSx for ONTAP ファイル システムを作成し、ボリュームと追加のデータ サービスを追加および管理できます。</block>
+  <block id="89733971c4e3e5f45999d2907d6d1c43" category="paragraph">選択したリージョンが第 2 世代 FSx for ONTAP ファイル システムをサポートしていない場合を除き、第 2 世代 FSx for ONTAP ファイル システムは、クイック作成のデフォルトのデプロイメント タイプになります。</block>
+  <block id="9f9382d36e2904b74545777af65bb3d2" category="list-text">*展開タイプ*: 展開タイプとファイル システムの世代を選択します。第 2 世代のファイル システムを利用できるかどうかは、選択したリージョンによって異なります。選択したリージョンで第2世代FSx for ONTAPファイルシステムがサポートされていない場合、デプロイメントタイプは第1世代に切り替わります。</block>
+  <block id="ad25ffa35c681232ceeec02144315aa5" category="paragraph">*ファイルシステムの生成*: 次のいずれかを選択します。</block>
+  <block id="19f3a3d53bb0ae9a377ecb1e961d2155" category="list-text">*第 2 世代*: この構成は、高パフォーマンスのワークロード、またはワークロードが小さく開始されて 72 GB/秒のスループットと 240 万 IOPS まで段階的にスケールアウトする場合に推奨されます。</block>
+  <block id="2af62906cede15164d81a343aa2da6a4" category="summary">時間の経過とともに不均衡が生じるのを避けるために、ボリューム容量をチェックして再調整します。</block>
+  <block id="f778d4dac2542cbef9605e3e41c11ba2" category="doc">ボリューム容量の確認と再調整</block>
 </blocks>

@@ -102,7 +102,7 @@ sidebar:
         url: "/manage-immutable-files.html"
       - title: ボリュームタグを管理します
         url: "/manage-volume-tags.html"
-      - title: ボリューム容量のリバランシング
+      - title: ボリューム容量の再調整
         url: "/rebalance-volume.html"
       - title: 階層化ポリシーを変更する
         url: "/change-tiering-policy.html"
