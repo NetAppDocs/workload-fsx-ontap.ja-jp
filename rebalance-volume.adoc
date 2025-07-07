@@ -61,7 +61,7 @@ FSx for ONTAP ファイル システム内の FlexVol または FlexGroup ボリ
 ** FlexGroupボリューム
 ** FlexVolボリューム
 +
-ボリュームのバランスが崩れた場合は、 <<Rebalance a volume,リバランシング>> 。
+ボリュームのバランスが崩れた場合は、 <<ボリューム容量の再調整,リバランシング>> 。
 
 
 

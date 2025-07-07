@@ -1929,13 +1929,9 @@
   <block id="6250cd311debe5758acc69f81921ab78" category="paragraph">ワークロードファクトリーは、FSx for ONTAP システム間で不変ボリュームを複製し、重要なデータを誤削除やランサムウェアなどの悪意のある攻撃から保護します。複製先のボリュームとそのホストファイルシステムは不変（ロック）状態となり、保持期間が終了するまで、複製先のファイルシステム内のデータは変更または削除できません。</block>
   <block id="b6fc33d7434bb860ad528753113881b1" category="inline-link-macro">レプリケーション関係を作成する方法を学ぶ</block>
   <block id="d3dbddfb353eaaa957947efb04ca7013" category="paragraph"><block ref="d3dbddfb353eaaa957947efb04ca7013" category="inline-link-macro-rx"></block></block>
-  <block id="d836bf4f72557e9399ce062e72ef15f6" category="section-title">リンク作成の機能強化</block>
-  <block id="1f8ca754f0193efb8fdc1c63a4d96672" category="paragraph">ワークロード ファクトリ コンソールのリンク作成プロセスに次の機能強化が加えられました。</block>
   <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
   <block id="5c44c7d986372ccb1d679985b5416b64" category="section-title">リンク作成中にIAM実行ロールと権限を管理する</block>
   <block id="43f8bec3c8d83ff27c8f5d629cd49d4d" category="paragraph">ワークロードファクトリーコンソールでリンクを作成する際に、IAM 実行ロールとそれに紐付けられた権限ポリシーを管理できるようになりました。リンクは、ワークロードファクトリーアカウントと 1 つ以上の FSx for ONTAP ファイルシステム間の接続を確立します。IAM実行ロールとリンク権限の割り当てには、自動割り当てとユーザー指定の 2 つのオプションがあります。ワークロードファクトリーで実行ロールとそれに紐付けられた権限ポリシーを管理することで、サードパーティ製のコードを使用する必要がなくなります。</block>
-  <block id="f83708b425052a7f19c02dfd5c3d0688" category="section-title">リンク作成のための Terraform サポート</block>
-  <block id="d993aa63b5e96ec8db4090bd87d5c850" category="paragraph">Codebox から Terraform を使用して、FSx for ONTAP ファイルシステムに関連付けるリンクを作成できるようになりました。この機能は、リンクを手動で作成するユーザー向けです。</block>
   <block id="2cb3ea55d484ee81bd75e230c32b7fcd" category="paragraph">第2世代のFSx for ONTAPファイルシステムがデフォルトのデプロイメントタイプです。リージョンが第2世代のFSx for ONTAPファイルシステムをサポートしていない場合、デプロイメントタイプは第1世代に切り替わります。</block>
   <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">この構成は、高パフォーマンスのワークロード、またはワークロードが小さく開始して 72 GB/秒のスループットと 240 万 IOPS まで段階的にスケールアウトする場合に推奨されます。</block>
   <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">複数のアベイラビリティゾーン（マルチAZ）の導入：アベイラビリティゾーンが使用できない場合でも、データの継続的可用性を提供します。Multi-AZファイルシステムは、共有ONTAPファイルデータの高可用性を必要とし、複数のアベイラビリティゾーンにわたるレプリケーション機能を備えたストレージを必要とする、ビジネスクリティカルな本番ワークロード向けに設計されています。</block>
@@ -1954,12 +1950,10 @@
   <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*自動*: 自動の場合、作成された GiB ごとに 3 IOPS が追加されます。</block>
   <block id="080138c9fde9abc63b7003839106198b" category="list-text">*ユーザープロビジョニング*: ユーザープロビジョニングの場合は、IOPS 値を入力します。</block>
   <block id="7392fd7ce1aac825ec2bdccdf93b5ad8" category="paragraph">このワークフローでリンクを作成するには、自動または手動の 2 つのオプションがあります。リンクを作成するには、AWSアカウントでAWS CloudFormationスタックを起動する必要があります。</block>
-  <block id="228b634c3bcbb5ddb0e529d6144522f7" category="list-text">手動：Codebox の CloudFormation または Terraform を使用して手動で登録し、リンクを作成します。コードは保持されるため、操作を完了するまでの時間が長くなります。これは、リンク作成を完了するために必要な権限を最初に付与する必要があるセキュリティやDevOpsなど、さまざまなチームと連携する場合に便利です。</block>
   <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*リンクの権限*: リンクの権限について、次のいずれかのオプションを選択します。</block>
   <block id="4c0e4494d278c08e2a1d6707604575a3" category="list-text">*自動*: このオプションを選択すると、AWS CloudFormation または Terraform コードによって Lambda アクセス許可ポリシーと実行ロールが自動的に作成されます。</block>
   <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*ユーザー指定*: 指定したLambda実行ロールとそれに紐付けられたポリシーをLambdaリンクに割り当てるには、このオプションを選択します。Lambdaには以下の権限が必要です。<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager を有効にした場合にのみ、権限が必要です。</block>
   <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">テキストボックスに Lambda 実行ロール ARN を入力します。</block>
-  <block id="cc5c21be990be307574e5fa4cb773c44" category="paragraph">このオプションでは、リンクのARNを抽出し、ここで報告します。CodeboxWorkload Factoryは手動でリンクを登録します。の2つのInfrastructure-as-Code（IaC）ツール（CloudFormationまたはTerraform）を使用してリンクを作成できます。</block>
   <block id="e151c7c26f691694d417720f8986d3fa" category="list-text">*リンク登録*: ドロップダウン矢印を選択して、AWS CloudFormation サービスから、または Terraform を使用してリンクを登録する方法の手順を展開します。指示に従ってください。</block>
   <block id="38adbad92c37166c4ce64da1eb51513b" category="inline-link-macro">ボリュームを作成する</block>
   <block id="32c902b48618ff09c74311dc0eadacf8" category="paragraph">不変ファイルを含むソースボリュームを複製する場合、ターゲットボリュームとファイルシステムは、ソースボリューム内の不変ファイルの保存期間が終了するまでロックされます。不変ファイル機能は、 <block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block> FSx for ONTAP ファイルシステム用。</block>
@@ -1993,7 +1987,6 @@
   <block id="45e5ba6ed73eebcebdfec708c137cf22" category="list-text">*FSx for ONTAP* タブで、再バランス調整するボリュームを含むファイルシステムの 3 つのドット メニューを選択し、*管理* を選択します。</block>
   <block id="267c95738d47a09a9b509ffdd48c24b0" category="list-text">[ボリューム] タブで、表の上部にある [ボリューム バランスを確認] を選択します。</block>
   <block id="c9784b38284a9b2506bc92daf5caada4" category="list-text">ボリューム残高ウィンドウで、次の残高ステータスを確認します。</block>
-  <block id="9a3d2d6c726db403f30b520ca6d8d906" category="paragraph">ボリュームのバランスが崩れた場合は、 <block ref="25db360314c219183817d2ed1029436b" category="inline-xref-macro-rx"></block> 。</block>
   <block id="ba51913935bc9e57b04a0e373c7e87f1" category="section-title">ボリューム容量の再調整</block>
   <block id="81ac132d7a72ac8930eac72f996dc39f" category="paragraph">負荷が分散されていない1つ以上のボリュームをリバランシングします。</block>
   <block id="3df496910d7ade34c46b7c3c46f516a9" category="inline-xref">リバランスを停止する</block>
@@ -2022,4 +2015,8 @@
   <block id="e1c8bb61c19d6ae0db6ae5e69616299c" category="list-text">再バランスの停止ダイアログで、「停止」を選択します。</block>
   <block id="dacae3a3d22c24a7e5e2a28664e1043d" category="paragraph">ボリュームの再バランス操作が停止し、アクティブなボリュームの移動が中止されます。</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
+  <block id="b1a94bb6f0b93b26134ff88823a75e78" category="list-text">手動（Manually）：手動登録によるリンクを作成します。CloudFormationコードは、操作を完了するためのより多くの時間を与えます。これは、リンク作成を完了するために必要な権限を最初に付与する必要があるセキュリティやDevOpsなど、さまざまなチームと連携する場合に便利です。</block>
+  <block id="9d1d72e4ac9c59d5a464cfdbfae095f3" category="paragraph">このオプションでは、AWS CloudFormationからリンクのARNを抽出し、ここにレポートします。Workload Factoryは手動でリンクを登録します。</block>
+  <block id="80b014e5654af87ea5edcdf6ec223a6d" category="list-text">*自動*: このオプションを選択すると、AWS CloudFormation コードによって Lambda アクセス許可ポリシーと実行ロールが自動的に作成されます。</block>
+  <block id="ff1dfe8b36206663d4bf870113dc19d6" category="paragraph">ボリュームのバランスが崩れた場合は、 <block ref="ef2b4a1f9f61a730aafc8bb66fd04b9b" category="inline-xref-macro-rx"></block> 。</block>
 </blocks>
