@@ -1691,9 +1691,6 @@
   <block id="49441c63fc169d06940470ec9c0e4b1f" category="paragraph">オンプレミスのONTAPクラスタがレプリケーション関係のターゲットである場合、長期保持用にSnapshotを変更することはできません。</block>
   <block id="820e39a5de0a231b1bdee7ce11de7c77" category="summary">BlueXP  Workload Factory for Databasesは、Microsoft SQL Serverの構成をスキャンし、優れた運用性の実現に役立つ分析情報と推奨事項を提供します。</block>
   <block id="cf6372133f01401bdd9aefc7bead4b10" category="doc">適切に設計されたファイルシステム構成の実装</block>
-  <block id="3a23bb090bb2219c1febb97610b3122a" category="paragraph">構成分析のインサイトと推奨事項を使用して、BlueXP  ワークロードファクトリを活用し、FSx for ONTAPファイルシステムのベストプラクティスを実装します。信頼性、セキュリティ、効率性、パフォーマンス、コストが最適化されていないシステムでは、問題を簡単に見つけて、アーキテクチャを改善するための措置を講じることができます。</block>
-  <block id="7933cf24268e185cf9acf9afb0edcb26" category="paragraph">BlueXP  は、Amazon FSx for NetApp ONTAPのファイルシステム導入構成を日 々 分析しています。日次分析では、ファイルシステムがベストプラクティスに準拠するように構成の問題を自動的に修正するためのオプションとともに、分析情報と推奨事項が提供されます。</block>
-  <block id="0ccac1a46342dcb95d1b631638c4f99e" category="paragraph">ファイルシステムの構成の問題に関する推奨事項を確認し、ワークロードファクトリコンソール内のストレージインベントリから問題を修正することができます。</block>
   <block id="681f8e0d48f8a5609d29d038dfdb7354" category="list-text">分析対象</block>
   <block id="ee519805bc36a437f398c40154b9f4f0" category="list-text">Workload Factoryは、FSx for ONTAPファイルシステムの次の構成について、適切に設計されたステータスを分析します。</block>
   <block id="9d0e9f5c0aa1e38cfaa8e64e155bc5a8" category="list-text">SSD容量しきい値</block>
@@ -2017,4 +2014,10 @@
   <block id="19f3a3d53bb0ae9a377ecb1e961d2155" category="list-text">*第 2 世代*: この構成は、高パフォーマンスのワークロード、またはワークロードが小さく開始されて 72 GB/秒のスループットと 240 万 IOPS まで段階的にスケールアウトする場合に推奨されます。</block>
   <block id="2af62906cede15164d81a343aa2da6a4" category="summary">時間の経過とともに不均衡が生じるのを避けるために、ボリューム容量をチェックして再調整します。</block>
   <block id="f778d4dac2542cbef9605e3e41c11ba2" category="doc">ボリューム容量の確認と再調整</block>
+  <block id="c271fb4528ce236e85fc9cf102efa8cf" category="paragraph">構成分析の洞察と推奨事項を活用し、ワークロードファクトリーを活用して、FSx for ONTAPファイルシステムにベストプラクティスを実装できます。Well-Architected ステータスを簡単に確認し、構成上の問題点を把握し、信頼性、セキュリティ、効率性、パフォーマンス、コストが最適化されていないシステムのアーキテクチャを改善するための対策を講じることができます。</block>
+  <block id="2bab4675fc931e32d65c62820186d2e3" category="inline-link-macro">ワークロード ファクトリーの構成分析と Well-Architected ステータスについて学習します。</block>
+  <block id="827070c9ee124a138455bb1007f526f3" category="paragraph"><block ref="827070c9ee124a138455bb1007f526f3" category="inline-link-macro-rx"></block></block>
+  <block id="61e6079323dfdf994259df13eb1f5bea" category="paragraph">ワークロードファクトリーは、Amazon FSx for NetApp ONTAPファイルシステムのデプロイメント構成を毎日分析します。この毎日の分析では、Well-Architected ステータス、インサイト、推奨事項に加え、ファイルシステムがベストプラクティスに準拠するように構成の問題を自動的に修正するためのオプションが提供されます。</block>
+  <block id="9fa762c3e56dd52eab735970b481c743" category="paragraph">ワークロード ファクトリー コンソール内のストレージ インベントリから、ファイル システムの構成の問題に関する推奨事項を確認し、問題を修正するオプションがあります。</block>
+  <block id="bfebf248126ee0c8c192d7442b03e1a1" category="sidebar">FSx for ONTAPファイルシステムの Well-Architected ステータスを表示します</block>
 </blocks>

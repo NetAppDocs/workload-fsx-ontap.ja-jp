@@ -18,6 +18,8 @@ indexpage:
       url: "/explore-savings.html"
     - title: FSx for ONTAPファイルシステムの作成
       url: "/create-file-system.html"
+    - title: FSx for ONTAPファイルシステムの Well-Architected ステータスを表示します
+      url: "/improve-configurations.html"
     - title: FSx for ONTAPボリュームの作成
       url: "/create-volume.html"
     - title: データを保護
