@@ -11,16 +11,16 @@ summary: リンクを作成および管理して、BlueXP  ワークロード�
 
 
 [role="lead"]
-高度なONTAP管理操作を実行するには、ワークロードファクトリアカウントと1つ以上のFSx for ONTAPファイルシステム間の接続を確立する必要があります。接続の確立には、新規および既存のLambdaリンクの関連付け、およびリンクの認証が含まれます。リンク関連付けを使用すると、AWS FSx for ONTAP APIでは利用できない特定の機能をFSx for ONTAPファイルシステムから直接監視および管理できます。
+高度なONTAP管理操作を実行するには、ワークロード ファクトリー アカウントと 1 つ以上の FSx for ONTAPファイル システム間の接続を設定します。これには、新しい Lambda リンクと既存の Lambda リンクの関連付けと、リンクの認証が含まれます。リンクの関連付けにより、 Amazon FSx for ONTAP API 経由では利用できない特定の機能を FSx for ONTAPファイルシステムから直接監視および管理できます。
 
 link:links-overview.html["リンクの詳細"]です。
 
 .タスクの内容
 リンクはAWS Lambdaを利用してイベントに応じてコードを実行し、そのコードに必要なコンピューティングリソースを自動的に管理します。作成したリンクはNetAppアカウントの一部であり、AWSアカウントに関連付けられています。
 
-FSx for ONTAPファイルシステムを定義する際に、アカウントにリンクを作成できます。このリンクはそのファイルシステムに使用され、他のFSx for ONTAPファイルシステムでも使用できます。後でファイルシステムにリンクを関連付けることもできます。
+FSx for ONTAPファイルシステムを定義するときに、アカウントにリンクを作成できます。リンクはそのファイルシステムに使用され、他の FSx for ONTAPファイルシステムにも使用できます。後でファイル システムのリンクを関連付けることもできます。
 
-リンクには認証が必要です。Workload Factoryのクレデンシャルサービスに保存されているクレデンシャル、またはAWS Secrets Managerに保存されているクレデンシャルを使用して、リンクを認証できます。1つのリンクでサポートされる認証方式は1つだけです。たとえば、[Link authentication with AWS Secrets Manager]を選択した場合、あとで認証方法を変更することはできません。
+リンクには認証が必要です。ワークロードファクトリー認証情報サービスに保存されている認証情報、または AWS Secrets Manager に保存されている認証情報を使用してリンクを認証できます。リンクごとに 1 つの認証方法のみがサポートされます。たとえば、AWS Secrets Manager を使用したリンク認証を選択した場合、後で認証方法を変更することはできません。
 
 
 NOTE: コネクタを使用する場合、AWS Secrets Managerはサポートされません。
@@ -33,7 +33,7 @@ NOTE: コネクタを使用する場合、AWS Secrets Managerはサポートさ�
 
 このワークフローでリンクを作成するには、自動または手動の 2 つのオプションがあります。リンクを作成するには、AWSアカウントでAWS CloudFormationスタックを起動する必要があります。
 
-* Automatically：Workload Factory経由で自動登録されたリンクを作成します。自動的に作成されたリンクには、ワークロードファクトリオートメーション用のトークンが必要であり、CloudFormationコードは短命です。最大6時間しか使用できません。
+* 自動: ワークロード ファクトリを介して自動登録されたリンクを作成します。これには、ワークロード ファクトリー自動化用のトークンが必要であり、CloudFormation コードの有効期間は短く、最大 6 時間使用できます。
 * 手動（Manually）：手動登録によるリンクを作成します。CloudFormationコードは、操作を完了するためのより多くの時間を与えます。これは、リンク作成を完了するために必要な権限を最初に付与する必要があるセキュリティやDevOpsなど、さまざまなチームと連携する場合に便利です。
 
 
@@ -102,7 +102,7 @@ CloudFormationを使用して、ワークロードファクトリ内のリンク
 .. *リンク名*：このリンクに使用する名前を入力します。名前はアカウント内で一意である必要があります。
 .. * AWS Secrets Manager *：オプション。Workload FactoryがAWS Secrets ManagerからFSx for ONTAPアクセスクレデンシャルを取得できるようにします。
 +
-リンク配置スタックは、次のデフォルトのシークレットマネージャARN正規表現をLambda権限ポリシーに追加します。 `arn:aws:secretsmanager:<link_deployment_region>:<link_deployment_account_id>:secret:FSxSecret*`
+リンク デプロイメント スタックは、次のデフォルトのシークレット マネージャー ARN 正規表現を Lambda アクセス許可ポリシーに自動的に追加します。 `arn:aws:secretsmanager:<link_deployment_region>:<link_deployment_account_id>:secret:FSxSecret*` 。
 
 +
 デフォルトの権限に合わせてシークレットを作成するか、リンクポリシーにカスタムの権限を割り当てることができます。
@@ -131,13 +131,13 @@ CloudFormationを使用して、ワークロードファクトリ内のリンク
 
 .. *タグ*:必要に応じて、リソースをより簡単に分類できるように、このリンクに関連付けるタグを追加します。たとえば、FSx for ONTAPファイルシステムでこのリンクが使用されていることを示すタグを追加できます。
 +
-AWSアカウントと、アカウント、場所、セキュリティグループの追加情報は、FSx for ONTAPファイルシステムに基づいて自動的に取得されます。
+ワークロードファクトリーは、FSx for ONTAPファイルシステムに基づいて、AWS アカウント、場所、セキュリティグループを自動的に取得します。
 
 
 
 . 「 * Create * 」を選択します。
 +
-[Redirect to CloudFormation]ダイアログが表示され、AWS CloudFormationサービスからリンクを作成する方法が説明されます。
+「CloudFormation にリダイレクト」ダイアログが表示され、AWS CloudFormation サービスからリンクを作成する方法が説明されます。
 
 . [続行]*を選択してAWS管理コンソールを開き、このFSx for ONTAPファイルシステムのAWSアカウントにログインします。
 . [Quick create stack]ページの[Capabilities]で、*[I acknowledge that AWS CloudFormation might create IAM resources]*を選択します。
@@ -153,7 +153,7 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 ----
 . [スタックの作成]*を選択し、*[続行]*を選択します。
 +
-リンクの作成ステータスは[Events]ページで監視できます。これには5分以内にかかります。
+リンク作成ステータスはイベント ページで監視できます。これには 5 分もかかりません。
 
 . ワークロードファクトリのインターフェイスに戻ると、リンクがFSx for ONTAPファイルシステムに関連付けられていることがわかります。
 
@@ -173,7 +173,7 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 .. *リンク名*：このリンクに使用する名前を入力します。名前はアカウント内で一意である必要があります。
 .. * AWS Secrets Manager *：オプション。Workload FactoryがAWS Secrets ManagerからFSx for ONTAPアクセスクレデンシャルを取得できるようにします。
 +
-リンク配置スタックは、次のデフォルトのシークレットマネージャARN正規表現をLambda権限ポリシーに追加します。 `arn:aws:secretsmanager:<link_deployment_region>:<link_deployment_account_id>:secret:FSxSecret*`
+リンク デプロイメント スタックは、次のデフォルトのシークレット マネージャー ARN 正規表現を Lambda アクセス許可ポリシーに自動的に追加します。 `arn:aws:secretsmanager:<link_deployment_region>:<link_deployment_account_id>:secret:FSxSecret*` 。
 
 +
 デフォルトの権限に合わせてシークレットを作成するか、リンクポリシーにカスタムの権限を割り当てることができます。
@@ -215,12 +215,12 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 +
 スタックが正常に作成されたら、テキストボックスにLambda ARNを貼り付けます。
 
-.. AWSアカウントと、アカウント、場所、セキュリティグループの追加情報は、FSx for ONTAPファイルシステムに基づいて自動的に取得されます。
+.. ワークロードファクトリーは、FSx for ONTAPファイルシステムに基づいて、AWS アカウント、場所、セキュリティグループを自動的に取得します。
 
 
 . 「 * Create * 」を選択します。
 +
-リンクの作成ステータスは[Events]ページで監視できます。これには5分以内にかかります。
+リンク作成ステータスはイベント ページで監視できます。これには 5 分もかかりません。
 
 . ワークロードファクトリのインターフェイスに戻ると、リンクがFSx for ONTAPファイルシステムに関連付けられていることがわかります。
 
@@ -228,7 +228,7 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 --
 ====
 .結果
-作成したリンクはFSx for ONTAPファイルシステムに関連付けられます。高度なONTAP処理を実行できます。
+ワークロード ファクトリーは、リンクを FSx for ONTAPファイル システムに関連付けます。高度なONTAP操作を実行できます。
 
 
 
@@ -246,12 +246,16 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 ** Workload Factory：パスワードを2回入力します。
 ** AWS Secrets Manager：シークレットARNを入力します。
 +
-シークレットARNには、次のキー有効なペアを含める必要があります。
+_filesystemID_ はオプションですが、シークレット ARN に次の有効なキー ペアが含まれていることを確認します。
 
 +
-*** filesystemID = fsx_filesystem_id
-*** ユーザー名 = FSx_user
+*** filesystemID = FSx_filesystem_id (オプション)
+*** ユーザー = FSx_user
 *** password = user_password
++
+
+NOTE: AWS Secrets Manager を使用した認証には、指定した _FSx_user_ または FSx for ONTAPファイルシステムで作成された別のユーザーが必要です。デフォルトのユーザーは `fsxadmin`ユーザーを指定しない場合は、
+
 
 
 
