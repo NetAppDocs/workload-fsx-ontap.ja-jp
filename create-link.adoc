@@ -34,7 +34,7 @@ NOTE: コネクタを使用する場合、AWS Secrets Managerはサポートさ�
 このワークフローでリンクを作成するには、自動または手動の 2 つのオプションがあります。リンクを作成するには、AWSアカウントでAWS CloudFormationスタックを起動する必要があります。
 
 * 自動: ワークロード ファクトリを介して自動登録されたリンクを作成します。これには、ワークロード ファクトリー自動化用のトークンが必要であり、CloudFormation コードの有効期間は短く、最大 6 時間使用できます。
-* 手動（Manually）：手動登録によるリンクを作成します。CloudFormationコードは、操作を完了するためのより多くの時間を与えます。これは、リンク作成を完了するために必要な権限を最初に付与する必要があるセキュリティやDevOpsなど、さまざまなチームと連携する場合に便利です。
+* 手動: Codebox から CloudFormation または Terraform を使用して手動で登録し、リンクを作成します。コードが存続し、操作を完了するための時間が延長されます。これは、セキュリティや DevOps などのさまざまなチームと連携して作業する場合に便利です。これらのチームには、リンクの作成を完了するために必要な権限を最初に付与する必要があります。
 
 
 .開始する前に
@@ -161,14 +161,14 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 --
 .手動で作成
 --
-このオプションでは、AWS CloudFormationからリンクのARNを抽出し、ここにレポートします。Workload Factoryは手動でリンクを登録します。
+Codebox の 2 つの Infrastructure-as-Code (IaC) ツール、CloudFormation または Terraform を使用してリンクを作成できます。このオプションを使用すると、AWS CloudFormation からリンクの ARN を抽出し、ここで報告します。ワークロード ファクトリーがリンクを手動で登録します。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [Storage]で、*[Go to storage inventory]*を選択します。
 . [FSx for ONTAP *]タブで、リンクを関連付けるファイルシステムの3ドットメニューを選択し、*[Associate link]*を選択します。
 . [リンクの関連付け]ダイアログで、*[新しいリンクの作成]*を選択し、*[続行]*を選択します。
-. [Create Link]ページで、次の情報を指定します。
+. [リンクの作成] ページで、コードボックスから CloudFormation または Terraform を選択し、次の情報を入力します。
 +
 .. *リンク名*：このリンクに使用する名前を入力します。名前はアカウント内で一意である必要があります。
 .. * AWS Secrets Manager *：オプション。Workload FactoryがAWS Secrets ManagerからFSx for ONTAPアクセスクレデンシャルを取得できるようにします。
@@ -201,7 +201,7 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 
 
 .. *タグ*:必要に応じて、リソースをより簡単に分類できるように、このリンクに関連付けるタグを追加します。たとえば、FSx for ONTAPファイルシステムでこのリンクが使用されていることを示すタグを追加できます。
-.. *リンク登録*: ドロップダウン矢印を選択して、AWS CloudFormation サービスから、または Terraform を使用してリンクを登録する方法の手順を展開します。指示に従ってください。
+.. *リンクの登録*: リンクの登録方法については、CloudFormation または Terraform を選択し、指示に従います。
 +
 CloudFormationテンプレートを起動すると、Lambdaに3つの権限が付与されます。Workload Factoryでは、リンクの使用時にこれらの権限が使用さ
 

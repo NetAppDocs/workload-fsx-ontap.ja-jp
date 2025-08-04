@@ -109,7 +109,7 @@ sidebar:
         url: "/update-storage-efficiency.html"
       - title: NFS エクスポートポリシーを管理します
         url: "/manage-nfs-export-policy.html"
-      - title: CIFS共有を管理します。
+      - title: SMB/CIFS共有を管理する
         url: "/manage-cifs-share.html"
       - title: クローンボリュームをスプリットする
         url: "/split-cloned-volume.html"
