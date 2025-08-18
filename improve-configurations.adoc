@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: improve-configurations.html 
 keywords: implement best practices, well-architected file system, Amazon FSx for NetApp ONTAP, FSx for ONTAP 
-summary: BlueXP  Workload Factory for Databasesは、Microsoft SQL Serverの構成をスキャンし、優れた運用性の実現に役立つ分析情報と推奨事項を提供します。 
+summary: ワークロードファクトリーは、Amazon FSx for NetApp ONTAP構成をスキャンし、運用効率の向上に役立つ洞察と推奨事項を提供します。 
 ---
 = 適切に設計されたファイルシステム構成の実装
 :allow-uri-read: 
