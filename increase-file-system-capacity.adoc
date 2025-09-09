@@ -1,39 +1,45 @@
 ---
 sidebar: sidebar 
 permalink: increase-file-system-capacity.html 
-keywords: increase capacity, increase file system capacity, increase FSx capacity 
-summary: SSDストレージの使用容量が指定したしきい値を超えた場合は、FSx for ONTAPファイルシステムのSSDストレージ容量を手動で拡張します。 
+keywords: adjust capacity, elastic file system capacity, increase file system capacity, increase FSx capacity, decrease file system capacity, decrease FSx capacity 
+summary: さまざまなアクティブワーキングセットを持つプロジェクトベースのワークロードのニーズを満たすために、FSx for ONTAPファイルシステムの SSD ストレージ容量を手動で調整します。 
 ---
-= BlueXP  ワークロード工場でファイルシステムの容量を増加
+= ワークロードファクトリーでファイルシステムの容量を調整する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-SSDストレージの使用容量が指定したしきい値を超えた場合は、FSx for ONTAPファイルシステムのSSDストレージ容量を手動で拡張します。
+さまざまなアクティブワーキングセットを持つプロジェクトベースのワークロードのニーズを満たすために、FSx for ONTAPファイルシステムのソリッドステートドライブ (SSD) ストレージ容量を手動で調整します。
+
+使用済みの SSD ストレージ容量が指定したしきい値を超えた場合は FSx for ONTAPファイル システムの SSD ストレージ容量を増やし、作業セットが非アクティブな場合は SSD ストレージ容量を減らしてコスト効率を向上させます。
 
 また、ワークロードファクトリがファイルシステムの容量を管理できるようにすることもできますlink:enable-auto-capacity-management.html["容量の自動管理機能を有効にする"]。
 
 .タスクの内容
-ファイルシステムの容量を増やすと、FSx for ONTAPファイルシステムのIOPSに影響します。
+柔軟なファイル システム容量により、ワークロードのニーズに合わせてファイル システムの容量を動的に調整できます。
 
-ファイルシステムの場合、 link:provision-iops.html["IOPSのプロビジョニング"] SSDの容量が1GiB増えるごとにIOPSが3 IOPS増加します。
+ファイルシステムの容量を調整すると、FSx for ONTAPファイルシステムの IOPS に影響します。
+
+自動的にlink:provision-iops.html["IOPSのプロビジョニング"]ファイル システムの場合、SSD 容量が 1 GiB 増加または減少するごとに、IOPS は 3 IOPS 増加または減少します。
 
 手動で実行する場合link:provision-iops.html["IOPSのプロビジョニング"]は、ファイルシステムの容量の増加に対応するためにIOPSの割り当てを増やす必要があります。
 
 SSDのストレージ容量の制限については、AWS FSx for NetApp ONTAPドキュメントのを参照して link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["クォータ"^] ください。
 
 .開始する前に
-ファイルシステムの容量を増やすには、最初に行う必要があります link:enable-auto-capacity-management.html["容量の自動管理を無効にする"]。
+ファイルシステムの容量を調整するには、まずlink:enable-auto-capacity-management.html["容量の自動管理を無効にする"]。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [ストレージ]で、*[ストレージインベントリに移動]*を選択します。
-. FSx for ONTAP *タブで、容量を拡張するファイルシステムの3ドットメニューを選択します。
-. 「 * Manage * 」を選択します。
-. [Information]で、*[Capacity Distribution]*の横にある鉛筆アイコンを選択します。[Capacity Distribution]*行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。
-. [SSDストレージサイズ]ダイアログで、*プロビジョニング済み容量*の数値を入力します。
+. ダッシュボードから*SSD 容量の調整*を選択します。
+. 容量を調整するファイル システムを選択し、[続行] を選択します。
++
+*潜在的な節約*は、容量を減らすための推奨事項です。
+
+. SSD 容量の調整ダイアログで、*プロビジョニングされた容量*の数値を入力します。
 . プロビジョニング済み容量の単位を選択します。
 . * 適用 * を選択します。
 

@@ -53,7 +53,7 @@ sidebar:
       entries:
       - title: データ保護の概要
         url: "/data-protection-overview.html"
-      - title: Snapshotの管理
+      - title: スナップショットを使用する
         entries:
         - title: Snapshot を作成します
           url: "/create-snapshot.html"
@@ -61,15 +61,13 @@ sidebar:
           url: "/create-snapshot-policy.html"
         - title: Snapshotからボリュームをリストアする
           url: "/restore-volume-from-snapshot.html"
-        - title: Snapshotから新しいボリュームを作成する
-          url: "/create-volume-from-snapshot.html"
-      - title: オブジェクトストレージへのバックアップの管理
+      - title: オブジェクトストレージへのバックアップを使用する
         entries:
         - title: 手動バックアップの作成
           url: "/create-backup.html"
         - title: バックアップからボリュームをリストアする
           url: "/restore-from-backup.html"
-      - title: レプリケーションの管理
+      - title: レプリケーションを使用する
         entries:
         - title: レプリケーション関係を作成する
           url: "/create-replication.html"
@@ -145,6 +143,8 @@ sidebar:
           url: "/manage-snapshot-policy.html"
         - title: 長期保持のためのスナップショットの有効化と編集
           url: "/enable-snapshots-long-term.html"
+        - title: Snapshotの管理
+          url: "/manage-snapshots.html"
       - title: バックアップ
         entries:
         - title: FSx for ONTAPのバックアップスケジュールを管理

@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: create-snapshot-policy.html 
 keywords: create 
-summary: BlueXP  ワークロード工場でStorage VM用のカスタムSnapshotポリシーを作成 
+summary: ワークロード ファクトリ内のストレージ VM のカスタム スナップショット ポリシーを作成します。 
 ---
-= BlueXP  ワークロード工場でのStorage VMのSnapshotポリシーの作成
+= ワークロード ファクトリーのストレージ VM のスナップショット ポリシーを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  ワークロード工場でStorage VM用のカスタムSnapshotポリシーを作成Snapshotポリシーは、Storage VMのSnapshotの作成方法を定義します。FSx for ONTAPファイルシステムでは、Storage VMのSnapshotポリシーを作成できます。また、複数のStorage VMでポリシーを共有することもできます。
+ワークロード ファクトリ内のストレージ VM のカスタム スナップショット ポリシーを作成して、スナップショットの作成と保持を管理します。スナップショット ポリシーは、システムがストレージ VM のスナップショットを作成する方法を定義します。 FSx for ONTAPファイル システム内のストレージ VM のスナップショット ポリシーを作成できます。複数のストレージ VM 間でポリシーを共有することもできます。
 
 .タスクの内容
 FSx for ONTAPに組み込まれている3つのスナップショットポリシーとは異なるカスタムスナップショットポリシーを作成できます。
@@ -65,6 +65,3 @@ FSx for ONTAPに組み込まれている3つのスナップショットポリシ
 . * Storage VM間で共有*：デフォルトで有効になっています。有効にすると、Snapshotポリシーがファイルシステム内のすべてのStorage VMで共有されます。単一のStorage VMのSnapshotポリシーを作成する場合は無効にしてください。
 . 「 * Create * 」を選択します。
 
-
-.結果
-Snapshotポリシーが作成されます。
