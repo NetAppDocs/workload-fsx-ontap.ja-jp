@@ -70,9 +70,17 @@ AWSは、ワークロードファクトリではなく、お客様のFSx for ONT
 
 
 
-== サポートされている地域
+== 地域
 
-https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["サポート対象の Amazon リージョンを表示します。"^]
+ワークロード ファクトリーは、FSx for ONTAPがサポートされているすべての商用リージョンでサポートされています。link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["サポート対象の Amazon リージョンを表示します。"^]
+
+次の AWS リージョンはサポートされていません。
+
+* 中国地域
+* GovCloud（米国）リージョン
+* シークレットクラウド
+* トップシークレットクラウド
+
 
 
 

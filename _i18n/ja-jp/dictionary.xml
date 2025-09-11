@@ -450,9 +450,7 @@
   <block id="a5a980f3518b6bdf573ccca8b4570aaa" category="list-text">* Codebox *：FSx for ONTAP操作用のコードビューア、コピーとダウンロード用のコードテンプレート、コードの再利用用の自動カタログを開発者に提供します。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
   <block id="2f00f54e8e91e47bd247b06a51824fb0" category="inline-link-macro">Amazon FSx for NetApp ONTAPの価格設定</block>
-  <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">サポートされている地域</block>
   <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">サポート対象の Amazon リージョンを表示します。</block>
-  <block id="ee9b3af8630059982f4d1dd2fd3834a3" category="paragraph"><block ref="ee9b3af8630059982f4d1dd2fd3834a3" category="inline-link-rx"></block></block>
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">サポートを受ける</block>
   <block id="da444b283df699667b2316206972bdfe" category="paragraph">Amazon FSx for NetApp ONTAP は、AWSファーストパーティの解決策 です。FSx for ONTAPファイルシステム、インフラ、または本サービスを使用する解決策に関する質問やテクニカルサポートの問題については、AWS管理コンソールのサポートセンターを使用してAWSに対するサポートケースをオープンしてください。「 FSX for ONTAP 」サービスと該当するカテゴリを選択します。AWS サポートケースの作成に必要な残りの情報を指定します。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
@@ -2162,7 +2160,6 @@
   <block id="5555c9991f89f798392b8981015a49d6" category="doc">ワークロードファクトリーのスナップショットからボリュームを復元する</block>
   <block id="fedae93e45eef0cf99ae9d3e2dbff802" category="paragraph">ワークロード ファクトリーでは、スナップショットから既存のボリュームまたは新しいボリュームにデータを復元できます。復元操作により、ボリュームに削除されたファイルまたは破損したファイルが含まれている場合に、ポイントインタイムリカバリが可能になります。</block>
   <block id="d53b53fb3880fbcc2120f4ebdcb4b727" category="paragraph">スナップショットから新しいボリュームを作成すると、ボリュームのサイズに関係なく、数秒以内にボリューム全体のコピーが作成されます。新しく作成されたコピーは新しいボリュームを表します。</block>
-  <block id="22509908f6a972a65b5370b282ed646c" category="list-text">ボリューム消費量の増加: スナップショットからボリュームを作成すると、独立したボリュームが 2 つ作成され、両方ともホスト ファイル システムの容量を消費します。この操作を完了するのに十分な容量があることを確認してください。</block>
   <block id="8babf692a891c5060bb678dacf1bb2ad" category="list-text">[スナップショットの管理] ページで、復元するスナップショットの 3 つのドット メニューを選択し、[復元] を選択します。</block>
   <block id="0c5f6f3cf9344efbd61695ffdf90106f" category="list-text">スナップショットからボリュームを復元するダイアログで、次のオプションから選択します。</block>
   <block id="63421d2e7769a33701821702ab1b0be8" category="list-text">*新しいボリュームとして復元*を選択して切り替えます。</block>
@@ -2171,4 +2168,13 @@
   <block id="62486fa65fc31c383ace8989549632ad" category="sidebar">スナップショットを使用する</block>
   <block id="b8d3d1ca4d4975c76eec10109e85c77f" category="sidebar">オブジェクトストレージへのバックアップを使用する</block>
   <block id="fe355a62d144a6a42805c3eb5698310a" category="sidebar">レプリケーションを使用する</block>
+  <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">地域サポート</block>
+  <block id="468469fded9ecf5cf0e132a6daa62d32" category="paragraph">次の AWS リージョンはサポートされていません。</block>
+  <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">中国地域</block>
+  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud（米国）リージョン</block>
+  <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">シークレットクラウド</block>
+  <block id="151ef168e17772f7a361db78a0c86552" category="list-text">トップシークレットクラウド</block>
+  <block id="5948f3347ebc02ebc690227c059661e1" category="section-title">地域</block>
+  <block id="dbd9df55416d4512d3fcb441aced88b3" category="paragraph">ワークロード ファクトリーは、FSx for ONTAPがサポートされているすべての商用リージョンでサポートされています。<block ref="c26e1d6730022abf3c378cf0c0cad7af" category="inline-link-macro-rx"></block></block>
+  <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">次の AWS リージョンはサポートされていません。</block>
 </blocks>
