@@ -2100,7 +2100,6 @@
   <block id="ad8f55b88a50703984e58a23e36e9026" category="inline-image-macro">スナップショットの管理画面を示すスクリーンショット。</block>
   <block id="404a59509c6a806310ecbd1d601e0ee6" category="paragraph"><block ref="404a59509c6a806310ecbd1d601e0ee6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="52574bdc9ce79e7e568096fa39264d72" category="section-title">SSDストレージ容量の減少が可能</block>
-  <block id="0cc6e64eaa35165d8791def1903c483a" category="paragraph">ワークロード ファクトリーは、第 1 世代および第 2 世代のファイル システムのソリッド ステート ドライブ (SSD) 容量の削減をサポートしています。柔軟なファイル システム容量により、ワークロードのニーズに合わせてファイル システムの容量を動的に調整できます。</block>
   <block id="298ae1d1e13ebe1f0f22936b7ea9ce33" category="inline-link-macro">ファイルシステムの容量を調整する</block>
   <block id="6b4be3b501bf6ae8984293c02d4d610b" category="paragraph"><block ref="6b4be3b501bf6ae8984293c02d4d610b" category="inline-link-macro-rx"></block></block>
   <block id="14fc4cc175abaf53d8e3d6a080ba96e8" category="summary">ワークロード ファクトリ内のストレージ VM のカスタム スナップショット ポリシーを作成します。</block>
@@ -2177,4 +2176,6 @@
   <block id="5948f3347ebc02ebc690227c059661e1" category="section-title">地域</block>
   <block id="dbd9df55416d4512d3fcb441aced88b3" category="paragraph">ワークロード ファクトリーは、FSx for ONTAPがサポートされているすべての商用リージョンでサポートされています。<block ref="c26e1d6730022abf3c378cf0c0cad7af" category="inline-link-macro-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">次の AWS リージョンはサポートされていません。</block>
+  <block id="edfbca9622799a953a48987a288fe283" category="paragraph">ワークロード ファクトリーは、第 2 世代ファイル システムのソリッド ステート ドライブ (SSD) 容量の削減をサポートしています。柔軟なファイル システム容量により、ワークロードのニーズに合わせてファイル システムの容量を動的に調整できます。</block>
+  <block id="381c6da705f822c3139853781716a57a" category="admonition">SSD ストレージ容量の削減は、第 2 世代のファイル システムでのみサポートされます。</block>
 </blocks>
