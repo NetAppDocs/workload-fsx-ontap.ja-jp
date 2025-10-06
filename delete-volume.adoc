@@ -4,7 +4,7 @@ permalink: delete-volume.html
 keywords: delete volume, volume deletion 
 summary: FSx for ONTAPファイルシステムで不要になったボリュームを削除し、スペースを解放します。この処理は元に戻すことはできません。 
 ---
-= BlueXP  ワークロードファクトリでのボリュームの削除
+= NetApp Workload Factory でボリュームを削除する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -24,10 +24,11 @@ FSx for ONTAPファイルシステムで不要になったボリュームを削�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、削除するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、削除するボリュームを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、削除するボリュームの3ドットメニューを選択します。
+. 「ボリューム」タブから、削除するボリュームのアクション メニューを選択します。
 . [基本的な操作]*を選択し、*[ボリュームの削除]*を選択します。
 . [Delete volume]ダイアログで、次の手順を実行します。
 +
@@ -37,7 +38,7 @@ FSx for ONTAPファイルシステムで不要になったボリュームを削�
 
 .. 「 * Continue * 」を選択します。
 .. 「delete」と入力してボリュームを削除します。
-.. 「 * 削除」を選択します。
+.. *削除*を選択して確認します。
 
 
 

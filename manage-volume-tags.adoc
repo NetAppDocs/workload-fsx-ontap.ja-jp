@@ -4,21 +4,22 @@ permalink: manage-volume-tags.html
 keywords: volume tags, edit volume tags, edit tags 
 summary: タグは、リソースを分類するのに役立ちます。FSx for ONTAPボリュームのボリュームタグは、いつでも追加、編集、削除できます。 
 ---
-= BlueXP  ワークロードファクトリでのボリュームタグの管理
+= NetApp Workload Factoryでボリュームタグを管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-タグは、リソースを分類するのに役立ちます。BlueXP  ワークロード工場でFSx for ONTAPボリュームについては、いつでもボリュームタグの追加、編集、削除が可能です。
+タグはリソースを分類するのに役立ちます。  NetApp Workload Factory では、FSx for ONTAPボリュームのボリューム タグをいつでも追加、編集、削除できます。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、タグを変更するボリュームの3ドットのメニューを選択します。
+. 「ボリューム」タブから、タグを変更するボリュームのアクション メニューを選択します。
 . [基本的な操作]*を選択し、*[ボリュームタグの編集]*を選択します。
 . [Edit volume tags]ページで、タグを追加、編集、削除します。
 +

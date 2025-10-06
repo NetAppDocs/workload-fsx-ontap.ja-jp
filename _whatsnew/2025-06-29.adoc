@@ -14,7 +14,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 === ストレージダッシュボードの機能強化
 
-ワークロードファクトリーコンソールのストレージダッシュボードに、コスト削減の機会を示す新しいカードが追加されました。ダッシュボード上部のカードには、Amazon Elastic Block Store (EBS)、Amazon FSx for Windows File Server、Amazon Elastic File Systems (EFS) で実行されているストレージ環境におけるコスト削減の機会の数が表示されます。ダッシュボード下部には、Amazon ストレージサービス (EBS、FSx for Windows File Server、EFS) ごとのコスト削減の機会を示す 3 つの新しいカードが追加されました。すべてのカードから、コスト削減の機会をより詳細に確認できます。
+Workload Factory コンソールのストレージ ダッシュボードには、節約の機会を示す新しいカードが含まれています。ダッシュボードの上部にあるカードには、Amazon Elastic Block Store (EBS)、 Amazon FSx for Windows File Server、Amazon Elastic File Systems (EFS) で実行されているストレージ環境の節約機会の数が表示されます。ダッシュボードの下部にある 3 つの新しいカードには、Amazon ストレージ サービス (EBS、FSx for Windows ファイル サーバー、EFS) ごとの節約機会が表示されます。すべてのカードから、節約の機会をより詳しく探すことができます。
 
 FSx for ONTAP の保護範囲カードとレプリケーション関係の健全性カードから、FSx for ONTAP ファイルシステム内に部分的に保護されているボリュームがあるかどうか、またレプリケーション関係に関する問題を調査できます。どちらの場合も、問題を解決するためのアクションを実行できます。
 
@@ -22,21 +22,21 @@ FSx for ONTAP の保護範囲カードとレプリケーション関係の健全
 
 === 音量タブの機能強化
 
-ワークロードファクトリーコンソールの「ボリューム」タブが強化され、FSx for ONTAPファイルシステムのより包括的なビューが提供されるようになりました。強化された機能には、SSD容量、容量プール、NetApp Autonomous Ransomware Protection with AI（ARP/AI）の新しいカードが含まれます。これらのカードには、ファイルシステム内のすべてのボリュームの容量使用率とARP/AI保護の概要が表示されます。
+Workload Factory コンソールのボリューム タブが強化され、FSx for ONTAPファイル システムのより包括的なビューが提供されるようになりました。機能強化には、SSD 容量、容量プール、 NetApp Autonomous Ransomware Protection with AI (ARP/AI) 用の新しいカードが含まれます。これらのカードには、ファイル システム内のすべてのボリュームの容量使用率と ARP/AI 保護がまとめられています。
 
 
 
 === 第2世代のAmazon FSx for NetApp ONTAPファイルシステムをサポート
 
-ワークロードファクトリーは、第2世代Amazon FSx for NetApp ONTAPファイルシステムのサポートを開始しました。ワークロードファクトリーコンソールで、第2世代ファイルシステムの作成、管理、モニタリングが可能です。すべての新しい商用リージョンがサポートされています。
+ワークロードファクトリーは、第 2 世代のAmazon FSx for NetApp ONTAPファイルシステムをサポートするようになりました。 Workload Factory コンソールで第 2 世代のファイル システムを作成、管理、監視できます。すべての新しい商用リージョンがサポートされています。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["ワークロードファクトリーで第2世代のファイルシステムを作成する"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Workload Factoryで第2世代のファイルシステムを作成する"]
 
 
 
 === ボリューム容量の再バランス調整のためのFlexVolボリュームのサポート
 
-FlexVolは、ワークロードファクトリーコンソール内で検出できます。FlexVolのバランスを確認し、新規ファイルの追加やファイルの増加によって時間の経過とともに不均衡が生じた場合は、FlexVolをリバランスして容量を再配分できます。
+FlexVolボリュームは、Workload Factory コンソール内で検出可能です。  FlexVolボリュームのバランスをチェックし、新しいファイルの追加やファイルの増加により時間の経過とともに不均衡が生じた場合は、 FlexVolボリュームのバランスを再調整して容量を再分配することができます。
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/rebalance-volume.html["FlexVolボリュームの容量を再調整する"]
 
@@ -44,15 +44,15 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/rebalance-volume.html["Fle
 
 === 用語の更新
 
-ワークロード ファクトリー コンソールで、「Autonomous Ransomware Protection」(ARP) という用語が「NetApp Autonomous Ransomware Protection with AI」(ARP/AI) に更新されました。
+Workload Factory コンソールで、「Autonomous Ransomware Protection」(ARP) という用語が、「NetApp Autonomous Ransomware Protection with AI」(ARP/AI) に更新されました。
 
 
 
 === 新しいボリュームでは ARP/AI がデフォルトで有効になっています
 
-ワークロードファクトリーコンソールで新しいボリュームを作成すると、ファイルシステムにARP/AIポリシーが設定されている場合、NetApp Autonomous Ransomware Protection with AI（ARP/AI）がデフォルトで有効化されます。つまり、ボリュームはAIを活用した検出・対応機能によってランサムウェア攻撃から自動的に保護されます。
+Workload Factory コンソールで新しいボリュームを作成すると、ファイルシステムに ARP/AI ポリシーがある場合は、 NetApp Autonomous Ransomware Protection with AI (ARP/AI) がデフォルトで有効になります。これは、AI 駆動型の検出および対応機能を使用して、ボリュームがランサムウェア攻撃から自動的に保護されることを意味します。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["ワークロードファクトリーでボリュームを作成する"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["Workload Factoryでボリュームを作成する"]
 
 
 
@@ -66,6 +66,6 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["�
 
 === リンク作成中にIAM実行ロールと権限を管理する
 
-ワークロードファクトリーコンソールでリンクを作成する際に、IAM 実行ロールとそれに紐付けられた権限ポリシーを管理できるようになりました。リンクは、ワークロードファクトリーアカウントと 1 つ以上の FSx for ONTAP ファイルシステム間の接続を確立します。IAM実行ロールとリンク権限の割り当てには、自動割り当てとユーザー指定の 2 つのオプションがあります。ワークロードファクトリーで実行ロールとそれに紐付けられた権限ポリシーを管理することで、サードパーティ製のコードを使用する必要がなくなります。
+Workload Factory コンソールでリンクを作成するときに、IAM 実行ロールとそれに添付されたアクセス許可ポリシーを管理できるようになりました。リンクは、Workload Factory アカウントと 1 つ以上の FSx for ONTAPファイル システム間の接続を確立します。  IAM 実行ロールとリンク権限を割り当てるには、自動またはユーザー指定の 2 つのオプションがあります。  Workload Factory で実行ロールとそれに付随する権限ポリシーを管理すると、サードパーティのコードを使用する必要がなくなります。
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"]

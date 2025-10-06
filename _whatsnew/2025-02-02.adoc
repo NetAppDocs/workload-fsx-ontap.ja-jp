@@ -6,7 +6,7 @@
 
 === BlueXP  ワークロードファクトリコンソールのCloudShell
 
-CloudShellは、BlueXP  Workload Factory for Storage内で利用できる組み込みのCLI機能です。CloudShellを使用すると、ワークロードファクトリコンソール内から、シェルのような環境の複数のセッションからONTAPまたはAWS CLIコマンドを作成、共有、実行できます。
+CloudShell は、ストレージ用のBlueXP workload factory内で利用できる組み込み CLI 機能です。  CloudShell を使用すると、Workload Factory コンソール内のシェルのような環境で、複数のセッションからONTAPまたは AWS CLI コマンドを作成、共有、実行できます。
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["BlueXP  Workload FactoryでのCloudShellの詳細"]
 
@@ -16,7 +16,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Blu
 
 FSx for ONTAPのインベントリデータをBlueXP  ワークロード工場のストレージからMicrosoft ExcelまたはCSVファイルにダウンロードできるようになりました。
 
-image:screenshot-fsx-inventory-download.png["BlueXP  ワークロード工場のストレージのスクリーンショット。FSx for ONTAPファイルシステムのインベントリデータをダウンロードするための新しいダウンロードボタンが表示されています。"]
+image:screenshot-fsx-inventory-download.png["BlueXP workload factoryのストレージのスクリーンショット。FSx for ONTAPファイル システム インベントリ データをダウンロードするための新しいダウンロード ボタンが表示されています。"]
 
 
 
@@ -59,7 +59,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/monitor-operations.html["T
 
 === 第2世代のAmazon FSx for NetApp ONTAPファイルシステムをサポート
 
-BlueXP  ワークロード工場でAmazon FSx for NetApp ONTAPの第2世代ファイルシステムを使用できるようになりました。FSx for ONTAPの第2世代シングルAZファイルシステムには、最大12個のHAペアが搭載されており、最大72GB/秒のスループット容量と2,400,000 SSD IOPSを実現します。FSx for ONTAPの第2世代マルチAZファイルシステムは、1つのHAペアを基盤とし、6GBpsのスループット容量と20万SSD IOPSを提供します。
+NetApp Workload Factory でAmazon FSx for NetApp ONTAP第 2 世代ファイルシステムを使用できるようになりました。  FSx for ONTAPの第 2 世代シングル AZ ファイル システムは、最大 12 個の HA ペアを搭載し、最大 72 GBps のスループット容量と 2,400,000 SSD IOPS を実現できます。  FSx for ONTAPの第 2 世代マルチ AZ ファイル システムは 1 つの HA ペアを搭載し、6 GBps のスループット容量と 200,000 SSD IOPS を提供します。
 
 * link:https://docs.netapp.com/us-en/workload-fsx-ontap/add-ha-pairs.html["ハイアベイラビリティペアを追加する"]
 * link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["Amazon FSx for NetApp ONTAPのクォータと制限"^]

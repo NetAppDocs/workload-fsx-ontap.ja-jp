@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: create-backup.html 
 keywords: create backup, volume backup, back up a volume 
-summary: BlueXP  Workload Factoryでは、定期的なバックアップ以外で、ボリュームの手動バックアップを作成します。 
+summary: 定期的にスケジュールされたバックアップ以外で、 NetApp Workload Factory のボリュームの手動バックアップを作成します。 
 ---
-= BlueXP  ワークロード工場でのボリュームの手動バックアップの作成
+= NetApp Workload Factory でボリュームの手動バックアップを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  ワークロード工場で定期的にスケジュールされたバックアップ以外で、ボリュームの手動バックアップを作成します。
+NetApp Workload Factory で、定期的にスケジュールされたバックアップ以外でボリュームの手動バックアップを作成します。
 
 .タスクの内容
 FSx for ONTAPのバックアップはボリューム単位で行われるため、各バックアップには特定のボリューム内のデータのみが含まれます。
@@ -23,10 +23,11 @@ FSx for ONTAPバックアップは増分バックアップです。つまり、�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、ボリュームを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [ボリューム]*タブで、バックアップするボリュームの3ドットメニューを選択します。
+. *ボリューム*タブから、バックアップするボリュームのアクションメニューを選択します。
 . *データ保護アクション*、* FSx for ONTAPバックアップ*、*手動バックアップ*の順に選択します。
 . [Manual backup]ダイアログで、バックアップの名前を入力します。
 . [バックアップ]*を選択します。

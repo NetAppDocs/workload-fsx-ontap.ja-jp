@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: use-onprem-data.html 
 keywords: use, detect, replicate, remove, on-premises, ONTAP cluster, on-premises cluster, ONTAP 
-summary: オンプレミスのONTAPデータをBlueXP  ワークロード工場で検出、レプリケートすることで、AIのナレッジベースを強化できます。 
+summary: NetApp Workload Factory でオンプレミスのONTAPデータを検出して複製し、AI ナレッジ ベースの強化に使用できるようにします。 
 ---
-= BlueXP  ワークロード工場でオンプレミスのONTAPクラスタデータを使用
+= NetApp Workload Factory でオンプレミスのONTAPクラスタ データを使用する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-オンプレミスのONTAPデータをBlueXP  ワークロード工場で検出、レプリケートすることで、AIのナレッジベースを強化できます。
+NetApp Workload Factory でオンプレミスのONTAPデータを検出して複製し、AI ナレッジ ベースの強化に使用できるようにします。
 
 .タスクの内容
 オンプレミスのONTAPクラスタのデータを使用するには、まずオンプレミスのONTAPクラスタを検出する必要があります。オンプレミスのONTAPクラスタを検出したら、次のいずれかのユースケースでデータを使用できます。
@@ -31,7 +31,7 @@ summary: オンプレミスのONTAPデータをBlueXP  ワークロード工場
 
 == オンプレミスの ONTAP クラスタを検出
 
-BlueXP  ワークロード工場でオンプレミスのONTAPクラスタを検出して、データをAmazon FSx for NetApp ONTAPファイルシステムにレプリケートできるようにします。
+NetApp Workload Factory でオンプレミスのONTAPクラスターを検出し、 Amazon FSx for NetApp ONTAPファイルシステムにデータを複製できるようにします。
 
 .開始する前に
 作業を開始する前に、次の情報が揃っていることを確認してください。
@@ -48,13 +48,13 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
 . [On-Premises ONTAP *]タブを選択します。
 . [検出]*を選択します。
 . 前提条件を確認し、* Next *を選択します。
 . [Discover ONTAP on-premise]ページの*[Cluster configuration]*で、次の情報を指定します。
 +
-.. *リンク*:リンクを選択します。このリンクはオンプレミスクラスタに関連付けられ、クラスタとワークロードファクトリの間の接続が作成されます。
+.. *リンク*: リンクを選択します。リンクはオンプレミス クラスターに関連付けられ、クラスターと Workload Factory 間の接続が作成されます。
 +
 リンクを作成していない場合は、指示に従って操作に戻り、リンクを選択します。
 
@@ -84,8 +84,8 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. [On-Premises ONTAP *]タブを選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、[*オンプレミスONTAP*] を選択します。
 . Storage VMでボリュームを検索するには、ドロップダウンから*[Storage VMの選択]*を選択します。
 . レプリケートするボリュームを1つ以上選択し、*[レプリケート]*を選択します。
 . [Create replication]ページの[Replication target]で、次の情報を指定します。
@@ -95,7 +95,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 .. *ボリューム名*：ターゲットボリューム名は次の形式で自動的に生成されます `{OriginalVolumeName}_copy`。自動生成されたボリューム名を使用するか、別のボリューム名を入力できます。
 .. *データの階層化*：ターゲットボリュームに格納されているデータの階層化ポリシーを選択します。
 +
-*** *自動*：ワークロード工場のFSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ユーザデータとSnapshotを含むすべてのコールドデータを一定期間大容量プールストレージ階層に階層化します。
+*** *自動*: Workload Factory FSx for ONTAPユーザー インターフェイスを使用してボリュームを作成するときのデフォルトの階層化ポリシー。特定の期間、ユーザー データとスナップショットを含むすべてのコールド データを容量プールのストレージ層に階層化します。
 *** * Snapshotのみ*：スナップショットデータのみを容量プールストレージ階層に階層化します。
 *** *なし*：ボリュームのすべてのデータをプライマリストレージ階層に保持します。
 *** * all *：すべてのユーザデータとSnapshotデータをコールドとしてマークし、容量プールストレージ階層に格納します。
@@ -140,20 +140,20 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 
 
 
-== BlueXP  ワークロード工場からオンプレミスのONTAPクラスタを削除
+== NetApp Workload Factory からオンプレミスのONTAPクラスタを削除する
 
-必要に応じて、オンプレミスのONTAPクラスタをBlueXP  ワークロード工場から削除
+必要に応じて、オンプレミスのONTAPクラスターをNetApp Workload Factory から削除します。
 
 .開始する前に
 解除された関係が残らないようにするために、クラスタを削除する前にオンプレミスのONTAPクラスタ内のボリュームを対象にする必要がありますlink:delete-replication.html["既存のレプリケーション関係をすべて削除する"]。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. [On-Premises ONTAP *]タブを選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、[*オンプレミスONTAP*] を選択します。
 . 削除するオンプレミスのONTAPクラスタを選択します。
-. 3つのドットで構成されるメニューを選択し、*[Remove from Workload Factory]*を選択します。
+. アクション メニューを選択し、*ワークロード ファクトリーから削除* を選択します。
 
 
 .結果
-オンプレミスのONTAPクラスタはBlueXP  ワークロード工場から削除されました。
+オンプレミスのONTAPクラスターがNetApp Workload Factory から削除されます。

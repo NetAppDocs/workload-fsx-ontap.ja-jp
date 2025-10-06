@@ -4,7 +4,7 @@ permalink: manage-immutable-files.html
 keywords: enable immutable files, disable immutable files, lock files, unlock files 
 summary: この機能が有効になっている場合は、特定の変更不可ファイル設定を更新できます。 
 ---
-= BlueXP  ワークロード工場でボリュームの書き換え不可のファイルを管理
+= NetApp Workload Factory でボリュームの不変ファイルを管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -17,9 +17,10 @@ summary: この機能が有効になっている場合は、特定の変更不�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. [ボリューム]*タブを選択します。
-. [Volumes]タブで、クローニングするボリュームの3つのドットメニューを選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
+. 「ボリューム」タブで、クローンを作成するボリュームのアクション メニューを選択します。
 . [Data protection actions]*を選択し、*[Manage immutable files]*を選択します。
 . [変更不可ファイルの管理]ページでは、次の項目を更新できます。
 +
@@ -35,6 +36,7 @@ summary: この機能が有効になっている場合は、特定の変更不�
 
 
 ** * autocommit *：自動コミット期間中に変更されていないファイルをWORM状態に自動的にコミットする機能を有効または無効にします。
+** *特権削除*: 機能を有効または無効にします。この機能を有効にすると、 SnapLock管理者は有効期限が切れていない WORM ボリュームを削除できるようになります。この機能は、エンタープライズ保持モードでのみサポートされます。
 ** *ボリュームアペンドモード*：この機能を有効または無効にします。ボリュームアペンドモードを有効にすると、WORMファイルに新しいコンテンツを追加できます。
 
 

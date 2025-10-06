@@ -4,21 +4,22 @@ permalink: manage-svm-tags.html
 keywords: edit storage vm tags, vm tags, svm tags 
 summary: Storage VMのStorage VMタグをいつでも追加、更新、削除できます。 
 ---
-= BlueXP  ワークロードファクトリでStorage VMタグを管理
+= NetApp Workload Factory でストレージ VM タグを管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-タグは、リソースを分類するのに役立ちます。Storage VMのタグは、BlueXP  ワークロード工場でいつでも追加、編集、削除できます。
+タグはリソースを分類するのに役立ちます。  NetApp Workload Factory では、いつでもストレージ VM のタグを追加、編集、削除できます。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するStorage VMがあるファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するストレージVMを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
-. [Storage VM]タブで、タグを編集するStorage VMの3ドットメニューを選択します。
+. [ストレージ VM] タブから、タグを編集するストレージ VM のアクション メニューを選択します。
 . [Storage VMタグの編集]*を選択します。
 . [Storage VMタグの編集]ページで、タグを追加、編集、または削除します。
 +

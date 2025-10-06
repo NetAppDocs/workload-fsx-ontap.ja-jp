@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: manage-cifs-share.html 
 keywords: cifs, smb, SMB/CIFS, cifs share, change, update, modify, delete, create 
-summary: ワークロード ファクトリでのボリュームの SMB/CIFS 共有の管理には、作成、ユーザーおよびグループ アクセスの決定、および削除が含まれます。 
+summary: Workload Factory でのボリュームの SMB/CIFS 共有の管理には、作成、ユーザーおよびグループのアクセスの決定、および削除が含まれます。 
 ---
-= ワークロードファクトリーのボリュームの SMB/CIFS 共有を管理する
+= Workload Factory でボリュームの SMB/CIFS 共有を管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ワークロード ファクトリでボリュームの SMB/CIFS 共有を管理するには、SMB/CIFS 共有の作成、アクセス権を付与するユーザーとグループ、付与する権限レベルの決定、および SMB/CIFS 共有の削除が含まれます。
+Workload Factory でボリュームの SMB/CIFS 共有を管理するには、SMB/CIFS 共有の作成、アクセス権を付与するユーザーとグループ、付与する権限レベルの決定、SMB/CIFS 共有の削除が含まれます。
 
 .開始する前に
 開始する前に、次の手順を実行します。
@@ -28,10 +28,11 @@ summary: ワークロード ファクトリでのボリュームの SMB/CIFS 共
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、SMB共有を変更するボリュームの3ドットのメニューを選択します。
+. [ボリューム] タブから、SMB 共有を変更するボリュームのアクション メニューを選択します。
 . *詳細アクション*を選択し、*SMB/CIFS 共有の管理*を選択します。
 . SMB/CIFS 共有の管理ページで、*SMB/CIFS 共有の作成*を選択します。
 . SMB/CIFS 共有の作成ダイアログで、次の情報を入力します。
@@ -68,10 +69,10 @@ summary: ワークロード ファクトリでのボリュームの SMB/CIFS 共
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. *FSx for ONTAP* タブで、更新するボリュームがあるファイルシステムのアクション メニューを選択し、*管理* を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、SMB共有を変更するボリュームの3ドットのメニューを選択します。
+. [ボリューム] タブから、SMB 共有を変更するボリュームのアクション メニューを選択します。
 . *詳細アクション*を選択し、*SMB/CIFS 共有の管理*を選択します。
 . SMB/CIFS 共有の管理ページで、*表示と編集*を選択します。
 . SMB/CIFS アクセス権限、または権限を付与するユーザーまたはグループを変更します。
@@ -89,12 +90,12 @@ summary: ワークロード ファクトリでのボリュームの SMB/CIFS 共
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. *FSx for ONTAP* タブで、更新するボリュームがあるファイルシステムのアクション メニューを選択し、*管理* を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、SMB共有を変更するボリュームの3ドットのメニューを選択します。
+. [ボリューム] タブから、SMB 共有を変更するボリュームのアクション メニューを選択します。
 . *詳細アクション*を選択し、*SMB/CIFS 共有の管理*を選択します。
-. SMB/CIFS 共有の管理ページで、SMB/CIFS 共有の 3 つのドット メニューを選択し、[削除] を選択します。
+. SMB/CIFS 共有の管理ページで、SMB/CIFS 共有のアクション メニューを選択し、*削除*を選択します。
 +
 SMB/CIFS 共有を削除すると、それをマウントしようとするすべてのユーザーが利用できなくなり、アクセスできなくなります。
 

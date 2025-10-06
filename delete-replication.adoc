@@ -2,25 +2,26 @@
 sidebar: sidebar 
 permalink: delete-replication.html 
 keywords: delete replication 
-summary: 必要に応じて、BlueXP  ワークロード工場でレプリケーション関係を削除します。 
+summary: 必要に応じて、 NetApp Workload Factory 内のレプリケーション関係を削除します。 
 ---
-= BlueXP  ワークロードファクトリでのレプリケーション関係の削除
+= NetApp Workload Factory でレプリケーション関係を削除する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  ワークロードファクトリでレプリケーション関係を削除します。レプリケーション関係を削除すると、ソースボリュームとターゲットボリューム間のレプリケーション関係が削除されます。レプリケーション関係が削除されたあとも、両方のボリュームに含まれる現在のデータとは独立して存在し続けます。
+NetApp Workload Factory 内のレプリケーション関係を削除します。レプリケーション関係を削除すると、ソース ボリュームとターゲット ボリューム間のレプリケーション関係が削除されます。レプリケーション関係が削除された後も、両方のボリュームは現在含まれているデータとともに独立して存在し続けます。
 
 レプリケーション関係を削除すると、FSx for ONTAPはソースボリュームとターゲットボリュームの共通のレプリケーションスナップショットも削除します。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。
-. [Replication relationships]タブで、削除するレプリケーション関係の3ドットのメニューを選択します。
+. レプリケーション関係タブで、削除するレプリケーション関係のアクション メニューを選択します。
 . 「 * 削除」を選択します。
 . [関係の削除]ダイアログで、*[削除]*を選択します。
 

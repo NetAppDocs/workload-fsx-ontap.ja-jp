@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: add-ha-pairs.html 
 keywords: add high-availability pairs, add HA pairs, add HA pair, add high-availability pair, scale out, file system, fsx for ontap 
-summary: BlueXP  ワークロード工場内のファイルシステムにハイアベイラビリティペアを追加して、ファイルシステムをスケールアウトします。 
+summary: NetApp Workload Factory のファイル システムに高可用性ペアを追加して、ファイル システムをスケール アウトします。 
 ---
-= BlueXP  ワークロード工場内のファイルシステムにHAペアを追加
+= NetApp Workload Factory のファイルシステムに HA ペアを追加する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ハイアベイラビリティ（HA）ペアを追加して、BlueXP  ワークロード工場にFSx for ONTAPの第2世代シングルAZファイルシステムをスケールアウトすることで、パフォーマンスと容量を向上できます。この拡張により、第1世代のファイルシステムに比べてパフォーマンスの拡張性と柔軟性が向上します。
+高可用性 (HA) ペアを追加して、 NetApp Workload Factory で FSx for ONTAP の第 2 世代シングル AZ ファイル システムをスケールアウトし、パフォーマンスと容量を向上させます。この拡張により、第 1 世代のファイル システムよりもパフォーマンスのスケーラビリティと柔軟性が向上します。
 
 .タスクの内容
 新しいHAペアは、HAペアごとに同じSKUと同じ容量を使用して追加されます。
@@ -43,8 +43,9 @@ HAペアの追加については、次の点を考慮してください。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. [FSx for ONTAP *]タブの*[Information]*で、*[HA Pairs]*の横にある鉛筆アイコンを選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*の*情報*の下で、*HAペア*の横にある鉛筆アイコンを選択します。
 . [HAペアの追加]*ダイアログで、ファイルシステムに追加するHAペアの数を選択します。
 . [追加]*を選択して、HAペアの追加を確定します。
 

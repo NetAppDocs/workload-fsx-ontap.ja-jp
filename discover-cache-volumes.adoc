@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: discover-cache-volumes.html 
+keywords: discover cache volume, FlexCache technology, ONTAP FlexCache, FSx for ONTAP volume 
+summary: NetApp Workload Factory コンソールを離れることなく、キャッシュ関係に関連付けられているキャッシュ ボリュームを検出して表示します。 
+---
+= Workload Factory でキャッシュボリュームを検出する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory コンソールを離れることなく、キャッシュ関係に関連付けられたキャッシュ ボリュームを検出して表示します。キャッシュ関係は、 ONTAP FlexCache関係とも呼ばれます。  Workload Factory は、 FlexCacheテクノロジーを使用して既存のキャッシュ関係を検出します。FlexCache テクノロジーは、データ アクセスを高速化し、WAN の遅延、帯域幅、および読み取り集中型ワークロードのコストを削減するNetApp ONTAP のリモート キャッシュ機能であり、特にクライアントが同じデータに繰り返しアクセスする必要がある場合に効果を発揮します。
+
+link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/using-flexcache.html["FlexCacheを使用したデータの複製について詳しく説明します。"^]
+
+.タスクの内容
+キャッシュ関係を検出するには、リンクの関連付けが必要です。
+
+キャッシュ関係は、1 つの FSx for ONTAPファイル システムと 1 つのCloud Volumes ONTAPシステムなど、2 つのONTAPシステム上のボリューム間に存在する場合があります。キャッシュ関係は、ボリュームからボリュームまで、単一の FSx for ONTAPファイル システム内に存在することもできます。
+
+.開始する前に
+始める前に次の点を考慮してください。
+
+* ファイル システム上のキャッシュ関係を検出するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"] 。リンクが関連付けられたら、この操作に戻ります。
+* 既存のキャッシュ関係が必要です。
+
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、*キャッシュ関係*タブを選択します。
+. キャッシュ ボリュームがテーブルに表示されます。表には、各キャッシュ ボリュームに関する次の情報が含まれています。
++
+** *元のクラスター*: FlexCache関係の元のクラスター。
+** *元のボリューム*: FlexCache関係の元のボリューム。
+** *元のストレージ VM*: ボリュームの元の、つまりソースのストレージ VM。
+** *キャッシュ ボリューム*: FlexCache関係のキャッシュ、つまりターゲット ボリューム。
+** *キャッシュ ストレージ VM*: ボリュームのキャッシュ、つまりターゲット ストレージ VM。
+** *ステータス*: FlexCache関係のステータス。
+** *キャッシュ上の使用可能なストレージ*: キャッシュ ボリューム上の使用可能なストレージの量。
+** *キャッシュ ファイル システム*: キャッシュ ボリュームのファイル システム。
+** *書き込みモード*: FlexCache関係の書き込みモード。
+** *DR キャッシュ*: FlexCache関係が災害復旧 (DR) キャッシュであるかどうかを示します。
+** *エクスポート ポリシー*: キャッシュ ボリュームのエクスポート ポリシー。
+
+
+

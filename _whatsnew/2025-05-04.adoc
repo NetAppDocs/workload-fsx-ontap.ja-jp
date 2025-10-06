@@ -44,7 +44,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["ボリ
 
 ==== FSx for ONTAPからオンプレミスへのリバースレプリケーションをサポート
 
-FSx for ONTAPファイルシステムからオンプレミスのONTAPクラスタへのリバースレプリケーションを、ワークロードファクトリコンソールから利用できるようになりました。
+Workload Factory コンソール内から、FSx for ONTAPファイル システムからオンプレミスのONTAPクラスターへのリバース レプリケーションが利用できるようになりました。
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/reverse-replication.html["リバースレプリケーション"]
 
@@ -124,4 +124,4 @@ Workload Factoryでは、ファイルシステムを作成するためのONTAP�
 
 === 権限に関する用語を更新
 
-ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。
+Workload Factory のユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。

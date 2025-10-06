@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: clone-volume.html 
 keywords: clone volume, clone, clone data 
-summary: BlueXP ワークロード ファクトリーでボリュームを複製し、テスト用に元のボリュームの読み取り/書き込みボリュームを作成します。 
+summary: NetApp Workload Factory でボリュームのクローンを作成し、テスト用に元のボリュームの読み取り/書き込みボリュームを作成します。 
 ---
-= BlueXP  ワークロードファクトリでのボリュームのクローニング
+= NetApp Workload Factoryでボリュームをクローンする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP ワークロード ファクトリーでボリュームを複製し、テスト用に元のボリュームの読み取り/書き込みボリュームを作成します。
+NetApp Workload Factory でボリュームのクローンを作成し、テスト用に元のボリュームの読み取り/書き込みボリュームを作成します。
 
 クローンには、データの現在のポイントインタイムの状態が反映されます。クローンを使用すると、追加のユーザに本番環境のデータへのアクセスを許可することなく、データへのアクセスを許可することもできます。
 
@@ -24,10 +24,11 @@ BlueXP ワークロード ファクトリーでボリュームを複製し、テ
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、クローンを作成するボリュームが含まれているFSx for ONTAPファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP* から、クローンを作成するボリュームが含まれている FSx for ONTAPファイル システムのアクション メニューを選択し、*管理* を選択します。
 . ファイルシステムの[概要]タブで、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、クローニングするボリュームの3ドットメニューを選択します。
+. 「ボリューム」タブで、クローンを作成するボリュームのアクション メニューを選択します。
 . [データ保護操作]*を選択し、*[ボリュームのクローニング]*を選択します。
 . [Clone volume]ダイアログで、ボリュームクローンの名前を入力します。
 . 「 * Clone * 」を選択します。

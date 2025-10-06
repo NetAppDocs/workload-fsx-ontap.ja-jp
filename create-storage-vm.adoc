@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-storage-vm.html 
 keywords: create storage VM, create svm 
-summary: FSx for ONTAP Storage VM（SVM）を作成して、BlueXP  ワークロード工場でワークロードにストレージとデータサービスを提供できます。 
+summary: 'FSx for ONTAPストレージ VM (SVM) を作成して、 NetApp Workload Factory のワークロードにストレージおよびデータ サービスを提供できます。' 
 ---
 = FSx for ONTAPファイルシステム用Storage VMの作成
 :allow-uri-read: 
@@ -11,10 +11,10 @@ summary: FSx for ONTAP Storage VM（SVM）を作成して、BlueXP  ワーク�
 
 
 [role="lead"]
-FSx for ONTAPファイルシステム用のStorage VM（SVM）を作成して、BlueXP  ワークロード工場のワークロード向けに仮想的にストレージとデータサービスにアクセスします。
+FSx for ONTAPファイル システム用のストレージ VM (SVM) を作成し、 NetApp Workload Factory のワークロードのストレージおよびデータ サービスに仮想的にアクセスします。
 
 .タスクの内容
-Storage VMは分離されたファイルサーバで、ワークロードファクトリストレージの各ワークロードのデータにアクセスできます。各SVMには、データを管理およびアクセスするための独自の管理クレデンシャルとエンドポイントがあります。
+ストレージ VM は、ワークロード ファクトリー ストレージ内の各ワークロードのデータにアクセスするために使用できる分離されたファイル サーバーです。各 SVM には、データの管理とアクセスを行うための独自の管理資格情報とエンドポイントがあります。
 
 SVMを使用している場合、FSx for ONTAPのデータにアクセスすると、SVMのエンドポイント（IPアドレス）を使用して、SVMによってホストされているボリューム、CIFS / SMB共有、またはiSCSI LUNがクライアントやワークステーションにマウントされます。
 
@@ -25,15 +25,16 @@ SVMを使用している場合、FSx for ONTAPのデータにアクセスする�
 
 == Storage VM を作成
 
-Storage VMはワークロードの工場出荷時のコンソールから作成できます。Codeboxで利用可能なREST API、CloudFormation、Terraformの各ツールを使用することもできます。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["Codeboxを使用して自動化する方法"^]です。
+Workload Factory コンソールからストレージ VM を作成できます。 Codebox で利用可能な REST API、CloudFormation、Terraform などのツールも使用できます。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["Codeboxを使用して自動化する方法"^] 。
 
 
 NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロードしたコードが非表示になり、パスワードが表示され `fsxadmin` `vsadmin` ます。コードを実行するときは、パスワードを再入力する必要があります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. [FSx for ONTAP ]タブで、Storage VMを作成するファイルシステムの3ドットメニューを選択し、*[Storage VMを作成する]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、ストレージVMを作成するファイル システムのアクション メニューを選択し、*ストレージVMの作成*を選択します。
 . [Storage VM]ページの[Storage VMの設定]で、次の情報を指定します。
 +
 .. *名前*：Storage VMの名前を入力します。

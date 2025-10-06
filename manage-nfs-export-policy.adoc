@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: manage-nfs-export-policy.html 
 keywords: NFS, nfs, export policy, change export policy, update export policy, modify export policy 
-summary: BlueXP  ワークロードの工場出荷時にNFSv3またはNFSv4.1プロトコルタイプを使用するボリュームのNFSエクスポートポリシーを管理します。 
+summary: NetApp Workload Factory で NFSv3 または NFSv4.1 プロトコル タイプを使用するボリュームの NFS エクスポート ポリシーを管理します。 
 ---
-= BlueXP  ワークロード工場内のボリュームのNFSエクスポートポリシーを管理します。
+= NetApp Workload Factory でボリュームの NFS エクスポート ポリシーを管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  ワークロードの工場出荷時にNFSv3またはNFSv4.1プロトコルタイプを使用するボリュームのNFSエクスポートポリシーを管理します。
+NetApp Workload Factory で NFSv3 または NFSv4.1 プロトコル タイプを使用するボリュームの NFS エクスポート ポリシーを管理します。
 
 .タスクの内容
 ボリュームのエクスポートポリシーの管理では、クライアント仕様、アクセス制御、スーパーユーザアクセス、およびNFSのバージョンを詳細に記述したエクスポートポリシールールを追加します。複数のエクスポートポリシーを追加して優先順位を付けることができます。
@@ -29,10 +29,11 @@ BlueXP  ワークロードの工場出荷時にNFSv3またはNFSv4.1プロト�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、NFSエクスポートポリシーを変更するボリュームの3ドットのメニューを選択します。
+. 「ボリューム」タブから、NFS エクスポート ポリシーを変更するボリュームのアクション メニューを選択します。
 . [アドバンストアクション]*を選択し、*[NFSエクスポートポリシーの編集]*を選択します。
 . [NFSエクスポートポリシーの編集]ページで、次の項目を指定します。
 +

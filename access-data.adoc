@@ -15,20 +15,21 @@ NASクライアントのボリュームをマウントし、SANクライアン�
 
 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html["データへのアクセス"^] Amazon FSx for NetApp ONTAPのドキュメントには、参照用にデータにアクセスする方法に関するトピックが記載されています。
 
-BlueXP  ワークロード工場でボリュームのマウントポイントを取得することもできます。
+NetApp Workload Factory でボリュームのマウント ポイントを取得することもできます。
 
 
 
-== BlueXP  ワークロード工場でボリュームのマウントポイントを取得
+== NetApp Workload Factory のボリュームのマウント ポイントを取得する
 
 CIFS共有またはNFSクライアントに共有をマウントするボリュームのマウントポイントを取得します。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、ボリュームを含むファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、ボリュームを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、ボリュームの3ドットメニューを選択し、*[Basic actions]*、*[View mount command]*の順に選択します。
+. [ボリューム] タブから、ボリュームのアクション メニューを選択し、*基本アクション*、*マウント コマンドの表示* を選択します。
 . [コマンドのマウント]ダイアログで*[コピー]*を選択し、NFSマウントポイントまたはCIFS共有のコマンドをコピーします。コピーしたコマンドを端末に入力します。
 . [ 閉じる（ Close ） ] を選択します。
 

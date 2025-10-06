@@ -22,13 +22,13 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 === ストレージダッシュボードの機能強化
 
-本日より、ワークロードファクトリーコンソールからストレージワークロードを開くと、*ダッシュボード*が表示されます。新しく設計されたダッシュボードでは、ファイルシステムの数、SSDの総容量、Well-Architectedステータスの概要、データ保護の概要、レプリケーション関係の健全性など、FSx for ONTAPシステムの包括的なビューを提供します。
+本日より、Workload Factory コンソールからストレージ ワークロードを開くと、*ダッシュボード*が表示されます。新しく設計されたダッシュボードでは、ファイルシステムの数、SSD の合計容量、Well-Architected ステータスの概要、データ保護の概要、レプリケーション関係の健全性など、FSx for ONTAPシステムの全体的なビューが提供されます。
 
 
 
 === ボリュームタブの機能強化
 
-ストレージワークロードでは、ワークロードファクトリーコンソールのFSx for ONTAPファイルシステム内の「ボリューム」タブが強化されました。強化された内容は次のとおりです。
+ストレージ ワークロードでは、Workload Factory コンソールの FSx for ONTAPファイル システム内のボリューム タブが強化されました。機能強化には次のものが含まれます。
 
 * *新しいカード*: SSD 容量、容量プール、自律ランサムウェア保護 (ARP)
 * *新しい列*: 容量分布、使用済み SSD 容量、使用済み容量プール、SSD 効率
@@ -40,4 +40,4 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 新しいボリュームを作成すると、データの圧縮、圧縮、重複排除などのストレージ効率がデフォルトで有効になります。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["ワークロードファクトリーに新しいボリュームを作成する"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["Workload Factoryで新しいボリュームを作成する"]

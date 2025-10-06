@@ -4,14 +4,14 @@ permalink: reverse-replication.html
 keywords: reverse replication, change replication 
 summary: レプリケーション関係を反転して、ターゲットボリュームをソースボリュームにします。 
 ---
-= BlueXP  ワークロードファクトリでレプリケーション関係を反転する
+= NetApp Workload Factory でレプリケーション関係を反転する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ターゲットボリュームがソースボリュームになるように、BlueXP  ワークロードファクトリでレプリケーション関係を反転します。
+NetApp Workload Factory でレプリケーション関係を逆転させて、ターゲット ボリュームがソース ボリュームになるようにします。
 
 反転操作は、次の場合にサポートされます。
 
@@ -32,10 +32,11 @@ NOTE: 最後のデータレプリケーションが行われてからソース�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。
-. [Replication relationships]タブで、反転するレプリケーション関係の3ドットのメニューを選択します。
+. レプリケーション関係タブで、元に戻すレプリケーション関係のアクション メニューを選択します。
 . [関係を反転]*を選択します。
 . [Reverse relationship]ダイアログで、*[Reverse]*を選択します。
 

@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
 permalink: create-file-system.html 
-keywords: create, FSx file system, ONTAP file system, workload factory, storage 
-summary: BlueXP  ワークロードファクトリを使用すると、FSx for ONTAPファイルシステムを作成して、ボリュームと追加データサービスを追加および管理できます。 
+keywords: create, FSx file system, ONTAP file system, Workload Factory, storage 
+summary: NetApp Workload Factory を使用すると、FSx for ONTAPファイル システムを作成して、ボリュームや追加のデータ サービスを追加および管理できます。 
 ---
-= BlueXP  ワークロード工場でFSx for ONTAPファイルシステムを作成
+= NetApp Workload Factory で FSx for ONTAPファイルシステムを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP ワークロード ファクトリーを使用すると、第 1 世代および第 2 世代の FSx for ONTAP ファイル システムを作成し、ボリュームと追加のデータ サービスを追加および管理できます。
+NetApp Workload Factory を使用すると、第 1 世代および第 2 世代の FSx for ONTAPファイル システムを作成し、ボリュームと追加のデータ サービスを追加および管理できます。
 
 .タスクの内容
 Storage VMとセキュリティグループは、ファイルシステムの作成時に作成されます。
@@ -19,7 +19,7 @@ Storage VMとセキュリティグループは、ファイルシステムの作�
 .開始する前に
 FSx for ONTAPファイルシステムを作成する前に、以下が必要になります。
 
-* FSx for ONTAPファイルシステムの作成に必要な権限をワークロードファクトリに付与するIAMロールのARN。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSアカウントに権限を付与する方法を確認する"^]です。
+* Workload Factory に FSx for ONTAPファイルシステムの作成に必要な権限を与える IAM ロールの ARN。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSアカウントに権限を付与する方法を確認する"^] 。
 * ONTAP インスタンスの FSX を作成する場所のリージョンおよび VPC 情報。
 
 
@@ -42,14 +42,14 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージで、* Create FSx for ONTAP *を選択します。
+. ストレージ タイルで、*Create FSx for ONTAP* を選択します。
 . [FSx for ONTAPの作成]ページで、*[クイック作成]*を選択します。
 +
 保存されている設定をロードすることもできます。
 
 . [File system general configuration]で、次の情報を指定します。
 +
-.. * AWSクレデンシャル*：ワークロード工場でAWSクレデンシャルを追加する場合、またはクレデンシャルなしで続行する場合に選択します。
+.. *AWS 認証情報*: Workload Factory に AWS 認証情報を追加するか、認証情報なしで続行するかを選択します。
 .. *ファイルシステム名*：ファイルシステムの名前を入力します。
 .. *リージョンとVPC *：ファイルシステムのリージョンとVPCを選択します。
 .. *導入タイプ*：導入タイプを選択します。
@@ -114,14 +114,14 @@ Advanced createでは、可用性、セキュリティ、バックアップ、�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージで、* Create FSx for ONTAP *を選択します。
+. ストレージ タイルで、*Create FSx for ONTAP* を選択します。
 . [FSx for ONTAPの作成]ページで、*[Advanced create]*を選択します。
 +
 保存されている設定をロードすることもできます。
 
 . [File system general configuration]で、次の情報を指定します。
 +
-.. * AWSクレデンシャル*：ワークロード工場でAWSクレデンシャルを追加する場合、またはクレデンシャルなしで続行する場合に選択します。
+.. *AWS 認証情報*: Workload Factory に AWS 認証情報を追加するか、認証情報なしで続行するかを選択します。
 .. *ファイルシステム名*：ファイルシステムの名前を入力します。
 .. *リージョンとVPC *：ファイルシステムのリージョンとVPCを選択します。
 .. *展開タイプ*: 展開タイプとファイル システムの世代を選択します。第 2 世代のファイル システムを利用できるかどうかは、選択したリージョンによって異なります。選択したリージョンで第2世代FSx for ONTAPファイルシステムがサポートされていない場合、デプロイメントタイプは第1世代に切り替わります。

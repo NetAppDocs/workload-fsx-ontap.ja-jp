@@ -4,7 +4,7 @@ permalink: view-volume-details.html
 keywords: volume details, volume information 
 summary: ボリュームの詳細、分散、消費、アクセス、保護を表示します。 
 ---
-= BlueXP  ワークロードファクトリでのボリュームの詳細の表示
+= NetApp Workload Factoryでボリュームの詳細を表示する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -17,8 +17,8 @@ summary: ボリュームの詳細、分散、消費、アクセス、保護を�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. [Volumes]タブで、変更するボリュームの3つのドットからなるメニューを選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. 「ボリューム」タブで、変更するボリュームのアクション メニューを選択します。
 . [基本的な操作]*を選択し、*[ボリュームの詳細を表示]*を選択します。
 . [ボリュームの詳細]*で、タブを選択して次のボリュームの詳細を表示します。
 +

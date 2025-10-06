@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: data-protection-overview.html 
 keywords: overview 
-summary: FSx for ONTAPは、スナップショット、AI 搭載NetApp Autonomous Ransomware、ボリューム レプリケーション、 BlueXP workload factoryでのバックアップをサポートします。 
+summary: FSx for ONTAPは、スナップショット、AI 搭載NetApp Autonomous Ransomware、ボリューム レプリケーション、 NetApp Workload Factory のバックアップをサポートします。 
 ---
-= BlueXP  ワークロードファクトリにおけるデータ保護の種類
+= NetApp Workload Factoryにおけるデータ保護の種類
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -75,6 +75,7 @@ NetApp Autonomous Ransomware Protection with AI (ARP/AI) は、ウイルス対�
 
 ワークロードデータを保護するために、次の推奨事項を考慮してください。
 
+* 災害復旧にはボリューム レプリケーションを使用します。アプリケーションで低い RTO が必要な場合は、ボリューム レプリケーションを使用してデータを別のリージョンに複製することを検討してください。
 * ボリュームバックアップとSnapshotの併用：2つの機能を併用すると、Snapshotからファイルをリストアしたり、バックアップを使用してボリュームが失われた場合にフルリストアを実行したりできます。
 * ボリュームのバックアップポリシーを定義する：バックアップポリシーがバックアップの期間と頻度に関する企業の要件を満たしていることを確認します。ボリュームごとに最低2つの日次バックアップを保持することを推奨します。
 * Snapshotスケジュールを定義：古いSnapshotがデータのリストアに使用される可能性が低くなります。スナップショット容量の追加コストと比較して、古いスナップショットを保持することによる収益の減少を考慮したスナップショットスケジュールを定義することをお勧めします。

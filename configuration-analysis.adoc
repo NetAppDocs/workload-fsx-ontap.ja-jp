@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: configuration-analysis.html 
 keywords: configuration issues, issues, improve, analyze, storage configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations 
-summary: BlueXP  ワークロードファクトリは、Amazon FSx for NetApp ONTAPのファイルシステム構成を定期的に分析し、問題がないかどうかを判断します。 
+summary: NetApp Workload Factory は、 Amazon FSx for NetApp ONTAPファイルシステムの構成を定期的に分析し、問題があるかどうかを判断します。 
 ---
 = FSx for ONTAPファイルシステムの構成分析
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: BlueXP  ワークロードファクトリは、Amazon FSx for NetApp O
 
 
 [role="lead"]
-BlueXP  ワークロードファクトリは、Amazon FSx for NetApp ONTAPのファイルシステム構成を定期的に分析し、問題がないかどうかを判断します。問題が検出されると、ワークロードファクトリに問題の内容が表示され、ファイルシステムストレージが最高のパフォーマンス、コスト効率、ベストプラクティスへの準拠を達成できるようにするために何を変更する必要があるかが説明されます。
+NetApp Workload Factory は、 Amazon FSx for NetApp ONTAPファイルシステムの構成を定期的に分析し、問題があるかどうかを判断します。問題が見つかった場合、Workload Factory は問題の内容を示し、ファイル システム ストレージが最高のパフォーマンス、コスト効率、ベスト プラクティスへの準拠を実現するために何を変更する必要があるかを説明します。
 
 主な機能は次のとおりです。
 
@@ -26,7 +26,7 @@ BlueXP  ワークロードファクトリは、Amazon FSx for NetApp ONTAPの�
 
 == 適切に設計されたステータス
 
-ファイルシステムレベルのワークロードファクトリコンソールには、すべてのFSx for ONTAPファイルシステムについて、適切に設計されたステータスが表示されます。Well-Architectedステータスは、「問題」、「分析されていない」、または「Well-Architected」に分類されます。well-architectedステータスを選択すると、ファイルシステム内のwell-architectedステータスタブにリダイレクトされます。このタブでは、well-architectedスコア、構成カテゴリ、ファイルシステムのすべての構成を確認できます。
+Workload Factory コンソールのファイルシステム レベルでは、すべての FSx for ONTAPファイルシステムの well-architected ステータスがリストされます。  Well-Architected のステータスは、「問題」、「未分析」、または「Well-Architected」に分類されます。  Well-Architected ステータスを選択すると、ファイル システム内の Well-Architected ステータス タブにリダイレクトされ、そこで Well-Architected スコア、構成カテゴリ、ファ​​イル システムのすべての構成を確認できます。
 
 適切に設計されたスコア:: スコアには現在分析されているすべての構成が含まれ、パーセンテージで表示されます。25%のスコアは、25%のファイルシステム構成が適切に設計されていることを意味します。
 構成のカテゴリ:: ファイルシステム構成は、AWS Well-Architected Frameworkの次の5つの柱に沿ったカテゴリに分類されています。
@@ -46,7 +46,7 @@ BlueXP  ワークロードファクトリは、Amazon FSx for NetApp ONTAPの�
 
 == 分析要件
 
-ファイルシステムを完全に分析するには、リンクを関連付ける必要があります。リンク接続により、ワークロード工場はデータ保護やパフォーマンスなどのすべてのファイルシステム構成を分析できます。
+完全なファイル システム分析を行うには、リンクを関連付ける必要があります。リンク接続により、Workload Factory はデータ保護やパフォーマンスなどのすべてのファイル システム構成を分析できます。
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。
 

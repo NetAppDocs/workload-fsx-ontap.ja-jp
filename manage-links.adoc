@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: manage-links.html 
 keywords: links, accounts, lambda, creating, associating, disassociating, deleting, editing 
-summary: アカウントに関連付けられたリンクを表示したり、リンク認証のパスワードを更新したり、BlueXP ワークロード ファクトリーでリンクを削除したりできます。 
+summary: NetApp Workload Factory では、アカウントに関連付けられたリンクを表示したり、リンク認証のパスワードを更新したり、リンクを削除したりできます。 
 ---
-= ワークロードファクトリーリンクを管理する
+= ワークロードファクトリーのリンクを管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ワークロードファクトリーアカウントに関連付けたリンクを管理します。FSxfor ONTAP ファイルシステムに関連付けられたリンクを表示したり、リンク認証に使用するパスワードを指定したり、ワークロードファクトリーコンソールからリンクを削除したりできます。
+Workload Factory アカウントに関連付けたリンクを管理します。  FSx for ONTAPファイル システムに関連付けられているリンクを表示したり、リンク認証に使用するパスワードを指定したり、Workload Factory コンソールからリンクを削除したりできます。
 
 link:links-overview.html["リンクの詳細"] または link:create-link.html["リンクを作成して関連付ける"]。
 
@@ -23,11 +23,10 @@ link:links-overview.html["リンクの詳細"] または link:create-link.html["
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ホームページで、メニューから*リンク*を選択します。
+. ストレージメニューから、*管理*を選択し、次に*リンク*を選択します。
 +
-image:screenshot-menu-links.png["リンクページを開く方法を示すスクリーンショット。"]
+既存のリンクは「リンク」ページに表示されます。
 
-. リンクがある場合は、概要ページに情報が表示されます。
 . リンクに関連付けられているFSx for ONTAPファイルシステムを表示するには、[関連リソース]セクションで*[表示]*ボタンを選択します。
 +
 image:screenshot-view-link-details.png["特定のリンクを使用しているFSx for ONTAPファイルシステムを示すスクリーンショット。"]
@@ -39,7 +38,7 @@ image:screenshot-view-link-details.png["特定のリンクを使用しているF
 
 == リンクの編集
 
-ワークロードファクトリインターフェイスからリンクを編集することはできません。リンクに変更を加える必要がある場合は、新しいリンクを作成し、そのリンクをファイルシステムに関連付ける必要があります。
+Workload Factory インターフェースからリンクを編集することはできません。リンクを変更する必要がある場合は、新しいリンクを作成し、そのリンクをファイル システムに関連付ける必要があります。
 
 
 NOTE: AWSコンソールを使用してLambdaネットワーク構成（VPC、サブネット、セキュリティグループなど）を編集すると、変更がリンク管理UIに反映されますが、これらの変更によってLambdaとONTAP間の接続の問題が発生する可能性があるため、推奨されません。
@@ -48,17 +47,18 @@ NOTE: AWSコンソールを使用してLambdaネットワーク構成（VPC、�
 
 == リンクの認証
 
-ワークロードファクトリのクレデンシャル用の管理ユーザパスワード、またはFSx for ONTAPファイルシステムへのリンクを接続するためのAWS Secrets ManagerシークレットARNを入力します。
+リンクを FSx for ONTAPファイルシステムに接続するには、Workload Factory 認証情報の管理ユーザーパスワードまたは AWS Secrets Manager シークレット ARN を指定します。
 
-コネクタを使用する場合、AWS Secrets Managerはサポートされません。
+コンソールエージェントを使用する場合、AWS Secrets Manager はサポートされません。
 
 
 NOTE: 1つのリンクでサポートされる認証方式は1つだけです。たとえば、[Link authentication with AWS Secrets Manager]を選択した場合、あとで認証方法を変更することはできません。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、リンクを関連付けるファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、リンクを関連付けるファイル システムのアクション メニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[リンクの認証]*を選択します。
 . [Authenticate]リンクページで、認証モードを選択します。
 +
@@ -80,8 +80,9 @@ NOTE: 1つのリンクでサポートされる認証方式は1つだけです。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、リンクを関連付けるファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、リンクを関連付けるファイル システムのアクション メニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[パスワードの更新]*を選択します。
 . [Authenticate]リンクページで、新しいパスワードを2回入力します。
 . * 適用 * を選択します。
@@ -96,17 +97,18 @@ NOTE: 1つのリンクでサポートされる認証方式は1つだけです。
 
 環境で使用しなくなったリンクを削除できます。リンクを使用していたFSx for ONTAPファイルシステムやその他のリソースは、リンクを削除すると特定の機能を使用できなくなります。
 
-このリンクはWorkload Factoryからのみ削除され、AWS環境からは削除されません。ワークロードファクトリでリンクを削除したあと、AWSアカウントからLambda関数を削除する必要があります。
+リンクは Workload Factory からのみ削除され、AWS 環境からは削除されないことに注意してください。  Workload Factory のリンクを削除した後、AWS アカウントから Lambda 関数を削除する必要があります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ホームページで、メニューから*リンク*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. ストレージメニューから、*管理*を選択し、次に*リンク*を選択します。
 +
-image:screenshot-menu-links.png["リンクページを開く方法を示すスクリーンショット。"]
+既存のリンクは「リンク」ページに表示されます。
 
-. [リンク]ページで、メニューボタンを選択して*[削除]*を選択します。
+. 「リンク」ページで、削除するリンクのアクション メニューを選択し、「削除」を選択します。
 +
-image:screenshot-remove-link.png["ワークロードファクトリからリンクを削除する方法を示すスクリーンショット。"]
+image:screenshot-remove-link.png["Workload Factory からリンクを削除する方法を示したスクリーンショット。"]
 
 . 確認する場合は、*[削除]*をもう一度選択します。
 

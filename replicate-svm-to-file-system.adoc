@@ -11,17 +11,18 @@ summary: ストレージVMを別のFSx for ONTAPファイルシステムにレ�
 
 
 [role="lead"]
-BlueXP  ワークロード工場内の別のFSx for ONTAPファイルシステムにストレージVMをレプリケートすることで、データ損失が発生した場合にデータアクセスを保護することができます。この処理では、あるStorage VM内のすべてのボリュームが別のFSx for ONTAPファイルシステムにレプリケートされます。
+NetApp Workload Factory でストレージ VM を別の FSx for ONTAPファイル システムに複製すると、データ損失が発生した場合にデータ アクセスの保護層が提供されます。この操作により、1 つのストレージ VM 内のすべてのボリュームが別の FSx for ONTAPファイル システムに複製されます。
 
 .開始する前に
 ストレージ VM を別の FSx for ONTAP ファイル システムに複製するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、レプリケートするStorage VMを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、レプリケートするストレージVMを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
-. [Storage VM]タブで、SVMをレプリケートするStorage VMの3ドットメニューを選択します。
+. [ストレージ VM] タブから、SVM をレプリケートするストレージ VM のアクション メニューを選択します。
 . [Storage VMのレプリケート]*を選択します。
 . [Create replication]ページの[Replication target]で、次の情報を指定します。
 +
@@ -30,7 +31,7 @@ BlueXP  ワークロード工場内の別のFSx for ONTAPファイルシステ�
 .. *ボリューム名*：ターゲットボリューム名は次の形式で自動的に生成されます `{OriginalVolumeName}_copy`。
 .. *階層化ポリシー*：ターゲットボリュームに格納されているデータの階層化ポリシーを選択します。
 +
-_Auto_は、工場出荷時のFSx for ONTAPユーザインターフェイスを使用してボリュームを作成する場合のデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]。
+Workload Factory FSx for ONTAPユーザー インターフェイスを使用してボリュームを作成する場合、デフォルトの階層化ポリシーは「_Auto_」です。ボリューム階層化ポリシーの詳細については、以下を参照してください。link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] AWS FSx for NetApp ONTAPドキュメント。
 
 .. *最大転送速度*：* Limited *を選択し、最大転送速度をMB/秒単位で入力します。または、*無制限*を選択します。
 +

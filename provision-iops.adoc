@@ -11,7 +11,7 @@ summary: FSx for ONTAPファイルシステムのSSD IOPSを自動でプロビ�
 
 
 [role="lead"]
-BlueXP  ワークロード工場でFSx for ONTAPファイルシステムに対してSSD IOPSを自動的にプロビジョニングまたは手動でプロビジョニング
+NetApp Workload Factory で FSx for ONTAPファイル システムの SSD IOPS を自動でプロビジョニングするか、手動でプロビジョニングします。
 
 .タスクの内容
 FSxファイルシステムに対してSSD IOPSの自動プロビジョニングを有効にすることも、IOPSを手動でプロビジョニングすることもできます。
@@ -24,8 +24,9 @@ IOPSの制限については、AWS FSx for NetApp ONTAPドキュメントのを�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [ストレージ]で、*[ストレージインベントリに移動]*を選択します。
-. [FSx for ONTAP *]タブで、IOPSをプロビジョニングするファイルシステムの3ドットメニューを選択し、*[Manage]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、IOPSをプロビジョニングするファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . [Information]で、*[IOPS allocation]*行の上にマウスを置くとドロップダウン矢印の横に表示される鉛筆のアイコンを選択します。
 . [Provisioned IOPS]ダイアログで、*[Automatic]*または*[User Provisioned]*を選択します。
 . [User Provisioned]*を選択した場合は、* IOPS値*を入力します。

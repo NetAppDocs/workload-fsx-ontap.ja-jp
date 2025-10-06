@@ -2,18 +2,18 @@
 sidebar: sidebar 
 permalink: increase-volume-capacity.html 
 keywords: increase capacity, volume capacity 
-summary: BlueXP  ワークロード工場では、ボリュームのボリューム容量をいつでも手動で拡張できます。 
+summary: NetApp Workload Factory 内のボリュームのボリューム容量はいつでも手動で増やすことができます。 
 ---
-= BlueXP  ワークロード工場でのボリューム容量の拡張
+= NetApp Workload Factory のボリューム容量を増やす
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  ワークロードの工場出荷時に、ボリュームのボリューム容量をいつでも手動で拡張できます。
+NetApp Workload Factory では、いつでもボリュームのボリューム容量を手動で増やすことができます。
 
-必要に応じて、ワークロードファクトリでボリュームの容量を管理できるようにすることもできますlink:edit-volume-autogrow.html["自動拡張機能を有効にする"]。
+オプションとして、link:edit-volume-autogrow.html["自動拡張機能を有効にする"] Workload Factory がボリューム容量を管理できるようにします。
 
 .タスクの内容
 iSCSI LUNの場合、この処理によってホストLUNのサイズが拡張されます。容量が拡張されたら、ホストオペレーティングシステムの手順に従ってLUNの新しいサイズを検出し、LUNのファイルシステムを拡張します。
@@ -23,10 +23,11 @@ iSCSI LUNの場合、この処理によってホストLUNのサイズが拡張�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するボリュームを含むファイルシステムの3ドットメニューを選択し、*[管理]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. [Volumes]タブで、容量を拡張するボリュームの3ドットメニューを選択します。
+. 「ボリューム」タブから、容量を増やすボリュームのアクション メニューを選択します。
 . [基本的な操作]*を選択し、*[ボリューム容量の拡張]*を選択します。
 . [ボリューム容量の拡張]ダイアログで、次の情報を指定します。
 +
@@ -34,5 +35,5 @@ iSCSI LUNの場合、この処理によってホストLUNのサイズが拡張�
 .. 必要に応じてユニットを交換します。
 
 
-. [増加]*を選択します。
+. 変更を適用するには、[増加] を選択します。
 

@@ -63,7 +63,7 @@ summary: このリリースの製品でサポートされていない、また�
 
 == Storage VM
 
-Storage VMの数はSKUごとに制限されます。制限を超えたStorage VMの作成は、ワークロード工場ではサポートされていません。^1^
+ストレージ VM の数は SKU ごとに制限されます。制限を超えるストレージ VM の作成は、Workload Factory ではサポートされていません。^1^
 
 ファイルシステムあたりのSVMの最大数については、AWSのドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html#max-svms["FSx for ONTAP Storage Virtual Machineの管理"^] 。
 
@@ -117,7 +117,7 @@ System Managerでは、FSx for ONTAP接続のリンクはサポートされま�
 
 == AWS Secrets Managerのサポート
 
-コネクタを使用する場合、AWS Secrets Managerはサポートされません。
+コンソールエージェントを使用する場合、AWS Secrets Manager はサポートされません。
 
 注：
 

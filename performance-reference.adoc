@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: performance-reference.html 
 keywords: performance, FSx for ONTAP performance 
-summary: パフォーマンスリファレンスは、BlueXP  ワークロード工場のFSx for ONTAPについて提供されています。 
+summary: NetApp Workload Factory では、FSx for ONTAPのパフォーマンス リファレンスが提供されています。 
 ---
-= BlueXP  ワークロード工場でのFSx for ONTAPのパフォーマンス
+= NetApp Workload Factory における FSx for ONTAPのパフォーマンス
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

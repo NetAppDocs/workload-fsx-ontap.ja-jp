@@ -2,28 +2,28 @@
 sidebar: sidebar 
 permalink: links-overview.html 
 keywords: links, accounts, lambda 
-summary: ワークロードファクトリリンクは、ワークロードファクトリアカウントと1つ以上のFSx for ONTAPファイルシステム間の信頼関係と接続を作成します。 
+summary: Workload Factory リンクは、Workload Factory アカウントと 1 つ以上の FSx for ONTAPファイル システム間の信頼関係と接続を作成します。 
 ---
-= BlueXP  ワークロードファクトリリンクの詳細
+= NetApp Workload Factoryのリンクについて学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  ワークロードファクトリリンクは、ワークロードファクトリアカウントと1つ以上のFSx for ONTAPファイルシステム間の信頼関係と接続を作成します。これにより、Amazon FSx for ONTAP APIでは使用できないONTAP REST API呼び出しから、特定のファイルシステム機能を直接監視および管理できます。
+NetApp Workload Factory リンクは、Workload Factory アカウントと 1 つ以上の FSx for ONTAPファイル システムの間に信頼関係と接続を作成します。これにより、 Amazon FSx for ONTAP API では利用できない特定のファイルシステム機能を、 ONTAP REST API 呼び出しから直接監視および管理できるようになります。
 
-ワークロードファクトリを開始するためのリンクは必要ありませんが、場合によっては、ワークロードファクトリのすべての機能とワークロード機能をロック解除するためのリンクを作成する必要があります。
+Workload Factory の使用を開始するためにリンクは必要ありませんが、場合によっては、Workload Factory のすべての機能とワークロード機能のロックを解除するためにリンクを作成する必要があります。
 
 
 
 == リンクが有益な理由
 
-リンクは、 Amazon FSx for ONTAP API ではネイティブに利用できない操作をワークロードファクトリーで実行できるようにするという点で有益です。リンクによって高度なONTAP機能と自動化が実現され、FSx for ONTAPファイルシステムの管理が強化されます。
+リンクを使用すると、Workload Factory がAmazon FSx for ONTAP API を通じてネイティブに利用できない操作を実行できるようになるため、便利です。リンクにより、高度なONTAP機能と自動化が可能になり、FSx for ONTAPファイル システムの管理が強化されます。
 
 リンクを使用する利点は次のとおりです。
 
-* このリンクにより、 BlueXP はONTAPコマンドを FSx for ONTAPファイルシステムに直接送信できるようになり、AWS がネイティブに提供する機能を超える高度なONTAP機能を利用できるようになります。
+* このリンクにより、 NetAppコンソールはONTAPコマンドを FSx for ONTAPファイルシステムに直接送信できるようになり、AWS がネイティブに提供する機能を超える高度なONTAP機能が利用できるようになります。
 * リンクはAWS Lambdaを活用してイベントに応答するコードを実行します。このサーバーレスアプローチにより、VPC内で実行されるインスタンスへの依存が排除されます。
 
 
@@ -35,15 +35,15 @@ BlueXP  ワークロードファクトリリンクは、ワークロードフ�
 
 リンクを作成したら、それを 1 つまたは複数の FSx for ONTAPファイル システムに関連付けることができます。各ファイルシステムは、同じNetAppアカウント内の1つのリンクにのみ関連付けることができます。複数のNetAppアカウントがある場合は、1つのファイルシステムを別 々 のNetAppアカウントの下にある追加のリンクに関連付けることができます。
 
-ワークロード ファクトリのストレージ ワークロードからリンクを作成し、関連付けます。
+Workload Factory のストレージ ワークロードからリンクを作成し、関連付けます。
 
-ワークロードファクトリー認証情報サービスに保存されている認証情報、または AWS Secrets Manager に保存されている認証情報を使用してリンクを認証できます。Workload Factoryは認証モードの変更をサポートしていません。
+Workload Factory 認証情報サービスに保存されている認証情報、または AWS Secrets Manager に保存されている認証情報を使用してリンクを認証できます。ワークロード ファクトリーは認証モードの変更をサポートしていません。
 
 
 
 == コスト
 
-Lambdaが実行する各トランザクションには課金が発生します。Lambdaは2つのシステム間のプロキシとして機能するため、Lambdaがファイルシステム上のONTAP REST APIにリクエストを送信したとき、およびワークロードファクトリにレスポンスを送信したときに料金が発生します。
+Lambda が実行するトランザクションごとに料金が発生します。  Lambda は 2 つのシステム間のプロキシとして機能するため、Lambda がファイルシステム上のONTAP REST API にリクエストを送信するとき、および応答を Workload Factory に返すときに料金が発生します。
 
 link:https://aws.amazon.com/lambda/pricing/["AWS Lambdaの使用に関連するコストの詳細を確認する"^]
 
@@ -51,7 +51,7 @@ link:https://aws.amazon.com/lambda/pricing/["AWS Lambdaの使用に関連する�
 
 == リンクが必要な場合
 
-Workload Factoryには、情報を表示してタスクを実行するためのリンクが必要です。リンクを必要とする操作を実行しようとしたときに、FSx for ONTAPファイル システムにリンクが関連付けられていない場合、ワークロード ファクトリーによって、操作にリンクが必要であることが通知されます。
+ワークロード ファクトリーでは、情報を表示したりタスクを実行したりするためのリンクが必要です。リンクを必要とする操作を実行しようとしたが、FSx for ONTAPファイル システムにリンクが関連付けられていない場合、Workload Factory は操作にリンクが必要であることを通知します。
 
 リンクが必要な機能は次のとおりです。
 

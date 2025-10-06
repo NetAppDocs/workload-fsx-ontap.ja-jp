@@ -4,7 +4,7 @@ permalink: troubleshooting.html
 keywords: troubleshooting, troubleshoot, help, issues 
 summary: Amazon FSx for NetApp ONTAPのドキュメントには、参考になるトラブルシューティングのトピックが記載されています。 
 ---
-= BlueXP  ワークロード工場でのFSx for ONTAPのトラブルシューティング
+= NetApp Workload Factory における FSx for ONTAPのトラブルシューティング
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

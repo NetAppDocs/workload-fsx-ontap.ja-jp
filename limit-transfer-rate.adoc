@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: limit-transfer-rate.html 
 keywords: limit max transfer rate, limit transfer rate 
-summary: BlueXP  ワークロードファクトリでは、レプリケーション関係の最大転送速度を制限します。 
+summary: NetApp Workload Factory のレプリケーション関係の最大転送速度を制限します。 
 ---
 = レプリケーション関係の最大転送速度を制限する
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: BlueXP  ワークロードファクトリでは、レプリケーシ�
 
 
 [role="lead"]
-BlueXP  ワークロードファクトリでは、レプリケーション関係の最大転送速度を制限します。転送速度に制限がないと、他のアプリケーションやネットワークのパフォーマンスに悪影響を及ぼす可能性があります。
+NetApp Workload Factory のレプリケーション関係の最大転送速度を制限します。転送速度を無制限にすると、他のアプリケーションやネットワークのパフォーマンスに悪影響を与える可能性があります。
 
 .タスクの内容
 最大転送速度の制限はオプションですが、推奨されます。制限がないと、ネットワークとアプリケーションのパフォーマンスが低下する可能性があります。
@@ -23,10 +23,11 @@ BlueXP  ワークロードファクトリでは、レプリケーション関�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. FSx for ONTAP *タブで、更新するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[レプリケーション関係]*タブを選択します。
-. [Replication relationships]タブで、レプリケーション関係の最大転送速度を制限する3ドットのメニューを選択します。
+. レプリケーション関係タブで、最大転送速度を制限するレプリケーション関係のアクションメニューを選択します。
 . [最大転送速度の編集]*を選択します。
 . [Edit max transfer rate]ダイアログで、* Limited *を選択し、最大転送制限をMB/秒単位で入力します。
 +

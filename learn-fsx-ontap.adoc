@@ -2,20 +2,20 @@
 sidebar: sidebar 
 permalink: learn-fsx-ontap.html 
 keywords: Amazon FSx for NetApp ONTAP, FSx, storage, aws 
-summary: Amazon FSx for NetApp ONTAPはフルマネージドサービスで、お客様はファイルシステムをワークロード工場内でワークロード用のストレージバックエンドとして起動して実行できます。 
+summary: Amazon FSx for NetApp ONTAP は、 Workload Factory 内でワークロードのストレージバックエンドとしてファイルシステムを起動および実行できる、完全に管理されたサービスです。 
 ---
-= BlueXP  ワークロード工場でのAmazon FSx for NetApp ONTAPの詳細
+= NetApp Workload Factory でAmazon FSx for NetApp ONTAPについて学ぶ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Amazon FSx for NetApp ONTAPは、高度なデータ管理機能と拡張性に優れたパフォーマンスを提供する、フルマネージドのクラウドベースデータストレージサービスです。FSx for ONTAPを使用すると、BlueXP  ワークロード工場内のすべてのワークロードのストレージバックエンドとしてファイルシステムを作成、管理できます。
+Amazon FSx for NetApp ONTAPは、高度なデータ管理機能と高度にスケーラブルなパフォーマンスを提供する、完全に管理されたクラウドベースのデータストレージサービスです。  FSx for ONTAPを使用すると、 NetApp Workload Factory 内のすべてのワークロードのストレージ バックエンドとしてファイル システムを作成および管理できます。
 
 FSX for ONTAP は、ネットアップのお客様が現在オンプレミスで使用しているのと同じ機能、パフォーマンス、管理機能を、ネイティブの AWS サービスの簡易性、即応性、セキュリティ、拡張性で提供します。
 
-FSx for ONTAPは、ワークロード工場における_Storage_componentです。
+FSx for ONTAPは、Workload Factory の _ストレージ_ コンポーネントです。
 
 
 
@@ -23,7 +23,7 @@ FSx for ONTAPは、ワークロード工場における_Storage_componentです�
 
 FSx for ONTAPには次のような特長があります。
 
-* *フルマネージドサービス*：ワークロードファクトリコンソールと統合されたフルマネージドサービスを提供します。
+* *完全に管理されたサービス*: Workload Factory コンソールと統合された完全に管理されたサービスを提供します。
 * *高可用性*：各FSx for ONTAPファイルシステムに高可用性を提供し、単一および複数のアベイラビリティゾーンの導入をサポートします。
 * *自動スナップショット*：自動化された効率的なスナップショットを使用してデータを保護します。スナップショットは、ファイルシステムまたはボリュームのスペース効率に優れた、読み取り専用のポイントインタイムコピーです。
 * *ボリュームレプリケーション*：Amazon Web Services間のリージョン間レプリケーションにより、ディザスタリカバリを実現します。
@@ -40,7 +40,7 @@ FSx for ONTAPには次のような特長があります。
 
 
 
-== ワークロードファクトリの追加機能
+== ワークロードファクトリーの追加機能
 
 * *ストレージコスト比較計算ツール*：Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for WindowsファイルサーバのストレージコストをFSx for ONTAPと比較します。FSx for ONTAPストレージ構成で実現可能な削減効果を確認し、FSx for ONTAPストレージへの移行を計画できます。
 * * Workload Factoryユーザーインターフェイス*：_Quick create_and_Advanced create_deploymentモードオプションを提供します。クイック作成には、ストレージ構成に適したAWS、NetApp、および業界標準のベストプラクティスが含まれます。
@@ -49,24 +49,24 @@ FSx for ONTAPには次のような特長があります。
 
 
 
-== ワークロードファクトリを使用するためのツール
+== NetApp Workload Factory を使用するためのツール
 
-BlueXP  ワークロード工場では、次のツールを使用できます。
+NetApp Workload Factory は次のツールで使用できます。
 
-* *ワークロードファクトリコンソール*:ワークロードファクトリコンソールは、アプリケーションとプロジェクトの視覚的で包括的なビューを提供します。
-* * BlueXP  コンソール*：BlueXP  コンソールはハイブリッドインターフェイスを提供するため、BlueXP  ワークロードファクトリを他のBlueXP  サービスと一緒に使用できます。
-* *確認*：AIアシスタント「Ask me」を使用すると、Workload FactoryのWeb UIから離れることなく、Workload Factoryについて質問したり、詳細を確認したりできます。[Workload Factory Help]メニューから[Ask me]にアクセスします。
-* * CloudShell CLI *：ワークロードファクトリには、1つのブラウザベースのCLIからアカウント間でAWSおよびNetApp環境を管理および運用するためのCloudShell CLIが含まれています。Workload FactoryコンソールのトップバーからCloudShellにアクセスします。
-* * REST API *：ワークロードファクトリREST APIを使用して、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理します。
-* * CloudFormation *：AWS CloudFormationコードを使用して、ワークロードファクトリコンソールで定義したアクションを実行し、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理します。
-* *Terraform BlueXP  ワークロードファクトリプロバイダ*: Terraformを使用して、ワークロードファクトリコンソールで生成されるインフラワークフローを構築および管理します。
+* *Workload Factory コンソール*: Workload Factory コンソールは、アプリケーションとプロジェクトの視覚的かつ全体的なビューを提供します。
+* * NetAppコンソール*: NetAppコンソールはハイブリッド インターフェイス エクスペリエンスを提供するため、Workload Factory を他のNetAppデータ サービスと一緒に使用できます。
+* *質問する*: Ask me AI アシスタントを使用すると、Workload Factory コンソールを離れることなく、質問したり、Workload Factory について詳しく知ることができます。Workload Factory のヘルプ メニューから「Ask me」にアクセスします。
+* *CloudShell CLI*: Workload Factory には、単一のブラウザベースの CLI からアカウント全体の AWS およびNetApp環境を管理および操作するための CloudShell CLI が含まれています。Workload Factory コンソールの上部バーから CloudShell にアクセスします。
+* *REST API*: Workload Factory REST API を使用して、FSx for ONTAPファイルシステムやその他の AWS リソースをデプロイおよび管理します。
+* *CloudFormation*: AWS CloudFormation コードを使用して、Workload Factory コンソールで定義したアクションを実行し、AWS アカウントの CloudFormation スタックから AWS およびサードパーティのリソースをモデル化、プロビジョニング、管理します。
+* *Terraform NetApp Workload Factory プロバイダー*: Terraform を使用して、Workload Factory コンソールで生成されたインフラストラクチャ ワークフローを構築および管理します。
 
 
 
 
 == コスト
 
-AWSは、ワークロードファクトリではなく、お客様のFSx for ONTAPアカウントを管理します。を参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html#pricing-for-fsx-ontap["Amazon FSx for NetApp ONTAPの価格設定"^]。
+FSx for ONTAPアカウントを管理するのは Workload Factory ではなく AWS です。。 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html#pricing-for-fsx-ontap["Amazon FSx for NetApp ONTAPの価格設定"^] 。
 
 
 
@@ -88,4 +88,4 @@ AWSは、ワークロードファクトリではなく、お客様のFSx for ONT
 
 Amazon FSx for NetApp ONTAP は、AWSファーストパーティの解決策 です。FSx for ONTAPファイルシステム、インフラ、または本サービスを使用する解決策に関する質問やテクニカルサポートの問題については、AWS管理コンソールのサポートセンターを使用してAWSに対するサポートケースをオープンしてください。「 FSX for ONTAP 」サービスと該当するカテゴリを選択します。AWS サポートケースの作成に必要な残りの情報を指定します。
 
-ワークロードファクトリまたはワークロードファクトリのアプリケーションとサービスに関する一般的な質問については、を参照してくださいlink:get-help.html["FSx for ONTAP for Workload Factoryのサポートを受ける"]。
+Workload FactoryまたはWorkload Factoryアプリケーションとサービスに関する一般的な質問については、以下を参照してください。link:get-help.html["FSx for ONTAP for Workload Factory のヘルプを入手する"] 。

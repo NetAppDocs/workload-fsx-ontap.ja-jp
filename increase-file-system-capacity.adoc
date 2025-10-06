@@ -4,7 +4,7 @@ permalink: increase-file-system-capacity.html
 keywords: adjust capacity, elastic file system capacity, increase file system capacity, increase FSx capacity, decrease file system capacity, decrease FSx capacity 
 summary: さまざまなアクティブワーキングセットを持つプロジェクトベースのワークロードのニーズを満たすために、FSx for ONTAPファイルシステムの SSD ストレージ容量を手動で調整します。 
 ---
-= ワークロードファクトリーでファイルシステムの容量を調整する
+= Workload Factory でファイルシステムの容量を調整する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -15,7 +15,7 @@ summary: さまざまなアクティブワーキングセットを持つプロ�
 
 使用済みの SSD ストレージ容量が指定したしきい値を超えた場合は FSx for ONTAPファイル システムの SSD ストレージ容量を増やし、作業セットが非アクティブな場合は SSD ストレージ容量を減らしてコスト効率を向上させます。
 
-また、ワークロードファクトリがファイルシステムの容量を管理できるようにすることもできますlink:enable-auto-capacity-management.html["容量の自動管理機能を有効にする"]。
+あるいは、link:enable-auto-capacity-management.html["容量の自動管理機能を有効にする"] Workload Factory がファイル システムの容量を管理します。
 
 
 NOTE: SSD ストレージ容量の削減は、第 2 世代のファイル システムでのみサポートされます。
@@ -36,7 +36,7 @@ SSDのストレージ容量の制限については、AWS FSx for NetApp ONTAP�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [ストレージ]で、*[ストレージインベントリに移動]*を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
 . ダッシュボードから*SSD 容量の調整*を選択します。
 . 容量を調整するファイル システムを選択し、[続行] を選択します。
 +

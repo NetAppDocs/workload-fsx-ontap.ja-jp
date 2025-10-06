@@ -4,14 +4,14 @@ permalink: split-cloned-volume.html
 keywords: split clone volume, FlexVol volume 
 summary: クローンFlexVol volumeを親ボリュームからスプリットして、通常の読み取り/書き込みFlexVol volumeにします。 
 ---
-= BlueXP  ワークロード工場でクローンボリュームをスプリットする
+= NetApp Workload Factory でクローンボリュームを分割する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-クローンFlexVol volumeを親ボリュームからスプリットして、BlueXP  ワークロード工場で通常の読み取り/書き込みFlexVol volumeにします。
+クローンFlexVol volumeを親ボリュームから分割して、クローンをNetApp Workload Factory の通常の読み取り/書き込みFlexVol volumeにします。
 
 スプリット中は、クローンおよび親のデータにアクセスできます。スプリットプロセスではメタデータのみが更新され、IOは最小限に抑えられます。データブロックはコピーされません。
 
@@ -35,9 +35,11 @@ summary: クローンFlexVol volumeを親ボリュームからスプリットし
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [Storage]で、*[Go to storage inventory]*を選択します。
-. [ボリューム]*タブを選択します。
-. [Volumes]タブで、スプリットするクローンボリュームを含むボリュームの3ドットメニューを選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、分割するボリュームクローンを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. 「ボリューム」タブで、分割するクローンボリュームを含むボリュームのアクション メニューを選択します。
 . [データ保護操作]*を選択し、*[クローンボリュームのスプリット]*を選択します。
 . [ボリュームの分割]ダイアログで、*[削除]*を選択します。
 

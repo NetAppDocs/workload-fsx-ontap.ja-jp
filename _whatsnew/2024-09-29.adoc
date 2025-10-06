@@ -6,8 +6,8 @@
 
 === リンク作成の更新
 
-* Codeboxビューア: Codeboxがリンク作成プロセスに統合されました。操作を実行するためにAWSにリダイレクトする前に、ワークロードファクトリのCodeboxからCloudFormationテンプレートを表示およびコピーできます。
-* 必要な権限: AWS CloudFormationでリンク作成を実行するために必要な権限が、ワークロードファクトリのCreate Linkウィザードで表示およびコピーできるようになりました。
+* Codebox ビューアー: Codebox がリンク作成プロセスに統合されました。  AWS にリダイレクトして操作を実行する前に、Workload Factory の Codebox から CloudFormation テンプレートを表示してコピーできます。
+* 必要なアクセス許可: AWS CloudFormation でリンク作成を実行するために必要なアクセス許可が、Workload Factory のリンク作成ウィザードから表示およびコピーできるようになりました。
 * 手動リンク作成のサポート:この機能を使用すると、AWS CloudFormationでリンクARNを手動で登録してスタンドアロンで作成できます。これは、セキュリティチームまたはDevOpsチームがリンク作成プロセスを支援する場合に役立ちます。
 
 

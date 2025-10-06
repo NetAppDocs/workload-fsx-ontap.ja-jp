@@ -1,9 +1,9 @@
-= Amazon FSx for NetApp ONTAP向けワークロードファクトリーの初版リリース
+= Amazon FSx for NetApp ONTAPWorkload Factory の初期リリース
 :allow-uri-read: 
 
 
 
 
-=== Amazon FSx for NetApp ONTAP向けワークロードファクトリーの初版リリース
+=== Amazon FSx for NetApp ONTAPWorkload Factory の初期リリース
 
 Amazon FSx for NetApp ONTAPは現在、BlueXP  ワークロード工場で一般提供されています。

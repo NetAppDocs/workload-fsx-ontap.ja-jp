@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: update-throughput-capacity.html 
 keywords: update throughput, change throughput, throughput capacity 
-summary: BlueXP  ワークロード工場でFSx for ONTAPファイルシステムのスループット容量を必要に応じて更新 
+summary: 必要に応じて、 NetApp Workload Factory の FSx for ONTAPファイル システムのスループット容量を更新します。 
 ---
 = ファイルシステムのスループット容量の更新
 :allow-uri-read: 
@@ -11,14 +11,15 @@ summary: BlueXP  ワークロード工場でFSx for ONTAPファイルシステ�
 
 
 [role="lead"]
-BlueXP  ワークロード工場でFSx for ONTAPファイルシステムのスループット容量を必要に応じて更新
+必要に応じて、 NetApp Workload Factory の FSx for ONTAPファイル システムのスループット容量を更新します。
 
 スループット容量の制限については、AWS FSx for NetApp ONTAPドキュメントのを参照して link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["クォータ"^] ください。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [ストレージ]で、*[ストレージインベントリに移動]*を選択します。
-. FSx for ONTAP *タブで、スループット容量を更新するファイルシステムの3ドットメニューを選択し、* Manage *を選択します。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、スループット容量を更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . [Information]で、*[Throughput capacity]*の横にある鉛筆アイコンを選択します。[Throughput capacity]*行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。
 . [スループット容量]ダイアログで、必要なスループット容量を選択します。
 . [適用]*を選択して変更を保存します。
