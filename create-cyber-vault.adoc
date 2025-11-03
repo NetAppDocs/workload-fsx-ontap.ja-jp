@@ -29,4 +29,4 @@ Workload Factory は、サイバー ボールト アーキテクチャの作成�
 開始するには、ng-FSx-CyberVault@netapp.com に電子メールを送信してください。
 
 .関連情報
-サイバー金庫とこのアーキテクチャの設定方法の詳細については、link:https://docs.netapp.com/us-en/netapp-solutions-dataops/cyber-vault/ontap-cyber-vault-overview.html["ONTAPサイバー ボールトのドキュメント"^] 。
+サイバー金庫とこのアーキテクチャの設定方法の詳細については、 link:https://docs.netapp.com/us-en/netapp-solutions-dataops/cyber-vault/ontap-cyber-vault-overview.html["ONTAPサイバー ボールトのドキュメント"^]。
