@@ -13,7 +13,7 @@ summary: ボリュームの自動拡張を有効にすると、Workload Factory 
 [role="lead"]
 ボリュームの自動拡張を有効にすると、Workload Factory がボリューム容量を管理できるようになります。いつでも無効にすることができます。
 
-必要に応じて、を使用していつでもボリュームのボリューム容量を手動で拡張できます link:increase-volume-capacity.html["ボリューム容量の拡張機能"]。
+オプションとして、ボリュームの容量を手動でいつでも増やすことができます。link:adjust-volume-capacity.html["音量容量調整機能"] 。
 
 
 NOTE: ボリュームの自動拡張はiSCSIボリュームではサポートされません。

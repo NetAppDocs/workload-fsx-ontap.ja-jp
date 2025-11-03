@@ -19,7 +19,7 @@ Storage VMとセキュリティグループは、ファイルシステムの作�
 .開始する前に
 FSx for ONTAPファイルシステムを作成する前に、以下が必要になります。
 
-* Workload Factory に FSx for ONTAPファイルシステムの作成に必要な権限を与える IAM ロールの ARN。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSアカウントに権限を付与する方法を確認する"^] 。
+* FSx for ONTAPファイル システムを作成するための、_ファイル システムの作成および削除_ 権限を持つ認証情報。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSアカウントに権限を付与する方法を確認する"^]。
 * ONTAP インスタンスの FSX を作成する場所のリージョンおよび VPC 情報。
 
 

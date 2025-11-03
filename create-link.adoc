@@ -39,7 +39,7 @@ NOTE: コネクタを使用する場合、AWS Secrets Managerはサポートさ�
 
 .開始する前に
 * どのリンク作成オプションを使用するかを検討する必要があります。
-* Workload Factory には少なくとも 1 つの FSx for ONTAPファイル システムが必要です。  FSx for ONTAPファイルシステムを検出または作成するには、FSx for ONTAPインスタンスに対する権限を持つAWSアカウントが必要です。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html#overview["Workload Factoryに資格情報を追加する"^]ストレージ管理用の _読み取り専用_ または _読み取り/書き込み_ 権限を持ちます。
+* Workload Factory には少なくとも 1 つの FSx for ONTAPファイル システムが必要です。  FSx for ONTAPファイルシステムを検出するには、FSx for ONTAPインスタンスに対する権限を持つAWSアカウントが必要です。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html#overview["Workload Factoryに資格情報を追加する"^]ストレージ管理の_表示、計画、および分析_権限を持ちます。
 * リンク接続のために、FSx for ONTAP ファイル システムに関連付けられたセキュリティ グループで次のポートが開いている必要があります。
 +
 ** Workload Factory コンソールの場合: ポート 443 (HTTPS)

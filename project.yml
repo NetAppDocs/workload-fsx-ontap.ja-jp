@@ -81,6 +81,8 @@ sidebar:
         url: "/clone-volume.html"
       - title: オンプレミスのONTAPデータを使用
         url: "/use-onprem-data.html"
+      - title: データを保護するサイバーボールトを作成する
+        url: "/create-cyber-vault.html"
   - title: 管理と監視
     entries:
     - title: Trackerを使用した操作の監視
@@ -95,14 +97,16 @@ sidebar:
       entries:
       - title: ボリュームの自動拡張の編集
         url: "/edit-volume-autogrow.html"
-      - title: ボリューム容量を拡張
-        url: "/increase-volume-capacity.html"
+      - title: ボリューム容量を調整する
+        url: "/adjust-volume-capacity.html"
+      - title: ボリューム容量の再調整
+        url: "/rebalance-volume.html"
       - title: 変更不可ファイルの管理
         url: "/manage-immutable-files.html"
       - title: ボリュームタグを管理します
         url: "/manage-volume-tags.html"
-      - title: ボリューム容量の再調整
-        url: "/rebalance-volume.html"
+      - title: キャッシュボリュームを管理する
+        url: "/manage-cache-volumes.html"
       - title: 階層化ポリシーを変更する
         url: "/change-tiering-policy.html"
       - title: Storage Efficiencyの更新
@@ -119,7 +123,7 @@ sidebar:
       entries:
       - title: ファイルシステムの容量を調整する
         url: "/increase-file-system-capacity.html"
-      - title: 容量の自動管理を有効にする
+      - title: 自動容量およびinode管理を有効にする
         url: "/enable-auto-capacity-management.html"
       - title: fsxadminパスワードのリセット
         url: "/reset-fsxadmin-password.html"

@@ -116,7 +116,7 @@ FSx for ONTAPに切り替えるには、の手順に従います <<FSx for ONTAP
 == 検出されたストレージ環境の削減効果を確認する
 
 .開始する前に
-Workload FactoryがAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、およびFSx for Windows File Serverストレージ環境を検出するには、次のことを確認してください。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["読み取り専用権限を付与する"^] AWS アカウントで。
+Workload FactoryがAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、およびFSx for Windows File Serverストレージ環境を検出するには、次のことを確認してください。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["表示、計画、分析の権限を付与する"^] AWS アカウントで。
 
 
 NOTE: この計算ツールオプションでは、EBSスナップショットとFSx for Windows File Serverシャドウコピーの計算はサポートされていません。カスタマイズによるコスト削減を検討する場合は、EBSとFSx for Windows File Serverスナップショットの詳細を提供できます。

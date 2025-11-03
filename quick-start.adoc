@@ -23,13 +23,13 @@ Workload Factory を使用してファイル システムの作成やリソー�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] クレデンシャルと権限の追加
 [role="quick-margin-para"]
-_基本_、_読み取り専用_、_読み取り/書き込み_から選択しますlink:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]
+選択してくださいlink:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["権限ポリシー"^]お客様のニーズを満たすために。
 
 [role="quick-margin-para"]
-_基本_モードで操作することを選択した場合は、これ以上進む必要はありません。  Workload Factory for FSx for ONTAPを使用して、部分的に完了したコード サンプルをコピーできます。
+権限を付与しない場合は、Workload Factory for FSx for ONTAPを使用して、部分的に完了したコード サンプルをコピーできます。
 
 [role="quick-margin-para"]
-_読み取り専用_または_読み取り/書き込み_モードで操作する場合は、 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["アカウントへのクレデンシャルの手動追加"^]これには、データベースや AI などのワークロード機能の選択や、_読み取り専用_ モードまたは _読み取り/書き込み_ モードで操作するための適切な権限があることを確認するための IAM ポリシーの作成が含まれます。
+権限を付与する場合は、link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["アカウントへのクレデンシャルの手動追加"^]これには、データベースや AI などのワークロード機能の選択や、必要な権限の IAM ポリシーの作成が含まれます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ファイルシステムの作成
 [role="quick-margin-para"]

@@ -284,8 +284,6 @@
   <block id="856fd7298379e6a75a221ebc3af9cdec" category="list-text">[Storage VMタグの編集]*を選択します。</block>
   <block id="14d8aa612c687d8708f6fefc5f554d22" category="list-text">[Storage VMタグの編集]ページで、タグを追加、編集、または削除します。</block>
   <block id="2d1066d1fee53e98224fefca16751fd3" category="paragraph">Storage VMに適用できるタグの最大数は50です。</block>
-  <block id="edd5da19d30912fca4670982f9aef531" category="inline-link-macro">ボリューム容量の拡張機能</block>
-  <block id="f9e4840a1cf1ddb5632e031e0334acb9" category="paragraph">必要に応じて、を使用していつでもボリュームのボリューム容量を手動で拡張できます <block ref="11462b2e1fd0bd94e3dc25fc7f04c4ba" category="inline-link-macro-rx"></block>。</block>
   <block id="2332ee8494d2f8246a961c95630281a2" category="admonition">ボリュームの自動拡張はiSCSIボリュームではサポートされません。</block>
   <block id="3d7b2807e22b58e985dfcb21a31b176e" category="summary">タグは、リソースを分類するのに役立ちます。FSx for ONTAPボリュームのボリュームタグは、いつでも追加、編集、削除できます。</block>
   <block id="c966edae1d484c4f3e557d47709e08a1" category="list-text">[基本的な操作]*を選択し、*[ボリュームタグの編集]*を選択します。</block>
@@ -384,13 +382,7 @@
   <block id="ffc888e5ff626bf410d67b62a9e8a9a8" category="paragraph">SSDのストレージ容量の制限については、AWS FSx for NetApp ONTAPドキュメントのを参照して <block ref="5e5311b04805e422cc2fabe002034628" category="inline-link-macro-rx"></block> ください。</block>
   <block id="3fa4dafc00a14f08641efa3389891289" category="inline-link-macro">容量の自動管理を無効にする</block>
   <block id="bb38e8f0462bc33d127ff7d217a31149" category="list-text">プロビジョニング済み容量の単位を選択します。</block>
-  <block id="ceadc0f7d6f2330af477eb47568a259b" category="doc">ボリューム容量を拡張</block>
   <block id="eacbf9150c5d9c7a7032185805a236b8" category="inline-link-macro">自動拡張機能を有効にする</block>
-  <block id="61912f548f2af8c04ce8d9e84cdfcebf" category="paragraph">iSCSI LUNの場合、この処理によってホストLUNのサイズが拡張されます。容量が拡張されたら、ホストオペレーティングシステムの手順に従ってLUNの新しいサイズを検出し、LUNのファイルシステムを拡張します。</block>
-  <block id="edd00e1c6dfe245ca67fb40d38a8f612" category="list-text">[基本的な操作]*を選択し、*[ボリューム容量の拡張]*を選択します。</block>
-  <block id="4b3ec30c73a77c948a926f5f261f219f" category="list-text">[ボリューム容量の拡張]ダイアログで、次の情報を指定します。</block>
-  <block id="8ba1ce8b4c03e2fec48c757cacb814de" category="list-text">大きいサイズを選択してください。</block>
-  <block id="0268e0733e81d9eec7959c020c7609fb" category="list-text">必要に応じてユニットを交換します。</block>
   <block id="26f68296f7b3ad0f394e89c82f5ea642" category="summary">ソースボリュームとターゲットボリューム間のレプリケーション関係を初期化します。</block>
   <block id="45df433d6d3e94a4c9cb03d82b93e7fa" category="doc">レプリケーション関係を初期化する</block>
   <block id="42812c21ac1eee37a9ac12cf59634ce6" category="paragraph">初期化では、_baseline_transferが実行されます。ソースボリュームのSnapshotが作成され、そのSnapshotおよびSnapshotが参照するすべてのデータブロックがターゲットボリュームに転送されます。</block>
@@ -492,7 +484,6 @@
   <block id="0d6187a6dbf87b209ebf23f8fee502f9" category="inline-link-macro">ログイン</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2つ</block>
   <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> クレデンシャルと権限の追加</block>
-  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link-macro">動作モード</block>
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link-macro">アカウントへのクレデンシャルの手動追加</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
   <block id="8c163240a45cebe17c44b7359252c96a" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> ファイルシステムの作成</block>
@@ -741,7 +732,6 @@
   <block id="c853397a437814fc2251c95bdf57909f" category="list-text">[関係の削除]ダイアログで、*[削除]*を選択します。</block>
   <block id="ad1d6a18c0d830b44dfe2e6a96d2807d" category="list-text">必要に応じて、*[ボリュームのバックアップ]*を選択して、削除前にボリュームをバックアップします。</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">「 * Continue * 」を選択します。</block>
-  <block id="bd0cd4a796621f54f57afed7ce044b14" category="doc">FSx for ONTAPファイルシステムの容量の自動管理を有効にする</block>
   <block id="37315e43d6c90fe6798b7397bf15ebae" category="list-text">[Information]で、*[Automatic capacity management]*の横にある鉛筆アイコンを選択します。[Automatic capacity management]行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。</block>
   <block id="c5c6c97593c886ac31454d1f10313b78" category="list-text">[有効化]ボタンを選択して*[自動容量管理を有効にする]*を選択します。</block>
   <block id="759c5ad2620497fe90dc2bc5e085c8c0" category="summary">長期保存のためのスナップショットを有効にします。これにより、長期的なディザスタリカバリのために特定のスナップショットをレプリケートできます。</block>
@@ -1007,7 +997,6 @@
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">[ 有効 ] を選択します。</block>
   <block id="427c298c7e18f9930012cc8fc9c01fcd" category="summary">FSx for ONTAPファイルシステムで不要になったボリュームを削除し、スペースを解放します。この処理は元に戻すことはできません。</block>
   <block id="c6e676032b22d8e639d8347f2bfe87d5" category="list-text">変更不可のファイルとスナップショット：変更不可のファイルとスナップショットを含むボリュームは、保持期間が終了するまで削除できません。</block>
-  <block id="c8b905c92d0173f2a57027886d96ccda" category="paragraph">FSx for ONTAPファイルシステムのスキャンは30分ごとに実行され、増分ストレージを追加する必要があるかどうか、使用可能なボリュームinode、またはボリューム内のファイルやフォルダの最大数を確認します。これにより、設定された容量の自動管理のしきい値に従って数が増加します。</block>
   <block id="c19ec77905390b48637066dbfe338f41" category="paragraph">ファイルシステムスキャンは30分ごとに実行され、ファイルシステムに追加の容量が必要かどうかが判断されます。</block>
   <block id="db95f08d46f6135faf16036ec8d0bee1" category="paragraph">Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for Windowsファイルサーバを使用するストレージワークロードとFSx for NetApp ONTAPを使用するストレージワークロードの削減効果をご確認ください。</block>
   <block id="40042d0ee93698f3f63a7f8a3f2c9c1f" category="paragraph">手動で実行する場合<block ref="a9cec068297d5b243eecd658574a7cef" category="inline-link-macro-rx"></block>は、ファイルシステムの容量の増加に対応するためにIOPSの割り当てを増やす必要があります。</block>
@@ -1128,9 +1117,6 @@
   <block id="24249670ae7cb490931a0cfb669e35fb" category="list-text">アーカイブ：長期的なストレージとコンプライアンスのためにデータをレプリケート</block>
   <block id="6311ae17c1ee52b36e68aaf4ad066387" category="list-text">その他</block>
   <block id="181b737a36ca59661f38fe5373437f6a" category="list-text">*階層化ポリシー*：ターゲットボリュームに格納されているデータの階層化ポリシーを選択します。階層化ポリシーは、選択したユースケースに応じた推奨される階層化ポリシーにデフォルトで設定されます。</block>
-  <block id="70790f6319078f7b58ce5d5adf8b27ed" category="list-text">*しきい値の増加*：FSx for ONTAPファイルシステムの最大サイズを入力します。</block>
-  <block id="83b9d06ffc256e2f2bbc40862d118517" category="list-text">* Incremental Increase *：容量を段階的に増やす割合を入力します。</block>
-  <block id="67cfcc957e64e9b21fe6f9036930ba34" category="list-text">オプション：inodeの自動管理を有効にして、inode（ファイル）の数を上限まで増やしてボリュームあたりのファイル容量をスケールアップします。</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
   <block id="4992f7a0d7d6ee4776bb87ff9118642c" category="section-title">ファイルシステム作成のセキュリティグループの詳細</block>
   <block id="b7cc50bb665bb63168fb8d2e9eebaedc" category="paragraph">セキュリティグループは、FSx for ONTAPファイルシステムの作成プロセスの一環として作成されます。セキュリティグループの詳細（プロトコル、ポート、ロールなど）を確認できるようになりました。</block>
@@ -1318,7 +1304,6 @@
   <block id="396928510e06818ef017921022cce2af" category="list-text">データの階層化</block>
   <block id="aff279b636a9024db3b44375d88e80eb" category="list-text">スケジュールされたローカルSnapshot</block>
   <block id="887673b402c7bbc141e56321e277605f" category="list-text">リモートデータレプリケーション</block>
-  <block id="2f5c8a4d7476b305dbc46e2886046e37" category="inline-link-macro">AWSアカウントで権限を付与する方法を確認する</block>
   <block id="c9e425055996f71ecfc858708d926276" category="paragraph">推奨事項には、最適化されていない構成のベストプラクティスと潜在的な落とし穴が記載されています。</block>
   <block id="8e369a2580b67427ac856eea6e4e3eb6" category="list-text">[To]*[Fix]*を選択します。</block>
   <block id="fe5f70c74405942514095d724e090b64" category="paragraph">[表示して修正]*がオプションの場合は、修正する影響を受けるボリュームを選択します。</block>
@@ -1422,11 +1407,7 @@
   <block id="58107709be0f763204df69a361ef7fe0" category="list-text">自動容量管理が有効になっている場合、ボリュームの inode がストレージ容量に応じて増加するようにリンクが必要です。</block>
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025年6月3日</block>
   <block id="0592779b8245b0df30d4f675dd276086" category="list-text">レプリケーションの一時停止と再開：ソースボリュームからデスティネーションボリュームへのスケジュールされたレプリケーション更新を一時停止（休止）し、準備ができたらレプリケーションスケジュールを再開できます。一時停止中、ソース ボリュームと宛先ボリュームは独立し、宛先ボリュームは読み取り専用から読み取り/書き込みに移行します。</block>
-  <block id="20f8a84eb910bbd8af91b95f380d163c" category="inline-link-macro">読み取り専用権限を付与する</block>
-  <block id="4548f94159b489b0c24b45e3a301c68c" category="list-text">_読み取り専用_または_読み取り/書き込み_権限を持つ資格情報が必要です。<block ref="2022cabf257ab03f558a69fe97667e91" category="inline-link-macro-rx"></block>です。</block>
   <block id="896d6bec42b8c83090c4e03345712729" category="paragraph">レプリケーション関係を一時停止して、ソースボリュームからターゲットボリュームへのスケジュールされたレプリケーション更新を停止します。ターゲットボリュームは読み取り専用から読み取り/書き込みに移行します。両方のボリュームで最新のレプリケーションSnapshotが引き続き共有され、あとで再同期するための新しいベースラインとして使用されます。</block>
-  <block id="b91aff97cc4dadbca9539fae72dedecc" category="paragraph">_基本_、_読み取り専用_、_読み取り/書き込み_から選択します<block ref="a1a436caedec06006ef5b76c82a83b04" category="inline-link-macro-rx"></block></block>
-  <block id="b31987b3ffb35fe02be38fe9d8e701f1" category="paragraph">_読み取り専用_または_読み取り/書き込み_モードで操作する場合は、 <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>これには、データベースや AI などのワークロード機能の選択や、_読み取り専用_ モードまたは _読み取り/書き込み_ モードで操作するための適切な権限があることを確認するための IAM ポリシーの作成が含まれます。</block>
   <block id="2423cc9c7b9124d70e9fba7ab98b53df" category="doc">問題解決のための新しい優れた分析とサポート</block>
   <block id="b03b65ae167fa7999b9020739117ae19" category="paragraph">FSx for ONTAP ファイルシステムの自動容量管理が、Well-Architected ステータス ダッシュボードの構成分析として含まれるようになりました。</block>
   <block id="f2be69b635c39988351f6636a52c66bd" category="list-text">自動容量管理</block>
@@ -1445,7 +1426,6 @@
   <block id="0152fea6b73cbe86540a93515bf61029" category="paragraph">AWSのデフォルトポリシーは次のとおりです。カスタムスナップショットポリシーの場合は、 <block ref="6ac03ad394740d642419d1159fa121ff" category="inline-link-macro-rx"></block> 。</block>
   <block id="2b34fc0bead4dcf64099078fdaf86d69" category="paragraph">ボリュームの自動拡張を有効にするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="f8e03e36604030c79d6107b800f61804" category="list-text">ボリュームの inode がストレージ容量に応じて増加するようにするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
-  <block id="837d97ffb35ee510b7ad737132bf4645" category="paragraph">ボリューム容量を増やすには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="2c793b5b15ea565983390f5625f7b85b" category="inline-link-macro">リンクを作成して関連付ける</block>
   <block id="d2daf1f2c560c48cb1e86e38214b4f9f" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block> または <block ref="cd9ae14bef62d063a73930ad8837c0cf" category="inline-link-macro-rx"></block>。</block>
   <block id="facdbacecd0a382dee80b9b865bb8503" category="paragraph">既存のスナップショット ポリシーを表示するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
@@ -1876,7 +1856,6 @@
   <block id="43b56786015efd5716b466b10628735f" category="summary">NetApp Workload Factory は、 Amazon FSx for NetApp ONTAPファイルシステムの構成を定期的に分析し、問題があるかどうかを判断します。</block>
   <block id="25c58ec67af5ce4deef895fad9566aa0" category="paragraph">NetApp Workload Factory は、 Amazon FSx for NetApp ONTAPファイルシステムの構成を定期的に分析し、問題があるかどうかを判断します。問題が見つかった場合、Workload Factory は問題の内容を示し、ファイル システム ストレージが最高のパフォーマンス、コスト効率、ベスト プラクティスへの準拠を実現するために何を変更する必要があるかを説明します。</block>
   <block id="b0a0826c5a9c2b2e6c919de33e89dbfe" category="paragraph">Workload Factory コンソールのファイルシステム レベルでは、すべての FSx for ONTAPファイルシステムの well-architected ステータスがリストされます。  Well-Architected のステータスは、「問題」、「未分析」、または「Well-Architected」に分類されます。  Well-Architected ステータスを選択すると、ファイル システム内の Well-Architected ステータス タブにリダイレクトされ、そこで Well-Architected スコア、構成カテゴリ、ファ​​イル システムのすべての構成を確認できます。</block>
-  <block id="e51fec3467af5113a01bcde93071f103" category="paragraph">完全なファイル システム分析を行うには、リンクを関連付ける必要があります。リンク接続により、Workload Factory はデータ保護やパフォーマンスなどのすべてのファイル システム構成を分析できます。</block>
   <block id="93482e0e05af93f1f57953ff700f65af" category="summary">NetApp Workload Factory の FSx for ONTAPファイル システム内のストレージ VM の Active Directory を構成および更新します。</block>
   <block id="b517cd494437c46f189031b81fe054d1" category="list-text">*FSx for ONTAP*から、更新するストレージVMを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
   <block id="55713424abf36138f2e5576255ae328d" category="list-text">[ストレージ VM] タブから、Active Directory を構成するストレージ VM のアクション メニューを選択します。</block>
@@ -1887,7 +1866,6 @@
   <block id="cc481e5a678e1d84e7207782a75f9a18" category="summary">NetApp Workload Factory を使用すると、FSx for ONTAPファイル システムを作成して、ボリュームや追加のデータ サービスを追加および管理できます。</block>
   <block id="9b19e4522ce9145cc667b5fcceaba11d" category="doc">NetApp Workload Factory で FSx for ONTAPファイルシステムを作成する</block>
   <block id="ebb1274f47205fb0c6d6d8988b0944b0" category="paragraph">NetApp Workload Factory を使用すると、第 1 世代および第 2 世代の FSx for ONTAPファイル システムを作成し、ボリュームと追加のデータ サービスを追加および管理できます。</block>
-  <block id="3dea7c5f73758b891c81f43eb58f840c" category="list-text">Workload Factory に FSx for ONTAPファイルシステムの作成に必要な権限を与える IAM ロールの ARN。<block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block> 。</block>
   <block id="ddf59bcbb71271f59e400a7e3d03e5e5" category="list-text">ストレージ タイルで、*Create FSx for ONTAP* を選択します。</block>
   <block id="cf8254c1af160e61f04022f6a69ab935" category="list-text">*AWS 認証情報*: Workload Factory に AWS 認証情報を追加するか、認証情報なしで続行するかを選択します。</block>
   <block id="d1b55cbdf6e8ca176a53229f6dc39afc" category="summary">NetApp Workload Factory アカウントと 1 つ以上の FSx for ONTAPファイル システム間の信頼関係と接続を提供するリンクを作成および管理できます。</block>
@@ -1895,7 +1873,6 @@
   <block id="8525c310ff1b921b05db83eb21ea6be7" category="paragraph">リンクには認証が必要です。Workload Factory 認証情報サービスに保存されている認証情報、または AWS Secrets Manager に保存されている認証情報を使用してリンクを認証できます。リンクごとに 1 つの認証方法のみがサポートされます。たとえば、AWS Secrets Manager を使用したリンク認証を選択した場合、後で認証方法を変更することはできません。</block>
   <block id="fa1694d04e308a581d5d23c44b278491" category="list-text">自動: Workload Factory 経由で自動登録してリンクを作成します。自動的に作成されたリンクには、Workload Factory 自動化用のトークンが必要であり、CloudFormation コードの有効期間は短くなります。最大6時間までしか使用できません。</block>
   <block id="d6305b17d1542122d978c37db15fd5d3" category="inline-link-macro">Workload Factoryに資格情報を追加する</block>
-  <block id="1858e6285c0971e6fe3339eff4e673ac" category="list-text">Workload Factory には少なくとも 1 つの FSx for ONTAPファイル システムが必要です。  FSx for ONTAPファイルシステムを検出または作成するには、FSx for ONTAPインスタンスに対する権限を持つAWSアカウントが必要です。<block ref="a253a365fdf90416889360c06d5b56a2" category="inline-link-macro-rx"></block>ストレージ管理用の _読み取り専用_ または _読み取り/書き込み_ 権限を持ちます。</block>
   <block id="3b6158401b21fd0fabd6f75b8d9c8c23" category="list-text">Workload Factory コンソールの場合: ポート 443 (HTTPS)</block>
   <block id="e07190df7367fb116bdd913bfce43fbe" category="paragraph">CloudFormation を使用して、Workload Factory 内でリンクを自動的に作成して登録します。</block>
   <block id="40be05127ecd2439f7ee7256f055873a" category="list-text">*FSx for ONTAP*から、リンクを関連付けるファイルシステムのアクションメニューを選択し、*リンクの関連付け*を選択します。</block>
@@ -1979,9 +1956,6 @@
   <block id="c39b3cbd986af96ef05b9724f0b92e6b" category="summary">ボリュームの自動拡張を有効にすると、Workload Factory がボリューム容量を管理できるようになります。いつでも無効にすることができます。</block>
   <block id="467fbaad5c04b9212fefde208c6fce39" category="doc">ワークロードファクトリーでボリュームの自動拡張を有効にする</block>
   <block id="c7cb41d0ae0beeca525b094df6834ee5" category="list-text">「ボリューム」タブから、変更するボリュームのアクション メニューを選択します。</block>
-  <block id="209ff7e6ecbe3110db7702a1025e561e" category="summary">この機能を有効にすると、時間の経過とともに容量のニーズが変化すると、Workload Factory は FSx for ONTAPファイルシステムに増分ストレージを自動的に追加できるようになります。</block>
-  <block id="02d33101545a159bdb205d55a080cd8f" category="paragraph">自動容量管理を有効にすると、 NetApp Workload Factory は、時間の経過とともに容量のニーズが変化するのに応じて、FSx for ONTAPファイル システムに増分ストレージを自動的に追加できるようになります。さらに、この機能を有効にすると、容量を手動で監視する必要がなくなり、影響の大きいアプリケーション データの読み取りと書き込みのリスクが軽減されます。</block>
-  <block id="31612d3d4964dbcf536191df411871dc" category="list-text">このタスクを完了するには、Workload Factory での読み取り/書き込み権限を持つ資格情報が必要です。</block>
   <block id="700ddd4e501b4b63ce13f0a4091d97c3" category="list-text">*FSx for ONTAP*から、自動容量管理を有効にするファイル システムのアクション メニューを選択します。</block>
   <block id="a2f3bd55649066a9bad9a42a8df63f08" category="paragraph">NetApp Workload Factory では、長期保存用のスナップショットを有効にして、長期的な災害復旧のために特定のスナップショットを複製することができます。</block>
   <block id="116537ad3a8e9d253ab6c2cf9b1375c4" category="list-text">*FSx for ONTAP*から、更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
@@ -1993,7 +1967,6 @@
   <block id="4642e285e7941ecca45c4f489b87f287" category="list-text">ストレージ タイルで、*節約を調べる* を選択し、次に *Amazon Elastic Block Store (EBS)* を選択します。</block>
   <block id="5235f3c9988274bcb10c4b2ad1e8abc2" category="list-text">ストレージ タイルで、*節約を調べる* を選択し、次に * Amazon FSx for Windows ファイル サーバー* を選択します。</block>
   <block id="65fa6947c889eb884d3db5954face1ff" category="list-text">ストレージ タイルで、*節約を調べる* を選択し、次に *Amazon Elastic File System (EFS)* を選択します。</block>
-  <block id="fa43e9d68125b28fd0b5f3f2a0f08266" category="paragraph">Workload FactoryがAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、およびFSx for Windows File Serverストレージ環境を検出するには、次のことを確認してください。<block ref="13ae78c09f3df6bcab328a886064dd51" category="inline-link-macro-rx"></block> AWS アカウントで。</block>
   <block id="32ded30570ff532ec17d74df7689f0d7" category="list-text">ストレージ メニューから、*節約を調べる*を選択します。</block>
   <block id="08b129d5d0d4acb7990365d6ce9f2c5f" category="list-text">*選択されたファイルシステム*</block>
   <block id="11ed0b3202d6d086758a8d450bf14383" category="list-text">_automate_ モードでは、Workload Factory から FSx for ONTAPファイル システムを直接デプロイできます。また、Codebox ウィンドウからコンテンツをコピーし、Codebox メソッドのいずれかを使用してシステムを展開することもできます。</block>
@@ -2019,8 +1992,6 @@
   <block id="f899a571558dc3581836d9ffe17218ed" category="paragraph">リンク接続により、Workload Factory はパフォーマンス、データ保護、構成に関する問題をスキャンできます。<block ref="f06ee96e93460df1397f1b3b70044a3e" category="inline-link-macro-rx"></block>ファイル システム リソースの最も包括的な分析を実現します。</block>
   <block id="efa540b6730dc694889e9447404ff68a" category="paragraph">Workload Factory コンソール内のストレージから、ファイル システムの構成の問題に関する推奨事項を確認し、問題を修正するオプションがあります。</block>
   <block id="73b9ca32e75f36a5247f70e0ac6f7034" category="list-text">信頼性: SSD 容量しきい値、スケジュールされたローカル スナップショット、FSx for ONTAPバックアップ、リモート データ レプリケーション、長期保存のためのデータ信頼性</block>
-  <block id="e05ad8318dcdb75b0f56aa3a9ae7a086" category="list-text">セキュリティ: AI を搭載したNetApp の自律型ランサムウェア保護 (ARP/AI)</block>
-  <block id="fcb4f17380114485bf72087c9adb81e3" category="list-text">運用の卓越性: ストレージ効率、自動容量管理、ボリューム ファイル容量使用率のしきい値</block>
   <block id="24ef9c1deb4b27b9f21ac5bafe0b447a" category="list-text">コスト最適化: ストレージ効率とデータ階層化</block>
   <block id="f4620ec86c292b6ceff91a8418771488" category="list-text">修復プロセスにより、インスタンスのダウンタイムやサービスの中断が発生する可能性があります。構成の問題を修正することを選択する前に、各推奨事項を慎重に確認してください。</block>
   <block id="bdcff0916b9de421b3f836810688eb67" category="list-text"><block ref="f06ee96e93460df1397f1b3b70044a3e" category="inline-link-macro-rx"></block>ファイル システム リソースの最も包括的な分析を実現します。</block>
@@ -2032,12 +2003,7 @@
   <block id="29c336c9b670f37c678bc693dcbf0271" category="list-text">1 つのボリュームの場合: アクションメニューを選択し、*ボリュームの再アクティブ化*を選択します。</block>
   <block id="97ab4fe470265bac6bd7eeb0ab6bda75" category="doc">Workload Factory でファイルシステムの容量を調整する</block>
   <block id="e916aa8237833ef72c75def81e289920" category="paragraph">あるいは、<block ref="2bbbc5acd5fd256837600f63916b0e57" category="inline-link-macro-rx"></block> Workload Factory がファイル システムの容量を管理します。</block>
-  <block id="95ac9df142a7e6c7792a69682f381505" category="summary">NetApp Workload Factory 内のボリュームのボリューム容量はいつでも手動で増やすことができます。</block>
-  <block id="1e243240457d81990143c1a64eae70f5" category="doc">NetApp Workload Factory のボリューム容量を増やす</block>
-  <block id="fc9ec781843f39a08c97d2ebfe397bfa" category="paragraph">NetApp Workload Factory では、いつでもボリュームのボリューム容量を手動で増やすことができます。</block>
   <block id="39b152c5585fc0bf22a04de0cc07dff1" category="paragraph">オプションとして、<block ref="e5ea0961d6c7f5be0b804e74d995de2b" category="inline-link-macro-rx"></block> Workload Factory がボリューム容量を管理できるようにします。</block>
-  <block id="cc478f41af3ed4f56398aad5a69f46c3" category="list-text">「ボリューム」タブから、容量を増やすボリュームのアクション メニューを選択します。</block>
-  <block id="ae026ff2589ac9280b905644404ee447" category="list-text">変更を適用するには、[増加] を選択します。</block>
   <block id="2ee765f12c6b1a8ffcd478e2ea34f09b" category="doc">NetApp Workload Factoryでレプリケーション関係を初期化する</block>
   <block id="ddc0042b887590b7a2423362f6c3455b" category="paragraph">ソース ボリュームとターゲット ボリューム間のレプリケーション関係を初期化して、スナップショットとNetApp Workload Factory 内のすべてのデータ ブロックを転送します。</block>
   <block id="e7fac383dedc147790819a6b6ec1ca87" category="list-text">レプリケーション関係タブで、初期化するレプリケーション関係のアクション メニューを選択します。</block>
@@ -2150,7 +2116,6 @@
   <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>ワークロードファクトリーにログイン</block>
   <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link-macro">Workload Factoryでアカウントを設定する</block>
   <block id="21f5ea0bd2c3e06693357df598869216" category="paragraph">必要となるのは<block ref="9144f2d687cdfc71041a1a85068f8ab7" category="inline-link-macro-rx"></block>そして<block ref="10204cc30f2f30795b6ce82a21da7b1a" category="inline-link-macro-rx"></block></block>
-  <block id="fad2f7a49be756f98f3e7a34ef811e09" category="paragraph">_基本_モードで操作することを選択した場合は、これ以上進む必要はありません。  Workload Factory for FSx for ONTAPを使用して、部分的に完了したコード サンプルをコピーできます。</block>
   <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link-macro">ワークロードファクトリーコンソール</block>
   <block id="42417c07633018b12e0946c06afcf181" category="paragraph">Workload Factory でストレージと FSx for ONTAPリソースの管理を開始するには、FSx ファイル システムを作成します。の中で<block ref="ed002915dbbbf90a20b3d8fdf4cc2390" category="inline-link-macro-rx"></block>、ストレージで*ファイル システムの作成*を選択します。<block ref="1f3b8beb11bf530a33922b2af302faf4" category="inline-link-macro-rx"></block> 。</block>
   <block id="189c3af86554306ea0fe0a97bba45b30" category="list-text">*学習モード*: ARP/AI を有効にすると、_学習モード_ で実行されます。学習モードでは、FSx for ONTAPファイル システムは、エントロピー、ファイル拡張子の種類、ファイル IOPS などの分析領域に基づいてアラート プロファイルを作成します。ファイル システムが ARP/AI を学習モードで十分な時間実行し、ワークロードの特性を評価した後、Workload Factory は自動的に ARP/AI を _アクティブ モード_ に切り替え、データの保護を開始します。</block>
@@ -2242,4 +2207,160 @@
   <block id="28a2c493e9a663d617e582302e1bcf28" category="inline-link-macro">BlueXP workload factoryの通知</block>
   <block id="165f0ade723f657a5d7981bfecbfc75a" category="paragraph"><block ref="165f0ade723f657a5d7981bfecbfc75a" category="inline-link-macro-rx"></block></block>
   <block id="419085fd5f19a39001679a5f52b0acdf" category="list-text">*ストレージ*で*ストレージへ移動*を選択します</block>
+  <block id="e36df438b5b93dceba2c7403d4b29005" category="doc">キャッシュボリューム管理</block>
+  <block id="97da28c7fc13e427cbb28f833b8e7e6e" category="paragraph">Workload Factory コンソール内から、次のキャッシュ ボリューム管理操作を実行できます。</block>
+  <block id="705987d425caa32725844671dba5db96" category="list-text">キャッシュ名を編集する</block>
+  <block id="fb7f41847231da20e771064f5b566df4" category="list-text">キャッシュボリュームの容量を増やす</block>
+  <block id="64fe5cd33226afdb2a1244ea9e67be19" category="list-text">キャッシュボリュームのマウントパスまたはエクスポートポリシーを編集する</block>
+  <block id="322c847779d1746b4e7d66ee05dcefcd" category="list-text">キャッシュボリュームのキャッシュ方法（モード）を変更する</block>
+  <block id="13c47466230be92e5e3aa6588809aeac" category="list-text">キャッシュボリュームを事前設定する</block>
+  <block id="52fc772a9179443c2c2ba75c94518e8f" category="list-text">キャッシュボリュームを削除する</block>
+  <block id="7826298c658de05b150f4b10fc144ea2" category="inline-link-macro">キャッシュボリュームを管理する</block>
+  <block id="9223fd31c285815a2492912ef49bdbbb" category="paragraph"><block ref="9223fd31c285815a2492912ef49bdbbb" category="inline-link-macro-rx"></block></block>
+  <block id="7c0216aac73557cb5845492aebaeab8a" category="section-title">自動inode管理が利用可能</block>
+  <block id="31dcfbe8cd69ef4085402c0f104858cd" category="paragraph">自動容量管理を有効にする必要なく、自動 inode 管理を有効にすることができます。</block>
+  <block id="71e9d4ada3104308778ade0ba22de28d" category="inline-link-macro">自動inode管理を有効にする</block>
+  <block id="c38d477b997e2c8216a0b40479691f29" category="paragraph"><block ref="c38d477b997e2c8216a0b40479691f29" category="inline-link-macro-rx"></block></block>
+  <block id="22fcde27b4672d89a21e10e9be49cdee" category="section-title">容量とinode使用量のしきい値警告設定</block>
+  <block id="cc72208ba5327054f030d802d324477c" category="inline-link-macro">NetApp Workload Factory通知サービス</block>
+  <block id="f1ff66cdf2af497189be6ebd8f6e5fcd" category="paragraph">しきい値警告は、容量と inode 使用量の両方に対して利用できます。自動容量または inode 管理を有効にするときに、これらのしきい値を設定できます。この設定を使用するには、<block ref="52b0820c6dc6b8d67591785df8b1a634" category="inline-link-macro-rx"></block> 。</block>
+  <block id="76170a72d0c8b98ef012c3b57dc6dbe8" category="section-title">ボリュームサイズの縮小が可能</block>
+  <block id="26b07c7813c6a780d507b42d999b4792" category="paragraph">NetApp Workload Factoryで NFS および SMB/CIFS ボリュームのサイズを縮小できます。この機能により、現在の容量では不要になったボリュームのサイズを縮小できるため、ストレージ リソースをより適切に管理できるようになります。</block>
+  <block id="fcbcb93b74f64a75b2b710bb8328b4e0" category="inline-link-macro">ボリュームの容量を減らす</block>
+  <block id="e1b7073be30c28b07f5c847e0a1b56ed" category="paragraph"><block ref="e1b7073be30c28b07f5c847e0a1b56ed" category="inline-link-macro-rx"></block></block>
+  <block id="f09c98d35d5b89f3f833636d36ca3283" category="section-title">強化された FSx for ONTAPリソース状態</block>
+  <block id="9d017083ba2041742b1b85bbb1a846c4" category="paragraph">Workload Factory では、「構成ミス」のリソース状態が拡張され、リソースの実際の問題の説明が含まれるようになりました。</block>
+  <block id="48707dc4d2e44fe9cf85834f27b932e8" category="paragraph">ワークロード ファクトリーは、次の構成について FSx for ONTAPファイル システムを分析します。</block>
+  <block id="04cc0a87491bd184b66866438266882a" category="list-text">ボリューム使用率がほぼ満杯: ファイル容量の 80% 以上を使用しているボリュームがあるかどうかを確認します。これにより、追加の容量が必要なボリュームを特定できます。</block>
+  <block id="39e165c09308fcda245787c3a6d7bf78" category="list-text">ボリュームへの不正アクセス: NFS または SMB/CIFS マウント パスを使用して iSCSI ボリュームにアクセスできるかどうかを確認し、ボリュームへの不正アクセスを削除してセキュリティ リスクを回避できます。</block>
+  <block id="bfd11f24993c810a26cdef233ebbdfb6" category="section-title">Workload Factory for Storage の権限の変更</block>
+  <block id="bdc39f4be3514cc2cad7e4ca6cba0988" category="paragraph">Workload Factory では、特定のアクションに必要な権限がより明確に示され、必要な権限のみを細かく選択できます。資格情報を追加すると、以前の権限モデルである _読み取り専用_ と _読み取り/書き込み_ の代わりに、3 つの権限オプションから選択できるようになります。新しい権限モデルでは、権限ポリシーが次のように分割されます。</block>
+  <block id="f9113d285c58dd831a3240c5b41a6f84" category="list-text">_表示、計画、分析_: FSx for ONTAPファイル システムを表示し、システムの健全性を把握し、システムの Well-Architected 分析を取得して、コスト削減を検討します。</block>
+  <block id="a45538554e2c413a5e22df853abb4d27" category="list-text">_操作と修復_: ファイル システム容量の調整やファイル システム構成の問題の修正などの運用タスクを実行します。</block>
+  <block id="036d0224d85e6a18c7e85f034ace65c1" category="list-text">_ファイルシステムの作成と削除_: FSx for ONTAPファイルシステムとストレージ VM を作成および削除します。</block>
+  <block id="c1c8be0a907c363e6506c96d16870672" category="paragraph">資格情報を追加するときに、Workload Factory に提供するアクセス レベルに基づいて、これらのアクセス許可ポリシーを 1 つ以上選択できます。</block>
+  <block id="b20b01e02162a68002ca1747d1bd3c10" category="inline-link-macro">ワークロードファクトリーの権限リファレンス</block>
+  <block id="444b052e3d1349e221d4ceb42e6c1cf7" category="paragraph"><block ref="444b052e3d1349e221d4ceb42e6c1cf7" category="inline-link-macro-rx"></block></block>
+  <block id="c4a6983274098ca737ffda27862010ea" category="section-title">FSx for ONTAPサイバー ボールト サポート</block>
+  <block id="4a3b498d2b39740971d75ebbab434a8f" category="paragraph">サイバー ボールト アーキテクチャで、FSx for ONTAP をソースまたはターゲットとして使用してサイバー ボールトを作成できます。サイバー ボールトは、重要なデータを保存するための安全で隔離された環境を提供し、ランサムウェアやその他のサイバー脅威からデータを保護します。</block>
+  <block id="4bc6d1e741e4c817c4985300ec66b77f" category="inline-link-macro">FSx for ONTAPでサイバー ボールトをセットアップする</block>
+  <block id="545bd81803e837dd73a7bceb1a798b8a" category="paragraph"><block ref="545bd81803e837dd73a7bceb1a798b8a" category="inline-link-macro-rx"></block></block>
+  <block id="443d77d8a4d29940f1da82d57cf91d7b" category="summary">NetApp Workload Factory内のボリュームのボリューム容量はいつでも手動で調整できます。</block>
+  <block id="9506827488d3f10bebcc3d5a3e5f83f8" category="doc">NetApp Workload Factoryでボリューム容量を調整する</block>
+  <block id="2d6396444f6d2c33e9a33bc98d74a44b" category="paragraph">NetApp Workload Factoryコンソールからいつでもボリュームのボリューム容量を手動で調整できます。</block>
+  <block id="fa091ab3e96a1d7a44f1f7c711636fb7" category="paragraph">ボリュームのプロビジョニングされたサイズを増減することで、ボリューム容量を調整できます。次の表は、ボリューム タイプ別の最小および最大ボリューム サイズを示しています。</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="cell">ボリューム タイプ</block>
+  <block id="9dba50d3a2c2f26daddbf9d144c49772" category="cell">最小サイズ</block>
+  <block id="acfc7717e24258e6355ba4036bf1654d" category="cell">最大サイズ</block>
+  <block id="7af205ff6788e684be8673a5559a8399" category="cell">20 MiB</block>
+  <block id="4dd4655034851cefb46869bef690cc22" category="cell">300 TiB</block>
+  <block id="b5f7116243418c9289af58601bd22424" category="cell">800ギガバイト</block>
+  <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PiB</block>
+  <block id="08842901b516656f4ce72eb7f4f5c0d1" category="paragraph">iSCSI LUN の場合、ボリュームのサイズを増やすと、ホスト LUN のサイズも増加します。ボリューム容量を増やした後、ホスト オペレーティング システムが提供する手順に従って LUN の新しいサイズを検出し、LUN のファイル システムを拡張します。</block>
+  <block id="f4d84340dd6fee1664a29cabc2ba8c39" category="paragraph">ボリューム サイズの縮小は、NFS および SMB/CIFS ボリュームに対してのみサポートされます。</block>
+  <block id="2880a60b72532c629f0cc885860ca8e5" category="paragraph">ボリューム容量を調整するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="57730f251586648892ae3bf2485f043e" category="list-text">「ボリューム」タブから、容量を調整するボリュームのアクション メニューを選択します。</block>
+  <block id="4e54161de298fea40a1792b1351b1789" category="list-text">*基本操作*を選択し、次に*ボリューム容量の調整*を選択します。</block>
+  <block id="4fbd17d05637f9e5fed62de5f827a895" category="list-text">ボリューム容量の調整ダイアログで、*プロビジョニングされた容量*と単位を設定します。</block>
+  <block id="6a6abbaa1bbd0c301b070b7a1615b31d" category="list-text">変更を適用するには、[調整] を選択します。</block>
+  <block id="25e79c779a2e15c96afc5b7555e58a60" category="list-text"><block ref="25e79c779a2e15c96afc5b7555e58a60" category="inline-link-macro-rx"></block></block>
+  <block id="018b5169ae450db66c30a726fbd7e178" category="inline-link-macro">Workload Factory でボリュームを再バランスする</block>
+  <block id="6ab1a086826b377aebef1904415ab23c" category="list-text"><block ref="6ab1a086826b377aebef1904415ab23c" category="inline-link-macro-rx"></block></block>
+  <block id="ccfc2060f8f316d0ccd33b0289111a38" category="paragraph">完全なファイル システム分析を行うには、次の操作を実行する必要があります。</block>
+  <block id="f95f58d64ce974b5c7aac839966c9c9b" category="list-text">リンクを関連付けます。リンク接続により、Workload Factory はデータ保護やパフォーマンスなどのすべてのファイル システム構成を分析できます。</block>
+  <block id="64aefaaa1ffe9f3b50d13850f89ff59a" category="list-text">AWS アカウントで表示、計画、分析の権限を付与します。</block>
+  <block id="582f3532371a870cf4bd6406f93d26de" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block></block>
+  <block id="7335bfe9e44aaa30f676443b169c4028" category="summary">NetAppサイバー ボールトについて、またランサムウェアやサイバー脅威からデータを保護するためのサイバー ボールト アーキテクチャの実装方法について学習します。</block>
+  <block id="82f3873908ce87878ae918ed0d960883" category="doc">サイバーボールトでデータを保護</block>
+  <block id="c20c451e413ebde26a765cbbc0c15afc" category="paragraph">サイバー ボールト ボリュームは、データのバックアップ コピーを保存し、ランサムウェア攻撃やその他のサイバー脅威からデータを保護するために使用する、隔離された安全なストレージの場所です。ボールト作成の一環として、サイバー ボールト ボリュームを作成し、すべてのクライアント プロトコルを無効にし、ソース ボリュームとサイバー ボールト ボリューム間のレプリケーション関係を設定し、サイバー ボールト ボリューム上に不変のスナップショットを作成します。</block>
+  <block id="d825eb03b1924c3d41f95d2810515203" category="paragraph-title">サイバーボールトとは何ですか?</block>
+  <block id="2712d3844c4c3f6fae0cd10b9d646084" category="paragraph">サイバー ボールトは、主要な IT インフラストラクチャとは別の隔離された環境に重要なデータを保存する特定のデータ保護技術です。</block>
+  <block id="61e7cd4643e82d4dae37197f961a9d95" category="paragraph">サイバー ボールトは、マルウェア、ランサムウェア、さらには内部脅威など、メイン ネットワークに影響を及ぼす脅威の影響を受けない、「エアギャップ」された、変更不可能で消去不可能なデータ リポジトリです。サイバー金庫は、変更不可能かつ消去不可能なスナップショットによって実現できます。</block>
+  <block id="bb393d57385c8b74901eb02a39ed13dc" category="paragraph">従来の方法を使用するエアギャップ バックアップでは、スペースを作成し、プライマリ メディアとセカンダリ メディアを物理的に分離する必要があります。メディアをオフサイトに移動したり、接続を切断したりすることで、悪意のある人物がデータにアクセスできなくなります。これによりデータは保護されますが、回復時間が遅くなる可能性があります。</block>
+  <block id="b84e00df342c7bef670fd67bcf1093fc" category="paragraph-title">ONTAPサイバーボールト向け FSx</block>
+  <block id="75ef547803457d883c1ab7eec9dd8c12" category="paragraph">Amazon FSx for NetApp ONTAP は、サイバー ボールトのソースおよびターゲットとしてサポートされています。</block>
+  <block id="b672f52ade975e864ae6b58722c03689" category="paragraph-title">導入</block>
+  <block id="e8e8dcbe97676a6fe5760aae822c6e61" category="paragraph">Workload Factory は、サイバー ボールト アーキテクチャの作成を支援します。  NetAppに連絡してサイバー ボールトの実装に関心があることを伝えると、 NetApp のスペシャリストがお客様に連絡して要件について話し合います。</block>
+  <block id="9577a31ea32e2c5b58950150698f2a07" category="paragraph">開始するには、ng-FSx-CyberVault@netapp.com に電子メールを送信してください。</block>
+  <block id="a9541230016fd9f6de7895f1a32b75fb" category="inline-link-macro">ONTAPサイバー ボールトのドキュメント</block>
+  <block id="eac9e4c62fd872313a45023cb8fd31ec" category="paragraph">サイバー金庫とこのアーキテクチャの設定方法の詳細については、<block ref="5ee11ce3f9bfc218d47e808a1ac01a55" category="inline-link-macro-rx"></block> 。</block>
+  <block id="18e03b41df425134308f1975a1972f8e" category="list-text">FSx for ONTAPファイル システムを作成するための、_ファイル システムの作成および削除_ 権限を持つ認証情報。<block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block>。</block>
+  <block id="4c4658c6e6bcc607d3d1e8c00d38f9b6" category="list-text">Workload Factory には少なくとも 1 つの FSx for ONTAPファイル システムが必要です。  FSx for ONTAPファイルシステムを検出するには、FSx for ONTAPインスタンスに対する権限を持つAWSアカウントが必要です。<block ref="a253a365fdf90416889360c06d5b56a2" category="inline-link-macro-rx"></block>ストレージ管理の_表示、計画、および分析_権限を持ちます。</block>
+  <block id="8763b09bbcb06ec11c1d0d3331ba74f4" category="paragraph"><block ref="8763b09bbcb06ec11c1d0d3331ba74f4" category="inline-link-macro-rx"></block></block>
+  <block id="05fbfa43ca52b70a735d4a870f0f8f6d" category="inline-link-macro">音量容量調整機能</block>
+  <block id="8f764b06860786fe5978951124c18450" category="paragraph">オプションとして、ボリュームの容量を手動でいつでも増やすことができます。<block ref="e78173f6bdea353abf41de50dd00987d" category="inline-link-macro-rx"></block> 。</block>
+  <block id="ad5ba1f7c14b2135486dafc0e40196ac" category="summary">この機能を有効にすると、時間の経過とともに容量のニーズが変化すると、Workload Factory は FSx for ONTAPファイルシステムに増分ストレージまたは inode を自動的に追加できるようになります。</block>
+  <block id="251a3ffdc6a0761b01f0ace790d97c6d" category="doc">ファイルシステムの自動容量およびinode管理を有効にする</block>
+  <block id="80d103a4c479f8e38dc6456e91cb1909" category="paragraph">自動容量および inode 管理を有効にすると、 NetApp Workload Factory は、時間の経過とともに容量のニーズが変化するのに応じて、FSx for ONTAPファイル システムに増分ストレージまたは inode を自動的に追加できるようになります。さらに、この機能を有効にすると、容量と inode を手動で監視する必要がなくなります。</block>
+  <block id="296d96c707449b84b0b4b3f02a91bc6c" category="paragraph">FSx for ONTAPファイル システムのスキャンは 30 分ごとに実行され、増分ストレージを追加する必要があるかどうかが判断され、使用可能なボリューム inode とボリューム内のファイルとフォルダーの最大数が確認され、設定された自動容量管理しきい値に従ってそれらの数が増加します。</block>
+  <block id="e1d481cddc46ccb42fc6f59c020f5ce1" category="paragraph">自動容量管理を有効にすると、FSx for ONTAPファイル システムの最大サイズ制限まで増分ストレージが自動的に追加されます。</block>
+  <block id="7950e88c4d4bc489666a4af446a7d303" category="inline-link-macro">_表示、計画、および分析_権限ポリシーで資格情報を付与する</block>
+  <block id="37d3a1150da64094460d233181c8c83e" category="list-text">絶対です<block ref="1773ab1fe4aa6a3e5fc61d86a29970f0" category="inline-link-macro-rx"></block>このタスクを完了するには、Workload Factory にアクセスしてください。</block>
+  <block id="650ad6fb48eb81eacfa521124d1dc357" category="list-text">*警告しきい値*: Workload Factory 通知サービスからの通知をトリガーするには、警告しきい値をしきい値の増加よりも低く設定します。デフォルトは 70% です。</block>
+  <block id="8ec47943fca737be2b087573534a2057" category="inline-link-macro">Workload Factory通知サービスを有効にしました</block>
+  <block id="60c52248134394a776265c66248137a8" category="paragraph">警告しきい値の設定は、<block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4e88714beba53ff4a9a4132c11a62597" category="list-text">*しきい値の増加*: FSx for ONTAPファイル システムの最大増加パーセンテージを入力します。デフォルトは 80% です。</block>
+  <block id="d12b629d9480f34a15d23dec455a9519" category="paragraph">これは、Workload Factory が容量を増やすジョブをトリガーするしきい値です。たとえば、ファイル システムの容量が 80% に達すると、Workload Factory は容量を増加させます。</block>
+  <block id="6e90c3bb0026fc33efcead3220266e2d" category="list-text">*増分増加*: 容量を段階的に増やすパーセンテージを入力します。デフォルトは 10% です。</block>
+  <block id="d978b96a75b32e336ed3b9754090bb19" category="paragraph">これは、しきい値に達するたびに容量を増やす割合です。たとえば、ファイル システムが 80% 使用されていて、増分増加が 10% に設定されている場合、Workload Factory は容量を 10% 増加します。</block>
+  <block id="91702a6000d20d7ffbea5fe3ad5f99fa" category="paragraph">自動 inode 管理を有効にすると、inode (ファイル) の数を許容限度まで増やすことで、ボリュームあたりのファイル容量が確実に拡張されます。</block>
+  <block id="e5896468cb243b3cd2e0e75b0ca7173d" category="admonition">*Terraform ユーザー*: Terraform には、すべての操作を Terraform 内で完了する必要があるという制限があります。  inode 管理は Terraform ではサポートされていませんが、Workload Factory コンソールで自動 inode 管理を有効にすることができます。</block>
+  <block id="0a0054f32c5856b9e4d1227d3aff2de3" category="list-text">ボリュームの inode を自動的に管理するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="2dc6db0702897622d8829494f1d3b37f" category="inline-link-macro">Workload Factory通知サービスを有効にする</block>
+  <block id="8166fa3c69aeeb513514d7132a126f1d" category="list-text">自動 inode 管理は、Workload Factory 通知サービスからの通知をトリガーする _警告しきい値_ を使用して設定できます。この機能を使用するには、<block ref="92ba022a113ba350cc22eb4ba703843c" category="inline-link-macro-rx"></block>初め。</block>
+  <block id="6e5f35050440735f1d3c74313b13121b" category="list-text">*FSx for ONTAP*から、自動 inode 管理を有効にするファイル システムのアクション メニューを選択します。</block>
+  <block id="d1f7d48753d7c7d412198e99284c77c4" category="list-text">[情報] の下で、[*自動 inode 管理*] の横にある鉛筆アイコンを選択します。  *自動 inode 管理* 行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆アイコンが表示されます。</block>
+  <block id="a05c0bd49dd6b14a547123422c9700bf" category="list-text">*自動 inode 管理* ダイアログで、次の内容を入力します。</block>
+  <block id="ba34a0ebba4d6c09a70fb5064686c0d0" category="list-text">有効ボタンを選択して、*自動 inode 管理を有効にする* 。</block>
+  <block id="0b346179a77894b7baa7b4fb9ec8a20b" category="paragraph">あるいは、機能を無効にします。  inode の数を増やす必要がある場合は、まず自動 inode 管理を無効にする必要があります。</block>
+  <block id="589d329d581786f947071a398183e0b2" category="list-text">*しきい値の増加*: ボリュームあたりの inode (ファイル) 数の最大増加率を入力します。デフォルトは 80% です。</block>
+  <block id="304c69e0afb53f4cc8629f5fbc0057bb" category="list-text">*増分増加*: inode (ファイル) の数を増分的に増やすパーセンテージを入力します。デフォルトは 10% です。</block>
+  <block id="3d85ed6e3650fdb2521f4d9f31df975f" category="paragraph">ボリュームごとに追加の inode (ファイル) が必要かどうかを判断するために、ファイル システム スキャンが 30 分ごとに実行されます。</block>
+  <block id="af7c77855745c2192ad309cfc11ed68c" category="inline-link-macro">表示、計画、分析の権限を付与する</block>
+  <block id="00a34d80b9c8f1d9c82e222ff89f622f" category="paragraph">Workload FactoryがAWSアカウント内のAmazon Elastic Block Store（EBS）、Elastic File System（EFS）、およびFSx for Windows File Serverストレージ環境を検出するには、次のことを確認してください。<block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> AWS アカウントで。</block>
+  <block id="c72cfdac6d94ccc9f462d05de25df6f6" category="list-text">セキュリティ: AI (ARP/AI) とボリュームへの不正アクセスを備えたNetApp Autonomous Ransomware Protection</block>
+  <block id="191b6288ea89d5cc022ea3d3d9ed8eeb" category="list-text">運用の卓越性: 自動容量管理、ボリュームファイル容量使用率のしきい値、およびボリューム使用率がほぼ最大になる</block>
+  <block id="79e27ec6fe4e85288757fae779bab815" category="inline-link-macro">操作と修復の権限を付与する</block>
+  <block id="052dbb930400a0ed10fd9a2369d6e91b" category="list-text">絶対です<block ref="31bad9d191bee3fabcae484ca4efec82" category="inline-link-macro-rx"></block>AWS アカウントで。</block>
+  <block id="8397e16109313045973558b01bfb9915" category="list-text">iSCSI ボリュームではボリューム サイズの縮小はサポートされていません。</block>
+  <block id="00e4e6045ee76f2899377d5370d56a36" category="summary">必要に応じて、 NetApp Workload Factoryで FSx for ONTAPファイル システムのキャッシュ ボリュームを管理します。</block>
+  <block id="77202d5f206e842a17a7c71e4612af8c" category="doc">FSx for ONTAPファイルシステムのキャッシュボリュームを管理する</block>
+  <block id="6d6084417b916dd2a1b60499b04dad76" category="paragraph">NetApp Workload Factoryコンソールから、FSx for ONTAPファイル システムのキャッシュ ボリュームを管理できます。管理タスクには、キャッシュ名の編集、キャッシュ容量の増加、エクスポート ポリシーの編集、キャッシュ方法の変更、キャッシュの事前設定、不要になったキャッシュ ボリュームの削除などがあります。</block>
+  <block id="c0c5d63ff1a1fe8bf6fe4f26c7af37c8" category="paragraph">NetApp Workload Factoryコンソールを離れることなく、キャッシュ関係に関連付けられたキャッシュ ボリュームを管理できます。</block>
+  <block id="fe39e5a751393e260c8760e626d46663" category="list-text">キャッシュ ボリュームと関係を管理するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="2923b8d05b469dec564ede3ae38cab32" category="list-text">編集するには既存のキャッシュ ボリュームが必要です。</block>
+  <block id="9741f5c69b66c193b24db8c6b064d449" category="section-title">キャッシュボリューム名を編集する</block>
+  <block id="dd9dbeec9d1d47721414517e8ceb1003" category="paragraph">既存のキャッシュ ボリュームの名前はいつでも変更できます。</block>
+  <block id="f56869ff02af98281054d2801d07131c" category="list-text">[ストレージ] メニューから、 FSx for ONTAPを選択します。</block>
+  <block id="71286a348d305558651d594ffb0b7b61" category="list-text">FSx for ONTAPから、キャッシュボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
+  <block id="91c9dd0465d889c4cd7dcd9d00c3cff9" category="list-text">ファイル システムの概要から、[*キャッシュ リレーションシップ*] タブを選択します。</block>
+  <block id="704333b75cf6acba4392d7ad809dfb1d" category="list-text">変更するキャッシュ ボリュームのアクション メニューを選択し、*キャッシュ名の編集*を選択します。</block>
+  <block id="19b0e87ba7ed54521f11cd8489003533" category="list-text">*キャッシュ名の編集*ダイアログで、キャッシュ ボリュームの新しい名前を入力し、*適用*を選択します。</block>
+  <block id="f25e64c5391d2a162a25bbb460a7f886" category="paragraph">既存のキャッシュ ボリュームの容量を増やす必要がある場合は、いつでも増やすことができます。</block>
+  <block id="dc97b6b6257816c273cb4b23c4be1923" category="list-text">変更するキャッシュ ボリュームのアクション メニューを選択し、[キャッシュ容量の増加] を選択します。</block>
+  <block id="1a6d17f42b3c06ad6ef47079b2b7d2bf" category="list-text">*キャッシュ容量の増加*ダイアログで、キャッシュ ボリュームの新しい容量をパーセンテージまたは単位で入力し、*適用*を選択します。</block>
+  <block id="d34bce37c8d5cf5a3814d3185867c80e" category="section-title">キャッシュボリュームのエクスポートポリシーを編集する</block>
+  <block id="3591b370a6ba1fccb018417aa452f30e" category="paragraph">既存のキャッシュ ボリュームに割り当てられているマウント パスまたはエクスポート ポリシーを変更します。</block>
+  <block id="19bb8592aa45eac21fc3a0ff7043f17f" category="list-text">変更するキャッシュ ボリュームのアクション メニューを選択し、*エクスポート ポリシーの編集*を選択します。</block>
+  <block id="a23d30d9dbd5b5de5e3ee67a9ded5242" category="list-text">*エクスポート ポリシーの編集* ダイアログで、マウント パスを変更するか、キャッシュ ボリュームに割り当てる別のエクスポート ポリシーを選択します。</block>
+  <block id="7f7e450958b0a4653cfea4189d6ed995" category="section-title">キャッシュボリュームのキャッシュ方法を変更する</block>
+  <block id="3e5271b8379ddcabf8c8d8673b311437" category="paragraph">既存のキャッシュ ボリュームのキャッシュ方法 (モード) をライトアラウンドまたはライトバックに変更します。</block>
+  <block id="cabfeb9da681d3ace757106e0813cd8f" category="inline-link-macro">書き込みモード</block>
+  <block id="38fdf5539761bcae25e0fc465e40d97f" category="paragraph">詳細はこちら<block ref="956f54ba6b1d39caea9bd76790adf811" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3e52bd74056f56571702f1d78113945" category="list-text">変更するキャッシュ ボリュームのアクション メニューを選択し、[キャッシュ方法の変更] を選択します。</block>
+  <block id="0ec532fce8b15ab5badcbf1146af5bef" category="list-text">*キャッシュ方法の変更*ダイアログで、新しいキャッシュ方法を選択し、*適用*を選択します。</block>
+  <block id="aef7f37d9224e6cdc84773fd0752841c" category="paragraph">キャッシュされたデータへのアクセスを高速化するために、リクエストする前に元のボリュームのデータをキャッシュ ボリュームに事前に入力します。</block>
+  <block id="03b8e2cae40fcbf80cad40862d5d0025" category="list-text">変更するキャッシュ ボリュームのアクション メニューを選択し、[*キャッシュの事前設定*] を選択します。</block>
+  <block id="d451f44672ea0a78b72fd7dd794c481e" category="list-text">*キャッシュの事前設定*ダイアログで、事前設定に使用するデータ セットへのパスを指定し、*適用*を選択します。</block>
+  <block id="0eb48cd23b461a05c76d8f751c427193" category="paragraph">キャッシュ ボリュームを削除すると、元のボリュームとキャッシュ ボリューム間のキャッシュ関係が削除されます。削除後は、キャッシュされたデータは利用できなくなります。</block>
+  <block id="9bed233fd25bae0dceb43f72350d951b" category="list-text">削除するキャッシュ ボリュームのアクション メニューを選択し、*キャッシュ ボリュームの削除* を選択します。</block>
+  <block id="c150fc012517f3e827497fc4aa6b609a" category="list-text">*キャッシュボリュームの削除*ダイアログで削除を確認し、*削除*を選択します。</block>
+  <block id="51bf12717b370e03e3310859db67cac6" category="inline-link-macro">権限ポリシー</block>
+  <block id="1b9d0264ffd97a37d34b3626026426a0" category="paragraph">選択してください<block ref="7dcfcf538adde0d607dcea20e99b9fe9" category="inline-link-macro-rx"></block>お客様のニーズを満たすために。</block>
+  <block id="d15741d42f2a6f5f82721fc70d54b6a4" category="paragraph">権限を付与しない場合は、Workload Factory for FSx for ONTAPを使用して、部分的に完了したコード サンプルをコピーできます。</block>
+  <block id="38c4c72673e051381c12c32e1dd20f50" category="paragraph">権限を付与する場合は、<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>これには、データベースや AI などのワークロード機能の選択や、必要な権限の IAM ポリシーの作成が含まれます。</block>
+  <block id="2afa479317acb4455a0a649aab2944d1" category="section-title">2025年11月2日</block>
+  <block id="2d7b297cbb6cd40fb509f94fc82809d8" category="sidebar">データを保護するサイバーボールトを作成する</block>
+  <block id="77323f759a4ed2ac40e1bf8211da2f5f" category="sidebar">ボリューム容量を調整する</block>
+  <block id="aadb016687f81f1f6f82a4c97ba651ed" category="sidebar">自動容量およびinode管理を有効にする</block>
 </blocks>

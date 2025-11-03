@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: adjust-volume-capacity.html 
+keywords: increase capacity, volume capacity 
+summary: NetApp Workload Factory内のボリュームのボリューム容量はいつでも手動で調整できます。 
+---
+= NetApp Workload Factoryでボリューム容量を調整する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factoryコンソールからいつでもボリュームのボリューム容量を手動で調整できます。
+
+オプションとして、link:edit-volume-autogrow.html["自動拡張機能を有効にする"] Workload Factory がボリューム容量を管理できるようにします。
+
+.タスクの内容
+ボリュームのプロビジョニングされたサイズを増減することで、ボリューム容量を調整できます。次の表は、ボリューム タイプ別の最小および最大ボリューム サイズを示しています。
+
+[cols="1,1,1"]
+|===
+| ボリューム タイプ | 最小サイズ | 最大サイズ 
+
+
+| FlexVolボリューム | 20 MiB | 300 TiB 
+
+
+| FlexGroupボリューム | 800ギガバイト | 2 PiB 
+|===
+iSCSI LUN の場合、ボリュームのサイズを増やすと、ホスト LUN のサイズも増加します。ボリューム容量を増やした後、ホスト オペレーティング システムが提供する手順に従って LUN の新しいサイズを検出し、LUN のファイル システムを拡張します。
+
+ボリューム サイズの縮小は、NFS および SMB/CIFS ボリュームに対してのみサポートされます。
+
+.開始する前に
+ボリューム容量を調整するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]。リンクが関連付けられたら、この操作に戻ります。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. 「ボリューム」タブから、容量を調整するボリュームのアクション メニューを選択します。
+. *基本操作*を選択し、次に*ボリューム容量の調整*を選択します。
+. ボリューム容量の調整ダイアログで、*プロビジョニングされた容量*と単位を設定します。
+. 変更を適用するには、[調整] を選択します。
+
+
+.関連情報
+* link:edit-volume-autogrow.html["ワークロードファクトリーでボリュームの自動拡張を有効にする"]
+* link:rebalance-volume.html["Workload Factory でボリュームを再バランスする"]
+

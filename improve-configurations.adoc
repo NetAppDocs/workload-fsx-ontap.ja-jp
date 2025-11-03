@@ -30,8 +30,8 @@ Workload Factory コンソール内のストレージから、ファイル シ�
 Workload Factoryは、FSx for ONTAPファイルシステムの次の構成について、適切に設計されたステータスを分析します。
 
 * 信頼性: SSD 容量しきい値、スケジュールされたローカル スナップショット、FSx for ONTAPバックアップ、リモート データ レプリケーション、長期保存のためのデータ信頼性
-* セキュリティ: AI を搭載したNetApp の自律型ランサムウェア保護 (ARP/AI)
-* 運用の卓越性: ストレージ効率、自動容量管理、ボリューム ファイル容量使用率のしきい値
+* セキュリティ: AI (ARP/AI) とボリュームへの不正アクセスを備えたNetApp Autonomous Ransomware Protection
+* 運用の卓越性: 自動容量管理、ボリュームファイル容量使用率のしきい値、およびボリューム使用率がほぼ最大になる
 * コスト最適化: ストレージ効率とデータ階層化
 
 
@@ -42,7 +42,7 @@ Workload Factoryは、FSx for ONTAPファイルシステムの次の構成につ
 FSx for ONTAPファイル システムまたはファイル システム内の選択したボリュームの構成の問題を修正できます。修正する構成を 1 つ以上選択できます。
 
 .開始する前に
-* _読み取り専用_または_読み取り/書き込み_権限を持つ資格情報が必要です。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSアカウントで権限を付与する方法を確認する"^]です。
+* 絶対ですlink:link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["操作と修復の権限を付与する"^]AWS アカウントで。
 * 修復プロセスにより、インスタンスのダウンタイムやサービスの中断が発生する可能性があります。構成の問題を修正することを選択する前に、各推奨事項を慎重に確認してください。
 * link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用して FSx for ONTAPファイルシステムに接続する"]ファイル システム リソースの最も包括的な分析を実現します。
 
