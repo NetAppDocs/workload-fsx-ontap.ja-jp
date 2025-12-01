@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: manage-block-devices.html 
+keywords: block devices, manage luns, manage iscsi 
+summary: NetApp Workload Factoryで FSx for ONTAPファイル システムのブロック デバイスを管理します。 
+---
+= FSx for ONTAPファイルシステムのブロックデバイスを管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factoryコンソールから、FSx for ONTAPファイル システムのブロック デバイスを管理できます。管理タスクには、ブロック デバイスの詳細の表示と容量の増加が含まれます。
+
+.タスクの内容
+ブロック デバイス、または LUN (論理ユニット番号) は、SAN 環境内のファイル システムを含み、ネットワーク経由でホストからアクセスできるボリュームです。
+
+iSCSI プロトコルを使用する FSx for ONTAPファイル システムのブロック デバイスを管理できます。
+
+.開始する前に
+* ブロック デバイスを管理するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]。リンクを関連付けたら、この操作に戻ります。
+* 表示および管理するには、既存のブロック デバイスが必要です。
+
+
+
+
+== ブロックデバイスの詳細を表示する
+
+既存のブロック デバイスの詳細をいつでも表示できます。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、*ブロック デバイス* タブを選択します。
+. ブロック デバイスのアクション メニューに移動し、[詳細の表示] を選択します。
++
+ブロック デバイスの一般的な詳細、消費量、アクセス、および保護情報が表示されます。
+
+
+
+
+
+== ブロックデバイスの容量を増やす
+
+既存のブロック デバイスの容量をいつでも増やすことができます。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、*ブロック デバイス* タブを選択します。
+. ブロック デバイスのアクション メニューに移動し、[容量の増加] を選択します。
+. ブロックデバイスの新しい容量を入力し、単位を選択します。
+. 変更を適用するには、[増加] を選択します。
+
+
+
+NOTE: ブロック デバイスのサイズを増やした後、ホスト オペレーティング システムが提供する手順に従って、ブロック デバイスの新しいサイズを検出し、その上のファイル システムを拡張します。

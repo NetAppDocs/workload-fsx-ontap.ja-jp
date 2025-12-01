@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: manage-fsx-tags.html 
+keywords: create fsx tags, create tags, edit fsx tags, fsx tags 
+summary: ファイルシステムの FSx for ONTAPファイルシステムタグをいつでも追加、更新、または削除できます。 
+---
+= NetApp Workload Factoryで FSx for ONTAPファイルシステムタグを管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+タグはリソースを分類するのに役立ちます。  NetApp Workload Factoryでは、ファイル システムのタグをいつでも追加、編集、削除できます。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するファイルシステムのアクションメニューを選択し、*ファイルシステムタグの管理*を選択します。
+. *ファイル システム タグの管理* ダイアログで、必要に応じてタグを追加、編集、または削除します。
++
+ファイル システムに適用できるタグの最大数は 50 です。
+
+. * 適用 * を選択します。
+

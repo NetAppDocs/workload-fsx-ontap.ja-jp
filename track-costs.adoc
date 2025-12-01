@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: track-costs.html 
+keywords: cost, consumption, Cost Explorer 
+summary: NetApp Workload Factoryで FSx for ONTAPファイル システム リソースのコストを追跡します。 
+---
+= NetApp Workload Factoryでリソースのコストを追跡する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factoryを使用して、FSx for ONTAPファイル システムのコストと使用状況を統合ビューで追跡します。コスト データは、予算を管理し、リソースを効果的に最適化するのに役立ちます。  AWS Cost Explorer はコストデータを提供します。
+
+.タスクの内容
+FSx for ONTAPファイルシステムリソースのコストと使用状況データは、次の権限を使用して AWS Cost Explorer から抽出されます。
+
+* `ce:GetCostAndUsage`
+* `ce:GetTags`
+
+
+.開始する前に
+link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_表示、計画、分析_権限ポリシーで資格情報を付与します"^]Workload Factory で FSx for ONTAPのコストを追跡します。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. ストレージメニューから*コスト*を選択します。
+. [コスト] ページで、次の情報を入力して、FSx for ONTAPリソースのコストと容量データをフィルタリングします。
++
+.. *AWS アカウント*: コストデータを表示するアカウントを選択します。
+.. *資格情報*: _表示、計画、および分析_権限を持つ資格情報を選択します。
+.. *リージョン*: コストデータを表示する AWS リージョンを選択します。
+.. *コスト データ範囲*: 表示するコスト データの期間を選択します。
+
+
+. FSx for ONTAPリソースの *コストの詳細* を表示します。
+

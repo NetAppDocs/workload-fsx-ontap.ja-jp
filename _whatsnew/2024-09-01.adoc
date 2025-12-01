@@ -8,8 +8,6 @@
 
 Workload Factory のストレージ管理では読み取りモードが使用できます。読み取りモードでは、読み取り専用権限を追加することで基本モードのエクスペリエンスが強化され、Infrastructure-as-Code テンプレートに特定の変数が入力されます。  Infrastructure-as-Code テンプレートは、Workload Factory に変更権限を与えることなく、AWS アカウントから直接実行できます。
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["読み取りモードの詳細"]
-
 
 
 === ボリューム削除前のバックアップのサポート
