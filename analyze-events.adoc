@@ -19,7 +19,7 @@ summary: NetApp Workload Factory for FSx for ONTAP内の EMS イベントを分�
 
 ストレージ管理者は、顧客からの苦情があった後、またはカスタム スクリプトとアラームを作成して初めて、FSx for ONTAP EMS イベントに対応することがよくあります。この事後対応型のアプローチでは、問題の解決が遅くなり、ダウンタイムが増加し、運用の効率が低下します。
 
-イベント アナライザーは、FSx for ONTAP EMS イベントを抽出して分析し、FSx for ONTAPファイル システムの健全性とパフォーマンスを維持するのに役立ちます。
+イベント アナライザーは、FSx for ONTAP EMS イベントを抽出して分析し、FSx for ONTAPファイル システムの健全性とパフォーマンスを維持するのに役立ちます。Workload Factory では、過去 72 時間以内に発生したイベントのみが表示されます。
 
 主な利点は次のとおりです:
 
@@ -51,11 +51,11 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrockの価格"^]
 
 イベント アナライザーを使用するには、次の前提条件を満たしている必要があります。
 
-* 絶対ですlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["表示、計画、分析の権限を付与する"^]AWS アカウントで FSx for ONTAPファイルシステムのイベントを表示します。
+* 絶対ですlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["操作と修復の権限を付与する"^]AWS アカウントで FSx for ONTAPファイルシステムのイベントを表示します。
 * 絶対ですlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用して FSx for ONTAPファイルシステムに接続する"]EMS イベント アナライザーを使用します。
 * 以下の要件も満たす必要があります。ログ エラーを分析するときに、これらの手順を完了するように要求されます。
 +
-** *Amazon Bedrock のアクティベーション*
+** *Amazon Bedrock モデル*
 +
 イベントアナライザーは、Amazon Bedrock API を使用して、FSx for ONTAPイベントに関する AI ベースの分析情報を提供します。
 
@@ -78,7 +78,7 @@ Workload Factory IAM ロールに関連付けられたポリシーに次の権�
 +
 これらの権限により、Workload Factory はプロアクティブなエラー調査と修復ガイダンスのために Bedrock モデルを呼び出すことができます。このプロファイルは、カスタマイズされた分析情報を得るための安全な AI アクセスも保証します。
 
-*** Workload Factory に関連付けられた AWS 認証情報: `bedrock:GetFoundationModelAvailability`そして `bedrock:ListInferenceProfiles`権限
+*** Workload Factory に関連付けられた AWS 認証情報: `bedrock:GetInferenceProfile`そして `bedrock:ListInferenceProfiles`権限
 +
 これらの権限はモデルの可用性を確認します。
 
@@ -97,12 +97,10 @@ Workload Factory コンソールを使用して、FSx for ONTAPファイル シ�
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . ストレージ タイルで、[ストレージへ移動] を選択します。
-. ストレージメニューから*分析*を選択します。
-. [分析] 画面で、分析する FSx for ONTAPファイルシステムを含む AWS アカウント、認証情報、およびリージョンを選択します。
-+
-イベントがある FSx for ONTAPファイル システムのみが画面に表示されます。
-
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. 分析する FSx for ONTAPファイル システムを選択し、[管理] を選択します。
+. *分析*タブを選択します。
 . 必要に応じて、画面上の指示に従って*AI 分析のセットアップ要件*を完了し、不足している前提条件を満たします。
-. 分析する FSx for ONTAPファイル システムを見つけて、[イベントの表示] を選択します。
+. *分析*を選択します。
 . 詳細なイベント情報を確認します。
 

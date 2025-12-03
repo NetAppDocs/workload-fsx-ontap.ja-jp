@@ -12,18 +12,26 @@ indexpage:
       url: "/learn-fsx-ontap.html"
     - title: クイックスタート
       url: "/quick-start.html"
+    - title: FSx for ONTAPファイルシステムの作成
+      url: "/create-file-system.html"
   - title: FSx for ONTAPを使用
     links:
     - title: コスト削減の詳細
       url: "/explore-savings.html"
-    - title: FSx for ONTAPファイルシステムの作成
-      url: "/create-file-system.html"
-    - title: FSx for ONTAPファイルシステムの Well-Architected ステータスを表示します
-      url: "/improve-configurations.html"
-    - title: FSx for ONTAPボリュームの作成
-      url: "/create-volume.html"
+    - title: FSx for ONTAPリソースのコストと使用状況を追跡する
+      url: "/track-costs.html"
+    - title: リンクを使用したファイルシステムへの接続
+      url: "/create-link.html"
     - title: データを保護
       url: "/data-protection-overview.html"
+  - title: 管理と監視
+    links:
+    - title: Trackerを使用した操作の監視
+      url: "/monitor-operations.html"
+    - title: FSx for ONTAPファイルシステムの Well-Architected ステータスを表示します
+      url: "/improve-configurations.html"
+    - title: FSx for ONTAP EMSイベントを分析する
+      url: "/analyze-events.html"
   - title: 知識とサポート
     links:
     - title: サポートに登録します

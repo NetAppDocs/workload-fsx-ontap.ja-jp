@@ -95,7 +95,7 @@ sidebar:
         url: "/configuration-analysis.html"
       - title: 適切に設計されたファイルシステム構成の実装
         url: "/improve-configurations.html"
-    - title: FSx for ONTAPイベントを分析する
+    - title: FSx for ONTAP EMSイベントを分析する
       url: "/analyze-events.html"
     - title: ボリューム管理
       entries:
