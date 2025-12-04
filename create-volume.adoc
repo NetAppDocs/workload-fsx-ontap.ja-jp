@@ -241,5 +241,8 @@ _バランス (自動)_ は、Workload Factory コンソールを使用してボ
 . 「 * Create * 」を選択します。
 
 
-.結果
-ワークロードファクトリーがボリュームの作成を開始します。ボリュームが作成されると、システムは「ボリューム」タブに新しいボリュームを表示します。
+.関連情報
+* link:adjust-volume-capacity.html["Workload Factoryでボリューム容量を調整する"]
+* link:change-tiering-policy.html["Workload Factory でボリューム階層化ポリシーを変更する"]
+* link:manage-s3-access-points.html["Workload Factory で S3 アクセス ポイントを管理する"]
+

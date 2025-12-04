@@ -119,6 +119,8 @@ sidebar:
         url: "/manage-nfs-export-policy.html"
       - title: SMB/CIFS共有を管理する
         url: "/manage-cifs-share.html"
+      - title: S3 アクセスポイントを管理する
+        url: "/manage-s3-access-points.html"
       - title: クローンボリュームをスプリットする
         url: "/split-cloned-volume.html"
       - title: ボリュームを削除する

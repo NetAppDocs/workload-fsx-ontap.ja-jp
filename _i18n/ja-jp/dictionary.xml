@@ -1472,7 +1472,6 @@
   <block id="9e46846308a6940deed12bb97a4f8290" category="list-text">リンクはファイル システムに関連付けられていません。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="7c3e31cda0e937f8fa1edeeb89e9fe70" category="list-text">不変のファイルを含むボリューム、および iSCSI および NVMe プロトコルを含むボリュームは、ARP/AI ではサポートされません。</block>
   <block id="df1195db43983cb33962d0fe23f28da4" category="list-text">ファイル システムには既に ARP/AI ポリシーがあります。</block>
-  <block id="0bce1227be581635db9bb209f22cf4e6" category="paragraph">ワークロードファクトリーがボリュームの作成を開始します。ボリュームが作成されると、システムは「ボリューム」タブに新しいボリュームを表示します。</block>
   <block id="817a91472106a30911a7a081b0284ff7" category="paragraph">FlexVol または FlexGroup ボリューム容量のバランスを確認し、ボリューム容量のバランスを再調整して、ファイルをノード内のすべての FlexVol ボリューム間またはすべての構成要素間に均等に分散し、すべてのノードが単一の FlexGroup ボリュームのワークロードに参加するようにします。</block>
   <block id="46119f30376fd007e4806359f116810d" category="paragraph">ボリューム容量の再バランス調整は、FlexVol ボリュームと FlexGroup ボリュームでサポートされています。ボリュームのリバランシングでは、新しいファイルの追加やファイルの増加によって不均衡が長期的に生じた場合に容量が再配分されます。リバランシング処理を手動で開始したら、ファイルを選択し、システムを停止せずに自動的に移動します。ボリューム転送処理はファイルシステムのリソースを消費します。</block>
   <block id="bbf6fdac51a56da72339e09ef6a7537c" category="paragraph">各ボリュームタイプと再バランス操作は次のように異なります。</block>
@@ -2467,4 +2466,29 @@
   <block id="f553bab80aec86e43829abd15b816ce5" category="section-title">Amazon S3 アクセスポイントの制限</block>
   <block id="19dc991ee5919c74b5a565fe2ea70176" category="paragraph">ストレージ VM あたりの S3 アクセス ポイントの数の制限は 4,000 です。</block>
   <block id="ef6c8d59ba70b1efd5437dd31e63efcb" category="section-title">2025年12月4日</block>
+  <block id="bf9dc967c38bf5f6366aea1d464016b5" category="inline-link-macro">S3 アクセスポイントを使用してボリュームを作成する</block>
+  <block id="9650d80f3b4a8975eb2cc3145efe97fd" category="list-text"><block ref="9650d80f3b4a8975eb2cc3145efe97fd" category="inline-link-macro-rx"></block></block>
+  <block id="3e2c74c8c2d6921bd86b94a0e3ce7846" category="inline-link-macro">ボリュームのS3アクセスポイントを管理する</block>
+  <block id="bec075d59b91517943ea96b4d56e06de" category="list-text"><block ref="bec075d59b91517943ea96b4d56e06de" category="inline-link-macro-rx"></block></block>
+  <block id="a008e298246d26d679639f7bc96ba6ac" category="inline-link-macro">Workload Factoryでボリューム容量を調整する</block>
+  <block id="6397bacd7d32cf08e4bf24faa5700a5a" category="list-text"><block ref="6397bacd7d32cf08e4bf24faa5700a5a" category="inline-link-macro-rx"></block></block>
+  <block id="d8774a6076f48d902ee122d2219887a0" category="inline-link-macro">Workload Factory でボリューム階層化ポリシーを変更する</block>
+  <block id="15edb6ed53ce8a32fd0631a4517d7fc7" category="list-text"><block ref="15edb6ed53ce8a32fd0631a4517d7fc7" category="inline-link-macro-rx"></block></block>
+  <block id="d628678d4875b2f8f6ea7ca8dab6ade0" category="inline-link-macro">Workload Factory で S3 アクセス ポイントを管理する</block>
+  <block id="81cca59ad3bedd27880ab1c747ae8b70" category="list-text"><block ref="81cca59ad3bedd27880ab1c747ae8b70" category="inline-link-macro-rx"></block></block>
+  <block id="e89e0732eb8fbeb9c1bb216d5b1fe2c8" category="summary">NetApp Workload Factoryでボリュームの S3 アクセス ポイントを管理します。</block>
+  <block id="7caacaed323c9582bdf146f33b338930" category="doc">NetApp Workload Factoryでボリュームの S3 アクセス ポイントを管理する</block>
+  <block id="c03be794767b179eaf0a48a2bc06884b" category="paragraph">NetApp Workload Factoryでボリュームの S3 アクセス ポイントを管理します。Workload Factory コンソールを使用して、既存のボリュームに S3 アクセス ポイントを割り当てたり、S3 アクセス ポイントを削除したりできます。</block>
+  <block id="1f26d72d95cf276540f7a69b509645fe" category="paragraph">S3 アクセス ポイントを持つ既存のボリュームが必要です。</block>
+  <block id="be929bcd251acd28106548a34c8a067b" category="list-text">*FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
+  <block id="7fcc02a075c6d0b859fd9a03f5250e5f" category="list-text">[ボリューム] タブから、S3 アクセス ポイントを管理するボリュームのアクション メニューを選択し、[*詳細アクション*] を選択してから [*S3 アクセス ポイントの管理*] を選択します。</block>
+  <block id="056da7279a8392afebe1b20256f8656b" category="list-text">S3 アクセス ポイントの管理ページでは、アクセス ポイントを作成して接続したり、既存のアクセス ポイントを削除したりできます。</block>
+  <block id="4dc9fa88ed74bd072e88bad92a1f17c6" category="open-title">既存のボリュームに S3 アクセス ポイントを作成して接続する</block>
+  <block id="c57302a0d02305ff8c144fb37bb2fab9" category="list-text">*S3 アクセス ポイントの作成と接続* を選択します。</block>
+  <block id="e979f8982cafd5647560686a5ec74a2a" category="list-text">*S3 アクセス ポイントの作成と接続* ダイアログで、次の情報を入力します。</block>
+  <block id="0802ef324b114effd397e5e5ac619733" category="list-text">*作成して添付*を選択します。</block>
+  <block id="f4e2e090f540d174d8e07c3527c25962" category="open-title">ボリュームから既存の S3 アクセス ポイントを削除する</block>
+  <block id="a87127d2d5ce747338342d2d926d9cc4" category="list-text">削除する S3 アクセス ポイントのアクション メニューを選択し、[デタッチ] を選択します。</block>
+  <block id="8d755d1f354bf995e33c13051ecdaeca" category="list-text">*S3 アクセス ポイントの切断と削除* ダイアログで、*切断と削除* を選択して、ボリュームから S3 アクセス ポイントを削除します。</block>
+  <block id="f994c7e71102a3d5ed7af5975abfaa09" category="sidebar">S3 アクセスポイントを管理する</block>
 </blocks>
