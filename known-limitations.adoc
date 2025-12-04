@@ -120,6 +120,12 @@ System Managerでは、FSx for ONTAP接続のリンクはサポートされま�
 
 コンソールエージェントを使用する場合、AWS Secrets Manager はサポートされません。
 
+
+
+== Amazon S3 アクセスポイントの制限
+
+ストレージ VM あたりの S3 アクセス ポイントの数の制限は 4,000 です。
+
 注：
 
 . Amazon FSx for NetApp ONTAPに適用

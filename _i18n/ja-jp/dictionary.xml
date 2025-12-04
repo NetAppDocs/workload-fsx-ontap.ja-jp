@@ -1895,8 +1895,6 @@
   <block id="f5dccf0dc3737f4e6aa4e171b28692b9" category="list-text">*ボリューム追加モード*: WORM で保護されたファイル内の既存のデータを変更することはできません。ただし、不変ファイルでは、WORM 追加可能ファイルを使用して既存のデータの保護を維持することができます。たとえば、ログ ファイルを生成したり、増分的にデータを書き込むときにオーディオまたはビデオのストリーミング データを保持したりできます。<block ref="d363aab3c17dd7b08ef55d9ecb5c0afa" category="inline-link-macro-rx"></block> Amazon FSx for NetApp ONTAPドキュメント。</block>
   <block id="8d180d02c994d2b8038c916a9ece9ebb" category="list-text">Workload Factory コンソールに FSx for ONTAPファイル システムが必要です。</block>
   <block id="122aefb4f7b5e48c5923e31250d6e0e1" category="list-text">*FSx for ONTAP*から、ボリュームを作成するファイルシステムのアクションメニューを選択し、*ボリュームの作成*を選択します。</block>
-  <block id="9e39f19182d0a549145ced07bfb063e9" category="list-text">*S3 エンドポイント*: オプションで、S3 エンドポイントを接続して、AWS S3 API 経由で NFS または SMB/CIFS ボリューム上にある FSx for ONTAPファイル システム データにアクセスします。ファイル アクセス タイプのみがサポートされます。以下の詳細を提供します:</block>
-  <block id="52c3a131063110f364da196f78183821" category="list-text">*S3 エンドポイント名*: S3 エンドポイントの名前を入力します。</block>
   <block id="49abb21c910ce41b88d46bbe2dbec336" category="list-text">*ユーザー*: ボリュームへのアクセス権を持つ既存のユーザーを選択するか、新しいユーザーを作成します。</block>
   <block id="ce5abe58cc3ff0993fa9e0b2c6ad1340" category="list-text">*ユーザー タイプ*: ユーザー タイプとして *UNIX* または *Windows* を選択します。</block>
   <block id="e4dbd2b2330a6ac73a7295afbdedcca9" category="list-text">*不変ファイル*: 不変ファイル機能を有効にすると、このボリューム内のファイルが不変の WORM (write-once-read-many) 状態に永続的にコミットされます。以下の詳細を入力してください。</block>
@@ -2461,4 +2459,13 @@
   <block id="1618ab37d780874b04a6f2084be19d80" category="list-text">*分析*を選択します。</block>
   <block id="ec43608dd1a0c06ed66226644c486b9a" category="sidebar">FSx for ONTAPリソースのコストと使用状況を追跡する</block>
   <block id="063d22315ef43d4247b4ee3e2986ca61" category="sidebar">FSx for ONTAP EMSイベントを分析する</block>
+  <block id="01f76f754caa3b688233762c1b9391f6" category="section-title">FSx for ONTAPの AWS S3 アクセス ポイントのサポート</block>
+  <block id="3b8b774c9a2fdbcd783a971c096ca5f2" category="paragraph">この機能を使用すると、Workload Factory コンソールから S3 アクセス ポイントを使用してボリュームを作成できます。S3 アクセスポイントを使用すると、AWS S3 API を介して SMB/CIFS または NFS ボリューム上にあるファイルデータにアクセスできます。これにより、既存のデータを、S3 アクセスポイントをサポートする AWS サービスの GenAI、ML、分析と統合できます。</block>
+  <block id="d30cb805d7270ac0b7cc06375888e47f" category="paragraph">NetApp Workload Factory は、 FSx for ONTAPファイルシステム用の AWS S3 アクセスポイントをサポートしています。S3 アクセス ポイントを使用してボリュームを作成し、既存のボリュームに S3 アクセス ポイントを割り当て、Workload Factory コンソールから S3 アクセス ポイントを管理できます。S3 アクセスポイントを使用すると、AWS S3 API を介して SMB/CIFS または NFS ボリューム上にあるファイルデータにアクセスできます。これにより、既存のデータを、S3 アクセスポイントをサポートする AWS サービスの GenAI、ML、分析と統合できます。</block>
+  <block id="886bb289e00112de662ac993067a77cd" category="paragraph">S3 エンドポイントは FSx for ONTAPボリュームに接続できます。S3 アクセスポイントを使用すると、AWS S3 API を介して SMB/CIFS または NFS ボリューム上にあるファイルデータにアクセスできます。これにより、既存のデータを、S3 アクセスポイントをサポートする AWS サービスの GenAI、ML、分析と統合できます。</block>
+  <block id="33d481ba528452e02faf75a2f7350ee4" category="list-text">*S3 アクセス ポイント*: オプションで、S3 アクセス ポイントを接続して、AWS S3 API 経由で NFS または SMB/CIFS ボリューム上にある FSx for ONTAPファイル システム データにアクセスします。ファイル アクセス タイプのみがサポートされます。以下の詳細を提供します:</block>
+  <block id="41706ab07c21315a8c38172f78132df3" category="list-text">*S3 アクセス ポイント名*: S3 アクセス ポイントの名前を入力します。</block>
+  <block id="f553bab80aec86e43829abd15b816ce5" category="section-title">Amazon S3 アクセスポイントの制限</block>
+  <block id="19dc991ee5919c74b5a565fe2ea70176" category="paragraph">ストレージ VM あたりの S3 アクセス ポイントの数の制限は 4,000 です。</block>
+  <block id="788c421d379c47cc27e8fdc18771f4c7" category="section-title">2025年12月2日</block>
 </blocks>
