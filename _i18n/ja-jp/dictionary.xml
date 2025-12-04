@@ -2460,12 +2460,11 @@
   <block id="ec43608dd1a0c06ed66226644c486b9a" category="sidebar">FSx for ONTAPリソースのコストと使用状況を追跡する</block>
   <block id="063d22315ef43d4247b4ee3e2986ca61" category="sidebar">FSx for ONTAP EMSイベントを分析する</block>
   <block id="01f76f754caa3b688233762c1b9391f6" category="section-title">FSx for ONTAPの AWS S3 アクセス ポイントのサポート</block>
-  <block id="3b8b774c9a2fdbcd783a971c096ca5f2" category="paragraph">この機能を使用すると、Workload Factory コンソールから S3 アクセス ポイントを使用してボリュームを作成できます。S3 アクセスポイントを使用すると、AWS S3 API を介して SMB/CIFS または NFS ボリューム上にあるファイルデータにアクセスできます。これにより、既存のデータを、S3 アクセスポイントをサポートする AWS サービスの GenAI、ML、分析と統合できます。</block>
   <block id="d30cb805d7270ac0b7cc06375888e47f" category="paragraph">NetApp Workload Factory は、 FSx for ONTAPファイルシステム用の AWS S3 アクセスポイントをサポートしています。S3 アクセス ポイントを使用してボリュームを作成し、既存のボリュームに S3 アクセス ポイントを割り当て、Workload Factory コンソールから S3 アクセス ポイントを管理できます。S3 アクセスポイントを使用すると、AWS S3 API を介して SMB/CIFS または NFS ボリューム上にあるファイルデータにアクセスできます。これにより、既存のデータを、S3 アクセスポイントをサポートする AWS サービスの GenAI、ML、分析と統合できます。</block>
   <block id="886bb289e00112de662ac993067a77cd" category="paragraph">S3 エンドポイントは FSx for ONTAPボリュームに接続できます。S3 アクセスポイントを使用すると、AWS S3 API を介して SMB/CIFS または NFS ボリューム上にあるファイルデータにアクセスできます。これにより、既存のデータを、S3 アクセスポイントをサポートする AWS サービスの GenAI、ML、分析と統合できます。</block>
   <block id="33d481ba528452e02faf75a2f7350ee4" category="list-text">*S3 アクセス ポイント*: オプションで、S3 アクセス ポイントを接続して、AWS S3 API 経由で NFS または SMB/CIFS ボリューム上にある FSx for ONTAPファイル システム データにアクセスします。ファイル アクセス タイプのみがサポートされます。以下の詳細を提供します:</block>
   <block id="41706ab07c21315a8c38172f78132df3" category="list-text">*S3 アクセス ポイント名*: S3 アクセス ポイントの名前を入力します。</block>
   <block id="f553bab80aec86e43829abd15b816ce5" category="section-title">Amazon S3 アクセスポイントの制限</block>
   <block id="19dc991ee5919c74b5a565fe2ea70176" category="paragraph">ストレージ VM あたりの S3 アクセス ポイントの数の制限は 4,000 です。</block>
-  <block id="788c421d379c47cc27e8fdc18771f4c7" category="section-title">2025年12月2日</block>
+  <block id="ef6c8d59ba70b1efd5437dd31e63efcb" category="section-title">2025年12月4日</block>
 </blocks>
