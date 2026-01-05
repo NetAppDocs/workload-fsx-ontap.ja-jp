@@ -71,8 +71,6 @@
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
   <block id="85a0e511a99369efd5c47890a946947b" category="doc">Storage VMのActive Directoryの設定と更新</block>
   <block id="c19f2fad6f0110c3951bd583edb5371f" category="paragraph">Storage VMのActive Directoryの設定と更新も同じ手順です。</block>
-  <block id="3a7b10a42e70c562594e7593e84cfb0d" category="list-text">ファイルシステムの概要で、*[Storage VMs]*タブを選択します。</block>
-  <block id="584856da16c520c5370d79f390f47426" category="list-text">[AD構成の管理]*を選択します。</block>
   <block id="dcfecf722762bfcce19242fd2e38a2c2" category="list-text">[Manage AD configuration]ページで、次の情報を指定します。</block>
   <block id="a531f5a3e49319a6c1b23021b5a27417" category="list-text">*参加するActive Directoryドメイン*: Active Directoryの完全修飾ドメイン名(FQDN)を入力します。</block>
   <block id="194331d5ecf77bf506c810edab0a3cc7" category="list-text">* DNS IPアドレス*：IPアドレスを3つまでカンマで区切って入力します。</block>
@@ -188,7 +186,6 @@
   <block id="bc7303a544a54859ef646aaae48578a5" category="paragraph">SVMを使用している場合、FSx for ONTAPのデータにアクセスすると、SVMのエンドポイント（IPアドレス）を使用して、SVMによってホストされているボリューム、CIFS / SMB共有、またはiSCSI LUNがクライアントやワークステーションにマウントされます。</block>
   <block id="0be7879371b03da9f3e439c5431f1db2" category="inline-link-macro">FSx for ONTAP Storage Virtual Machineの管理</block>
   <block id="cbddd6713cb3317df938ea4a6fd2cd84" category="paragraph">ファイルシステムあたりのサポートされるStorage VM数を確認します。ファイルシステムあたりのSVMの最大数については、AWSのドキュメントのを参照してください <block ref="17ef0d7491a925205e8443311f7ef122" category="inline-link-macro-rx"></block> 。</block>
-  <block id="cdbc38b99c6a38c90c6623e1ac73a0fd" category="list-text">[Storage VM]ページの[Storage VMの設定]で、次の情報を指定します。</block>
   <block id="c9f265881e56f4c52918525bdcb9205d" category="list-text">*名前*：Storage VMの名前を入力します。</block>
   <block id="42a49281a2c075c2004f1e73852b27e3" category="list-text">* Storage VMクレデンシャル*：このStorage VMのユーザのパスワードを指定する<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> か、ファイルシステムのユーザクレデンシャルを使用して<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> ください。</block>
   <block id="34cc44a6e06f592c6033a57f8671a67a" category="list-text">*ルートボリュームのセキュリティ形式*：データにアクセスするクライアントのタイプ（UNIX（Linuxクライアント）、NTFS（Windowsクライアント）、Mixed）に応じて、ルートボリュームのセキュリティ形式を選択します。</block>
@@ -280,7 +277,6 @@
   <block id="4d07a6e16a1c8ad6e621cc84eb969e7e" category="list-text">FSx for ONTAPバックアップ：FSx for ONTAPのバックアップコピーは残り、引き続き使用できます。</block>
   <block id="c54ab0793e326deff351b944ad70d29c" category="list-text">[基本的な操作]*を選択し、*[ボリュームの削除]*を選択します。</block>
   <block id="321fbbd6f40d9b084f632750d5190dc8" category="summary">Storage VMのStorage VMタグをいつでも追加、更新、削除できます。</block>
-  <block id="856fd7298379e6a75a221ebc3af9cdec" category="list-text">[Storage VMタグの編集]*を選択します。</block>
   <block id="14d8aa612c687d8708f6fefc5f554d22" category="list-text">[Storage VMタグの編集]ページで、タグを追加、編集、または削除します。</block>
   <block id="2d1066d1fee53e98224fefca16751fd3" category="paragraph">Storage VMに適用できるタグの最大数は50です。</block>
   <block id="2332ee8494d2f8246a961c95630281a2" category="admonition">ボリュームの自動拡張はiSCSIボリュームではサポートされません。</block>
@@ -492,11 +488,9 @@
   <block id="89568baf7659b31a2110d1de7f69778d" category="paragraph">ストレージインベントリ内のファイルシステムを使用すると、FSx for ONTAPファイルシステムの管理、リソースに対するデータ保護の設定を行うことができます <block ref="41a32458a6146c3b772c57ac70acc68e" category="inline-link-macro-rx"></block>。</block>
   <block id="a509c58d8659a3366f3053048526e6ec" category="summary">ストレージVMを別のFSx for ONTAPファイルシステムにレプリケートすることで、データ損失時のデータアクセスを保護することができます。</block>
   <block id="ec42d150d63ba9d69905da61ff84b59b" category="doc">Storage VMを別のFSx for ONTAPファイルシステムにレプリケートする</block>
-  <block id="068ecbcf009e32427973dc04a3628cb7" category="list-text">[Storage VMのレプリケート]*を選択します。</block>
   <block id="0e752dc97b5515d4bd6d0ef6482c2342" category="paragraph">Storage VM内のすべてのボリュームがターゲットファイルシステムにレプリケートされます。</block>
   <block id="ff40dc19143c531bc7b8a932c148a848" category="list-text">[Reset fsxadmin password]*を選択します。</block>
   <block id="edacd360980e63a5f2e01df2fa59b050" category="list-text">[Reset fsxadmin password]ダイアログで、新しいfsxadminパスワードを入力し、確認のためにもう一度入力します。</block>
-  <block id="3930015dcc2810869591e35a2b5d714b" category="list-text">「 * パスワードのリセット * 」を選択します。</block>
   <block id="0828ddc896996b7d41cc9ceb1e453764" category="list-text">[パスワードのリセット]ダイアログで、次の情報を入力します。</block>
   <block id="8d54082fcba7dd82063ffe4497f8c70d" category="list-text">*新しいパスワード*：Storage VMの新しいパスワードを入力してください。</block>
   <block id="ebb4bf732c3ade314c393d5284af8715" category="list-text">*パスワードの確認*：確認のために新しいパスワードをもう一度入力します。</block>
@@ -699,7 +693,6 @@
   <block id="71083868a2ec5abfee9a2647a74612c0" category="list-text">FSx for ONTAPタブ：現在お使いのFSx for ONTAPファイルシステムが表示されます。</block>
   <block id="1113c9108b3e58789456954d1c2ea9c2" category="list-text">コスト削減を確認するタブ：Elastic Block Store、FSx for Windows File Server、Elastic File Systemsの各ストレージシステムが表示されます。そこから、FSx for ONTAPと比較して、これらのシステムのコスト削減効果を確認できます。</block>
   <block id="fa8dc6e67f45bcde58853510e56ce6a1" category="list-text">ファイルシステムの[概要]タブで、*[ボリューム]*タブを選択します。</block>
-  <block id="8c9880429b2df2018a366dbb14193026" category="list-text">ファイルシステムの[概要]タブで、*[Storage VMs]*タブを選択します。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
   <block id="ddeb24aeadcd9bd34930d38c34152c03" category="paragraph">Amazon FSx for NetApp ONTAPは現在、BlueXP  ワークロード工場で一般提供されています。</block>
   <block id="03b2cfc949418819e16b1dc5fa3660ae" category="list-text"><block ref="03b2cfc949418819e16b1dc5fa3660ae" category="inline-link-macro-rx"></block></block>
@@ -1411,7 +1404,6 @@
   <block id="3cb1fda07c1d6b96bda1c65f1996fc1f" category="list-text">カスタム スナップショット ポリシーを作成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="d49502975428f953533ab14ab9c02a5b" category="paragraph">ボリュームの手動スナップショットを作成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="6234e99ad9e8c051d4afaa47c5d4ff82" category="list-text">ボリュームへのアクセスを構成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
-  <block id="0152fea6b73cbe86540a93515bf61029" category="paragraph">AWSのデフォルトポリシーは次のとおりです。カスタムスナップショットポリシーの場合は、 <block ref="6ac03ad394740d642419d1159fa121ff" category="inline-link-macro-rx"></block> 。</block>
   <block id="2b34fc0bead4dcf64099078fdaf86d69" category="paragraph">ボリュームの自動拡張を有効にするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="f8e03e36604030c79d6107b800f61804" category="list-text">ボリュームの inode がストレージ容量に応じて増加するようにするには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="2c793b5b15ea565983390f5625f7b85b" category="inline-link-macro">リンクを作成して関連付ける</block>
@@ -1845,7 +1837,6 @@
   <block id="b0a0826c5a9c2b2e6c919de33e89dbfe" category="paragraph">Workload Factory コンソールのファイルシステム レベルでは、すべての FSx for ONTAPファイルシステムの well-architected ステータスがリストされます。  Well-Architected のステータスは、「問題」、「未分析」、または「Well-Architected」に分類されます。  Well-Architected ステータスを選択すると、ファイル システム内の Well-Architected ステータス タブにリダイレクトされ、そこで Well-Architected スコア、構成カテゴリ、ファ​​イル システムのすべての構成を確認できます。</block>
   <block id="93482e0e05af93f1f57953ff700f65af" category="summary">NetApp Workload Factory の FSx for ONTAPファイル システム内のストレージ VM の Active Directory を構成および更新します。</block>
   <block id="b517cd494437c46f189031b81fe054d1" category="list-text">*FSx for ONTAP*から、更新するストレージVMを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
-  <block id="55713424abf36138f2e5576255ae328d" category="list-text">[ストレージ VM] タブから、Active Directory を構成するストレージ VM のアクション メニューを選択します。</block>
   <block id="e2978ebf10a51b553f9a074316b27b79" category="summary">定期的にスケジュールされたバックアップ以外で、 NetApp Workload Factory のボリュームの手動バックアップを作成します。</block>
   <block id="54fe537cb8aa5bbba8b6f2002f13d69c" category="doc">NetApp Workload Factory でボリュームの手動バックアップを作成する</block>
   <block id="4f43be2165dfc12e9cac6220645b9996" category="paragraph">NetApp Workload Factory で、定期的にスケジュールされたバックアップ以外でボリュームの手動バックアップを作成します。</block>
@@ -1880,7 +1871,6 @@
   <block id="673f61d59e74b38d8158f8338fec1e4b" category="paragraph">FSx for ONTAPファイル システム用のストレージ VM (SVM) を作成し、 NetApp Workload Factory のワークロードのストレージおよびデータ サービスに仮想的にアクセスします。</block>
   <block id="0f54202fd3d9422accef6305efaf73a6" category="paragraph">ストレージ VM は、ワークロード ファクトリー ストレージ内の各ワークロードのデータにアクセスするために使用できる分離されたファイル サーバーです。各 SVM には、データの管理とアクセスを行うための独自の管理資格情報とエンドポイントがあります。</block>
   <block id="176a501864ff4c70a2c1b132289ccad0" category="paragraph">Workload Factory コンソールからストレージ VM を作成できます。 Codebox で利用可能な REST API、CloudFormation、Terraform などのツールも使用できます。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block> 。</block>
-  <block id="5a2fcba235cbe9725acb555b8a1ff973" category="list-text">*FSx for ONTAP*から、ストレージVMを作成するファイル システムのアクション メニューを選択し、*ストレージVMの作成*を選択します。</block>
   <block id="2c1104e8d18fa2476c3ec5d972050908" category="summary">FSx for ONTAPファイルシステムをセットアップしたら、Workload Factory で FSx for ONTAPボリュームを作成します。</block>
   <block id="b576330956781fec1fe9e230ce503cdc" category="doc">Workload Factory で FSx for ONTAPボリュームを作成する</block>
   <block id="d2c9fde6d19778c0e3d1e865ed1f22a8" category="paragraph">FSx for ONTAPファイル システムを設定したら、データをグループ化するための仮想リソースとして、Workload Factory に FSx for ONTAPボリュームを作成します。</block>
@@ -1911,7 +1901,6 @@
   <block id="1c9d39dfea82aa323f287c11668fb9ab" category="paragraph">NetApp Workload Factory 内のレプリケーション関係を削除します。レプリケーション関係を削除すると、ソース ボリュームとターゲット ボリューム間のレプリケーション関係が削除されます。レプリケーション関係が削除された後も、両方のボリュームは現在含まれているデータとともに独立して存在し続けます。</block>
   <block id="06a91edaa8e77e04dfd0ccc1dee5a6c7" category="list-text">レプリケーション関係タブで、削除するレプリケーション関係のアクション メニューを選択します。</block>
   <block id="ce1de3f28d8568be87cdce779516de02" category="doc">NetApp Workload Factory でストレージ VM を削除する</block>
-  <block id="17a5fbc49fda805ff4e98fd7a9af355a" category="list-text">[ストレージ VM] タブで、Active Directory を構成するストレージ VM のアクション メニューを選択します。</block>
   <block id="d287f4840c4e2956b3e030d276822021" category="doc">NetApp Workload Factory でボリュームを削除する</block>
   <block id="5d2b2d216923f677893f0a068bc1b92f" category="list-text">*FSx for ONTAP*から、削除するボリュームを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
   <block id="1235950c75ed0fc0a7588ccae6518e39" category="list-text">「ボリューム」タブから、削除するボリュームのアクション メニューを選択します。</block>
@@ -2074,7 +2063,6 @@
   <block id="f1275ed085039c3832dda6dfba0ad9f2" category="list-text">「スナップショットの管理」ページで、削除するスナップショットのアクション メニューを選択し、「削除」を選択します。</block>
   <block id="b8b31b5d8488dcb7ebd8c2bb9ba38f50" category="doc">NetApp Workload Factory でストレージ VM タグを管理する</block>
   <block id="0c950433d94be139f73fb59247d857a5" category="paragraph">タグはリソースを分類するのに役立ちます。  NetApp Workload Factory では、いつでもストレージ VM のタグを追加、編集、削除できます。</block>
-  <block id="9407fd42d3f2176c45d9212981f7f058" category="list-text">[ストレージ VM] タブから、タグを編集するストレージ VM のアクション メニューを選択します。</block>
   <block id="558281a06321bc8c7b90d170a463683f" category="doc">NetApp Workload Factoryでボリュームタグを管理する</block>
   <block id="693a8f663c39ae53134101e5d974fda8" category="paragraph">タグはリソースを分類するのに役立ちます。  NetApp Workload Factory では、FSx for ONTAPボリュームのボリューム タグをいつでも追加、編集、削除できます。</block>
   <block id="ff53601e946713a2f9385573998c76d7" category="list-text">「ボリューム」タブから、タグを変更するボリュームのアクション メニューを選択します。</block>
@@ -2114,7 +2102,6 @@
   <block id="59dfa377d2b15b40ba2bddd83dcb5c53" category="list-text">*FSx for ONTAP*から、再バランス調整するボリュームを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
   <block id="fbf1bac8c72be0440c190a08fabc8dc0" category="paragraph">NetApp Workload Factory でストレージ VM を別の FSx for ONTAPファイル システムに複製すると、データ損失が発生した場合にデータ アクセスの保護層が提供されます。この操作により、1 つのストレージ VM 内のすべてのボリュームが別の FSx for ONTAPファイル システムに複製されます。</block>
   <block id="e42fc3e4b35126c00393bef5dd43abb0" category="list-text">*FSx for ONTAP*から、レプリケートするストレージVMを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
-  <block id="f762650128ec007cd0d70b6659361ba3" category="list-text">[ストレージ VM] タブから、SVM をレプリケートするストレージ VM のアクション メニューを選択します。</block>
   <block id="60de20bb9aba6d637fe2c39698d63a93" category="paragraph">Workload Factory FSx for ONTAPユーザー インターフェイスを使用してボリュームを作成する場合、デフォルトの階層化ポリシーは「_Auto_」です。ボリューム階層化ポリシーの詳細については、以下を参照してください。<block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAPドキュメント。</block>
   <block id="00e61784b4c0263d643d339751f948b5" category="summary">必要に応じて、 NetApp Workload Factory で fsxadmin パスワードをリセットします。</block>
   <block id="49504d649db43bbd86ff76609ad14e6b" category="doc">NetApp Workload Factoryでfsxadminパスワードをリセットする</block>
@@ -2125,8 +2112,6 @@
   <block id="423500f4bc14c3ceee3a5af733bedd61" category="summary">必要に応じて、 NetApp Workload Factory のストレージ VM のパスワードをリセットします。</block>
   <block id="3c483a45ab5fea02162be0b6c6004287" category="doc">NetApp Workload Factory でストレージ VM のパスワードをリセットする</block>
   <block id="bff8efadf7143427c1acb1b9e3330d81" category="list-text">ストレージから、[ストレージへ移動] を選択します。</block>
-  <block id="b3dd19bbbe1cbd4f108d8e41f40c783e" category="list-text">*FSx for ONTAP* から、更新するストレージ VM を含む FSx for ONTAPファイル システムのアクション メニューを選択し、*管理* を選択します。</block>
-  <block id="b841fe8526d10304e2b38270715c1b84" category="list-text">[ストレージ VM] タブで、パスワードをリセットするストレージ VM のアクション メニューを選択します。</block>
   <block id="398b64d3ae2c039c62637d684fcbe30d" category="doc">NetApp Workload Factory でバックアップからボリュームを復元する</block>
   <block id="19002cddfac8e15ce79f8ccad53b74e6" category="paragraph">NetApp Workload Factory では、バックアップから AWS アカウント内の任意の FSx for ONTAPファイルシステムにボリュームを復元できます。</block>
   <block id="de32db8377dafaed047e32a0f5c78af1" category="list-text">*ボリューム*タブから、バックアップから復元するボリュームのアクション メニューを選択します。</block>
@@ -2491,4 +2476,68 @@
   <block id="a87127d2d5ce747338342d2d926d9cc4" category="list-text">削除する S3 アクセス ポイントのアクション メニューを選択し、[デタッチ] を選択します。</block>
   <block id="8d755d1f354bf995e33c13051ecdaeca" category="list-text">*S3 アクセス ポイントの切断と削除* ダイアログで、*切断と削除* を選択して、ボリュームから S3 アクセス ポイントを削除します。</block>
   <block id="f994c7e71102a3d5ed7af5975abfaa09" category="sidebar">S3 アクセスポイントを管理する</block>
+  <block id="bc5d3bf99236801351dc3a2d7c20aed7" category="paragraph">Workload Factory は、次の構成について FSx for ONTAPファイル システムを分析します。</block>
+  <block id="afc7c7589e5f20d86c03b5e089bbad6b" category="list-text">NetApp Autonomous Ransomware Protection (ARP/AI) がブロックデバイスを含むように無効化: ブロックデバイスボリュームで ARP/AI が無効化されているかどうかを確認します。</block>
+  <block id="2270e6ac2c31be458c93c87db612a494" category="list-text">キャッシュ関係書き込みモード: 書き込みモードがキャッシュボリュームのワークロードに最適かどうかを確認します。</block>
+  <block id="2125a9a589f0bc57c38acf63f5ffb150" category="list-text">不要なバックアップの削除: コストを削減するために削除できる古いバックアップや不要なバックアップがないか確認します。</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="section-title">Ask me AIアシスタントのホームページ統合</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory コンソールのホームページには Ask me AI アシスタントが組み込まれており、独自のストレージ資産について質問したり、環境から直接パーソナライズされた分析情報を取得したり、以前の会話を参照したりすることができます。コンソールを離れることなく、「Ask me」と対話してワークロードを理解し、問題をトラブルシューティングし、Workload Factory について詳しく知ることができます。</block>
+  <block id="270dd22752e2f3f31c99a49ff489774e" category="section-title">Lambda リンク リソースベースのアクセス許可ポリシーでの IAM ユーザー プリンシパルの使用</block>
+  <block id="75141a4e46e0a646f4c8379f8d5e7b52" category="paragraph">高度なONTAP操作を実行するために Workload Factory アカウントと 1 つ以上の FSx for ONTAPファイルシステム間を接続するために使用される Lambda リンクは、リソースベースのポリシーアクセス許可に IAM ユーザープリンシパルを使用するようになりました。この変更により、AWS リソースアクセスに関する業界のベストプラクティスとの整合性が向上します。</block>
+  <block id="b0dd04cf44137b432a8f89cb4f3c9919" category="section-title">EMSイベントのAIアナライザーに分析画面を追加しました</block>
+  <block id="5cd27690d7988b2c3f04768e500459bb" category="paragraph">ストレージ メニューに新しい [分析] 画面が追加されました。この画面から、FSx for ONTAP EMS イベント機能の AI アナライザーを使用できます。</block>
+  <block id="a9b4b239246fd03c03ac43e963075319" category="section-title">NetApp Workload Factoryのブロックデバイスの機能強化</block>
+  <block id="6ef37e3f05edf0fb9740ef851722a8f3" category="paragraph">ブロック デバイスに対して次の機能強化が行われました。</block>
+  <block id="0a32dfaa27bfe59db7152c5c5da72282" category="section-title">ブロックデバイスの作成</block>
+  <block id="8e8c152eb29cb88d5d80a375d44aee87" category="paragraph">NetApp Workload Factory は、 FSx for ONTAPファイル システムで iSCSI プロトコルを使用してブロック デバイスを作成することをサポートしているため、Workload Factory コンソールから基幹業務 (LOB) アプリケーションをより適切にサポートできます。</block>
+  <block id="0b5d1c04d20d94c2a21dacfa53d7354d" category="section-title">ブロックデバイス管理の機能強化</block>
+  <block id="e578bac1e9f39054ae2eb2b16d807f71" category="inline-link-macro">ブロックデバイスの管理</block>
+  <block id="e16cdf4dbd146007b4b40124e28ca1a2" category="paragraph">NetApp Workload Factoryには、以下の機能強化が含まれています。 <block ref="b08ca4e282a45fe2e49c9a019646bd36" category="inline-link-macro-rx"></block>。Workload Factory コンソールから次のタスクを実行できるようになりました。</block>
+  <block id="f8b3baca819978515d628c6a5881eb4e" category="list-text">クライアントアクセスの管理</block>
+  <block id="5338dad31c000cc89dea6cc573f1a242" category="list-text">ブロックデバイスデータをアーカイブする</block>
+  <block id="88073627bb09173d8e0b3fa15a27725b" category="list-text">ブロックデバイスを削除する</block>
+  <block id="3c4600754ec66ef615c303417126da12" category="section-title">ブロックデバイスを含むFlexVolボリューム上のARP/AIのサポート</block>
+  <block id="3043237188bfe3f198084dbfe55d05c0" category="inline-link-macro">NetApp のAI 搭載自律型ランサムウェア防御 (ARP/AI)</block>
+  <block id="34f4bbf8697d1205da43ee612001efe7" category="paragraph">有効にすることができます <block ref="028271ae216dacdd20feb47aea2c131d" category="inline-link-macro-rx"></block> ブロックデバイスを含むFlexVolボリューム上。ARP/AI を有効にすると、AI を使用してランサムウェア攻撃を検出し、データの復旧を支援します。</block>
+  <block id="71a3ae3af23eb1b872f9026901ca4187" category="list-text">ストレージ VM の下のファイル システムの概要で、*管理* を選択します。</block>
+  <block id="3e723486c5a3951bcc9cc4e9b31c7a1b" category="list-text">[ストレージ VM の管理] 画面で、Active Directory を構成するストレージ VM のアクション メニューを選択し、[*基本アクション*] &gt; [*AD 構成の管理*] を選択します。</block>
+  <block id="3d19aa5c03e04bba25fa64fb693e9f98" category="summary">基幹業務 (LOB) アプリケーション要件をサポートするブロック デバイスを作成します。</block>
+  <block id="3c1e85123bd6f772d273b23b09a26e74" category="doc">NetApp Workload Factoryでファイルシステム用のブロックデバイスを作成する</block>
+  <block id="7d004b13cdadf8e9ba5aa6e7fd56c9c9" category="paragraph">NetApp Workload Factoryのブロック デバイスでは、 FlexVolボリュームのみがサポートされます。iSCSI プロトコルを使用してブロック デバイスを作成できます。</block>
+  <block id="454897ca790322f298897b4fdfc33941" category="paragraph">ブロック サイズは、使用可能なFlexVol volumeサイズよりも小さくする必要があります。</block>
+  <block id="fb02a89efec565f92916696e97a69514" category="list-text">ブロック デバイスを作成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>。リンクを関連付けたら、この操作に戻ります。</block>
+  <block id="b517955ef14866b28544f7b2807b497d" category="list-text">*ブロックデバイスの作成*を選択します。</block>
+  <block id="c494d1f97c8af593b2547e971cde7048" category="list-text">*ボリュームの詳細*で、次の操作を行います。</block>
+  <block id="28d37ed4396c69863c777832e2dc985a" category="list-text">*ボリューム名*: 次のいずれかのオプションを選択します。</block>
+  <block id="def02085a38e856b98b13e533d3b840f" category="list-text">新しいボリュームを作成し、ボリュームの名前を入力します。</block>
+  <block id="e5113669fd2a554528c1fff4b4a28162" category="list-text">既存のボリュームを選択します。</block>
+  <block id="f879102f0ab70ffbcdaf5ea3b09693dd" category="list-text">*ストレージ VM*: ストレージ VM を選択します。</block>
+  <block id="0bd1c4c69e2f0fa0ace2c5a2bc4bfb4f" category="list-text">*ボリューム スタイル*: デフォルトのボリューム スタイルは * FlexVol* です。</block>
+  <block id="c68f7e5abbdc5e2d69f2654296febb52" category="list-text">*ボリューム サイズ*: ボリュームのサイズを入力し、単位を選択します。FlexVol volumeあたりの最大サイズは 100 TiB です。</block>
+  <block id="f0ddb24224adb11c4c26879e00143b36" category="list-text">*ボリュームの自動拡張*: オプションで、ボリュームの自動拡張を有効にして、ボリュームが容量に達したときにサイズが自動的に増加するようにします。最大拡張サイズは 300 TiB です。</block>
+  <block id="ad2ab5f2c7e10afc96bd0e17739e1986" category="list-text">*タグ*: オプションで、ブロックデバイスを整理および分類するためにタグを追加します。</block>
+  <block id="66849c76f9938572ebbf346d93c18eea" category="list-text">*ブロックデバイスの詳細*で、次の操作を行います。</block>
+  <block id="a585842d038e5160ebfc3806b62044a6" category="list-text">*ブロックデバイス名*: ブロックデバイスの名前を入力します。</block>
+  <block id="6d73923747600d8280fb309f7bb705ea" category="list-text">*ブロック デバイス サイズ*: ブロック デバイスのサイズを入力し、単位を選択します。ブロック デバイスのサイズは、使用可能なボリューム サイズよりも小さくする必要があります。</block>
+  <block id="e9e005dffa12441a25899a863e99f0fa" category="list-text">*アクセス* で、次の操作を行います。</block>
+  <block id="d4a692c93d71fdee64560b6ac04e9714" category="list-text">*iSCSI 構成*: 次のいずれかのオプションを選択します。</block>
+  <block id="d9f80ec4d13936fdba78b793f44c184c" category="list-text">*新しいイニシエーター グループの作成*: ホスト オペレーティング システム、イニシエーター グループ名を指定し、1 つ以上の iSCSI 修飾名 (IQN) ホスト イニシエーターを追加します。</block>
+  <block id="104d3f014c0f2ca8498a2aa9f78b1864" category="list-text">*既存のイニシエーター グループのマップ*: 既存のイニシエーター グループを選択し、ホスト オペレーティング システムを指定して、1 つ以上の iSCSI 修飾名 (IQN) ホスト イニシエーターを選択します。</block>
+  <block id="db784c6694930c54da9655a9d31c365a" category="list-text">*効率と保護*の下で、次の操作を行います。</block>
+  <block id="8cbc6c14a0474488d906dfdd17ce79c4" category="paragraph">以下は AWS のデフォルトポリシーです。既存のスナップショットポリシーを表示するには、 <block ref="6ac03ad394740d642419d1159fa121ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="4dd81c3ec298b3b3b12adbd43350c454" category="paragraph">_バランス (自動)_ は、Workload Factory コンソールを使用してボリュームを作成するときのデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、以下を参照してください。 <block ref="de51d392f5d252a956349995f441f55c" category="inline-link-macro-rx"></block> AWS FSx for NetApp ONTAPドキュメント。Workload Factory では、階層化ポリシーに Workload Factory コンソールでユースケース ベースの名前が使用され、括弧内に FSx for ONTAP階層化ポリシー名が含まれていることに注意してください。</block>
+  <block id="eafa5af121307f6008fad4d24d6d9f14" category="list-text">不変ファイルを含むボリュームと NVMe プロトコルを使用するボリュームは、ARP/AI ではサポートされません。</block>
+  <block id="78b92538a82bd788a456f9cf838a5c11" category="paragraph"><block ref="78b92538a82bd788a456f9cf838a5c11" category="inline-link-macro-rx"></block></block>
+  <block id="1e3a8de3c21016b6778340215e821fb6" category="list-text">*FSx for ONTAP*から、ファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
+  <block id="96271eab8824304349d49f716ef08b72" category="list-text">ストレージ VM のファイル システムの概要で、*ストレージ VM の作成*を選択します。</block>
+  <block id="355a4219717415b19bc0cfb3a299f9a8" category="list-text">[ストレージ VM の作成] ページの [ストレージ VM 構成] で、次の情報を入力します。</block>
+  <block id="3b097ea48314307e283cb12e56ebf242" category="list-text">「ストレージ VM の管理」画面で、削除するストレージ VM のアクション メニューを選択します。</block>
+  <block id="add6edc9de6a44472705a7a46e4fd5c2" category="inline-link-macro">FSx for ONTAPファイルシステム用のブロックデバイスを作成する</block>
+  <block id="a795e8e784620e60993a8b9e17168564" category="paragraph"><block ref="a795e8e784620e60993a8b9e17168564" category="inline-link-macro-rx"></block></block>
+  <block id="6a3dc4143a7da62f8900b495e210893d" category="list-text">[ストレージ VM の管理] 画面で、タグを編集するストレージ VM のアクション メニューを選択し、[*基本アクション*] &gt; [ストレージ VM タグの編集*] を選択します。</block>
+  <block id="e8b970818f72fb7cf471fb0f9361d2fb" category="list-text">[ストレージ VM の管理] 画面で、SVM を複製するストレージ VM のアクション メニューを選択し、[*詳細アクション*] &gt; [ストレージ VM の複製*] を選択します。</block>
+  <block id="f7c0292ee19b0ef8ab597e8587b490f2" category="list-text">*FSx for ONTAP*から、リセットするストレージVMパスワードを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
+  <block id="d303726d253e10ceb3c3a9904bc4c18f" category="list-text">[ストレージ VM の管理] 画面で、パスワードをリセットするストレージ VM のアクション メニューを選択し、[*基本アクション*] &gt; [パスワードのリセット*] を選択します。</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026年1月4日</block>
+  <block id="04c5d70ed6312687a1e39677346bbaff" category="sidebar">ブロックデバイスを作成する</block>
 </blocks>

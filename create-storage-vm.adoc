@@ -34,8 +34,9 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . ストレージ タイルで、[ストレージへ移動] を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
-. *FSx for ONTAP*から、ストレージVMを作成するファイル システムのアクション メニューを選択し、*ストレージVMの作成*を選択します。
-. [Storage VM]ページの[Storage VMの設定]で、次の情報を指定します。
+. *FSx for ONTAP*から、ファイルシステムのアクションメニューを選択し、*管理*を選択します。
+. ストレージ VM のファイル システムの概要で、*ストレージ VM の作成*を選択します。
+. [ストレージ VM の作成] ページの [ストレージ VM 構成] で、次の情報を入力します。
 +
 .. *名前*：Storage VMの名前を入力します。
 .. * Storage VMクレデンシャル*：このStorage VMのユーザのパスワードを指定する `vsadmin` か、ファイルシステムのユーザクレデンシャルを使用して `fsxadmin` ください。

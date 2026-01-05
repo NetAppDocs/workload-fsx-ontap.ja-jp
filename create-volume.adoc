@@ -168,7 +168,7 @@ ONTAPは、重複排除機能と圧縮機能を活用してストレージ効率
 
 .. * Snapshotポリシー*：Snapshotポリシーを選択して、Snapshotの頻度と保持を指定します。
 +
-AWSのデフォルトポリシーは次のとおりです。カスタムスナップショットポリシーの場合は、 link:link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクの関連付け"] 。
+以下は AWS のデフォルトポリシーです。既存のスナップショットポリシーを表示するには、 link:link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクの関連付け"]。
 
 +
 `default`:: このポリシーでは、次のスケジュールでSnapshotが自動的に作成され、新しいコピー用のスペースを確保するために最も古いSnapshotコピーが削除されます。
@@ -190,7 +190,7 @@ NOTE: Snapshotの時間はファイルシステムのタイムゾーンに基づ
 
 .. *階層化ポリシー*：ボリュームに格納されているデータの階層化ポリシーを選択します。
 +
-_バランス (自動)_ は、Workload Factory コンソールを使用してボリュームを作成するときのデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、以下を参照してください。link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] AWS FSx for NetApp ONTAPドキュメント。ワークロード ファクトリーは、ワークロード ファクトリー コンソールで階層化ポリシーにユースケース ベースの名前を使用し、括弧内に FSx for ONTAP階層化ポリシー名を含めることに注意してください。
+_バランス (自動)_ は、Workload Factory コンソールを使用してボリュームを作成するときのデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、以下を参照してください。 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] AWS FSx for NetApp ONTAPドキュメント。Workload Factory では、階層化ポリシーに Workload Factory コンソールでユースケース ベースの名前が使用され、括弧内に FSx for ONTAP階層化ポリシー名が含まれていることに注意してください。
 
 .. *不変ファイル*: 不変ファイル機能を有効にすると、このボリューム内のファイルが不変の WORM (write-once-read-many) 状態に永続的にコミットされます。以下の詳細を入力してください。
 +

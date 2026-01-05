@@ -21,10 +21,9 @@ NetApp Workload Factory でストレージ VM を別の FSx for ONTAPファイ�
 . ストレージ タイルで、[ストレージへ移動] を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、レプリケートするストレージVMを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
-. ファイルシステムの概要で、*[Storage VMs]*タブを選択します。
-. [ストレージ VM] タブから、SVM をレプリケートするストレージ VM のアクション メニューを選択します。
-. [Storage VMのレプリケート]*を選択します。
-. [Create replication]ページの[Replication target]で、次の情報を指定します。
+. ストレージ VM の下のファイル システムの概要で、*管理* を選択します。
+. [ストレージ VM の管理] 画面で、SVM を複製するストレージ VM のアクション メニューを選択し、[*詳細アクション*] > [ストレージ VM の複製*] を選択します。
+. [Replicate data]ページの[Replication target]で、次の情報を指定します。
 +
 .. * FSx for ONTAPファイルシステム*：対象となるFSx for ONTAPファイルシステムのクレデンシャル、リージョン、FSx for ONTAPファイルシステム名を選択します。
 .. * Storage VM名*：ドロップダウンメニューからStorage VMを選択します。

@@ -51,6 +51,8 @@ sidebar:
         url: "/create-volume.html"
       - title: データへのアクセス
         url: "/access-data.html"
+    - title: ブロックデバイスを作成する
+      url: "/create-block-device.html"
     - title: Storage VM を作成
       url: "/create-storage-vm.html"
     - title: データを保護

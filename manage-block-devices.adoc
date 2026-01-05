@@ -58,3 +58,9 @@ iSCSI プロトコルを使用する FSx for ONTAPファイル システムの�
 
 
 NOTE: ブロック デバイスのサイズを増やした後、ホスト オペレーティング システムが提供する手順に従って、ブロック デバイスの新しいサイズを検出し、その上のファイル システムを拡張します。
+
+
+
+== 関連情報
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-block-device.html["FSx for ONTAPファイルシステム用のブロックデバイスを作成する"]
