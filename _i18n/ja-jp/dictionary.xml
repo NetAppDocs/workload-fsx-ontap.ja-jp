@@ -1399,7 +1399,6 @@
   <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます</block>
   <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。</block>
   <block id="d7a33a9350fbc2bb6f775eabf85866de" category="list-text">リンク接続のために、FSx for ONTAP ファイル システムに関連付けられたセキュリティ グループで次のポートが開いている必要があります。</block>
-  <block id="90ead46e5d824c4081637d976f92fc96" category="list-text">CloudShellの場合: ポート22(SSH)</block>
   <block id="b1882f9c170c4d334f1f12e72456f0c6" category="list-text">レプリケーション関係に使用する2つのファイルシステムには、リンクが関連付けられている必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="3cb1fda07c1d6b96bda1c65f1996fc1f" category="list-text">カスタム スナップショット ポリシーを作成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="d49502975428f953533ab14ab9c02a5b" category="paragraph">ボリュームの手動スナップショットを作成するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>です。リンクが関連付けられたら、この操作に戻ります。</block>
@@ -2436,7 +2435,6 @@
   <block id="de524979693d09207c5eeb62cad773dc" category="paragraph">イベント アナライザーは、FSx for ONTAP EMS イベントを抽出して分析し、FSx for ONTAPファイル システムの健全性とパフォーマンスを維持するのに役立ちます。Workload Factory では、過去 72 時間以内に発生したイベントのみが表示されます。</block>
   <block id="d55be6cbc9080d8651f85cfb40118d1c" category="list-text">絶対です<block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block>AWS アカウントで FSx for ONTAPファイルシステムのイベントを表示します。</block>
   <block id="79aceabdc6c99b8ffa443536ee6c3fac" category="list-text">*Amazon Bedrock モデル*</block>
-  <block id="df3d4ef155c8b4e033aeae2ee4342695" category="paragraph">イベントアナライザーは、Amazon Bedrock API を使用して、FSx for ONTAPイベントに関する AI ベースの分析情報を提供します。</block>
   <block id="ca29c80b4531f01e2f485c85067fd269" category="list-text">Workload Factory に関連付けられた AWS 認証情報:<block ref="fdd997ab8b4252f76acdda855bb7b890" prefix=" " category="inline-code"></block>そして<block ref="9aa5a97dfe3f7608d8ee28e7db3c4e2c" prefix=" " category="inline-code"></block>権限</block>
   <block id="23d6d74604ef4454bcce97196495439d" category="list-text">分析する FSx for ONTAPファイル システムを選択し、[管理] を選択します。</block>
   <block id="4a9800a79df53d92124cfa905926f3a8" category="list-text">*分析*タブを選択します。</block>
@@ -2540,4 +2538,9 @@
   <block id="d303726d253e10ceb3c3a9904bc4c18f" category="list-text">[ストレージ VM の管理] 画面で、パスワードをリセットするストレージ VM のアクション メニューを選択し、[*基本アクション*] &gt; [パスワードのリセット*] を選択します。</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026年1月4日</block>
   <block id="04c5d70ed6312687a1e39677346bbaff" category="sidebar">ブロックデバイスを作成する</block>
+  <block id="45825282cf9c53db319df9569d2ca486" category="list-text">EMS イベント分析のために、FSx for ONTAPファイル システムに関連付けられたセキュリティ グループで次のポートが開いている必要があります。</block>
+  <block id="aebaf822d95c8539079782ed80029db9" category="list-text">ポート22（SSH）</block>
+  <block id="e0f1940fa03564fc187d37678d5739f9" category="paragraph">イベントアナライザーは、Amazon Bedrock API を使用して、FSx for ONTAPイベントに関する AI ベースの分析情報を提供します。各 AWS アカウントごとに Amazon Bedrock を個別に設定します。</block>
+  <block id="64153de607e9925466a905a664c31502" category="list-text">CloudShell および FSx for ONTAP緊急管理システム (EMS) イベント分析の場合: ポート 22 (SSH)</block>
+  <block id="f1a54b856438e25c87919e1789ae841c" category="list-text">ONTAP EMSイベント監視とアラート</block>
 </blocks>

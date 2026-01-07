@@ -52,12 +52,17 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrockの価格"^]
 イベント アナライザーを使用するには、次の前提条件を満たしている必要があります。
 
 * 絶対ですlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["操作と修復の権限を付与する"^]AWS アカウントで FSx for ONTAPファイルシステムのイベントを表示します。
+* EMS イベント分析のために、FSx for ONTAPファイル システムに関連付けられたセキュリティ グループで次のポートが開いている必要があります。
++
+** ポート22（SSH）
+
+
 * 絶対ですlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用して FSx for ONTAPファイルシステムに接続する"]EMS イベント アナライザーを使用します。
 * 以下の要件も満たす必要があります。ログ エラーを分析するときに、これらの手順を完了するように要求されます。
 +
 ** *Amazon Bedrock モデル*
 +
-イベントアナライザーは、Amazon Bedrock API を使用して、FSx for ONTAPイベントに関する AI ベースの分析情報を提供します。
+イベントアナライザーは、Amazon Bedrock API を使用して、FSx for ONTAPイベントに関する AI ベースの分析情報を提供します。各 AWS アカウントごとに Amazon Bedrock を個別に設定します。
 
 +
 推奨モデル: Amazon Bedrock モデル (anthropic.claude-sonnet-4-20250514-v1:0)。選択したリージョンでこのモデルの推論プロファイル ARN を指定する必要があります。

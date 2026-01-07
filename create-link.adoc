@@ -43,7 +43,7 @@ NOTE: コネクタを使用する場合、AWS Secrets Managerはサポートさ�
 * リンク接続のために、FSx for ONTAP ファイル システムに関連付けられたセキュリティ グループで次のポートが開いている必要があります。
 +
 ** Workload Factory コンソールの場合: ポート 443 (HTTPS)
-** CloudShellの場合: ポート22(SSH)
+** CloudShell および FSx for ONTAP緊急管理システム (EMS) イベント分析の場合: ポート 22 (SSH)
 
 
 * CloudFormationスタックを使用してリンクを追加する場合は、AWSアカウントで次の権限が必要です。
