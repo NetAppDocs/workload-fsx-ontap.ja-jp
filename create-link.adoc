@@ -94,7 +94,7 @@ CloudFormation を使用して、Workload Factory 内でリンクを自動的に
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、リンクを関連付けるファイルシステムのアクションメニューを選択し、*リンクの関連付け*を選択します。
 . [リンクの関連付け]ダイアログで、*[新しいリンクの作成]*を選択し、*[続行]*を選択します。
@@ -166,7 +166,7 @@ Codebox の 2 つの Infrastructure-as-Code (IaC) ツール、CloudFormation ま
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、リンクを関連付けるファイル システムのアクション メニューを選択し、*リンクの関連付け*を選択します。
 . [リンクの関連付け]ダイアログで、*[新しいリンクの作成]*を選択し、*[続行]*を選択します。
@@ -240,7 +240,7 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、リンクを関連付けるファイルシステムのアクションメニューを選択し、*リンクの関連付け*を選択します。
 . [リンクの関連付け]ページで*[既存のリンクの関連付け]*を選択し、リンクを選択して*[続行]*を選択します。

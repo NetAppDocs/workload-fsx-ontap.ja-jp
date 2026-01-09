@@ -46,7 +46,7 @@ Tracker を使用してNetAppコンソールでの操作を追跡および監視
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . ストレージメニューから、*管理*を選択し、次に*リンク*を選択します。
 +
 image:screenshot-menu-tracker-option.png["[Tracker]オプションが強調表示されたアカウント設定メニューのスクリーンショット。"]

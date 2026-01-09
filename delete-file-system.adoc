@@ -15,6 +15,7 @@ NetApp Workload Factory でファイル システムを削除するには、ま�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP* から、削除する FSx for ONTAPファイル システムのアクション メニューを選択します。
 . 「 * Manage * 」を選択します。

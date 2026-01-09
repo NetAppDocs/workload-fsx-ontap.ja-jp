@@ -51,7 +51,7 @@ FSx for ONTAP ファイル システム内の FlexVol または FlexGroup ボリ
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. *ストレージ*で、*ストレージへ移動*を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、再バランス調整するボリュームを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
@@ -91,7 +91,7 @@ FSx for ONTAPファイルシステムでは、同一ノード内のFlexVolを他
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. *ストレージ*で、*ストレージへ移動*を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、再バランス調整するボリュームを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。

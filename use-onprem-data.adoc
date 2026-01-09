@@ -48,7 +48,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [On-Premises ONTAP *]タブを選択します。
 . [検出]*を選択します。
 . 前提条件を確認し、* Next *を選択します。
@@ -84,7 +84,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、[*オンプレミスONTAP*] を選択します。
 . Storage VMでボリュームを検索するには、ドロップダウンから*[Storage VMの選択]*を選択します。
 . レプリケートするボリュームを1つ以上選択し、*[レプリケート]*を選択します。
@@ -149,7 +149,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、[*オンプレミスONTAP*] を選択します。
 . 削除するオンプレミスのONTAPクラスタを選択します。
 . アクション メニューを選択し、*ワークロード ファクトリーから削除* を選択します。

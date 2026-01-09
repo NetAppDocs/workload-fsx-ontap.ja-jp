@@ -25,7 +25,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . ストレージメニューから*コスト*を選択します。
 . [コスト] ページで、次の情報を入力して、FSx for ONTAPリソースのコストと容量データをフィルタリングします。
 +

@@ -41,7 +41,8 @@ NetApp Workload Factory には、Amazon ストレージ環境と FSx for ONTAP�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、*節約を調べる* を選択し、次に *Amazon Elastic Block Store (EBS)* を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから [節約の検討] を選択し、[Amazon Elastic Block Store (EBS)] タブを選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +
 .. *ユースケース*：必須。ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
@@ -62,7 +63,8 @@ NetApp Workload Factory には、Amazon ストレージ環境と FSx for ONTAP�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、*節約を調べる* を選択し、次に * Amazon FSx for Windows ファイル サーバー* を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから [節約の検討] を選択し、[Amazon Elastic Block Store (EBS)] タブを選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +
 .. *ユースケース*：必須。ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
@@ -84,7 +86,8 @@ NetApp Workload Factory には、Amazon ストレージ環境と FSx for ONTAP�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、*節約を調べる* を選択し、次に *Amazon Elastic File System (EFS)* を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから [節約の検討] を選択し、[Amazon Elastic Block Store (EBS)] タブを選択します。
 . Storage Savings Calculatorで、次の詳細を入力します。
 +
 .. *ユースケース*：必須。ドロップダウンメニューからユースケースを選択します。選択したユースケースに基づいて、FSx for ONTAPファイルシステムの特性を比較します。
@@ -129,8 +132,8 @@ NOTE: この計算ツールオプションでは、EBSスナップショット�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
-. ストレージ メニューから、*節約を調べる*を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから [節約の検討] を選択し、[Amazon Elastic Block Store (EBS)] タブを選択します。
 . [Elastic Block Store（EBS）]*タブで、FSx for ONTAPと比較するインスタンスを選択し、*[Explore savings]*を選択します。
 . Storage Savings Calculatorが表示されます。選択したインスタンスに基づいて、ストレージシステムの次の特性が事前に入力されています。
 +
@@ -148,8 +151,8 @@ NOTE: この計算ツールオプションでは、EBSスナップショット�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
-. ストレージ メニューから、*節約を調べる*を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから [節約の検討] を選択し、[Amazon FSx for Windows ファイル サーバー] タブを選択します。
 . [Amazon FSx for Windows File Server*]タブで、FSx for ONTAPと比較するインスタンスを選択し、*[Explore savings]*を選択します。
 . Storage Savings Calculatorが表示されます。選択したインスタンスの導入タイプに基づいて、ストレージシステムの次の特性があらかじめ設定されています。
 +
@@ -167,8 +170,8 @@ NOTE: この計算ツールオプションでは、EBSスナップショット�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
-. ストレージ メニューから、*節約を調べる*を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから [節約の検討] を選択し、[Amazon Elastic File System (EFS)] タブを選択します。
 . [Elastic File System（EFS）]タブで、FSx for ONTAPと比較するインスタンスを選択し、*[Explore savings（削減効果を確認）]*を選択します。
 . Storage Savings Calculatorが表示されます。選択したインスタンスに基づいて、ストレージシステムの次の特性が事前に入力されています。
 +

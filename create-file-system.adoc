@@ -42,8 +42,9 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、*Create FSx for ONTAP* を選択します。
-. [FSx for ONTAPの作成]ページで、*[クイック作成]*を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. ストレージ ダッシュボードから、*ファイル システムの作成* を選択します。
+. FSx for ONTAPファイル システムの作成ページで、*クイック作成*を選択します。
 +
 保存されている設定をロードすることもできます。
 
@@ -115,7 +116,7 @@ Advanced createでは、可用性、セキュリティ、バックアップ、�
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . ストレージ タイルで、*Create FSx for ONTAP* を選択します。
-. [FSx for ONTAPの作成]ページで、*[Advanced create]*を選択します。
+. FSx for ONTAPファイル システムの作成ページで、*高度な作成*を選択します。
 +
 保存されている設定をロードすることもできます。
 

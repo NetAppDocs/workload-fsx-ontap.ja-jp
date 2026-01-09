@@ -17,7 +17,7 @@ summary: 必要に応じて、 NetApp Workload Factory の FSx for ONTAPファ�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、スループット容量を更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . [Information]で、*[Throughput capacity]*の横にある鉛筆アイコンを選択します。[Throughput capacity]*行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。

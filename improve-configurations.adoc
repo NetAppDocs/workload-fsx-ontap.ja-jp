@@ -30,10 +30,9 @@ Workload Factory コンソール内のストレージから、ファイル シ�
 Workload Factoryは、FSx for ONTAPファイルシステムの次の構成について、適切に設計されたステータスを分析します。
 
 * 信頼性: SSD 容量しきい値、スケジュールされたローカル スナップショット、FSx for ONTAPバックアップ、リモート データ レプリケーション、長期保存のためのデータ信頼性
-* セキュリティ: AI (ARP/AI) とボリュームへの不正アクセスを備えたNetApp Autonomous Ransomware Protection
-* 運用の卓越性: 自動容量管理、ボリュームファイル容量使用率のしきい値、およびボリューム使用率がほぼ最大になる
-* コストの最適化: ストレージ効率、データ階層化、不要なスナップショットの削除
-* パフォーマンスの最適化: FlexGroupボリュームの再バランス
+* セキュリティ: AI (ARP/AI) を無効にしたNetApp Autonomous Ransomware Protection とボリュームへの不正アクセス
+* 運用上の卓越性: 自動容量管理、ボリュームファイル容量使用率のしきい値、ボリューム使用率がほぼ満杯、キャッシュ関係書き込みモード
+* コストの最適化: ストレージ効率、データ階層化、不要なスナップショットとバックアップの削除
 
 
 
@@ -50,7 +49,7 @@ FSx for ONTAPファイル システムまたはファイル システム内の�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . FSx for ONTAPファイル システムの概要から *Well-architected ステータス* タブに移動します。
@@ -84,7 +83,7 @@ FSx for ONTAPファイル システムまたはファイル システム内の�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、ファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . FSx for ONTAPファイル システムの概要から *Well-architected ステータス* タブに移動します。
@@ -97,7 +96,7 @@ FSx for ONTAPファイル システムまたはファイル システム内の�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、ファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . FSx for ONTAPファイル システムの概要から *Well-architected ステータス* タブに移動します。
@@ -131,7 +130,7 @@ FSx for ONTAPファイル システムまたはファイル システム内の�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、ファイル システムのアクションメニューを選択し、*管理*を選択します。
 . FSx for ONTAPファイル システムの概要から *Well-architected ステータス* タブに移動します。
@@ -144,7 +143,7 @@ FSx for ONTAPファイル システムまたはファイル システム内の�
 --
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP*から、ファイルシステムのアクションメニューを選択し、*管理*を選択します。
 . FSx for ONTAPファイル システムの概要から *Well-architected ステータス* タブに移動します。

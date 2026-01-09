@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-. [FSx for ONTAPの作成]ページで、*[Advanced create]*を選択します。
+. FSx for ONTAPファイル システムの作成ページで、*高度な作成*を選択します。
 +
 保存されている設定をロードすることもできます。
 

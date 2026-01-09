@@ -24,7 +24,7 @@ NetApp Workload Factory でボリュームのクローンを作成し、テス�
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. ストレージ タイルで、[ストレージへ移動] を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
 . *FSx for ONTAP* から、クローンを作成するボリュームが含まれている FSx for ONTAPファイル システムのアクション メニューを選択し、*管理* を選択します。
 . ファイルシステムの[概要]タブで、*[ボリューム]*タブを選択します。
