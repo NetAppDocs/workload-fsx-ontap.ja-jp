@@ -23,7 +23,7 @@ FSx for ONTAPファイルシステムを定義するときに、アカウント�
 リンクには認証が必要です。Workload Factory 認証情報サービスに保存されている認証情報、または AWS Secrets Manager に保存されている認証情報を使用してリンクを認証できます。リンクごとに 1 つの認証方法のみがサポートされます。たとえば、AWS Secrets Manager を使用したリンク認証を選択した場合、後で認証方法を変更することはできません。
 
 
-NOTE: コネクタを使用する場合、AWS Secrets Managerはサポートされません。
+NOTE: コンソールエージェントを使用する場合、AWS Secrets Manager はサポートされません。
 
 
 
@@ -46,6 +46,7 @@ NOTE: コネクタを使用する場合、AWS Secrets Managerはサポートさ�
 ** CloudShell および FSx for ONTAP緊急管理システム (EMS) イベント分析の場合: ポート 22 (SSH)
 
 
+* リンクは次のエンドポイントに接続できる必要があります: \https://api.workloads.netapp.com.Webベースのコンソールは、このエンドポイントに接続して Workload Factory API と対話し、FSx for ONTAPワークロードを管理および操作します。
 * CloudFormationスタックを使用してリンクを追加する場合は、AWSアカウントで次の権限が必要です。
 +
 [%collapsible]

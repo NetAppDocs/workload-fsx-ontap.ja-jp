@@ -1240,7 +1240,6 @@
   <block id="824994853534784eb4495b892e13b1c6" category="paragraph">指定したユーザがfsxadminユーザではなく、あとでfsxadminパスワードをリセットする必要がある場合は、AWSコンソールからこれを行うことができます。</block>
   <block id="dd34b811cd079417f985f8f56a4f1dca" category="list-text">* Storage VMクレデンシャル*：オプション。ユーザ名を入力します。このファイルシステムに固有のパスワードを指定することも、ONTAPクレデンシャルに入力したパスワードと同じパスワードを使用することもできます。パスワードはすぐに設定することも、あとで設定することもできます。</block>
   <block id="37b002845528ac0296b86d28bb71e5a5" category="doc">LambdaリンクでFSx for ONTAPファイルシステムに接続</block>
-  <block id="3909315ab3cc8353eec0cd02ce0845da" category="admonition">コネクタを使用する場合、AWS Secrets Managerはサポートされません。</block>
   <block id="2c1b9e7969c6e96f38bd871fc9f26ae1" category="section-title">新しいリンクの関連付け</block>
   <block id="05a2e668e80fd3ace12e9585ebc06578" category="paragraph">新しいリンクの関連付けには、リンクの作成と関連付けが含まれます。</block>
   <block id="de786693aed7955f1cb538f51e25f7d6" category="paragraph">デフォルトの権限に合わせてシークレットを作成するか、リンクポリシーにカスタムの権限を割り当てることができます。</block>
@@ -2560,4 +2559,5 @@
   <block id="2c77adf5fa1de4ed37a6e14d2212f074" category="list-text">*アーカイブ*を選択します。</block>
   <block id="b06e53572a17ccf08cb282ac59af4b93" category="paragraph">クライアントにマップされなくなったブロック デバイス、または 7 日間連続して使用されていないブロック デバイスは、孤立したブロック デバイスとして分類されます。この操作により、選択したブロック デバイスのマップが解除され、削除されます。ホストFlexVol volumeにブロック デバイスが含まれていない場合、Workload Factory はそれを削除します。</block>
   <block id="33e155c9d3cab85dd1499ba63bd9d34d" category="paragraph">ブロック デバイスを含むFlexVolボリュームは、ARP/AI をアクティブ モードで起動します。</block>
+  <block id="aca2e051b8b58a53ee4cf20a78bdde8a" category="list-text">リンクは次のエンドポイントに接続できる必要があります: \https://api.workloads.netapp.com.Webベースのコンソールは、このエンドポイントに接続して Workload Factory API と対話し、FSx for ONTAPワークロードを管理および操作します。</block>
 </blocks>
