@@ -51,8 +51,12 @@ sidebar:
         url: "/create-volume.html"
       - title: データへのアクセス
         url: "/access-data.html"
-    - title: ブロックデバイスを作成する
-      url: "/create-block-device.html"
+    - title: ブロックストレージリソースを作成する
+      entries:
+      - title: igroupの作成
+        url: "/create-igroup.html"
+      - title: ブロックデバイスを作成する
+        url: "/create-block-device.html"
     - title: Storage VM を作成
       url: "/create-storage-vm.html"
     - title: データを保護
@@ -127,8 +131,10 @@ sidebar:
         url: "/split-cloned-volume.html"
       - title: ボリュームを削除する
         url: "/delete-volume.html"
-    - title: ブロックデバイス管理
+    - title: ブロックストレージ管理
       entries:
+      - title: igroupを管理
+        url: "/manage-igroups.html"
       - title: ブロックデバイスの管理
         url: "/manage-block-devices.html"
     - title: ファイルシステム管理

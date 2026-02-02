@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: manage-igroups.html 
+keywords: igroup, manage igroups, manage client access, delete igroup 
+summary: NetApp Workload FactoryでFSx for ONTAPファイルシステムのigroupを管理します。 
+---
+= NetApp Workload Factoryでファイルシステムのigroupを管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory コンソールを使用して、igroup を管理し、FSx for ONTAP ブロックデバイスのクライアントアクセスを制御します。igroup の詳細を表示し、クライアントアクセスを管理し、igroup を削除できます。
+
+.開始する前に
+* igroup を管理するにはリンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]。リンクを関連付けたら、この操作に戻ります。
+* 表示および管理するには、既存の igroup が必要です。
+
+
+
+
+== igroup のクライアント アクセスを管理する
+
+既存の igroup のクライアント アクセスはいつでも管理できます。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、*ブロック デバイス* タブを選択します。
+. 既存の igroup を表示するには、リソース タイプ *Initiator groups (igroups)* を選択します。
+. ブロック デバイスのアクション メニューに移動し、*クライアント アクセスの管理*を選択します。
+. igroup に表示されるクライアント アクセスの詳細を確認します。
+. クライアント アクセスを変更するには、*クライアント アクセスの編集*を選択します。
+. *クライアント アクセスの編集* ダイアログでは、次の内容を編集できます：
++
+** *igroup名*
+** *igroup の説明*
+** *Storage VM名*
+** *ブロックデバイス名*
+** *オペレーティング システムの種類*
+** *ホストイニシエーター*
+
+
+. * 適用 * を選択します。
+
+
+
+
+== igroupを削除する
+
+既存の igroup が不要になった場合は削除できます。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、*ブロック デバイス* タブを選択します。
+. 既存の igroup を表示するには、リソース タイプ *Initiator groups (igroups)* を選択します。
+. ブロック デバイスのアクション メニューに移動し、*イニシエータ グループの削除*を選択します。
+. [イニシエータ グループ (igroup) の削除] ダイアログで、「delete」と入力して igroup を削除することを確認し、*削除* を選択します。
+
+
+
+
+== 関連情報
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-igroup.html["FSx for ONTAP ファイルシステム用のigroupを作成する"]

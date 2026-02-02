@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: create-igroup.html 
+keywords: create initiator group, create igroup, iscsi protocol 
+summary: NetApp Workload Factoryでブロックデバイスへのホストアクセスを管理するイニシエータグループを作成します。 
+---
+= NetApp Workload Factory でファイルシステムのイニシエータグループを作成する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factoryを使用して、イニシエータ グループを作成し、SANブロック デバイスへのホスト アクセスを管理します。
+
+.タスクの内容
+イニシエータ グループ（igroup）は、ブロック デバイス（LUN）を、それらへのアクセスが許可されているコンピューティング リソースに接続します。ボリュームが広範囲にアクセス可能で、ユーザー権限によってアクセスが制御される NFS や CIFS とは異なり、ブロック ストレージの権限はマシン レベルで動作します。通常、一度にブロック デバイスにアクセスできるのは 1 つのシステムだけです。
+
+igroupは、ブロックストレージの権限レイヤーとして機能します。サーバーがストレージシステムに接続すると、iSCSI認定（IQN）ホストイニシエーターを使用してサーバー自体を識別します。そのIQNが1つ以上のigroupに属している場合、サーバーはそれらのigroupに関連付けられているすべてのLUNにアクセスできるようになります。iSCSIが適切に機能するには、igroupとiSCSIホスト接続の両方が必要です。
+
+.開始する前に
+igroup を作成するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]。リンクを関連付けたら、この操作に戻ります。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. ストレージ タイルで、[ストレージへ移動] を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、*ブロック デバイス* タブを選択します。
+. リソース タイプ *Create initiator group* を選択し、 *Create igroup* を選択します。
+. *イニシエーター グループの作成* ダイアログで、次の操作を行います：
++
+** *igroup name*: イニシエーター グループの名前を入力します。
+** *igroup description*：（オプション）イニシエーター グループの説明を入力します。
+** *ストレージ VM 名*：イニシエーター グループのストレージ VM を選択します。
+** *Block device name*：イニシエーター グループに関連付ける 1 つ以上のブロック デバイスを選択します。リストされているブロック デバイスは、まだホスト イニシエーターにマップされていないデバイスです。
+** *オペレーティング システムの種類*：オペレーティング システムの種類として、Linux、VMware、または Windows を選択します。
+** *ホスト イニシエーター*：1 つ以上の iSCSI 認定（IQN）ホスト イニシエーターをイニシエーター グループに追加します。
+
+
+. 「 * Create * 」を選択します。
+
+
+.関連情報
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-igroups.html["FSx for ONTAP ファイルシステムの igroup を管理する"]
