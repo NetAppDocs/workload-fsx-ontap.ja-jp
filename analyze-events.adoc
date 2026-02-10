@@ -19,7 +19,7 @@ NetApp Workload Factory のスマートイベントアナライザーを使え�
 
 ストレージ管理者は、顧客からの苦情を受けて初めてFSx for ONTAP EMSイベントに対応するか、カスタムスクリプトやアラームを保守することで対応することがよくあります。このような事後対応的なアプローチは、効率を低下させ、問題解決を遅らせ、ダウンタイムを増加させる可能性があります。
 
-イベントアナライザーは、FSx for ONTAPファイルシステムからエラー、警告、緊急EMSイベントを自動的に抽出します。これらのイベントは、link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用してファイルシステムに接続する"]およびlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_表示、計画、分析_の権限を付与する"^]でAWSアカウント内で表示できます。イベントは削除されるまで72時間表示されます。
+イベントアナライザーは、FSx for ONTAP ファイルシステムからエラー、アラート、緊急 EMS イベントを自動的に抽出します。これらのイベントは、link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用してファイルシステムに接続する"]およびlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_表示、計画、分析_の権限を付与する"^]によって AWS アカウントで表示できます。イベントは削除されるまで 72 時間表示されます。
 
 Amazon Bedrock との統合により、Workload Factory は AI を使用してイベントを分析し、実用的な洞察を提供することで、FSx for ONTAP ファイルシステムの健全性とパフォーマンスを維持します。
 

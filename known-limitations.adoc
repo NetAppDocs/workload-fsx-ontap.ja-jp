@@ -72,7 +72,6 @@ summary: このリリースの製品でサポートされていない、また�
 == iSCSIプロトコルのサポート
 
 * iSCSIプロトコルは、FlexVolボリュームに対してのみ使用できます。^1 ^
-* 1つのボリュームに設定できるLUNは1つだけです。
 * iSCSI ボリュームではボリューム サイズの縮小はサポートされていません。
 
 
@@ -107,12 +106,6 @@ summary: このリリースの製品でサポートされていない、また�
 * Elastic Block Store（EBS）：st1、sc1、および標準のボリュームタイプ
 * Elastic File System（EFS）:バーストスループットモード
 
-
-
-
-== System Manager
-
-System Managerでは、FSx for ONTAP接続のリンクはサポートされません。
 
 
 
