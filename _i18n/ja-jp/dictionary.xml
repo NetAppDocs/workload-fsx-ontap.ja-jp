@@ -2580,9 +2580,6 @@
   <block id="283119ca74749a876a6dfcb0c6968a8c" category="list-text">*ホスト イニシエーター*：1 つ以上の iSCSI 認定（IQN）ホスト イニシエーターをイニシエーター グループに追加します。</block>
   <block id="8298e20d0a9a0a5f92a40700ffa7ff7e" category="inline-link-macro">FSx for ONTAP ファイルシステムの igroup を管理する</block>
   <block id="22774fb9e9e4a2ed10c53dba9c6a522f" category="paragraph"><block ref="22774fb9e9e4a2ed10c53dba9c6a522f" category="inline-link-macro-rx"></block></block>
-  <block id="ce4c42b6f5a833fc926c27c3d1ca424a" category="paragraph">NetApp Workload Factory で FSx for ONTAP ファイルシステムのレプリケーション関係を作成し、予期しない災害が発生した場合のデータ損失を回避します。レプリケーションは、2 つの FSx for ONTAP ファイルシステム間、および Cloud Volumes ONTAP またはオンプレミス ONTAP システムと FSx for ONTAP ファイルシステム間でサポートされています。</block>
-  <block id="e8d6717f6adc0d18b1ec64c39c57b7be" category="paragraph">レプリケーションにより、データが存在するリージョンで災害が発生した場合のデータ損失に対する保護が追加されます。</block>
-  <block id="e481f3e818c1bf548144dff8b6c46360" category="paragraph">この操作は、FSx for ONTAP ファイルシステム、オンプレミス ONTAP システム、または Cloud Volumes ONTAP システムのソースボリュームのレプリケーション関係を作成します。</block>
   <block id="578ca57adcfb8fa2a5c899374a2f5732" category="paragraph">不変ファイルを含むソース ボリュームをレプリケートすると、ソース ボリューム内の不変ファイルの保持期間が終了するまで、ターゲット ボリュームとファイル システムはロックされたままになります。不変ファイル機能は、Amazon FSx for NetApp ONTAP ファイル システムの<block ref="40da211f809bc6c9e6163aa605349c18" category="inline-link-macro-rx"></block>ときに使用できます。</block>
   <block id="30965461c316b499ed01c7f92f651051" category="list-text">iSCSI または NVMe プロトコルを使用するブロック ボリュームでは、レプリケーションはサポートされていません。</block>
   <block id="36e75a4b793293fd1dde9fdc618c8431" category="list-text">レプリケーション関係のターゲットに使用するFSx for ONTAPファイル システムが1つ必要です。</block>
@@ -2660,4 +2657,8 @@
   <block id="0352f037ca8dfca49383ddb908805d9a" category="list-text"><block ref="0352f037ca8dfca49383ddb908805d9a" category="inline-link-macro-rx"></block></block>
   <block id="0a17c703284dc61149bdaf13e30980de" category="list-text"><block ref="0a17c703284dc61149bdaf13e30980de" category="inline-link-macro-rx"></block></block>
   <block id="df267252f2595421cf837794528f006f" category="paragraph">イベントアナライザーは、FSx for ONTAP ファイルシステムからエラー、アラート、緊急 EMS イベントを自動的に抽出します。これらのイベントは、<block ref="f91a3df34ad8b434c845af1c5c4599e2" category="inline-link-macro-rx"></block>および<block ref="f7fcd176fbc4e82ec30b37b672d1e76e" category="inline-link-macro-rx"></block>によって AWS アカウントで表示できます。イベントは削除されるまで 72 時間表示されます。</block>
+  <block id="8115d76153f9adbfd582019025403480" category="paragraph">予期しない災害が発生した場合のデータ損失を回避するために、NetApp Workload FactoryでFSx for ONTAPファイルシステムのレプリケーション関係を作成します。レプリケーションは、2つのFSx for ONTAPファイルシステム間、およびオンプレミスのONTAPシステムとFSx for ONTAPファイルシステム間でサポートされています。</block>
+  <block id="d8d2b7ae69d9c4bdf4c6f9dbea6cbace" category="paragraph">災害が地域に影響を及ぼした場合には、レプリケーションによってデータが保護されます。</block>
+  <block id="3894b1835f2c953d5ab4246fe8da430b" category="paragraph">この操作は、FSx for ONTAP ファイルシステムまたはオンプレミス ONTAP システムのソースボリュームのレプリケーション関係を作成します。</block>
+  <block id="0aa7d11dc16260c47faf9d5b0b642366" category="paragraph">開始する前に、これらの要件を確認してください。</block>
 </blocks>
