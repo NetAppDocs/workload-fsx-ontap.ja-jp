@@ -19,6 +19,9 @@ NetApp Workload Factory では、長期保存用のスナップショットを�
 
 オンプレミスのONTAPクラスタがレプリケーション関係のターゲットである場合、長期保持用にSnapshotを変更することはできません。
 
+
+NOTE: ストレージ VM データと構成設定を複製する場合、長期保存の編集は使用できません。
+
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
