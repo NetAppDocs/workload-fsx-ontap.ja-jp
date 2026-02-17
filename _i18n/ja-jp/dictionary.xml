@@ -2680,8 +2680,6 @@
   <block id="9b03bdd83a5017b3aa998f32e7ad219f" category="list-text">第2世代から第2世代</block>
   <block id="04e64253a4742b9534714d0147f467f6" category="paragraph">ストレージ VM データと構成設定を移行するには、2 つの操作を完了する必要があります。</block>
   <block id="59835e5fb082d065015e2824a515a5b7" category="list-text"><block ref="75331dd4d9fa346165fac294e4e498ee" category="inline-xref-macro-rx"></block>、ユースケースとして*Migration*を選択し、*Replicate storage VM configuration*を選択します。</block>
-  <block id="db529797694203560d43ab415a6dd52d" category="inline-xref">カットオーバーレプリケーション</block>
-  <block id="4ff5e77c5ed7650b96676675b9d3eb18" category="list-text"><block ref="76a1fb9977d9fe48f9a1edf04990b3a3" category="inline-xref-macro-rx"></block>ソースファイルシステムからターゲットのFSx for ONTAPファイルシステムにデータと構成設定を永続的に移行します。</block>
   <block id="4031de6ffffe0beb0671ccd52a118661" category="paragraph">2つのFSx for ONTAPファイルシステム間、またはオンプレミスONTAPシステムとFSx for ONTAPファイルシステム間でデータを複製します。</block>
   <block id="66de39f46af06b661b7bce68c01c8e61" category="list-text">使用可能、作成済み、または構成ミス以外の状態のボリュームではレプリケーションはサポートされません。また、ONTAP バージョンに互換性がない場合もサポートされません。</block>
   <block id="cbcff6555c8b07eb6add33653d3ab030" category="list-text">移行のユースケースでは、ストレージ VM のデータおよび設定とのレプリケーション関係を作成する前に、ボリュームの最後のレプリケーションが過去 24 時間以内に完了していることを確認してください。</block>
@@ -2699,4 +2697,5 @@
   <block id="9b9935ad5969c28de13381a2e512b47c" category="paragraph">注：</block>
   <block id="9d7213e75b44382027a2100eae065746" category="list-text">ストレージ VM のデータと設定をレプリケートする場合、レプリケーションの反転は使用できません。</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026年2月16日</block>
+  <block id="df319eebb5e9e4cde194e1e976bf0795" category="list-text"><block ref="7a9cdee14fa6d629f0d48ed18525f6a5" category="inline-xref-macro-rx"></block>ソースファイルシステムからターゲットのFSx for ONTAPファイルシステムにデータと構成設定を永続的に移行します。</block>
 </blocks>
