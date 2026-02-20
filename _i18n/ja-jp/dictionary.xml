@@ -2496,12 +2496,9 @@
   <block id="e220387578f5151d1653ad1ff2b5a002" category="list-text">*igroup の説明*: オプションで、igroup の説明を入力します。</block>
   <block id="d719073ebb477e6cf9934f806cd15577" category="list-text">*ホスト イニシエーター*: 1 つ以上のホスト イニシエーターを入力します。これらのイニシエーターは、iSCSI 認定 (IQN) 形式に従う必要があります。</block>
   <block id="2614a90f09c2b1321e872a7622f7f888" category="list-text">igroup がすでに存在する場合は、[*クライアント アクセスの編集*] を選択して、igroup からブロック デバイスとホスト イニシエーターを追加または削除し、[*適用*] を選択します。</block>
-  <block id="b637e46326ea8277194ab0d5f5de8b3d" category="section-title">孤立したブロックデバイスのデータをアーカイブする</block>
-  <block id="3c464f9d7ea4cd3d820898f4b25e6832" category="paragraph">クライアントにマップされなくなったブロック デバイス、または 7 日間連続して使用されていないブロック デバイスは、孤立したブロック デバイスとして分類されます。孤立したブロック デバイスのデータを容量プール層にアーカイブして、SSD 容量を再利用することができます。</block>
   <block id="68d85c073028f0fd978bc424d69ee8fd" category="list-text">孤立デバイスの下で、*容量の表示と再利用*を選択します。</block>
   <block id="f6841052bd0d86548318f9b2df118ea3" category="list-text">未使用のブロック デバイスのスペースを再利用する画面で、データをアーカイブして容量を再利用する 1 つ以上のブロック デバイスを選択します。</block>
   <block id="2c77adf5fa1de4ed37a6e14d2212f074" category="list-text">*アーカイブ*を選択します。</block>
-  <block id="b06e53572a17ccf08cb282ac59af4b93" category="paragraph">クライアントにマップされなくなったブロック デバイス、または 7 日間連続して使用されていないブロック デバイスは、孤立したブロック デバイスとして分類されます。この操作により、選択したブロック デバイスのマップが解除され、削除されます。ホストFlexVol volumeにブロック デバイスが含まれていない場合、Workload Factory はそれを削除します。</block>
   <block id="33e155c9d3cab85dd1499ba63bd9d34d" category="paragraph">ブロック デバイスを含むFlexVolボリュームは、ARP/AI をアクティブ モードで起動します。</block>
   <block id="aca2e051b8b58a53ee4cf20a78bdde8a" category="list-text">リンクは次のエンドポイントに接続できる必要があります: \https://api.workloads.netapp.com.Webベースのコンソールは、このエンドポイントに接続して Workload Factory API と対話し、FSx for ONTAPワークロードを管理および操作します。</block>
   <block id="ae7bbdf37f2fa18593f3db57d284b5eb" category="paragraph">NetApp Workload Factory のスマートイベントアナライザーを使えば、FSx for ONTAP ファイルシステムの問題を迅速に特定し、解決できます。イベントアナライザーは、Amazon Bedrock と統合された Agentic AI を活用し、FSx for ONTAP イベント管理システム（EMS）イベントを自動的に抽出・分析します。</block>
@@ -2551,7 +2548,6 @@
   <block id="bf44c4671ee3bfbc818d505bb9a0e59a" category="paragraph">NetApp Workload Factory は、S3 アクセス ポイントの追加の管理操作を提供します。NetApp Workload Factory インターフェースから、アクセス ポイントの詳細を表示したり、既存の S3 アクセス ポイントを変更したり、S3 アクセス ポイント タグを追加または削除したりできるため、オブジェクト ストレージ管理タスクを効率化できます。</block>
   <block id="366c32f0cbb2503b337e243eaa8c42b5" category="inline-link-macro">NetApp Workload FactoryでS3アクセスポイントを管理する</block>
   <block id="e593953aaf04eebecfe2e26326145784" category="list-text">キャッシュ ボリューム サイズの最適化：最適なサイズを維持し、ホット データにキャッシュを集中させて効率を最大限に高めるために、キャッシュ ボリュームでボリュームの自動サイズ調整とスクラビングが有効になっているかどうかを確認します。</block>
-  <block id="00e21b809963a2e31abfc13c3aea34b6" category="list-text">孤立したブロックデバイス：ブロック デバイス データのアーカイブ、または 7 日間連続して使用されていないブロック デバイスの削除を推奨します。</block>
   <block id="a872ae5d7fdb75042465788519d63c35" category="list-text">Storage VM 論理レポート：Storage VM のデフォルトのレポート設定が論理に設定されているかどうかを確認します。これにより、ボリューム レベルでのストレージ使用状況の可視性が向上します。</block>
   <block id="40fbd58cc84d2567a5be7db0e1e48224" category="section-title">ブロックデバイス用の追加カード</block>
   <block id="e1d58576240df6c3acc0d5f3067d6468" category="paragraph">ブロック デバイスの使用状況と保護ステータスを迅速に把握できるように、Storage ワークロードの Block devices タブに 3 つの新しいカードが追加されました。</block>
@@ -2584,7 +2580,6 @@
   <block id="ba1072e8c0845f82f77ef660d46bde4a" category="list-text">オンプレミス ONTAP システムから FSx for ONTAP ファイルシステムへのレプリケーションの場合は、オンプレミス ONTAP システムが検出されていることを確認してください。</block>
   <block id="45eea8cd3d88c48d8f4826a6be39d707" category="list-text">*S3 アクセス ポイント タグ*：オプションで、最大 50 個のタグを追加したり、タグを削除したりできます。</block>
   <block id="66d540c0d4f07e9992cf6e0ac1083e36" category="list-text">運用上の卓越性：自動容量管理、ボリューム ファイル容量使用率のしきい値、ボリューム使用率がほぼ満杯、キャッシュ関係書き込みモード、キャッシュ ボリューム サイズの最適化、ボリューム論理容量レポート</block>
-  <block id="cf0e722b11c4855de7e43d714e007581" category="list-text">コストの最適化：ストレージ効率、データ階層化、不要なスナップショットとバックアップの削除、孤立したブロックデバイス</block>
   <block id="357d9dd76af15c8aaf8f09990a2846a9" category="list-text">AWS アカウントで<block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block>する必要があります。</block>
   <block id="8c8656579a32ab7e80c68b10832337bb" category="list-text">ストレージ メニューから、*Well-architected* を選択します。</block>
   <block id="4f5fc99db78476b3b87fbb795ab55b26" category="list-text">どの構成でも*問題の表示*を選択します。推奨事項を注意深く確認してください。</block>
@@ -2649,7 +2644,6 @@
   <block id="e77c03d49e828607828412709552dbd6" category="sidebar">igroupを管理</block>
   <block id="fdb38c6259208c2509d21f6a3f0beb02" category="paragraph"><block ref="fdb38c6259208c2509d21f6a3f0beb02" category="inline-link-macro-rx"></block></block>
   <block id="cc97dddf7d9715fea79ba3e831f0fbca" category="paragraph"><block ref="cc97dddf7d9715fea79ba3e831f0fbca" category="inline-link-macro-rx"></block></block>
-  <block id="b55768d72b4883d58308aa15e30fc7ab" category="list-text">孤立デバイス：7 日間連続して使用されていないブロック デバイスがあるかどうかを表示し、未使用のリソースを効果的に識別して管理するのに役立ちます。ここから、<block ref="88cbe2cfb6c92276ca9f0b27df016fa5" category="inline-link-macro-rx"></block>。</block>
   <block id="0352f037ca8dfca49383ddb908805d9a" category="list-text"><block ref="0352f037ca8dfca49383ddb908805d9a" category="inline-link-macro-rx"></block></block>
   <block id="0a17c703284dc61149bdaf13e30980de" category="list-text"><block ref="0a17c703284dc61149bdaf13e30980de" category="inline-link-macro-rx"></block></block>
   <block id="df267252f2595421cf837794528f006f" category="paragraph">イベントアナライザーは、FSx for ONTAP ファイルシステムからエラー、アラート、緊急 EMS イベントを自動的に抽出します。これらのイベントは、<block ref="f91a3df34ad8b434c845af1c5c4599e2" category="inline-link-macro-rx"></block>および<block ref="f7fcd176fbc4e82ec30b37b672d1e76e" category="inline-link-macro-rx"></block>によって AWS アカウントで表示できます。イベントは削除されるまで 72 時間表示されます。</block>
@@ -2698,4 +2692,10 @@
   <block id="9d7213e75b44382027a2100eae065746" category="list-text">ストレージ VM のデータと設定をレプリケートする場合、レプリケーションの反転は使用できません。</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026年2月16日</block>
   <block id="df319eebb5e9e4cde194e1e976bf0795" category="list-text"><block ref="7a9cdee14fa6d629f0d48ed18525f6a5" category="inline-xref-macro-rx"></block>ソースファイルシステムからターゲットのFSx for ONTAPファイルシステムにデータと構成設定を永続的に移行します。</block>
+  <block id="3ecf18c09ae5a2bd1855ba6515de6cd7" category="list-text">非アクティブなブロックデバイス：7 日間連続して使用されていないブロックデバイスのデータのアーカイブまたはブロックデバイスの削除を推奨します。</block>
+  <block id="3310dcc189ef22670c22a32bdf58f0c9" category="list-text">孤立デバイス：7 日間連続して使用されていないブロック デバイスがあるかどうかを表示し、未使用のリソースを効果的に識別して管理するのに役立ちます。ここから、<block ref="5d1d66741e880017163f47d5a2557cb1" category="inline-link-macro-rx"></block>。</block>
+  <block id="628b46b908bfc92bdcca823a9f84cd05" category="list-text">コスト最適化：ストレージ効率、データ階層化、不要なスナップショットとバックアップの削除、非アクティブなブロックデバイス</block>
+  <block id="958926cf6ac067918ae80f7f610d415a" category="section-title">非アクティブなブロックデバイスのデータをアーカイブする</block>
+  <block id="d37c72ca2c27b8b48a724120cf91c835" category="paragraph">クライアントにマップされなくなったブロックデバイス、または7日間連続して使用されていないブロックデバイスは、非アクティブなブロックデバイスとして分類されます。非アクティブなブロックデバイスのデータを容量プール層にアーカイブして、SSD容量を再利用することができます。</block>
+  <block id="01b51d5b9524250e9003d631e9e3f35b" category="paragraph">クライアントにマップされなくなったブロックデバイス、または7日間連続して使用されていないブロックデバイスは、非アクティブなブロックデバイスとして分類されます。この処理により、選択したブロックデバイスのマッピングが解除され、削除されます。ホストFlexVol volumeにブロックデバイスが含まれていない場合、Workload Factoryによってそのボリュームも削除されます。</block>
 </blocks>
