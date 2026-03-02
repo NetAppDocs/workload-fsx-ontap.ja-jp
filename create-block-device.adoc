@@ -107,4 +107,4 @@ _バランス (自動)_ は、Workload Factory コンソールを使用してボ
 
 
 .関連情報
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-devices.html["FSx for ONTAPファイルシステムのブロックデバイスを管理する"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-storage.html["FSx for ONTAP ファイルシステムのブロックストレージを管理する"]

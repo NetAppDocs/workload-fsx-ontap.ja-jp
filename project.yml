@@ -133,16 +133,14 @@ sidebar:
         url: "/delete-volume.html"
     - title: ブロックストレージ管理
       entries:
-      - title: igroupを管理
-        url: "/manage-igroups.html"
-      - title: ブロックデバイスの管理
-        url: "/manage-block-devices.html"
+      - title: ブロックストレージを管理する
+        url: "/manage-block-storage.html"
     - title: ファイルシステム管理
       entries:
-      - title: ファイルシステムの容量を調整する
+      - title: ファイルシステムの容量を手動で調整する
         url: "/increase-file-system-capacity.html"
-      - title: 自動容量およびinode管理を有効にする
-        url: "/enable-auto-capacity-management.html"
+      - title: ファイルシステムの容量を自動的に管理する
+        url: "/manage-capacity-automatically.html"
       - title: ファイルシステムタグを管理する
         url: "/manage-fsx-tags.html"
       - title: fsxadminパスワードのリセット
