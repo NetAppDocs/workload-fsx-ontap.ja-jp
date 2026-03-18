@@ -83,11 +83,8 @@
   <block id="ef13ae21eedaa1ecccd02fb7ddd30bb1" category="list-text">*委任された管理者グループ*：必要に応じて、委任されたファイルシステム管理者グループを入力します。</block>
   <block id="85912990c5413ea32362225e50fc2629" category="paragraph">AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Administrators、AWS Delegated Administratorsなどのグループ、またはOUに権限を委譲されたカスタムグループを指定する必要があります。</block>
   <block id="3fd21f2222285241b7bbfebc4759ab56" category="paragraph">自己管理型ADに参加する場合は、AD内のグループ名を使用します。デフォルトのグループはです<block ref="746c2ea920930b61350130daa63e23e5" prefix=" " category="inline-code"></block>。</block>
-  <block id="6705427f56dd0e2d84c82d8ce7b8e137" category="paragraph">FSx for ONTAPのバックアップはボリューム単位で行われるため、各バックアップには特定のボリューム内のデータのみが含まれます。</block>
-  <block id="5d34cf2e67586f6adc1c52bd11363230" category="paragraph">FSx for ONTAPバックアップは増分バックアップです。つまり、最新のバックアップ後に変更されたボリューム上のデータのみが保存されます。これにより、バックアップの作成に必要な時間とバックアップに必要なストレージを最小限に抑えることができ、データを複製しないことでストレージコストを削減できます。</block>
   <block id="ad999f7438a6c6743b334836cd6d2765" category="paragraph">ボリュームのバックアップを作成するには、ボリュームとファイルシステムの両方に、バックアップSnapshotを格納するための十分なSSDストレージ容量が必要です。バックアップスナップショットの作成時に、スナップショットによって消費される追加のストレージ容量によって、ボリュームのSSDストレージ利用率が98%を超えることはありません。この場合、バックアップは失敗します。</block>
   <block id="a7e91b4f0b8cb9a002ae712f6a8e8856" category="list-text">ファイルシステムの概要で、*[ボリューム]*タブを選択します。</block>
-  <block id="c90eb480f69fa94333471c53a08ebfb9" category="list-text">*データ保護アクション*、* FSx for ONTAPバックアップ*、*手動バックアップ*の順に選択します。</block>
   <block id="efb6cdeb8b2e5095e65f43be813e1f3d" category="list-text">[Manual backup]ダイアログで、バックアップの名前を入力します。</block>
   <block id="2fdd0cbe402a8ae2149e0cdf4e1d9b9c" category="doc">FSx for ONTAPファイルシステムの作成</block>
   <block id="d0e7f7527c3a0ceae557c9f12bb1d5e7" category="paragraph">FSx for ONTAPファイルシステムを作成する前に、以下が必要になります。</block>
@@ -124,7 +121,6 @@
   <block id="adf3b9421185cf4dc6b3d80fb9c26d9b" category="list-text">*暗号化*：ドロップダウンから暗号化キー名を選択します。</block>
   <block id="909443f15178d32af4981d109af80748" category="list-text">[File system details]で、次の情報を入力します。</block>
   <block id="31846199ab330eacea22764e7bc1ab7a" category="list-text">[Backup and maintenance]で、次の情報を入力します。</block>
-  <block id="5a7b83bad76b38a063667e0b80bd78d6" category="list-text">* FSx for ONTAPバックアップ*：毎日の自動バックアップはデフォルトで有効になっています。必要に応じて無効にします。</block>
   <block id="f009614070b8aab7ff6edcea9473b3dc" category="list-text">*自動バックアップ保持期間*：自動バックアップを保持する日数を入力します。</block>
   <block id="1972e6c134f87506bf46fce45a157104" category="list-text">*日次自動バックアップウィンドウ*：*設定なし*（日次バックアップの開始時間を選択）または*日次バックアップの開始時間を選択*のいずれかを選択し、開始時間を指定します。</block>
   <block id="86405f997495dd34a1622331050968f1" category="list-text">*週次メンテナンス時間*：*設定なし*（週次メンテナンス時間の開始時間を選択）または*週次メンテナンス時間30分の開始時間を選択*のいずれかを選択し、開始時間を指定します。</block>
@@ -176,7 +172,6 @@
   <block id="736ef7205c037a078bc461f368c6a21f" category="doc">FSx for ONTAPボリュームの手動スナップショットの作成</block>
   <block id="5b10cd7d19a8a16358cb05922f38a69e" category="paragraph">Snapshotはボリュームのリソースであり、変更されたデータのためだけにスペースを消費するデータを瞬時にキャプチャします。データは時間の経過とともに変化するため、Snapshotは通常、古くなるにつれてより多くのスペースを消費します。</block>
   <block id="bbc11127132b3f6e8be58ad79bf66689" category="paragraph">FSx for ONTAPボリュームではジャストインタイムのcopy-on-writeが使用されるため、Snapshot内の変更されていないファイルがボリュームの容量を消費することはありません。</block>
-  <block id="4eb3a89899e681d1b9380bde026db85c" category="admonition">スナップショットはデータのコピーではありません。データのコピーを作成する場合は、FSx for ONTAPのバックアップ機能やボリュームレプリケーション機能の使用を検討してください。</block>
   <block id="644e775d0497e56fe0475dde3829ce1e" category="doc">FSx for ONTAPファイルシステム用Storage VMの作成</block>
   <block id="bc7303a544a54859ef646aaae48578a5" category="paragraph">SVMを使用している場合、FSx for ONTAPのデータにアクセスすると、SVMのエンドポイント（IPアドレス）を使用して、SVMによってホストされているボリューム、CIFS / SMB共有、またはiSCSI LUNがクライアントやワークステーションにマウントされます。</block>
   <block id="0be7879371b03da9f3e439c5431f1db2" category="inline-link-macro">FSx for ONTAP Storage Virtual Machineの管理</block>
@@ -269,7 +264,6 @@
   <block id="8e9a64bda9d21f945b6489df2e7946e1" category="doc">ボリュームを削除する</block>
   <block id="c4037415f2f0cfbaf2d8633bef548eca" category="paragraph">ボリュームを削除する前に、次の点を考慮してください。</block>
   <block id="7ba3b681b508a24c70a973831af6f1ad" category="list-text">ローカルスナップショット：このFSx for ONTAPファイルシステムに関連付けられているすべてのスナップショットが完全に削除されます。</block>
-  <block id="4d07a6e16a1c8ad6e621cc84eb969e7e" category="list-text">FSx for ONTAPバックアップ：FSx for ONTAPのバックアップコピーは残り、引き続き使用できます。</block>
   <block id="c54ab0793e326deff351b944ad70d29c" category="list-text">[基本的な操作]*を選択し、*[ボリュームの削除]*を選択します。</block>
   <block id="321fbbd6f40d9b084f632750d5190dc8" category="summary">Storage VMのStorage VMタグをいつでも追加、更新、削除できます。</block>
   <block id="14d8aa612c687d8708f6fefc5f554d22" category="list-text">[Storage VMタグの編集]ページで、タグを追加、編集、または削除します。</block>
@@ -488,7 +482,6 @@
   <block id="ebb4bf732c3ade314c393d5284af8715" category="list-text">*パスワードの確認*：確認のために新しいパスワードをもう一度入力します。</block>
   <block id="8b0e8407f70ad599b0ea28ad2aba3c8d" category="summary">バックアップからAWSアカウント内の任意のFSx for ONTAPファイルシステムにボリュームをリストアできます。</block>
   <block id="669e24f4895025d47b6321e03f0890e4" category="doc">バックアップからボリュームをリストアする</block>
-  <block id="04b1c243101a3b35e04f4796a82296b7" category="list-text">*データ保護アクション*、* FSx for ONTAPバックアップ*、*バックアップからのリストア*の順に選択します。</block>
   <block id="954f91e5419aff167b9c5ff119492972" category="list-text">[Restore from a backup]ダイアログで、次の情報を指定します。</block>
   <block id="1db91acefbe1be544aa103101dea1eea" category="list-text">*ターゲットファイルシステム*:ドロップダウンメニューからターゲットファイルシステムを選択します。</block>
   <block id="dce3fffc0f825635bb1abc80d4fad0d8" category="list-text">*ターゲットStorage VM *：ドロップダウンメニューからターゲットStorage VMを選択します。</block>
@@ -561,7 +554,6 @@
   <block id="fa6e79d91adacad3ba5d3684079b4ea1" category="summary">Amazon FSx for NetApp ONTAPのドキュメントには、参考になるトラブルシューティングのトピックが記載されています。</block>
   <block id="025110220989dd80d639c418b593cad3" category="inline-link-macro">Amazon FSx for NetApp ONTAPのトラブルシューティング</block>
   <block id="aa3f4a232768328d892056c200f23b5f" category="paragraph">詳細については、を参照してください <block ref="39d4d71bb679e33c9314f282da47094c" category="inline-link-macro-rx"></block> 。</block>
-  <block id="c3b25a5d5a44f6b35c6e6497598499eb" category="list-text">FSx for ONTAP backup *ダイアログで、以下を指定します。</block>
   <block id="fb4531252f707fbda1308840e3c7d6af" category="summary">レプリケーション関係にあるソースボリュームとターゲットボリューム間で転送されたSnapshotデータは、いつでも手動で更新します。</block>
   <block id="9ff8251e97123d13337c62b2b74bbe1e" category="doc">レプリケーション関係のSnapshotデータの更新</block>
   <block id="fa0604fd5c522ae5ab642bebf836c3d0" category="list-text">[今すぐ更新]*を選択します。</block>
@@ -722,7 +714,6 @@
   <block id="384c5c520d0877aaaaed76d75d973d99" category="list-text">*ストレージコスト比較計算ツール*：Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for WindowsファイルサーバのストレージコストをFSx for ONTAPと比較します。FSx for ONTAPストレージ構成で実現可能な削減効果を確認し、FSx for ONTAPストレージへの移行を計画できます。</block>
   <block id="f6858e5eadd0ed940450d85121838545" category="list-text">* Workload Factoryユーザーインターフェイス*：_Quick create_and_Advanced create_deploymentモードオプションを提供します。クイック作成には、ストレージ構成に適したAWS、NetApp、および業界標準のベストプラクティスが含まれます。</block>
   <block id="53fe87832fd05bf7a8e9f1e1bad4aa86" category="doc">FSx for ONTAPファイルシステムのバックアップスケジュールの管理</block>
-  <block id="4a74309dc15865035b8b93cec28f2a96" category="list-text">[Information]で、[FSx for ONTAP backup]*の横にある鉛筆のアイコンを選択します。FSx for ONTAP backup *行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。</block>
   <block id="9f16bb4c9cbb656a02f2d0ac20ae70a8" category="list-text">*毎日の自動バックアップ*：この機能を有効または無効にします。この機能を無効にする場合は、*適用*を選択します。この機能を有効にする場合は、次の手順を実行します。</block>
   <block id="1b7732fda3ed237c994a5ac55fb150ea" category="list-text">*日次自動バックアップウィンドウ*：*設定なし*（日次バックアップの開始時間を選択）または*日次バックアップの開始時間を選択*のいずれかを選択し、開始時間を指定します。</block>
   <block id="eeba2ebb020e2a04f72c79660c1af4c0" category="inline-link-macro">ファイルシステム容量の拡張</block>
@@ -738,7 +729,6 @@
   <block id="1bab530ca9dd117d24aa1c1510692003" category="doc">Amazon FSx for NetApp ONTAP の最新情報</block>
   <block id="d151342d67a639e871ca8c57524ca7f8" category="sidebar">ボリュームタグを管理します</block>
   <block id="11c0aa7596d4f4521c9a98f708c34cc4" category="sidebar">Storage VMタグを管理します。</block>
-  <block id="e4b304b6d81189c09bd7e999a18522e8" category="sidebar">FSx for ONTAPのバックアップスケジュールを管理</block>
   <block id="c4f10a04f7aa75535a8a0475261393eb" category="doc">スケールアウト型FSx for ONTAPファイルシステム向けブロックストレージ</block>
   <block id="152983842f852ef5bae46ac675caec95" category="paragraph">最大6つのHAペアで構成されたスケールアウトファイルシステム環境を使用して、FSx for ONTAP経由でブロックストレージをプロビジョニングできるようになりました。</block>
   <block id="8cce6f6c21973d5dff1898076cddb209" category="paragraph"><block ref="8cce6f6c21973d5dff1898076cddb209" category="inline-link-macro-rx"></block></block>
@@ -1215,16 +1205,6 @@
   <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">プロアクティブなオブザーバビリティ</block>
   <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">インサイトからアクションへ</block>
   <block id="7a3fc3cf12e9da54628c7311398bee5c" category="list-text">AWS Well-Architected Framework Advisor</block>
-  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">適切に設計されたステータス</block>
-  <block id="a64cfe5c8ae4b3445ff288e9acf4b12e" category="list-text">適切に設計されたスコア</block>
-  <block id="3ae4c18410c2fa4fdf19fa3a943ef362" category="list-text">スコアには現在分析されているすべての構成が含まれ、パーセンテージで表示されます。25%のスコアは、25%のファイルシステム構成が適切に設計されていることを意味します。</block>
-  <block id="a4394e01049a42d14bd6258585de98b7" category="list-text">構成のカテゴリ</block>
-  <block id="d24dfe9869a3af3c94d86b476bc18a3d" category="list-text">ファイルシステム構成は、AWS Well-Architected Frameworkの次の5つの柱に沿ったカテゴリに分類されています。</block>
-  <block id="b88f659b2eb7813471f331b19c9d7f02" category="list-text">_信頼性_：システムが停止した場合でも、ワークロードが意図した機能を正しく一貫して実行するようにします。構成例としては、FSx for ONTAPのバックアップがあります。</block>
-  <block id="6a940b53f011e22baccafe058e7df66e" category="list-text">_セキュリティ_：リスク評価とリスク軽減戦略を通じて、データ、システム、資産を保護することに重点を置いています。</block>
-  <block id="d5f464c28ed994054fe98db4934a7da1" category="list-text">_優れた運用性_：最適なアーキテクチャとビジネスバリューを提供することに重点を置いています。</block>
-  <block id="03be89b5f488a61c9b35832aa58745c1" category="list-text">_コスト最適化_：コストを最小限に抑えながらビジネス価値を提供することを目指しています。</block>
-  <block id="49c47aadfeff1e01313108c157d381b4" category="list-text">_パフォーマンス効率_：リソースを効率的に使用してシステム要件を満たし、需要の変化に応じて最適なパフォーマンスを維持することに重点を置いています。</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析要件</block>
   <block id="02f2e108af721f7fc825883d8811e77a" category="list-text">* ONTAPクレデンシャル*：オプション。ONTAPのユーザ名とパスワードを入力します。パスワードはすぐに設定することも、あとで設定することもできます。</block>
   <block id="824994853534784eb4495b892e13b1c6" category="paragraph">指定したユーザがfsxadminユーザではなく、あとでfsxadminパスワードをリセットする必要がある場合は、AWSコンソールからこれを行うことができます。</block>
@@ -1803,15 +1783,11 @@
   <block id="21c979f4327cd67644d8ab5b64a762c7" category="doc">NetApp Workload Factoryでボリュームをクローンする</block>
   <block id="6681a3fb664c63dc897bbc8182969165" category="list-text">*FSx for ONTAP* から、クローンを作成するボリュームが含まれている FSx for ONTAPファイル システムのアクション メニューを選択し、*管理* を選択します。</block>
   <block id="6b74b1eeb944b58dcf027766f050311f" category="list-text">「ボリューム」タブで、クローンを作成するボリュームのアクション メニューを選択します。</block>
-  <block id="43b56786015efd5716b466b10628735f" category="summary">NetApp Workload Factory は、 Amazon FSx for NetApp ONTAPファイルシステムの構成を定期的に分析し、問題があるかどうかを判断します。</block>
-  <block id="25c58ec67af5ce4deef895fad9566aa0" category="paragraph">NetApp Workload Factory は、 Amazon FSx for NetApp ONTAPファイルシステムの構成を定期的に分析し、問題があるかどうかを判断します。問題が見つかった場合、Workload Factory は問題の内容を示し、ファイル システム ストレージが最高のパフォーマンス、コスト効率、ベスト プラクティスへの準拠を実現するために何を変更する必要があるかを説明します。</block>
-  <block id="b0a0826c5a9c2b2e6c919de33e89dbfe" category="paragraph">Workload Factory コンソールのファイルシステム レベルでは、すべての FSx for ONTAPファイルシステムの well-architected ステータスがリストされます。  Well-Architected のステータスは、「問題」、「未分析」、または「Well-Architected」に分類されます。  Well-Architected ステータスを選択すると、ファイル システム内の Well-Architected ステータス タブにリダイレクトされ、そこで Well-Architected スコア、構成カテゴリ、ファ​​イル システムのすべての構成を確認できます。</block>
   <block id="93482e0e05af93f1f57953ff700f65af" category="summary">NetApp Workload Factory の FSx for ONTAPファイル システム内のストレージ VM の Active Directory を構成および更新します。</block>
   <block id="b517cd494437c46f189031b81fe054d1" category="list-text">*FSx for ONTAP*から、更新するストレージVMを含むファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
   <block id="e2978ebf10a51b553f9a074316b27b79" category="summary">定期的にスケジュールされたバックアップ以外で、 NetApp Workload Factory のボリュームの手動バックアップを作成します。</block>
   <block id="54fe537cb8aa5bbba8b6f2002f13d69c" category="doc">NetApp Workload Factory でボリュームの手動バックアップを作成する</block>
   <block id="4f43be2165dfc12e9cac6220645b9996" category="paragraph">NetApp Workload Factory で、定期的にスケジュールされたバックアップ以外でボリュームの手動バックアップを作成します。</block>
-  <block id="54c39ca8203b6aca3fa33c7e87a0ede7" category="list-text">*ボリューム*タブから、バックアップするボリュームのアクションメニューを選択します。</block>
   <block id="cc481e5a678e1d84e7207782a75f9a18" category="summary">NetApp Workload Factory を使用すると、FSx for ONTAPファイル システムを作成して、ボリュームや追加のデータ サービスを追加および管理できます。</block>
   <block id="9b19e4522ce9145cc667b5fcceaba11d" category="doc">NetApp Workload Factory で FSx for ONTAPファイルシステムを作成する</block>
   <block id="ebb1274f47205fb0c6d6d8988b0944b0" category="paragraph">NetApp Workload Factory を使用すると、第 1 世代および第 2 世代の FSx for ONTAPファイル システムを作成し、ボリュームと追加のデータ サービスを追加および管理できます。</block>
@@ -2740,4 +2716,74 @@
   <block id="f9b8d8043e7f357d7b5805e6dfd01b25" category="sidebar">ブロックストレージを管理する</block>
   <block id="90fbacfd00a759e142437ac247a4317c" category="sidebar">ファイルシステムの容量を手動で調整する</block>
   <block id="241296c9db6f3205e0e5738da7ec12ef" category="sidebar">ファイルシステムの容量を自動的に管理する</block>
+  <block id="62790b093d67bd09f77b7088f1cf32a6" category="list-text">*ボリュームバックアップ*：日次自動バックアップはデフォルトで有効になっています。必要に応じて無効にしてください。</block>
+  <block id="94a3e141996b9431c4516ae849425040" category="summary">NetApp Workload FactoryはAmazon FSx for NetApp ONTAPファイルシステム構成を定期的に分析し、構成上の問題がないかどうかを確認します。</block>
+  <block id="eb2b721313223c7264abb769bf627d20" category="paragraph">NetApp Workload FactoryはAmazon FSx for NetApp ONTAPファイルシステム構成を定期的に分析し、構成上の問題がないかどうかを判断します。問題が検出された場合、Workload Factoryは問題点を示し、ファイルシステムストレージが最高のパフォーマンス、コスト効率、およびベストプラクティスへの準拠を達成するために何を変更する必要があるかを説明します。</block>
+  <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">仕組み</block>
+  <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory は、Amazon FSx for NetApp ONTAP ファイルシステムの導入環境で実行されているワークロードを毎日分析します。この分析により、適切に設計された状態、インサイト、および推奨事項が提供されます。</block>
+  <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">日々の分析が完了すると、デプロイメントのWell-architectedダッシュボードに、構成が「最適化済み」または「最適化されていない」として表示されます。総合的な最適化スコア、カテゴリ別の構成の問題、および構成の問題と推奨事項の一覧が表示されます。構成の問題に関する推奨事項を確認できます。一部の問題はWorkload Factoryによって自動的に修正できますが、その他の問題は手動での介入が必要です。この場合、Workload Factoryは、推奨される変更を実装するのに役立つ詳細な手順を提供します。</block>
+  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">ご使用の環境に適用されない構成の分析を無視することができます。これにより、不要なアラートや不正確な最適化結果を回避できます。特定の構成分析を無視すると、Workload Factory ではその構成が全体の最適化スコアに含められません。</block>
+  <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">重要な理由</block>
+  <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factoryは、継続的な評価と推奨事項、および修復策を組み合わせることで、大規模なストレージ、データベース、およびVMware環境にベストプラクティスを適用します。Workload Factoryコンソールで適用される自動修正により、人的ミスが削減され、統一された管理が確保され、ワークロードインフラストラクチャ全体でパフォーマンスと信頼性が維持されます。</block>
+  <block id="c6ee17dfa8bb85cfb470ccbc889f031c" category="section-title">ストレージワークロードに関するベストプラクティスと推奨事項</block>
+  <block id="9302fb8b1312c354620e74d118c4a66d" category="paragraph">Workload Factoryはストレージ構成を評価し、ONTAP構成のベストプラクティスとAWS Well-Architected Frameworkへの準拠について詳細なビューを提供します。評価では改善と修正も推奨されます。</block>
+  <block id="ffd9fc00ab43b8283346c6266e00d684" category="paragraph">適切に設計された分析では、構成をフレームワークの次の柱に分類します：_信頼性_、_セキュリティ_、_運用効率_、_コスト最適化_、および_パフォーマンス効率_。</block>
+  <block id="820b8f74ad843d1574106ec4cadfc07e" category="section-title">信頼性</block>
+  <block id="32293fdcb7dff0798e6d06da4b108ce6" category="paragraph">信頼性とは、障害が発生した場合でも、ワークロードが意図された機能を正確かつ一貫して実行することを保証するものです。</block>
+  <block id="8994ec75ad87cef8edf4cf8eae6b4e4c" category="list-text">*ボリュームバックアップをスケジュールする*</block>
+  <block id="3bacc0d1986b203b432f61110667b3d7" category="paragraph">ボリュームのバックアップは、データ保持とコンプライアンスのニーズをサポートするのに役立ちます。ボリュームバックアップを使用して、データの自動バックアップと保持を設定します。</block>
+  <block id="277088f7a0bc1d2b0023dc08b1d30e37" category="list-text">*ローカルスナップショットのスケジュール設定*</block>
+  <block id="ce36269ae95cd0ab7422d78bb843b720" category="paragraph">効率的なバックアップと迅速な復元のために、ローカルスナップショットをスケジュール設定しましょう。スナップショットは、ボリュームの瞬時のポイントインタイムイメージです。</block>
+  <block id="b34347ddf6e48f7eb5aee09d6f7b92a6" category="list-text">*リージョン間レプリケーション*</block>
+  <block id="152d89843ca63a94df485f882e2be60d" category="paragraph">クロスリージョンレプリケーションにより、データが別の AWS リージョンにレプリケートされ、データの耐久性と可用性が向上します。Workload Factory では、災害復旧とコンプライアンスを支援するために、クロスリージョンレプリケーションを設定することを推奨しています。</block>
+  <block id="1efec9308ce64129e1db77dd8baa679c" category="list-text">*データレプリケーションの設定*</block>
+  <block id="793435fc062d4d74518687597c405959" category="paragraph">データの信頼性を高めるために、データを同一リージョン内または別リージョン内のFSx for ONTAPファイルシステムに複製することができます。ファイルシステム間での移行、災害復旧、および長期保存をサポートするために、データレプリケーションを設定します。</block>
+  <block id="4776b32ae8a508cea6dc14786e7b1d3f" category="list-text">*SSD容量のしきい値を上げる*</block>
+  <block id="e48d5f7bfc0f630823696ef4d2f1861d" category="paragraph">SSDストレージ層の容量は、継続的に80%の使用率を超えないようにする必要があります。これにより、容量プールストレージ層へのデータの読み取りと書き込みに影響し、ファイルシステムのスループット容量に影響する可能性があります。容量が不足すると、データボリュームが読み取り専用になり、新しいデータを書き込もうとするサービスが失敗する可能性があります。</block>
+  <block id="52dcb980883fc7c1570f6f9c4c6e4f47" category="list-text">*データの信頼性を確保するためにラベルを一致させる*</block>
+  <block id="6b684c41f8808f2d21748ed56ee909d7" category="paragraph">データの信頼性を確保するためには、ソースボリュームのSnapshotポリシーラベルとレプリケーションポリシーラベルが一致している必要があります。</block>
+  <block id="ec75a1c7b766068775fc7894ddaf83e4" category="list-text">*ファイル容量のしきい値を上げる*</block>
+  <block id="0d73092e450f3018847f6e8ff85e28c0" category="paragraph">ボリューム容量制限に達しないように、ファイル容量のしきい値を引き上げるべきです。ファイル容量（iノード）が不足しているため、ボリュームへの追加データの書き込みができません。Workload Factoryは、利用可能なファイル容量の使用率を継続的に80%未満に抑えることを推奨しています。ボリューム内に新しいファイルを作成するには、利用可能なファイル容量が必要です。</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">セキュリティ</block>
+  <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">セキュリティは、リスク評価と軽減戦略を通じて、データ、システム、資産を保護することを重視します。</block>
+  <block id="6b164cf17f1cd008f12b094341cb3264" category="list-text">*ARP/AIを有効にする*</block>
+  <block id="3c93b584a7552b941c7752fec865d7f1" category="paragraph">NetApp Autonomous Ransomware Protection with AI（ARP/AI）は、ボリュームをランサムウェアの脅威から保護するのに役立ちます。Workload Factory では、すべてのボリュームに対して ARP/AI を有効にすることをお勧めします。</block>
+  <block id="1218a704bef91508c259c867ba832d76" category="list-text">*ボリュームへの不正アクセス*</block>
+  <block id="0f47a13bb4c0929efc89421b05c0e209" category="paragraph">iSCSIを使用してアプリケーションデータを提供するボリュームは、NASからの同時アクセスを許可すべきではありません。NetApp Workload Factoryは、iSCSIプロトコルを介してアクセスされるボリュームは、他のプロトコルに制限することを推奨しています。</block>
+  <block id="17d2a91a4f3c01de4c2f05b2242e49d3" category="section-title">運用の卓越性</block>
+  <block id="aae272278ce139a51849ab88adc7d597" category="paragraph">運用上の卓越性とは、最適なアーキテクチャとビジネス価値を提供することに重点を置くものです。</block>
+  <block id="2e8c868875c81824742ded82e0ff9518" category="list-text">*自動容量管理を有効にする*</block>
+  <block id="c2af0d35add26707ebd7d7030d750beb" category="paragraph">SSD 階層がしきい値を超えないように定期的に確保するには、自動容量管理を有効にする必要があります。</block>
+  <block id="32438b829cdc61174e9727896ad00733" category="list-text">*ボリューム容量使用率のしきい値*</block>
+  <block id="938de8c74e8e4f67c370d24df8ab0411" category="paragraph">Workload Factoryは、ボリューム容量の利用率が継続的に80%を超えないようにすることを推奨しています。これは、アプリケーションへのデータの読み書きに影響を与える可能性があります。ボリューム容量の増加は、手動またはボリュームの自動拡張機能を使用して自動的に行うことができます。</block>
+  <block id="900f4b8178b38a2b7075005f38bd4a08" category="list-text">*ボリューム使用率がほぼ満杯です*</block>
+  <block id="1771306e58ae20ceab27a04d0b17adcd" category="paragraph">ボリュームの容量がほぼ満杯に近づいた場合、NetApp Workload Factoryは、アプリケーションの潜在的な中断を回避するために、ボリューム容量を増やすための対策を講じることを推奨します。</block>
+  <block id="dea8be5f351d7ba412ea10951c1fe16c" category="list-text">*キャッシュ関係の書き込みモード*</block>
+  <block id="a58ce95d0ee8f9d592643a6f31d60878" category="paragraph">最適なパフォーマンスを実現するために、Workload Factoryはワークロードに最適なキャッシュ関係書き込みモードを推奨します。ライトアラウンドモードは、小さなファイルを扱う読み込み中心のワークロードにおいて優れたパフォーマンスを発揮する一方、ライトバックモードは、大きなファイルを扱う書き込み中心のワークロードにおいて優れたパフォーマンスを発揮します。</block>
+  <block id="3a3b30a3337caa5b953626eb873e3e6b" category="list-text">*キャッシュボリュームのサイズを最適化*</block>
+  <block id="3f8b3943fba700ffad94c47ef4638509" category="paragraph">Workload Factory では、最適なサイズを維持し、ホットデータにキャッシュを集中させて効率を最大限に高めるために、ボリュームの自動サイズ調整とキャッシュボリュームのスクラブを有効にすることを推奨しています。</block>
+  <block id="a49bf929860657a29ec7b321ff7a63ba" category="list-text">*Storage VM論理レポート*</block>
+  <block id="7edda8ec9be79d47927f4aa7e27bd776" category="paragraph">Workload Factory では、ボリュームレベルでのストレージ使用状況をより適切に把握できるように、ストレージ VM のデフォルトのレポート設定を論理に設定することをお勧めします。</block>
+  <block id="a39ae09f8be4327fc176cfeb76a0e366" category="section-title">コスト最適化</block>
+  <block id="394c926099d3d2cf7e0d7477f17faf38" category="paragraph">コストの最適化により、コストを低く抑えながらビジネスの価値を最大限に高めることができます。</block>
+  <block id="ff879d0ae47ba423426718c1437f43bc" category="list-text">*コールドデータを階層化することでTCOを最適化*</block>
+  <block id="3fa1db8a8be8ef91cca2bf931c2698f3" category="paragraph">SSDストレージ層の使用率を低減するために、コールドデータ階層化を有効にする必要があります。すべてのボリュームに階層化ポリシーを適用することをお勧めします。FSx for ONTAPはデータを継続的にスキャンして、コールドデータを検出し、中断することなく容量ストレージプール層に移動します。</block>
+  <block id="7cee9f2699d966625a5743c41334d168" category="list-text">*ストレージ効率を有効にする*</block>
+  <block id="4ac28dca7ab7f0f38a67c27c947662d5" category="paragraph">ストレージ効率化機能（コンパクション、圧縮、重複排除）を有効にして、ストレージ利用率を最適化し、SSD階層のコストを削減する必要があります。</block>
+  <block id="fed8dca8f704b8520ccccb85704d4336" category="list-text">*不要なスナップショットおよびバックアップの削除*</block>
+  <block id="0c3c1c3be816da545548a0d1ddb8eab2" category="paragraph">不要になったスナップショットやバックアップは、コスト削減のため削除する必要があります。</block>
+  <block id="c359614024935abd3712075452782fa3" category="list-text">*非アクティブなブロックデバイス*</block>
+  <block id="934ae55c0ac8033312b0dd4fc00ad677" category="paragraph">ブロックデバイスが7日間使用されなかった場合、Workload Factoryはブロックデバイスデータをアーカイブするか、未使用のブロックデバイスを削除してコストを削減することを推奨します。</block>
+  <block id="f915580ac605b8302594b2e8b9e200c4" category="list-text">*SSD容量の使用率が低い*</block>
+  <block id="20f19e4030e406a0bbc3f71b51e9b885" category="paragraph">十分に活用されていないSSD容量層は、不必要なコストを発生させている可能性があります。NetApp Workload Factoryは、SSDティアの容量を削減しつつ、現在使用している容量より20%高い空き容量バッファを維持することを推奨しています。縮小操作には数時間から数日かかる場合があり、その間は他のファイルシステム操作はサポートされません。</block>
+  <block id="3224742265d3111d23b216e2a1d3036c" category="paragraph">ボリュームバックアップはボリュームごとに行われるため、各バックアップには特定のボリューム内のデータのみが含まれます。</block>
+  <block id="9b1c40247bbd6b430d06045ce9149bf4" category="paragraph">ボリュームバックアップは増分バックアップであるため、最新のバックアップ以降に変更されたボリューム上のデータのみが保存されます。これにより、バックアップの作成に必要な時間とバックアップに必要なストレージ容量が最小限に抑えられ、データの重複を防ぐことでストレージコストを節約できます。</block>
+  <block id="40e95cbe82fc979afaca404d45ab88c7" category="list-text">*ボリューム*タブから、バックアップするボリュームのアクションメニューを選択します。</block>
+  <block id="0b3a2f729072cb80e423288abd69fa27" category="list-text">［データ保護アクション］、［ボリュームバックアップ］、［手動バックアップ］の順に選択します。</block>
+  <block id="108be83f8740c01bf49fb6d51d4b134e" category="admonition">スナップショットはデータのコピーではありません。データのコピーを作成したい場合は、ボリュームバックアップ機能またはボリュームレプリケーション機能の使用を検討してください。</block>
+  <block id="d6a7c6eb08e4e62d76793fd3d8b368d4" category="list-text">ボリュームバックアップ：ボリュームバックアップのコピーは保持され、引き続き使用できます。</block>
+  <block id="e18aace8bf973f70c990d2b81fcba316" category="list-text">「情報」の下にある*Volume backups*の横にある鉛筆アイコンを選択します。マウスカーソルを*Volume backups*の行の上に置くと、ドロップダウン矢印の横に鉛筆アイコンが表示されます。</block>
+  <block id="8650af0fa3c7b902ba6a94894d28c472" category="list-text">*Volume backups*ダイアログで、以下の情報を入力してください：</block>
+  <block id="5e9b88efcc8c9692790f512327a22476" category="list-text">「データ保護アクション」、「ボリュームバックアップ」の順に選択し、「バックアップからの復元」を選択します。</block>
+  <block id="6eb18ebccbf4fe18669aca55778990e0" category="sidebar">ボリュームバックアップスケジュールの管理</block>
 </blocks>
