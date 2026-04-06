@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: delete-s3-access-points.html 
+keywords: S3, s3, access points, delete access points, remove access points 
+summary: NetApp Workload Factory でボリュームの S3 アクセスポイントを削除します。 
+---
+= NetApp Workload Factory でボリュームの S3 アクセスポイントを削除します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factoryでボリュームから既存のS3アクセスポイントを削除します。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. [ボリューム] タブから、S3 アクセス ポイントを管理するボリュームのアクション メニューを選択し、[*詳細アクション*] を選択してから、[*S3 アクセス ポイントの管理*] を選択します。
+. 削除する S3 アクセス ポイントのアクション メニューを選択し、* Delete * を選択します。
+. *S3 アクセス ポイントの削除* ダイアログで、*削除* を選択して、ボリュームから S3 アクセス ポイントを削除します。
++
+Workload Factoryはインベントリテーブルやジャーナルテーブルを削除しませんが、AWSマネジメントコンソールから手動で削除することは可能です。
+
+

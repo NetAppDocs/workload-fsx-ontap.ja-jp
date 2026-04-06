@@ -126,7 +126,17 @@ sidebar:
       - title: SMB/CIFS共有を管理する
         url: "/manage-cifs-share.html"
       - title: S3 アクセスポイントを管理する
-        url: "/manage-s3-access-points.html"
+        entries:
+        - title: S3アクセスポイントを作成して接続する
+          url: "/create-s3-access-points.html"
+        - title: S3アクセスポイントを編集する
+          url: "/edit-s3-access-points.html"
+        - title: ジャーナルテーブルのインフラストラクチャをセットアップする
+          url: "/setup-journal-table.html"
+        - title: S3アクセスポイントの詳細を表示
+          url: "/view-s3-details.html"
+        - title: S3アクセスポイントを削除する
+          url: "/delete-s3-access-points.html"
       - title: クローンボリュームをスプリットする
         url: "/split-cloned-volume.html"
       - title: ボリュームを削除する
@@ -209,8 +219,6 @@ sidebar:
       url: "/support-registration.html"
     - title: ヘルプを表示します
       url: "/get-help.html"
-    - title: トラブルシューティング
-      url: "/troubleshooting.html"
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:

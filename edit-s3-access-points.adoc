@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: edit-s3-access-points.html 
+keywords: S3, s3, access points, manage access points, change access points, update access points, modify access points 
+summary: NetApp Workload Factory でボリュームの S3 アクセスポイントを編集します。 
+---
+= NetApp Workload Factory でボリュームの S3 アクセスポイントを編集します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload FactoryでボリュームのS3アクセスポイントの詳細を更新し、タグを管理します。
+
+アクセスポイントの*インベントリテーブル*を有効または無効にすることもできます。インベントリテーブルは、S3アクセスポイントからアクセス可能なすべてのオブジェクトのメタデータを生成し、AWS S3リクエストのコストが発生します。詳細については、link:https://aws.amazon.com/s3/pricing/["Amazon S3 価格設定ドキュメント"^]を参照してください。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. 「ボリューム」タブから、S3アクセスポイントを編集するボリュームのアクションメニューを選択し、*高度なアクション*を選択してから、*S3アクセスポイントの管理*を選択します。
+. *S3 アクセスポイントの管理*画面でアクションメニューを選択し、*アクセスポイントの編集*を選択します。
+. 更新を行い、* Apply * を選択します。
++
+ジャーナルテーブル機能のインフラストラクチャを設定するには、S3アクセスポイントのネットワーク構成として*Internet*を選択する必要があります。link:setup-journal-table.adoc["NetApp Workload Factoryのジャーナルテーブルインフラストラクチャを設定する方法について説明します"]。
+
+

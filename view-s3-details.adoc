@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: view-s3-details.html 
+keywords: S3, s3, access points, manage access points, change access points, update access points, modify access points 
+summary: NetApp Workload Factory でボリュームの S3 アクセスポイントの詳細を表示します。 
+---
+= NetApp Workload Factory でボリュームの S3 アクセスポイントの詳細を表示します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+S3アクセスポイントの詳細情報（エイリアス、ARN、S3 URIなど）を表示します。インベントリテーブルとジャーナルテーブルを有効にすると、S3アクセスポイント全体におけるユーザーアクセスイベントとオブジェクト操作のメタデータと監査ログを表示できます。
+
+.タスクの内容
+ボリューム上でインベントリテーブルが有効になっている場合、そのボリュームに接続されている既存のS3アクセスポイントのアクセスポイント、インベントリテーブル、およびテーブルバケットの詳細を表示できます。このシステムは、AWSマネジメントコンソールのインベントリテーブルへのリンクも提供します。
+
+ジャーナルテーブルが有効になっている場合、Workload Factoryはアクセスポイントに関するログをテーブル形式で生成し、参照できるようにします。このテーブルには、CloudTrailイベント、トレイル（AWSアクティビティの記録）、CloudTrailフィルター、CloudWatchロググループなどが含まれます。
+
+アクセス ポイントの詳細をコピーして、他のアプリケーションで使用できます。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP* から、詳細を表示するボリュームのファイルシステムを選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. 「ボリューム」タブから、詳細を表示するボリュームのアクションメニューを選択し、*高度なアクション*を選択してから、*詳細を表示*を選択します。
++
+詳細は、*アクセスポイント*、*インベントリテーブル*、*ジャーナルテーブル*、*テーブルバケット*の4つのタブに表示されます。
+
+. 在庫テーブルまたはジャーナルテーブルのステータスが有効になっているが、 `get:Object`権限がない場合は、ダイアログの指示に従って必要な権限を追加してください。
+. ジャーナルテーブルのステータスが保留中の場合は、CloudTrail ARNを指定して、ジャーナルテーブルを作成されたインフラストラクチャに接続する必要があります。AWS CLIまたはAWS管理コンソールを使用してCloudFormationスタックを導入する手順に従い、Workload Factoryコンソールに戻ってCloudTrail ARNを入力してください。
+
+
+.関連情報
+* link:setup-journal-table.html["ジャーナル テーブル インフラストラクチャをセットアップし、NetApp Workload Factoryのジャーナル テーブルの設定の問題をトラブルシューティングします。"]
+

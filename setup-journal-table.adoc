@@ -1,0 +1,500 @@
+---
+sidebar: sidebar 
+permalink: setup-journal-table.html 
+keywords: S3, s3, access points, journal table, setup journal table, NetApp Workload Factory 
+summary: NetApp Workload FactoryでS3アクセスポイント用のジャーナルテーブルインフラストラクチャをセットアップします。 
+---
+= NetApp Workload Factoryのジャーナルテーブルインフラをセットアップします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Amazon FSx for ONTAPボリュームアクセスポイント全体でユーザーアクセスイベントとオブジェクト操作の監査ログをキャプチャして保存するためのジャーナルテーブルインフラストラクチャを設定します。AWS CloudTrail、AWS CloudWatch、AWS S3バケット、AWS CloudWatchロググループ、AWS Identity and Access Management（IAM）、およびAWS S3テーブルなどのAWSサービスのインフラストラクチャを設定するには、ログイベントがパイプラインを正しく通過し、Workload Factoryによって読み取られるようにするために、いくつかの手順が必要です。
+
+
+
+== タスクの内容
+
+ジャーナルテーブル機能は、監視対象の FSx for ONTAP S3 アクセスポイントの S3 データプレーンイベント（PutObject、GetObject、DeleteObject など）をキャプチャします。これは、お客様の AWS アカウントにデプロイされた一連の AWS サービスを使用します。インフラストラクチャを正しくセットアップすると、FSx for ONTAP ボリュームアクセスポイントに接続され、ユーザーアクセスとオブジェクト操作の監査イベントをジャーナルテーブルにキャプチャするパイプラインが確立されます。
+
+以下の表は、インフラストラクチャの一部を構成するAWSサービス、それぞれのリソース名のパターン、およびパイプラインにおけるサービスの目的を示しています。
+
+[cols="1,1,1"]
+|===
+| AWSサービス | リソース名のパターン | 目的 
+
+
+| AWS CloudFormation | netapp-metadata-* | すべてのインフラストラクチャをスタックとしてデプロイします 
+
+
+| AWS S3バケット | netapp-metadata-cloudtrail-events-logs-{uuid} | 生のCloudTrailログファイルを保存 
+
+
+| AWS CloudTrail | netapp-metadata-journal-data-events-trail-{uuid} | 特定のアクセスポイントのS3データイベントをキャプチャします 
+
+
+| AWS CloudWatch ロググループ | netapp-metadata-journal-data-events-{uuid} | 構造化されたログエントリとしてCloudTrailイベントを受信します 
+
+
+| IAMロール  a| 
+* netapp-metadata-cloudtrail-cw-role-{uuid}
+* netapp-metadata-s3table-integration-role-{uuid}
+
+| アクティブな統合 
+
+
+| ObservabilityAdmin | S3TableIntegration | CloudWatchログをS3 Tablesテーブルにブリッジします 
+
+
+| S3テーブル | aws-cloudwatch バケット → logs.aws_cloudtrail__data | 構造化され、クエリ可能なCloudTrailイベントをIceberg形式で保存 
+|===
+{uuid}は、テンプレート作成時に生成される、ランダムな8文字の識別子です。
+
+
+
+== 開始する前に
+
+ジャーナルテーブル機能を有効にするには、次の手順を実行します。
+
+* S3アクセスポイントを持つ既存のボリュームがある。link:create-volume.html["S3アクセスポイントを使用してボリュームを作成する"]
+* S3アクセスポイントのネットワーク設定を*インターネット*に設定します。link:edit-s3-access-point.adoc["S3アクセスポイントのネットワーク構成を編集"].
+* link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_operations and remediation_の権限を付与する"^]Workload Factoryクレデンシャルに移動します。
+* CloudFormation デプロイメントを実行してジャーナルテーブルを設定するために使用する AWS アカウントに、次の IAM ポリシー権限を追加します。
++
+.ジャーナルテーブルセットアップのIAMポリシー権限
+[%collapsible]
+====
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "CFNStack",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:CreateStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents"
+            ],
+            "Resource": "arn:aws:cloudformation:*:*:stack/netapp-metadata-*/*"
+        },
+        {
+            "Sid": "StarResources",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:GetTemplateSummary",
+                "cloudtrail:DescribeTrails",
+                "logs:DescribeLogGroups",
+                "logs:ListSourcesForS3TableIntegration",
+                "observabilityadmin:CreateS3TableIntegration",
+                "observabilityadmin:GetS3TableIntegration",
+                "observabilityadmin:TagResource",
+                "observabilityadmin:ListTagsForResource"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "S3Bucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketTagging"
+            ],
+            "Resource": "arn:aws:s3:::netapp-metadata-*"
+        },
+        {
+            "Sid": "IAMRoles",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:PutRolePolicy",
+                "iam:TagRole",
+                "iam:GetRole"
+            ],
+            "Resource": "arn:aws:iam::*:role/netapp-metadata-*"
+        },
+        {
+            "Sid": "PassRole",
+            "Effect": "Allow",
+            "Action": "iam:PassRole",
+            "Resource": "arn:aws:iam::*:role/netapp-metadata-*",
+            "Condition": {
+                "StringEquals": {
+                    "iam:PassedToService": [
+                        "cloudtrail.amazonaws.com",
+                        "logs.amazonaws.com"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "CloudTrail",
+            "Effect": "Allow",
+            "Action": [
+                "cloudtrail:CreateTrail",
+                "cloudtrail:StartLogging",
+                "cloudtrail:AddTags",
+                "cloudtrail:PutEventSelectors"
+            ],
+            "Resource": "arn:aws:cloudtrail:*:*:trail/netapp-metadata-*"
+        },
+        {
+            "Sid": "CWLogGroup",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:DeleteLogGroup",
+                "logs:PutRetentionPolicy",
+                "logs:TagResource",
+                "logs:AssociateSourceToS3TableIntegration"
+            ],
+            "Resource": "arn:aws:logs:*:*:log-group:netapp-metadata-*"
+        },
+        {
+            "Sid": "S3Table",
+            "Effect": "Allow",
+            "Action": [
+                "s3tables:CreateTableBucket",
+                "s3tables:PutTableBucketEncryption",
+                "s3tables:PutTableBucketPolicy"
+            ],
+            "Resource": "arn:aws:s3tables:*:*:bucket/aws-cloudwatch"
+        }
+    ]
+}
+----
+====
+
+
+
+
+== ジャーナルテーブルのインフラストラクチャをセットアップする
+
+S3アクセスポイントからジャーナルテーブルにAWSサービスイベントをキャプチャするためのインフラストラクチャをセットアップします。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームがあるファイルシステムのアクションメニューを選択し、*管理*を選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. [ボリューム] タブから、S3 アクセス ポイントを管理するボリュームのアクション メニューを選択し、[*詳細アクション*] を選択してから、[*S3 アクセス ポイントの管理*] を選択します。
+. *S3 アクセスポイントの管理*画面でアクションメニューを選択し、*アクセスポイントの編集*を選択します。
+. *S3アクセスポイントの編集*ダイアログで、ネットワーク構成が*インターネット*に設定されていることを確認してください。
+. ダイアログの指示に従って、ジャーナルテーブル機能のインフラストラクチャを設定してください。
+. CloudFormationテンプレートをダウンロードします。
+. AWS アカウントに CloudFormation スタックをデプロイします。
++
+.. テンプレート JSON をファイルに保存します。
+.. AWS CLI または AWS マネジメントコンソールを使用してテンプレートをデプロイします。
+.. スタックが `CREATE_COMPLETE`ステータスに達するまで待ちます。
+.. スタック出力からCloudTrail ARNを取得します。
+
+
+. Workload Factoryコンソールに戻り、S3アクセスポイントを管理するボリュームに戻ります。
+. ボリュームアクションメニューから*詳細を表示*を選択します。
+. 「ジャーナルテーブル」タブで、CloudTrail ARNを入力します。
+. * 適用 * を選択します。
+
+
+いずれかの手順が失敗した場合は、<<Troubleshoot the infrastructure setup,ジャーナルテーブルのインフラストラクチャ設定のトラブルシューティング>>またはNetAppサポートにお問い合わせください。
+
+
+
+== ジャーナルテーブルのインフラストラクチャ設定のトラブルシューティング
+
+AWS 管理コンソールまたは AWS CLI を使用して、CloudFormation スタックのデプロイメント中の障害とそれが作成するリソースのトラブルシューティングを行うことができます。
+
+問題を解決したら、CloudTrail ARN を再度送信してジャーナルテーブルのセットアップを再開してください。
+
+
+
+=== 一般的なCloudFormation展開の失敗
+
+
+
+==== IAM権限が不足しています
+
+デプロイを行う役割／ユーザーには、特定の権限セットが必要です。ポリシー全文については<<開始する前に,開始する前に>>を参照してください。
+
+スタックが `AccessDenied`または `InsufficientPermission`エラーで失敗した場合は、スタックイベントを確認し、 `ResourceStatusReason`フィールドで不足している権限を探してください。
+
+
+
+==== CloudTrail制限
+
+AWSでは、リージョンごとにデフォルトで5つのtrailという制限が設けられています。アカウントに既に5つのtrailがある場合、 `the FsxDataEventTrail`リソースは次のエラーで失敗します：Maximum number of trails (5) exceeded。次のコマンドを使用して、リージョンレベルでtrailの数を確認できます：
+
+[source, cli]
+----
+aws cloudtrail describe-trails \
+  --no-include-shadow-trails \
+  --region <region> \
+  --query "length(trailList)"
+----
+.解像度オプション
+* オプション1：リージョン内の未使用のトレイルを削除して空き容量を確保する。
+* オプション2：既存のトレイルを使用する。 `FsxDataEventTrail`、 `CloudTrailBucket`、 `CloudTrailBucketPolicy`、および `CloudTrailToCloudWatchRole`リソースをCloudFormationスタックを再度デプロイする前にテンプレートから削除します。次に、初期化ステップで既存のトレイルのARNを渡します。既存のトレイルには、CloudWatchログループが設定され、ログループに関連付けられたS3TableIntegrationがあり、データイベントをログに記録している必要があります。
+
+
+
+
+==== S3 Table統合は既に存在します
+
+アカウントに既にaws_cloudtrailデータソース用のS3TableIntegrationが存在する場合、LogsToS3TableIntegrationリソースは失敗します。
+
+.解決策
+ `LogsToS3TableIntegration`と `S3TableIntegrationRole`のリソースを、CloudFormationスタックを再度デプロイする前にテンプレートから削除します。aws_cloudtrailデータイベント用に設定している限り、システムは既存の統合を自動的に使用します。
+
+既存の統合を確認するには：
+
+[source, cli]
+----
+aws observabilityadmin list-s3-table-integrations --region <your-region>
+----
+
+
+==== S3 バケット名は既に存在します
+
+バケット名 `netapp-metadata-cloudtrail-events-logs-{uuid}`はグローバルに一意です。競合が発生した場合は、テンプレートを再要求して新しい UUID を取得します。
+
+
+
+==== IAMロールは既に存在します
+
+以前の部分的な展開で `netapp-metadata-*`名前パターンの IAM ロールが残っていた場合、ロール作成時にスタックが失敗します。まず、孤立したロールを削除してください：
+
+[source, json]
+----
+aws iam delete-role-policy \
+  --role-name netapp-metadata-cloudtrail-cw-role-<uuid> \
+  --policy-name <policy-name>
+aws iam delete-role \
+  --role-name netapp-metadata-cloudtrail-cw-role-<uuid>
+----
+
+
+=== ジャーナルテーブル有効化後の障害
+
+CloudTrail ARN を送信すると、Workload Factory は _seed_（テストイベント）を自動的に送信してリソースパイプライン全体を検証します。成功すると、シードイベントが S3 Tables テーブルに到着します。テストには約 10 分かかります。
+
+テスト検証が失敗した場合、以下のいずれかのエラーメッセージが表示される可能性があります：
+
+[cols="1,1"]
+|===
+| エラー メッセージ | 説明 
+
+
+| テーブル aws_cloudtrail__data は{bucket}に作成されませんでした。s3table の権限を確認してください。 | S3TableIntegration は CloudWatch 管理テーブルを作成しませんでした。CloudWatch Logs と S3 Tables 間のパイプラインが壊れています。 
+
+
+| テーブルは存在するが、ジャーナルシードイベントが表示されない。CloudTrailとCloudWatchの権限を確認する。 | テーブルは存在するが、特定のシードイベントは発生しなかった。CloudTrailとS3 Tablesテーブルとのパイプラインが壊れています。 
+
+
+| ジャーナル設定の開始に失敗しました。... | バックグラウンドでのシード/ポーリング処理中にエラーが発生しました。詳細は末尾のメッセージをご確認ください。 
+|===
+.解決手順
+ジャーナルがFAILEDに達したら、シードイベントをパイプラインの各ステージに沿って追跡し、停止した正確な場所を特定します。各ステップは、テンプレートによって作成される特定のAWSリソースに対応しています。
+
+. CloudTrail S3 バケットを確認します。
++
+このトレイルは、生のイベントログをS3バケットに書き込みます `netapp-metadata-cloudtrail-events-logs`。最新のログファイルを探してください。
+
++
+ログファイルが存在しない場合は、CloudTrailがイベントを捕捉していません。以下の点を確認してください：
+
++
+** トレイルはログ記録中です(`IsLogging: true`）
+** 高度なイベントセレクタには、正しいアクセスポイント ARN が含まれています。
+** 高度なイベントセレクターには、 `eventCategory = Data`および `resources.type = AWS::S3::AccessPoint`のフィルターが含まれます
+
+
+. CloudWatchロググループを確認します。
++
+このトレイルは、CloudWatchロググループにイベントも配信します。ロググループ名は `netapp-metadata-journal-data-events-<uuid>`で始まります。
+
++
+** ロググループが空の場合、CloudTrailはCloudWatchにイベントを配信していません。 `CloudTrailToCloudWatchRole`IAMロールが存在し、 `logs:CreateLogStream`および `logs:PutLogEvents`権限があること、およびトレイルが正しい `CloudWatchLogsLogGroupArn`および `CloudWatchLogsRoleArn`で構成されていることを確認してください。
+** シードイベントがロググループに現れる場合は、問題は下流側にあるため、ステップ3に進んでください。
+
+
+. S3 Tables テーブルを確認してください(`aws-cloudwatch`）。
++
+S3TableIntegration は、aws-cloudwatch という名前のテーブルバケットを自動的に作成し、logs.aws_cloudtrail__data というテーブルにデータを投入します。このテーブルは、最初のイベントが通過した後にのみ作成されます。
+
++
+** aws-cloudwatch テーブルバケットが存在しない場合、 `S3TableIntegrationRole`に権限がありません。 `s3tables:CreateTableBucket`、 `s3tables:PutTableBucketEncryption`、および `s3tables:PutTableBucketPolicy`が必要です。すべて `arn:aws:s3tables:*:*:bucket/aws-cloudwatch`にスコープされます。
+** テーブルバケットが存在するが `logs.aws_cloudtrail__data`が存在しない場合、統合はイベントをルーティングしていません。統合は `Status: ACTIVE`を表示し、 `aws_cloudtrail`をログソースとして含める必要があります。
+** テーブルは存在するものの、シードイベントがテーブルに含まれていない場合、そのイベントはまだ転送中である可能性があります。S3 Tablesの取り込みには若干の遅延が発生します。あと数分お待ちください。15～20分経っても表示されない場合は、統合が失敗している可能性があります。
+
+
+. シードイベントを直接照会します。
++
+.. AWS Management ConsoleでS3 Tablesを開きます。
+.. aws-cloudwatch テーブルバケット → aws_cloudtrail__data テーブルに移動し、*Preview* ボタンを使用して、ブラウザで直接クイッククエリを実行します。
+.. テーブルにイベントが存在するが、ジャーナルにはまだ `FAILED`が表示される場合、イベントが到着する前にポーリングウィンドウが期限切れになった可能性があります。
+
+
+
+
+問題が解決したら、Workload Factoryコンソールに戻ってください。Trail ARNを再度送信して<<ジャーナルテーブルのインフラストラクチャをセットアップする,ジャーナルテーブルのセットアップを開始しています>>を再試行してください。
+
+. セットアップが引き続き失敗する場合は、NetApp サポートにお問い合わせください。
+
+
+
+
+== ジャーナルテーブル設定の権限リファレンス
+
+CloudFormation スタックを展開してジャーナルテーブル機能を有効にする IAM ロールには、以下の権限が必要です。必要な権限を含むコピー可能な JSON ポリシーについては、<<開始する前に,開始する前に>>を参照してください。
+
+
+
+=== スタック操作
+
+[cols="1,1,1"]
+|===
+| 権限 | リソース | なぜ 
+
+
+| cloudformation：CreateStack | arn:aws:cloudformation:*:*:stack/netapp-metadata-*/* | スタックを作成する 
+
+
+| cloudformation：DescribeStacks | arn:aws:cloudformation:*:*:stack/netapp-metadata-*/* | スタックステータスを監視 
+
+
+| cloudformation：DescribeStackEvents | arn:aws:cloudformation:*:*:stack/netapp-metadata-*/* | リソースレベルの障害を診断する cloudformation:GetTemplateSummary * プリフライトテンプレート検証 
+|===
+
+
+=== CloudTrail
+
+[cols="1,1,1"]
+|===
+| 権限 | リソース | なぜ 
+
+
+| cloudtrail：CreateTrail | arn:aws:cloudtrail:*:*:trail/netapp-metadata-* | トレイルを作成する 
+
+
+| cloudtrail：StartLogging | arn:aws:cloudtrail:*:*:trail/netapp-metadata-* | ログ記録を有効にする 
+
+
+| cloudtrail：AddTags | arn:aws:cloudtrail:*:*:trail/netapp-metadata-* | 識別タグを適用する 
+
+
+| cloudtrail：PutEventSelectors | arn:aws:cloudtrail:*:*:trail/netapp-metadata-* | データイベントキャプチャの設定 
+
+
+| cloudtrail：DescribeTrails | * | スタック出力のトレイル ARN を解決します 
+|===
+
+
+=== S3
+
+[cols="1,1,1"]
+|===
+| 権限 | リソース | なぜ 
+
+
+| s3：CreateBucket | arn:aws:s3:::netapp-metadata-* | CloudTrailログバケットを作成します 
+
+
+| s3：PutBucketPolicy | arn:aws:s3:::netapp-metadata-* | CloudTrailによるログの書き込みを許可する 
+
+
+| s3：PutBucketTagging | arn:aws:s3:::netapp-metadata-* | 識別タグを適用する 
+|===
+
+
+=== IAM
+
+[cols="1,1,1"]
+|===
+| 権限 | リソース | なぜ 
+
+
+| iam：CreateRole | arn:aws:iam::*:role/netapp-metadata-* | IAMロールを両方とも作成します 
+
+
+| iam：PutRolePolicy | arn:aws:iam::*:role/netapp-metadata-* | インラインポリシーを添付 
+
+
+| iam：TagRole | arn:aws:iam::*:role/netapp-metadata-* | 識別タグを適用する 
+
+
+| iam：GetRole | arn:aws:iam::*:role/netapp-metadata-* | ロールがアクティブであることを確認します 
+
+
+| iam：PassRole | arn:aws:iam::*:role/netapp-metadata-* （条件：PassedToService = cloudtrail.amazonaws.com、logs.amazonaws.com） | CloudTrailおよびCloudWatch Logsにロールを渡す 
+|===
+
+
+=== CloudWatchログ
+
+[cols="1,1,1"]
+|===
+| 権限 | リソース | なぜ 
+
+
+| ログ：CreateLogGroup | arn:aws:logs:*:*:log-group:netapp-metadata-* | ロググループを作成する 
+
+
+| ログ：DeleteLogGroup | arn:aws:logs:*:*:log-group:netapp-metadata-* | 作成に失敗した場合はロググループをクリーンアップします 
+
+
+| ログ：PutRetentionPolicy | arn:aws:logs:*:*:log-group:netapp-metadata-* | 30日間の保持期間を設定 
+
+
+| ログ：TagResource | arn:aws:logs:*:*:log-group:netapp-metadata-* | 識別タグを適用する 
+
+
+| logs：AssociateSourceToS3TableIntegration | arn:aws:logs:*:*:log-group:netapp-metadata-* | CloudTrailソースをS3 Tablesにリンク 
+
+
+| ログ：DescribeLogGroups | * | ロググループの存在を確認する 
+
+
+| logs：S3テーブル統合のソース一覧 | * | 統合の関連付けを確認 
+|===
+
+
+=== ObservabilityAdmin
+
+[cols="1,1,1"]
+|===
+| 権限 | リソース | なぜ 
+
+
+| observabilityadmin：CreateS3TableIntegration | * | CloudWatch → S3 Tables ブリッジを作成します 
+
+
+| observabilityadmin:GetS3TableIntegration | * | 統合がアクティブであることを確認 
+
+
+| observabilityadmin：TagResource | * | 識別タグを適用する 
+
+
+| observabilityadmin：ListTagsForResource | * | ドリフト検出 
+|===
+
+
+=== S3テーブル
+
+[cols="1,1,1"]
+|===
+| 権限 | リソース | なぜ 
+
+
+| s3tables：CreateTableBucket | arn:aws:s3tables:*:*:bucket/aws-cloudwatch | S3 Tablesバケットを作成する（統合ロール経由） 
+
+
+| s3tables：PutTableBucketEncryption | arn:aws:s3tables:*:*:bucket/aws-cloudwatch | AES256暗号化を設定する 
+
+
+| s3tables：PutTableBucketPolicy | arn:aws:s3tables:*:*:bucket/aws-cloudwatch | CloudWatch Logs へのアクセスを許可 
+|===

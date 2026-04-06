@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: create-s3-access-points.html 
+keywords: S3, s3, access points, manage access points, change access points, update access points, modify access points 
+summary: NetApp Workload FactoryでボリュームのS3アクセスポイントを作成します。 
+---
+= NetApp Workload FactoryでボリュームのS3アクセスポイントを作成します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory でボリュームの S3 アクセスポイントを作成して接続します。
+
+.タスクの内容
+Amazon FSx for NetApp ONTAP を使用すると、NFS および SMB ファイルシステムが S3 データにアクセスし、Amazon Bedrock、SageMaker、Athena、AWS Glue などの AWS サービスに接続できます。すべてのオブジェクトストレージデータに AWS サービスを接続できます。
+
+FSx for ONTAP ファイルシステムの NFS および SMB ボリュームに S3 アクセスポイントを接続すると、AWS サービスはファイルが S3 バケット内にあるかのようにファイルにアクセスできます。アクセスポイントを接続するときは、一意の ID を定義し、ファイルアクセスタイプ（UNIX または Windows）を選択し、アクセス許可用のユーザー名を追加します。
+
+S3 アクセス ポイントを接続すると、一意のエイリアスとともに AWS マネジメント コンソールに表示されます。このエイリアスを Amazon Bedrock などの AWS サービスの S3 バケット名として使用して、Amazon FSx for NetApp ONTAP ボリューム内のファイルにアクセスします。
+
+複数の S3 アクセス ポイントを単一の FSx for ONTAP ボリュームに接続できます。それぞれに独自のアクセス レベルがあり、複数の AWS サービスに接続できます。
+
+.開始する前に
+開始する前に、以下の要件を満たしてください。
+
+* S3アクセスポイントを持つ既存のボリュームが必要です。link:create-volume.html["S3アクセスポイントを使用してボリュームを作成する"]
+* このタスクを完了するには、Workload Factory でlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_operations and remediation_権限ポリシーで資格情報を付与する"^]する必要があります。
+
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するボリュームのあるファイルシステムを選択します。
+. ファイルシステムの概要で、*[ボリューム]*タブを選択します。
+. 「ボリューム」タブから、使用するボリュームのアクションメニューを選択し、*高度なアクション*を選択してから、*S3アクセスポイントの管理*を選択します。
+. 「S3アクセスポイントの管理」ページで、*S3アクセスポイントを作成して接続する*を選択します。
+. *Create and attach S3 access point*ページで、次の情報を入力します。
++
+** *S3 アクセス ポイント名*: S3 アクセス ポイントの名前を入力します。
+** *ユーザー*: ボリュームへのアクセス権を持つ既存のユーザーを選択するか、新しいユーザーを作成します。
+** *ユーザー タイプ*: ユーザー タイプとして *UNIX* または *Windows* を選択します。
+** *ネットワーク構成*：*Internet*または*Virtual private cloud (VPC)*を選択します。選択するネットワークのタイプによって、アクセスポイントがインターネットからアクセス可能か、特定のVPCに制限されるかが決まります。Journalテーブル機能を使用するには、ネットワーク構成として*Internet*を選択する必要があります。
+** *Inventory table*：オプション。 `getObject`権限が必要です。ボリューム上でインベントリテーブルを有効にすると、S3アクセスポイントからアクセス可能なすべてのオブジェクトのメタデータが生成され、AWS S3リクエストのコストが発生します。詳細については、link:https://aws.amazon.com/s3/pricing/["Amazon S3 価格設定ドキュメント"^]を参照してください。この表は24時間ごとに更新されます。
+** *S3 アクセス ポイント タグ*：オプションで、最大 50 個のタグを追加したり、タグを削除したりできます。
+
+
+. 「 * Create * 」を選択します。
+
+
+.関連情報
+オプションで、Workload Factory の S3 アクセスポイントでジャーナルテーブル機能を使用できます。ジャーナルテーブルインフラは、Amazon FSx for ONTAP ボリュームアクセスポイント全体でユーザーアクセスイベントとオブジェクト操作の監査ログをキャプチャして保存します。ジャーナルテーブル機能を有効にするには、AWS CloudTrail、AWS CloudWatch、AWS S3 バケット、AWS CloudWatch ロググループ、AWS Identity and Access Management（IAM）ロールとポリシーを含む、必要な AWS インフラをセットアップする必要があります。link:setup-journal-table.adoc["NetApp Workload Factoryのジャーナルテーブルインフラを設定します"^]。
+
+その他の関連トピック：
+
+* link:edit-s3-access-points.html["NetApp Workload Factory でボリュームの S3 アクセスポイントを編集"]
+* link:delete-s3-access-points.html["NetApp Workload Factory でボリュームの S3 アクセスポイントを削除します"]
+
