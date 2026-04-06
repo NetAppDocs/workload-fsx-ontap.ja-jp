@@ -59,7 +59,7 @@ Amazon FSx for ONTAPボリュームアクセスポイント全体でユーザー
 ジャーナルテーブル機能を有効にするには、次の手順を実行します。
 
 * S3アクセスポイントを持つ既存のボリュームがある。link:create-volume.html["S3アクセスポイントを使用してボリュームを作成する"]
-* S3アクセスポイントのネットワーク設定を*インターネット*に設定します。link:edit-s3-access-point.adoc["S3アクセスポイントのネットワーク構成を編集"].
+* S3アクセスポイントのネットワーク設定を*インターネット*に設定します。link:edit-s3-access-points.html["S3アクセスポイントのネットワーク構成を編集"].
 * link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_operations and remediation_の権限を付与する"^]Workload Factoryクレデンシャルに移動します。
 * CloudFormation デプロイメントを実行してジャーナルテーブルを設定するために使用する AWS アカウントに、次の IAM ポリシー権限を追加します。
 +
@@ -201,7 +201,7 @@ S3アクセスポイントからジャーナルテーブルにAWSサービスイ
 . * 適用 * を選択します。
 
 
-いずれかの手順が失敗した場合は、<<Troubleshoot the infrastructure setup,ジャーナルテーブルのインフラストラクチャ設定のトラブルシューティング>>またはNetAppサポートにお問い合わせください。
+いずれかの手順が失敗した場合は、<<ジャーナルテーブルのインフラストラクチャ設定のトラブルシューティング,ジャーナルテーブルのインフラストラクチャ設定のトラブルシューティング>>またはNetAppサポートにお問い合わせください。
 
 
 

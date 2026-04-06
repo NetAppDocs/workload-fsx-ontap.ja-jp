@@ -35,5 +35,5 @@ S3アクセスポイントの詳細情報（エイリアス、ARN、S3 URIなど
 
 
 .関連情報
-* link:setup-journal-table.html["ジャーナル テーブル インフラストラクチャをセットアップし、NetApp Workload Factoryのジャーナル テーブルの設定の問題をトラブルシューティングします。"]
+* link:setup-journal-table.html["ジャーナルテーブルのインフラストラクチャをセットアップする"]
 
