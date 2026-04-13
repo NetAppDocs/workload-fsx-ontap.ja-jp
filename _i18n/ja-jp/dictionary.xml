@@ -1941,7 +1941,6 @@
   <block id="df22e5c72d75cea7ae766daf660bd529" category="summary">必要に応じて、 NetApp Workload Factory で FSx for ONTAPファイル システムのバックアップ スケジュールを管理します。</block>
   <block id="be1c92aa6bef23dd57df3395c46827bb" category="paragraph">NetApp Workload Factory で FSx for ONTAPファイル システムのバックアップ スケジュールを管理します。</block>
   <block id="93ae473ca3e8f97f82687e6f98eab1da" category="list-text">*FSx for ONTAP*から、バックアップ スケジュールを更新するファイル システムのアクション メニューを選択し、*管理*を選択します。</block>
-  <block id="da0f0bd52c148eab60b2dfefe8e25fa3" category="summary">Workload Factory でのボリュームの SMB/CIFS 共有の管理には、作成、ユーザーおよびグループのアクセスの決定、および削除が含まれます。</block>
   <block id="f73fd134806728f0a5ac79982e11ead7" category="doc">Workload Factory でボリュームの SMB/CIFS 共有を管理する</block>
   <block id="c69f3e9214ff94aa0825993b6fb1b85a" category="paragraph">Workload Factory でボリュームの SMB/CIFS 共有を管理するには、SMB/CIFS 共有の作成、アクセス権を付与するユーザーとグループ、付与する権限レベルの決定、SMB/CIFS 共有の削除が含まれます。</block>
   <block id="4b898528f057698b461041b6d7447cfe" category="list-text">[ボリューム] タブから、SMB 共有を変更するボリュームのアクション メニューを選択します。</block>
@@ -3001,4 +3000,7 @@
   <block id="58ff05ec25b45f54f79eb1afc9e31b9c" category="list-text">S3アクセスポイントのネットワーク設定を*インターネット*に設定します。<block ref="f5b1c6fb53ebc8db45e1c55bd4e00f01" category="inline-link-macro-rx"></block>.</block>
   <block id="559b775ce267386e1398935c6753e6f3" category="paragraph">いずれかの手順が失敗した場合は、<block ref="05993fa90b9226bcf7edb149f0761729" category="inline-xref-macro-rx"></block>またはNetAppサポートにお問い合わせください。</block>
   <block id="e520cc743022825140834d2b02cc8cba" category="list-text"><block ref="e520cc743022825140834d2b02cc8cba" category="inline-link-macro-rx"></block></block>
+  <block id="d08fabf4c0fdff2290096692a4ffa28a" category="section-title">ブロックデバイスの最終アクセス時刻</block>
+  <block id="fa4bdc942217a8579f785220b2742233" category="paragraph">Workload Factoryは、ブロックデバイスの最終アクセス時刻を報告します。時刻は、Workload Factoryでigroupに最後にアクセスした時点に基づいています。各ブロックデバイスが最後に使用された日時を知ることで、リソースを最適化することができます。</block>
+  <block id="9b6ea8e99ee787981ebaca2de09e7c7f" category="summary">Workload Factory でボリュームの SMB または CIFS 共有を管理するには、作成、ユーザおよびグループアクセスの決定、削除が含まれます。</block>
 </blocks>
