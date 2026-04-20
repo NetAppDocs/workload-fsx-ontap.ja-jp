@@ -79,10 +79,8 @@ sidebar:
           url: "/restore-from-backup.html"
       - title: レプリケーションを使用する
         entries:
-        - title: レプリケーション関係を作成する
+        - title: データのレプリケート
           url: "/create-replication.html"
-        - title: レプリケーション関係を初期化する
-          url: "/initialize-replication.html"
       - title: 自律型ランサムウェア対策でデータを保護
         url: "/ransomware-protection.html"
       - title: ボリュームのクローニング
