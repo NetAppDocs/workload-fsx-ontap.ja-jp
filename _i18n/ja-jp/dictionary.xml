@@ -2551,7 +2551,6 @@
   <block id="507884c25618fc114f4becd877e50dd8" category="list-text">FSx for ONTAPおよびFSx for ONTAPファイルシステム</block>
   <block id="811a8960cadc3b9f9379096dc8b6b831" category="list-text">第 1 世代から第 1 世代</block>
   <block id="9b03bdd83a5017b3aa998f32e7ad219f" category="list-text">第2世代から第2世代</block>
-  <block id="4031de6ffffe0beb0671ccd52a118661" category="paragraph">2つのFSx for ONTAPファイルシステム間、またはオンプレミスONTAPシステムとFSx for ONTAPファイルシステム間でデータを複製します。</block>
   <block id="66de39f46af06b661b7bce68c01c8e61" category="list-text">使用可能、作成済み、または構成ミス以外の状態のボリュームではレプリケーションはサポートされません。また、ONTAP バージョンに互換性がない場合もサポートされません。</block>
   <block id="cbcff6555c8b07eb6add33653d3ab030" category="list-text">移行のユースケースでは、ストレージ VM のデータおよび設定とのレプリケーション関係を作成する前に、ボリュームの最後のレプリケーションが過去 24 時間以内に完了していることを確認してください。</block>
   <block id="41ad46bbff5ae50ffe14d0bdc1b66775" category="paragraph">移行のためにレプリケーション関係を作成した場合は、ストレージ VM のデータと構成設定をターゲットの FSx for ONTAP ファイルシステムに移行するために、すべてのボリュームとそれに関連付けられたストレージ VM をカットオーバーする必要があります。</block>
@@ -2988,7 +2987,6 @@
   <block id="d08fabf4c0fdff2290096692a4ffa28a" category="section-title">ブロックデバイスの最終アクセス時刻</block>
   <block id="fa4bdc942217a8579f785220b2742233" category="paragraph">Workload Factoryは、ブロックデバイスの最終アクセス時刻を報告します。時刻は、Workload Factoryでigroupに最後にアクセスした時点に基づいています。各ブロックデバイスが最後に使用された日時を知ることで、リソースを最適化することができます。</block>
   <block id="9b6ea8e99ee787981ebaca2de09e7c7f" category="summary">Workload Factory でボリュームの SMB または CIFS 共有を管理するには、作成、ユーザおよびグループアクセスの決定、削除が含まれます。</block>
-  <block id="8e3a7eb1ad6884834be95dd2aaf56b7b" category="paragraph">予期せぬ災害時のデータ損失を回避するために、NetApp Workload FactoryでFSx for ONTAPファイルシステムのレプリケーション関係を作成します。2つのFSx for ONTAPファイルシステム間、またはオンプレミスのONTAPシステムとFSx for ONTAPファイルシステム間でデータをレプリケートできます。</block>
   <block id="3ff25ab258de4c80bbe3f420e00a3c7e" category="paragraph">移行時には、1つのストレージVMのデータと構成設定を複製することを選択できます。データと構成設定を一緒に移行する場合は、ボリュームの最後のレプリケーションが過去24時間以内に完了していることを確認してください。この機能を使用するには、同じストレージVM内のすべてのボリュームを選択する必要があります。すべてのボリュームの階層化ポリシーは、デフォルトでソースボリュームの階層化ポリシーが適用されます。これは、移行のユースケースにおいて推奨される設定です。</block>
   <block id="a4b076b073df12f01e734ba016dbebd2" category="paragraph">Workload Factoryは、以下のストレージシステム間でのストレージVMの移行レプリケーションをサポートしています。</block>
   <block id="5d7e49f428c9183384f592ccb040ea68" category="list-text">レプリケーション関係のターゲットとして使用できるFSx for ONTAPファイルシステムが1つあることを確認してください。</block>
@@ -3028,4 +3026,6 @@
   <block id="d0d09a499e6cdf9f1d34c4e5929c7f4d" category="section-title">ステップ3：移行ユースケースにおけるレプリケーションの切り替え</block>
   <block id="09b43c18bbbe0ab926e24296d842bf9b" category="paragraph">移行ユースケースのレプリケーション関係を作成した後、ストレージVMデータと構成設定をターゲットFSx for ONTAPファイルシステムに移行するために、レプリケーションをカットオーバーして移行を完了する必要があります。カットオーバーレプリケーションは、ソースファイルシステムからターゲットFSx for ONTAPファイルシステムにデータとストレージVM構成設定を永続的に移行します。カットオーバー中に、データは最後に複製されます。カットオーバーが開始されると、ソースストレージVMはオフラインになります。</block>
   <block id="3d7746b6894a23aa721b9d2b99f0bff4" category="list-text">*レプリケーションバージョンのサポート*：ソースストレージシステムとターゲットストレージシステムは、同じメジャーONTAPバージョンである必要があります。例えば、ソースシステムがONTAPバージョン9.18.1を実行している場合、ターゲットシステムもバージョン9.18.1を実行する必要があります。</block>
+  <block id="28cd2b513c45599c0ed271171a723fae" category="paragraph">NetApp Workload Factoryでデータをレプリケートして、データが存在するリージョンで災害が発生した場合のデータ損失を防ぎます。データレプリケーションは、FSx for ONTAPファイルシステムとオンプレミスONTAPシステムまたはCloud Volumes ONTAPの間でサポートされています。</block>
+  <block id="388c14942d26a5119b21a74fab9025a3" category="paragraph">2つのFSx for ONTAPファイルシステム間、オンプレミスONTAPシステムとFSx for ONTAPファイルシステム間、またはCloud Volumes ONTAPとFSx for ONTAPファイルシステム間でデータを複製します。</block>
 </blocks>
