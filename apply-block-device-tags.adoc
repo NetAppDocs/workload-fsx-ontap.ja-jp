@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: apply-block-device-tags.html 
+keywords: tags, EC2 tags, ONTAP tags, block storage tags, apply tags to block devices 
+summary: ONTAPレベルのタグをブロックデバイスに自動的に適用して、NetApp Workload Factoryでリソース管理を行います。 
+---
+= NetApp Workload FactoryでONTAPレベルのタグをブロックデバイスに適用
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload FactoryのネイティブEC2ユーザーデータスクリプトを使用して、AWS EC2インスタンスのデプロイ時にブロックデバイスを自動的に作成およびタグ付けします。AWS EC2コンソールからEC2インスタンスをデプロイする際に、インスタンス起動ウィザードのテンプレートにEC2ユーザーデータスクリプトを追加してください。デプロイ後、Workload Factoryはスクリプトから収集したメタデータを使用して、ブロックデバイスにONTAPレベルのタグを適用します。これらのタグを使用すると、各ブロックデバイスをどのホストが消費しているかを確認できるため、トラブルシューティングや監査の際に、使用状況を責任のあるホストと迅速に関連付けることができます。
+
+.タスクの内容
+EC2ユーザーデータスクリプトは、EC2インスタンスのデプロイ時にブロックデバイスを作成し、ブロックデバイスにONTAPレベルのEC2タグを適用します。
+
+ブロックデバイスに適用される_EC2 tag_には、EC2名、EC2 ID、およびEC2インスタンス内のブロックデバイスのマウントパスが含まれます。
+
+.手順
+. link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-instance-wizard.html["Amazon Elastic Compute Cloud の EC2 インスタンス起動手順"]に従って、AWS EC2コンソールのインスタンス起動ウィザードを使用します。
+. EC2ユーザーデータスクリプトをインスタンス起動ウィザードテンプレートに追加して、ブロックデバイスを自動的に作成およびタグ付けします。
++
+GitHubリポジトリ FSx-ONTAP-sample-scripts にアクセスして、link:https://github.com/NetApp/FSx-ONTAP-samples-scripts/tree/main/Management-Utilities/ec2-user-data-iscsi-create-and-mount["EC2 ユーザーデータスクリプト"]を取得してください。
+
+. インスタンスを起動します。
++
+EC2ユーザーデータスクリプトは、EC2インスタンスでホストされている新しいブロックストレージデバイスにONTAPレベルのタグを自動的に適用します。
+
+. 既存のEC2インスタンスの場合、ユーザーデータスクリプトは再起動後にのみ有効になります。
+
+
+.結果
+EC2タグは、関連付けられたFSx for ONTAPファイルシステム内のブロックデバイステーブルに表示されます。
+
+.関連情報
+* link:create-igroup.html["NetApp Workload Factoryでファイルシステムのイニシエータグループ（igroup）を作成します"]
+* link:manage-block-storage.html["NetApp Workload Factoryでファイルシステムのブロックストレージを管理する"]
+

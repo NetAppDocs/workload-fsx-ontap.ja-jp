@@ -43,14 +43,12 @@ sidebar:
         url: "/create-link.html"
       - title: リンクの管理
         url: "/manage-links.html"
+    - title: ボリュームの作成
+      url: "/create-volume.html"
     - title: キャッシュボリュームの検出と表示
       url: "/discover-cache-volumes.html"
-    - title: ボリュームの管理
-      entries:
-      - title: ボリュームの作成
-        url: "/create-volume.html"
-      - title: データへのアクセス
-        url: "/access-data.html"
+    - title: データへのアクセス
+      url: "/access-data.html"
     - title: ブロックストレージリソースを作成する
       entries:
       - title: igroupの作成
@@ -143,6 +141,8 @@ sidebar:
       entries:
       - title: ブロックストレージを管理する
         url: "/manage-block-storage.html"
+      - title: ブロックデバイスにタグを適用する
+        url: "/apply-block-device-tags.html"
     - title: ファイルシステム管理
       entries:
       - title: ファイルシステムの容量を手動で調整する

@@ -565,7 +565,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="7aa1575aeeddba65d55707b41584cd4a" category="sidebar">Amazon FSx for NetApp ONTAP を使用します</block>
   <block id="2553f0a003cdfb6c46e0fb29cca1c670" category="sidebar">リンクを使用</block>
-  <block id="e2439a8512b353f75391ba9c346bc84d" category="sidebar">ボリュームの管理</block>
   <block id="dc88dce8ec264777b2f90ec0af744f43" category="sidebar">ボリュームの作成</block>
   <block id="8272f5b23e79d0ee33bd5151dcddc454" category="sidebar">Storage VM を作成</block>
   <block id="e5787a3a7b79c3cdbeb01e163f0a84de" category="sidebar">Snapshotの管理</block>
@@ -689,7 +688,6 @@
   <block id="c853397a437814fc2251c95bdf57909f" category="list-text">[関係の削除]ダイアログで、*[削除]*を選択します。</block>
   <block id="ad1d6a18c0d830b44dfe2e6a96d2807d" category="list-text">必要に応じて、*[ボリュームのバックアップ]*を選択して、削除前にボリュームをバックアップします。</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">「 * Continue * 」を選択します。</block>
-  <block id="c5c6c97593c886ac31454d1f10313b78" category="list-text">[有効化]ボタンを選択して*[自動容量管理を有効にする]*を選択します。</block>
   <block id="759c5ad2620497fe90dc2bc5e085c8c0" category="summary">長期保存のためのスナップショットを有効にします。これにより、長期的なディザスタリカバリのために特定のスナップショットをレプリケートできます。</block>
   <block id="37873c6c78867be44aa0676105354543" category="paragraph">長期保存により、サイト全体に障害が発生した場合でもビジネスサービスの運用を継続でき、セカンダリコピーを使用したアプリケーションの透過的なフェイルオーバーがサポートされます。</block>
   <block id="8107582f3eb31967f7b5b6bdc4826ea0" category="list-text">長期保持のためのSnapshotを無効にすることを選択した場合は、*[適用]*を選択してこの処理を完了します。</block>
@@ -1863,7 +1861,6 @@
   <block id="c39b3cbd986af96ef05b9724f0b92e6b" category="summary">ボリュームの自動拡張を有効にすると、Workload Factory がボリューム容量を管理できるようになります。いつでも無効にすることができます。</block>
   <block id="467fbaad5c04b9212fefde208c6fce39" category="doc">ワークロードファクトリーでボリュームの自動拡張を有効にする</block>
   <block id="c7cb41d0ae0beeca525b094df6834ee5" category="list-text">「ボリューム」タブから、変更するボリュームのアクション メニューを選択します。</block>
-  <block id="700ddd4e501b4b63ce13f0a4091d97c3" category="list-text">*FSx for ONTAP*から、自動容量管理を有効にするファイル システムのアクション メニューを選択します。</block>
   <block id="a2f3bd55649066a9bad9a42a8df63f08" category="paragraph">NetApp Workload Factory では、長期保存用のスナップショットを有効にして、長期的な災害復旧のために特定のスナップショットを複製することができます。</block>
   <block id="116537ad3a8e9d253ab6c2cf9b1375c4" category="list-text">*FSx for ONTAP*から、更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
   <block id="92f16ef088dcbde798778ff8c71b147a" category="list-text">レプリケーション関係タブで、変更するレプリケーション関係スケジュールのアクション メニューを選択します。</block>
@@ -2167,13 +2164,11 @@
   <block id="05fbfa43ca52b70a735d4a870f0f8f6d" category="inline-link-macro">音量容量調整機能</block>
   <block id="8f764b06860786fe5978951124c18450" category="paragraph">オプションとして、ボリュームの容量を手動でいつでも増やすことができます。<block ref="e78173f6bdea353abf41de50dd00987d" category="inline-link-macro-rx"></block> 。</block>
   <block id="ad5ba1f7c14b2135486dafc0e40196ac" category="summary">この機能を有効にすると、時間の経過とともに容量のニーズが変化すると、Workload Factory は FSx for ONTAPファイルシステムに増分ストレージまたは inode を自動的に追加できるようになります。</block>
-  <block id="e1d481cddc46ccb42fc6f59c020f5ce1" category="paragraph">自動容量管理を有効にすると、FSx for ONTAPファイル システムの最大サイズ制限まで増分ストレージが自動的に追加されます。</block>
   <block id="7950e88c4d4bc489666a4af446a7d303" category="inline-link-macro">_表示、計画、および分析_権限ポリシーで資格情報を付与する</block>
   <block id="37d3a1150da64094460d233181c8c83e" category="list-text">絶対です<block ref="1773ab1fe4aa6a3e5fc61d86a29970f0" category="inline-link-macro-rx"></block>このタスクを完了するには、Workload Factory にアクセスしてください。</block>
   <block id="650ad6fb48eb81eacfa521124d1dc357" category="list-text">*警告しきい値*: Workload Factory 通知サービスからの通知をトリガーするには、警告しきい値をしきい値の増加よりも低く設定します。デフォルトは 70% です。</block>
   <block id="8ec47943fca737be2b087573534a2057" category="inline-link-macro">Workload Factory通知サービスを有効にしました</block>
   <block id="60c52248134394a776265c66248137a8" category="paragraph">警告しきい値の設定は、<block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block> 。</block>
-  <block id="4e88714beba53ff4a9a4132c11a62597" category="list-text">*しきい値の増加*: FSx for ONTAPファイル システムの最大増加パーセンテージを入力します。デフォルトは 80% です。</block>
   <block id="e5896468cb243b3cd2e0e75b0ca7173d" category="admonition">*Terraform ユーザー*: Terraform には、すべての操作を Terraform 内で完了する必要があるという制限があります。  inode 管理は Terraform ではサポートされていませんが、Workload Factory コンソールで自動 inode 管理を有効にすることができます。</block>
   <block id="0a0054f32c5856b9e4d1227d3aff2de3" category="list-text">ボリュームの inode を自動的に管理するには、リンクを関連付ける必要があります。<block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="2dc6db0702897622d8829494f1d3b37f" category="inline-link-macro">Workload Factory通知サービスを有効にする</block>
@@ -2606,7 +2601,6 @@
   <block id="201a18ac1c906df6358f39af33c244de" category="summary">NetApp Workload FactoryでFSx for ONTAPファイルシステムのブロックストレージを管理します。</block>
   <block id="0006ccbc0d0f541209207d590ebc1b08" category="doc">NetApp Workload Factoryでファイルシステムのブロックストレージを管理する</block>
   <block id="373d40a556613e20661d6c89ac8751a6" category="paragraph">NetApp Workload Factory を使用して、igroup やブロックデバイスなどのブロックストレージリソースの管理を簡素化し、FSx for ONTAP ブロックデバイスのクライアントアクセスを制御することで、最適なパフォーマンスを実現し、コストを最小限に抑えます。</block>
-  <block id="60318fe3439a99a9762a5aaaa9cc7b95" category="paragraph">Workload Factory コンソールから、イニシエータ グループ（igroup）を管理して、ブロック デバイスへのクライアント アクセスを制御できます。また、ブロック デバイスの詳細を表示したり、容量を増やしたり、クライアント アクセスを管理したり、非アクティブなブロック デバイスのデータをアーカイブしたり、ブロック デバイスを削除したりすることもできます。</block>
   <block id="e0c31cfa2277dcf409fc0398234ce79b" category="paragraph">ブロック ストレージ図をチェックして、次の点を確認します：</block>
   <block id="30f276b848a0c37c6c54368f5714fc72" category="list-text">クライアント接続</block>
   <block id="e7963aa68819cfe7f854ea292af57bb0" category="list-text">ブロックデバイスのステータス</block>
@@ -2625,20 +2619,8 @@
   <block id="d5d9ee8255b76e97868c3facadf58360" category="paragraph">キャパシティ管理を有効にすると、NetApp Workload Factoryは、時間の経過とともに容量のニーズが変化するため、FSx for ONTAPファイル システムに増分ストレージを自動的に追加します。さらに、この機能を有効にすると、容量を手動で監視する必要がなくなります。</block>
   <block id="b5750806a6c2de28360d7b511ba01b0c" category="paragraph">システムは 30 分ごとに FSx for ONTAP ファイルシステムをスキャンします。増分ストレージを追加する必要があるかどうかを確認し、使用可能なボリューム inode を検証します。カウントは自動容量管理しきい値に基づいて増加します。</block>
   <block id="7bdf690b1d068245416e9f5cbb766f44" category="paragraph">inode管理を有効にすると、容量のニーズが変化したときに、NetApp Workload FactoryがFSx for ONTAPファイル システムに増分inodeを自動的に追加します。この機能により、手動でのinode監視が不要になります。</block>
-  <block id="d00e9db543e20f2a587eedfba7e3b329" category="list-text">［情報］の下で、［容量管理］の横にある鉛筆アイコンを選択します。［容量管理］行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆アイコンが表示されます。</block>
-  <block id="eafb35aad9f2005878f19fafa1be8d82" category="list-text">*容量管理*ダイアログで、次の情報を入力します：</block>
-  <block id="70c7829e6e55aa891ddd55aaf7bd1275" category="list-text">*モード*：容量を自動的に管理するモードを選択します。オプションは増分モードと適応モードです。</block>
-  <block id="8d1178637079d74b1d4df6828507f656" category="list-text">*増分モード*：しきい値で容量を一定量増加します。</block>
   <block id="a850b45530431e433b34aeb17888df66" category="paragraph">これは、Workload Factory が容量を増やすジョブをトリガーするしきい値です。たとえば、ファイル システムの容量が 80% に達すると、Workload Factory は容量を増加させます。</block>
-  <block id="de019eb3e94bf6fbb51fa0fc90f5bd75" category="list-text">*適応モード*：履歴データに基づいて容量を予測および変更します。</block>
-  <block id="11d9ed6b9e54bdea1a4ecc52907361f8" category="list-text">*分析期間*：容量予測に考慮する履歴データの量を決定するために、分析期間を時間単位で設定します。デフォルトは120時間です。</block>
-  <block id="39f6b6f1dee1cd96aadfd7e0f2089c76" category="list-text">*計画バッファ時間*：実際に必要になる前に容量が確実に増加するように、バッファ時間を時間単位で設定します。デフォルトは 48 時間です。</block>
   <block id="52f65090db0661db649aa6c7e46a8b14" category="paragraph">追加の容量が必要かどうかを判断するために、ファイル システム スキャンが 30 分ごとに実行されます。</block>
-  <block id="5d38a14c79cf5c5f38102d6436886068" category="section-title">容量通知を有効にする</block>
-  <block id="6a93267b6668918bd024785ba7a1af41" category="paragraph">ファイル システムが特定の容量しきい値に達したときにアラートを受け取るように通知を設定します。</block>
-  <block id="5c91dfe3f77e6a44fd914ea673600879" category="paragraph">この機能を使用するには<block ref="92ba022a113ba350cc22eb4ba703843c" category="inline-link-macro-rx"></block>する必要があります。</block>
-  <block id="5bcc265168b27815fd10f23b771bad2a" category="list-text">*容量管理*ダイアログで、*容量通知を有効にする*を選択して、容量がしきい値に達したとき、およびWorkload Factoryが自動容量増加を実行するたびに通知をオンにします。</block>
-  <block id="3f810138549fa80c7e69f8ec485c8a27" category="list-text">ファイル システムが特定の容量パーセンテージに達したときに通知を受け取るように *通知しきい値* を設定します。デフォルトは70%です。</block>
   <block id="fcb18dec8d5281d1ce666db128df5515" category="section-title">ファイル システムの inode 管理を有効にする</block>
   <block id="083afef27eb29c6a017bada830bc631c" category="paragraph">自動 inode 管理を有効にして、ボリュームあたりの inode（ファイル）の数を許容制限まで増やします。</block>
   <block id="d933b8209c8cd56ba75386ce9ae7847a" category="paragraph">FSx for ONTAP ファイル システムのスキャンは 30 分ごとに実行されます。利用可能なボリューム inode を検証し、増分 inode を追加する必要があるかどうかを確認します。カウントは自動 inode 管理しきい値に基づいて増加します。</block>
@@ -3028,4 +3010,61 @@
   <block id="3d7746b6894a23aa721b9d2b99f0bff4" category="list-text">*レプリケーションバージョンのサポート*：ソースストレージシステムとターゲットストレージシステムは、同じメジャーONTAPバージョンである必要があります。例えば、ソースシステムがONTAPバージョン9.18.1を実行している場合、ターゲットシステムもバージョン9.18.1を実行する必要があります。</block>
   <block id="28cd2b513c45599c0ed271171a723fae" category="paragraph">NetApp Workload Factoryでデータをレプリケートして、データが存在するリージョンで災害が発生した場合のデータ損失を防ぎます。データレプリケーションは、FSx for ONTAPファイルシステムとオンプレミスONTAPシステムまたはCloud Volumes ONTAPの間でサポートされています。</block>
   <block id="388c14942d26a5119b21a74fab9025a3" category="paragraph">2つのFSx for ONTAPファイルシステム間、オンプレミスONTAPシステムとFSx for ONTAPファイルシステム間、またはCloud Volumes ONTAPとFSx for ONTAPファイルシステム間でデータを複製します。</block>
+  <block id="5a022ce9df2c118b15eecf6d431faf14" category="doc">ブロックデバイスのクローン</block>
+  <block id="c74340453798a5d4d4e10a5aaef38904" category="paragraph">Workload Factoryは、ブロックデバイスのクローン機能を提供することで、容量、アクセス、ライフサイクルを制御しながら、書き込み可能で効率的なデータコピーを迅速にプロビジョニングできるようにします。</block>
+  <block id="91cb86206fad91f1ee03be3263ce2b5e" category="section-title">ブロックデバイス上のEC2タグ</block>
+  <block id="4cdbcf74dda458c541b8fb774532f64e" category="paragraph">ブロックデバイステーブルに、各ブロックデバイスを使用しているEC2ホストのタグを表示する列が追加されました。これは、トラブルシューティングや監査の際に、どのホストが各ブロックデバイスを使用しているかを特定するのに役立ちます。</block>
+  <block id="1182d4b8399f34126ea205e47a6a77aa" category="paragraph">各ブロックデバイスにタグを作成するには、提供されているユーザースクリプトを使用してEC2インスタンスをデプロイします。</block>
+  <block id="949772caeac38120e37726672f87e673" category="inline-link-macro">ブロックデバイスにタグを割り当てるEC2ユーザーデータスクリプト</block>
+  <block id="f253e6c2e63632a5f1a7ef4fe6522c2f" category="paragraph"><block ref="f253e6c2e63632a5f1a7ef4fe6522c2f" category="inline-link-macro-rx"></block></block>
+  <block id="607326d3637e008b134e64f39d8da723" category="section-title">FSx for ONTAP ファイルシステムの容量トレンド</block>
+  <block id="f9fdfcc52193908a516c0b9d7964af8e" category="paragraph">FSx for ONTAP ファイルシステムの概要から、SSD 容量のトレンドを直接確認できます。容量管理用の新しいカードでは、前月の使用状況のトレンドを包括的に表示します。この分析には、実際に使用された容量と割り当てられた容量の比較が含まれており、リソース使用率を明確に評価できます。</block>
+  <block id="9fe282a2158bc82a938a6290a314ca79" category="inline-link-macro">NetApp Workload Factoryで容量を自動的に管理</block>
+  <block id="9ab7147fcc802f47be068771ba492092" category="paragraph"><block ref="9ab7147fcc802f47be068771ba492092" category="inline-link-macro-rx"></block></block>
+  <block id="408971f10d86e5c4321ade595b2c0c02" category="summary">ONTAPレベルのタグをブロックデバイスに自動的に適用して、NetApp Workload Factoryでリソース管理を行います。</block>
+  <block id="afd74d04ea9a5b8ff37eb68cdc1ce134" category="doc">NetApp Workload FactoryでONTAPレベルのタグをブロックデバイスに適用</block>
+  <block id="4e3be99b46a9e938ac0b99ef12ed4a7e" category="paragraph">NetApp Workload FactoryのネイティブEC2ユーザーデータスクリプトを使用して、AWS EC2インスタンスのデプロイ時にブロックデバイスを自動的に作成およびタグ付けします。AWS EC2コンソールからEC2インスタンスをデプロイする際に、インスタンス起動ウィザードのテンプレートにEC2ユーザーデータスクリプトを追加してください。デプロイ後、Workload Factoryはスクリプトから収集したメタデータを使用して、ブロックデバイスにONTAPレベルのタグを適用します。これらのタグを使用すると、各ブロックデバイスをどのホストが消費しているかを確認できるため、トラブルシューティングや監査の際に、使用状況を責任のあるホストと迅速に関連付けることができます。</block>
+  <block id="59adf89635b6e0af666dd4f48d1e4af5" category="paragraph">EC2ユーザーデータスクリプトは、EC2インスタンスのデプロイ時にブロックデバイスを作成し、ブロックデバイスにONTAPレベルのEC2タグを適用します。</block>
+  <block id="d27f369607ec04a5867d5cf464d0beca" category="paragraph">ブロックデバイスに適用される_EC2 tag_には、EC2名、EC2 ID、およびEC2インスタンス内のブロックデバイスのマウントパスが含まれます。</block>
+  <block id="91bf41936e8654c1243d1aafd192b3b5" category="inline-link-macro">Amazon Elastic Compute Cloud の EC2 インスタンス起動手順</block>
+  <block id="61745748bc899eddac2cbd3ac107b47c" category="list-text"><block ref="b2b1cddbb7ebbfd176c8e2b8f4d9478a" category="inline-link-macro-rx"></block>に従って、AWS EC2コンソールのインスタンス起動ウィザードを使用します。</block>
+  <block id="bf51b85ce4f8fad76dfc76a9c238fdf1" category="list-text">EC2ユーザーデータスクリプトをインスタンス起動ウィザードテンプレートに追加して、ブロックデバイスを自動的に作成およびタグ付けします。</block>
+  <block id="0a1aaabb4c9e55ee08ea763d11ed001e" category="inline-link-macro">EC2 ユーザーデータスクリプト</block>
+  <block id="5808acc578d885a031ef2c6e21db45ce" category="paragraph">GitHubリポジトリ FSx-ONTAP-sample-scripts にアクセスして、<block ref="8f119e1ca236cc96e65275f65c095c65" category="inline-link-macro-rx"></block>を取得してください。</block>
+  <block id="00288a5b58c73c5d8737ba4edaf020e4" category="list-text">インスタンスを起動します。</block>
+  <block id="63c72d7d3fdb495f83c711241ddecf32" category="paragraph">EC2ユーザーデータスクリプトは、EC2インスタンスでホストされている新しいブロックストレージデバイスにONTAPレベルのタグを自動的に適用します。</block>
+  <block id="4cd7e529e00480d5fefb11dcd1f5488e" category="list-text">既存のEC2インスタンスの場合、ユーザーデータスクリプトは再起動後にのみ有効になります。</block>
+  <block id="29b6e33414e7d0e4411ace82e79b290c" category="paragraph">EC2タグは、関連付けられたFSx for ONTAPファイルシステム内のブロックデバイステーブルに表示されます。</block>
+  <block id="30d27ffcd856ab25c82d64aa781314d3" category="inline-link-macro">NetApp Workload Factoryでファイルシステムのイニシエータグループ（igroup）を作成します</block>
+  <block id="d7738a2cfc28b206bc9bb15af5cf1bf8" category="list-text"><block ref="d7738a2cfc28b206bc9bb15af5cf1bf8" category="inline-link-macro-rx"></block></block>
+  <block id="521f3c46f3c55c8cbef62abfb3a885c7" category="list-text"><block ref="521f3c46f3c55c8cbef62abfb3a885c7" category="inline-link-macro-rx"></block></block>
+  <block id="eb65a539cb451b6fbdc221ea311b28d4" category="paragraph">Workload Factoryコンソールから、イニシエータグループ（igroup）を管理して、クライアントによるブロックデバイスへのアクセスを制御できます。ブロックデバイスの詳細を表示したり、容量を増やしたり、クローンを作成したり、クライアントアクセスを管理したり、非アクティブなブロックデバイスのデータをアーカイブしたり、ブロックデバイスを削除したりすることもできます。</block>
+  <block id="f12250ce1a89e4780f783e37faff61bf" category="section-title">ブロックデバイスをクローンする</block>
+  <block id="3852c39d262a8881e2a8268be54fe6ca" category="paragraph">既存のブロックデバイスのクローンはいつでも作成できます。ブロックデバイスのクローンとは、元のブロックデバイスの書き込み可能なコピーであり、元のデバイスまたはクローンのいずれかに変更が加えられるまで、同じデータブロックを共有します。ブロックデバイスのクローン作成は、追加のストレージ容量を消費することなく、データの再利用可能なコピーを迅速かつ効率的に作成する方法です。</block>
+  <block id="4cbb5fd33ac98b9c735c391778c8d7f0" category="list-text">ブロックデバイスのアクションメニューに移動し、*ブロックデバイスの複製*を選択します。</block>
+  <block id="929051af38dd6b0381c93579bedb478d" category="list-text">「ブロックデバイスの複製」ダイアログで、複製したブロックデバイスの名前を入力します。</block>
+  <block id="9fe66450d94dd471c65e7c48e7574afd" category="list-text">オプションで、ボリュームの空き容量が少なくなったときにクローンブロックデバイスを自動的に削除する自動削除を有効にします。</block>
+  <block id="3f6182f8b829a2b8dac8608939de86e6" category="list-text">*iSCSI構成*：オプション。ブロックデバイスのクローンをホストイニシエータに接続するには、新しいイニシエータグループを作成するか、既存のイニシエータグループにマッピングします。</block>
+  <block id="bf13cfa9990015b5ba0006913a4d3697" category="list-text">*新しいイニシエータグループを作成する*：このオプションを選択すると、ブロックデバイスのクローン用に新しいイニシエータグループが作成されます。以下の詳細を入力してください：</block>
+  <block id="99d3866ac5c6ba618aaf3143db301a5b" category="list-text">*ホストオペレーティングシステム*：ホストオペレーティングシステムの種類を選択してください。</block>
+  <block id="3efb2d82cf33087b8cafdf6d069fb5e4" category="list-text">*イニシエーターグループ名*：igroupの名前を入力します。</block>
+  <block id="a113aa07b36a47078eaad655b24f8b10" category="list-text">*既存のイニシエータグループにマッピング*：このオプションを選択すると、ブロックデバイスのクローンが既存のイニシエータグループにマッピングされます。ブロックデバイスをマッピングするイニシエータグループを1つ以上選択してください。</block>
+  <block id="ea8da9dc858ea1d17060728f173c4d71" category="list-text">*Clone*を選択して、ブロックデバイスのクローンを作成します。</block>
+  <block id="203e616ed82fa6546f9999807f34c99e" category="section-title">自動容量管理と容量通知を有効にする</block>
+  <block id="907ec66004c2b411a03471b9875eed7b" category="paragraph">FSx for ONTAP ファイルシステムの最大サイズ制限まで増分ストレージを自動的に追加するために、自動容量管理を有効にします。ファイルシステムが一定の容量しきい値に達したときにアラートを受け取るように通知を設定します。</block>
+  <block id="bc86da8bf515d19787d896a0141bf5c2" category="list-text">*FSx for ONTAP* から、自動容量を有効にするファイルシステムを選択します。</block>
+  <block id="6295149c5cb94797e55cbe5c7539fa56" category="list-text">自動容量管理カードで、*管理*を選択します。</block>
+  <block id="e5711037f8e63eeedc2c04d138ff588b" category="list-text">容量管理方法を選択してください。オプションは、増分モードと適応モードです。</block>
+  <block id="e5a2f196660d32f0ab1950271fecf1f9" category="list-text">*増分*：しきい値で容量を一定量ずつ増加させます。</block>
+  <block id="bdeb0344b5a2f528dfc652c5fd8fb865" category="list-text">*しきい値*：Workload Factory通知サービスからの通知をトリガーするために、しきい値を増分増加よりも低く設定します。デフォルト値は70%です。</block>
+  <block id="449a38bbcb6434ee7ed199ab25680695" category="paragraph">しきい値設定は、<block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block>場合にのみ使用できます。</block>
+  <block id="ef32c449d460f74cb349c2f64a23580b" category="list-text">*段階的増加*：FSx for ONTAP ファイルシステムの最大増加率を入力します。デフォルトは 80% です。</block>
+  <block id="dbd2a879edd3f77d99da5f05f010db3a" category="list-text">*適応型*：履歴データに基づいて容量を予測し、変更します。</block>
+  <block id="f131feb55a78e1beb8b4f46023bd04a9" category="list-text">*ルックバック*：分析期間を時間単位で設定して、容量予測のためにどれだけの履歴データを考慮するかを決定します。デフォルトは120時間です。</block>
+  <block id="b743c8928261822d2f08d89f862413ab" category="list-text">*事前に計画を立てましょう*：実際に容量が必要になる前に容量を増やすことができるよう、バッファ時間を時間単位で設定してください。デフォルトは48時間です。</block>
+  <block id="cc943b0b0f1ddb0c8232f2bb0ab56d0e" category="list-text">*自動容量管理を有効にする*を選択し、認証情報の_表示、計画、分析_権限を付与します。</block>
+  <block id="30dd41f65f34e35a6b1cadb93c28336a" category="list-text">*容量通知を有効にする*を選択すると、設定したしきい値に容量が達したとき、およびWorkload Factoryが自動的に容量を増加させたときに通知が有効になります。デフォルト値は70%です。</block>
+  <block id="8da70820bee8cb0d257b3ee6f7436e40" category="paragraph">容量通知設定は、<block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block>また、自動容量管理が有効になっている場合にのみ使用できます。</block>
+  <block id="3be044b694628f6e958377c22febfacd" category="section-title">2026年5月3日</block>
+  <block id="4ccd08ccc04cf1986a6dc1a2de287f72" category="sidebar">ブロックデバイスにタグを適用する</block>
 </blocks>
