@@ -3018,7 +3018,6 @@
   <block id="949772caeac38120e37726672f87e673" category="inline-link-macro">ブロックデバイスにタグを割り当てるEC2ユーザーデータスクリプト</block>
   <block id="f253e6c2e63632a5f1a7ef4fe6522c2f" category="paragraph"><block ref="f253e6c2e63632a5f1a7ef4fe6522c2f" category="inline-link-macro-rx"></block></block>
   <block id="607326d3637e008b134e64f39d8da723" category="section-title">FSx for ONTAP ファイルシステムの容量トレンド</block>
-  <block id="f9fdfcc52193908a516c0b9d7964af8e" category="paragraph">FSx for ONTAP ファイルシステムの概要から、SSD 容量のトレンドを直接確認できます。容量管理用の新しいカードでは、前月の使用状況のトレンドを包括的に表示します。この分析には、実際に使用された容量と割り当てられた容量の比較が含まれており、リソース使用率を明確に評価できます。</block>
   <block id="9fe282a2158bc82a938a6290a314ca79" category="inline-link-macro">NetApp Workload Factoryで容量を自動的に管理</block>
   <block id="9ab7147fcc802f47be068771ba492092" category="paragraph"><block ref="9ab7147fcc802f47be068771ba492092" category="inline-link-macro-rx"></block></block>
   <block id="408971f10d86e5c4321ade595b2c0c02" category="summary">ONTAPレベルのタグをブロックデバイスに自動的に適用して、NetApp Workload Factoryでリソース管理を行います。</block>
@@ -3067,4 +3066,8 @@
   <block id="8da70820bee8cb0d257b3ee6f7436e40" category="paragraph">容量通知設定は、<block ref="e500d492a56da387ccd67dac5045b171" category="inline-link-macro-rx"></block>また、自動容量管理が有効になっている場合にのみ使用できます。</block>
   <block id="3be044b694628f6e958377c22febfacd" category="section-title">2026年5月3日</block>
   <block id="4ccd08ccc04cf1986a6dc1a2de287f72" category="sidebar">ブロックデバイスにタグを適用する</block>
+  <block id="596e30b7050101709ce0d710420e77a7" category="paragraph">FSx for ONTAP ファイルシステムの概要から SSD 容量のトレンドを直接確認できます。容量管理用の新しいカードには、前月の使用傾向が表示されます。この分析では、実際の容量と割り当てられた容量を比較することで、リソースの使用状況を容易に評価できます。</block>
+  <block id="deede3cf7f18c08613ec53890188368e" category="section-title">FSx for ONTAPファイルシステムの適切に設計された状態に関するPDFレポート</block>
+  <block id="09731bdb23a8e229cca44808afd3eb18" category="inline-link-macro">NetApp Workload FactoryでFSx for ONTAPファイルシステムの適切なアーキテクチャのステータスを表示します。</block>
+  <block id="bf36e3bb684711138abb04e7f7f95c1a" category="paragraph">分析後、記録用またはチームと共有するために、FSx for ONTAP ファイルシステムの適切なアーキテクチャステータスに関する PDF レポートをダウンロードできます。<block ref="8f1fbab727bbab0e7967c959283750c4" category="inline-link-macro-rx"></block></block>
 </blocks>
