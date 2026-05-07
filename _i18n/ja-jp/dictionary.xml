@@ -2975,7 +2975,6 @@
   <block id="ed57615365ad2815423480008d91d450" category="section-title">切り替え作業の計画</block>
   <block id="fa425772bf4dc1e54c8368c2b99d4b1b" category="paragraph">移行ユースケースにおける切り替え作業を計画する際には、以下の点を考慮してください。</block>
   <block id="d77811034f737ab45ed7ddebe9c096fd" category="inline-xref">切り替え後に構成設定を更新する</block>
-  <block id="6ceb7ae37e1ac2ec5ebe38f0e5082457" category="list-text">*ストレージVM構成設定*：カットオーバー処理では、すべてのストレージVM構成設定がターゲットストレージVMに移行されるわけではありません。たとえば、iSCSI、ブロードキャストドメインMTU、DNS設定は移行されません。カットオーバー後、ターゲットストレージVMでこれらの設定を手動で更新してください。詳細については、<block ref="af05d35e02c20d22f4e6b1df9b57e0a2" category="inline-xref-macro-rx"></block>セクションを参照してください。</block>
   <block id="dddf91d5ccee3135470e6089b62618ba" category="list-text">*クローン*：クローンは個別のボリュームとして移行されるため、ターゲットのFSx for ONTAPファイルシステムでより多くのスペースを消費します。ターゲットの容量増加を避けるため、カットオーバー前にクローンを削除することを検討してください。</block>
   <block id="233115f3ed74b7b4516b8f0a1efbaedf" category="list-text">*キャッシュボリューム*：ONTAP FlexCache 9.17.x以前の場合。キャッシュボリュームを含むソースストレージVMは、カットオーバーではサポートされません。移行の失敗を回避するには、カットオーバー前にONTAP FlexCache関係を削除してください。</block>
   <block id="03c85e91696d00a533c3da3b08434532" category="list-text">*AWS S3 アクセスポイント*：S3 アクセスポイントを使用するボリュームでは、移行ユースケースのためのカットオーバーレプリケーションはサポートされていません。移行の失敗を避けるため、ソースボリュームから S3 アクセスポイントを削除してください。</block>
@@ -3070,4 +3069,8 @@
   <block id="deede3cf7f18c08613ec53890188368e" category="section-title">FSx for ONTAPファイルシステムの適切に設計された状態に関するPDFレポート</block>
   <block id="09731bdb23a8e229cca44808afd3eb18" category="inline-link-macro">NetApp Workload FactoryでFSx for ONTAPファイルシステムの適切なアーキテクチャのステータスを表示します。</block>
   <block id="bf36e3bb684711138abb04e7f7f95c1a" category="paragraph">分析後、記録用またはチームと共有するために、FSx for ONTAP ファイルシステムの適切なアーキテクチャステータスに関する PDF レポートをダウンロードできます。<block ref="8f1fbab727bbab0e7967c959283750c4" category="inline-link-macro-rx"></block></block>
+  <block id="6279c641e85ceb888c688f0c728cd930" category="list-text">ストレージシステム間での安全なデータ転送と管理を可能にするため、TCPポート11105と11106を開放してください。</block>
+  <block id="eeb77472aa3a83d51f0873ec83e22572" category="list-text">*ストレージVM構成設定*：</block>
+  <block id="0abde7f01f46e5ae295493bf4b280687" category="list-text">切り替え操作では、すべてのストレージVM構成設定がターゲットストレージVMに移行するわけではありません。例えば、iSCSI、ブロードキャストドメインMTU、DNS設定などは移行されません。切り替え後、対象のストレージVM上でこれらの設定を手動で更新してください。詳細については、<block ref="af05d35e02c20d22f4e6b1df9b57e0a2" category="inline-xref-macro-rx"></block>セクションを参照してください。</block>
+  <block id="893700039eb02078c7602e997d7f9922" category="list-text">ストレージVMがドメイントンネル認証を使用している場合は、移行を開始する前に、ターゲットファイルシステム上でドメイントンネルを設定して有効にしてください。</block>
 </blocks>
