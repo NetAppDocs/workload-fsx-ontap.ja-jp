@@ -3073,4 +3073,5 @@
   <block id="0abde7f01f46e5ae295493bf4b280687" category="list-text">切り替え操作では、すべてのストレージVM構成設定がターゲットストレージVMに移行するわけではありません。例えば、iSCSI、ブロードキャストドメインMTU、DNS設定などは移行されません。切り替え後、対象のストレージVM上でこれらの設定を手動で更新してください。詳細については、<block ref="af05d35e02c20d22f4e6b1df9b57e0a2" category="inline-xref-macro-rx"></block>セクションを参照してください。</block>
   <block id="893700039eb02078c7602e997d7f9922" category="list-text">ストレージVMがドメイントンネル認証を使用している場合は、移行を開始する前に、ターゲットファイルシステム上でドメイントンネルを設定して有効にしてください。</block>
   <block id="ec76bc02c6a3a5c32e0e22c2926d0319" category="list-text">ストレージシステム間での安全なデータ転送と管理を可能にするため、TCPポート11104と11106を開放してください。</block>
+  <block id="8ee47478c07b40fab9e5a6a34028629c" category="list-text">ストレージシステム間の安全なデータ転送と管理のために、TCPポート11104と11105を開放してください。ICMPは必須ではありませんが、ネットワークのチェックやトラブルシューティングに役立ちます。</block>
 </blocks>
