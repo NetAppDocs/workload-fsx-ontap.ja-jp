@@ -76,7 +76,7 @@ summary: スナップショット設定を編集し、ディレクトリ アク�
 
 スナップショットから既存のボリュームまたは新しいボリュームにデータを復元するオプションがあります。
 
-link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_snapshot-mgmt/restore-volume-from-snapshot.html["Snapshotからボリュームをリストアする"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/restore-volume-from-snapshot.html["Snapshotからボリュームをリストアする"]
 
 
 

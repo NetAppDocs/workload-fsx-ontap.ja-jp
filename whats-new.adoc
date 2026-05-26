@@ -647,7 +647,7 @@ Amazon Elastic Block Store (EBS)、FSx for Windows File Server、Elastic File Sy
 
 データ保護ボリュームの場合、SMB/CIFS 共有を作成するフローに、マウント目的でボリュームへのジャンクション パスの作成が含まれるようになりました。
 
-link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_grogu-5684-wa-dismiss/manage-cifs-share.html#create-a-cifs-share-for-a-volume["ボリュームのCIFS共有を作成する"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-cifs-share.html#create-a-cifs-share-for-a-volume["ボリュームのCIFS共有を作成する"]
 
 
 

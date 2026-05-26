@@ -68,7 +68,7 @@ ONTAPは、重複排除機能と圧縮機能を活用してストレージ効率
 
 .. * Snapshotポリシー*：Snapshotポリシーを選択して、Snapshotの頻度と保持を指定します。
 +
-以下は AWS のデフォルトポリシーです。既存のスナップショットポリシーを表示するには、 link:link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクの関連付け"]。
+以下は AWS のデフォルトポリシーです。既存のスナップショットポリシーを表示するには、 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクの関連付け"]。
 
 +
 `default`:: このポリシーでは、次のスケジュールでSnapshotが自動的に作成され、新しいコピー用のスペースを確保するために最も古いSnapshotコピーが削除されます。
