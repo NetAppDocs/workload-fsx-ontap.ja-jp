@@ -31,7 +31,7 @@ NOTE: コンソールエージェントを使用する場合、AWS Secrets Manag
 
 新しいリンクの関連付けには、リンクの作成と関連付けが含まれます。
 
-このワークフローでリンクを作成するには、自動または手動の 2 つのオプションがあります。リンクを作成するには、AWSアカウントでAWS CloudFormationスタックを起動する必要があります。
+このワークフローでリンクを作成するには、自動作成と手動作成の2つの方法があります。AWS GovCloud アカウントをお持ちの場合は、手動で新しいリンクを作成する必要があります。
 
 * 自動: Workload Factory 経由で自動登録してリンクを作成します。自動的に作成されたリンクには、Workload Factory 自動化用のトークンが必要であり、CloudFormation コードの有効期間は短くなります。最大6時間までしか使用できません。
 * 手動: Codebox から CloudFormation または Terraform を使用して手動で登録し、リンクを作成します。コードが存続し、操作を完了するための時間が延長されます。これは、セキュリティや DevOps などのさまざまなチームと連携して作業する場合に便利です。これらのチームには、リンクの作成を完了するために必要な権限を最初に付与する必要があります。
@@ -92,6 +92,9 @@ NOTE: コンソールエージェントを使用する場合、AWS Secrets Manag
 .自動作成
 --
 CloudFormation を使用して、Workload Factory 内でリンクを自動的に作成して登録します。
+
+
+NOTE: AWS GovCloud アカウントでは、自動リンク作成はサポートされていません。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
@@ -169,15 +172,12 @@ Codebox の 2 つの Infrastructure-as-Code (IaC) ツール、CloudFormation ま
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . [ストレージ] メニューから、*FSx for ONTAP* を選択します。
-. *FSx for ONTAP*から、リンクを関連付けるファイル システムのアクション メニューを選択し、*リンクの関連付け*を選択します。
+. *FSx for ONTAP*から、リンクを関連付けるファイルシステムのアクションメニューを選択し、*リンクの関連付け*を選択します。
 . [リンクの関連付け]ダイアログで、*[新しいリンクの作成]*を選択し、*[続行]*を選択します。
 . [リンクの作成] ページで、コードボックスから CloudFormation または Terraform を選択し、次の情報を入力します。
 +
 .. *リンク名*：このリンクに使用する名前を入力します。名前はアカウント内で一意である必要があります。
-.. *AWS Secrets Manager*: オプション。  Workload Factory が AWS Secrets Manager から FSx for ONTAPアクセス認証情報を取得できるようにします。
-+
-リンク デプロイメント スタックは、次のデフォルトのシークレット マネージャー ARN 正規表現を Lambda アクセス許可ポリシーに自動的に追加します。 `arn:aws:secretsmanager:<link_deployment_region>:<link_deployment_account_id>:secret:FSxSecret*` 。
-
+.. *AWS Secrets Manager*：GovCloud アカウントでは常に有効です。他のアカウントでは任意です。Workload Factory が AWS Secrets Manager から FSx for ONTAP のアクセス認証情報を取得できるようにします。
 +
 デフォルトの権限に合わせてシークレットを作成するか、リンクポリシーにカスタムの権限を割り当てることができます。
 
@@ -187,7 +187,7 @@ Codebox の 2 つの Infrastructure-as-Code (IaC) ツール、CloudFormation ま
 .. *リンクの権限*: リンクの権限について、次のいずれかのオプションを選択します。
 +
 *** *自動*: このオプションを選択すると、AWS CloudFormation コードによって Lambda アクセス許可ポリシーと実行ロールが自動的に作成されます。
-*** *ユーザー指定*: 指定したLambda実行ロールとそれに紐付けられたポリシーをLambdaリンクに割り当てるには、このオプションを選択します。Lambdaには以下の権限が必要です。 `secretsmanager:GetSecretValue` AWS Secrets Manager を有効にした場合にのみ、権限が必要です。
+*** *ユーザー指定*: このオプションを選択すると、指定した Lambda 実行ロールとその関連付けられたポリシーが Lambda リンクに割り当てられます。Lambda のアクセス許可ポリシーには、以下のアクセス許可が必要です。 `secretsmanager:GetSecretValue`のアクセス許可は、AWS Secrets Manager を使用する場合にのみ必要です。
 +
 [source, json]
 ----
@@ -206,7 +206,7 @@ Codebox の 2 つの Infrastructure-as-Code (IaC) ツール、CloudFormation ま
 .. *タグ*:必要に応じて、リソースをより簡単に分類できるように、このリンクに関連付けるタグを追加します。たとえば、FSx for ONTAPファイルシステムでこのリンクが使用されていることを示すタグを追加できます。
 .. *リンクの登録*: リンクの登録方法については、CloudFormation または Terraform を選択し、指示に従います。
 +
-CloudFormationテンプレートを起動すると、Lambdaに3つの権限が付与されます。Workload Factoryでは、リンクの使用時にこれらの権限が使用さ
+CloudFormation テンプレートを起動すると、Lambda に 3 つの権限が付与されることに注意してください。Workload Factory は、リンクを使用する際にこれらの権限を使用します。
 
 +
 [source, json]
@@ -216,22 +216,21 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 "lambda:UpdateFunctionCode"
 ----
 +
-スタックが正常に作成されたら、テキストボックスにLambda ARNを貼り付けます。
-
-.. ワークロードファクトリーは、FSx for ONTAPファイルシステムに基づいて、AWS アカウント、場所、セキュリティグループを自動的に取得します。
-
-
-. 「 * Create * 」を選択します。
+... スタックの作成に成功したら、Workload Factory コンソールのテキストボックスに Lambda ARN を貼り付けてください。Workload Factory は、FSx for ONTAP ファイルシステムに基づいて AWS アカウント、場所、およびセキュリティグループを自動的に取得します。
+... 「 * Create * 」を選択します。
 +
 リンク作成ステータスはイベント ページで監視できます。これには 5 分もかかりません。
 
-. Workload Factory インターフェイスに戻ると、リンクが FSx for ONTAPファイル システムに関連付けられていることがわかります。
+
+
+
+
 
 
 --
 ====
 .結果
-ワークロード ファクトリーは、リンクを FSx for ONTAPファイル システムに関連付けます。高度なONTAP操作を実行できます。
+Workload Factory は、リンクを FSx for ONTAP ファイルシステムに関連付けます。高度な ONTAP 操作を実行できます。
 
 
 
@@ -269,6 +268,9 @@ NOTE: AWS Secrets Manager を使用した認証には、指定した _FSx_user_ 
 
 .結果
 リンクはFSx for ONTAPファイルシステムに関連付けられています。高度なONTAP処理を実行できます。
+
+.関連情報
+link:links-overview.html#when-a-link-is-required["リンクの詳細"]。
 
 
 

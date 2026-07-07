@@ -39,6 +39,8 @@ Workload Factory のストレージ ワークロードからリンクを作成�
 
 Workload Factory 認証情報サービスに保存されている認証情報、または AWS Secrets Manager に保存されている認証情報を使用してリンクを認証できます。ワークロード ファクトリーは認証モードの変更をサポートしていません。
 
+GovCloudアカウントのリンク接続がサポートされています。Workload FactoryはGovCloud認証キーを使用し、GovCloud承認済みのメカニズムを通じて、ONTAP操作のためのFSxへの安全なエージェントレスアクセスを実現します。
+
 
 
 == コスト
@@ -67,6 +69,7 @@ link:https://aws.amazon.com/lambda/pricing/["AWS Lambdaの使用に関連する�
 * 弾力的なスケーリングのためのボリューム自動拡張
 * クローンの作成と管理により、即時にインプレースでデータのクローンを作成できます。
 * ONTAPバージョンなどの追加メトリックをONTAPから直接表示する
+* ストレージVMとクラスタLIFの詳細（ロール、エンドポイント、ノード、IPアドレス、ステータスなど）の表示
 
 
 方法をご確認くださいlink:create-link.html["FSx for ONTAPファイルシステムへのリンクを接続する"]。

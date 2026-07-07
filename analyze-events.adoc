@@ -1,32 +1,38 @@
 ---
 sidebar: sidebar 
 permalink: analyze-events.html 
-keywords: analyze events, events, FSx for ONTAP events, EMS, troubleshoot FSx for ONTAP 
-summary: NetApp Workload Factory for FSx for ONTAP内の EMS イベントを分析します。 
+keywords: analyze events, events, FSx for ONTAP events, EMS, troubleshoot FSx for ONTAP, latency 
+summary: NetApp Workload Factory for FSx for ONTAP 内のイベントを分析します。 
 ---
-= NetApp Workload Factoryで FSx for ONTAP EMS イベントを分析する
+= NetApp Workload FactoryでFSx for ONTAPイベントを分析する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-NetApp Workload Factory のスマートイベントアナライザーを使えば、FSx for ONTAP ファイルシステムの問題を迅速に特定し、解決できます。イベントアナライザーは、Amazon Bedrock と統合された Agentic AI を活用し、FSx for ONTAP イベント管理システム（EMS）イベントを自動的に抽出・分析します。
+FSx for ONTAP ファイルシステムの問題を、NetApp Workload Factory のスマートイベントアナライザーを使用して迅速に特定し解決します。イベントアナライザーは、Amazon Bedrock との統合による Agentic AI を活用して、FSx for ONTAP のイベント管理システム（EMS）およびレイテンシイベントを自動的に抽出・分析します。
 
 
 
 == タスクの内容
 
-ストレージ管理者は、顧客からの苦情を受けて初めてFSx for ONTAP EMSイベントに対応するか、カスタムスクリプトやアラームを保守することで対応することがよくあります。このような事後対応的なアプローチは、効率を低下させ、問題解決を遅らせ、ダウンタイムを増加させる可能性があります。
+ストレージ管理者は、顧客からの苦情があった場合にのみ FSx for ONTAP のイベントに対応するか、カスタムスクリプトとアラームを維持することで対応することが多くあります。このような事後対応型のアプローチは、効率を低下させ、問題解決を遅らせ、ダウンタイムを増加させる可能性があります。
 
-イベントアナライザーは、FSx for ONTAP ファイルシステムからエラー、アラート、緊急 EMS イベントを自動的に抽出します。これらのイベントは、link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用してファイルシステムに接続する"]およびlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_表示、計画、分析_の権限を付与する"^]によって AWS アカウントで表示できます。イベントは削除されるまで 72 時間表示されます。
+イベントアナライザーは、FSx for ONTAP ファイルシステムから次のイベントタイプを自動的に抽出します：
+
+* *EMS イベント*：ONTAP イベント管理システムからのエラー、アラート、および緊急イベント。EMS イベントを表示および分析するには、link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用してファイルシステムに接続する"]。
+* *レイテンシーイベント*：読み取りおよび書き込みのレイテンシーイベント。レイテンシーイベントは、リンク接続がなくても確認できます。レイテンシーイベントを分析し、AI を活用したインサイトを得るには、link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用してファイルシステムに接続する"]。
+
+
+イベントを表示するには、AWSアカウントで link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["表示、計画、分析の権限を付与する"^] する必要があります。イベントは削除される前の72時間表示されます。
 
 Amazon Bedrock との統合により、Workload Factory は AI を使用してイベントを分析し、実用的な洞察を提供することで、FSx for ONTAP ファイルシステムの健全性とパフォーマンスを維持します。
 
 主な利点は次のとおりです:
 
-* 高度なトラブルシューティング：AI が FSx for ONTAP EMS イベントを自動的に識別、分析し、修正するための洞察を提供するため、手動による調査時間が短縮されます。
-* ベストプラクティスの修復：イベントアナライザーは、FSx for ONTAP EMSイベントを解決するための明確で実用的な手順を提供します。
+* 高度なトラブルシューティング：AIが自動的に識別・分析し、FSx for ONTAP のEMSおよびレイテンシイベントを修正するためのインサイトを提供することで、手動による調査時間を短縮します。
+* ベストプラクティスによる修復：イベントアナライザーは、FSx for ONTAP の EMS および遅延イベントを解決するための明確で実行可能な手順を提供します。
 
 
 イベントアナライザーを使用すると、高度なAI分析のメリットを活用しながら、環境を完全に制御できます。
@@ -51,17 +57,30 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrockの価格"^]
 
 == 開始する前に
 
-イベント アナライザーを使用するには、次の点を確認してください：
 
-* FSx for ONTAPファイルシステムのイベントを分析するには、AWSアカウントにlink:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_operations and remediation_ 権限"^]が必要です。
+
+=== イベントの表示
+
+レイテンシーイベントを表示するには、AWSアカウントで link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["表示、計画、分析の権限を付与する"^] 必要があります。
+
+EMSイベントを表示するには、link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用してファイルシステムに接続する"]も必要です。
+
+
+
+=== イベントを分析する
+
+EMSおよびレイテンシイベントを分析し、AIを活用したインサイトと推奨事項を受け取るには、以下の点を確認してください。
+
+* お使いの AWS アカウントに link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_operations and remediation_ 権限"^] があります。
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクを使用してファイルシステムに接続"]があります。
 * FSx for ONTAP ファイル システムに関連付けられたセキュリティ グループでポート 22 (SSH) が開いています。
 
 
-追加要件（ログエラー分析中にシステムからプロンプトが表示されます）：
+追加要件（イベント分析中にシステムから指示があります）：
 
 * *Amazon Bedrock モデル*
 +
-各 AWS アカウントに対して Amazon Bedrock API を設定します。Amazon BedRock API は、FSx for ONTAP イベントに関する分析情報を提供するために使用されます。
+各AWSアカウントに対してAmazon Bedrock APIを設定します。Amazon Bedrock APIは、FSx for ONTAPイベントのインサイトを提供するために使用されます。
 
 +
 推奨モデル： `anthropic.claude-sonnet-4-20250514-v1:0`。選択したリージョンの推論プロファイル ARN を指定します。
@@ -97,19 +116,35 @@ Workload Factory IAM ロール関連ポリシーに次の権限を追加しま�
 
 
 
-== FSx for ONTAPの EMS イベントを表示および分析する
+== FSx for ONTAP のイベントを表示および分析する
 
-Workload Factory コンソールを使用して、FSx for ONTAPファイル システムの EMS イベントを表示および分析します。
+Workload Factory コンソールを使用して、FSx for ONTAP ファイルシステムの EMS およびレイテンシイベントを表示および分析します。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . ストレージメニューから*分析*を選択します。
-. [分析] 画面で、分析する FSx for ONTAPファイルシステムを含む AWS アカウント、認証情報、およびリージョンを選択します。
+. 分析画面から、表示したい FSx for ONTAP ファイルシステムが含まれている AWS アカウント、認証情報、リージョンを選択します。
 +
-イベントがある FSx for ONTAPファイル システムのみが画面に表示されます。
+イベントが発生した FSx for ONTAP ファイルシステムのみが表示されます。
 
-. 必要に応じて、画面上の指示に従って AI 分析のセットアップ要件を完了し、不足している前提条件を満たします。
-. 分析する FSx for ONTAPファイル システムを見つけて、[イベントの表示] を選択します。
-. 詳細なイベント情報を確認します。
+. 表示する FSx for ONTAP ファイルシステムを選択します。
++
+イベントテーブルには、そのファイルシステムに関するすべてのイベントが表示されます。
+
+. 表に記載されているイベントの詳細を確認してください。
+. イベントを分析するには、次のいずれかの操作を行います。
++
+** 複数のイベントを分析するには、イベントの横にあるチェックボックスを選択し、表で*分析*を選択します。
+** 1つのイベントを分析し、サイドパネルに分析結果を表示するには、イベント名を選択し、パネル内の「分析」を選択します。パネルには、得られた知見と推奨事項が表示されます。
+** 表から特定のイベントを分析するには、イベント行の「分析」を選択し、イベント名を選択して分析結果と推奨事項を表示します。
++
+必要に応じて、画面上の指示に従って AI 分析のセットアップ要件を完了し、不足している前提条件を満たします。
+
+
+
+
+
+.関連情報
+* link:set-volume-latency-thresholds.html["Workload Factoryでボリュームレイテンシのしきい値を設定する"]
 

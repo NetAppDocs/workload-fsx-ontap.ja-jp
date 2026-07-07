@@ -75,10 +75,8 @@ sidebar:
           url: "/create-backup.html"
         - title: バックアップからボリュームをリストアする
           url: "/restore-from-backup.html"
-      - title: レプリケーションを使用する
-        entries:
-        - title: データのレプリケート
-          url: "/create-replication.html"
+      - title: データのレプリケート
+        url: "/create-replication.html"
       - title: 自律型ランサムウェア対策でデータを保護
         url: "/ransomware-protection.html"
       - title: ボリュームのクローニング
@@ -105,6 +103,8 @@ sidebar:
         url: "/edit-volume-autogrow.html"
       - title: ボリューム容量を調整する
         url: "/adjust-volume-capacity.html"
+      - title: ボリュームレイテンシしきい値を設定する
+        url: "/set-volume-latency-thresholds.html"
       - title: ボリューム容量の再調整
         url: "/rebalance-volume.html"
       - title: 変更不可ファイルの管理
@@ -185,20 +185,10 @@ sidebar:
         entries:
         - title: データ保護ボリュームをレプリケートする
           url: "/cascade-replication.html"
-        - title: レプリケーション関係の反転
-          url: "/reverse-replication.html"
-        - title: ソースボリュームのレプリケーションスケジュールの変更
-          url: "/change-replication-schedule.html"
-        - title: レプリケーション関係の最大転送速度を制限する
-          url: "/limit-transfer-rate.html"
-        - title: レプリケーション関係のSnapshotデータの手動更新
-          url: "/update-snapshot-replication.html"
-        - title: レプリケーション関係の一時停止と再開
-          url: "/pause-resume-replication.html"
-        - title: レプリケーション関係を停止する
-          url: "/stop-replication.html"
-        - title: レプリケーション関係を削除する
-          url: "/delete-replication.html"
+        - title: レプリケーションの遅延を追跡する
+          url: "/track-replication-delays.html"
+        - title: レプリケーション関係の管理
+          url: "/manage-replication.html"
     - title: パフォーマンス管理
       entries:
       - title: ファイルシステムのIOPSのプロビジョニング

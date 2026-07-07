@@ -2,38 +2,78 @@
 sidebar: sidebar 
 permalink: track-costs.html 
 keywords: cost, consumption, Cost Explorer 
-summary: NetApp Workload Factoryで FSx for ONTAPファイル システム リソースのコストを追跡します。 
+summary: NetApp Workload Factory で FSx for ONTAP ファイルシステムリソースのコストを追跡し、レポートを生成します。 
 ---
-= NetApp Workload Factoryでリソースのコストを追跡する
+= NetApp Workload Factory のリソースのコストを追跡してレポートを取得する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-NetApp Workload Factoryを使用して、FSx for ONTAPファイル システムのコストと使用状況を統合ビューで追跡します。コスト データは、予算を管理し、リソースを効果的に最適化するのに役立ちます。  AWS Cost Explorer はコストデータを提供します。
+FSx for ONTAP ファイルシステムのコストと使用状況を、NetApp Workload Factory コンソールの統合ビューで追跡できます。コストデータは、予算管理やリソースの効率的な最適化に役立ちます。Workload Factory は、FSx for ONTAP ファイルシステムリソースのコストレポートを生成し、関係者と共有することができます。
 
-.タスクの内容
-FSx for ONTAPファイルシステムリソースのコストと使用状況データは、次の権限を使用して AWS Cost Explorer から抽出されます。
 
-* `ce:GetCostAndUsage`
-* `ce:GetTags`
 
+== タスクの内容
+
+Workload Factory は、AWS Cost Explorer からコストデータを取得することで、FSx for ONTAP ファイルシステムのコストと使用状況を追跡します。以下のコスト詳細が追跡されます：使用タイプ、使用 SKU、デプロイメントタイプ、使用量、および合計コスト。
+
+固有のリソースの場合、Workload Factory は、実際のパフォーマンスティアの使用状況、プロビジョニング済みだが未使用のスペースに割り当てられたパフォーマンスティアコストの比例配分、容量別に分配されたパフォーマンス割り当て、および容量プールの使用状況を組み合わせてコストを計算します。各構成要素は、その次元における単位あたりの価格で乗算され、その結果を合計することで、各リソースの総コストが決定されます。
+
+コストダッシュボードでは、AWSアカウント、認証情報、1つ以上のリージョン、および時間範囲でコストと使用状況データをフィルタリングして、FSx for ONTAPファイルシステムの使用量を把握できます。データは常に月単位で表示されます。
+
+FSx for ONTAP ファイルシステムリソースのコストと使用状況データは、以下の権限を使用して AWS Cost Explorer から取得します： `ce:GetCostAndUsage`and `ce:GetTags`。AWS コスト API と当社の見積もりを使用して、総コストを算出します。`
+
+AWSの割り当てタグキーとタグキー値は、特定のコストを特定するための追加のフィルタリングレイヤーを提供します。_タグ_はキーと値で構成されます。タグキーとタグキー値でフィルタリングするには、FSx for ONTAP ファイルシステムにタグを割り当てます。link:https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html["AWSのコスト配分タグについて詳しくはこちらをご覧ください。"^]
+
+コストダッシュボードに表示されるコストデータに加えて、FSx for ONTAP ファイルシステムリソースのコストレポートを生成できます。コストレポートのデータには、特定のファイルシステムとボリュームに関する情報が表示されます。このレポートはダウンロード可能な PDF ファイルで、関係者と共有できます。
+
+
+
+== コストを追跡する
+
+Workload Factory コンソールのコストダッシュボードに表示されるコストは、AWS Cost Explorer のデータに基づいており、24時間ごとに更新されます。
 
 .開始する前に
-link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_表示、計画、分析_権限ポリシーで資格情報を付与します"^]Workload Factory で FSx for ONTAPのコストを追跡します。
+次の要件を満たしていることを確認してください：
+
+* Workload Factory で FSx for ONTAP のコストを追跡するには、link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_表示、計画、および分析_権限ポリシーで資格情報を付与する"^]必要があります。
+* AWS割り当てタグでフィルタリングするには、FSx for ONTAPファイルシステムにタグが割り当てられていることを確認してください。
+
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . ストレージメニューから*コスト*を選択します。
-. [コスト] ページで、次の情報を入力して、FSx for ONTAPリソースのコストと容量データをフィルタリングします。
+. コストダッシュボードから、以下の情報を指定して FSx for ONTAP リソースのコストと容量データをフィルタリングします。
 +
 .. *AWS アカウント*: コストデータを表示するアカウントを選択します。
 .. *資格情報*: _表示、計画、および分析_権限を持つ資格情報を選択します。
 .. *リージョン*: コストデータを表示する AWS リージョンを選択します。
 .. *コスト データ範囲*: 表示するコスト データの期間を選択します。
+.. *割り当てタグキー*：（オプション）割り当てタグキーとその値を選択して、AWS タグに関連付けられたすべての FSx for ONTAP ファイルシステムの詳細なコストレポートを生成します。
+.. *割り当てタグ値*：（オプション）割り当てタグキーに関連付けられた割り当てタグキー値を選択して、AWS タグに関連付けられたすべての FSx for ONTAP ファイルシステムの詳細なコストレポートを生成します。
 
 
 . FSx for ONTAPリソースの *コストの詳細* を表示します。
 
+
+
+
+== FSx for ONTAP リソースのコストレポートを生成する
+
+特定の FSx for ONTAP ファイルシステムリソースのコストレポートを生成し、関係者と共有します。
+
+.手順
+. コストダッシュボードで、*レポートの生成*を選択します。
+. レポート画面で、以下の情報を入力してください。
++
+.. *ファイルシステム*：レポートに含める FSx for ONTAP ファイルシステムを1つ以上選択してください。
+.. *ボリューム*：（オプション）レポートに含めるボリュームを1つ以上選択します。
+
+
+
+
+.結果
+PDF形式のレポートが生成され、ダウンロードできます。
