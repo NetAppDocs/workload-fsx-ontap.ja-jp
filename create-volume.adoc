@@ -79,8 +79,8 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
-. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
-. *FSx for ONTAP*から、ボリュームを作成するファイルシステムのアクションメニューを選択し、*ボリュームの作成*を選択します。
+. ストレージメニューから「ボリュームエクスプローラー」を選択します。
+. 「Volume explorer」から「Create volume」を選択します。
 . [Create volume]ページの[General details]で、次の詳細を指定します。
 +
 .. *ボリューム名*：ボリュームの名前を入力します。
@@ -230,7 +230,7 @@ _バランス (自動)_ は、Workload Factory コンソールを使用してボ
 
 +
 *** リンクはファイル システムに関連付けられていません。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
-*** 不変のファイルを含むボリューム、および iSCSI および NVMe プロトコルを含むボリュームは、ARP/AI ではサポートされません。
+*** 不変ファイルを含むボリュームとNVMeプロトコルを使用したボリュームはARP/AIではサポートされていません。iSCSIボリュームは、ONTAP 9.17.1以降でサポートされています。
 *** ファイル システムには既に ARP/AI ポリシーがあります。
 
 
