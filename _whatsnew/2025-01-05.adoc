@@ -4,6 +4,7 @@
 
 
 
+[[volume-cifs-share-enhancements]]
 === ボリュームCIFS共有の機能拡張
 
 BlueXP  ワークロード工場のAmazon FSx for ONTAPファイルシステムでボリュームのCIFS共有を管理するために使用できる機能拡張は次のとおりです。

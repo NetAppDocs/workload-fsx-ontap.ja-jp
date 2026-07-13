@@ -15,6 +15,7 @@ FSx for ONTAPファイル システムを設定したら、データをグルー
 
 
 
+[[about-this-task]]
 == タスクの内容
 
 FSx for ONTAP ボリュームはデータを仮想的にグループ化し、データの保存方法を決定し、データへのアクセスの種類を決定します。ボリュームはファイルシステムのストレージ容量を消費しません。ボリュームに格納されたデータは、主にSSDストレージを消費します。ボリュームの階層化ポリシーによっては、データが容量プールのストレージを消費する場合もあります。ボリュームのサイズは作成時に設定します。あとで変更することもできます。
@@ -30,6 +31,7 @@ S3 エンドポイントは FSx for ONTAPボリュームに接続できます。
 
 
 
+[[details-for-volume-settings]]
 === 音量設定の詳細
 
 .変更不可能なファイル
@@ -53,6 +55,7 @@ NOTE: 保持期間が経過したあともWORMファイルを変更すること�
 
 
 
+[[before-you-begin]]
 == 開始する前に
 
 ボリュームを作成する前に、次の前提条件を確認してください。
@@ -69,6 +72,7 @@ NOTE: 保持期間が経過したあともWORMファイルを変更すること�
 
 
 
+[[create-a-volume]]
 == ボリュームの作成
 
 Codeboxで使用可能なREST API、CloudFormation、Terraformの各ツールを使用してボリュームを作成できます。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["Codeboxを使用して自動化する方法"^]です。

@@ -15,6 +15,7 @@ Amazon FSx for ONTAPボリュームアクセスポイント全体でユーザー
 
 
 
+[[about-this-task]]
 == タスクの内容
 
 ジャーナルテーブル機能は、監視対象の FSx for ONTAP S3 アクセスポイントの S3 データプレーンイベント（PutObject、GetObject、DeleteObject など）をキャプチャします。これは、お客様の AWS アカウントにデプロイされた一連の AWS サービスを使用します。インフラストラクチャを正しくセットアップすると、FSx for ONTAP ボリュームアクセスポイントに接続され、ユーザーアクセスとオブジェクト操作の監査イベントをジャーナルテーブルにキャプチャするパイプラインが確立されます。
@@ -54,6 +55,7 @@ Amazon FSx for ONTAPボリュームアクセスポイント全体でユーザー
 
 
 
+[[before-you-begin]]
 == 開始する前に
 
 ジャーナルテーブル機能を有効にするには、次の手順を実行します。
@@ -172,6 +174,7 @@ Amazon FSx for ONTAPボリュームアクセスポイント全体でユーザー
 
 
 
+[[set-up-the-journal-table-infrastructure]]
 == ジャーナルテーブルのインフラストラクチャをセットアップする
 
 S3アクセスポイントからジャーナルテーブルにAWSサービスイベントをキャプチャするためのインフラストラクチャをセットアップします。
@@ -205,6 +208,7 @@ S3アクセスポイントからジャーナルテーブルにAWSサービスイ
 
 
 
+[[troubleshoot-the-infrastructure-setup-for-the-journal-table]]
 == ジャーナルテーブルのインフラストラクチャ設定のトラブルシューティング
 
 AWS 管理コンソールまたは AWS CLI を使用して、CloudFormation スタックのデプロイメント中の障害とそれが作成するリソースのトラブルシューティングを行うことができます。
@@ -213,6 +217,7 @@ AWS 管理コンソールまたは AWS CLI を使用して、CloudFormation ス�
 
 
 
+[[common-cloudformation-deployment-failures]]
 === 一般的なCloudFormation展開の失敗
 
 
@@ -278,6 +283,7 @@ aws iam delete-role \
 ----
 
 
+[[failures-after-journal-table-enablement]]
 === ジャーナルテーブル有効化後の障害
 
 CloudTrail ARN を送信すると、Workload Factory は _seed_（テストイベント）を自動的に送信してリソースパイプライン全体を検証します。成功すると、シードイベントが S3 Tables テーブルに到着します。テストには約 10 分かかります。
@@ -348,12 +354,14 @@ S3TableIntegration は、aws-cloudwatch という名前のテーブルバケッ�
 
 
 
+[[permissions-reference-for-the-journal-table-setup]]
 == ジャーナルテーブル設定の権限リファレンス
 
 CloudFormation スタックを展開してジャーナルテーブル機能を有効にする IAM ロールには、以下の権限が必要です。必要な権限を含むコピー可能な JSON ポリシーについては、<<開始する前に,開始する前に>>を参照してください。
 
 
 
+[[stack-operations]]
 === スタック操作
 
 [cols="1,1,1"]
@@ -371,6 +379,7 @@ CloudFormation スタックを展開してジャーナルテーブル機能を�
 |===
 
 
+[[cloudtrail]]
 === CloudTrail
 
 [cols="1,1,1"]
@@ -394,6 +403,7 @@ CloudFormation スタックを展開してジャーナルテーブル機能を�
 |===
 
 
+[[s3]]
 === S3
 
 [cols="1,1,1"]
@@ -411,6 +421,7 @@ CloudFormation スタックを展開してジャーナルテーブル機能を�
 |===
 
 
+[[iam]]
 === IAM
 
 [cols="1,1,1"]
@@ -434,6 +445,7 @@ CloudFormation スタックを展開してジャーナルテーブル機能を�
 |===
 
 
+[[cloudwatch-logs]]
 === CloudWatchログ
 
 [cols="1,1,1"]
@@ -463,6 +475,7 @@ CloudFormation スタックを展開してジャーナルテーブル機能を�
 |===
 
 
+[[observabilityadmin]]
 === ObservabilityAdmin
 
 [cols="1,1,1"]
@@ -483,6 +496,7 @@ CloudFormation スタックを展開してジャーナルテーブル機能を�
 |===
 
 
+[[s3-tables]]
 === S3テーブル
 
 [cols="1,1,1"]

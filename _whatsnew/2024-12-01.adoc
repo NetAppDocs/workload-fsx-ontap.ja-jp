@@ -4,6 +4,7 @@
 
 
 
+[[block-storage-for-scale-out-fsx-for-ontap-file-systems]]
 === スケールアウト型FSx for ONTAPファイルシステム向けブロックストレージ
 
 最大6つのHAペアで構成されたスケールアウトファイルシステム環境を使用して、FSx for ONTAP経由でブロックストレージをプロビジョニングできるようになりました。
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["B
 
 
 
+[[mount-command-available]]
 === マウントコマンドが使用可能
 
 ボリュームへのNFSおよびCIFSアクセスで、マウントコマンドを使用できるようになりました。FSx for ONTAPファイルシステム内のボリュームのマウントポイントを取得するには、*基本的な操作*を選択し、*マウントコマンドの表示*を選択します。
@@ -22,6 +24,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/access-data.html["ボリ�
 
 
 
+[[update-storage-efficiency-after-volume-creation]]
 === ボリューム作成後にStorage Efficiencyを更新
 
 FlexVolボリュームの作成後に、Storage Efficiencyを有効または無効にできるようになりました。Storage Efficiencyには、重複排除、データ圧縮、データコンパクションが含まれます。Storage Efficiencyを有効にすると、FlexVol volumeでスペースを最適に削減できます。
@@ -30,6 +33,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/update-storage-efficiency.
 
 
 
+[[on-premises-ontap-cluster-discovery-and-replication]]
 === オンプレミスのONTAPクラスタの検出とレプリケーション
 
 オンプレミスのONTAPクラスタデータを検出してFSx for ONTAPファイルシステムにレプリケートすることで、AIのナレッジベースを強化できます。オンプレミスの検出とレプリケーションのすべてのワークフローは、ストレージインベントリの新しい*オンプレミスONTAP *タブから実行できます。
@@ -38,6 +42,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/use-onprem-data.html["オ�
 
 
 
+[[aws-credentials-improve-savings-calculator-analysis]]
 === AWSクレデンシャルでコスト削減試算ツールの分析を強化
 
 AWSクレデンシャルをSavings Calculatorから追加できるようになりました。クレデンシャルを追加すると、FSx for ONTAPと比較して、Amazon Elastic Block Store、Elastic File Systems、FSx for Windowsファイルサーバのストレージ環境のコスト削減試算ツールの分析精度が向上します。

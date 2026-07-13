@@ -4,6 +4,7 @@
 
 
 
+[[well-architected-analysis-updates]]
 === Well-Architected 分析の更新
 
 Workload Factory は、次の構成について FSx for ONTAPファイル システムを分析します。
@@ -14,6 +15,7 @@ Workload Factory は、次の構成について FSx for ONTAPファイル シス
 
 
 
+[[workload-factory-supports-ai-ml-use-case-for-replication]]
 === Workload Factory はレプリケーションの AI と ML のユースケースをサポートします
 
 Workload Factory は、オンプレミスの ONTAP データを FSx for ONTAP にレプリケートし、AWS 人工知能（AI）および機械学習（ML）サービス用の S3 アクセス ポイントを作成して、AI/ML ワークフローを加速することをサポートします。
@@ -22,6 +24,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["A
 
 
 
+[[editing-existing-s3-access-points]]
 === 既存の S3 アクセス ポイントの編集
 
 ボリュームに接続されている既存の S3 アクセス ポイントのユーザーとユーザー タイプを変更できます。アクセス ポイントのメタデータを有効または無効にすることもできます。
@@ -30,6 +33,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/edit-s3-access-points.html
 
 
 
+[[added-block-storage-diagram]]
 === ブロックストレージ図を追加しました
 
 ブロック ストレージを使用している場合は、ブロック ストレージ ダイアグラムを表示して、ブロック デバイスがノードおよび igroup にどのように接続するかを視覚化できます。この図は、ブロック ストレージを理解して管理するのに役立ちます。
@@ -38,6 +42,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-storage.html[
 
 
 
+[[update-to-automatic-capacity-management-feature]]
 === 自動容量管理機能の更新
 
 このアップデートにより、この機能は自動容量管理と容量通知という 2 つの異なる機能に分割されます。
@@ -50,6 +55,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/enable-auto-capacity-manag
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Workload Factory で新しい Ask Me ブックマークが利用可能になりました
 
 Workload Factory コンソールのすべての画面に新しい Ask Me ブックマークを追加しました。この改善により、ヘルプが必要なときにいつでも Ask Me に簡単かつ迅速にアクセスできるようになります。Ask Me は私たちの AI アシスタントです。ワークロード環境について質問したり、パーソナライズされた分析情報を入手したり、以前の会話を確認したりできます。

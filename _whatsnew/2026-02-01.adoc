@@ -4,12 +4,14 @@
 
 
 
+[[home-page-includes-well-architected-issues-and-ems-events-for-storage]]
 === ホームページには、ストレージに関する適切に設計された問題と EMS イベントが含まれています
 
 NetApp Workload Factory のホームページには、ワークロードに関する適切に設計された問題と FSx for ONTAP Emergency Management System（EMS）イベントが表示される Focus タイルがあります。そこから、Storage ワークロードに移動して、ストレージ環境内のすべての FSx for ONTAP ファイル システムの適切に設計されたステータスまたはイベントを表示できます。
 
 
 
+[[support-for-on-premises-data-replication-using-an-s3-access-point]]
 === S3 アクセスポイントを使用したオンプレミスデータレプリケーションのサポート
 
 Workload Factory は、AWS GenAI、ML、分析との統合のために、オンプレミス ONTAP データのクラウドへのレプリケーションをサポートしています。S3 アクセス ポイントを使用して、オンプレミス データを NFS または SMB/CIFS ボリュームにレプリケートできます。
@@ -18,6 +20,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["S
 
 
 
+[[s3-access-point-enhancements-in-storage]]
 === Storage の S3 アクセス ポイントの機能強化
 
 NetApp Workload Factory のストレージワークロードにおける S3 アクセスポイント管理機能にいくつかの機能強化が行われました。S3 アクセスポイントのネットワーク構成の詳細を入力し、S3 アクセスポイントタグを追加できます。追加の機能強化には、S3 バケットの詳細を表示する機能や、S3 アクセスポイントを管理するための追加のアクションを実行する機能が含まれます。
@@ -38,6 +41,7 @@ NetApp Workload Factory は、S3 アクセス ポイントの追加の管理操�
 
 
 
+[[well-architected-analysis-updates]]
 === Well-Architected 分析の更新
 
 Workload Factory は、次の構成について FSx for ONTAPファイル システムを分析します。
@@ -49,6 +53,7 @@ Workload Factory は、次の構成について FSx for ONTAPファイル シス
 
 
 
+[[additional-cards-for-block-devices]]
 === ブロックデバイス用の追加カード
 
 ブロック デバイスの使用状況と保護ステータスを迅速に把握できるように、Storage ワークロードの Block devices タブに 3 つの新しいカードが追加されました。
@@ -60,6 +65,7 @@ Workload Factory は、次の構成について FSx for ONTAPファイル シス
 
 
 
+[[support-for-initiator-group-creation-and-management]]
 === イニシエータグループの作成と管理のサポート
 
 NetApp Workload Factoryは、FSx for ONTAPファイルシステムのブロックストレージ用イニシエータグループ（igroup）の作成と管理をサポートします。イニシエータグループは、ブロックデバイス（LUN）をアクセスが許可されたコンピューティングリソースに接続し、SAN環境のブロックストレージにアクセス許可レイヤーを提供します。

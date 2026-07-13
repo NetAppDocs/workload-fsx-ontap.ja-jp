@@ -4,6 +4,7 @@
 
 
 
+[[link-creation-updates]]
 === リンク作成の更新
 
 * Codebox ビューアー: Codebox がリンク作成プロセスに統合されました。  AWS にリダイレクトして操作を実行する前に、Workload Factory の Codebox から CloudFormation テンプレートを表示してコピーできます。

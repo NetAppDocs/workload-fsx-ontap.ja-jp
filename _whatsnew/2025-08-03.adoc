@@ -4,6 +4,7 @@
 
 
 
+[[enhancements-to-replication-relationships-tab]]
 === レプリケーション関係タブの機能強化
 
 レプリケーション関係テーブルにいくつかの新しい列が追加され、*レプリケーション関係*タブでレプリケーション関係に関する詳細情報が表示されるようになりました。テーブルには次の列が含まれるようになりました。
@@ -17,6 +18,7 @@
 
 
 
+[[enhancements-to-netapp-autonomous-ransomware-protection-with-ai-arpai]]
 === NetApp のAI による自律型ランサムウェア保護 (ARP/AI) の機能強化
 
 このリリースでは、ランサムウェア保護機能への人工知能の統合をより適切に反映するために、「NetApp Autonomous Ransomware Protection with AI (ARP/AI)」という更新された用語が導入されています。
@@ -33,6 +35,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/ransomware-protection.html
 
 
 
+[[well-architected-analysis-updates]]
 === Well-Architected 分析の更新
 
 ワークロード ファクトリーでは、次の構成について FSx for ONTAPファイル システムを分析するようになりました。
@@ -45,6 +48,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 
 
+[[dismiss-a-configuration-from-the-well-architected-analysis]]
 === Well-Architected 分析から構成を除外する
 
 これで、well-archected 分析から 1 つ以上の構成を除外できるようになりました。これにより、現時点で対処したくない特定の構成を無視できます。
@@ -53,6 +57,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 
 
+[[terraform-support-for-link-creation]]
 === リンク作成のための Terraform サポート
 
 Codebox から Terraform を使用して、FSx for ONTAPファイル システムとの関連付けのためのリンクを作成できるようになりました。この機能は、リンクを手動で作成するユーザー向けです。
@@ -61,6 +66,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Lambda�
 
 
 
+[[new-region-support-for-exploring-savings-in-storage]]
 === ストレージの節約を探索するための新しいリージョンのサポート
 
 Amazon Elastic Block Store (EBS)、FSx for Windows File Server、Elastic File Systems (EFS) の節約を検討するために、次の新しいリージョンがサポートされるようになりました。
@@ -71,6 +77,7 @@ Amazon Elastic Block Store (EBS)、FSx for Windows File Server、Elastic File Sy
 
 
 
+[[enhancements-to-smbcifs-shares-creation-and-management]]
 === SMB/CIFS共有の作成と管理の機能強化
 
 ボリューム内のディレクトリを指す SMB/CIFS 共有を作成できるようになりました。ボリューム内で、どの共有が存在するか、共有がどこを指しているか、特定のユーザーとグループに付与されている権限を確認できます。

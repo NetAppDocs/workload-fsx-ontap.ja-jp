@@ -4,6 +4,7 @@
 
 
 
+[[cache-volume-management]]
 === キャッシュボリューム管理
 
 Workload Factory コンソール内から、次のキャッシュ ボリューム管理操作を実行できます。
@@ -20,6 +21,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-cache-volumes.html[
 
 
 
+[[automatic-inode-management-available]]
 === 自動inode管理が利用可能
 
 自動容量管理を有効にする必要なく、自動 inode 管理を有効にすることができます。
@@ -28,12 +30,14 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/enable-auto-capacity-manag
 
 
 
+[[threshold-warning-setting-for-capacity-and-inode-usage]]
 === 容量とinode使用量のしきい値警告設定
 
 しきい値警告は、容量と inode 使用量の両方に対して利用できます。自動容量または inode 管理を有効にするときに、これらのしきい値を設定できます。この設定を使用するには、link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["NetApp Workload Factory通知サービス"^] 。
 
 
 
+[[volume-size-decrease-available]]
 === ボリュームサイズの縮小が可能
 
 NetApp Workload Factoryで NFS および SMB/CIFS ボリュームのサイズを縮小できます。この機能により、現在の容量では不要になったボリュームのサイズを縮小できるため、ストレージ リソースをより適切に管理できるようになります。
@@ -42,12 +46,14 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/adjust-volume-capacity.htm
 
 
 
+[[enhanced-fsx-for-ontap-resource-state]]
 === 強化された FSx for ONTAPリソース状態
 
 Workload Factory では、「構成ミス」のリソース状態が拡張され、リソースの実際の問題の説明が含まれるようになりました。
 
 
 
+[[well-architected-analysis-updates]]
 === Well-Architected 分析の更新
 
 ワークロード ファクトリーは、次の構成について FSx for ONTAPファイル システムを分析します。
@@ -58,6 +64,7 @@ Workload Factory では、「構成ミス」のリソース状態が拡張され
 
 
 
+[[permissions-changes-for-workload-factory-for-storage]]
 === Workload Factory for Storage の権限の変更
 
 Workload Factory では、特定のアクションに必要な権限がより明確に示され、必要な権限のみを細かく選択できます。資格情報を追加すると、以前の権限モデルである _読み取り専用_ と _読み取り/書き込み_ の代わりに、3 つの権限オプションから選択できるようになります。新しい権限モデルでは、権限ポリシーが次のように分割されます。
@@ -73,6 +80,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[fsx-for-ontap-cyber-vault-support]]
 === FSx for ONTAPサイバー ボールト サポート
 
 サイバー ボールト アーキテクチャで、FSx for ONTAP をソースまたはターゲットとして使用してサイバー ボールトを作成できます。サイバー ボールトは、重要なデータを保存するための安全で隔離された環境を提供し、ランサムウェアやその他のサイバー脅威からデータを保護します。

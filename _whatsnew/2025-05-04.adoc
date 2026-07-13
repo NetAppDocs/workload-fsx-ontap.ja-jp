@@ -4,6 +4,7 @@
 
 
 
+[[autonomous-ransomware-protection-for-fsx-for-ontap-file-systems]]
 === FSx for ONTAPファイルシステム向け自律型ランサムウェア対策
 
 自律型ランサムウェア対策（ARP）でデータを保護：NAS（NFS / SMB）環境でワークロードを分析し、ランサムウェア攻撃の可能性がある異常なアクティビティを検出して警告する機能です。攻撃が疑われると、ARPは変更不可能な新しいスナップショットも作成し、そこからデータを復元できます。
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/ransomware-protection.html
 
 
 
+[[flexgroup-volume-rebalance-enhancement]]
 === FlexGroupボリュームのリバランシングの強化
 
 BlueXP  ワークロード工場出荷時に導入されたFlexGroupボリュームリバランシングウィザードには、FlexGroupボリューム内のデータをリバランシングするためのいくつかのレイアウトオプションが用意されています。リバランシングを実行すると、FlexGroupメンバーボリュームにデータが均等に再配分されます。
@@ -20,6 +22,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/rebalance-volume.html["Fle
 
 
 
+[[implement-best-practices-for-an-fsx-for-ontap-file-system]]
 === FSx for ONTAPファイルシステムのベストプラクティスを実装
 
 BlueXP  ワークロードファクトリには、ファイルシステム構成の適切な設計ステータスを確認できるダッシュボードが用意されています。この分析を活用して、FSx for ONTAPファイルシステムのベストプラクティスを実装できます。ファイルシステム構成の分析には、SSD容量のしきい値、スケジュールされたローカルスナップショット、FSx for ONTAPのスケジュールされたバックアップ、データ階層化、リモートデータレプリケーションなどの構成が含まれます。
@@ -30,6 +33,7 @@ BlueXP  ワークロードファクトリには、ファイルシステム構�
 
 
 
+[[dual-protocol-volume-security-style-options]]
 === デュアルプロトコルボリュームのセキュリティ形式のオプション
 
 ボリュームのセキュリティ形式としてNTFSまたはUNIXを選択して、ユーザや権限がボリュームにアクセスする方法を決定できます。
@@ -38,6 +42,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["ボリ
 
 
 
+[[replication-enhancements]]
 === レプリケーションの機能拡張
 
 
@@ -74,18 +79,21 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["�
 
 
 
+[[fsx-for-ontap-file-name-visible-in-volume-creation]]
 === FSx for ONTAPのファイル名がボリューム作成時に表示される
 
 FSx for ONTAPファイルシステムのボリューム作成時の可視性が向上しました。ボリュームを作成するとFSx for ONTAPファイルシステムが表示されるため、ボリュームが作成されている場所を正確に把握できます。
 
 
 
+[[aws-account-visible-across-the-storage-workload]]
 === ストレージワークロード全体でAWSアカウントを認識
 
 ストレージワークロード全体のアカウントの可視性が向上しました。AWSアカウントは、*[ボリューム]*、*[Storage VM]*、*[レプリケーション]*の各タブに移動すると表示されます。
 
 
 
+[[link-association-enhancements]]
 === リンクアソシエーションの機能拡張
 
 * FSx for ONTAPファイルシステムからのリンクは、[インベントリ]タブで簡単に関連付けることができます。
@@ -94,12 +102,14 @@ FSx for ONTAPファイルシステムのボリューム作成時の可視性が�
 
 
 
+[[link-authentication-support-for-aws-secrets-manager]]
 === AWS Secrets Managerのリンク認証のサポート
 
 AWS Secrets Managerのシークレットを使用してリンクを認証できるようになり、BlueXP  ワークロードファクトリに保存されているクレデンシャルを使用する必要がなくなりました。
 
 
 
+[[tracker-response-support]]
 === トラッカー応答サポート
 
 TrackerでAPI応答が返されるようになり、タスクに関連するREST API出力を確認できるようになりました。
@@ -108,6 +118,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/monitor-operations.html["T
 
 
 
+[[capacity-validation-when-restoring-a-volume-from-a-backup]]
 === バックアップからボリュームをリストアする際の容量の検証
 
 バックアップからボリュームをリストアする場合、BlueXP  ワークロードの工場出荷時にリストアに十分な容量があるかどうかが確認され、十分でない場合はSSDストレージ階層の容量が自動的に追加されます。
@@ -116,12 +127,14 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/restore-from-backup.html["
 
 
 
+[[support-for-alternative-ontap-user-credentials]]
 === 代替ONTAPユーザクレデンシャルのサポート
 
 Workload Factoryでは、ファイルシステムを作成するためのONTAPクレデンシャルの代替セットがサポートされるようになりました。fsxadminユーザだけを使用する代わりに、別のONTAPクレデンシャルのセットを選択するか、fsxadminユーザとvsaadminユーザのパスワードを指定しないように選択できます。
 
 
 
+[[updated-permissions-terminology]]
 === 権限に関する用語を更新
 
 Workload Factory のユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。

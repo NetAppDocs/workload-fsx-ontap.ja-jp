@@ -29,6 +29,7 @@ NetApp Workload Factory でオンプレミスのONTAPデータを検出して複
 
 
 
+[[discover-an-on-premises-ontap-cluster]]
 == オンプレミスの ONTAP クラスタを検出
 
 NetApp Workload Factory でオンプレミスのONTAPクラスターを検出し、 Amazon FSx for NetApp ONTAPファイルシステムにデータを複製できるようにします。
@@ -77,6 +78,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 
 
 
+[[replicate-volume-data-from-an-on-premises-ontap-cluster]]
 == オンプレミスのONTAPクラスタからボリュームデータをレプリケート
 
 オンプレミスのONTAPクラスタからFSx for ONTAPファイルシステムにボリュームデータをレプリケートします。レプリケーション後は、データを使用してAIのナレッジベースを充実させることができます。
@@ -145,6 +147,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 
 
 
+[[remove-an-on-premises-ontap-cluster-from-netapp-workload-factory]]
 == NetApp Workload Factory からオンプレミスのONTAPクラスタを削除する
 
 必要に応じて、オンプレミスのONTAPクラスターをNetApp Workload Factory から削除します。

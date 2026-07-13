@@ -23,6 +23,7 @@ SVMを使用している場合、FSx for ONTAPのデータにアクセスする�
 
 
 
+[[create-a-storage-vm]]
 == Storage VM を作成
 
 Workload Factory コンソールからストレージ VM を作成できます。 Codebox で利用可能な REST API、CloudFormation、Terraform などのツールも使用できます。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["Codeboxを使用して自動化する方法"^] 。

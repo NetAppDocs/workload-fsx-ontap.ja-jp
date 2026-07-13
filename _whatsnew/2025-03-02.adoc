@@ -4,6 +4,7 @@
 
 
 
+[[automatic-capacity-management-improvements]]
 === 容量管理の自動化の強化
 
 容量の自動管理を有効にすると、BlueXP  ワークロードファクトリでは、ファイルシステムが容量のしきい値に達したかどうかが2時間ごとではなく30分ごとにチェックされるようになりました。
@@ -12,12 +13,14 @@
 
 
 
+[[immutable-snapshots]]
 === 変更不可のSnapshot
 
 特定の保持期間にわたってSnapshotをロックし、変更不可にすることができるようになりました。ロックにより、スナップショットへの不正アクセスや悪意のある削除を防止できます。Snapshotポリシーの作成時、手動でのSnapshotの作成時、およびSnapshotの作成後に、変更不可のSnapshotを有効にすることができます。
 
 
 
+[[immutable-files-update]]
 === 不変ファイルの更新
 
 変更不可のファイル設定に対して、保持ポリシー、保持期間、自動コミット期間、およびボリュームアペンドモードを変更できるようになりました。
@@ -26,6 +29,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-immutable-files.htm
 
 
 
+[[data-replication-enhancements]]
 === データレプリケーションの機能拡張
 
 * アカウント間レプリケーション：2つのAWSアカウント間のレプリケーションは、BlueXP  ワークロードファクトリコンソールとレプリケーション管理でサポートされています。
@@ -37,6 +41,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/pause-resume-replication.h
 
 
 
+[[cloudshell-events-in-tracker]]
 === TrackerのCloudShellイベント
 
 これで、TrackerでCloudShellイベントを追跡できるようになりました。

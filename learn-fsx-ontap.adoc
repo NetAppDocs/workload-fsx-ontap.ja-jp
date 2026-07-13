@@ -19,6 +19,7 @@ FSx for ONTAPは、Workload Factory の _ストレージ_ コンポーネント�
 
 
 
+[[features]]
 == 特徴
 
 FSx for ONTAPには次のような特長があります。
@@ -40,6 +41,7 @@ FSx for ONTAPには次のような特長があります。
 
 
 
+[[additional-features-in-workload-factory]]
 == ワークロードファクトリーの追加機能
 
 * *ストレージコスト比較計算ツール*：Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、FSx for WindowsファイルサーバのストレージコストをFSx for ONTAPと比較します。FSx for ONTAPストレージ構成で実現可能な削減効果を確認し、FSx for ONTAPストレージへの移行を計画できます。
@@ -49,6 +51,7 @@ FSx for ONTAPには次のような特長があります。
 
 
 
+[[tools-to-use-netapp-workload-factory]]
 == NetApp Workload Factory を使用するためのツール
 
 NetApp Workload Factory は次のツールで使用できます。
@@ -64,12 +67,14 @@ NetApp Workload Factory は次のツールで使用できます。
 
 
 
+[[cost]]
 == コスト
 
 FSx for ONTAPアカウントを管理するのは Workload Factory ではなく AWS です。。 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html#pricing-for-fsx-ontap["Amazon FSx for NetApp ONTAPの価格設定"^] 。
 
 
 
+[[regions]]
 == 地域
 
 ワークロード ファクトリーは、FSx for ONTAPがサポートされているすべての商用リージョンでサポートされています。link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["サポート対象の Amazon リージョンを表示します。"^]
@@ -83,6 +88,7 @@ FSx for ONTAPアカウントを管理するのは Workload Factory ではなく 
 
 
 
+[[getting-help]]
 == サポートを受ける
 
 Amazon FSx for NetApp ONTAP は、AWSファーストパーティの解決策 です。FSx for ONTAPファイルシステム、インフラ、または本サービスを使用する解決策に関する質問やテクニカルサポートの問題については、AWS管理コンソールのサポートセンターを使用してAWSに対するサポートケースをオープンしてください。「 FSX for ONTAP 」サービスと該当するカテゴリを選択します。AWS サポートケースの作成に必要な残りの情報を指定します。

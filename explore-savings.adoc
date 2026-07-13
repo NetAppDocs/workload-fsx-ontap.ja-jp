@@ -19,6 +19,7 @@ NetApp Workload Factory には、Amazon ストレージ環境と FSx for ONTAP�
 
 
 
+[[calculator-options]]
 == 電卓オプション
 
 お客様のシステムとFSx for ONTAPのコストを比較するために、Amazonストレージ環境のカスタマイズと自動検出という2つの計算ツールオプションが用意されています。
@@ -31,6 +32,7 @@ NetApp Workload Factory には、Amazon ストレージ環境と FSx for ONTAP�
 
 
 
+[[explore-savings-via-customization]]
 == カスタマイズによるコスト削減の詳細
 
 タブに表示されるストレージの選択手順に従います。
@@ -116,6 +118,7 @@ FSx for ONTAPに切り替えるには、の手順に従います <<FSx for ONTAP
 
 
 
+[[explore-savings-for-detected-storage-environments]]
 == 検出されたストレージ環境の削減効果を確認する
 
 .開始する前に
@@ -198,6 +201,7 @@ NOTE: この計算ツールオプションでは、EBSスナップショット�
 
 
 
+[[deploy-fsx-for-ontap-file-systems]]
 == FSx for ONTAPファイルシステムの導入
 
 コスト削減を実現するためにFSx for ONTAPに切り替えたい場合は、FSx for ONTAPファイルシステムの作成ウィザードからファイルシステムを直接作成する場合は*作成*を選択し、推奨構成を後で保存する場合は*保存*を選択します。

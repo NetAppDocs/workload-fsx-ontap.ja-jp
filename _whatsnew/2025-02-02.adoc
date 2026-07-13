@@ -4,6 +4,7 @@
 
 
 
+[[cloudshell-in-bluexp-workload-factory-console]]
 === BlueXP  ワークロードファクトリコンソールのCloudShell
 
 CloudShell は、ストレージ用のBlueXP workload factory内で利用できる組み込み CLI 機能です。  CloudShell を使用すると、Workload Factory コンソール内のシェルのような環境で、複数のセッションからONTAPまたは AWS CLI コマンドを作成、共有、実行できます。
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Blu
 
 
 
+[[inventory-data-download]]
 === インベントリデータのダウンロード
 
 FSx for ONTAPのインベントリデータをBlueXP  ワークロード工場のストレージからMicrosoft ExcelまたはCSVファイルにダウンロードできるようになりました。
@@ -20,6 +22,7 @@ image:screenshot-fsx-inventory-download.png["BlueXP workload factoryのストレ
 
 
 
+[[fsx-for-ontap-file-system-additional-menu-options]]
 === FSx for ONTAPファイルシステムのその他のメニューオプション
 
 FSx for ONTAPファイルシステムについては、ストレージのFSx for ONTAPタブで以下の操作が簡単になりました。
@@ -33,6 +36,7 @@ image:screenshot-filesystem-menu-options.png["[Storage]の[FSx for ONTAP ]タブ
 
 
 
+[[terraform-support-for-creating-volumes]]
 === Terraformによるボリューム作成のサポート
 
 CodeboxのTerraformを使用してボリュームを作成できるようになりました。
@@ -41,6 +45,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["ボリ
 
 
 
+[[file-locking-with-the-immutable-files-feature]]
 === 不変ファイル機能によるファイルロック
 
 FSx for ONTAPファイルシステムのボリュームを作成するときに、変更不可のファイル機能を使用してファイルをロックできるようになりました。ファイルロックは、あなたや他の人が指定された期間にわたって誤ってまたは意図的にファイルを削除するのを防ぐのに役立ちます。
@@ -49,6 +54,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-volume.html["ボリ
 
 
 
+[[tracker-available-for-monitoring-and-tracking-operations]]
 === 運用の監視と追跡に使用可能なトラッカー
 
 Trackerを使用すると、ストレージに新しい監視機能が追加されます。Trackerを使用して、クレデンシャル、ストレージ、およびリンク処理の進捗状況とステータスの監視と追跡、処理タスクとサブタスクの詳細の確認、問題や障害の診断、失敗した処理のパラメータの編集、失敗した処理の再試行を行うことができます。
@@ -57,6 +63,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/monitor-operations.html["T
 
 
 
+[[support-for-second-generation-amazon-fsx-for-netapp-ontap-file-systems]]
 === 第2世代のAmazon FSx for NetApp ONTAPファイルシステムをサポート
 
 NetApp Workload Factory でAmazon FSx for NetApp ONTAP第 2 世代ファイルシステムを使用できるようになりました。  FSx for ONTAPの第 2 世代シングル AZ ファイル システムは、最大 12 個の HA ペアを搭載し、最大 72 GBps のスループット容量と 2,400,000 SSD IOPS を実現できます。  FSx for ONTAPの第 2 世代マルチ AZ ファイル システムは 1 つの HA ペアを搭載し、6 GBps のスループット容量と 200,000 SSD IOPS を提供します。

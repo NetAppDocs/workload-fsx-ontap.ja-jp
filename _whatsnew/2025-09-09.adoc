@@ -4,6 +4,7 @@
 
 
 
+[[storage-inventory-report-enhancements]]
 === ストレージインベントリレポートの機能強化
 
 ワークロード ファクトリーでは、FSx for ONTAPファイル システムについて報告されるデータが強化されました。  FSx for ONTAPインベントリ ページからダウンロード可能なレポートには、次の新しい列が含まれています。
@@ -17,6 +18,7 @@
 
 
 
+[[snapshot-management-enhancements]]
 === スナップショット管理の機能強化
 
 ワークロード ファクトリーでは、ボリューム スナップショットの詳細を表示し、ボリューム スナップショットを管理するための機能がいくつか強化されました。これらの機能強化により、スナップショットのステータスを理解し、データを保護しやすくなります。
@@ -38,6 +40,7 @@ image:screenshot-manage-snapshots-screen.png["スナップショットの管理�
 
 
 
+[[ssd-storage-capacity-decrease-available]]
 === SSDストレージ容量の減少が可能
 
 ワークロード ファクトリーは、第 2 世代ファイル システムのソリッド ステート ドライブ (SSD) 容量の削減をサポートしています。柔軟なファイル システム容量により、ワークロードのニーズに合わせてファイル システムの容量を動的に調整できます。
@@ -46,6 +49,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/increase-file-system-capac
 
 
 
+[[new-notification-for-storage]]
 === ストレージの新しい通知
 
 ワークロード ファクトリ通知サービスには、ストレージの自動容量管理の成功通知と失敗通知が含まれています。

@@ -27,6 +27,7 @@ NOTE: コンソールエージェントを使用する場合、AWS Secrets Manag
 
 
 
+[[associate-a-new-link]]
 == 新しいリンクの関連付け
 
 新しいリンクの関連付けには、リンクの作成と関連付けが含まれます。
@@ -234,6 +235,7 @@ Workload Factory は、リンクを FSx for ONTAP ファイルシステムに関
 
 
 
+[[associate-an-existing-link-with-an-fsx-for-ontap-file-system]]
 == 既存のリンクをFSx for ONTAPファイルシステムに関連付ける
 
 リンクを作成したら、1つ以上のFSx for ONTAPファイルシステムに関連付けます。
@@ -274,6 +276,7 @@ link:links-overview.html#when-a-link-is-required["リンクの詳細"]。
 
 
 
+[[troubleshoot-issues-with-aws-secrets-manager-link-authentication]]
 == AWS Secrets Managerのリンク認証に関する問題のトラブルシューティング
 
 問題:: リンクにシークレットを取得する権限がありません。

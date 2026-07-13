@@ -22,6 +22,7 @@ FSx for ONTAPファイルシステムでは、ボリュームのSnapshotポリ�
 
 
 
+[[change-a-snapshot-policy]]
 == Snapshotポリシーの変更
 
 Snapshotポリシーの名前、スケジュール、保持するコピーの数を変更したり、変更不可のSnapshotを有効または無効にしたりできます。Storage VM間でのポリシー共有を有効または無効にすることはできません。このオプションは、Snapshotポリシーの作成時にのみ使用できます。
@@ -45,6 +46,7 @@ Snapshotポリシーが更新されます。
 
 
 
+[[enable-immutable-snapshots]]
 == 書き換え不可のSnapshotを有効にする
 
 Snapshotをロックして、保持期間中に削除されないようにします。
@@ -74,6 +76,7 @@ Snapshotをロックして、保持期間中に削除されないようにしま
 
 
 
+[[assign-a-snapshot-policy-to-a-volume]]
 == ボリュームへのSnapshotポリシーの割り当て
 
 1つのボリュームにSnapshotポリシーを割り当てて、ボリュームのスケジュールされたSnapshotを作成できます。
@@ -100,6 +103,7 @@ Snapshotポリシーがボリュームに割り当てられます。
 
 
 
+[[remove-a-snapshot-policy-from-a-volume]]
 == ボリュームからSnapshotポリシーを削除する
 
 ボリュームのSnapshotが不要になった場合、または複数のボリュームに割り当てられているSnapshotポリシーを削除する場合は、ボリュームからSnapshotポリシーを削除します。が複数のボリュームに割り当てられている場合は<<Snapshotポリシーを削除します,Snapshotポリシーを削除します。>>、すべてのボリュームからそのボリュームを手動で削除する必要があります。
@@ -123,6 +127,7 @@ Snapshotポリシーがボリュームから削除されます。
 
 
 
+[[delete-a-snapshot-policy]]
 == Snapshotポリシーを削除します
 
 不要になったSnapshotポリシーを削除します。

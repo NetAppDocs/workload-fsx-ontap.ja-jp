@@ -40,6 +40,7 @@ Trackerタスクレベルと例::
 
 
 
+[[track-and-monitor-operations]]
 == 運用の追跡と監視
 
 Tracker を使用してNetAppコンソールでの操作を追跡および監視します。
@@ -56,6 +57,7 @@ image:screenshot-menu-tracker-option.png["[Tracker]オプションが強調表�
 
 
 
+[[view-api-request]]
 == View APIヨウキユウ
 
 TrackerのタスクのコードボックスでAPIリクエストを表示します。
@@ -67,6 +69,7 @@ TrackerのタスクのコードボックスでAPIリクエストを表示しま�
 
 
 
+[[retry-a-failed-operation]]
 == 失敗した処理を再試行する
 
 Trackerで失敗した操作を再試行します。失敗した処理のエラーメッセージをコピーすることもできます。
@@ -84,6 +87,7 @@ NOTE: 失敗した処理に対して許可される再試行回数はx回だけ�
 
 
 
+[[edit-and-retry-a-failed-operation]]
 == 失敗した処理を編集して再試行してください
 
 失敗した操作のパラメータを編集し、Trackerの外部で操作を再試行してください。

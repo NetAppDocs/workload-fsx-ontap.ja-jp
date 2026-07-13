@@ -57,6 +57,7 @@ ARP/AI 機能は、Amazon FSx for NetApp ONTAPが実行するONTAPバージョ�
 
 
 
+[[enable-arpai-for-a-file-system-or-a-volume]]
 == ファイルシステムまたはボリュームのARP/AIを有効にする
 
 ファイルシステムでARP/AIを有効にすると、既存のNASボリュームと新規のNASボリューム（NFS/SMB）すべてが自動的に保護されます。ONTAP 9.17.1以降では、SANボリューム（iSCSI）もサポートしています。特定のボリュームに対してARP/AIを有効にすることもできます。
@@ -111,6 +112,7 @@ ARP/AIが有効化された後に実際の攻撃が検出された場合、Workl
 ====
 
 
+[[validate-ransomware-attacks]]
 == ランサムウェア攻撃を検証
 
 攻撃が誤ったアラームであるか、本物のランサムウェアインシデントであるかを特定
@@ -129,6 +131,7 @@ ARP/AIが有効化された後に実際の攻撃が検出された場合、Workl
 
 
 
+[[recover-data-after-a-ransomware-attack]]
 == ランサムウェア攻撃のあとにデータをリカバリ
 
 システムが攻撃の可能性を検出すると、その時点のボリュームのスナップショットを作成し、ロックします。

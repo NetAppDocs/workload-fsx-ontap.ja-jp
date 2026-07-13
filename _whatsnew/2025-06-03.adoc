@@ -4,6 +4,7 @@
 
 
 
+[[volume-autogrow-enhancement]]
 === ボリューム自動拡張の強化
 
 ビジネス ニーズやアプリケーション要件に応じて、ボリューム サイズがプロビジョニングされたサイズを超えて拡張できるように、ボリュームの自動拡張サイズを設定できるようになりました。
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/edit-volume-autogrow.html[
 
 
 
+[[well-architected-analysis-update]]
 === Well-Architected 分析のアップデート
 
 Workload Factory は、FSx for ONTAP ファイルシステムを分析し、データコンパクション、圧縮、重複排除といったストレージ効率が活用されているかどうかを確認します。ストレージ効率は、ファイルシステムが利用可能なスペースをどれだけ効率的に使用しているかを測定します。
@@ -20,12 +22,14 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 
 
+[[storage-dashboard-enhancements]]
 === ストレージダッシュボードの機能強化
 
 本日より、Workload Factory コンソールからストレージ ワークロードを開くと、*ダッシュボード*が表示されます。新しく設計されたダッシュボードでは、ファイルシステムの数、SSD の合計容量、Well-Architected ステータスの概要、データ保護の概要、レプリケーション関係の健全性など、FSx for ONTAPシステムの全体的なビューが提供されます。
 
 
 
+[[volumes-tab-enhancements]]
 === ボリュームタブの機能強化
 
 ストレージ ワークロードでは、Workload Factory コンソールの FSx for ONTAPファイル システム内のボリューム タブが強化されました。機能強化には次のものが含まれます。
@@ -36,6 +40,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 
 
+[[storage-efficiencies-update-for-volume-creation]]
 === ボリューム作成時のストレージ効率のアップデート
 
 新しいボリュームを作成すると、データの圧縮、圧縮、重複排除などのストレージ効率がデフォルトで有効になります。

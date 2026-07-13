@@ -4,6 +4,7 @@
 
 
 
+[[initial-release-of-workload-factory-for-amazon-fsx-for-netapp-ontap]]
 === Amazon FSx for NetApp ONTAPWorkload Factory の初期リリース
 
 Amazon FSx for NetApp ONTAPは現在、BlueXP  ワークロード工場で一般提供されています。

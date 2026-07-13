@@ -4,6 +4,7 @@
 
 
 
+[[block-device-support-in-netapp-workload-factory]]
 === NetApp Workload Factoryにおけるブロックデバイスのサポート
 
 NetApp Workload Factoryで新しく導入されたブロック デバイス サポートを使用して、ブロック デバイスをより効率的に管理します。この機能を使用すると、iSCSI LUN の詳細を表示して容量を増やすことができるため、ストレージ ニーズに合わせて柔軟性が向上します。
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-block-storage.html[
 
 
 
+[[well-architected-analysis-updates]]
 === Well-Architected 分析の更新
 
 ワークロード ファクトリーは、次の構成について FSx for ONTAPファイル システムを分析します。
@@ -24,6 +26,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 
 
+[[ai-analyzer-for-ems-events-in-netapp-workload-factory]]
 === NetApp Workload Factoryの EMS イベント用 AI アナライザー
 
 NetApp Workload Factory は、 ONTAPイベント管理システム (EMS) イベント用の AI 搭載アナライザーを導入しました。この機能は、EMS イベント データの分析に基づいて洞察と推奨事項を提供することで、問題を迅速に特定してトラブルシューティングするのに役立ちます。
@@ -32,6 +35,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/analyze-events.html["Workl
 
 
 
+[[monitor-cost-and-usage-trends-for-fsx-for-ontap-file-systems]]
 === FSx for ONTAPファイルシステムのコストと使用状況の傾向を監視する
 
 NetApp Workload Factoryコンソールから直接、FSx for ONTAPファイルシステムのコストと使用状況の傾向を監視できます。この機能は、ストレージの消費量とコストのメトリック、および明細化されたコストを提供し、リソースの割り当てと予算計画の最適化に役立ちます。
@@ -40,6 +44,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/track-costs.html["Workload
 
 
 
+[[manage-fsx-tags-for-a-file-system-in-netapp-workload-factory]]
 === NetApp Workload Factoryでファイルシステムの FSx タグを管理する
 
 NetApp Workload Factoryコンソールからファイルシステムの FSx タグを直接簡単に管理できます。この機能を使用すると、タグを追加、編集、または削除できるため、FSx for ONTAPファイルシステムの整理と分類を効率化できます。
@@ -48,6 +53,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-fsx-tags.html["Work
 
 
 
+[[adjust-cache-capacity-for-fsx-for-ontap-file-systems]]
 === FSx for ONTAPファイルシステムのキャッシュ容量を調整する
 
 Workload Factory コンソールからキャッシュ ボリュームの容量を増減できます。

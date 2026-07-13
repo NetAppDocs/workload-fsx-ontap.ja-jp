@@ -17,6 +17,7 @@ link:links-overview.html["リンクの詳細"] または link:create-link.html["
 
 
 
+[[view-the-links-associated-with-your-account]]
 == アカウントに関連付けられているリンクを表示する
 
 現在アカウントに関連付けられているリンクを表示できます。
@@ -36,6 +37,7 @@ image:screenshot-view-link-details.png["特定のリンクを使用しているF
 
 
 
+[[edit-a-link]]
 == リンクの編集
 
 Workload Factory インターフェースからリンクを編集することはできません。リンクを変更する必要がある場合は、新しいリンクを作成し、そのリンクをファイル システムに関連付ける必要があります。
@@ -45,6 +47,7 @@ NOTE: AWSコンソールを使用してLambdaネットワーク構成（VPC、�
 
 
 
+[[authenticate-a-link]]
 == リンクの認証
 
 リンクを FSx for ONTAPファイルシステムに接続するには、Workload Factory 認証情報の管理ユーザーパスワードまたは AWS Secrets Manager シークレット ARN を指定します。
@@ -74,6 +77,7 @@ NOTE: 1つのリンクでサポートされる認証方式は1つだけです。
 
 
 
+[[update-the-password-for-link-authentication]]
 == リンク認証用のパスワードを更新する
 
 管理パスワードが無効な場合は、パスワードを更新してFSx for ONTAPファイルシステムへのリンクを接続します。
@@ -93,6 +97,7 @@ NOTE: 1つのリンクでサポートされる認証方式は1つだけです。
 
 
 
+[[remove-a-link]]
 == リンクの削除
 
 環境で使用しなくなったリンクを削除できます。リンクを使用していたFSx for ONTAPファイルシステムやその他のリソースは、リンクを削除すると特定の機能を使用できなくなります。

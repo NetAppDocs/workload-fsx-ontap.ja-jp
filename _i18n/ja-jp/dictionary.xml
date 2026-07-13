@@ -3057,21 +3057,13 @@
   <block id="da6f5bf8aee08ef83468ad38ab52796b" category="doc">すべての FSx for ONTAP システムで新しいwell-architectedダッシュボードが利用可能になりました</block>
   <block id="7fca025a8bf1b5d72a149731d5c88125" category="paragraph">ウェルアーキテクテッド分析が、NetApp Workload Factory の新しいウェルアーキテクテッドダッシュボードから、FSx for ONTAP ファイルシステムで利用できるようになりました。新しいダッシュボードでは、アカウントやリージョンをまたがるすべてのファイルシステムとその構成を一元的に確認できます。ファイルシステムから「Well-architected」タブにアクセスすると、ポップアップ通知が表示されます。Workload Factory の左側のナビゲーションメニューから「Well-architected」を選択すると、新しいダッシュボードにアクセスできます。</block>
   <block id="b09ad8a2ad81c470093e9c74313ea0c2" category="paragraph">特定のファイルシステムのWell-architected分析には、引き続きアクセスできます。また、ストレージの「Well-architected」メニューオプションからもアクセスできます。</block>
-  <block id="9864fa88fc3747e67b6fc38c9b938677" category="section-title">優れたアーキテクチャ分析における新たな推奨事項</block>
-  <block id="a38b9a0af0de5e85c5e64a158079deb5" category="paragraph">Workload Factory は、FSx for ONTAP ファイルシステムの適切なアーキテクチャ分析に以下の構成を含めるようになりました：</block>
-  <block id="fd2d46026cdd19577962231303a46abd" category="list-text">ホストをフェイルオーバーノードに接続：アクティブ / パッシブ FSx for ONTAP ファイルシステムでホストがフェイルオーバーノードに接続されているかどうかを確認し、信頼性向上のためにホストをフェイルオーバーノードに接続することを推奨します。</block>
-  <block id="0e7d4cc90eb78377a1315bafe07799dd" category="list-text">ホストを優先ノードに接続する：ホストが優先ノードを使用してブロックデバイスに接続されているかどうかを確認し、パフォーマンス効率のためにホストを優先ノードに接続することを提案します。</block>
   <block id="efbeddc0347a679a438120189b77f860" category="section-title">ボリュームエクスプローラー</block>
   <block id="3e1cc7f8632eafd5f69d910c06db3aa4" category="paragraph">Volumes Explorer は、NetApp Workload Factory のすべてのボリュームをシンプルに検索可能なビューで表示します。どのボリュームがブロックワークロードまたはファイルワークロードに使用されているかをすばやく確認できます。各ボリュームの論理サイズ、物理的な使用容量、およびストレージ効率化機能（圧縮、重複排除、コンパクション）を使用しているかどうかを確認できます。名前、ステータス（利用可能／失敗）、レイテンシ、サイズ、使用容量、および保護機能でフィルタリングおよび並べ替えを行います。</block>
-  <block id="2731bbeb58ccf58c8e631528a8e3fc94" category="section-title">レプリケーション遅延の改善</block>
   <block id="3a410df7dfc102007ea8a7569fdb1810" category="section-title">レプリケーション遅延に関するメール通知機能の強化</block>
   <block id="bd78ae8d1a9aed4500716acc31d179d8" category="paragraph">レプリケーション遅延に関するメール通知に、影響を受けるリレーションシップに関する詳細情報が含まれるようになりました。この通知により、影響を受けるリレーションシップを迅速に特定し、Workload Factory コンソールで詳細を確認できます。</block>
   <block id="4dc5c4a9c4b845746295cce1108ec278" category="inline-link-macro">レプリケーション遅延に関する通知を有効にする</block>
   <block id="7f27417270cfb269527e679a64b5a19a" category="paragraph"><block ref="7f27417270cfb269527e679a64b5a19a" category="inline-link-macro-rx"></block></block>
-  <block id="347a810d994926c5e31d1bd690b34fcf" category="section-title">レプリケーション遅延データをCSVファイルにエクスポートする</block>
-  <block id="45cbeaeb98d1d075d560a8e62269fbbb" category="paragraph">レプリケーション遅延データをCSVファイルにエクスポートして、スプレッドシートでデータを分析したり、他のユーザーと共有したりできるようになりました。</block>
   <block id="2b3d29c88190bdb57da25e1848b65b7d" category="inline-link-macro">レプリケーションの遅延を追跡する</block>
-  <block id="7aab1e1b0e0fcc4720b15dcc5848034e" category="paragraph"><block ref="7aab1e1b0e0fcc4720b15dcc5848034e" category="inline-link-macro-rx"></block></block>
   <block id="5312d8ea7e9ef079aeac882dbcd64d0a" category="section-title">ブロックデバイス作成機能の強化</block>
   <block id="85fb39d6f3bb52679cb9ce3bd27ffd1c" category="paragraph">Workload Factoryは、ボリュームスナップショットからのブロックデバイスの作成をサポートしています。</block>
   <block id="a439412a0228682fa1054f4bc1a96815" category="inline-link-macro">Workload Factory でボリュームスナップショットからブロックデバイスを作成する</block>
@@ -3109,12 +3101,6 @@
   <block id="9a1ef45ae6fd0052a26aaea575fa9054" category="list-text">表から特定のイベントを分析するには、イベント行の「分析」を選択し、イベント名を選択して分析結果と推奨事項を表示します。</block>
   <block id="68178ddd88bc5af168d0f95fe76212ad" category="inline-link-macro">Workload Factoryでボリュームレイテンシのしきい値を設定する</block>
   <block id="1045d7a603969c049cf68b4017ae537e" category="list-text"><block ref="1045d7a603969c049cf68b4017ae537e" category="inline-link-macro-rx"></block></block>
-  <block id="6347309ad07af7266241819bb2af76d1" category="list-text">*ホストをフェイルオーバーノードに接続する*</block>
-  <block id="e89cb70f69260bd0359dad1d58cb94de" category="paragraph">Workload Factory は、フェイルオーバー時の接続性を維持し、中断を回避するために、ホストをフェイルオーバーノードに接続することを推奨します。</block>
-  <block id="8722112d28d6eea0aff9478fb61c5de7" category="section-title">パフォーマンス効率</block>
-  <block id="8b1271dadb19678250cdc4bb1a083452" category="paragraph">パフォーマンス効率とは、ITおよびコンピューティングリソースを効率的に利用することに重点を置いています。</block>
-  <block id="bb7eaffc45b0ebd2357f86e392d3d75e" category="list-text">ホストを優先ノードに接続する</block>
-  <block id="e72d694d5291c64bcb1eda2ecaff634a" category="paragraph">高可用性 FSx for ONTAP デプロイメントモデルでは、直接アクセスと最適なパフォーマンスを確保するために、ホストはブロックデバイスを提供するノードに直接接続する必要があります。</block>
   <block id="6149c2ac82c846d8c0c66beff37f271d" category="paragraph">業務部門（LOB）アプリケーションの要件をサポートするブロックデバイスを作成します。既存のボリューム内にブロックデバイスを作成することも、新しいブロックデバイス用に新しいボリュームを作成することも、新しいブロックデバイスのスナップショットから新しいボリュームを作成することもできます。</block>
   <block id="7d890770a60d61d9610602416316dd0c" category="list-text">ボリュームスナップショットから作成します。ソースボリューム名とスナップショット名を選択してください。ブロックデバイスのないボリュームのみが利用可能です。</block>
   <block id="0d9cf45fb23b4088730f72dd43be4a9b" category="paragraph">このワークフローでリンクを作成するには、自動作成と手動作成の2つの方法があります。AWS GovCloud アカウントをお持ちの場合は、手動で新しいリンクを作成する必要があります。</block>
@@ -3125,8 +3111,6 @@
   <block id="1425c9b22ae63851bbaa938ebc0a967d" category="list-text">スタックの作成に成功したら、Workload Factory コンソールのテキストボックスに Lambda ARN を貼り付けてください。Workload Factory は、FSx for ONTAP ファイルシステムに基づいて AWS アカウント、場所、およびセキュリティグループを自動的に取得します。</block>
   <block id="47dfa5e12270c73140e2f3dc8b32a020" category="paragraph">Workload Factory は、リンクを FSx for ONTAP ファイルシステムに関連付けます。高度な ONTAP 操作を実行できます。</block>
   <block id="eb3eec333eedf15738e12e55e183cdb7" category="paragraph"><block ref="c7c8a4154bf78f63993b7572e6143221" category="inline-link-macro-rx"></block>。</block>
-  <block id="7e1ccbf5b074e2396f26b030d7e1231f" category="list-text">信頼性：SSD容量しきい値、スケジュールされたローカルスナップショット、スケジュールされたボリュームバックアップ、リモートデータレプリケーション、長期保存のためのデータ信頼性、およびホストをフェイルオーバーノードに接続</block>
-  <block id="383b20892354fe24b77f00c1d9e28776" category="list-text">パフォーマンス効率：ホストを優先ノードに接続する</block>
   <block id="81fccfd8b7cc4d87c0978527048afe60" category="paragraph">GovCloudアカウントのリンク接続がサポートされています。Workload FactoryはGovCloud認証キーを使用し、GovCloud承認済みのメカニズムを通じて、ONTAP操作のためのFSxへの安全なエージェントレスアクセスを実現します。</block>
   <block id="f22e542eda471e2702ed07136761fd6c" category="list-text">ストレージVMとクラスタLIFの詳細（ロール、エンドポイント、ノード、IPアドレス、ステータスなど）の表示</block>
   <block id="d72415af6292f1377ab69432624c64ea" category="summary">NetApp Workload Factory でレプリケーション関係を管理します。</block>
@@ -3181,7 +3165,6 @@
   <block id="a7bd0905e600528204e4269535f4130f" category="list-text">*ボリューム*：（オプション）レポートに含めるボリュームを1つ以上選択します。</block>
   <block id="9eedf15c88882820c71be2457a0407b4" category="paragraph">PDF形式のレポートが生成され、ダウンロードできます。</block>
   <block id="753f0ef1207693ec3d5a5341ae8e6a92" category="summary">アカウント内のすべてのレプリケーション関係における遅延を監視するには、トラッキングを有効にしてください。</block>
-  <block id="4fd22cd0c1b62f84962ef1e8ffd9c966" category="paragraph">アカウント全体のレプリケーション遅延を監視するには、トラッキングを有効にしてください。Workload Factoryは、遅延が設定されたしきい値を超えた場合にアラートを発します。デフォルトでは、通常の転送時間を確保し、誤報を減らすために、しきい値はレプリケーション間隔の150%に設定されています。RPOに合わせてしきい値を調整し、遅延がそのしきい値を超えた場合に通知を受け取ることができます。データをCSVファイルにエクスポートして、さらに分析することもできます。</block>
   <block id="93dea0fbfb3d3bc0e6e540f6de60aaf4" category="list-text">「トラッキングを有効にする」を選択します。</block>
   <block id="a3c265cc9e14e487d93cfcb8cd19ba63" category="list-text">「レプリケーション遅延履歴を有効にする」ダイアログで、*有効にする*を選択します。</block>
   <block id="785e95d007ac530ca81623e89d020254" category="list-text">レプリケーション遅延履歴タイルに戻り、*しきい値のカスタマイズ*を選択して、希望するしきい値を設定します。</block>
@@ -3220,4 +3203,6 @@
   <block id="6ec74364a6da4d201b148eef6afaaeb1" category="paragraph">攻撃が後日確認された場合、スナップショットから影響を受けたファイルまたはボリューム全体を復元できます。</block>
   <block id="f4cb46b03000a83dfbabafe89cb0af31" category="paragraph">ロックされたスナップショットは、保持期間が経過するまで削除できません。攻撃が後に誤報であったと判明した場合、ロックされたスナップショットは削除されます。</block>
   <block id="64e991d759281e91a768b558639fb387" category="paragraph">システムが影響を受けたファイルと攻撃の発生時刻を特定するため、ボリューム全体を復元する代わりに、利用可能なスナップショットから影響を受けたファイルのみを復元できます。</block>
+  <block id="16f2ae5a8a2de6f12ddc298127a4ddb7" category="list-text">信頼性：SSD 容量しきい値、スケジュールされたローカル Snapshot 、スケジュールされたボリューム バックアップ、リモート データ レプリケーション、長期保存のためのデータ信頼性</block>
+  <block id="d2eebd4f9400b9bd2c04860c048de241" category="paragraph">アカウント全体のレプリケーション遅延を監視するには、トラッキングを有効にしてください。Workload Factoryは、遅延が設定されたしきい値を超えた場合にアラートを発します。デフォルトでは、通常の転送時間を確保し、誤報を減らすために、しきい値はレプリケーション間隔の150%に設定されています。RPOに合わせてしきい値を調整し、遅延がそのしきい値を超えた場合に通知を受け取ることができます。</block>
 </blocks>

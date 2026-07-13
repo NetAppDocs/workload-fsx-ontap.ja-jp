@@ -4,6 +4,7 @@
 
 
 
+[[terraform-support]]
 === Terraformのサポート
 
 CodeboxのTerraformを使用してファイルシステムとStorage VMを導入できるようになりました。
@@ -15,6 +16,7 @@ CodeboxのTerraformを使用してファイルシステムとStorage VMを導入
 
 
 
+[[throughput-and-iops-recommendations-in-the-storage-calculator]]
 === Storage Calculatorに推奨されるスループットとIOPS
 
 ストレージ計算ツールは、AWSのベストプラクティスに基づいて、FSx for ONTAPファイルシステム構成のスループットとIOPSに関する推奨事項を提示し、選択に対する最適なガイダンスを提供します。

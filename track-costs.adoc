@@ -15,6 +15,7 @@ FSx for ONTAP ファイルシステムのコストと使用状況を、NetApp Wo
 
 
 
+[[about-this-task]]
 == タスクの内容
 
 Workload Factory は、AWS Cost Explorer からコストデータを取得することで、FSx for ONTAP ファイルシステムのコストと使用状況を追跡します。以下のコスト詳細が追跡されます：使用タイプ、使用 SKU、デプロイメントタイプ、使用量、および合計コスト。
@@ -31,6 +32,7 @@ AWSの割り当てタグキーとタグキー値は、特定のコストを特�
 
 
 
+[[track-costs]]
 == コストを追跡する
 
 Workload Factory コンソールのコストダッシュボードに表示されるコストは、AWS Cost Explorer のデータに基づいており、24時間ごとに更新されます。
@@ -61,6 +63,7 @@ Workload Factory コンソールのコストダッシュボードに表示され
 
 
 
+[[generate-cost-reports-for-your-fsx-for-ontap-resources]]
 == FSx for ONTAP リソースのコストレポートを生成する
 
 特定の FSx for ONTAP ファイルシステムリソースのコストレポートを生成し、関係者と共有します。

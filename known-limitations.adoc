@@ -15,6 +15,7 @@ summary: このリリースの製品でサポートされていない、また�
 
 
 
+[[region-support]]
 == 地域サポート
 
 次の AWS リージョンはサポートされていません。
@@ -26,6 +27,7 @@ summary: このリリースの製品でサポートされていない、また�
 
 
 
+[[adding-ha-pairs-limitations]]
 == HAペアの追加に関する制限事項
 
 * この処理の完了には約30分かかることがあります。
@@ -34,22 +36,26 @@ summary: このリリースの製品でサポートされていない、また�
 
 
 
+[[throughput-capacity-region-support]]
 == スループット容量領域のサポート
 
 
 
+[[scale-up-deployments]]
 === スケールアップ環境
 
 すべての地域で最大2GB/秒のスケールアップ構成がサポートされています。スケールアップ環境でサポートされる最大スループット容量は、米国東部（オハイオ）リージョン、米国東部（バージニア州）リージョン、米国西部（オレゴン）リージョン、およびヨーロッパ（アイルランド）です。
 
 
 
+[[scale-out-deployments]]
 === スケールアウト導入
 
 次のリージョンでは、スケールアウト展開で最大 6 GB/秒のスループット容量をサポートしています: 米国東部 (バージニア北部およびオハイオ)、米国西部 (北カリフォルニアおよびオレゴン)、欧州 (フランクフルト、アイルランド、ストックホルム)、アジア太平洋 (シンガポールおよびシドニー)。
 
 
 
+[[capacity-management]]
 == 容量管理
 
 * ボリュームの自動拡張機能は、現在のところiSCSIプロトコルではサポートされていません。
@@ -60,6 +66,7 @@ summary: このリリースの製品でサポートされていない、また�
 
 
 
+[[storage-vms]]
 == Storage VM
 
 ストレージ VM の数は SKU ごとに制限されます。制限を超えるストレージ VM の作成は、Workload Factory ではサポートされていません。^1^
@@ -68,6 +75,7 @@ summary: このリリースの製品でサポートされていない、また�
 
 
 
+[[iscsi-protocol-support]]
 == iSCSIプロトコルのサポート
 
 * iSCSIプロトコルは、FlexVolボリュームに対してのみ使用できます。^1 ^
@@ -76,6 +84,7 @@ summary: このリリースの製品でサポートされていない、また�
 
 
 
+[[data-protection]]
 == データ保護
 
 * Snapshotは削除できません。
@@ -97,6 +106,7 @@ summary: このリリースの製品でサポートされていない、また�
 
 
 
+[[storage-savings-calculator]]
 == Storage Savings Calculator
 
 以下の構成の場合、Storage Savings Calculatorではコスト削減額は計算されません。
@@ -108,18 +118,21 @@ summary: このリリースの製品でサポートされていない、また�
 
 
 
+[[aws-secrets-manager-support]]
 == AWS Secrets Managerのサポート
 
 コンソールエージェントを使用する場合、AWS Secrets Manager はサポートされません。
 
 
 
+[[amazon-s3-access-points-limitation]]
 == Amazon S3 アクセスポイントの制限
 
 ストレージ VM あたりの S3 アクセス ポイントの数の制限は 4,000 です。
 
 
 
+[[limitations-for-storage-vm-migration-replication]]
 == ストレージVM移行レプリケーションの制限事項
 
 * Workload Factoryは、第1世代と第2世代のFSx for ONTAPファイルシステム間でのストレージVMの移行レプリケーションをサポートしていません。
