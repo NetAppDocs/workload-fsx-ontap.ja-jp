@@ -3054,9 +3054,6 @@
   <block id="46d1548637c7b145aedaf16fc4982ded" category="paragraph"><block ref="46d1548637c7b145aedaf16fc4982ded" category="inline-link-macro-rx"></block></block>
   <block id="6935aa37908b8d3e8e6495adec301374" category="section-title">ボリュームレイテンシしきい値を設定する</block>
   <block id="8d36c5c4d1b5b3180db932fcf4bd5e3b" category="paragraph">ボリュームごとにレイテンシのしきい値を設定できるようになり、パフォーマンスを監視したり、読み取りまたは書き込みのレイテンシが定義した制限を超えた場合にアラートを受け取ったりすることが可能になりました。レイテンシ監視は、ワークロードに影響が出る前にパフォーマンスの問題を事前に特定するのに役立ちます。</block>
-  <block id="da6f5bf8aee08ef83468ad38ab52796b" category="doc">すべての FSx for ONTAP システムで新しいwell-architectedダッシュボードが利用可能になりました</block>
-  <block id="7fca025a8bf1b5d72a149731d5c88125" category="paragraph">ウェルアーキテクテッド分析が、NetApp Workload Factory の新しいウェルアーキテクテッドダッシュボードから、FSx for ONTAP ファイルシステムで利用できるようになりました。新しいダッシュボードでは、アカウントやリージョンをまたがるすべてのファイルシステムとその構成を一元的に確認できます。ファイルシステムから「Well-architected」タブにアクセスすると、ポップアップ通知が表示されます。Workload Factory の左側のナビゲーションメニューから「Well-architected」を選択すると、新しいダッシュボードにアクセスできます。</block>
-  <block id="b09ad8a2ad81c470093e9c74313ea0c2" category="paragraph">特定のファイルシステムのWell-architected分析には、引き続きアクセスできます。また、ストレージの「Well-architected」メニューオプションからもアクセスできます。</block>
   <block id="efbeddc0347a679a438120189b77f860" category="section-title">ボリュームエクスプローラー</block>
   <block id="3e1cc7f8632eafd5f69d910c06db3aa4" category="paragraph">Volumes Explorer は、NetApp Workload Factory のすべてのボリュームをシンプルに検索可能なビューで表示します。どのボリュームがブロックワークロードまたはファイルワークロードに使用されているかをすばやく確認できます。各ボリュームの論理サイズ、物理的な使用容量、およびストレージ効率化機能（圧縮、重複排除、コンパクション）を使用しているかどうかを確認できます。名前、ステータス（利用可能／失敗）、レイテンシ、サイズ、使用容量、および保護機能でフィルタリングおよび並べ替えを行います。</block>
   <block id="3a410df7dfc102007ea8a7569fdb1810" category="section-title">レプリケーション遅延に関するメール通知機能の強化</block>
@@ -3205,4 +3202,6 @@
   <block id="64e991d759281e91a768b558639fb387" category="paragraph">システムが影響を受けたファイルと攻撃の発生時刻を特定するため、ボリューム全体を復元する代わりに、利用可能なスナップショットから影響を受けたファイルのみを復元できます。</block>
   <block id="16f2ae5a8a2de6f12ddc298127a4ddb7" category="list-text">信頼性：SSD 容量しきい値、スケジュールされたローカル Snapshot 、スケジュールされたボリューム バックアップ、リモート データ レプリケーション、長期保存のためのデータ信頼性</block>
   <block id="d2eebd4f9400b9bd2c04860c048de241" category="paragraph">アカウント全体のレプリケーション遅延を監視するには、トラッキングを有効にしてください。Workload Factoryは、遅延が設定されたしきい値を超えた場合にアラートを発します。デフォルトでは、通常の転送時間を確保し、誤報を減らすために、しきい値はレプリケーション間隔の150%に設定されています。RPOに合わせてしきい値を調整し、遅延がそのしきい値を超えた場合に通知を受け取ることができます。</block>
+  <block id="842065a36dace972d6dab0c170421bd1" category="section-title">ボリュームとブロックデバイスのワークロードタグ付け</block>
+  <block id="47c38c6a3d7e96ce1b3b2519a980f283" category="paragraph">Workload Factoryは、ボリュームとブロックデバイスを、その主要なワークロードまたはアプリケーションに基づいて識別し、タグ付けするようになりました。Microsoft SQL ServerやOracle Databaseなどの定義済みワークロードタグを割り当てるか、アプリケーション用にカスタムタグを作成することができます。タグは個々のリソースに適用することも、接続されているストレージリソースに継承させることもできます。これにより、ストレージ構成をワークロードの要件に合わせ、インシデントの影響を把握し、より効果的にトラブルシューティングを行うことができます。</block>
 </blocks>
