@@ -44,7 +44,7 @@
 . *ボリューム名*：ターゲットボリューム名は次の形式で自動的に生成されます `{OriginalVolumeName}_copy`。自動生成されたボリューム名を使用するか、別のボリューム名を入力できます。
 . *階層化ポリシー*：ターゲットボリュームに格納されているデータの階層化ポリシーを選択します。階層化ポリシーは、選択したユースケースに応じた推奨される階層化ポリシーにデフォルトで設定されます。
 +
-_バランス (自動)_ は、Workload Factory コンソールを使用してボリュームを作成するときのデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、以下を参照してください。link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] AWS FSx for NetApp ONTAPドキュメント。ワークロード ファクトリーは、ワークロード ファクトリー コンソールで階層化ポリシーにユースケース ベースの名前を使用し、括弧内に FSx for ONTAP階層化ポリシー名を含めることに注意してください。
+_バランス (自動)_ は、Workload Factory コンソールを使用してボリュームを作成するときのデフォルトの階層化ポリシーです。ボリューム階層化ポリシーの詳細については、以下を参照してください。 link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^] AWS FSx for NetApp ONTAPドキュメント。Workload Factory では、階層化ポリシーに Workload Factory コンソールでユースケース ベースの名前が使用され、括弧内に FSx for ONTAP階層化ポリシー名が含まれていることに注意してください。
 
 +
 移行ユースケースを選択した場合、Workload Factory はソース ボリュームの階層化ポリシーをターゲット ボリュームにコピーすることを自動的に選択します。階層化ポリシーのコピーの選択を解除し、レプリケーション対象として選択したボリュームに適用する階層化ポリシーを選択できます。

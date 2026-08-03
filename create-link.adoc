@@ -137,7 +137,7 @@ NOTE: AWS GovCloud アカウントでは、自動リンク作成はサポート�
 
 .. *タグ*:必要に応じて、リソースをより簡単に分類できるように、このリンクに関連付けるタグを追加します。たとえば、FSx for ONTAPファイルシステムでこのリンクが使用されていることを示すタグを追加できます。
 +
-ワークロードファクトリーは、FSx for ONTAPファイルシステムに基づいて、AWS アカウント、場所、セキュリティグループを自動的に取得します。
+Workload Factory は、FSx for ONTAP ファイルシステムに基づいて AWS アカウント、場所、およびセキュリティグループを自動的に取得します。
 
 
 
@@ -148,7 +148,7 @@ NOTE: AWS GovCloud アカウントでは、自動リンク作成はサポート�
 . [続行]*を選択してAWS管理コンソールを開き、このFSx for ONTAPファイルシステムのAWSアカウントにログインします。
 . [Quick create stack]ページの[Capabilities]で、*[I acknowledge that AWS CloudFormation might create IAM resources]*を選択します。
 +
-CloudFormationテンプレートを起動すると、Lambdaに3つの権限が付与されます。Workload Factoryでは、リンクの使用時にこれらの権限が使用さ
+CloudFormation テンプレートを起動すると、Lambda に 3 つの権限が付与されることに注意してください。Workload Factory は、リンクを使用する際にこれらの権限を使用します。
 
 +
 [source, json]
@@ -167,7 +167,7 @@ CloudFormationテンプレートを起動すると、Lambdaに3つの権限が�
 --
 .手動で作成
 --
-Codebox の 2 つの Infrastructure-as-Code (IaC) ツール、CloudFormation または Terraform を使用してリンクを作成できます。このオプションを使用すると、AWS CloudFormation からリンクの ARN を抽出し、ここで報告します。ワークロード ファクトリーがリンクを手動で登録します。
+Codebox の 2 つの Infrastructure-as-Code（IaC）ツールを使用してリンクを作成できます：CloudFormation または Terraform。このオプションを使用すると、AWS CloudFormation からリンクの ARN を抽出し、ここで報告します。Workload Factory がリンクを手動で登録します。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。

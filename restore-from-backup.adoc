@@ -13,7 +13,7 @@ summary: バックアップからAWSアカウント内の任意のFSx for ONTAP�
 [role="lead"]
 NetApp Workload Factory では、バックアップから AWS アカウント内の任意の FSx for ONTAPファイルシステムにボリュームを復元できます。
 
-リストアに十分な容量があるかどうかはワークロード工場で確認され、十分でない場合はSSDストレージ階層の容量を自動的に追加できます。
+Workload Factoryは、復元に必要な容量が十分にあるかどうかを判断し、不足している場合はSSDストレージ層の容量を自動的に追加できます。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
