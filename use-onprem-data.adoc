@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: use-onprem-data.html 
 keywords: use, detect, replicate, remove, on-premises, ONTAP cluster, on-premises cluster, ONTAP 
-summary: NetApp Workload Factory でオンプレミスのONTAPデータを検出して複製し、AI ナレッジ ベースの強化に使用できるようにします。 
+summary: オンプレミスの ONTAP データを NetApp Workload Factory で検出およびレプリケートし、クラウド上のバックアップとして使用できるようにします。 
 ---
 = NetApp Workload Factory でオンプレミスのONTAPクラスタ データを使用する
 :allow-uri-read: 
@@ -11,15 +11,14 @@ summary: NetApp Workload Factory でオンプレミスのONTAPデータを検出
 
 
 [role="lead"]
-NetApp Workload Factory でオンプレミスのONTAPデータを検出して複製し、AI ナレッジ ベースの強化に使用できるようにします。
+オンプレミスの ONTAP データを NetApp Workload Factory で検出およびレプリケートし、クラウド上のバックアップとして使用できるようにします。
 
 .タスクの内容
 オンプレミスのONTAPクラスタのデータを使用するには、まずオンプレミスのONTAPクラスタを検出する必要があります。オンプレミスのONTAPクラスタを検出したら、次のいずれかのユースケースでデータを使用できます。
 
-ユースケース:: 生成AIワークロードの主なユースケースは、この一連のタスクの焦点です。
+ユースケース::
 +
 --
-* *生成AIワークロード*：オンプレミスのONTAPボリュームのデータをFSx for ONTAPファイルシステムにレプリケートして、データを使用できるようにしlink:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["AIナレッジベースの充実"^]ます。
 * *クラウドへのバックアップと移行*：オンプレミスのONTAPボリュームデータをFSx for ONTAPファイルシステムにレプリケートし、クラウド内のバックアップとして使用できます。
 * *データ階層化*：レプリケーション後、アクセス頻度の低いオンプレミスのONTAPボリュームデータを、SSDストレージ階層から容量プールストレージ階層に階層化できます。
 

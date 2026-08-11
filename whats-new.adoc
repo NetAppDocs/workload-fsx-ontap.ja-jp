@@ -88,6 +88,13 @@ S3 イベントの通知を設定するには、link:https://docs.netapp.com/us-
 
 
 
+[[ontap-features-displayed-in-volumes-explorer]]
+=== Volumes ExplorerにONTAPの機能が表示される
+
+ボリュームエクスプローラーのボリュームテーブルに ONTAP 機能が追加されました。これらの機能により、保護範囲、自律型ランサムウェア保護（ARP/AI）ステータス、ストレージ効率、階層化ポリシー、ボリュームの自動拡張など、ボリュームの構成とステータスに関するより詳細な情報が得られます。
+
+
+
 [[05-july-2026]]
 == 2026年7月5日
 

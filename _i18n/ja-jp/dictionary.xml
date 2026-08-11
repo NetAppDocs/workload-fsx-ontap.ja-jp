@@ -755,8 +755,6 @@
   <block id="b755b7c9e5db773b9578d24d7b40b61d" category="list-text">[適用]*を選択して変更を保存します。</block>
   <block id="124cb3fd3d0a35a1abf1c0f90f37e8a9" category="paragraph">オンプレミスのONTAPクラスタのデータを使用するには、まずオンプレミスのONTAPクラスタを検出する必要があります。オンプレミスのONTAPクラスタを検出したら、次のいずれかのユースケースでデータを使用できます。</block>
   <block id="2a3b399798aa16ecfbc1425cc560bfad" category="list-text">ユースケース</block>
-  <block id="ef63a3d009f11deff50f4dc327b32173" category="list-text">生成AIワークロードの主なユースケースは、この一連のタスクの焦点です。</block>
-  <block id="809c357d304bbfa1cd4446574b270af8" category="inline-link-macro">AIナレッジベースの充実</block>
   <block id="f15192f8afdcf438f7b1ccf0cda2b436" category="list-text">*クラウドへのバックアップと移行*：オンプレミスのONTAPボリュームデータをFSx for ONTAPファイルシステムにレプリケートし、クラウド内のバックアップとして使用できます。</block>
   <block id="5b5a84720ff8905504e8a45fbc52fb73" category="list-text">*データ階層化*：レプリケーション後、アクセス頻度の低いオンプレミスのONTAPボリュームデータを、SSDストレージ階層から容量プールストレージ階層に階層化できます。</block>
   <block id="4185f116d64b1130e6f9ba4250b147fa" category="paragraph">作業を開始する前に、次の情報が揃っていることを確認してください。</block>
@@ -1289,7 +1287,6 @@
   <block id="897bea1a5ca479178427004f773ee72e" category="list-text">必要に応じて、リバランシングする前にボリューム移動のリストをダウンロードします。</block>
   <block id="703547df715082455f8920d78fe90a30" category="list-text">[リバランス]*を選択します。</block>
   <block id="eaaaf380859de755a58a543fbffc3d8a" category="paragraph"><block ref="eaaaf380859de755a58a543fbffc3d8a" category="inline-link-macro-rx"></block></block>
-  <block id="1418bddde60a7d4a1fbd71041ef29d36" category="list-text">*生成AIワークロード*：オンプレミスのONTAPボリュームのデータをFSx for ONTAPファイルシステムにレプリケートして、データを使用できるようにし<block ref="8b94b70e10f0f6c7944c9419ec9922bc" category="inline-link-macro-rx"></block>ます。</block>
   <block id="7583f12b4559f6687c67d8588da1e2f7" category="doc">ボリューム自動拡張の強化</block>
   <block id="b57fe4f5ee65a0e01f61993297811ebf" category="paragraph">ビジネス ニーズやアプリケーション要件に応じて、ボリューム サイズがプロビジョニングされたサイズを超えて拡張できるように、ボリュームの自動拡張サイズを設定できるようになりました。</block>
   <block id="9f1effd9ace68ca00fe9e9e3c024b362" category="inline-link-macro">ボリュームの自動拡張を有効にする</block>
@@ -1997,7 +1994,6 @@
   <block id="0b81b68aa4b4da3fc81b7541c9557525" category="summary">NetApp Workload Factory では、ボリュームの作成後にストレージ効率設定を更新できます。</block>
   <block id="0254d70b292c2efb3924bc70f603207a" category="summary">必要に応じて、 NetApp Workload Factory の FSx for ONTAPファイル システムのスループット容量を更新します。</block>
   <block id="5b7dc0f0cef1ddf767dff9731a57d8a4" category="list-text">*FSx for ONTAP*から、スループット容量を更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。</block>
-  <block id="be31b62eb26bc544ed1c2919a1a354d8" category="summary">NetApp Workload Factory でオンプレミスのONTAPデータを検出して複製し、AI ナレッジ ベースの強化に使用できるようにします。</block>
   <block id="5811115476eeb3b923e56f3b218e8861" category="doc">NetApp Workload Factory でオンプレミスのONTAPクラスタ データを使用する</block>
   <block id="5433703774e7ff1a361e7a705d25ba42" category="paragraph">NetApp Workload Factory でオンプレミスのONTAPクラスターを検出し、 Amazon FSx for NetApp ONTAPファイルシステムにデータを複製できるようにします。</block>
   <block id="cab5c35909125289d94f24cfb933bb6d" category="list-text">*リンク*: リンクを選択します。リンクはオンプレミス クラスターに関連付けられ、クラスターと Workload Factory 間の接続が作成されます。</block>
@@ -3152,8 +3148,6 @@
   <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">ご自身の環境に適用されない構成の分析を無視することができます。これにより、不要なアラートや不正確な最適化結果を回避できます。</block>
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">カスタムルールについて詳しくはこちらをご覧ください</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">また、組織の標準および NetApp のベストプラクティスに照らして環境を検証するために、平易な言葉でカスタムルールを作成することもできます。ドライランでルールをテストし、各環境で実行するようにスケジュールを設定します。<block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
-  <block id="8be08850265c9930c26a8e5b28183a2e" category="paragraph">また、組織の標準および NetApp のベストプラクティスに照らして環境を検証するために、平易な言葉でカスタムルールを作成することもできます。ドライランでルールをテストし、各環境で実行するようにスケジュールを設定します。</block>
-  <block id="7c24f3892a999a3e8d688cabe068b17a" category="paragraph"><block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
   <block id="782a430d789ff1db80e40fbe9c0be819" category="paragraph">適切に設計されたダッシュボードは、ストレージ構成をONTAPのベストプラクティスおよびAWS Well-Architected Frameworkに照らして評価します。この評価では、改善点や修正点も推奨しています。</block>
   <block id="790f31a1565b039a710f1ff6cd60e24a" category="list-text">ボリュームバックアップ</block>
   <block id="ca512a483bb26b1b253abc6b2cc463bd" category="list-text">*Snapshotポリシー*</block>
@@ -3249,4 +3243,7 @@
   <block id="4fd22cd0c1b62f84962ef1e8ffd9c966" category="paragraph">アカウント全体のレプリケーション遅延を監視するには、トラッキングを有効にしてください。Workload Factoryは、遅延が設定されたしきい値を超えた場合にアラートを発します。デフォルトでは、通常の転送時間を確保し、誤報を減らすために、しきい値はレプリケーション間隔の150%に設定されています。RPOに合わせてしきい値を調整し、遅延がそのしきい値を超えた場合に通知を受け取ることができます。データをCSVファイルにエクスポートして、さらに分析することもできます。</block>
   <block id="adf6bc23c10d536eed25c42f34ba48e8" category="section-title">2026年8月2日</block>
   <block id="bb971caaebe9e5940267caf457500810" category="paragraph"><block ref="247b746a5e5f871115d636673a8fd3a7" category="inline-link-macro-rx"></block>。</block>
+  <block id="935b1e26eff078e94b224d92e0db898a" category="section-title">Volumes ExplorerにONTAPの機能が表示される</block>
+  <block id="2d4406cf931edb2fbd5ab72e7eb07c66" category="paragraph">ボリュームエクスプローラーのボリュームテーブルに ONTAP 機能が追加されました。これらの機能により、保護範囲、自律型ランサムウェア保護（ARP/AI）ステータス、ストレージ効率、階層化ポリシー、ボリュームの自動拡張など、ボリュームの構成とステータスに関するより詳細な情報が得られます。</block>
+  <block id="5800d9f6c1560d9eaf8bc5fbacb4698b" category="summary">オンプレミスの ONTAP データを NetApp Workload Factory で検出およびレプリケートし、クラウド上のバックアップとして使用できるようにします。</block>
 </blocks>
