@@ -84,7 +84,7 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . ストレージメニューから「ボリュームエクスプローラー」を選択します。
-. 「Volume explorer」から「Create volume」を選択します。
+. 「ボリュームの作成」を選択します。
 . [Create volume]ページの[General details]で、次の詳細を指定します。
 +
 .. *ボリューム名*：ボリュームの名前を入力します。
