@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: monitor-operations.html 
-keywords: monitor databases, monitor jobs, track storage jobs, track jobs 
-summary: NetApp Workload Factory for Storage の Tracker を使用して、FSx for ONTAP 、資格情報、リンク操作を追跡し、ジョブの進行状況を監視します。 
+keywords: monitor fsx for ontap, monitor jobs, track jobs, tracker 
+summary: NetApp Workload Factory for FSx for ONTAP の Tracker でワークロードの操作を追跡し、ジョブの進捗状況を監視します。 
 ---
-= NetApp Workload Factory の Tracker を使用してストレージ操作を監視する
+= Trackerを使用してFSx for ONTAPの操作を監視する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -47,12 +47,9 @@ Tracker を使用してNetAppコンソールでの操作を追跡および監視
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
-. ストレージメニューから、*管理*を選択し、次に*リンク*を選択します。
-+
-image:screenshot-menu-tracker-option.png["[Tracker]オプションが強調表示されたアカウント設定メニューのスクリーンショット。"]
-
-. [トラッカー]タブで、フィルタまたは検索を使用してジョブの結果を絞り込みます。ジョブレポートをダウンロードすることもできます。
+. メニュー image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] を選択し、次に「管理」を選択します。
+. 管理メニューから*Tracker*を選択します。
+. Trackerでは、フィルターまたは検索を使用してジョブ結果を絞り込むことができます。また、ジョブレポートをダウンロードすることもできます。
 
 
 
