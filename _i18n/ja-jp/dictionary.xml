@@ -131,10 +131,7 @@
   <block id="8997880c88dd70fe80799ee97bb7ac0c" category="doc">リンクの作成</block>
   <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link-macro">リンクの詳細</block>
   <block id="95254aef509d2d84e8ee7dd3052d1b61" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block>です。</block>
-  <block id="5c6789e8d71e288316c129b90f0a025e" category="paragraph">リンクはAWS Lambdaを利用してイベントに応じてコードを実行し、そのコードに必要なコンピューティングリソースを自動的に管理します。作成したリンクはNetAppアカウントの一部であり、AWSアカウントに関連付けられています。</block>
   <block id="22cc060f8b88cfca4c298ec0a9aae3fa" category="list-text">CloudFormationスタックを使用してリンクを追加する場合は、AWSアカウントで次の権限が必要です。</block>
-  <block id="53bee45613e420a1313f02fc8a36b1b1" category="list-text">[リンクの関連付け]ダイアログで、*[新しいリンクの作成]*を選択し、*[続行]*を選択します。</block>
-  <block id="b2f3a9c80071ec30919944cb6cd21a42" category="list-text">[Create Link]ページで、次の情報を指定します。</block>
   <block id="89a62ddcc9759060d903ef8b7aee42c3" category="list-text">*リンク名*：このリンクに使用する名前を入力します。名前はアカウント内で一意である必要があります。</block>
   <block id="68d5729d2a63e62a04de68bac212b9ab" category="list-text">*タグ*:必要に応じて、リソースをより簡単に分類できるように、このリンクに関連付けるタグを追加します。たとえば、FSx for ONTAPファイルシステムでこのリンクが使用されていることを示すタグを追加できます。</block>
   <block id="c602cdf8533ce956e9f326890f6d8723" category="list-text">[続行]*を選択してAWS管理コンソールを開き、このFSx for ONTAPファイルシステムのAWSアカウントにログインします。</block>
@@ -1192,7 +1189,6 @@
   <block id="de786693aed7955f1cb538f51e25f7d6" category="paragraph">デフォルトの権限に合わせてシークレットを作成するか、リンクポリシーにカスタムの権限を割り当てることができます。</block>
   <block id="49af4dcead2678507453b9bff6c332f1" category="paragraph">* VPCプライベートエンドポイントをAWS Secrets Managerに設定*はデフォルトで無効になっています。このオプションを選択すると、シークレットはローカルではなくVPCプライベートエンドポイントを使用して格納されます。</block>
   <block id="48457d7f94975228307244f863f96fee" category="section-title">既存のリンクをFSx for ONTAPファイルシステムに関連付ける</block>
-  <block id="531d680092609d3ec7794cd6dd8c39fe" category="paragraph">リンクを作成したら、1つ以上のFSx for ONTAPファイルシステムに関連付けます。</block>
   <block id="447f36846a239be6be0faf7dc1fa0364" category="list-text">[リンクの関連付け]ページで*[既存のリンクの関連付け]*を選択し、リンクを選択して*[続行]*を選択します。</block>
   <block id="5b5b11575f2a0c06c832b5cbd1c6dcfe" category="list-text">認証モードを選択します。</block>
   <block id="219e99148dae7112d47eedc1f49517ae" category="list-text">Workload Factory：パスワードを2回入力します。</block>
@@ -1208,7 +1204,6 @@
   <block id="ee67bf640d0b52ba5e821e265b1eacf5" category="paragraph">*解決策*：正しいシークレットARNを指定します。</block>
   <block id="0733070c151f197e780e335f701571f1" category="list-text">その秘密は正しい形式ではない。</block>
   <block id="6ef3be28f69c1735acc5b68f50b352ab" category="paragraph">*解決方法*：AWS Secrets Managerに移動して形式を編集します。</block>
-  <block id="63659b054a6e69260ce9e4a4634e56e0" category="paragraph">シークレットには、次のキー有効なペアが含まれている必要があります。</block>
   <block id="ecc4c534126952c05eb3829106343643" category="list-text">シークレットに、ファイルシステム認証用の有効なONTAPクレデンシャルが含まれていません。</block>
   <block id="b94462bb135856834e40d9c982dbbc8b" category="paragraph">*解決方法*：AWS Secrets ManagerでFSx for ONTAPファイルシステムを認証するためのクレデンシャルを指定します。</block>
   <block id="db02b80a9dd5a7c959ec87fdf41baa91" category="inline-link-macro">カスケードレプリケーション</block>
@@ -1370,7 +1365,6 @@
   <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*自動*: 自動の場合、作成された GiB ごとに 3 IOPS が追加されます。</block>
   <block id="080138c9fde9abc63b7003839106198b" category="list-text">*ユーザープロビジョニング*: ユーザープロビジョニングの場合は、IOPS 値を入力します。</block>
   <block id="2f33e5a4fe58163ac0df8f3b097df4db" category="list-text">*リンクの権限*: リンクの権限について、次のいずれかのオプションを選択します。</block>
-  <block id="dd9c72ad3bbeb047b573638ce62d0cc6" category="list-text">*ユーザー指定*: 指定したLambda実行ロールとそれに紐付けられたポリシーをLambdaリンクに割り当てるには、このオプションを選択します。Lambdaには以下の権限が必要です。<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block> AWS Secrets Manager を有効にした場合にのみ、権限が必要です。</block>
   <block id="5f3b3b380e02766e8ad7eca5c6b37840" category="paragraph">テキストボックスに Lambda 実行ロール ARN を入力します。</block>
   <block id="38adbad92c37166c4ce64da1eb51513b" category="inline-link-macro">ボリュームを作成する</block>
   <block id="f80d67f0a6951b3f6c1185e7c7f39c30" category="paragraph">ボリュームの最大拡張サイズと単位を指定します。最大拡張サイズを現在のボリュームサイズより小さく設定することはできません</block>
@@ -1459,11 +1453,8 @@
   <block id="5b4d700431157f8e7dcc17b14d365c7f" category="list-text">\\サーバ</block>
   <block id="6b8258a2b9dce9918a5b42eb1c2de4c6" category="list-text">\\サーバー\プロジェクト</block>
   <block id="710ecb74356fd86fc995d76f7fcb7c5c" category="list-text">\\Server\Projects\共有リソース</block>
-  <block id="272d4b49948c30687aaaffecca19cb82" category="paragraph">FSx for ONTAPファイルシステムを定義するときに、アカウントにリンクを作成できます。リンクはそのファイルシステムに使用され、他の FSx for ONTAPファイルシステムにも使用できます。後でファイル システムのリンクを関連付けることもできます。</block>
   <block id="049f730a98eb69627912748561a543b8" category="paragraph">リンク デプロイメント スタックは、次のデフォルトのシークレット マネージャー ARN 正規表現を Lambda アクセス許可ポリシーに自動的に追加します。<block ref="218d5bbe44642244cc57db37477be310" prefix=" " category="inline-code"></block> 。</block>
   <block id="bab25954c067653929b889d687bcb718" category="paragraph">「CloudFormation にリダイレクト」ダイアログが表示され、AWS CloudFormation サービスからリンクを作成する方法が説明されます。</block>
-  <block id="a37cbff3921a52bcde5c7689c912e1f4" category="paragraph">リンク作成ステータスはイベント ページで監視できます。これには 5 分もかかりません。</block>
-  <block id="9a5abe8b855a4f42f1c70c4b367d9bce" category="paragraph">_filesystemID_ はオプションですが、シークレット ARN に次の有効なキー ペアが含まれていることを確認します。</block>
   <block id="1023373ba9dff02b999882804d6dc2ef" category="list-text">filesystemID = FSx_filesystem_id (オプション)</block>
   <block id="508e0beab9fc0c907eb4adcaa7a736f7" category="list-text">ユーザー = FSx_user</block>
   <block id="0dcf8b4e3476c0545950d4d61acb625c" category="admonition">AWS Secrets Manager を使用した認証には、指定した _FSx_user_ または FSx for ONTAPファイルシステムで作成された別のユーザーが必要です。デフォルトのユーザーは<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block>ユーザーを指定しない場合は、</block>
@@ -1501,7 +1492,6 @@
   <block id="421075462886e558113f14b52fe22487" category="paragraph">ボリューム内のディレクトリを指す SMB/CIFS 共有を作成できるようになりました。ボリューム内で、どの共有が存在するか、共有がどこを指しているか、特定のユーザーとグループに付与されている権限を確認できます。</block>
   <block id="4662a232249c09ca958781da08211b0c" category="paragraph">データ保護ボリュームの場合、SMB/CIFS 共有を作成するフローに、マウント目的でボリュームへのジャンクション パスの作成が含まれるようになりました。</block>
   <block id="952da3361b1e3ca5daa8c23a39780e18" category="list-text">手動: Codebox から CloudFormation または Terraform を使用して手動で登録し、リンクを作成します。コードが存続し、操作を完了するための時間が延長されます。これは、セキュリティや DevOps などのさまざまなチームと連携して作業する場合に便利です。これらのチームには、リンクの作成を完了するために必要な権限を最初に付与する必要があります。</block>
-  <block id="272404907923a583d38661d1f77a2a8c" category="list-text">[リンクの作成] ページで、コードボックスから CloudFormation または Terraform を選択し、次の情報を入力します。</block>
   <block id="1ca9512c09f6b26312a475fda293b54a" category="list-text">*リンクの登録*: リンクの登録方法については、CloudFormation または Terraform を選択し、指示に従います。</block>
   <block id="aeb7b1f8e40a81f588a0d8770c9826d3" category="list-text">SMB/CIFS: Windows オペレーティング システム用のファイル ストレージ プロトコル</block>
   <block id="77e7ba17717c79352c95d49bede81697" category="list-text">選択したプロトコル (SMB/CIFS、NFS、または iSCSI) のアクセスを構成する必要があります。</block>
@@ -2987,7 +2977,6 @@
   <block id="e97bbb69ec6bcd2c1b3d761224ed4559" category="admonition">AWS GovCloud アカウントでは、自動リンク作成はサポートされていません。</block>
   <block id="d37d952a78337c053485a61317b953df" category="list-text">*AWS Secrets Manager*：GovCloud アカウントでは常に有効です。他のアカウントでは任意です。Workload Factory が AWS Secrets Manager から FSx for ONTAP のアクセス認証情報を取得できるようにします。</block>
   <block id="f3a06ea1d47de2a4216fe3fd53364d24" category="list-text">*ユーザー指定*: このオプションを選択すると、指定した Lambda 実行ロールとその関連付けられたポリシーが Lambda リンクに割り当てられます。Lambda のアクセス許可ポリシーには、以下のアクセス許可が必要です。<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block>のアクセス許可は、AWS Secrets Manager を使用する場合にのみ必要です。</block>
-  <block id="687e9c397e4fb6b561e735147b5af100" category="paragraph">CloudFormation テンプレートを起動すると、Lambda に 3 つの権限が付与されることに注意してください。Workload Factory は、リンクを使用する際にこれらの権限を使用します。</block>
   <block id="1425c9b22ae63851bbaa938ebc0a967d" category="list-text">スタックの作成に成功したら、Workload Factory コンソールのテキストボックスに Lambda ARN を貼り付けてください。Workload Factory は、FSx for ONTAP ファイルシステムに基づいて AWS アカウント、場所、およびセキュリティグループを自動的に取得します。</block>
   <block id="47dfa5e12270c73140e2f3dc8b32a020" category="paragraph">Workload Factory は、リンクを FSx for ONTAP ファイルシステムに関連付けます。高度な ONTAP 操作を実行できます。</block>
   <block id="eb3eec333eedf15738e12e55e183cdb7" category="paragraph"><block ref="c7c8a4154bf78f63993b7572e6143221" category="inline-link-macro-rx"></block>。</block>
@@ -3246,4 +3235,24 @@
   <block id="12a6e2d4c91a43e9ac81b18d2fd28a4a" category="list-text">レイテンシーしきい値を設定するボリュームのアクションメニューを選択します。</block>
   <block id="388a60e15f099855100226e2026dc1cd" category="list-text">分割するクローンボリュームを含むボリュームのアクションメニューを選択します。</block>
   <block id="3b4ba83afa209df4541afdb1c96a15f9" category="list-text">ストレージ効率設定を更新するボリュームのアクションメニューを選択します。</block>
+  <block id="c329a6ebc8c0891e88889203e3e31c39" category="doc">リンク作成はリンクページから利用できます</block>
+  <block id="ef8e743556b96fe2947729361cb5835f" category="paragraph">管理メニューの「リンク」ページから直接リンクを作成できるようになりました。これは、FSx for ONTAP インベントリページおよびファイルシステム概要ページに加えて利用できます。</block>
+  <block id="b65fab1584e1a15fb6cd01b1fb573a1f" category="inline-link-macro">リンクの作成について詳しくはこちらをご覧ください</block>
+  <block id="2fb8fbf9eac6cb7cdbca3e8cae581dd0" category="paragraph"><block ref="ac8902bc899b18c41d3bea9bfd9e1e86" category="inline-link-macro-rx"></block>。</block>
+  <block id="eb72702456cb13d975ccfacb15b610d0" category="paragraph">リンクはAWS Lambdaを使用して、イベントに応じてコードを実行し、そのコードに必要なコンピューティングリソースを自動的に管理します。お客様が作成するリンクはお客様のNetAppアカウントの一部であり、AWSアカウントに関連付けられています。</block>
+  <block id="de753f9064c7210624293a7c1d1e13f9" category="paragraph">FSx for ONTAP ファイルシステムを定義する際に、アカウントにリンクを作成できます。そのファイルシステムにリンクを使用でき、他の FSx for ONTAP ファイルシステムにも使用できます。後からファイルシステムへのリンクを関連付けることもできます。</block>
+  <block id="36c518eb88267ad8a7105893fd209a46" category="list-text">管理メニューから「リンク」を選択します。</block>
+  <block id="892be23a9211e0d2e6a0d60b06507944" category="list-text">リンクページで、「作成して関連付ける」を選択します。</block>
+  <block id="cb045f0740ec2fb29d2864d6c52abff5" category="list-text">「リンクの関連付け」ダイアログで、リンクに関連付けるファイルシステムを選択し、*続行*を選択します。</block>
+  <block id="a9dc1217e276dbbc98e08e5bf8b4e0bd" category="list-text">「新しいリンクを作成」を選択し、次に「続行」を選択します。</block>
+  <block id="eaa9de7b48a473b999b69f05d59df6c2" category="list-text">「リンクを作成」ページで、*「自動的に作成」*を選択し、以下の情報を入力してください：</block>
+  <block id="0a447482fbe2f57253df6484a37127e2" category="list-text">*ユーザー指定の実行ロール*: このオプションを選択すると、指定した Lambda 実行ロールとその関連付けられたポリシーが Lambda リンクに割り当てられます。Lambda のアクセス許可ポリシーには、以下のアクセス許可が必要です。<block ref="e6b67e3118c0caaf2206ab3d3fba8d67" prefix=" " category="inline-code"></block>のアクセス許可は、AWS Secrets Manager を有効にしている場合にのみ必要です。</block>
+  <block id="4e4d4587b3d4f525dd0bfabd81edb7d7" category="paragraph">CloudFormation テンプレートは、起動時に Lambda に3つの権限を付与します。Workload Factory は、リンクを使用する際にこれらの権限を使用します。</block>
+  <block id="6f0344b8291b1471c971ba88374dce8a" category="paragraph">リンク作成状況はイベントページで確認できます。所要時間は5分以内です。</block>
+  <block id="7b8171c19525234afed5066a22d0bdbe" category="list-text">リンク作成ページで「手動で作成」を選択し、CodeboxからCloudFormationまたはTerraformを選択します。</block>
+  <block id="bf419e3bcb855d67fd85a99f9a55eb97" category="list-text">「詳細情報と認証情報」欄に、以下の情報を入力してください。</block>
+  <block id="0b1685216b81bbd8b7a0d6bb09435f98" category="paragraph">リンクを作成したら、1 つ以上の FSx for ONTAP ファイルシステムに関連付けます。</block>
+  <block id="64c7a4783273d9e14ea971d0631f7ac8" category="paragraph">シークレット ARN に以下のキーと値のペアが含まれていることを確認してください。ただし、_filesystemID_ は省略可能です。</block>
+  <block id="669b6152234fe8c12012646b005a7d2f" category="paragraph">シークレットには、以下のキーと値のペアが含まれている必要があります：</block>
+  <block id="1641126472d40ab162e3acf05ac611ba" category="section-title">2026年8月30日</block>
 </blocks>
