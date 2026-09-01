@@ -4,7 +4,7 @@ permalink: increase-file-system-capacity.html
 keywords: adjust capacity, elastic file system capacity, increase file system capacity, increase FSx capacity, decrease file system capacity, decrease FSx capacity 
 summary: さまざまなアクティブワーキングセットを持つプロジェクトベースのワークロードのニーズを満たすために、FSx for ONTAPファイルシステムの SSD ストレージ容量を手動で調整します。 
 ---
-= Workload Factory でファイルシステムの容量を手動で調整する
+= NetApp Workload Factory でファイルシステムの容量を手動で調整する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

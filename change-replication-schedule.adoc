@@ -4,7 +4,7 @@ permalink: change-replication-schedule.html
 keywords: change replication schedule, update replication schedule, edit replication schedule 
 summary: NetApp Workload Factory のレプリケーション関係にあるソース ボリュームのレプリケーション スケジュールを変更します。 
 ---
-= ソースボリュームのレプリケーションスケジュールの変更
+= NetApp Workload Factory でボリュームのレプリケーションスケジュールを変更する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

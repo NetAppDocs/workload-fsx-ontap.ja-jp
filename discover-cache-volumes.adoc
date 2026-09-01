@@ -4,7 +4,7 @@ permalink: discover-cache-volumes.html
 keywords: discover cache volume, FlexCache technology, ONTAP FlexCache, FSx for ONTAP volume 
 summary: NetApp Workload Factory コンソールを離れることなく、キャッシュ関係に関連付けられているキャッシュ ボリュームを検出して表示します。 
 ---
-= Workload Factory でキャッシュボリュームを検出する
+= NetApp Workload Factoryでキャッシュボリュームを検出する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

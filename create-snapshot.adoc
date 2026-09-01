@@ -4,7 +4,7 @@ permalink: create-snapshot.html
 keywords: create snapshot, snapshot 
 summary: NetApp Workload Factory で FSx for ONTAPボリュームの手動スナップショットを作成します。スナップショットは、ボリュームのコンテンツの特定時点のバージョンです。 
 ---
-= FSx for ONTAPボリュームの手動スナップショットの作成
+= NetApp Workload Factoryでボリュームのオンデマンドスナップショットを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

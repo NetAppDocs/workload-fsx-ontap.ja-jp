@@ -4,7 +4,7 @@ permalink: edit-volume-autogrow.html
 keywords: volume autogrow, increase volume capacity, enable autogrow 
 summary: ボリュームの自動拡張を有効にすると、Workload Factory がボリューム容量を管理できるようになります。いつでも無効にすることができます。 
 ---
-= ワークロードファクトリーでボリュームの自動拡張を有効にする
+= NetApp Workload Factoryでボリュームの自動拡張を有効にする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

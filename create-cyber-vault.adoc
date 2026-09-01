@@ -4,7 +4,7 @@ permalink: create-cyber-vault.html
 keywords: create cyber vault, volume cyber vault, protect data cyber vault, cyber vault setup 
 summary: NetAppサイバー ボールトについて、またランサムウェアやサイバー脅威からデータを保護するためのサイバー ボールト アーキテクチャの実装方法について学習します。 
 ---
-= サイバーボールトでデータを保護
+= サイバーボールトでFSx for ONTAPのデータを保護する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: create-snapshot-policy.html
 keywords: create 
 summary: Workload Factory でストレージ VM のカスタム スナップショット ポリシーを作成します。 
 ---
-= Workload Factory でストレージ VM のスナップショット ポリシーを作成する
+= NetApp Workload Factory でストレージ VM のスナップショットポリシーを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

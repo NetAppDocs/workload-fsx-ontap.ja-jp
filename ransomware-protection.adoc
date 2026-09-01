@@ -4,7 +4,7 @@ permalink: ransomware-protection.html
 keywords: ransomware, arp, autonomous protection, protect, security, detect, detection, restore, recover, threat, attack, suspect, anti-ransomware, entropy, abnormal volume activity, anti-ransomware, extension conformity, ransomware protection strategy 
 summary: NetApp Autonomous Ransomware Protection with AI （ARP/AI）は、NASおよびSAN環境におけるワークロード分析を利用して、ランサムウェア攻撃の可能性のある異常なアクティビティを検知し、警告を発します。 
 ---
-= AIを搭載したNetAppの自律型ランサムウェア保護でデータを保護
+= FSx for ONTAPのデータをAIを活用したNetApp自律型ランサムウェア対策で保護する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

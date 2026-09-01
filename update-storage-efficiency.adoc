@@ -4,7 +4,7 @@ permalink: update-storage-efficiency.html
 keywords: storage efficiency change, update storage efficiency 
 summary: NetApp Workload Factory では、ボリュームの作成後にストレージ効率設定を更新できます。 
 ---
-= ボリュームのStorage Efficiency設定を更新します。
+= NetApp Workload Factoryにおけるボリュームのストレージ効率の更新
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: enable-snapshots-long-term.html
 keywords: snapshot long-term retention, enable long-term retention 
 summary: 長期保存のためのスナップショットを有効にします。これにより、長期的なディザスタリカバリのために特定のスナップショットをレプリケートできます。 
 ---
-= 長期保持のためのスナップショットの有効化と編集
+= NetApp Workload Factoryで長期スナップショット保持を有効にする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

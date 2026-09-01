@@ -4,7 +4,7 @@ permalink: manage-links.html
 keywords: links, accounts, lambda, creating, associating, disassociating, deleting, editing 
 summary: NetApp Workload Factory では、アカウントに関連付けられたリンクを表示したり、リンク認証のパスワードを更新したり、リンクを削除したりできます。 
 ---
-= ワークロードファクトリーのリンクを管理する
+= NetApp Workload Factory のリンクを管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

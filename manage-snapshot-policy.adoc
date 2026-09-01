@@ -4,7 +4,7 @@ permalink: manage-snapshot-policy.html
 keywords: manage snapshot policy, change snapshot policy, snapshot policies, snapshot schedule, update 
 summary: Workload Factory で FSx for ONTAPボリュームのスナップショット ポリシーを管理します。スナップショット ポリシーは、システムがボリュームのスナップショットを作成する方法を定義します。 
 ---
-= Snapshotポリシーを管理します。
+= NetApp Workload Factory でボリュームのスナップショットポリシーを管理する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

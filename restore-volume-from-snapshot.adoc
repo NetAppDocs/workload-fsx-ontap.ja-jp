@@ -4,7 +4,7 @@ permalink: restore-volume-from-snapshot.html
 keywords: restore volume, snapshot 
 summary: 削除または破損したファイルがボリュームに含まれている場合は、スナップショットからFSx for ONTAPボリュームをリストアします。 
 ---
-= Workload Factory のスナップショットからボリュームを復元する
+= NetApp Workload Factory でスナップショットからボリュームを復元する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

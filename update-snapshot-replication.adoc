@@ -4,7 +4,7 @@ permalink: update-snapshot-replication.html
 keywords: update snapshot data, replication 
 summary: レプリケーション関係にあるソースボリュームとターゲットボリューム間で転送されたSnapshotデータは、いつでも手動で更新します。 
 ---
-= レプリケーション関係のSnapshotデータの更新
+= NetApp Workload Factory でレプリケーションスナップショットデータを更新する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

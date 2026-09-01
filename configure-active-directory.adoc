@@ -4,7 +4,7 @@ permalink: configure-active-directory.html
 keywords: configure AD, configure active directory, update ad, edit active directory 
 summary: NetApp Workload Factory の FSx for ONTAPファイル システム内のストレージ VM の Active Directory を構成および更新します。 
 ---
-= Storage VMのActive Directoryの設定と更新
+= NetApp Workload Factory でストレージ VM の AD を設定および更新する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
