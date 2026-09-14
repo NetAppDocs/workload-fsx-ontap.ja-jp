@@ -2999,7 +2999,6 @@
   <block id="cd5018d2830f482994e77102c7380ec5" category="paragraph">リンク接続により、Workload Factory はパフォーマンス、データ保護、および構成に関する問題をスキャンできます。<block ref="bd244e13e9233be6d4441bce58acbc1c" category="inline-link-macro-rx"></block>ファイルシステムリソースの最も包括的な分析を行うために。</block>
   <block id="ab656c8a69b575add6ee0729f5bc54c7" category="list-text"><block ref="bd244e13e9233be6d4441bce58acbc1c" category="inline-link-macro-rx"></block>ファイルシステムリソースの最も包括的な分析を行うために。</block>
   <block id="5d1f387838383b2d368f6e7f1c840316" category="list-text">インスタンスのダウンタイムやサービスの中断など、この修正による影響を把握するために、アクション項目を確認してください。</block>
-  <block id="6ad3b6fcf10a846b365b85062abd036b" category="paragraph">未解決のディレクティブ（&lt;stdin&gt;）- include::https://raw.githubusercontent.com/NetAppDocs/workload-setup-admin/main/_include/links-overview.adoc[]</block>
   <block id="1bd303a4a4865b24239ad78c657bf53e" category="list-text">igroup を管理するにはリンクを関連付ける必要があります。<block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクを関連付けた後、この操作に戻ってください。</block>
   <block id="a5546560157685322114f05def377bc2" category="list-text">キャッシュボリュームとリレーションシップを管理するには、リンクを関連付ける必要があります。<block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクを関連付けたら、この操作に戻ってください。</block>
   <block id="873090954c0fe574d1c9f3181d89742b" category="list-text">SMB/CIFS共有を管理するには、リンクを関連付ける必要があります。<block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ってください。</block>
@@ -3071,4 +3070,39 @@
   <block id="55ce7397d464ef8e34bfaee401cec48d" category="sidebar">ファイルシステム設定の管理</block>
   <block id="2ee20619a771993544eaaa7e388816d1" category="sidebar">ストレージVMの管理</block>
   <block id="1c388674e0a6805e31fb6d7602029a59" category="sidebar">ストレージVM設定の管理</block>
+  <block id="87251eaee5bfd306ceab7bcacfbf47f6" category="paragraph">NetApp Workload Factoryリンクは、Workload Factoryアカウントと1つ以上のFSx for ONTAPファイルシステムとの間に信頼関係と接続性を確立します。これにより、Amazon FSx for ONTAP APIからは利用できない、ONTAP REST API呼び出しから直接提供される特定のファイルシステム機能を監視および管理できるようになります。</block>
+  <block id="1e2cf39904eebcbddae0fe72e0186b8b" category="paragraph">Workload Factory を使い始めるのにリンクは必要ありませんが、場合によっては、Workload Factory のすべての機能とワークロード機能を有効にするためにリンクを作成する必要があります。</block>
+  <block id="65050310e57f3790fef3c72eb48d33fe" category="section-title">リンクが有益な理由</block>
+  <block id="8db5475a47ce008ca4a3d502a243007d" category="paragraph">リンクは、NetApp Workload Factory が Amazon FSx for ONTAP API ではネイティブに利用できない操作を実行できるようにするため有益です。リンクは高度な ONTAP 機能と自動化を有効にし、FSx for ONTAP ファイルシステムの管理を強化します。</block>
+  <block id="abca8c391b472ef4e80c6577b5d5eb2a" category="paragraph">リンクを使用するメリットをいくつかご紹介します：</block>
+  <block id="bf5b08a19bccddd5697b54218eb442dd" category="list-text">このリンクにより、NetApp Console が ONTAP コマンドを FSx for ONTAP ファイルシステムに直接送信できるようになり、AWS がネイティブに提供する機能を超える高度な ONTAP 機能を利用できます。</block>
+  <block id="92d3d2d26bd62a6b2959d23585ef12a2" category="list-text">リンクはAWS Lambdaを活用して、イベントに応じてコードを実行します。このサーバーレス方式では、VPC内でインスタンスを実行する必要性がなくなります。</block>
+  <block id="87684df341e5a7d9f280a7bdf2048a6e" category="section-title">リンクの仕組み</block>
+  <block id="5abd3a6ae198e27e4c8402463411560f" category="paragraph">リンクはAWS Lambdaを活用しています。Lambdaはイベントに応じてコードを実行し、そのコードに必要なコンピューティングリソースを自動的に管理します。お客様が作成するリンクはお客様のNetAppアカウントの一部であり、AWSアカウントに関連付けられています。</block>
+  <block id="e721a1904dd1a2a54d259deb8d176230" category="paragraph">リンクを作成した後、1つまたは複数のFSx for ONTAPファイルシステムに関連付けることができます。各ファイルシステムは、同じNetAppアカウント内の1つのリンクにのみ関連付けることができます。複数のNetAppアカウントをお持ちの場合、単一のファイルシステムを異なるNetAppアカウントの追加のリンクに関連付けることができます。</block>
+  <block id="0d369015d5a60606bb8b6330f6c1030f" category="paragraph">Workload Factory のストレージワークロードからリンクを作成し、関連付けます。</block>
+  <block id="7869cf138befae7f7af03581af782724" category="paragraph">Workload Factoryの認証情報サービスに保存されている認証情報、またはAWS Secrets Managerに保存されている認証情報を使用して、リンクを認証できます。Workload Factoryは認証モードの変更をサポートしていません。</block>
+  <block id="81fccfd8b7cc4d87c0978527048afe60" category="paragraph">GovCloudアカウントのリンク接続がサポートされています。Workload FactoryはGovCloud認証キーを使用し、GovCloud承認済みのメカニズムを通じて、ONTAP操作のためのFSxへの安全なエージェントレスアクセスを実現します。</block>
+  <block id="66096c22a6220952b7aef731ef78c167" category="section-title">費用</block>
+  <block id="2ec62661c871c6dda5bcd49be8cea521" category="paragraph">Lambda が実行する各トランザクションには料金が発生します。Lambda は 2 つのシステム間のプロキシとして機能するため、Lambda がファイルシステム上の ONTAP REST API にリクエストを送信するときと、Workload Factory に応答を返すときに料金が発生します。</block>
+  <block id="0ab8cd7f04804af6d53be93ef7bd5345" category="inline-link-macro">AWS Lambdaの使用に関連するコストについて詳しくはこちらをご覧ください。</block>
+  <block id="70f0040e444997fbb4beeeae8bd03d34" category="paragraph"><block ref="70f0040e444997fbb4beeeae8bd03d34" category="inline-link-macro-rx"></block></block>
+  <block id="8cd69d367e2dbdfca9ec0b55ba13baec" category="section-title">リンクが必要な場合</block>
+  <block id="875551355a7b095c8343c772ab9a39cd" category="paragraph">Workload Factoryは、一部の情報を表示したり、一部のタスクを実行したりするためにリンクを必要とします。リンクを必要とする操作を実行しようとした際に、FSx for ONTAPファイルシステムにリンクを関連付けていない場合、Workload Factoryは操作にリンクが必要であることを通知します。</block>
+  <block id="c0653b3ad30a51a0fe3228ad2877ac9d" category="paragraph">リンクが必要な機能は以下のとおりです：</block>
+  <block id="d078fe237d087bff0fe3c19efd14fa54" category="list-text">予防保全、信頼性、およびコストパフォーマンス最適化のための FSx for ONTAP ファイルシステム構成のウェルアーキテクチャ状態</block>
+  <block id="f1a54b856438e25c87919e1789ae841c" category="list-text">ONTAP EMS イベントの監視とアラート</block>
+  <block id="c6501747b7c38b1e25460b13a727ec7c" category="list-text">NetApp Autonomous Ransomware Protection（ARP/AI）</block>
+  <block id="489e0dc0c162e1aff5f0f664bf2ea756" category="list-text">FSx for ONTAP ファイルシステム全体にわたる包括的な容量監視機能の強化</block>
+  <block id="b97b322b8cb0f9b187eb7b966c9ff886" category="list-text">ボリュームとStorage VMのデータレプリケーション、管理、および監視</block>
+  <block id="147d85abf5db68a53249c95e1a68cedb" category="list-text">SMB/CIFS共有およびNFSエクスポートポリシーのプロビジョニングと管理</block>
+  <block id="70b71b7616d1607e66f58defc9384bf3" category="list-text">FSx for ONTAP ファイルシステム上の iSCSI ボリュームの管理</block>
+  <block id="0ff428418a3d64cc69a6ee68906a8959" category="list-text">カスタム保護SLAのためのスナップショットポリシーの作成と管理</block>
+  <block id="c92f4938531f7fd55dc831a93892d29a" category="list-text">自動容量管理のためのinode管理機能強化</block>
+  <block id="3b5c7e283e0b752d51311178d3fa06f1" category="list-text">柔軟なスケーリングのためのボリュームの自動拡張</block>
+  <block id="6cdde78d80d6fbbd8f3706a9bcac599e" category="list-text">クローン作成と管理により、即座にその場でデータクローンを作成できます。</block>
+  <block id="7cacd07dfdd5c4feadcbf23d19f9972d" category="list-text">ONTAPバージョンなどのONTAPから直接取得した追加メトリクスの表示</block>
+  <block id="f22e542eda471e2702ed07136761fd6c" category="list-text">ストレージVMとクラスタLIFの詳細（ロール、エンドポイント、ノード、IPアドレス、ステータスなど）の表示</block>
+  <block id="30f1ae8a88bc842cdf5e493350ae7eb1" category="inline-link-macro">FSx for ONTAPファイルシステムへのリンクを接続する</block>
+  <block id="f86bb6aab3a49998f4db8fa07a49d81a" category="paragraph"><block ref="e658cbfbd30fb261626bc7c82308a713" category="inline-link-macro-rx"></block>の方法を確認してください。</block>
 </blocks>
