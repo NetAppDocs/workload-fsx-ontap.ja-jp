@@ -19,7 +19,7 @@ NetApp Workload Factoryを使用して、イニシエータ グループを作�
 igroupは、ブロックストレージの権限レイヤーとして機能します。サーバーがストレージシステムに接続すると、iSCSI認定（IQN）ホストイニシエーターを使用してサーバー自体を識別します。そのIQNが1つ以上のigroupに属している場合、サーバーはそれらのigroupに関連付けられているすべてのLUNにアクセスできるようになります。iSCSIが適切に機能するには、igroupとiSCSIホスト接続の両方が必要です。
 
 .開始する前に
-igroup を作成するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]。リンクを関連付けたら、この操作に戻ります。
+igroup を作成するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けた後、この操作に戻ってください。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。

@@ -19,7 +19,7 @@ NetApp Workload Factoryのブロック デバイスでは、 FlexVolボリュー
 ブロック サイズは、使用可能なFlexVol volumeサイズよりも小さくする必要があります。
 
 .開始する前に
-* ブロック デバイスを作成するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]。リンクを関連付けたら、この操作に戻ります。
+* ブロックデバイスを作成するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けたら、この操作に戻ってください。
 
 
 .手順
@@ -69,7 +69,7 @@ ONTAPは、重複排除機能と圧縮機能を活用してストレージ効率
 
 .. * Snapshotポリシー*：Snapshotポリシーを選択して、Snapshotの頻度と保持を指定します。
 +
-以下は AWS のデフォルトポリシーです。既存のスナップショットポリシーを表示するには、 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクの関連付け"]。
+以下はAWSのデフォルトポリシーです。既存のスナップショット ポリシーを表示するには、link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["リンクの関連付け"^]。
 
 +
 `default`:: このポリシーでは、次のスケジュールでSnapshotが自動的に作成され、新しいコピー用のスペースを確保するために最も古いSnapshotコピーが削除されます。
@@ -98,7 +98,7 @@ _バランス (自動)_ は、Workload Factory コンソールを使用してボ
 機能が利用できない場合は、次のいずれかの理由が考えられます。
 
 +
-*** リンクはファイル システムに関連付けられていません。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
+*** リンクはファイルシステムに関連付けられていません。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ります。
 *** 不変ファイルを含むボリュームと NVMe プロトコルを使用するボリュームは、ARP/AI ではサポートされません。
 *** ファイル システムには既に ARP/AI ポリシーがあります。
 

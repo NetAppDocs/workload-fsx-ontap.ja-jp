@@ -77,4 +77,4 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["�
 
 Workload Factory コンソールでリンクを作成するときに、IAM 実行ロールとそれに添付されたアクセス許可ポリシーを管理できるようになりました。リンクは、Workload Factory アカウントと 1 つ以上の FSx for ONTAPファイル システム間の接続を確立します。  IAM 実行ロールとリンク権限を割り当てるには、自動またはユーザー指定の 2 つのオプションがあります。  Workload Factory で実行ロールとそれに付随する権限ポリシーを管理すると、サードパーティのコードを使用する必要がなくなります。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"^]

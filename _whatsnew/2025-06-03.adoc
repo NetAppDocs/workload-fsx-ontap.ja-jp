@@ -9,7 +9,7 @@
 
 ビジネス ニーズやアプリケーション要件に応じて、ボリューム サイズがプロビジョニングされたサイズを超えて拡張できるように、ボリュームの自動拡張サイズを設定できるようになりました。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/edit-volume-autogrow.html["ボリュームの自動拡張を有効にする"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-volume-capacity.html["ボリュームの自動拡張を有効にする"]
 
 
 

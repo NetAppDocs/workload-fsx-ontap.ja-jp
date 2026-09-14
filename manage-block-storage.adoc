@@ -25,7 +25,7 @@ Workload Factoryコンソールから、イニシエータグループ（igroup�
 
 
 .開始する前に
-* igroup を管理するにはリンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]。リンクを関連付けたら、この操作に戻ります。
+* igroup を管理するにはリンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けた後、この操作に戻ってください。
 * 表示および管理するには、既存の igroup またはブロック デバイスが必要です。
 
 

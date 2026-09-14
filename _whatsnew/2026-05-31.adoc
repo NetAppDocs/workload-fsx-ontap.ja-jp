@@ -41,7 +41,7 @@ Workload Factory は、ストレージを消費するホストと、ホストの
 
 ファイルシステムの概要タブには、すべてのファイルシステムおよびストレージVMエンドポイントが直接表示されます。Workload Factoryコンソール内でエンドポイントを直接可視化することで、CLIやCloudShellを使用せずに、ネットワーク アクセス、エンドポイント、フェイルオーバーステータスを簡単に監視できます。役割、エンドポイント、ノード、IPアドレス、ステータスなどのLIFの詳細を表示するには、ファイルシステムにリンクを関連付ける必要があります。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["NetApp Workload Factoryでファイルシステムにリンクを関連付ける方法を学びましょう"]。
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["NetApp Workload Factoryでファイルシステムにリンクを関連付ける方法を学びましょう"^]。
 
 
 

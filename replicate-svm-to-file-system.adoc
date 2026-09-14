@@ -14,7 +14,7 @@ summary: ストレージVMを別のFSx for ONTAPファイルシステムにレ�
 NetApp Workload Factory でストレージ VM を別の FSx for ONTAPファイル システムに複製すると、データ損失が発生した場合にデータ アクセスの保護層が提供されます。この操作により、1 つのストレージ VM 内のすべてのボリュームが別の FSx for ONTAPファイル システムに複製されます。
 
 .開始する前に
-ストレージ VM を別の FSx for ONTAP ファイル システムに複製するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
+ストレージ VM を別の FSx for ONTAP ファイルシステムにレプリケートするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ってください。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。

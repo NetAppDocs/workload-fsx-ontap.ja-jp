@@ -16,7 +16,7 @@ Workload Factory でボリュームの SMB/CIFS 共有を管理するには、SM
 .開始する前に
 開始する前に、次の手順を実行します。
 
-* SMB/CIFS 共有を管理するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"] 。リンクが関連付けられたら、この操作に戻ります。
+* SMB/CIFS共有を管理するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ってください。
 * アクセスを許可するユーザまたはグループと、許可する権限のレベルを決定します。
 
 

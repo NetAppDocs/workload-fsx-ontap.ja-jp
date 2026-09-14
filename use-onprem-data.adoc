@@ -37,7 +37,7 @@ NetApp Workload Factory でオンプレミスのONTAPクラスターを検出し
 作業を開始する前に、次の情報が揃っていることを確認してください。
 
 * レプリケーションのためのFSx for ONTAPファイルシステム。
-* 検出されたオンプレミスクラスタに関連付ける接続リンク。リンクがない場合は、リンクをクリックする必要がありlink:create-link.html["作成"]ます。
+* 検出されたオンプレミスクラスタに関連付けるための接続済みリンク。リンクがない場合は、link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["作成"^]必要があります。
 * 必要な権限を持つONTAPユーザクレデンシャル。
 * オンプレミスのONTAPバージョン9.8以降。
 * 次の図に示すように接続します。
@@ -85,7 +85,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 .開始する前に
 * ボリュームデータをレプリケートするには、オンプレミスのONTAPクラスタを検出する必要があります。
 * レプリケーションのターゲットとして使用できるFSx for ONTAPファイルシステムが必要です。
-* レプリケーション関係に使用するオンプレミスのONTAPクラスタとFSx for ONTAPファイルシステムの両方に、リンクが関連付けられている必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]です。リンクが関連付けられたら、この操作に戻ります。
+* オンプレミス ONTAP クラスターと、レプリケーション関係に使用する FSx for ONTAP ファイルシステムの両方に、関連付けられたリンクが必要です。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ってください。
 
 
 .手順

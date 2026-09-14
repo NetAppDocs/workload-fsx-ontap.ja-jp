@@ -25,7 +25,7 @@ Amazon FSx for NetApp ONTAPの最新情報をご確認ください。
 
 管理メニューの「リンク」ページから直接リンクを作成できるようになりました。これは、FSx for ONTAP インベントリページおよびファイルシステム概要ページに加えて利用できます。
 
-link:create-link.html["リンクの作成について詳しくはこちらをご覧ください"]。
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["リンクの作成について詳しくはこちらをご覧ください"^]。
 
 
 
@@ -209,7 +209,7 @@ Workload Factory は、ストレージを消費するホストと、ホストの
 
 ファイルシステムの概要タブには、すべてのファイルシステムおよびストレージVMエンドポイントが直接表示されます。Workload Factoryコンソール内でエンドポイントを直接可視化することで、CLIやCloudShellを使用せずに、ネットワーク アクセス、エンドポイント、フェイルオーバーステータスを簡単に監視できます。役割、エンドポイント、ノード、IPアドレス、ステータスなどのLIFの詳細を表示するには、ファイルシステムにリンクを関連付ける必要があります。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["NetApp Workload Factoryでファイルシステムにリンクを関連付ける方法を学びましょう"]。
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["NetApp Workload Factoryでファイルシステムにリンクを関連付ける方法を学びましょう"^]。
 
 
 
@@ -943,7 +943,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 Codebox から Terraform を使用して、FSx for ONTAPファイル システムとの関連付けのためのリンクを作成できるようになりました。この機能は、リンクを手動で作成するユーザー向けです。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"^]
 
 
 
@@ -1047,7 +1047,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-replication.html["�
 
 Workload Factory コンソールでリンクを作成するときに、IAM 実行ロールとそれに添付されたアクセス許可ポリシーを管理できるようになりました。リンクは、Workload Factory アカウントと 1 つ以上の FSx for ONTAPファイル システム間の接続を確立します。  IAM 実行ロールとリンク権限を割り当てるには、自動またはユーザー指定の 2 つのオプションがあります。  Workload Factory で実行ロールとそれに付随する権限ポリシーを管理すると、サードパーティのコードを使用する必要がなくなります。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["LambdaリンクでFSx for ONTAPファイルシステムに接続"^]
 
 
 
@@ -1086,7 +1086,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.htm
 
 ビジネス ニーズやアプリケーション要件に応じて、ボリューム サイズがプロビジョニングされたサイズを超えて拡張できるように、ボリュームの自動拡張サイズを設定できるようになりました。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/edit-volume-autogrow.html["ボリュームの自動拡張を有効にする"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-volume-capacity.html["ボリュームの自動拡張を有効にする"]
 
 
 
@@ -1548,7 +1548,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html["Blue
 * 手動リンク作成のサポート:この機能を使用すると、AWS CloudFormationでリンクARNを手動で登録してスタンドアロンで作成できます。これは、セキュリティチームまたはDevOpsチームがリンク作成プロセスを支援する場合に役立ちます。
 
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["リンクの作成"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["リンクの作成"^]
 
 
 

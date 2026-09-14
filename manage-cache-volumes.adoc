@@ -17,7 +17,7 @@ NetApp Workload Factoryコンソールを使用して、FSx for ONTAPファイ�
 NetApp Workload Factoryコンソールで、キャッシュ関係に関連付けられたキャッシュ ボリュームを管理できます。
 
 .開始する前に
-* キャッシュ ボリュームと関係を管理するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"]。リンクを関連付けたら、この操作に戻ります。
+* キャッシュボリュームとリレーションシップを管理するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けたら、この操作に戻ってください。
 * 編集するには既存のキャッシュ ボリュームが必要です。
 
 

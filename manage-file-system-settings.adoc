@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: manage-file-system-settings.html 
+keywords: create fsx tags, create tags, edit fsx tags, fsx tags, reset fsx admin password 
+summary: ファイルシステムの FSx for ONTAPファイルシステムタグをいつでも追加、更新、または削除できます。 
+---
+= NetApp Workload FactoryでFSx for ONTAPファイル システム設定を管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory で FSx for ONTAP ファイルシステムの設定を管理します。ファイルシステムのタグを管理したり、必要に応じて fsxadmin パスワードをリセットしたり、必要に応じてスループット容量を更新したりできます。
+
+
+
+[[manage-fsx-for-ontap-file-system-tags]]
+== FSx for ONTAP ファイルシステムタグを管理する
+
+タグはリソースを分類するのに役立ちます。  NetApp Workload Factoryでは、ファイル システムのタグをいつでも追加、編集、削除できます。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、更新するファイルシステムのアクションメニューを選択し、*ファイルシステムタグの管理*を選択します。
+. *ファイル システム タグの管理* ダイアログで、必要に応じてタグを追加、編集、または削除します。
++
+ファイル システムに適用できるタグの最大数は 50 です。
+
+. * 適用 * を選択します。
+
+
+
+
+[[reset-the-fsxadmin-password-of-an-fsx-for-ontap-file-system]]
+== FSx for ONTAP ファイルシステムの fsxadmin パスワードをリセットする
+
+必要に応じて、 NetApp Workload Factory で fsxadmin パスワードをリセットします。
+
+ファイルシステムの作成時に代替ユーザを指定した場合は、AWSコンソールでのみfsxadminパスワードをリセットできます。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、fsxadmin パスワードをリセットするファイル システムのアクション メニューを選択し、*管理*を選択します。
+. ファイル システムの概要から、アクション メニューを選択します。
++
+image:screenshot-reset-fsxadmin-password.png["ファイル システムの概要タブにあるアクション メニューのスクリーンショット。"]
+
+. [Reset fsxadmin password]*を選択します。
+. [Reset fsxadmin password]ダイアログで、新しいfsxadminパスワードを入力し、確認のためにもう一度入力します。
+. * 適用 * を選択します。
+
+
+
+
+[[update-throughput-capacity-for-an-fsx-for-ontap-file-system]]
+== FSx for ONTAP ファイルシステムのスループット容量を更新する
+
+必要に応じて、 NetApp Workload Factory の FSx for ONTAPファイル システムのスループット容量を更新します。
+
+スループット容量の制限については、AWS FSx for NetApp ONTAPドキュメントのを参照して link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html["クォータ"^] ください。
+
+.手順
+. いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
+. [ストレージ] メニューから、*FSx for ONTAP* を選択します。
+. *FSx for ONTAP*から、スループット容量を更新するファイルシステムのアクションメニューを選択し、*管理*を選択します。
+. [Information]で、*[Throughput capacity]*の横にある鉛筆アイコンを選択します。[Throughput capacity]*行の上にマウスを置くと、ドロップダウン矢印の横に鉛筆のアイコンが表示されます。
+. [スループット容量]ダイアログで、必要なスループット容量を選択します。
+. 変更を保存するには「適用」を選択します。
+

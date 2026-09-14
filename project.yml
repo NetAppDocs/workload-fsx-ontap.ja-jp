@@ -27,96 +27,84 @@ sidebar:
       url: "/learn-fsx-ontap.html"
     - title: クイックスタート
       url: "/quick-start.html"
-    - title: FSx for ONTAPファイルシステムの作成
-      url: "/create-file-system.html"
   - title: Amazon FSx for NetApp ONTAP を使用します
     entries:
     - title: コスト削減の詳細
       url: "/explore-savings.html"
-    - title: FSx for ONTAP のコストを追跡および分析する
-      url: "/track-costs.html"
-    - title: リンクを使用
+    - title: ストレージリソースを作成する
       entries:
-      - title: リンクについて学ぶ
-        url: "/links-overview.html"
-      - title: リンクを使用したファイルシステムへの接続
-        url: "/create-link.html"
-      - title: リンクの管理
-        url: "/manage-links.html"
-    - title: ボリュームの作成
-      url: "/create-volume.html"
-    - title: キャッシュボリュームの検出と表示
-      url: "/discover-cache-volumes.html"
-    - title: データへのアクセス
-      url: "/access-data.html"
-    - title: ブロックストレージリソースを作成する
-      entries:
+      - title: FSx for ONTAPファイルシステムの作成
+        url: "/create-file-system.html"
+      - title: Storage VM を作成
+        url: "/create-storage-vm.html"
+      - title: ボリュームの作成
+        url: "/create-volume.html"
       - title: igroupの作成
         url: "/create-igroup.html"
       - title: ブロックデバイスを作成する
         url: "/create-block-device.html"
-    - title: Storage VM を作成
-      url: "/create-storage-vm.html"
-    - title: データを保護
+    - title: リンクについて学ぶ
+      url: "/learn-about-links.html"
+    - title: キャッシュボリュームの検出と表示
+      url: "/discover-cache-volumes.html"
+    - title: データへのアクセス
+      url: "/access-data.html"
+  - title: データを保護
+    entries:
+    - title: データ保護の概要
+      url: "/data-protection-overview.html"
+    - title: スナップショットを使用してデータを保護する
       entries:
-      - title: データ保護の概要
-        url: "/data-protection-overview.html"
-      - title: スナップショットを使用する
-        entries:
-        - title: Snapshot を作成します
-          url: "/create-snapshot.html"
-        - title: Snapshot ポリシーを作成します
-          url: "/create-snapshot-policy.html"
-        - title: Snapshotからボリュームをリストアする
-          url: "/restore-volume-from-snapshot.html"
-      - title: オブジェクトストレージへのバックアップを使用する
-        entries:
-        - title: 手動バックアップの作成
-          url: "/create-backup.html"
-        - title: バックアップからボリュームをリストアする
-          url: "/restore-from-backup.html"
+      - title: スナップショットを使用してデータを保護する
+        url: "/use-snapshots.html"
+      - title: Snapshotポリシーを管理します。
+        url: "/manage-snapshot-policy.html"
+      - title: Snapshotの管理
+        url: "/manage-snapshots.html"
+    - title: オブジェクトストレージへのバックアップを使用する
+      url: "/use-backups.html"
+    - title: データの保護にレプリケーションを使用する
+      entries:
       - title: データのレプリケート
         url: "/create-replication.html"
-      - title: 自律型ランサムウェア対策でデータを保護
-        url: "/ransomware-protection.html"
-      - title: ボリュームのクローニング
-        url: "/clone-volume.html"
-      - title: オンプレミスのONTAPデータを使用
+      - title: オンプレミスの ONTAP データを FSx for ONTAP にレプリケートする
         url: "/use-onprem-data.html"
-      - title: データを保護するサイバーボールトを作成する
-        url: "/create-cyber-vault.html"
-  - title: 管理と監視
+      - title: Storage VMを別のファイルシステムにレプリケートする
+        url: "/replicate-svm-to-file-system.html"
+      - title: レプリケーションの遅延を追跡する
+        url: "/track-replication-delays.html"
+      - title: レプリケーション関係の管理
+        url: "/manage-replication.html"
+    - title: 自律型ランサムウェア対策でデータを保護
+      url: "/ransomware-protection.html"
+    - title: ボリュームのクローニング
+      url: "/clone-volume.html"
+    - title: データを保護するサイバーボールトを作成する
+      url: "/create-cyber-vault.html"
+  - title: Workload Factory で FSx for ONTAP を管理する
     entries:
-    - title: Trackerを使用した操作の監視
-      url: "/monitor-operations.html"
+    - title: FSx for ONTAP EMSイベントを分析する
+      url: "/analyze-events.html"
     - title: ファイルシステムのベストプラクティスの実装
       entries:
       - title: FSx for ONTAPの構成分析
         url: "/configuration-analysis.html"
       - title: 適切に設計されたファイルシステム構成の実装
         url: "/improve-configurations.html"
-    - title: FSx for ONTAP EMSイベントを分析する
-      url: "/analyze-events.html"
-    - title: ボリューム管理
+    - title: FSx for ONTAP のコストを追跡および分析する
+      url: "/track-costs.html"
+    - title: ボリュームの管理
       entries:
-      - title: ボリュームの自動拡張の編集
-        url: "/edit-volume-autogrow.html"
-      - title: ボリューム容量を調整する
-        url: "/adjust-volume-capacity.html"
+      - title: ボリューム容量の管理
+        url: "/manage-volume-capacity.html"
       - title: ボリュームレイテンシしきい値を設定する
         url: "/set-volume-latency-thresholds.html"
-      - title: ボリューム容量の再調整
-        url: "/rebalance-volume.html"
-      - title: 変更不可ファイルの管理
-        url: "/manage-immutable-files.html"
-      - title: ボリュームタグを管理します
-        url: "/manage-volume-tags.html"
+      - title: ボリューム設定を管理する
+        url: "/manage-volume-settings.html"
       - title: キャッシュボリュームを管理する
         url: "/manage-cache-volumes.html"
       - title: 階層化ポリシーを変更する
         url: "/change-tiering-policy.html"
-      - title: Storage Efficiencyの更新
-        url: "/update-storage-efficiency.html"
       - title: NFS エクスポートポリシーを管理します
         url: "/manage-nfs-export-policy.html"
       - title: SMB/CIFS共有を管理する
@@ -137,64 +125,30 @@ sidebar:
         url: "/split-cloned-volume.html"
       - title: ボリュームを削除する
         url: "/delete-volume.html"
-    - title: ブロックストレージ管理
+    - title: ブロックストレージを管理する
       entries:
       - title: ブロックストレージを管理する
         url: "/manage-block-storage.html"
       - title: ブロックデバイスにタグを適用する
         url: "/apply-block-device-tags.html"
-    - title: ファイルシステム管理
+    - title: ファイルシステムの管理
       entries:
-      - title: ファイルシステムの容量を手動で調整する
-        url: "/increase-file-system-capacity.html"
-      - title: ファイルシステムの容量を自動的に管理する
-        url: "/manage-capacity-automatically.html"
-      - title: ファイルシステムタグを管理する
-        url: "/manage-fsx-tags.html"
-      - title: fsxadminパスワードのリセット
-        url: "/reset-fsxadmin-password.html"
-      - title: ファイルシステムを削除する
-        url: "/delete-file-system.html"
-    - title: Storage VM 管理
-      entries:
-      - title: Storage VMを別のファイルシステムにレプリケートする
-        url: "/replicate-svm-to-file-system.html"
-      - title: Storage VMのActive Directoryの設定と更新
-        url: "/configure-active-directory.html"
-      - title: Storage VMタグを管理します。
-        url: "/manage-svm-tags.html"
-      - title: Storage VMのパスワードのリセット
-        url: "/reset-svm-password.html"
-      - title: Storage VMを削除します
-        url: "/delete-svm.html"
-    - title: データ保護管理
-      entries:
-      - title: スナップショット
-        entries:
-        - title: Snapshotポリシーを管理します。
-          url: "/manage-snapshot-policy.html"
-        - title: 長期保持のためのスナップショットの有効化と編集
-          url: "/enable-snapshots-long-term.html"
-        - title: Snapshotの管理
-          url: "/manage-snapshots.html"
-      - title: バックアップ
-        entries:
-        - title: ボリュームバックアップスケジュールの管理
-          url: "/manage-backup-schedule.html"
-      - title: レプリケーション
-        entries:
-        - title: データ保護ボリュームをレプリケートする
-          url: "/cascade-replication.html"
-        - title: レプリケーションの遅延を追跡する
-          url: "/track-replication-delays.html"
-        - title: レプリケーション関係の管理
-          url: "/manage-replication.html"
-    - title: パフォーマンス管理
-      entries:
+      - title: ファイルシステムの容量を調整する
+        url: "/adjust-file-system-capacity.html"
+      - title: ファイルシステム設定の管理
+        url: "/manage-file-system-settings.html"
       - title: ファイルシステムのIOPSのプロビジョニング
         url: "/provision-iops.html"
-      - title: ファイルシステムのスループット容量の更新
-        url: "/update-throughput-capacity.html"
+      - title: ファイルシステムを削除する
+        url: "/delete-file-system.html"
+    - title: ストレージVMの管理
+      entries:
+      - title: ストレージVM設定の管理
+        url: "/manage-svm-settings.html"
+      - title: Storage VMを削除します
+        url: "/delete-svm.html"
+    - title: Trackerを使用した操作の監視
+      url: "/monitor-operations.html"
   - title: 参考文献
     entries:
     - title: FSx for ONTAPのパフォーマンス

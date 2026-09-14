@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: learn-about-links.html 
+keywords: links, accounts, lambda 
+summary: Workload Factory リンクは、Workload Factory アカウントと 1 つ以上の FSx for ONTAPファイル システム間の信頼関係と接続を作成します。 
+---
+= NetApp Workload Factoryのリンクについて学ぶ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+未解決のディレクティブ（<stdin>）- include::https://raw.githubusercontent.com/NetAppDocs/workload-setup-admin/main/_include/links-overview.adoc[]

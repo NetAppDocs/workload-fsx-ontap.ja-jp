@@ -18,20 +18,32 @@ indexpage:
     links:
     - title: コスト削減の詳細
       url: "/explore-savings.html"
-    - title: FSx for ONTAPリソースのコストと使用状況を追跡する
-      url: "/track-costs.html"
     - title: リンクを使用したファイルシステムへの接続
-      url: "/create-link.html"
-    - title: データを保護
-      url: "/data-protection-overview.html"
-  - title: 管理と監視
+      url: https://docs.netapp.com/us-en/workload-setup-admin/create-link.html
+    - title: Storage VM を作成
+      url: "/create-storage-vm.html"
+    - title: ボリュームの作成
+      url: "/create-volume.html"
+  - title: データを保護
     links:
-    - title: Trackerを使用した操作の監視
-      url: "/monitor-operations.html"
-    - title: FSx for ONTAPファイルシステムの Well-Architected ステータスを表示します
+    - title: Workload Factory におけるデータ保護について
+      url: "/data-protection-overview.html"
+    - title: スナップショットを使用してデータを保護する
+      url: "/use-snapshots.html"
+    - title: バックアップを使用してデータを保護する
+      url: "/use-backups.html"
+    - title: データの保護にレプリケーションを使用する
+      url: "/create-replication.html"
+  - title: FSx for ONTAP の管理
+    links:
+    - title: ボリュームの階層化ポリシーを変更する
+      url: "/change-tiering-policy.html"
+    - title: FSx for ONTAP ファイルシステム構成の改善
       url: "/improve-configurations.html"
-    - title: FSx for ONTAP EMSイベントを分析する
-      url: "/analyze-events.html"
+    - title: ボリュームのスナップショットポリシーを管理する
+      url: "/manage-snapshot-policy.html"
+    - title: ボリューム容量の管理
+      url: "/manage-volume-capacity.html"
   - title: 知識とサポート
     links:
     - title: サポートに登録します

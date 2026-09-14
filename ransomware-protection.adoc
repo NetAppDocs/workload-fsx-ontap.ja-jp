@@ -65,7 +65,7 @@ ARP/AI 機能は、Amazon FSx for NetApp ONTAPが実行するONTAPバージョ�
 ARP/AIが有効化された後に実際の攻撃が検出された場合、Workload Factoryは自動的にスナップショットポリシーを作成します。このポリシーでは、4時間ごとに最大6つのスナップショットを作成できます。各スナップショットは2～5日間ロックされます。
 
 .開始する前に
-ファイル システムまたはボリュームに対して ARP/AI を有効にするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"] 。リンクが関連付けられたら、この操作に戻ります。
+ファイルシステムまたはボリュームでARP/AIを有効にするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ります。
 
 [role="tabbed-block"]
 ====
