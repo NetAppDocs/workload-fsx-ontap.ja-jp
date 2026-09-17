@@ -1634,7 +1634,6 @@
   <block id="65c95ed5c9f895be6dfa81e8583c86af" category="list-text">*CloudShell CLI*: Workload Factory には、単一のブラウザベースの CLI からアカウント全体の AWS およびNetApp環境を管理および操作するための CloudShell CLI が含まれています。Workload Factory コンソールの上部バーから CloudShell にアクセスします。</block>
   <block id="34904d30d825a389b588efb76a1ceb16" category="list-text">*REST API*: Workload Factory REST API を使用して、FSx for ONTAPファイルシステムやその他の AWS リソースをデプロイおよび管理します。</block>
   <block id="3995165ba76339d9d4d08edf5a17c07c" category="list-text">*CloudFormation*: AWS CloudFormation コードを使用して、Workload Factory コンソールで定義したアクションを実行し、AWS アカウントの CloudFormation スタックから AWS およびサードパーティのリソースをモデル化、プロビジョニング、管理します。</block>
-  <block id="a1b1209dad1b58c4e66fd68ee5bc0148" category="list-text">*Terraform NetApp Workload Factory プロバイダー*: Terraform を使用して、Workload Factory コンソールで生成されたインフラストラクチャ ワークフローを構築および管理します。</block>
   <block id="f779a02b6ead6147136f74bc7ce29eaa" category="paragraph">FSx for ONTAPアカウントを管理するのは Workload Factory ではなく AWS です。。 <block ref="d466c04e3dc9277f23f307f5afe7df62" category="inline-link-macro-rx"></block> 。</block>
   <block id="b49c47706d393689e68481f76e8388d7" category="paragraph">Workload FactoryまたはWorkload Factoryアプリケーションとサービスに関する一般的な質問については、以下を参照してください。<block ref="212087c74fdb398dac1262c0d5f1734c" category="inline-link-macro-rx"></block> 。</block>
   <block id="3a84cef0233ac32a841f51da8d052f65" category="doc">NetApp Workload Factory に関する法的通知</block>
@@ -3107,4 +3106,5 @@
   <block id="f54caf9bcfff2cb7aa30ba073518e7db" category="list-text"><block ref="f54caf9bcfff2cb7aa30ba073518e7db" category="inline-link-macro-rx"></block></block>
   <block id="fa1a08e2a749c9f330c9a8e60cac9cc3" category="inline-link-macro">リンクを管理する</block>
   <block id="364f26fd39f55f2137b4749b01da3565" category="list-text"><block ref="364f26fd39f55f2137b4749b01da3565" category="inline-link-macro-rx"></block></block>
+  <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraformプロバイダー*：Terraformを使用して、Workload Factoryコンソールで生成されたインフラストラクチャワークフローを構築および管理します。</block>
 </blocks>
