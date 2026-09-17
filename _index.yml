@@ -18,6 +18,8 @@ indexpage:
     links:
     - title: コスト削減の詳細
       url: "/explore-savings.html"
+    - title: リンクについて学ぶ
+      url: "/links-overview.html"
     - title: リンクを使用したファイルシステムへの接続
       url: https://docs.netapp.com/us-en/workload-setup-admin/create-link.html
     - title: Storage VM を作成

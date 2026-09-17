@@ -44,7 +44,7 @@ sidebar:
       - title: ブロックデバイスを作成する
         url: "/create-block-device.html"
     - title: リンクについて学ぶ
-      url: "/learn-about-links.html"
+      url: "/links-overview.html"
     - title: キャッシュボリュームの検出と表示
       url: "/discover-cache-volumes.html"
     - title: データへのアクセス
