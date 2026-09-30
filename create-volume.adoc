@@ -88,6 +88,7 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 . [Create volume]ページの[General details]で、次の詳細を指定します。
 +
 .. *ボリューム名*：ボリュームの名前を入力します。
+.. *ワークロード*：ボリュームに関連付けられているワークロードを選択します。
 .. * Storage VM名*：必要に応じて、Storage VM名を入力します。
 .. *ボリュームスタイル*：* FlexVol *または* FlexGroup * volumeを選択します。
 +
