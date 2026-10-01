@@ -129,7 +129,7 @@ Workload Factory は、ボリュームに推奨される FlexCache の書き込�
 [[link-documentation-support]]
 === リンクドキュメントのサポート
 
-リンクに関するすべてのドキュメントは、Workload Factory のセットアップおよび管理に関するドキュメントに記載されています。Workload Factory FSx for ONTAP ドキュメントの link:links-overview.html["NetApp Workload Factoryのリンクについて学ぶ"] を参照して、セットアップおよび管理に関するドキュメント内の関連ページへのリンクを確認することもできます。
+リンクに関するすべてのドキュメントは、Workload Factory のセットアップおよび管理に関するドキュメントに記載されています。Workload Factory FSx for ONTAP ドキュメントの link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["NetApp Workload Factoryのリンクについて学ぶ"] を参照して、セットアップおよび管理に関するドキュメント内の関連ページへのリンクを確認することもできます。
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["Workload Factory コンソールでのリンクの設定方法については、こちらをご覧ください。"^]
 
@@ -784,7 +784,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/track-costs.html["Workload
 
 NetApp Workload Factoryコンソールからファイルシステムの FSx タグを直接簡単に管理できます。この機能を使用すると、タグを追加、編集、または削除できるため、FSx for ONTAPファイルシステムの整理と分類を効率化できます。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-fsx-tags.html["Workload Factory で FSx タグを管理する"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-file-system-settings.html["Workload Factory で FSx タグを管理する"]
 
 
 

@@ -49,7 +49,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/track-costs.html["Workload
 
 NetApp Workload Factoryコンソールからファイルシステムの FSx タグを直接簡単に管理できます。この機能を使用すると、タグを追加、編集、または削除できるため、FSx for ONTAPファイルシステムの整理と分類を効率化できます。
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-fsx-tags.html["Workload Factory で FSx タグを管理する"]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/manage-file-system-settings.html["Workload Factory で FSx タグを管理する"]
 
 
 

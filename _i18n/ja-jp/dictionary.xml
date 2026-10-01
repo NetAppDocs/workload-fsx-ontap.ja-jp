@@ -1884,7 +1884,6 @@
   <block id="5b58af6390ae44b5a39c726b4820fffb" category="section-title">NetApp Workload Factoryでファイルシステムの FSx タグを管理する</block>
   <block id="543e684a4a914d6bef4f91873d32e315" category="paragraph">NetApp Workload Factoryコンソールからファイルシステムの FSx タグを直接簡単に管理できます。この機能を使用すると、タグを追加、編集、または削除できるため、FSx for ONTAPファイルシステムの整理と分類を効率化できます。</block>
   <block id="8945587d036e5b09c39322767239857a" category="inline-link-macro">Workload Factory で FSx タグを管理する</block>
-  <block id="3c57420160e53dc4967d9ca75a5d5d06" category="paragraph"><block ref="3c57420160e53dc4967d9ca75a5d5d06" category="inline-link-macro-rx"></block></block>
   <block id="1b931c0909a42d2dd6b1b28eeb36252c" category="section-title">FSx for ONTAPファイルシステムのキャッシュ容量を調整する</block>
   <block id="aed1296ef373ba8df468af355d85d3ce" category="paragraph">Workload Factory コンソールからキャッシュ ボリュームの容量を増減できます。</block>
   <block id="012110073acf8459d2a77ef54f547130" category="inline-link-macro">Workload Factory でキャッシュボリュームを管理する</block>
@@ -2945,7 +2944,6 @@
   <block id="ea05a1e5432074a56846a3cb823f80f2" category="inline-link-macro">リンクを使用してファイルシステムに接続する</block>
   <block id="4cef7c6d6a0dbf34de8eba95d0e16b67" category="list-text"><block ref="7e93da5b3f54c52f1a6c0b519dbe8002" category="inline-link-macro-rx"></block>。</block>
   <block id="83726c1191ab868f046fb1270a7954b5" category="list-text"><block ref="4c631e4853ec617b9b81a0579deada8a" category="inline-link-macro-rx"></block>があります。</block>
-  <block id="8261903e070030df643604429f468749" category="paragraph"><block ref="b7a77703e091475e5a757f20e1f86c42" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="8feb6c8d13e912657481adbe0cafebb3" category="paragraph">Workload Factory は、継続的な評価と推奨事項、および修復策を組み合わせることで、大規模なストレージ、データベース、および VMware 環境にベストプラクティスを適用します。自動化された修正機能は、人的ミスを減らし、均一な管理を確保し、ワークロードインフラストラクチャ全体でパフォーマンスと信頼性を維持します。</block>
   <block id="fb7e951a08ddce4b83498e18f05a36da" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。</block>
   <block id="72a389467e8e4db775c5a741c5559e79" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block>。</block>
@@ -3134,7 +3132,6 @@
   <block id="b5033aab245daac51a144f2bf76d1491" category="section-title">FlexCache 書き込みモードの改善</block>
   <block id="988626e00644e40216e6917f272294d3" category="paragraph">Workload Factory は、ボリュームに推奨される FlexCache の書き込みモードを認識し、パフォーマンスを最適化するために必要に応じて変更を推奨します。</block>
   <block id="7add6c128bfc87116bba8dfec617987f" category="section-title">リンクドキュメントのサポート</block>
-  <block id="41d8c250ba5deffd33a0d05e7f94eaf4" category="paragraph">リンクに関するすべてのドキュメントは、Workload Factory のセットアップおよび管理に関するドキュメントに記載されています。Workload Factory FSx for ONTAP ドキュメントの <block ref="25b81a757714a127c9c382013e960ce5" category="inline-link-macro-rx"></block> を参照して、セットアップおよび管理に関するドキュメント内の関連ページへのリンクを確認することもできます。</block>
   <block id="ab868acd52ff4eb0e8c4b7bedf975941" category="inline-link-macro">Workload Factory コンソールでのリンクの設定方法については、こちらをご覧ください。</block>
   <block id="3d5d598217b93a807560cdae92940fdc" category="paragraph"><block ref="3d5d598217b93a807560cdae92940fdc" category="inline-link-macro-rx"></block></block>
   <block id="433dd4f7423c50024b8b40531d2cdae6" category="section-title">リージョン間におけるホストとストレージの関係性の検出</block>
@@ -3186,4 +3183,7 @@
   <block id="53c306e93da69caff455d3eaa34a6b5c" category="list-text">AWS割り当てタグでフィルタリングするには、FSx for ONTAPファイルシステムにタグが割り当てられていることを確認してください。</block>
   <block id="22818134e299296b864b78dc4cca4c88" category="paragraph">CSV形式のレポートが生成され、ダウンロードできます。</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026年9月30日</block>
+  <block id="cdda19a64421ad2d94977547c50a1983" category="paragraph"><block ref="cdda19a64421ad2d94977547c50a1983" category="inline-link-macro-rx"></block></block>
+  <block id="56643767ee547abedda1d643567a4c85" category="paragraph">リンクに関するすべてのドキュメントは、Workload Factory のセットアップおよび管理に関するドキュメントに記載されています。Workload Factory FSx for ONTAP ドキュメントの <block ref="08c564abbdedd12846cfb2f0de43f628" category="inline-link-macro-rx"></block> を参照して、セットアップおよび管理に関するドキュメント内の関連ページへのリンクを確認することもできます。</block>
+  <block id="ec39403359b5b677efc5171e16b20cdb" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
 </blocks>
