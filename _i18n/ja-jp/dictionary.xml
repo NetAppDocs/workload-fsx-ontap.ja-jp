@@ -2957,7 +2957,6 @@
   <block id="6dbb8a49c1538ebdedcc12468334fb46" category="paragraph">削除されたボリュームに対して手動で作成されたバックアップ、および2週間以上前のバックアップをすべて削除してください。これらのバックアップは自動的に期限切れにならず、SLAや復旧のために不要になった場合でも、コストが増加したり、複雑さが増したりする可能性があります。</block>
   <block id="b5ad1c06d1e3c827001a5d86081f1bdb" category="paragraph">不要になった古いスナップショットや手動で作成したスナップショットは削除してください。削除することでコストを削減し、整理整頓に役立ちます。特に、SLAや復旧ニーズに必要でない場合はなおさらです。</block>
   <block id="0be251ac51e901583999154779926c3b" category="paragraph">ブロックデバイスが7日間使用されなかった場合は、コスト削減のため、ブロックデバイスのデータをアーカイブするか、使用されていないブロックデバイスを削除してください。</block>
-  <block id="72d8d7f27cf31b02bb7df1a01b23ab49" category="paragraph">構成分析では、アクティブに使用されていない NAS ボリュームを特定し、コストを削減するためにボリュームを削除またはアーカイブすることを提案します。</block>
   <block id="058f4c97fb457003efd47bf8dac18f8b" category="paragraph">FlexGroup ボリュームを再バランスして効率を向上させます。スケールアウト後、容量とワークロードのアクティビティがボリューム全体で不均一になる可能性があります。</block>
   <block id="98ee4192cbfc73d968e2c1f61cbdb3dc" category="paragraph">FlexVol ボリュームのバランスを再調整して、効率を向上させます。スケールアウト後、容量とワークロードのアクティビティがボリューム全体で不均一になる場合があります。</block>
   <block id="c2a622b55f06f11550a3499362e678c9" category="list-text">ブロックデバイスを作成するには、リンクを関連付ける必要があります。<block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクを関連付けたら、この操作に戻ってください。</block>
@@ -3187,4 +3186,5 @@
   <block id="ec39403359b5b677efc5171e16b20cdb" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">レイテンシーイベントの構成要素の内訳</block>
   <block id="6d4d9f3d79904b627f6aca8246717bca" category="list-text">*キャッシュボリューム*：キャッシュボリュームを含むソースストレージVMは、切り替えでサポートされません。移行の失敗を防ぐため、切り替え前にONTAP FlexCache関係を削除してください。</block>
+  <block id="084b022f1511ba8dda542f70832d22e4" category="paragraph">NASボリュームが31日間使用されなかった場合は、コスト削減のため、使用されていないNASボリュームをアーカイブまたは削除してください。</block>
 </blocks>
