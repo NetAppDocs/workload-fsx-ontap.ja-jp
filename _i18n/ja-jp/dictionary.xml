@@ -2508,7 +2508,6 @@
   <block id="fa425772bf4dc1e54c8368c2b99d4b1b" category="paragraph">移行ユースケースにおける切り替え作業を計画する際には、以下の点を考慮してください。</block>
   <block id="d77811034f737ab45ed7ddebe9c096fd" category="inline-xref">切り替え後に構成設定を更新する</block>
   <block id="dddf91d5ccee3135470e6089b62618ba" category="list-text">*クローン*：クローンは個別のボリュームとして移行されるため、ターゲットのFSx for ONTAPファイルシステムでより多くのスペースを消費します。ターゲットの容量増加を避けるため、カットオーバー前にクローンを削除することを検討してください。</block>
-  <block id="233115f3ed74b7b4516b8f0a1efbaedf" category="list-text">*キャッシュボリューム*：ONTAP FlexCache 9.17.x以前の場合。キャッシュボリュームを含むソースストレージVMは、カットオーバーではサポートされません。移行の失敗を回避するには、カットオーバー前にONTAP FlexCache関係を削除してください。</block>
   <block id="03c85e91696d00a533c3da3b08434532" category="list-text">*AWS S3 アクセスポイント*：S3 アクセスポイントを使用するボリュームでは、移行ユースケースのためのカットオーバーレプリケーションはサポートされていません。移行の失敗を避けるため、ソースボリュームから S3 アクセスポイントを削除してください。</block>
   <block id="849ee629a3b8f33b04a9b242a47e3d59" category="list-text">*ONTAP S3構成*：ONTAP S3構成を持つvserverでは、移行ユースケースのカットオーバーレプリケーションはサポートされていません。移行の失敗を回避するために、vserver上のオブジェクトストアサーバー、バケット、ユーザー、グループ、ポリシーなどのONTAP S3構成を削除してください。</block>
   <block id="ab3171de62100468c23112d3fda9227b" category="list-text">*LUNシリアル番号とiSCSIターゲットIQN*：LUNシリアル番号とiSCSIターゲットIQNはカットオーバー時に変更されます。</block>
@@ -3187,4 +3186,5 @@
   <block id="56643767ee547abedda1d643567a4c85" category="paragraph">リンクに関するすべてのドキュメントは、Workload Factory のセットアップおよび管理に関するドキュメントに記載されています。Workload Factory FSx for ONTAP ドキュメントの <block ref="08c564abbdedd12846cfb2f0de43f628" category="inline-link-macro-rx"></block> を参照して、セットアップおよび管理に関するドキュメント内の関連ページへのリンクを確認することもできます。</block>
   <block id="ec39403359b5b677efc5171e16b20cdb" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
   <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">レイテンシーイベントの構成要素の内訳</block>
+  <block id="6d4d9f3d79904b627f6aca8246717bca" category="list-text">*キャッシュボリューム*：キャッシュボリュームを含むソースストレージVMは、切り替えでサポートされません。移行の失敗を防ぐため、切り替え前にONTAP FlexCache関係を削除してください。</block>
 </blocks>
