@@ -3186,4 +3186,5 @@
   <block id="cdda19a64421ad2d94977547c50a1983" category="paragraph"><block ref="cdda19a64421ad2d94977547c50a1983" category="inline-link-macro-rx"></block></block>
   <block id="56643767ee547abedda1d643567a4c85" category="paragraph">リンクに関するすべてのドキュメントは、Workload Factory のセットアップおよび管理に関するドキュメントに記載されています。Workload Factory FSx for ONTAP ドキュメントの <block ref="08c564abbdedd12846cfb2f0de43f628" category="inline-link-macro-rx"></block> を参照して、セットアップおよび管理に関するドキュメント内の関連ページへのリンクを確認することもできます。</block>
   <block id="ec39403359b5b677efc5171e16b20cdb" category="paragraph"><block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクが関連付けられたら、この操作に戻ります。</block>
+  <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">レイテンシーイベントの構成要素の内訳</block>
 </blocks>
