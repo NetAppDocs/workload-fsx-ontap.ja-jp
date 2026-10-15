@@ -155,6 +155,8 @@ sidebar:
       url: "/performance-reference.html"
     - title: FSx for ONTAPのセキュリティ
       url: "/security-reference.html"
+  - title: FAQ
+    url: "/faq-fsx-ontap.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します

@@ -3187,4 +3187,157 @@
   <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">レイテンシーイベントの構成要素の内訳</block>
   <block id="6d4d9f3d79904b627f6aca8246717bca" category="list-text">*キャッシュボリューム*：キャッシュボリュームを含むソースストレージVMは、切り替えでサポートされません。移行の失敗を防ぐため、切り替え前にONTAP FlexCache関係を削除してください。</block>
   <block id="084b022f1511ba8dda542f70832d22e4" category="paragraph">NASボリュームが31日間使用されなかった場合は、コスト削減のため、使用されていないNASボリュームをアーカイブまたは削除してください。</block>
+  <block id="cbcebbbc53a0dc734d698e345cc9f911" category="summary">NetApp Workload FactoryにおけるFSx for ONTAPファイルシステム、ボリューム、データ保護、レプリケーション、ランサムウェア対策、ブロックストレージに関するよくある質問への回答をご確認ください。</block>
+  <block id="f9a4cd4e165d95f6097d6058f8418612" category="doc">NetApp Workload Factory 向け Amazon FSx for NetApp ONTAP のよくある質問</block>
+  <block id="d14d5544a341d1a9bc258908f734089f" category="paragraph">NetApp Workload FactoryのAmazon FSx for NetApp ONTAPに関するよくある質問では、FSx for ONTAPファイルシステムとストレージの計画、保護、管理方法に影響を与える概念、動作、制約について説明します。</block>
+  <block id="bd908db5ccb07777ced8023dffc802f4" category="section-title">リンク</block>
+  <block id="9dc4bd783bd557a81d2c1fbf6f420a0e" category="paragraph-title">リンクとは何ですか？また、FSx for ONTAPでリンクが必要になるのはどのような場合ですか？</block>
+  <block id="50ccca3d9155c7a2f9130ee7765743fb" category="paragraph">リンクは、Workload Factoryと1つ以上のFSx for ONTAPファイルシステムとの間に信頼関係を確立し、AWS Lambdaを使用します。多くの操作には関連付けられたリンクが必要です。これには以下が含まれます：</block>
+  <block id="77acec8553d9971af97eac0340d2f48f" category="list-text">ボリュームのプロトコル アクセスの設定</block>
+  <block id="a196e8c9e955288d8493ee9936ce3c76" category="list-text">スナップショットとスナップショットポリシーの管理</block>
+  <block id="53c219370bf0c0452c0ccb2201bc2f80" category="list-text">AIによるNetApp自律型ランサムウェア対策（ARP/AI）の有効化</block>
+  <block id="ac63e90ab01039aa5e6c8597290b5cac" category="list-text">ボリュームの自動拡張および手動による容量変更の管理</block>
+  <block id="ddf35bccac94d0810429e6fa6c2fb972" category="list-text">igroupとキャッシュボリュームの管理</block>
+  <block id="d49fbd4141ef9211647083b276c978a0" category="list-text">ONTAP資格情報の管理</block>
+  <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link-macro">リンクの詳細</block>
+  <block id="7199140a960155d0d2f40b39a85d69f9" category="paragraph"><block ref="8fae953ea9a38f9ca7be3c5b0b0db56c" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfe642f2cfde396edc18a4148131fed6" category="paragraph-title">ファイルシステムにリンクを関連付けなかった場合はどうなりますか？</block>
+  <block id="b4995c14539d70a4f6014816a0690b2e" category="paragraph">リンクに依存する機能は利用できない場合があります。例えば、リンクがないとARP/AIは利用できず、ボリューム作成時に既存のスナップショットポリシーを表示できず、キャッシュの関係性も検出できません。リンクがない場合、構成分析ではデータ保護とパフォーマンスの設定をスキャンできないため、分析が不完全になります。リンクがなくてもレイテンシイベントを表示することはできますが、EMSイベントの表示と分析、およびレイテンシイベントの分析にはリンクが必要です。</block>
+  <block id="3b18b13f059019d19211f8a9f36f7e4e" category="section-title">ファイルシステム</block>
+  <block id="cf8717fd7b61340ca19189e27312c629" category="paragraph-title">新しいファイルシステムを作成する場合、クイック作成と詳細作成のどちらを使用すべきでしょうか？</block>
+  <block id="9eddcbef8d779c018cde871331edb56a" category="paragraph">クイック作成では推奨されるベストプラクティス構成が適用されますが、ほとんどの設定は後から変更できます。地域がサポートしていない場合を除き、デフォルトでは第2世代ファイルシステムが使用されます。高度な作成機能を使用すると、可用性、セキュリティ、バックアップ、メンテナンスなど、あらゆるオプションを設定できます。</block>
+  <block id="a19403c093e2bb37035acc084ebfaba3" category="paragraph"><block ref="9e0421bb729ebed0fb12b88c1fc5b0e9" category="inline-link-macro-rx"></block>。</block>
+  <block id="406f09292985fe61625e5bc497b6c220" category="paragraph-title">ファイルシステムを作成すると、どのようなリソースが自動的に作成されますか？また、どのような権限が必要ですか？</block>
+  <block id="1dc12f7a5785b1a42ba7ddefb5ab5b8f" category="paragraph">ファイルシステムを作成すると、ストレージVMとセキュリティグループも同時に作成されます。ファイルシステムの作成および削除権限を持つ認証情報に加え、デプロイ先のリージョンとVPCの詳細情報が必要です。</block>
+  <block id="76a9205ec492cf551c5f1ee90bccaa35" category="paragraph-title">ファイルシステム、ストレージVM、またはボリュームを削除する前に、何をする必要がありますか？</block>
+  <block id="23880fdd8c50489737b55ed18e4ae078" category="paragraph">ファイルシステムを削除するには、まずそのボリューム、ストレージVM、およびレプリケーション関係を削除する必要があります。ストレージVMを削除するには、アプリケーションからのアクセスを停止し、ルート以外のすべてのボリュームを削除します。ボリュームを削除するには、まずそのレプリケーション関係を削除する必要があります。ボリュームを削除すると元に戻すことはできず、スナップショットも完全に削除されますが、ボリュームのバックアップは残ります。不変ファイルとスナップショットを含むボリュームは、保持期間が終了するまで削除できません。</block>
+  <block id="28939361ef523b7b86e672e676b3e1ec" category="paragraph"><block ref="ce3cc6283244706d274727f309dc5c90" category="inline-link-macro-rx"></block>。</block>
+  <block id="346281733a566a2751f70d7d04da2306" category="paragraph-title">ファイルシステムをスケールアウトするためにHAペアを追加する前に、どのような点を考慮すべきでしょうか？</block>
+  <block id="96f4a6eb6e28a53e7635063841767803" category="paragraph">HAペアの追加は、第2世代のシングルAZファイルシステムにのみ適用され、HAペアは一度追加すると削除できません。この操作には約30分かかり、その間、ファイルシステムはボリューム作成などの他の操作には使用できません。開始する前に、すべてのiSCSI LUNを削除する必要があります。</block>
+  <block id="c0b2b9b069c7939799991f9d3d616613" category="inline-link-macro">HAペアを追加する</block>
+  <block id="8195e8292fc7b3768df50ac10c7d2d7b" category="paragraph"><block ref="de5bf829a5358aac681b2e7eebaf884a" category="inline-link-macro-rx"></block>。</block>
+  <block id="c1c25df001491639d7e888e014b6f293" category="paragraph-title">プライマリと制限付きのONTAPクレデンシャルの違いは何ですか？</block>
+  <block id="119bd10814b18c6c0c529a31fc0f461b" category="paragraph">デフォルトでは、ファイルシステムは、ファイルシステムを管理するための主要な認証情報であるプライマリONTAP認証情報を使用します。制限付き認証情報は、Ask Me、Rule builder、Custom dashboardsなどのAI操作にのみ使用されます。制限付き認証情報を指定していない場合、Workload Factoryはこれらの操作用に読み取り専用のONTAP認証情報を作成します。認証情報の管理にはリンクが必要です。</block>
+  <block id="c296e3b831241983b2e24abde7008365" category="paragraph"><block ref="c296e3b831241983b2e24abde7008365" category="inline-link-macro-rx"></block></block>
+  <block id="57087519281821fc1d17d5e30777c380" category="section-title">容量と性能</block>
+  <block id="b3a9161808f27cc9a6cd00e86ea1e4e0" category="paragraph-title">自動キャパシティ管理はどのように機能するのですか？また、注意すべき点は何ですか？</block>
+  <block id="0c1c113c4f2ee23ecdde19495129d466" category="paragraph">Workload Factoryは30分ごとにファイルシステムをスキャンし、増分モード（しきい値での固定増加）または適応モード（履歴データから必要性を予測）を使用してSSD容量を追加します。有効になっている場合、手動で容量を増やす前に無効にする必要があります。AWSではSSD容量の追加間に最低6時間のクールダウン期間が適用されるため、データ移行中はこの機能を有効にしないでください。</block>
+  <block id="a0b7bb144ab4d77c2e5c1863b5bbbd7b" category="paragraph"><block ref="e469d94a0ee9bf1ce6c0c27369cc1fd0" category="inline-link-macro-rx"></block>。</block>
+  <block id="d67fb3daeedc86ea1260ab85263eeeff" category="paragraph-title">SSDの容量を変更すると、IOPSにどのような影響がありますか？</block>
+  <block id="4e640f4e7080cf80420cd99bfa5a75d3" category="paragraph">ファイルシステムの容量を変更すると、IOPSに影響します。自動IOPSプロビジョニングでは、追加または削除されたSSD容量1GiBあたりIOPSが3ずつ変化します。手動プロビジョニングの場合、容量を増やす前にIOPSを上げる必要がある場合があります。SSD容量の削減は、第2世代ファイルシステムでのみサポートされています。</block>
+  <block id="46d051c62a62bfc93f333021f3788d2e" category="paragraph-title">SSDにはどれくらいの余裕容量を確保しておくべきでしょうか？また、容量が不足した場合はどうなりますか？</block>
+  <block id="52a5e43b336bdda3aefca2c487f6d913" category="inline-link-macro">スペース不足を避けるために容量を増やす</block>
+  <block id="71c7540d16f368c7990f779b523c38e4" category="paragraph">SSD層の使用率を80%未満に抑えてください。容量が不足すると、ボリュームは読み取り専用になり、書き込みは失敗します。ボリュームとファイル（inode）の使用率も80%未満に抑える必要があります。バックアップスナップショットによってボリュームのSSD使用率が98%を超えると、バックアップは失敗します。<block ref="b018d6bf39140941e97093a6185497f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="b654d5b61cf2e16008a43b9a314e798a" category="section-title">ボリュームと階層化</block>
+  <block id="01bf97c05cf670ec1be04b3c6d5b0d93" category="paragraph-title">ボリュームはファイルシステムの容量を消費しますか？また、FlexVolとFlexGroupのどちらを選択すべきですか？</block>
+  <block id="7e1917a81d1dd5f9ee3540ab8195fd0f" category="paragraph">ボリュームはデータを仮想的にグループ化するものであり、それ自体はファイルシステムのストレージ容量を消費しません。データは主にSSDストレージを消費し、階層化ポリシーによっては容量プールストレージも消費します。FlexVolはデフォルトのスタイルです。FlexGroupは、高性能かつ大容量のスケールアウトNASコンテナであり、トラフィックを共有する複数の構成ボリュームで構成されます。サイジングは異なります：FlexVolは20 MiBから300 TiBであり、FlexGroupは800 GiBから2 PiBで、構成ボリューム1つあたり100 GiBが必要となります。</block>
+  <block id="a36ca7371803cf76de041db8c92a58f1" category="paragraph-title">ボリュームのリバランスはどのような影響をもたらしますか？</block>
+  <block id="88dd9a20e01131121034b7168943572d" category="paragraph">リバランスは中断を伴いませんが、ボリューム転送はファイルシステムのリソースを消費します。リバランスされたボリューム上の既存のスナップショットは部分的なものとなり、ボリュームデータの復元に使用できなくなりますが、その後に取得されたスナップショットは復元に使用できます。SANボリューム（iSCSIおよびNVMe）では、リバランスはサポートされていません。FlexGroupのリバランスでは、レプリケーション関係にあるボリュームをサポートする制限付きレイアウトを選択しない限り、メンバーボリュームを追加してプロビジョニングサイズを拡張できます。</block>
+  <block id="b9ab1ccee5c0da0d27f4ae3b0852cc94" category="paragraph-title">ボリュームに対して、どの階層化ポリシーを選択すべきでしょうか？</block>
+  <block id="a074e1a1355e3b9a6616c1b9f56e8a30" category="paragraph">ポリシーの選択はコストとパフォーマンスに影響します：</block>
+  <block id="6f2eaf5cb4bb4cc40bc20d5980030182" category="list-text">*バランス（自動）*：デフォルト。一般的な主要ワークロードに推奨されます。</block>
+  <block id="077b9427f46090f6af0271f7abb515c4" category="list-text">*コスト最適化（すべて）*：セカンダリターゲットに推奨されます。</block>
+  <block id="3818513aad03af927b34cef46fbf9e9f" category="list-text">*パフォーマンス最適化（スナップショットのみ）*：ミッションクリティカルなデータベースなどの低レイテンシワークロードに推奨されます。</block>
+  <block id="8f175cd81e367993ea59a83a2e1b87a0" category="list-text">*なし*：すべてのデータをSSDに保存します。</block>
+  <block id="489b63d7af220700583bbbe5a7c3c0ee" category="paragraph">ポリシーはボリュームごとに設定され、いつでも変更できます。</block>
+  <block id="c51c2f28a3258635295934f850798c60" category="inline-link-macro">階層化ポリシーを変更する</block>
+  <block id="94672c1a39764381cca229e031dad1aa" category="paragraph"><block ref="d187c757e0826c740815f6a73145d775" category="inline-link-macro-rx"></block>。</block>
+  <block id="763216abb62d188fd2a38c22749c8268" category="paragraph-title">クローンされたボリュームとその親ボリュームはどうなりますか？</block>
+  <block id="6698d44afa73e0e2e99c54192f1dafac" category="paragraph">クローンとは、書き込み可能なボリュームのことです。そのデータは親ボリューム上に残っており、クローン上には新規書き込みのみが保存されます。クローンが存在する親ボリュームは、分割するまで削除できません。クローンを分割するには、クローンを含むファイルシステムへのリンクを関連付ける必要があります。分割はメタデータのみを更新するものであり、クローンがデータ保護関係にある場合は実行できません。分割後、2つのボリュームを再び結合することはできず、それぞれに十分な容量の割り当てが必要になります。</block>
+  <block id="b018ec01649174ef4df48cfd1f6a90dc" category="paragraph-title">どのようなデータ保護方法を用いるべきですか？</block>
+  <block id="6c1c987f19ea3d715e011f06d2f0dba1" category="paragraph">組み合わせることをお勧めします。スナップショットを使用すると、最短1時間のRPOと、高速なファイルレベルの復元が可能になります。バックアップのRPOは1日からで、ボリューム全体としてのみ復元可能であり、復元には数時間から数日かかる場合があります。レプリケーションは、低RTOでの災害復旧のために別のリージョンにコピーを保持しますが、クライアントがレプリカを使用するように調整する必要があります。ARP/AIにより、ランサムウェア検出機能が追加されます。</block>
+  <block id="e4b83b46c1cd11a2fe17fd874db8da11" category="inline-link-macro">データ保護の種類について学ぶ</block>
+  <block id="70c7303d6fd3f53eef2db9d073aee797" category="paragraph"><block ref="6f46f98f09a27b6993946c92b3c28ff7" category="inline-link-macro-rx"></block>。</block>
+  <block id="8613922e21d84b44dce92caf0ab391b7" category="paragraph-title">スナップショットの容量計画はどのように立てるべきでしょうか？また、スナップショットはデータのコピーの代わりになるのでしょうか？</block>
+  <block id="c51ddae531add08bc2905d49040923a1" category="paragraph">スナップショットはデータのコピーではありません。これらは変更されたデータのみに容量を消費するため、通常は時間の経過とともに容量が増加します。ほとんどのデータセットの場合、20%の追加容量があれば最大4週間分のスナップショットを保持できますが、すべてのデータを上書きするとかなりの容量を消費します。実際のコピーが必要な場合は、バックアップまたはレプリケーションを使用してください。</block>
+  <block id="dc32484a3e2d422fbbb01210766e4130" category="paragraph-title">スナップショットからボリュームを復元すると、どのような影響がありますか？</block>
+  <block id="4c48097b287bebce494ccfcacbb7622f" category="paragraph">既存のボリュームにリストアすると、スナップショット作成後に変更されたデータはすべて完全に削除されます。新しいボリュームとしてリストアすると、サイズに関係なく数秒でコピーが作成されます。リストアによってNASプロトコルのタイプが切り替わると、権限モデルも切り替わる可能性があり、NASクライアントツールを使用して手動で修正するしかないファイルアクセスの問題が発生するおそれがあります。</block>
+  <block id="dd15a6587062568b1c339538786c7a23" category="paragraph-title">スナップショットポリシーについて知っておくべきことは何ですか？</block>
+  <block id="f5c98f5e83814192eab43901f65ebc6f" category="paragraph">変更しない限り、すべてのボリュームはファイルシステムの<block ref="c21f969b5f03d33d43e04f8f136e7682" prefix=" " category="inline-code"></block>スナップショットポリシーを使用します。ポリシーはストレージVMレベルで管理され、複数のボリューム間で共有できます。スナップショットの時刻はファイルシステムのタイムゾーンに従います。デフォルトではUTCです。</block>
+  <block id="4e0fc48912e3e29f8b937ac9310dfdaf" category="paragraph"><block ref="736a68cb55f91f66669a195b9fe5473b" category="inline-link-macro-rx"></block>。</block>
+  <block id="c502f11c8db4ea75e5eb35f396e3300e" category="paragraph-title">不変スナップショットとはどのような機能ですか。また、スナップショットやボリュームの削除にどのような影響を与えますか。</block>
+  <block id="0e8e6e5b8e504664d110271d696e2435" category="paragraph">ボリュームスナップショットを作成する際に、不変性を有効にすると、スナップショットの保持期間中は変更や削除ができなくなります。スナップショットポリシーで不変スナップショットを有効にすると、そのポリシー内のすべてのスナップショットがロックされます。不変ファイルとスナップショットを含むボリュームは、保持期間が終了するまで変更または削除できません。</block>
+  <block id="cf038fd665473a97bff21c349dc17074" category="paragraph-title">ボリュームで不変ファイル（SnapLock）を有効にする前に、何を決定しておく必要がありますか？</block>
+  <block id="12c3dce509666534de9a7eea019d9d82" category="paragraph">不変ファイルはボリューム作成時にのみ有効化でき、作成後に無効化することはできません。これは追加料金のかかるプレミアム機能です。保持モードを選択してください：エンタープライズモードではSnapLock管理者は保持期間中にファイルを削除できますが、コンプライアンスモードでは、WORM ファイルは保持期間が満了する前に削除できず、ボリュームも同様です。不変ファイルを含むソースボリュームを複製すると、ソースの保持期間が終了するまで、ターゲットボリュームとファイルシステムはロックされたままになります。</block>
+  <block id="a6cad80eac0d5069954875431536437c" category="inline-link-macro">ボリューム作成時に変更不可能なファイルを有効にする</block>
+  <block id="bcaf9f890002d3e28f3df693fa025aae" category="paragraph"><block ref="749d0f46da5a5b1a0bf12aa938415ec7" category="inline-link-macro-rx"></block>。</block>
+  <block id="b65d1fe7ba94cbdd04fd3027af86e3fe" category="paragraph-title">ボリュームバックアップはどのように機能し、どのような原因で失敗する可能性があるのでしょうか？</block>
+  <block id="29efc3ce452f0cb3108631bbbd0942ac" category="paragraph">バックアップはボリュームごとに行われ、増分バックアップとなるため、前回のバックアップ以降に変更されたデータのみが保存されます。バックアップスナップショットによってボリュームのSSD使用率が98%を超える場合、バックアップが失敗する可能性があります。バックアップはAWSアカウント内の任意のFSx for ONTAPファイルシステムに復元でき、復元に必要な場合はWorkload FactoryでSSD容量を追加できます。手動で作成したバックアップは自動的に期限切れにならないため、古いバックアップは削除してください。</block>
+  <block id="74d7e4521babc21838cb582b2bc32c8b" category="inline-link-macro">バックアップでデータを保護する</block>
+  <block id="f1c9bf156c6c97b6b26ac2d8b1ed2c44" category="paragraph"><block ref="66366016d4e373a595f71ecdad6566ed" category="inline-link-macro-rx"></block>。</block>
+  <block id="d6a89ef548882aa2cac45b8985313205" category="paragraph-title">cyber vaultとは何ですか？どうすれば入手できますか？</block>
+  <block id="d0e2c888863a16106a253179c04828a6" category="paragraph">cyber vaultは、ランサムウェアや内部脅威から保護する、隔離され、エアギャップされた、変更不可能なバックアップコピー用リポジトリです。FSx for ONTAPは、cyber vaultのソースおよびターゲットとしてサポートされています。NetAppは実装を支援します：ng-FSx-CyberVault@netapp.comのcyber vaultチームにお問い合わせいただければ、専門家が対応いたします。</block>
+  <block id="420f68f6332b3deddd99f6b53543ddd9" category="inline-link-macro">cyber vaultの詳細について</block>
+  <block id="06283f74ee45e09d68d11154aeb67b8e" category="paragraph"><block ref="3e786ad2ca598d807275c49bbdb03a30" category="inline-link-macro-rx"></block>。</block>
+  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="section-title">ランサムウェア対策</block>
+  <block id="e6b09da75dd5269b66eee7c0d3c15e8e" category="paragraph-title">ARP/AIはどのように機能し、何が必要ですか？</block>
+  <block id="5ae6f721128845e30592fc95dc204972" category="paragraph">ARP/AIは、NAS（NFS/SMB）およびSAN（iSCSI）ボリュームを監視します。脅威を検知すると、変更不可能なスナップショットを作成します。ファイルシステム上でこれを有効にすると、既存のボリュームと新規ボリュームすべてが保護され、関連付けられたリンクが必要になります。NVMeボリューム、または9.17.1より前のONTAPを使用するiSCSIボリュームではサポートされていません。NASの保護は即座に開始されます。一方、SANボリュームは2～4週間の学習期間を経ますが、その間も監視は継続されます。</block>
+  <block id="f4112b3a56167004c566fed18c25301b" category="inline-link-macro">ARP/AIによるランサムウェア対策</block>
+  <block id="3c91d07a3b6082ef91f683ede528795a" category="paragraph"><block ref="e47e35f0fd751ec997a09e6ba0525b5e" category="inline-link-macro-rx"></block>。</block>
+  <block id="d40b922d6399c0f75bd8fe0dd35865a9" category="paragraph-title">ARP/AIが攻撃を検知した場合、どのような処理が行われ、誤検知はどのように対処されるのでしょうか？</block>
+  <block id="87ad13a82b896ad06830d3be808a7a52" category="paragraph">ARP/AIは、脅威を検出した時点でロックされたスナップショットを作成します。デフォルトでは、ARP/AIは4時間ごとに最大6つのスナップショットを作成し、それぞれ2～5日間ロックされます。実際に攻撃があったことが確認できた場合は、影響を受けたファイルまたはボリューム全体を復元できます。誤報としてマークすると、ロックされたスナップショットは削除され、システムはアラート設定を更新するため、次回同じファイル拡張子ではアラートが発生しなくなります。</block>
+  <block id="6383d03df046324b1bcbe5529c2a0784" category="section-title">レプリケーションと移行</block>
+  <block id="c6ae48f5a3c4c0040cb182a1bd548112" category="paragraph-title">レプリケーション関係を作成する前に、どのような準備が必要ですか？</block>
+  <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">必要なもの：</block>
+  <block id="1b8ccd724ee15c5fc6c3791eb885da99" category="list-text">関連付けられたリンクを持つターゲットのFSx for ONTAPファイルシステム。</block>
+  <block id="01364c2a8f11483bf4a87621ff0dc5a0" category="list-text">ストレージシステム間でTCPポート11104と11105が開かれています。</block>
+  <block id="84a932e4e1232b9f4190664226239f81" category="list-text">ソースである場合は、検出されたオンプレミスのONTAPシステム。</block>
+  <block id="b51258de1e203e5ece7e3160756e695c" category="paragraph">レプリケーションは、FSx for ONTAPファイルシステム、オンプレミスONTAPシステム、およびCloud Volumes ONTAP間で機能します。レプリケートされたボリュームは、<block ref="b10977e679cd9d50cf5cfc7431a7afa4" prefix=" " category="inline-code"></block>という名前のデータ保護ボリュームです。</block>
+  <block id="42a812c944fb445cb3758a031cad03b7" category="paragraph"><block ref="7f69f5f06b7f1081d234c230e63e1465" category="inline-link-macro-rx"></block>。</block>
+  <block id="77c1f0b1d4ead69988edf8dc8ac07564" category="paragraph-title">レプリケーション関係を一時停止、停止、再開、反転、または削除した場合、データはどうなりますか？</block>
+  <block id="a3a90d21994cca3e8154b9450b10efc3" category="paragraph">一時停止または停止すると、ターゲットボリュームへの書き込みが可能になります。再開すると、書き込み可能であった間にデスティネーションに加えられた変更はすべて削除され、読み取り専用に戻ります。リバースすると、ソースとターゲットの役割が入れ替わり、新しいターゲットが新しいソースの内容で上書きされます。関係を削除すると、両方のボリュームは独立した状態になりますが、共通のレプリケーションスナップショットは削除されます。前回のレプリケーション以降にソースに書き込まれたデータは、リバースまたは再開時に保持されません。</block>
+  <block id="3baac809cc5d7dd36919afed53778b41" category="inline-link-macro">レプリケーションの管理</block>
+  <block id="3a658afba9c3dfcee9d925db2e0ff4f8" category="paragraph"><block ref="f2c69fd21a914dd83b13a85cdc4eec00" category="inline-link-macro-rx"></block>。</block>
+  <block id="3d5bff6139d795a8155e7f553f076dcb" category="paragraph-title">カスケード型レプリケーションはいくつのホップをサポートし、そのトレードオフは何ですか？</block>
+  <block id="28b5e1c7f1d73416c886ec69d18688b1" category="paragraph">カスケードレプリケーションは、データ保護ボリュームのレプリカを1つサポートします（2ホップ目：ソースからセカンダリ、そしてターシャリへ）。3つ目のホップはサポートされておらず、ベストプラクティスとは見なされません。カスケード機能を使用すると、セカンダリが利用できなくなった場合に、新しいベースライン転送なしでプライマリボリュームとターシャリボリュームを再同期できます。カスケードされたボリュームの再同期には時間がかかる場合があり、ソース自体が別のリレーションシップのターゲットとなっているデータ保護ボリュームであるリレーションシップを元に戻すことはできません。</block>
+  <block id="2bc8d84a3423863f5c9a0b3ab7db7f3f" category="paragraph"><block ref="bd81ceddd5c97e92f9f4da47609bf1b1" category="inline-link-macro-rx"></block>。</block>
+  <block id="ad329ec5a5e4e7399cd752b6449172cc" category="paragraph-title">レプリケーション関係の転送速度を制限する必要がありますか？</block>
+  <block id="ec0c7f22de2bdbae44d9c6ccfca26e29" category="paragraph">最大転送速度の制限は任意ですが、推奨されます。制限を設けないと、ネットワークやアプリケーションのパフォーマンスが低下する可能性があるためです。主に災害復旧に使用されるファイルシステムなどの重要なワークロードの場合は、転送速度を無制限にすることを推奨します。</block>
+  <block id="945292565dfffe4ed0fee6488bb3b60c" category="paragraph"><block ref="429a56d62002f598b22dcce8288b3439" category="inline-link-macro-rx"></block>。</block>
+  <block id="a230097e09995be185ef52257dc95903" category="paragraph-title">ストレージVMを移行し、レプリケーションを切り替える際に、どのようなことを計画すべきでしょうか？</block>
+  <block id="d61626dd853155a6688645f9530e9e29" category="paragraph">移行には3つの操作が必要です：関係の作成（ユースケースとして*移行*を選択し、*ストレージ VM 構成の複製*を選択）、初期化、および切り替え。切り替え前に、クライアントのアクセスを停止し、データが同期されていることを確認してください。ソースとターゲットは同じメジャーONTAPバージョンを実行する必要があります。切り替え後、ソースストレージ VM はオフラインになり、LUNシリアル番号とiSCSIターゲットIQNが変更されるため、iSCSI、MTU、およびDNSの設定を手動で更新する必要があります。</block>
+  <block id="fcd9f2021e4153be79dc65c67cde662d" category="section-title">S3アクセスポイント、ブロックストレージ、キャッシュボリューム</block>
+  <block id="f49ad1be510ca9d27bc7647626247d9c" category="paragraph-title">S3アクセスポイントとは何ですか？また、インベントリやジャーナルテーブルなどの機能を有効にする前に知っておくべきことは何ですか？</block>
+  <block id="34d042a2b876982d8d0353b5c197424a" category="paragraph">S3アクセスポイントはNFSおよびSMBボリュームに接続されるため、Amazon BedrockなどのAWSサービスは、ファイルデータがS3バケット内にあるかのように読み取ることができます。1つのボリュームに複数のアクセスポイントを接続できます。インベントリテーブルはオブジェクトのメタデータを生成し、AWS S3リクエストのコストが発生します。ジャーナルテーブルの監査ログにはAWSインフラストラクチャ（CloudTrail、CloudWatch、S3、IAM）が必要であり、アクセスポイントのネットワーク構成が*Internet*である必要があります。</block>
+  <block id="a48c3194ed0afa3543de0ca1d8f81697" category="inline-link-macro">S3アクセスポイントを作成する</block>
+  <block id="373d2ffaec3d2acfaffcb7cadb99bd68" category="paragraph"><block ref="4eea5e415e098e4f094fd10e1d1b560b" category="inline-link-macro-rx"></block>。</block>
+  <block id="6ab646db89ac6e181dfc79f6c575c8e9" category="paragraph-title">ブロック（iSCSI）ストレージをセットアップするには何が必要ですか？</block>
+  <block id="3e99c51170de44f25365793ca0d135cc" category="paragraph">リンク、FlexVolボリューム、およびigroupが必要です。ブロックアクセスは、HAペアが6組以下のスケールアウト環境でのみ利用できます。igroupはIQNによってホストにアクセス権を付与します。iSCSIを機能させるには、igroupとiSCSIホスト接続の両方が必要です。構成分析では、iSCSIボリュームでNASアクセスを同時に許可しないことが推奨されています。</block>
+  <block id="fe2d39294076e85cdac10b70a7da042f" category="list-text"><block ref="84e723a77e5da7869a8731958afee785" category="inline-link-macro-rx"></block>。</block>
+  <block id="07d668b158d086e53e8fd941e7fdca71" category="inline-link-macro">FlexVol volumeの作成</block>
+  <block id="7091b500a5a1083b4a0bc1cab9624d7c" category="list-text"><block ref="1152b69358e25ed020038ab1a2f7b59f" category="inline-link-macro-rx"></block>。</block>
+  <block id="7ae90698ba1370fe67da0f295b2b2e91" category="list-text"><block ref="d6d1c309c44b2ac294477e9c723222b3" category="inline-link-macro-rx"></block>。</block>
+  <block id="c991dc9f9a111736388c73da7f87b61b" category="list-text"><block ref="fae14ed30eab3eb467fd76c772cc086d" category="inline-link-macro-rx"></block>。</block>
+  <block id="3594719ae8cb139070d67e6d40b8e95b" category="paragraph-title">使用されていないブロックデバイスはどうなりますか？</block>
+  <block id="9fa43fc99133313d50d439ec2c6fa134" category="paragraph">クライアントにマッピングされていない、または7日間連続して使用されていないブロックデバイスは、非アクティブと分類されます。SSDの容量を解放するために、そのデータを容量プール層にアーカイブするか、削除することができます。構成分析では、非アクティブなブロックデバイスをコスト最適化項目として検出します。</block>
+  <block id="827c14c926238a66c0a093c1a77e016d" category="paragraph-title">キャッシュ書き込みモードはどのように選択すればよいですか？また、キャッシュボリュームを管理するには何が必要ですか？</block>
+  <block id="b667ecd610cc9a1c9a8cfaf7df74c77e" category="paragraph">ライトアラウンドモードは、読み込み負荷の高い小規模ファイル処理において優れたパフォーマンスを発揮し、ライトバックモードは、書き込み負荷の高い大規模ファイル処理において優れたパフォーマンスを発揮します。Workload Factoryは既存のキャッシュ（FlexCache）関係を検出します。キャッシュボリュームを検出または管理するには、リンクを関連付ける必要があります。</block>
+  <block id="e3d67258919e3eaca0c3bfa2a4707cf8" category="paragraph"><block ref="f247a85aba96158557fe677ffc5b46f1" category="inline-link-macro-rx"></block>。</block>
+  <block id="8e7ca95a59148086d486ef47fb49de06" category="section-title">構成分析と監視</block>
+  <block id="d69b5c8fc4dad1afa25ce53b41b16a51" category="paragraph-title">構成分析はどのように機能するのですか？また、修正プログラムを自動的に適用しても安全ですか？</block>
+  <block id="7978cb5149f8ef83ac902951c6fb0404" category="paragraph">Workload Factoryは、ONTAPのベストプラクティスおよびAWS Well-Architected Frameworkの柱（信頼性、セキュリティ、運用上の卓越性、コスト最適化、パフォーマンス効率）に照らして、構成を毎日分析します。一部の問題は自動的に修正でき、その他の問題については手動での手順を提示します。修復作業はダウンタイムやサービスの中断を引き起こす可能性があるため、まず各推奨事項を確認してください。お客様の環境に適用されないチェックは無視することができます。</block>
+  <block id="aa54af5c37eb0272481e2b886c582cc4" category="paragraph">Workload Factoryが構成を分析できるようにするには、AWSアカウントで<block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="ff5ccdaf2a7215ed465831a104fb3f0a" category="inline-link-macro">設定を評価する</block>
+  <block id="708e218d0fedd11d8a301c079fa4bb75" category="paragraph"><block ref="7b6cc10b0bbf4a457f384d4dc42b913d" category="inline-link-macro-rx"></block>。</block>
+  <block id="cfb77eda684e695aff27ff4baff059a1" category="paragraph-title">AIを活用したイベント分析を利用するには何が必要ですか？</block>
+  <block id="e706ac51ff9738151992ba5cc32b94a3" category="inline-link-macro">_操作および修復_の権限。</block>
+  <block id="b5f2f11273f258a399d225cfec9c5962" category="list-text"><block ref="311b9cdc8339ca8d6ef3bd16df51bc69" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed0b5847028c930dc408ebbd36f6d482" category="list-text">リンク。</block>
+  <block id="4c5f4b60eb6665165918fe104a709275" category="list-text">ファイルシステムのセキュリティグループでポート22が開放されている。</block>
+  <block id="46aa87fd95842ab8f19cc307118fa880" category="list-text">Amazon Bedrockがアカウントに対して有効化され、必要なBedrock IAM権限が付与されています。</block>
+  <block id="c8eeeef64a75facc83f44f154dbcdb60" category="paragraph">イベントは72時間表示された後、削除されます。データはお客様のAWSアカウント内に保持され、顧客データはモデルのトレーニングには使用されません。アカウント管理者がAI機能を無効にしている場合、分析機能は利用できません。</block>
+  <block id="6ff7afa8b9f67a5aab7d9ebedd08b828" category="inline-link-macro">イベントを分析する</block>
+  <block id="c86a9065970d75fe94e2d0706441c006" category="paragraph"><block ref="074e21582aeb4daa56e1d1a7a4bcb4c1" category="inline-link-macro-rx"></block>。</block>
+  <block id="46efaf50e38b8209fb70575ab93faf71" category="section-title">費用とサポート</block>
+  <block id="e3b45ee370955f06a09cd88b69cd4b20" category="paragraph-title">削減額計算ツールはどのように機能し、どのような権限が必要ですか？</block>
+  <block id="b1eeb9184bcd81ce2ddce0bcf7057718" category="paragraph">この計算ツールは、Amazon Elastic Block Store（EBS）、Elastic File System（EFS）、およびFSx for Windows File Serverのコストを、FSx for ONTAPと比較します。詳細情報を手動で入力することも、Workload Factoryに環境を自動的に検出させることもできます。ただし、環境を検出するには、*表示、計画、および分析*の権限が必要です。自動検出は、EBSスナップショットやFSx for Windows File Serverのシャドウコピーをサポートしていません。</block>
+  <block id="d29c90b4f82c166798f1f8e15dcd72f2" category="inline-link-macro">削減額計算ツールの使用方法</block>
+  <block id="3892560eb1e15954593d8839a8469893" category="paragraph"><block ref="8d0197f1622e03b4410d58423c12a49b" category="inline-link-macro-rx"></block>。</block>
+  <block id="49d2626703101935d9e398b71c96df6f" category="paragraph-title">コスト追跡データはどこから取得され、どの程度最新ですか？</block>
+  <block id="9360e28d38d02374c3ad5c00a2ecef7b" category="paragraph">コストデータは、<block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block>および<block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block>権限を使用してAWS Cost Explorerから取得され、24時間ごとに更新されます。Workload Factoryは、独自の推定値に基づいてリソースごとのコストも算出します。AWSのコスト配分タグでフィルタリングするには、ファイルシステムにタグを割り当てる必要があります。</block>
+  <block id="041a2914aeb45839ef442b10d6702fce" category="paragraph"><block ref="d0de6db93f8e6230acc4beefa23bc62e" category="inline-link-macro-rx"></block>。</block>
+  <block id="d6a34a9b5fe1c271b8ccaa32eea6e101" category="paragraph-title">FSx for ONTAPアカウントの管理は誰が行い、ファイルシステムの問題に対するサポートは誰が提供しますか？</block>
+  <block id="9b0bda92a515730dcb3448fe36afdbe6" category="inline-link-macro">ヘルプページ</block>
+  <block id="017c1ba79347b70465209b766fe98e58" category="paragraph">お客様のFSx for ONTAPアカウントを保守するのはAWSであり、Workload Factoryではありません。ファイルシステムまたはインフラストラクチャに関するサポートの問題については、AWS Management Consoleのサポートセンターを使用してAWSサポートケースを開き、FSx for ONTAPサービスを選択してください。Workload Factoryに関する一般的な質問については、<block ref="5eb13988e4c0f86962c0003b7b755674" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
 </blocks>
