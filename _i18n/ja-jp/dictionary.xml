@@ -3340,4 +3340,7 @@
   <block id="9b0bda92a515730dcb3448fe36afdbe6" category="inline-link-macro">ヘルプページ</block>
   <block id="017c1ba79347b70465209b766fe98e58" category="paragraph">お客様のFSx for ONTAPアカウントを保守するのはAWSであり、Workload Factoryではありません。ファイルシステムまたはインフラストラクチャに関するサポートの問題については、AWS Management Consoleのサポートセンターを使用してAWSサポートケースを開き、FSx for ONTAPサービスを選択してください。Workload Factoryに関する一般的な質問については、<block ref="5eb13988e4c0f86962c0003b7b755674" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
+  <block id="9090c842809d5b87ef87f89f32e9670b" category="admonition">子クローンを含むボリュームは、すべての子クローンが削除されるか、独立したボリュームに分離されるまで削除できません。</block>
+  <block id="98929bc2ec4e4b6c1fb3d202f0a1c02d" category="paragraph">データをアーカイブする前に、同じボリューム上のすべてのブロックデバイス（LUN）が非アクティブになっていることを確認してください。</block>
+  <block id="a12fbd750c270e54cd66855e6a9c0d66" category="list-text">「未使用ブロックデバイスの領域を解放する」画面で、容量を解放するブロックデバイスを1つ以上選択します。</block>
 </blocks>
