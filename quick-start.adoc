@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: quick-start.html 
 keywords: Amazon FSx for NetApp ONTAP, fsx, netapp, quick, get started, install, deploy, setup, launch, requirements, prerequisites, credentials, permissions, policy 
-summary: NetApp Workload Factory では、わずか数ステップで FSx for ONTAPを使い始めることができます。 
+summary: ログインし、認証情報と権限を追加してファイルシステムを作成し、NetApp Workload FactoryでFSx for ONTAPの使用を開始します。 
 ---
 = NetApp Workload Factory でのAmazon FSx for NetApp ONTAPのクイックスタート
 :allow-uri-read: 
@@ -19,7 +19,7 @@ Workload Factory を使用してファイル システムの作成やリソー�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリーにログイン
 [role="quick-margin-para"]
-必要となるのはlink:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^]そしてlink:https://console.workloads.netapp.com["ログイン"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^] および link:https://console.workloads.netapp.com["ログイン"^] を行う必要があります。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] クレデンシャルと権限の追加
 [role="quick-margin-para"]

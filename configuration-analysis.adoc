@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: configuration-analysis.html 
 keywords: configuration issues, issues, improve, analyze, storage configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations 
-summary: NetApp Workload Factory は、Amazon FSx for NetApp ONTAP ファイルシステムの構成を定期的に分析し、構成上の問題がないかを確認します。 
+summary: NetApp Workload FactoryでFSx for ONTAPファイルシステムの構成を分析して問題を特定し、パフォーマンス、コスト効率、コンプライアンスを向上させるための推奨事項を取得します。 
 ---
 = FSx for ONTAPファイルシステムの構成分析
 :allow-uri-read: 
@@ -104,7 +104,7 @@ SSDストレージ層の容量は、使用率が80%を超えないようにし�
 
 * ファイルオブジェクト容量
 +
-ボリューム容量制限に達しないように、ファイル容量のしきい値を引き上げるべきです。ファイル容量（iノード）が不足しているため、ボリュームへの追加データの書き込みができません。Workload Factoryは、新規ファイルの作成を可能にするため、ファイル容量の使用率を80%未満に維持することを推奨しています。
+ボリューム容量制限に達しないように、ファイル容量のしきい値を引き上げてください。ファイル容量（iノード）が不足しているため、ボリュームへの追加データの書き込みができません。Workload Factoryは、新規ファイルの作成を可能にするため、ファイル容量の使用率を80%未満に維持することを推奨しています。
 
 
 
@@ -134,7 +134,7 @@ iSCSIを使用してアプリケーションデータを提供するボリュー
 
 * *自動容量管理*
 +
-SSD 階層がしきい値を超えないように定期的に確保するには、自動容量管理を有効にする必要があります。
+SSD階層がしきい値を超えないように定期的に確認するには、自動容量管理を有効にします。
 
 * *ボリューム容量のヘッドルーム*
 +

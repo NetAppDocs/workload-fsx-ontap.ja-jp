@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: provision-iops.html 
 keywords: iops, SSD, provision, allocate 
-summary: FSx for ONTAPファイルシステムのSSD IOPSを自動でプロビジョニングまたは手動でプロビジョニング 
+summary: Workload Factory で、FSx for ONTAP ファイルシステムの自動 SSD IOPS プロビジョニングを有効にするか、ユーザーがプロビジョニングした IOPS 値を設定します。 
 ---
 = FSx for ONTAPファイルシステム用SSD IOPSのプロビジョニング
 :allow-uri-read: 
@@ -11,10 +11,10 @@ summary: FSx for ONTAPファイルシステムのSSD IOPSを自動でプロビ�
 
 
 [role="lead"]
-NetApp Workload Factory で FSx for ONTAPファイル システムの SSD IOPS を自動でプロビジョニングするか、手動でプロビジョニングします。
+ワークロードで利用可能なパフォーマンスを制御するために、NetApp Workload FactoryでFSx for ONTAPファイルシステムのSSD IOPSを自動または手動でプロビジョニングします。
 
 .タスクの内容
-FSxファイルシステムに対してSSD IOPSの自動プロビジョニングを有効にすることも、IOPSを手動でプロビジョニングすることもできます。
+FSx for ONTAPファイルシステムでは、自動SSD IOPSプロビジョニングを有効にするか、手動でIOPSをプロビジョニングすることができます。
 
 自動プロビジョニングされるIOPSは、GiBあたり3つのIOPSとして計算されます。
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: get-help.html 
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
-summary: 'NetApp は、Workload Factory とそのクラウド サービスをさまざまな方法でサポートします。ナレッジベース (KB) 記事やコミュニティ フォーラムなど、広範な無料のセルフサポート オプションが 24 時間 365 日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。' 
+summary: ナレッジベースの記事やコミュニティフォーラムなどのセルフサポートリソースを通じてNetApp Workload Factoryのサポートを受けるか、NetAppテクニカルサポートでWebチケットを発行してください。 
 ---
 = NetApp Workload FactoryでのFSx for ONTAPに関するヘルプの取得
 :allow-uri-read: 

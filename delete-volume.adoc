@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: delete-volume.html 
 keywords: delete volume, volume deletion 
-summary: FSx for ONTAPファイルシステムで不要になったボリュームを削除し、スペースを解放します。この処理は元に戻すことはできません。 
+summary: 空き容量を確保するために、FSx for ONTAPファイルシステムから不要になったボリュームを削除します。この操作は元に戻すことはできません。 
 ---
 = NetApp Workload Factory でボリュームを削除する
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: FSx for ONTAPファイルシステムで不要になったボリュー�
 
 
 [role="lead"]
-FSx for ONTAPファイルシステムで不要になったボリュームを削除し、スペースを解放します。この処理は元に戻すことはできません。
+空き容量を確保するために、FSx for ONTAPファイルシステムから不要になったボリュームを削除します。この操作は元に戻すことはできません。
 
 .開始する前に
 ボリュームを削除する前に、次の点を考慮してください。

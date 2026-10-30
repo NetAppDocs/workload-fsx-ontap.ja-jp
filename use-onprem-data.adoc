@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: use-onprem-data.html 
 keywords: use, detect, replicate, remove, on-premises, ONTAP cluster, on-premises cluster, ONTAP 
-summary: オンプレミスの ONTAP データを NetApp Workload Factory で検出およびレプリケートし、クラウド上のバックアップとして使用できるようにします。 
+summary: クラウド上のFSx for ONTAPファイルシステムにボリュームデータをバックアップするために、NetApp Workload FactoryでオンプレミスのONTAPクラスタを検出、レプリケート、削除します。 
 ---
 = NetApp Workload Factory でオンプレミスのONTAPクラスタ データを使用する
 :allow-uri-read: 
@@ -34,12 +34,12 @@ summary: オンプレミスの ONTAP データを NetApp Workload Factory で検
 NetApp Workload Factory でオンプレミスのONTAPクラスターを検出し、 Amazon FSx for NetApp ONTAPファイルシステムにデータを複製できるようにします。
 
 .開始する前に
-作業を開始する前に、次の情報が揃っていることを確認してください。
+以下のものを用意してください：
 
 * レプリケーションのためのFSx for ONTAPファイルシステム。
 * 検出されたオンプレミスクラスタに関連付けるための接続済みリンク。リンクがない場合は、link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["作成"^]必要があります。
 * 必要な権限を持つONTAPユーザクレデンシャル。
-* オンプレミスのONTAPバージョン9.8以降。
+* オンプレミスONTAPバージョン9.8以降。
 * 次の図に示すように接続します。
 +
 image:screenshot-on-prem-connectivity.png["管理パスとデータパスからAmazon Web ServicesクラウドへのオンプレミスONTAPクラスタの接続方法を示すスクリーンショット"]
@@ -85,7 +85,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 .開始する前に
 * ボリュームデータをレプリケートするには、オンプレミスのONTAPクラスタを検出する必要があります。
 * レプリケーションのターゲットとして使用できるFSx for ONTAPファイルシステムが必要です。
-* オンプレミス ONTAP クラスターと、レプリケーション関係に使用する FSx for ONTAP ファイルシステムの両方に、関連付けられたリンクが必要です。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ってください。
+* オンプレミス ONTAP クラスターと、レプリケーション関係に使用する FSx for ONTAP ファイルシステムの両方に、関連付けられたリンクが必要です。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けたら、この操作に戻ってください。
 
 
 .手順
@@ -109,13 +109,13 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 一部の階層化ポリシーには、最小クーリング期間が関連付けられています。最小クーリング期間は、ボリューム内のアクセス頻度の低いユーザデータが「コールド」とみなされて大容量プールストレージ階層に移動されるまでの時間（_cooling days_）を設定します。クーリング期間は、データがディスクに書き込まれた時点から開始されます。
 
 +
-ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAPドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]。
+ボリューム階層化ポリシーの詳細については、AWS FSx for NetApp ONTAP ドキュメントのlink:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["ボリュームのストレージ容量"^]を参照してください。
 
 
 
 .. *最大転送速度*：* Limited *を選択し、最大転送速度をMiB/秒で入力します。または、*無制限*を選択します。
 +
-制限がないと、ネットワークとアプリケーションのパフォーマンスが低下する可能性があります。また、FSx for ONTAPファイルシステムは、主にディザスタリカバリに使用されるワークロードなど、重要なワークロードには無制限の転送速度を推奨します。
+制限がない場合、ネットワークとアプリケーションのパフォーマンスが低下する可能性があります。ただし、主に災害復旧に使用されるような重要なワークロードのFSx for ONTAPファイルシステムには、無制限の転送速度を推奨します。
 
 
 
@@ -124,7 +124,7 @@ image:screenshot-on-prem-connectivity.png["管理パスとデータパスからA
 .. *レプリケーション間隔*：ソースボリュームからターゲットボリュームにSnapshotを転送する頻度を選択します。
 .. *長期保存*：オプションで、長期保存用のスナップショットを有効にします。
 +
-長期保持を有効にする場合は、既存のポリシーを選択するか、新しいポリシーを作成して、レプリケートするSnapshotと保持する数を定義します。
+長期保持を有効にする場合は、既存のポリシーを選択するか、新しいポリシーを作成して、複製するスナップショットと保持する数を定義します。
 
 +
 *** 既存のポリシーの場合は、*[既存のポリシーを選択]*を選択し、ドロップダウンメニューから既存のポリシーを選択します。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-storage-vm.html 
 keywords: create storage VM, create svm 
-summary: 'FSx for ONTAPストレージ VM (SVM) を作成して、 NetApp Workload Factory のワークロードにストレージおよびデータ サービスを提供できます。' 
+summary: NetApp Workload Factoryのワークロードにストレージおよびデータサービスを提供するために、FSx for ONTAPストレージVM（SVM）を作成します。 
 ---
 = FSx for ONTAPファイルシステム用Storage VMの作成
 :allow-uri-read: 
@@ -16,7 +16,7 @@ FSx for ONTAPファイル システム用のストレージ VM (SVM) を作成�
 .タスクの内容
 ストレージ VM は、ワークロード ファクトリー ストレージ内の各ワークロードのデータにアクセスするために使用できる分離されたファイル サーバーです。各 SVM には、データの管理とアクセスを行うための独自の管理資格情報とエンドポイントがあります。
 
-SVMを使用している場合、FSx for ONTAPのデータにアクセスすると、SVMのエンドポイント（IPアドレス）を使用して、SVMによってホストされているボリューム、CIFS / SMB共有、またはiSCSI LUNがクライアントやワークステーションにマウントされます。
+クライアントとワークステーションは、SVMエンドポイント（IPアドレス）を介してSVMがホストするボリューム、CIFS/SMB共有、またはiSCSI LUNをマウントすることで、FSx for ONTAPのデータにアクセスします。
 
 .開始する前に
 ファイルシステムあたりのサポートされるStorage VM数を確認します。ファイルシステムあたりのSVMの最大数については、AWSのドキュメントのを参照してください link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html#max-svms["FSx for ONTAP Storage Virtual Machineの管理"^] 。

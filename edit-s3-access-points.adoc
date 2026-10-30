@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: edit-s3-access-points.html 
 keywords: S3, s3, access points, manage access points, change access points, update access points, modify access points 
-summary: NetApp Workload Factory でボリュームの S3 アクセスポイントを編集します。 
+summary: FSx for ONTAPのボリュームのS3アクセスポイントの詳細を更新し、タグを管理し、インベントリテーブルを有効または無効にします。 
 ---
 = NetApp Workload Factory でボリュームの S3 アクセスポイントを編集します
 :allow-uri-read: 

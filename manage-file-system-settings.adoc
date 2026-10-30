@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-file-system-settings.html 
 keywords: create fsx tags, create tags, edit fsx tags, fsx tags, reset fsx admin password 
-summary: ファイルシステムの FSx for ONTAPファイルシステムタグをいつでも追加、更新、または削除できます。 
+summary: NetApp Workload Factoryで、タグ、ONTAP認証情報、fsxadminパスワード、スループット容量などのFSx for ONTAPファイルシステム設定を管理します。 
 ---
 = NetApp Workload FactoryでFSx for ONTAPファイル システム設定を管理する
 :allow-uri-read: 
@@ -51,7 +51,7 @@ Workload Factory は、Workload Factory 認証情報サービス（ユーザー�
 
 Workload Factory は、制限付き認証情報を次のように処理します：
 
-* ファイルシステムに制限付き認証情報を指定していない状態で、カスタムルールやダッシュボードを作成したり、Ask Me機能で質問したりすると、Workload Factoryは読み取り専用のONTAP認証情報を制限付き認証情報セットとして作成します。
+* ファイルシステムに制限付き認証情報を提供していない状態で、カスタムルールやダッシュボードを作成したり、Ask Me に質問を送信したりすると、Workload Factory は、制限付き認証情報セットとして使用する読み取り専用の ONTAP 認証情報を作成します。
 * ファイルシステムに対して既に制限付き認証情報を提供している場合、それらの認証情報がAIOpsに使用されます。
 
 

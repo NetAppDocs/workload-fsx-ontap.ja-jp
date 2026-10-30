@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: delete-file-system.html 
 keywords: file system, delete file system, file system deletion 
-summary: NetApp Workload Factory でファイル システムを削除するには、まずファイル システムに関連付けられているボリューム、ストレージ VM、またはレプリケーション関係を削除する必要があります。 
+summary: ボリューム、ストレージVM、およびレプリケーション関係を削除したあと、NetApp Workload FactoryでFSx for ONTAPファイルシステムを削除します。 
 ---
 = NetApp Workload Factory でファイルシステムを削除する
 :allow-uri-read: 

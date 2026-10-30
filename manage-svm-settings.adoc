@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-svm-settings.html 
 keywords: edit storage vm settings, vm tags, svm tags, storage vm settings, storage vm password, svm password 
-summary: Storage VMのStorage VMタグをいつでも追加、更新、削除できます。 
+summary: FSx for ONTAPファイルシステムのストレージVMのActive Directoryを構成し、タグを管理し、パスワードをリセットします。 
 ---
 = NetApp Workload Factory でストレージ VM 設定を管理する
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Storage VMのStorage VMタグをいつでも追加、更新、削除で
 
 
 [role="lead"]
-ストレージ VM の設定を NetApp Workload Factory で管理します。ストレージ VM の Active Directory を設定および更新したり、ストレージ VM のパスワードを更新したり、ストレージ VM のタグを管理したりできます。
+NetApp Workload FactoryでストレージVMの設定を管理します。Active Directoryの設定と更新、ストレージVMのパスワードのリセット、およびストレージVMのタグの管理を行うことができます。
 
 
 
@@ -33,13 +33,13 @@ Storage VMのActive Directoryの設定と更新も同じ手順です。
 +
 .. *参加するActive Directoryドメイン*: Active Directoryの完全修飾ドメイン名(FQDN)を入力します。
 .. * DNS IPアドレス*：IPアドレスを3つまでカンマで区切って入力します。
-.. * SMBサーバのNetBIOS名*：Storage VM用に作成するActive DirectoryコンピュータオブジェクトのSMBサーバのNetBIOS名を入力します。Active Directory内のこのSVMの名前を指定します。
+.. *SMBサーバーのNetBIOS名*：ストレージVM用に作成するActive DirectoryコンピューターオブジェクトのSMBサーバーのNetBIOS名を入力します。これは、Active DirectoryにおけるストレージVMの名前です。
 .. *ユーザー名*：既存のActive Directory内のサービスアカウントのユーザー名を入力します。
 +
 ドメインのプレフィックスまたはサフィックスは含めないでください。の場合は `EXAMPLE\ADMIN`、を使用し `ADMIN`ます。
 
 .. *パスワード*：サービスアカウントのパスワードを入力します。
-.. *組織単位（OU）*：組織単位を入力します。
+.. *組織単位（OU）*：組織単位を入力してください。
 +
 OUは、ファイルシステムに参加する組織単位の識別パス名です。
 

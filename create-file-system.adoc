@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-file-system.html 
 keywords: create, FSx file system, ONTAP file system, Workload Factory, storage 
-summary: NetApp Workload Factory を使用すると、FSx for ONTAPファイル システムを作成して、ボリュームや追加のデータ サービスを追加および管理できます。 
+summary: ボリュームと追加のデータサービスを追加および管理するには、NetApp Workload FactoryでFSx for ONTAPファイルシステムを作成します。 
 ---
 = NetApp Workload Factory で FSx for ONTAPファイルシステムを作成する
 :allow-uri-read: 
@@ -11,13 +11,13 @@ summary: NetApp Workload Factory を使用すると、FSx for ONTAPファイル 
 
 
 [role="lead"]
-NetApp Workload Factory を使用すると、第 1 世代および第 2 世代の FSx for ONTAPファイル システムを作成し、ボリュームと追加のデータ サービスを追加および管理できます。
+NetApp Workload Factoryで第1世代および第2世代のFSx for ONTAPファイルシステムを作成し、ボリュームや追加のデータサービスを追加および管理します。
 
 .タスクの内容
 Storage VMとセキュリティグループは、ファイルシステムの作成時に作成されます。
 
 .開始する前に
-FSx for ONTAPファイルシステムを作成する前に、以下が必要になります。
+FSx for ONTAPファイルシステムを作成する前に、以下が必要です：
 
 * FSx for ONTAPファイル システムを作成するための、_ファイル システムの作成および削除_ 権限を持つ認証情報。link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWSアカウントに権限を付与する方法を確認する"^]。
 * ONTAP インスタンスの FSX を作成する場所のリージョンおよび VPC 情報。
@@ -66,7 +66,7 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 
 
 
-.. *タグ*:オプションで、最大50個のタグを追加できます。
+.. *タグ*：必要に応じて、最大50個のタグを追加できます。
 
 
 . [ファイルシステムの詳細]*で、次の情報を入力します。
@@ -88,7 +88,7 @@ NOTE: CodeboxからTerraformを使用すると、コピーまたはダウンロ�
 ... * SMBサーバのNetBIOS名*：Storage VM用に作成するActive DirectoryコンピュータオブジェクトのSMBサーバのNetBIOS名を入力します。これは、Active Directory内のこのStorage VMの名前です。
 ... *ユーザー名*：既存のActive Directory内のサービスアカウントのユーザー名を入力します。
 +
-ドメインのプレフィックスまたはサフィックスは含めないでください。の場合は `EXAMPLE\ADMIN`、を使用し `ADMIN`ます。
+ドメインの接頭辞や接尾辞は含めないでください。 `EXAMPLE\ADMIN`には、 `ADMIN`を使用します。
 
 ... *パスワード*：サービスアカウントのパスワードを入力します。
 ... *組織単位*：必要に応じて、FSx for ONTAPのコンピュータアカウントを作成する組織単位の名前を入力します。OUは、ファイルシステムに参加する組織単位の識別パス名です。
@@ -107,7 +107,7 @@ AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Admin
 . ファイルシステムを保存または作成します。
 
 
-ファイルシステムを作成した場合は、*インベントリ*ページでFSx for ONTAPファイルシステムを確認できるようになりました。
+ファイルシステムを作成したら、*インベントリ*ページで確認できます。
 
 --
 .高度な作成
@@ -148,7 +148,7 @@ Advanced createでは、可用性、セキュリティ、バックアップ、�
 
 
 
-.. *タグ*:オプションで、最大50個のタグを追加できます。
+.. *タグ*：必要に応じて、最大50個のタグを追加できます。
 
 
 . [File system details]で、次の情報を入力します。
@@ -162,8 +162,8 @@ Advanced createでは、可用性、セキュリティ、バックアップ、�
 .. *HAペアあたりのスループット容量*：HAペアの数あたりのスループット容量を選択します。第一世代のファイルシステムは、1つのHAペアのみをサポートします。
 .. *プロビジョニングされた IOPS*: 次のいずれかのオプションを選択します。
 +
-*** *自動*: 自動の場合、作成された GiB ごとに 3 IOPS が追加されます。
-*** *ユーザープロビジョニング*: ユーザープロビジョニングの場合は、IOPS 値を入力します。
+*** *自動*：作成された GiB ごとに 3 IOPS を追加します。
+*** *ユーザープロビジョニング*：IOPS値を入力してください。
 
 
 .. * ONTAPクレデンシャル*：オプション。ONTAPのユーザ名とパスワードを入力します。パスワードはすぐに設定することも、あとで設定することもできます。
@@ -178,7 +178,7 @@ Advanced createでは、可用性、セキュリティ、バックアップ、�
 ... * SMBサーバのNetBIOS名*：Storage VM用に作成するActive DirectoryコンピュータオブジェクトのSMBサーバのNetBIOS名を入力します。これは、Active Directory内のこのStorage VMの名前です。
 ... *ユーザー名*：既存のActive Directory内のサービスアカウントのユーザー名を入力します。
 +
-ドメインのプレフィックスまたはサフィックスは含めないでください。の場合は `EXAMPLE\ADMIN`、を使用し `ADMIN`ます。
+ドメインの接頭辞や接尾辞は含めないでください。 `EXAMPLE\ADMIN`には、 `ADMIN`を使用します。
 
 ... *パスワード*：サービスアカウントのパスワードを入力します。
 ... *組織単位*：必要に応じて、FSx for ONTAPのコンピュータアカウントを作成する組織単位の名前を入力します。OUは、ファイルシステムに参加する組織単位の識別パス名です。
@@ -224,7 +224,7 @@ AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Admin
 . ファイルシステムを保存または作成します。
 
 
-ファイルシステムを作成した場合は、*インベントリ*ページでFSx for ONTAPファイルシステムを確認できるようになりました。
+ファイルシステムを作成したら、*インベントリ*ページで確認できます。
 
 --
 ====
@@ -233,7 +233,7 @@ AWS Managed Microsoft ADを使用している場合は、AWS Delegated FSx Admin
 [[security-group-details]]
 == セキュリティグループの詳細
 
-次の表に、セキュリティグループの詳細（プロトコル、ポート、ロールなど）を示します。
+この表には、プロトコル、ポート、役割など、セキュリティグループの詳細が記載されています。
 
 []
 ====

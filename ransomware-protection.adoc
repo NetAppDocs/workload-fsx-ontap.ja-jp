@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ransomware-protection.html 
 keywords: ransomware, arp, autonomous protection, protect, security, detect, detection, restore, recover, threat, attack, suspect, anti-ransomware, entropy, abnormal volume activity, anti-ransomware, extension conformity, ransomware protection strategy 
-summary: NetApp Autonomous Ransomware Protection with AI （ARP/AI）は、NASおよびSAN環境におけるワークロード分析を利用して、ランサムウェア攻撃の可能性のある異常なアクティビティを検知し、警告を発します。 
+summary: AIを活用したNetApp自律型ランサムウェア対策を有効にして、異常なボリュームアクティビティを検知し、疑わしい攻撃を検証し、スナップショットからデータを復元します。 
 ---
-= FSx for ONTAPのデータをAIを活用したNetApp自律型ランサムウェア対策で保護する
+= AIによるNetApp自律型ランサムウェア対策でFSx for ONTAPデータを保護する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -45,7 +45,7 @@ ARP/AI 機能は、Amazon FSx for NetApp ONTAPが実行するONTAPバージョ�
 
 アラートを誤検知としてマークすると、システムはアラート設定を更新します。例えば、新しいファイル拡張子によってアラートが発生し、それを誤検知としてマークした場合、システムが次にそのファイル拡張子を検出した際にはアラートは発生しません。
 
-サポートされない構成:: 次の構成では、ARP/AI の使用はサポートされません。
+サポートされない構成:: ARP/AIはこれらの設定をサポートしていません。
 +
 --
 * NVMeボリューム
@@ -65,7 +65,7 @@ ARP/AI 機能は、Amazon FSx for NetApp ONTAPが実行するONTAPバージョ�
 ARP/AIが有効化された後に実際の攻撃が検出された場合、Workload Factoryは自動的にスナップショットポリシーを作成します。このポリシーでは、4時間ごとに最大6つのスナップショットを作成できます。各スナップショットは2～5日間ロックされます。
 
 .開始する前に
-ファイルシステムまたはボリュームでARP/AIを有効にするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ります。
+ファイルシステムまたはボリュームでARP/AIを有効にするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けたら、この操作に戻ってください。
 
 [role="tabbed-block"]
 ====
@@ -124,7 +124,7 @@ ARP/AIが有効化された後に実際の攻撃が検出された場合、Workl
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
 . [Autonomous Ransomware Protection]タイルで[Analyze Attacks]*を選択します。
 . 攻撃イベントレポートをダウンロードして、ファイルやフォルダが侵害されていないかどうかを確認し、攻撃が発生したかどうかを判断します。
-. 攻撃が発生していない場合は、テーブル内のボリュームに対して* False alarm *を選択し、* Close *を選択します。
+. 攻撃が発生しなかった場合は、表内の該当ボリュームに対して「誤報」を選択し、「閉じる」を選択してください。
 . 攻撃が発生した場合は、表のボリュームに対して* Real Attack *を選択します。[Restore compromised volume data]ダイアログが開きます。すぐにに進むか、*[閉じる]*を選択して後でリカバリプロセスを完了することができます<<ランサムウェア攻撃のあとにデータをリカバリ,データをリカバリ>>。
 
 

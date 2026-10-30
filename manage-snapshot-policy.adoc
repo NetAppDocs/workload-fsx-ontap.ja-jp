@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-snapshot-policy.html 
 keywords: manage snapshot policy, change snapshot policy, assign snapshot policy, remove snapshot policy, snapshot policies, snapshot schedule, update, snapshot long-term retention, enable long-term retention 
-summary: Workload Factory で FSx for ONTAPボリュームのスナップショット ポリシーを管理します。スナップショット ポリシーは、システムがボリュームのスナップショットを作成する方法を定義します。 
+summary: Workload FactoryのFSx for ONTAPボリュームに対して、スナップショットポリシーの割り当て、変更、解除、削除を行い、不変スナップショットと長期保持を有効にします。 
 ---
 = NetApp Workload Factory でボリュームのスナップショットポリシーを管理する
 :allow-uri-read: 
@@ -27,7 +27,7 @@ FSx for ONTAPファイルシステムでは、ボリュームのSnapshotポリ�
 1つのボリュームにSnapshotポリシーを割り当てて、ボリュームのスケジュールされたSnapshotを作成できます。
 
 .開始する前に
-スナップショットポリシーを割り当てるには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ります。
+スナップショットポリシーを割り当てるには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けたら、この操作に戻ってください。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
@@ -38,7 +38,7 @@ FSx for ONTAPファイルシステムでは、ボリュームのSnapshotポリ�
 . スナップショット ポリシー管理ページで、スナップショット ポリシーのアクション メニューを選択し、*ボリュームにポリシーを割り当てる*を選択します。
 . [Snapshotポリシーの割り当て]ダイアログで、ボリュームに割り当てるSnapshotポリシーを選択し、ポリシースケジュールを確認します。
 +
-ポリシーに変更不可のスナップショットが含まれており、それを使用する場合は、ステートメントを受け入れます。
+ポリシーに不変のスナップショットが含まれており、それを使用する場合は、ステートメントを承認してください。
 
 . [割り当て]*を選択します。
 
@@ -51,10 +51,10 @@ Snapshotポリシーがボリュームに割り当てられます。
 [[change-a-snapshot-policy]]
 == Snapshotポリシーの変更
 
-Snapshotポリシーの名前、スケジュール、保持するコピーの数を変更したり、変更不可のSnapshotを有効または無効にしたりできます。Storage VM間でのポリシー共有を有効または無効にすることはできません。このオプションは、Snapshotポリシーの作成時にのみ使用できます。
+スナップショットポリシーの名前、スケジュール、保持するコピー数を変更したり、不変スナップショットを有効または無効にしたりできます。ストレージVM間でポリシー共有を有効または無効にすることはできません。このオプションは、スナップショットポリシーを作成する際にのみ設定できます。
 
 .開始する前に
-既存のスナップショットポリシーを表示するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ります。
+既存のスナップショットポリシーを表示するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けたら、この操作に戻ってください。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
@@ -78,14 +78,14 @@ Snapshotポリシーが更新されます。
 Snapshotをロックして、保持期間中に削除されないようにします。
 
 .開始する前に
-不変スナップショットを有効にするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ります。
+不変スナップショットを有効にするには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けたら、この操作に戻ってください。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*ストレージ*を選択します。
 . *FSx for ONTAP* タブで、スナップショットをロックするボリュームを含むファイルシステムのアクション メニューを選択し、*管理* を選択します。
 . ファイルシステムの概要で、*[ボリューム]*タブを選択します。
-. *ボリューム* タブから、保護するボリュームのアクションメニューを選択します。
+. 「ボリューム」タブから、保護するボリュームのアクションメニューを選択します。
 . [データ保護操作]*、*[ Snapshot ]*を選択し、*[ Snapshotを変更不可にする]*を選択します。
 . [Make a snapshot immutable]ダイアログで、次の手順を実行します。
 +
@@ -149,7 +149,7 @@ NOTE: ストレージ VM データと構成設定を複製する場合、長期�
 ボリュームのSnapshotが不要になった場合、または複数のボリュームに割り当てられているSnapshotポリシーを削除する場合は、ボリュームからSnapshotポリシーを削除します。が複数のボリュームに割り当てられている場合は<<Snapshotポリシーを削除します,Snapshotポリシーを削除します。>>、すべてのボリュームからそのボリュームを手動で削除する必要があります。
 
 .開始する前に
-スナップショットポリシーを削除するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクが関連付けられたら、この操作に戻ってください。
+スナップショットポリシーを削除するには、リンクを関連付ける必要があります。link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["既存のリンクを関連付ける方法、または新しいリンクを作成して関連付ける方法を学びます"^]。リンクを関連付けたら、この操作に戻ってください。
 
 .手順
 . いずれかを使用してログインしlink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
