@@ -3419,4 +3419,6 @@
   <block id="356b28bbbd0d4021c21f75e7c065f091" category="list-text">ホスト名、インスタンスID、ワークロードタイプ、リージョン、iSCSI修飾名（IQN）などのホストの詳細</block>
   <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">2026年11月1日</block>
   <block id="7dc50386b3284326e1114e4e7f4eb3fd" category="section-title">2026年11月1日</block>
+  <block id="7cc20c44b067a9d650d7a25d5be9d67d" category="section-title">分類に関する顧客管理型Bedrockサポート</block>
+  <block id="8a8cb6e7e1b94c2efc52b7f5d677eb4d" category="paragraph">Workload Factoryでは、ワークロードのタグ付け分類に独自のAmazon Bedrock環境を使用できるようになりました。独自のBedrockエンドポイントと認証情報を提供することで、分類リクエストを独自のBedrock構成を通して実行させることができます。</block>
 </blocks>
