@@ -1999,7 +1999,6 @@
   <block id="292198e01fad7795066f40b6fec350fd" category="list-text">*FSx for ONTAP*から、レプリケートするボリュームを含むファイルシステムを選択します。</block>
   <block id="bc9c958c3279391522e702151359608b" category="list-text">* レプリケーション関係 * タブを選択します。</block>
   <block id="23c1b911bea8dc9e9cdd65d07a7745ca" category="list-text">レプリケーション関係テーブルで、切り替えるレプリケーション関係を選択し、*レプリケーションの切り替え*を選択します。</block>
-  <block id="e4d846e7cde6ab6686b9817d81bc55f6" category="list-text">カットオーバーレプリケーションダイアログの情報を確認し、_cut over_ と入力して確定します。</block>
   <block id="5d8caeaede63e2cdba6715a163d09892" category="doc">ストレージVM移行のサポート</block>
   <block id="353d7ff4a3d58ad1fe8ef0ad6acab574" category="paragraph">NetApp Workload Factory は、ストレージ VM の移行をサポートするようになりました。この機能により、オンプレミス ONTAP システムまたは第一世代の FSx for ONTAP ファイルシステムから第二世代の FSx for ONTAP ファイルシステムへ、ONTAP ストレージシステムのデータと構成を移行できます。ストレージ VM のデータと構成設定を複製して、ダウンタイムとユーザーおよびアプリケーションの中断を最小限に抑えながら新しいファイルシステムに移動できます。</block>
   <block id="fb2a77c6756f10fcc139a51a83349d7f" category="inline-link-macro">レプリケーション関係を作成する</block>
@@ -2015,7 +2014,6 @@
   <block id="9b03bdd83a5017b3aa998f32e7ad219f" category="list-text">第2世代から第2世代</block>
   <block id="66de39f46af06b661b7bce68c01c8e61" category="list-text">使用可能、作成済み、または構成ミス以外の状態のボリュームではレプリケーションはサポートされません。また、ONTAP バージョンに互換性がない場合もサポートされません。</block>
   <block id="41ad46bbff5ae50ffe14d0bdc1b66775" category="paragraph">移行のためにレプリケーション関係を作成した場合は、ストレージ VM のデータと構成設定をターゲットの FSx for ONTAP ファイルシステムに移行するために、すべてのボリュームとそれに関連付けられたストレージ VM をカットオーバーする必要があります。</block>
-  <block id="f2ce5ba0f770aa8ae822f79404813d99" category="section-title">移行ユースケースのカットオーバーレプリケーション</block>
   <block id="aed0e194718db8e0128d88b14756819e" category="list-text">レプリケーションを切り替える前に、ストレージ VM へのクライアントアクセスをすべて停止します。</block>
   <block id="882f34227a47a95827c88036c610642f" category="list-text">*カットオーバー* を選択します。</block>
   <block id="51123444304b31165de4e3a52117437d" category="admonition">ストレージ VM データと構成設定を複製する場合、長期保存の編集は使用できません。</block>
@@ -2059,7 +2057,6 @@
   <block id="897441537fb13b6e015f73a76a79d07f" category="paragraph">ファイルシステムの容量を調整するには、まず<block ref="ca55c81878fab545ebb59a964af2e0f9" category="inline-link-macro-rx"></block>を実行する必要があります。</block>
   <block id="201a18ac1c906df6358f39af33c244de" category="summary">NetApp Workload FactoryでFSx for ONTAPファイルシステムのブロックストレージを管理します。</block>
   <block id="0006ccbc0d0f541209207d590ebc1b08" category="doc">NetApp Workload Factoryでファイルシステムのブロックストレージを管理する</block>
-  <block id="373d40a556613e20661d6c89ac8751a6" category="paragraph">NetApp Workload Factory を使用して、igroup やブロックデバイスなどのブロックストレージリソースの管理を簡素化し、FSx for ONTAP ブロックデバイスのクライアントアクセスを制御することで、最適なパフォーマンスを実現し、コストを最小限に抑えます。</block>
   <block id="30f276b848a0c37c6c54368f5714fc72" category="list-text">クライアント接続</block>
   <block id="e7963aa68819cfe7f854ea292af57bb0" category="list-text">ブロックデバイスのステータス</block>
   <block id="fa23eba521e62c0f542759bfbbeff7da" category="list-text">ノードとクライアントの関係</block>
@@ -2360,10 +2357,8 @@
   <block id="3ff25ab258de4c80bbe3f420e00a3c7e" category="paragraph">移行時には、1つのストレージVMのデータと構成設定を複製することを選択できます。データと構成設定を一緒に移行する場合は、ボリュームの最後のレプリケーションが過去24時間以内に完了していることを確認してください。この機能を使用するには、同じストレージVM内のすべてのボリュームを選択する必要があります。すべてのボリュームの階層化ポリシーは、デフォルトでソースボリュームの階層化ポリシーが適用されます。これは、移行のユースケースにおいて推奨される設定です。</block>
   <block id="a4b076b073df12f01e734ba016dbebd2" category="paragraph">Workload Factoryは、以下のストレージシステム間でのストレージVMの移行レプリケーションをサポートしています。</block>
   <block id="ed57615365ad2815423480008d91d450" category="section-title">切り替え作業の計画</block>
-  <block id="fa425772bf4dc1e54c8368c2b99d4b1b" category="paragraph">移行ユースケースにおける切り替え作業を計画する際には、以下の点を考慮してください。</block>
   <block id="d77811034f737ab45ed7ddebe9c096fd" category="inline-xref">切り替え後に構成設定を更新する</block>
   <block id="03c85e91696d00a533c3da3b08434532" category="list-text">*AWS S3 アクセスポイント*：S3 アクセスポイントを使用するボリュームでは、移行ユースケースのためのカットオーバーレプリケーションはサポートされていません。移行の失敗を避けるため、ソースボリュームから S3 アクセスポイントを削除してください。</block>
-  <block id="849ee629a3b8f33b04a9b242a47e3d59" category="list-text">*ONTAP S3構成*：ONTAP S3構成を持つvserverでは、移行ユースケースのカットオーバーレプリケーションはサポートされていません。移行の失敗を回避するために、vserver上のオブジェクトストアサーバー、バケット、ユーザー、グループ、ポリシーなどのONTAP S3構成を削除してください。</block>
   <block id="ab3171de62100468c23112d3fda9227b" category="list-text">*LUNシリアル番号とiSCSIターゲットIQN*：LUNシリアル番号とiSCSIターゲットIQNはカットオーバー時に変更されます。</block>
   <block id="3021805b6a1038ca60c0a0b6321eeb81" category="list-text">リンク接続のために、FSx for ONTAPファイルシステムに関連付けられたセキュリティグループで以下のポートを開いておく必要があります：ポート443（HTTPS）およびポート22（SSH）。</block>
   <block id="02fd7814960d61424a4fd3855641dc2c" category="paragraph">カットオーバーを開始すると、ソースStorage VMがオフラインになります。</block>
@@ -2371,7 +2366,6 @@
   <block id="2a6f3123e92916a549d4843b0432ee15" category="list-text">iSCSIの場合：</block>
   <block id="6620d06a6f36ee92ee8c0b9c206e5932" category="list-text">igroupを再作成する</block>
   <block id="1d215d1d64ff0e5459b1b60c4e0f0ba2" category="list-text">LUNマッピングの更新</block>
-  <block id="22c26e33ed22192caefb59eb41da6dd7" category="list-text">各SANクライアントにログインし、新しいターゲットのiSCSI/MPIO設定を更新し、古いvserverターゲットIPを削除します</block>
   <block id="add6659449d7aeb40a4dd48b3f75db00" category="list-text">ブロードキャストドメインのMTU設定が想定どおりであることを検証する</block>
   <block id="cd823c1632b612f3a00bc9cf049ef97b" category="list-text">DNS設定が想定どおりであることを確認する</block>
   <block id="b33f176ae89f054db5b204e18e50bedb" category="list-text">ソースストレージVMにキャッシュボリュームが存在する場合は、キャッシュ関係（ONTAP FlexCache関係）を再作成します。</block>
@@ -2380,11 +2374,6 @@
   <block id="5599690d98e9754752709f4613760d6e" category="list-text">S3アクセスポイントまたはONTAP S3設定（vserver上のobject-store-server、バケット、ユーザー、グループ、ポリシーなど）を含むボリュームでは、カットオーバーレプリケーションはサポートされていません。</block>
   <block id="357b33fc2f59a9d12f59fb35bf104b91" category="paragraph">レプリケーションには、レプリケーション関係の作成と初期化が含まれます。レプリケーションを設定するには、レプリケーション関係を作成します。ソースストレージシステムとターゲットストレージシステム間でデータを転送するには、レプリケーション関係を初期化します。ストレージVMのデータと構成設定を移行する際には、カットオーバー操作も完了させる必要があります。</block>
   <block id="e148ba55e71be246708dafe4293a314f" category="paragraph">ストレージVMのデータと構成設定を移行するには、3つの操作を完了する必要があります。</block>
-  <block id="c6b6c5bfe5708feb9348282cee3701d5" category="inline-xref">レプリケーション関係を作成する</block>
-  <block id="3297677183a67f243b8c6abf28b4fb81" category="list-text"><block ref="d3f4ef0dd3d11e1cc504390affbdef58" category="inline-xref-macro-rx"></block>、ユースケースとして*Migration*を選択し、*Replicate storage VM configuration*を選択します。</block>
-  <block id="4578208e79d59d2ad53f30812b33d008" category="inline-xref">レプリケーション関係を初期化する</block>
-  <block id="ee673c79e2fee1e050f07ed104f6188d" category="list-text"><block ref="1876753e18c7b524394b3d041c7ca2f6" category="inline-xref-macro-rx"></block>データをソースからターゲットストレージシステムに転送します。</block>
-  <block id="23dd3a896e2b24326fa839ac0c555b13" category="list-text"><block ref="78c2faa9b52f24796e9c82977a0d449a" category="inline-xref-macro-rx"></block>ソースファイルシステムからターゲットのFSx for ONTAPファイルシステムにデータと構成設定を永続的に移行します。</block>
   <block id="34ed3d0886446fdce0ca12aba8d0a847" category="section-title">ステップ1：レプリケーション関係を作成する</block>
   <block id="58f14dbd85a730a03075451e9af3c2b2" category="section-title">ステップ2：レプリケーション関係を初期化する</block>
   <block id="938304b34ce3517fe01a2000f5b9d7df" category="paragraph">レプリケーションの状態が *Idle* と表示されたら、データ転送は完了です。</block>
@@ -2449,11 +2438,9 @@
   <block id="596e30b7050101709ce0d710420e77a7" category="paragraph">FSx for ONTAP ファイルシステムの概要から SSD 容量のトレンドを直接確認できます。容量管理用の新しいカードには、前月の使用傾向が表示されます。この分析では、実際の容量と割り当てられた容量を比較することで、リソースの使用状況を容易に評価できます。</block>
   <block id="deede3cf7f18c08613ec53890188368e" category="section-title">FSx for ONTAPファイルシステムの適切に設計された状態に関するPDFレポート</block>
   <block id="eeb77472aa3a83d51f0873ec83e22572" category="list-text">*ストレージVM構成設定*：</block>
-  <block id="0abde7f01f46e5ae295493bf4b280687" category="list-text">切り替え操作では、すべてのストレージVM構成設定がターゲットストレージVMに移行するわけではありません。例えば、iSCSI、ブロードキャストドメインMTU、DNS設定などは移行されません。切り替え後、対象のストレージVM上でこれらの設定を手動で更新してください。詳細については、<block ref="af05d35e02c20d22f4e6b1df9b57e0a2" category="inline-xref-macro-rx"></block>セクションを参照してください。</block>
   <block id="893700039eb02078c7602e997d7f9922" category="list-text">ストレージVMがドメイントンネル認証を使用している場合は、移行を開始する前に、ターゲットファイルシステム上でドメイントンネルを設定して有効にしてください。</block>
   <block id="8ee47478c07b40fab9e5a6a34028629c" category="list-text">ストレージシステム間の安全なデータ転送と管理のために、TCPポート11104と11105を開放してください。ICMPは必須ではありませんが、ネットワークのチェックやトラブルシューティングに役立ちます。</block>
   <block id="fa8b213a52b4f0e35de875db4340e809" category="paragraph"><block ref="fa8b213a52b4f0e35de875db4340e809" category="inline-link-macro-rx"></block></block>
-  <block id="e9df00e078102fb55394d13dad9115a4" category="paragraph">1つのソース（読み取り / 書き込み）ボリュームまたは1つのデータ保護（DP）ボリュームを複製できます。カスケードレプリケーションはサポートされていますが、3番目のホップはサポートされていません。<block ref="a7ce0f55df6d6b86426266d8a7eeb328" category="inline-link-macro-rx"></block>の詳細をご覧ください。</block>
   <block id="6fbe09b3d9705d922f633d5654393f36" category="paragraph">*ストレージVM構成の複製*：オプションで、単一のストレージVMのデータと構成設定を複製するかどうかを選択します。データと設定を移行する際は、すべてのボリュームが過去24時間以内にレプリケーションを完了し、同時に切り替えを行う必要があります。</block>
   <block id="d5b5dacfafad754125a1766d22142ae9" category="paragraph">すべてのボリュームの階層化ポリシーは、デフォルトでソースボリュームの階層化ポリシーが適用されます。これは、移行のユースケースにおいて推奨される設定です。</block>
   <block id="21c415465773e849068dc431e13446de" category="paragraph">移行中、クライアントはソースONTAPファイルシステムからデータにアクセスします。切り替え後、ボリュームはターゲットFSx for ONTAPファイルシステムのIPアドレスを通じて利用可能になります。古いIPアドレスを使用しているクライアントやリソースを更新してください。</block>
@@ -3020,7 +3007,6 @@
   <block id="ddf35bccac94d0810429e6fa6c2fb972" category="list-text">igroupとキャッシュボリュームの管理</block>
   <block id="d49fbd4141ef9211647083b276c978a0" category="list-text">ONTAP資格情報の管理</block>
   <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link-macro">リンクの詳細</block>
-  <block id="7199140a960155d0d2f40b39a85d69f9" category="paragraph"><block ref="8fae953ea9a38f9ca7be3c5b0b0db56c" category="inline-link-macro-rx"></block>。</block>
   <block id="dfe642f2cfde396edc18a4148131fed6" category="paragraph-title">ファイルシステムにリンクを関連付けなかった場合はどうなりますか？</block>
   <block id="b4995c14539d70a4f6014816a0690b2e" category="paragraph">リンクに依存する機能は利用できない場合があります。例えば、リンクがないとARP/AIは利用できず、ボリューム作成時に既存のスナップショットポリシーを表示できず、キャッシュの関係性も検出できません。リンクがない場合、構成分析ではデータ保護とパフォーマンスの設定をスキャンできないため、分析が不完全になります。リンクがなくてもレイテンシイベントを表示することはできますが、EMSイベントの表示と分析、およびレイテンシイベントの分析にはリンクが必要です。</block>
   <block id="3b18b13f059019d19211f8a9f36f7e4e" category="section-title">ファイルシステム</block>
@@ -3363,4 +3349,74 @@
   <block id="d56aae4930133feee16677d0d7e79d8b" category="summary">Amazon FSx for NetApp ONTAP（NetApp Workload Factory内）の新機能、機能強化、修正点をリリース日順に確認します。</block>
   <block id="a811a6180339ac414cb29f505164688a" category="doc">Amazon FSx for NetApp ONTAP（NetApp Workload Factory）の新機能</block>
   <block id="15446ab78757c18a126998e08d0c741d" category="paragraph">NetApp Workload FactoryのAmazon FSx for NetApp ONTAPに関する新機能と機能強化をリリース日順にご確認ください。</block>
+  <block id="4db89734d848869d20c5c98a44e7de1b" category="list-text">切り替えテストの手順を完了してから、実際の切り替えを実行してください。</block>
+  <block id="fa0ab2f86cd05046110c737fd5ce84b8" category="paragraph">処理中にダイアログを閉じた場合は、*レプリケーション関係*タブから*SVM移行ステータス*を確認し、準備ができたら切り替え操作を続行できます。</block>
+  <block id="981cf06d12c9b4f422a2927885d64c6f" category="list-text">レプリケーションの切り替えダイアログの情報を確認し、_cut over_ と入力してプロセスを完了します。</block>
+  <block id="230227ce1631475a082d9f0865ea84b2" category="doc">イニシエータグループ図の改良</block>
+  <block id="9312a185b7f4389cd2dc1b61172e5f20" category="paragraph">「クライアントアクセス管理」ページに表示される、ブロックデバイスのイニシエータグループを示す図に、ホストに関する詳細情報が追加されました。図中のホストにカーソルを合わせると、ホスト名、インスタンスID、ワークロードタイプ、リージョン、iSCSI修飾名（IQN）などのホストの詳細が表示されます。</block>
+  <block id="5c944601b7f8744b2a84a9a8ea43d363" category="section-title">リンク作成通知メール</block>
+  <block id="19206cde68f30f89cddf386749d22382" category="paragraph">Workload Factory は、認証情報の追加が成功した後、リンク関連付けを完了するように促すようになりました。認証情報によりリソースの検出が可能になりますが、高度な ONTAP 機能を利用するには、検出されたファイルシステムとのリンク関連付けが必要です。メール通知は毎週月曜日に届きます。リンク関連付けが完了すると、通知は停止します。</block>
+  <block id="6ea6cb3b2f3b5abc021a1f0e4229c7fc" category="inline-link-macro">Workload Factoryコンソールで通知を設定する</block>
+  <block id="a518b4e2bba0d0ce3d0ecdc772d503ed" category="paragraph"><block ref="a518b4e2bba0d0ce3d0ecdc772d503ed" category="inline-link-macro-rx"></block></block>
+  <block id="41d8c250ba5deffd33a0d05e7f94eaf4" category="paragraph">リンクに関するすべてのドキュメントは、Workload Factory のセットアップおよび管理に関するドキュメントに記載されています。Workload Factory FSx for ONTAP ドキュメントの <block ref="25b81a757714a127c9c382013e960ce5" category="inline-link-macro-rx"></block> を参照して、セットアップおよび管理に関するドキュメント内の関連ページへのリンクを確認することもできます。</block>
+  <block id="40a8a1ceba59de4101cf77a14d6fb2d5" category="section-title">Well-Architectedの問題に対するメール機能の強化</block>
+  <block id="954ae82c2d96e9bd8c7d4e143bf3c187" category="paragraph">新しいメールデザインでは、Workload Factoryが検出した構成上の問題について、より詳細な情報とコンテキストを提供します。メールには、分析されたリソースの数、警告または重大な問題があるリソースの数、およびそれらの問題の内容が記載されています。また、このメールにはFSx for ONTAPのWell-Architectedダッシュボードへのリンクも記載されているため、問題をすぐに解決できます。</block>
+  <block id="1854fdec65dd4a2dd839c666aba07186" category="section-title">優れた設計のダッシュボード機能強化</block>
+  <block id="4640bfbf90e44f31ffe06c764207a151" category="section-title">選択された構成チェックのサポート</block>
+  <block id="4baa1879436d89821519b031a9b29e1d" category="paragraph">選択した構成に対して手動で分析を実行することで、関心のある構成のみを分析し、待ち時間を短縮できます。</block>
+  <block id="696836fc5f2a32266d0ffc0fb5047e3b" category="paragraph">ストレージワークロードの場合：</block>
+  <block id="c244576dbf541429d6bef056ce769d1b" category="list-text">*ホストをフェイルオーバーノードに接続*：信頼性を確保するため、アクティブ / パッシブのFSx for ONTAPファイルシステムでホストがフェイルオーバーノードに接続されているかどうかを確認します。</block>
+  <block id="6ebacaf65862325841aba88bf388a132" category="list-text">*ホストを優先ノードに接続*：ホストがパフォーマンス効率のために優先ノードを使用してブロックデバイスに接続されているかどうかを確認します。</block>
+  <block id="b25392745f1a47aaf9f1983cd8b1eff5" category="list-text">*ARP/AIの複数デバイス検出のギャップ*：ボリュームにブロックデバイスが1つだけ接続されている場合に、ARP/AIは完全な保護範囲を提供します。ボリュームに複数のブロックデバイスが接続されている場合、Workload Factoryはブロックデバイスを新しいボリュームに移動し、各ボリュームにブロックデバイスが1つだけ存在するようにします。</block>
+  <block id="034f9073833298cb75f90f7455203432" category="list-text">*クローンクリーンアップ*：ストレージ使用量を最適化し、コストを削減するために削除できる、30日以上前のボリュームクローンがあるかどうかを確認します。</block>
+  <block id="8e5f97675e6b58e2c142d4e3623f4e20" category="list-text">*igroup OSとホストの一致*：イニシエータグループ（igroup）のオペレーティングシステムがホストのオペレーティングシステムと一致しているかどうかを確認し、I/Oやパフォーマンスの問題を防止します。</block>
+  <block id="68545ea02d5d413d5558618d4f250fed" category="paragraph">Kubernetesワークロードの場合：</block>
+  <block id="92ea527417ca1a6f10e672dd5dc590fb" category="list-text">*QoS設定*：パフォーマンス効率を高めるために、Kubernetesの永続ボリュームがONTAP QoSポリシーで保護されているかどうかを確認します。</block>
+  <block id="a48d1b9cc2b4fca01a8c056a0f21ca0b" category="list-text">*専用KubernetesストレージVM*：ファイルシステムがKubernetesワークロードに専用のストレージVMを使用しているかどうかを確認し、分離性を向上させ、ストレージ管理を簡素化します。</block>
+  <block id="e8b78d1ad4445d483c25f605f3dcd508" category="list-text">*専用のKubernetesエクスポートポリシー*：各Kubernetes永続ボリュームに、クラスターのワーカーノードからのアクセスのみを許可する専用のエクスポートポリシーがあるかどうかを確認します。</block>
+  <block id="15c94f3b03de47c250527326d660fabe" category="list-text">*Kubernetes iSCSIバックエンドの双方向CHAP*：Trident iSCSIバックエンドでセキュリティのために相互CHAP認証が有効になっているかどうかを確認します。</block>
+  <block id="a9f15f720c325ed93ec2ae6e8f017053" category="list-text">*アプリケーションストレージVMでの<block ref="d51321f13693d09d4a9cbb2758b42d12" prefix=" " category="inline-code"></block>の無効化*：クライアントがアクセスできないエクスポートを一覧表示するのを防ぐため、アプリケーションストレージVMで<block ref="d51321f13693d09d4a9cbb2758b42d12" prefix=" " category="inline-code"></block>が無効になっているかどうかを確認します。</block>
+  <block id="8c491145be7052ead6caabd40f13d8d8" category="paragraph">データベースワークロードの場合：</block>
+  <block id="109086be5976370a05137d1276790c52" category="list-text">*SAP HANAスナップショットポリシー*：アクティブなデータベースデータのストレージコストを削減し、パフォーマンスを向上させるために、SAP HANAボリュームのスナップショットポリシーが「なし」に設定されているかどうかを確認します。</block>
+  <block id="f516997bc5858804907fffead3bf17bc" category="list-text">*MySQLスナップショットポリシー*：アクティブなデータベースデータのストレージコストを削減し、パフォーマンスを向上させるために、MySQLボリュームのスナップショットポリシーが「なし」に設定されているかどうかを確認します。</block>
+  <block id="326acdfcec515bde261a6c24416222fc" category="list-text">*PostgreSQLスナップショットポリシー*：アクティブなデータベースデータのストレージコストを削減し、パフォーマンスを向上させるために、PostgreSQLボリュームのスナップショットポリシーが「なし」に設定されているかどうかを確認します。</block>
+  <block id="b37f9a2971bf4d3f39ba06b420da1cf6" category="section-title">構成の現在の値と推奨値</block>
+  <block id="da748e56834f287fe9b9c164de80a667" category="paragraph">適切に設計されたダッシュボードでは、最適化されていない一部の構成について、現在の値と推奨値を確認できます。これは、修正する前に推奨される値を示しています。</block>
+  <block id="0ab265b548fdc40b21483e61ffde3aba" category="list-text">コールドデータ階層化</block>
+  <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">Snapshot ポリシー</block>
+  <block id="6f5cf50fa90f8d99bf50f65e676c6cba" category="list-text">SSDの容量余裕</block>
+  <block id="4c3fd0f1c4be65a2279b728897c84838" category="section-title">コスト改善</block>
+  <block id="7d9291e210fb85e5195b3fd168c5441e" category="section-title">コスト予測と分析</block>
+  <block id="abc7b1907c0e0856759e4d13b2c516f0" category="paragraph">コスト予測機能を使用して、FSx for ONTAPファイルシステムのコストを予測できるようになりました。これは、予算計画を立て、リソースを効果的に最適化するのに役立ちます。また、コストや利用パターンに関する分析結果を確認することで、コスト最適化の機会を特定することもできます。</block>
+  <block id="0e1d8ca59fdf60970c2d4a8bbabe2e5b" category="section-title">AWS コストおよび使用状況レポート（CUR）</block>
+  <block id="133a30124f90912db7b6e93321823906" category="paragraph">Workload Factoryは、お客様所有のS3バケットに配信される詳細な請求記録を提供するために、AWS Cost Explorerの代わりにAWS Cost and Usage Reports（CUR）を使用するようになりました。CURはより詳細なコスト情報を提供し、高度なFinOps、チャージバック、およびコスト配分のユースケースの基盤として機能します。</block>
+  <block id="9744964a1ca6fbce3b75a4f5042f9597" category="section-title">ストレージVM移行の改善</block>
+  <block id="e6567f9c034c2cedd4efbe2f207f9b2a" category="paragraph">Workload Factoryは、ストレージVMの移行に関して、ユーザーインターフェース内でより詳細なガイダンスを提供します。これには、移行を本番環境に導入する前に、段階的な手順説明とテスト実行が含まれます。</block>
+  <block id="5d9883007f4bc5361c0311ad3ad7cfd1" category="inline-link-macro">ストレージVM移行について詳しくはこちらをご覧ください</block>
+  <block id="3bcf392ef4e690644e59c7c7eb9bb71f" category="paragraph"><block ref="3bcf392ef4e690644e59c7c7eb9bb71f" category="inline-link-macro-rx"></block></block>
+  <block id="f96336c52a88a7b30c68866854b7e3f2" category="section-title">レプリケーション遅延メール通知の改善</block>
+  <block id="1e403f6a94558e4fb3362faed8f74a9b" category="paragraph">関連するレプリケーション遅延イベントが多数発生した場合、Workload Factoryはそれらを自動的に1つのメール通知に統合するため、通知が多すぎて混乱することはありません。</block>
+  <block id="f45963c176c2d5c66e1ddbfab6e6a59e" category="section-title">自動容量管理機能の強化</block>
+  <block id="cc7093a020c173b1abf32b6436684cd2" category="paragraph">Workload Factoryに容量の自動管理を依頼する前に、自動容量管理通知を有効にして機能を試用できるようになりました。ファイルシステムの容量が少なくなると、通知されます。</block>
+  <block id="84ae0158deb3f95e6027fdf8d5ff467d" category="section-title">スループット決定ポイント</block>
+  <block id="44c9fa36f4500e57d111bbc550132124" category="paragraph">クライアントのスループットに関する推奨事項と、自動化の決定ポイントを確認できるようになりました。決定ポイントにカーソルを合わせると、現在のSKUと推奨SKU、または一定期間内に違反した指標（%）などの詳細情報が表示されます。</block>
+  <block id="32e2568abf1f06db9af3e7c8594aae66" category="paragraph">1つのソース（読み取り / 書き込み）ボリュームまたは1つのデータ保護（DP）ボリュームを複製できます。カスケードレプリケーションはサポートされていますが、3番目のホップはサポートされていません。<block ref="b43da9c23395dea7a8657c3dcd68f92f" category="inline-xref-macro-rx"></block> の詳細をご覧ください。</block>
+  <block id="99975dc4e0b5174f74f44270f9c4bb79" category="list-text"><block ref="c333b1c4d501da5c597263cb02a86bf0" category="inline-xref-macro-rx"></block>、ユースケースとして*Migration*を選択し、*Replicate storage VM configuration*を選択します。</block>
+  <block id="439799af583df4008d7b4f10d93c939a" category="list-text"><block ref="86056281cff85f2bf6f7be28510fe95d" category="inline-xref-macro-rx"></block>データをソースからターゲットストレージシステムに転送します。</block>
+  <block id="48a79c23389fad3919124aa678f218c9" category="list-text"><block ref="8e0c7083554029f9517e717da960b953" category="inline-xref-macro-rx"></block>を使用して移行をテストし、その後、ソースファイルシステムからターゲットのFSx for ONTAPファイルシステムにデータと構成設定を永続的に移行します。</block>
+  <block id="d69fbbb711f8ff18ddfdec1f828d8dde" category="paragraph">テストと切り替えを行う前に、以下の点を考慮してください。</block>
+  <block id="f54dbcea12e59e12722877876b169b60" category="inline-xref">これらの設定を手動で更新します</block>
+  <block id="773c27512e59c2c2dbd6e6ff8964b7d4" category="list-text">切り替え操作では、すべてのストレージVM構成設定がターゲットストレージVMに移行されるわけではありません。たとえば、iSCSI、ブロードキャストドメインMTU、DNS設定は移行されません。<block ref="e8bd260fbd2f342593da7654c0529249" category="inline-xref-macro-rx"></block>切り替え後のターゲットストレージVM上。</block>
+  <block id="e618f0853e36806a08addf80f080aa17" category="list-text">*ONTAP S3 configurations*：移行ユースケースのカットオーバーレプリケーションは、ONTAP S3構成を持つストレージVMではサポートされていません。移行の失敗を回避するために、ストレージVM上のobject-store-server、バケット、ユーザー、グループ、ポリシーなどのONTAP S3構成を削除してください。</block>
+  <block id="24cce11f73b548e9176ae1c180b0e7c1" category="list-text">Workload Factory のファイルシステム内のレプリケーション関係テーブルで、*SVM 移行ステータス* が *有効 | カットオーバーのテスト準備完了* になっていることを確認してください。</block>
+  <block id="6685d526488e756ed5738a4874c4bccb" category="section-title">レプリケーションの切り替え</block>
+  <block id="12dabbf4de087e3801b25bebe491cfe6" category="paragraph">Workload Factoryは、移行ユースケースにおけるレプリケーションの切り替えプロセスを管理するのに役立ちます。まず、切り替えが問題なく進められることを確認するために、お客様の環境をテストします。第二に、ターゲットファイルシステムへの実際の切り替えを実行します。</block>
+  <block id="641a5b87ae1a6b3f69a51cbf9d3327e7" category="paragraph">移行テストを完了する前に、ターゲットストレージVM上のすべてのデータにアクセスできることを確認してください。</block>
+  <block id="e710e21634c08d4bb9e43d51a67a87eb" category="paragraph">移行ユースケースにおけるレプリケーションの切り替え手順については、指示に従ってください。ユーザーインターフェースが、切り替えプロセスを段階的に案内します。</block>
+  <block id="d4db5cd7a78570802f5cc12157792523" category="list-text">各SANクライアントにログインし、新しいターゲットのiSCSI/MPIO設定を更新し、古いストレージVMターゲットIPを削除します</block>
+  <block id="95254aef509d2d84e8ee7dd3052d1b61" category="paragraph"><block ref="97608ab403cabf20e3bcac439aacde61" category="inline-link-macro-rx"></block>。</block>
+  <block id="78727553c283af369070757e652c05cc" category="paragraph">NetApp Workload Factoryを使用して、igroupやブロックデバイスなどのブロックストレージリソースの管理を簡素化し、FSx for ONTAPブロックデバイスへのクライアントアクセスを制御することで、最適なパフォーマンスを提供し、コストを最小限に抑えます。クライアント接続を最適化し、問題を迅速に解決するには、ブロックデバイスのigroup図を参照してください。</block>
+  <block id="356b28bbbd0d4021c21f75e7c065f091" category="list-text">ホスト名、インスタンスID、ワークロードタイプ、リージョン、iSCSI修飾名（IQN）などのホストの詳細</block>
+  <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">2026年11月1日</block>
+  <block id="7dc50386b3284326e1114e4e7f4eb3fd" category="section-title">2026年11月1日</block>
 </blocks>
