@@ -2539,8 +2539,6 @@
   <block id="9204792b7a380af352b0493b88d5303b" category="inline-link-macro">分析画面</block>
   <block id="6f5b7d64dd977f3594b9b347533d7259" category="paragraph">Workload Factoryはボリュームを監視し、読み取りまたは書き込みのレイテンシが設定されたしきい値を超えた場合にアラートを生成します。レイテンシイベントは<block ref="df1730d271761ecb498a3dca135d5e07" category="inline-link-macro-rx"></block>から確認できます。</block>
   <block id="a1edc47cfd4f855c0729219748978279" category="list-text"><block ref="a1edc47cfd4f855c0729219748978279" category="inline-link-macro-rx"></block></block>
-  <block id="56df9b1084a1d8fbfcb5630d52db4560" category="summary">NetApp Workload Factory で FSx for ONTAP ファイルシステムリソースのコストを追跡し、レポートを生成します。</block>
-  <block id="132c7cd068e9c3c95296d05738c81a90" category="paragraph">Workload Factory は、AWS Cost Explorer からコストデータを取得することで、FSx for ONTAP ファイルシステムのコストと使用状況を追跡します。以下のコスト詳細が追跡されます：使用タイプ、使用 SKU、デプロイメントタイプ、使用量、および合計コスト。</block>
   <block id="80e92f578bcc9bc76e7904c0736e30b0" category="inline-link-macro">AWSのコスト配分タグについて詳しくはこちらをご覧ください。</block>
   <block id="258ef99c8c6162f96d39f58575b891c4" category="section-title">コストを追跡する</block>
   <block id="4eb4c996873463b028b9c244954294a7" category="paragraph">Workload Factory コンソールのコストダッシュボードに表示されるコストは、AWS Cost Explorer のデータに基づいており、24時間ごとに更新されます。</block>
@@ -2981,10 +2979,7 @@
   <block id="17ec06b9eaa321300fab59fd56971e66" category="list-text">ワークロードを更新するボリュームのアクションメニューを選択します。</block>
   <block id="ed2541738b61ca0c7584cd62bf74b27d" category="list-text">*高度な操作*を選択し、*ワークロードの変更*を選択します。</block>
   <block id="cd9e2d546766552cd75de00b7717f0cf" category="list-text">「ワークロードの変更」ダイアログで、ボリュームに適したワークロードを選択します。</block>
-  <block id="8137b647e9c277bf5504be0415118937" category="paragraph">NetApp Workload Factory は、FSx for ONTAP ファイルシステムのコストと使用状況の統合ビューを提供し、予算管理とリソースの効率的な最適化を支援します。FSx for ONTAP ファイルシステムリソースのコストレポートを生成して、関係者と共有することもできます。</block>
   <block id="0ecf72bcc13fb55d0aa28c82a90ab6f4" category="paragraph">固有のリソースの場合、Workload Factory は、実際のパフォーマンスティアの使用状況、プロビジョニング済みだが未使用のスペースに割り当てられたパフォーマンスティアコストの比例配分、容量ごとに分配されたパフォーマンス割り当て、および容量プールの使用状況を組み合わせてコストを計算します。Workload Factory は、各コンポーネントにそのディメンションにおける単価を乗算し、その結果を合計して各リソースの総コストを決定します。</block>
-  <block id="ecec373dbe2f05b3a3b863fd07d13592" category="paragraph">Workload Factory は、以下の権限を使用して AWS Cost Explorer から FSx for ONTAP ファイルシステムリソースのコストと使用状況データを取得します：<block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block> および <block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block>。総コストは、AWS コスト API と当社独自の見積もりを使用して算出します。</block>
-  <block id="552ae61b34399969ed0ea2c7955fd9ef" category="paragraph">コストダッシュボードのコストデータに加えて、コストエグゼクティブサマリーには、FSx for ONTAP ファイルシステムのコストと組織の支出パターンが表示されます。FSx for ONTAP ファイルシステムリソースのコストレポートを生成することもできます。このレポートはダウンロード可能な CSV ファイルで、関係者と共有できます。</block>
   <block id="e291c5603b49506d01779471f77ce7c8" category="paragraph">以下の要件を満たしていることを確認してください。</block>
   <block id="53c306e93da69caff455d3eaa34a6b5c" category="list-text">AWS割り当てタグでフィルタリングするには、FSx for ONTAPファイルシステムにタグが割り当てられていることを確認してください。</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026年9月30日</block>
@@ -3334,8 +3329,6 @@
   <block id="a27e74c36d4d969817e56da6fc886e29" category="list-text">FlexCloneボリュームを親ボリュームから分割したあとは、再結合できません。</block>
   <block id="02ed8ce03f0b69a9238ad5fe674db730" category="list-text">クローンされたボリュームを分割するには、リンクを関連付ける必要があります。<block ref="b0d0cfa49a5b8ebda8e687152ec0aadd" category="inline-link-macro-rx"></block>。リンクを関連付けたら、この操作に戻ってください。</block>
   <block id="c880e220ac8aee50a0a860cfa3d40661" category="summary">Workload FactoryにNetApp Support Siteアカウントを追加し、アカウントをサポート登録して、NetAppテクニカルサポートでサポートケースをオープンできるようにします。</block>
-  <block id="79ccfc8de982194cab3acf19277d4a57" category="doc">NetApp Workload FactoryでFSx for ONTAPのコストを追跡してレポートを取得する</block>
-  <block id="9fa871dac57d54d520eddd6e7c2bc7e4" category="paragraph">コストダッシュボードでは、AWSアカウント、クレデンシャル、1つ以上のリージョン、および期間でコストと使用状況データをフィルタリングして、FSx for ONTAPファイルシステムの消費量を把握できます。Workload Factoryは常に月単位でデータを表示します。1つ以上のファイルシステム、およびファイルシステム内の1つ以上のボリュームでフィルタリングすることもできます。AWSのコスト配分タグキーとタグキー値により、特定のコストを特定するためのフィルタリングのレイヤーが追加されます。_タグ_はキーと値で構成されます。タグキーとタグキー値でフィルタリングするには、FSx for ONTAPファイルシステムにタグを割り当てます。<block ref="8ea95efe0fef689337ea8960e5c1861f" category="inline-link-macro-rx"></block></block>
   <block id="904e5c7e4bec4fed64fcbb6a83a967f6" category="paragraph">Workload Factoryは、ダウンロード可能なCSVレポートを生成します。</block>
   <block id="d50ebccae5983a46539e57c6cafdeafa" category="list-text">必要に応じて、*遅延時間通知を有効にする*を選択すると、レプリケーション遅延がしきい値を超えた場合に通知を受け取ることができます。</block>
   <block id="57aa08723363676e08889a7debcc7fae" category="paragraph">ボリュームバックアップは増分バックアップであるため、最新のバックアップ以降に変更されたボリューム上のデータのみが保存されます。これにより、バックアップの作成に必要な時間とバックアップに必要なストレージ容量が最小限に抑えられ、データの重複を防ぐことでストレージコストを節約できます。</block>
@@ -3421,4 +3414,35 @@
   <block id="7dc50386b3284326e1114e4e7f4eb3fd" category="section-title">2026年11月1日</block>
   <block id="7cc20c44b067a9d650d7a25d5be9d67d" category="section-title">分類に関する顧客管理型Bedrockサポート</block>
   <block id="8a8cb6e7e1b94c2efc52b7f5d677eb4d" category="paragraph">Workload Factoryでは、ワークロードのタグ付け分類に独自のAmazon Bedrock環境を使用できるようになりました。独自のBedrockエンドポイントと認証情報を提供することで、分類リクエストを独自のBedrock構成を通して実行させることができます。</block>
+  <block id="6347309ad07af7266241819bb2af76d1" category="list-text">*ホストをフェイルオーバーノードに接続する*</block>
+  <block id="e89cb70f69260bd0359dad1d58cb94de" category="paragraph">Workload Factory は、フェイルオーバー時の接続性を維持し、中断を回避するために、ホストをフェイルオーバーノードに接続することを推奨します。</block>
+  <block id="d8f7d6931c10571f6b09ab824fb1eb68" category="list-text">*SAP HANAスナップショットポリシー*</block>
+  <block id="5430bb473a033ac7ca3cf168ada8eef0" category="paragraph">アクティブなデータベースデータのストレージコストを削減し、パフォーマンスを向上させるには、SAP HANAボリュームのスナップショットポリシーを「None」に設定してください。</block>
+  <block id="bed53786c7f97a0d4610c92e2155c179" category="list-text">*MySQLスナップショットポリシー*</block>
+  <block id="2cfa406a51ef73bbf2e8700e3f414fba" category="paragraph">アクティブなデータベースデータのストレージコストを削減し、パフォーマンスを向上させるには、MySQLボリュームのスナップショットポリシーを「なし」に設定してください。</block>
+  <block id="277b9300260dd55ca64290333450ba59" category="list-text">*PostgreSQLスナップショットポリシー*</block>
+  <block id="2a902e0c93222642481e7829b61f6885" category="paragraph">PostgreSQLボリュームのスナップショットポリシーを「なし」に設定することで、ストレージコストを削減し、アクティブなデータベースデータのパフォーマンスを向上させることができます。</block>
+  <block id="f6713ad974e1c45e6ae6f336e05e1acb" category="list-text">*ARP/AIによる複数デバイス検出のギャップ*</block>
+  <block id="99585e92af9e1ad2380aa522d6753d7a" category="paragraph">ARP/AIは、ボリュームにブロックデバイスが1つだけ接続されている場合に、完全な保護範囲を提供します。ボリュームに複数のブロックデバイスが接続されている場合、Workload Factoryはブロックデバイスを新しいボリュームに移動し、各ボリュームにブロックデバイスが1つだけ存在するようにします。</block>
+  <block id="94252ec3a780f58314c91e97ef4e34dd" category="list-text">*Kubernetes iSCSIバックエンド向け双方向CHAP*</block>
+  <block id="33abb23bb89c7fd6e6403f57410fd19d" category="paragraph">Trident iSCSIバックエンドには双方向CHAP認証を使用して、iSCSIイニシエータとターゲットが相互に認証されるようにします。これにより、許可されていないホストがストレージVMに対してiSCSIセッションを確立するのを防ぎます。</block>
+  <block id="6afaedca049edca8b26b3afcc63112c5" category="list-text">*アプリケーションストレージVMで無効にする<block ref="d51321f13693d09d4a9cbb2758b42d12" prefix=" " category="inline-code"></block>*</block>
+  <block id="bfd8d5ee3b60e71cb8f894bb8d7d7f01" category="paragraph">アプリケーションストレージVMで<block ref="d51321f13693d09d4a9cbb2758b42d12" prefix=" " category="inline-code"></block>を無効にして、クライアントがアクセスできないエクスポートを一覧表示できないようにします。</block>
+  <block id="17a183ee5c2a455937989091c69ca48d" category="list-text">*専用のKubernetesストレージVM*</block>
+  <block id="aeb9ac6a931deb0972004e13a0b50cbd" category="paragraph">Kubernetesワークロードには専用のストレージVMを使用してください。Kubernetesのストレージを分離しておくことで、管理が容易になり、ポリシー設定が簡素化され、ストレージ設定の一貫性を確保しやすくなります。</block>
+  <block id="dd54a6cc471e0bb15a8807c9b04d608a" category="list-text">*igroup OSをホストOSに一致させる*</block>
+  <block id="9b4b32350b17fe80d09c863ee9493bc1" category="paragraph">I/Oやパフォーマンスの問題を防ぐため、イニシエータグループ（igroup）のオペレーティングシステムをホストのオペレーティングシステムと一致させてください。</block>
+  <block id="e2521a2a2f696d450620b08167cf1c24" category="list-text">*クローンのクリーンアップ*</block>
+  <block id="25c12f9fc894aee637d81a1bb835e475" category="paragraph">ストレージ使用量を最適化し、コストを削減するために、30日以上前のボリュームクローンはすべて削除してください。</block>
+  <block id="01fae763ec208cbe8aba55abc3b09866" category="summary">NetApp Workload Factoryで、FSx for ONTAPファイルシステムリソースのコストを追跡します。</block>
+  <block id="3f9d767840a18ac75b11c7dd9ba87a88" category="doc">NetApp Workload Factoryのリソースのコストを追跡する</block>
+  <block id="bfb6f1b412cd95d58b271e3d69547dda" category="paragraph">NetApp Workload Factoryを使用してFSx for ONTAPファイルシステムのコストと使用状況を追跡することで、予算を管理し、リソースを効果的に最適化できます。最小限の権限を必要とするデータで全体的なコストを提供するために、AWS Cost Explorerを使用しています。リソース（ファイルシステムまたはボリューム）ごとのコストはWorkload Factoryの計算に基づいており、AWS Cost Explorerでは得られない独自のインサイトを提供します。</block>
+  <block id="c3f094be203d9270a67844e5fa353013" category="paragraph">Workload Factory は、以下の権限を使用して AWS Cost Explorer から FSx for ONTAP ファイルシステムリソースのコストと使用状況データを取得します：<block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block> および <block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block>。以下のコスト詳細が追跡されます：使用タイプ、使用 SKU、デプロイメントタイプ、使用量、および合計コスト。</block>
+  <block id="0044e1f3a22c6d9ef97c0d6e8c1fdb03" category="paragraph">コストダッシュボードには、全体コストとリソース別のコストを表示する2つのタブがあります。</block>
+  <block id="65ab1b7df4df327df8504998be956f5b" category="list-text">総コストは、AWS Cost Explorer APIから直接取得したデータに基づいています。</block>
+  <block id="19750d3971220ee9a9363828b643acdf" category="list-text">リソース別コストでは、ファイルシステムまたはボリュームごとのコスト見積もりが表示されます。</block>
+  <block id="512a8b4930f422b87988b36e61c761d2" category="paragraph">Workload Factoryは常に月単位でデータを表示します。</block>
+  <block id="03bb428183665b2d297f7a2b126ada64" category="paragraph">AWSアカウント、認証情報、1つ以上のリージョン、および期間でコストと使用状況データをフィルタリングして、FSx for ONTAPファイルシステムの使用量を把握できます。1つ以上のファイルシステム、およびファイルシステム内の1つ以上のボリュームでフィルタリングすることもできます。</block>
+  <block id="6d24db4e0644546ba5972d86f0474123" category="paragraph">AWSのコスト配分タグキーとタグキー値により、特定のコストを特定するためのフィルタリングのレイヤーが追加されます。_タグ_はキーと値で構成されます。タグキーとタグキー値でフィルタリングするには、FSx for ONTAPファイルシステムにタグを割り当てます。<block ref="8ea95efe0fef689337ea8960e5c1861f" category="inline-link-macro-rx"></block></block>
+  <block id="00785d0f1296ca2a8d0846890b38a469" category="paragraph">コストダッシュボードのコストデータに加えて、AIが生成したコストエグゼクティブサマリーには、FSx for ONTAPファイルシステムのコストと組織の支出パターンが表示されます。FSx for ONTAPファイルシステムリソースのCSVファイルを生成して、チームや関係者と共有できます。</block>
 </blocks>
