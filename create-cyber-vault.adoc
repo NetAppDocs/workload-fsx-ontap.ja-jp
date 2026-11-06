@@ -26,7 +26,7 @@ Amazon FSx for NetApp ONTAP は、サイバー ボールトのソースおよび
 .導入
 Workload Factory は、サイバー ボールト アーキテクチャの作成を支援します。  NetAppに連絡してサイバー ボールトの実装に関心があることを伝えると、 NetApp のスペシャリストがお客様に連絡して要件について話し合います。
 
-開始するには、ng-FSx-CyberVault@netapp.com に電子メールを送信してください。
+始めるには、ng-CyberVault@netapp.com にメールを送信してください。
 
 .関連情報
 サイバー金庫とこのアーキテクチャの設定方法の詳細については、 link:https://docs.netapp.com/us-en/netapp-solutions-dataops/cyber-vault/ontap-cyber-vault-overview.html["ONTAPサイバー ボールトのドキュメント"^]。
